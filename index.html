@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#0a0f1e">
+<meta name="theme-color" content="#120a20">
 <title>Wayfinder</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
@@ -23,28 +23,37 @@
    applyTheme(), including when the preference is "auto" — so the CSS only ever
    has two states to reason about. */
 :root, :root[data-theme="dark"]{
-  --ink:#0a0f1e; --deep:#101832; --surface:#151f3d; --raised:#1d294d;
-  --line:#2c3a63; --line-soft:#212d52;
-  --text:#eceffa; --muted:#9aa4c8; --faint:#6b769e;
+  --ink:#120a20; --deep:#1b1030; --surface:#22163b; --raised:#2e1d4d;
+  --line:#452a68; --line-soft:#352050;
+  --text:#f4ecfa; --muted:#b9a6d0; --faint:#8974a0;
   --ac-fg:var(--ac);                /* accent that is safe as *text* here */
-  --warm:#8fd4ff; --bad:#ff8f9e; --good:#5fd6a4;
+  --stars:radial-gradient(1.4px 1.4px at 12% 14%,rgba(255,255,255,.55),transparent),
+          radial-gradient(1px 1px at 68% 8%,rgba(255,214,240,.5),transparent),
+          radial-gradient(1.6px 1.6px at 34% 40%,rgba(226,190,255,.45),transparent),
+          radial-gradient(1px 1px at 84% 29%,rgba(255,255,255,.4),transparent),
+          radial-gradient(1px 1px at 22% 63%,rgba(255,214,240,.35),transparent),
+          radial-gradient(1.4px 1.4px at 91% 70%,rgba(226,190,255,.38),transparent),
+          radial-gradient(1px 1px at 55% 86%,rgba(255,255,255,.34),transparent),
+          radial-gradient(1px 1px at 7% 89%,rgba(255,214,240,.3),transparent);
+  --warm:#9fd8ff; --bad:#ff8fa8; --good:#6fe0b8;
   --shadow:0 7px 20px rgba(0,0,0,.5);
   --veil:rgba(2,10,13,.8);
-  --wash-1:var(--ac-14); --wash-2:rgba(242,196,138,.07);
+  --wash-1:var(--ac-14); --wash-2:rgba(178,110,235,.16);
 }
 :root[data-theme="light"]{
-  --ink:#f5f5fa; --deep:#ffffff; --surface:#ffffff; --raised:#eceef8;
-  --line:#d3d8ea; --line-soft:#e4e7f3;
-  --text:#141a33; --muted:#5b638a; --faint:#8b93b4;
+  --ink:#faf5fc; --deep:#ffffff; --surface:#ffffff; --raised:#f3ecf8;
+  --line:#e2d3ec; --line-soft:#ede3f3;
+  --text:#2a1240; --muted:#6f5788; --faint:#9c86ad;
+  --stars:none;
   /* Raw aquamarine on white fails contrast, so text-weight accent is deepened.
      40% keeps the hue recognisable while clearing WCAG AA (4.5:1) for the
      small-caps labels, which are 10.5px and therefore normal-size text. */
-  --ac-fg:color-mix(in srgb, var(--ac) 40%, #241605);
-  --warm:#2a6fa8; --bad:#c0374a; --good:#0d8a6d;
+  --ac-fg:color-mix(in srgb, var(--ac) 40%, #2c0b3d);
+  --warm:#8a3ea8; --bad:#c0374a; --good:#0d8a6d;
   --shadow:0 5px 16px rgba(12,43,41,.10);
   --veil:rgba(12,43,41,.45);
-  --wash-1:color-mix(in srgb, var(--ac) 22%, transparent);
-  --wash-2:rgba(242,196,138,.20);
+  --wash-1:color-mix(in srgb, var(--ac) 26%, transparent);
+  --wash-2:rgba(178,110,235,.16);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0}
@@ -58,8 +67,9 @@ body{
 body::before{
   content:''; position:fixed; inset:0; z-index:0; pointer-events:none;
   background:
+    var(--stars),
     radial-gradient(70% 45% at 15% -5%, var(--wash-1), transparent 70%),
-    radial-gradient(60% 40% at 95% 12%, var(--wash-2), transparent 70%),
+    radial-gradient(65% 42% at 95% 10%, var(--wash-2), transparent 70%),
     radial-gradient(80% 50% at 50% 105%, var(--wash-1), transparent 70%);
 }
 #app{position:relative;z-index:1;max-width:660px;margin:0 auto;padding:0 18px 128px}
@@ -89,7 +99,7 @@ header{padding:22px 0 14px;display:flex;align-items:center;justify-content:space
 button{font-family:inherit;font-size:15px;cursor:pointer;border:none;background:none;color:inherit}
 .btn{min-height:var(--tap);border-radius:14px;padding:13px 18px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;transition:transform .08s ease,opacity .15s}
 .btn:active{transform:scale(.985)}
-.btn-primary{background:var(--ac);color:#241605}
+.btn-primary{background:var(--ac);color:#2b0f3d}
 .btn-secondary{background:var(--raised);color:var(--text);border:1px solid var(--line)}
 .btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line-soft)}
 .btn-row{display:flex;gap:10px;margin-top:4px}
@@ -111,7 +121,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .period .nm{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .period .dt{font-size:12px;color:var(--faint)}
 .period .tm{font-size:12px;color:var(--muted);text-align:right;flex-shrink:0;font-variant-numeric:tabular-nums}
-.tag-now{background:var(--ac);color:#241605;font-size:9px;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:.09em}
+.tag-now{background:var(--ac);color:#2b0f3d;font-size:9px;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:.09em}
 
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
 .tile{background:var(--surface);border:1px solid var(--line-soft);border-left:3px solid var(--pc,var(--ac));border-radius:16px;padding:15px;min-height:var(--tap);text-align:left;display:flex;flex-direction:column;gap:4px}
@@ -775,15 +785,15 @@ const units = cid => !cid ? all('unit') : all('unit').filter(u=>u.classId===cid|
 
 /* ---------- Preferences (synced, so her theme follows her to any device) ---------- */
 const ACCENTS = [
-  {id:'amber',  nm:'Amber',    c:'#f2b44c'},
-  {id:'sunset', nm:'Sunset',   c:'#ff9470'},
-  {id:'sky',    nm:'Sky',      c:'#7fc9f5'},
-  {id:'mint',   nm:'Mint',     c:'#6fe3b0'},
-  {id:'lilac',  nm:'Lilac',    c:'#c9a7f0'},
-  {id:'rose',   nm:'Rose',     c:'#f79ab8'}
+  {id:'blossom',nm:'Blossom', c:'#f78ac8'},
+  {id:'orchid', nm:'Orchid',  c:'#d69bf5'},
+  {id:'lilac',  nm:'Lilac',   c:'#b9a5f0'},
+  {id:'rose',   nm:'Rose',    c:'#ff9ab0'},
+  {id:'sky',    nm:'Sky',     c:'#8fc9f5'},
+  {id:'mint',   nm:'Mint',    c:'#7fe3c0'}
 ];
-const AVATARS = ['🧭','🌊','🦊','🐉','🌲','🎧','🚀','🔭','⚡','🌙','🐬','🎨'];
-const DEFAULT_PREFS = { accent:'amber', avatar:'✦', nickname:'', motto:'',
+const AVATARS = ['🌸','🦄','🦋','🐉','🌙','🎧','🚀','🔭','⭐','🌺','🐬','🎨'];
+const DEFAULT_PREFS = { accent:'blossom', avatar:'✦', nickname:'', motto:'',
   pomodoro:25, brk:5, goals:{}, subjectColors:{}, theme:'auto' };
 
 function prefs(){ return { ...DEFAULT_PREFS, ...(DATA.records['prefs']||{}) }; }
@@ -802,7 +812,7 @@ function applyTheme(){
   const resolved = mode==='auto' ? (prefersLight() ? 'light' : 'dark') : mode;
   document.documentElement.dataset.theme = resolved;
   const m = document.querySelector('meta[name=theme-color]');
-  if(m) m.setAttribute('content', resolved==='light' ? '#f5f5fa' : '#0a0f1e');
+  if(m) m.setAttribute('content', resolved==='light' ? '#faf5fc' : '#120a20');
 }
 window.matchMedia('(prefers-color-scheme: light)')
   .addEventListener('change',()=>{ if((prefs().theme||'auto')==='auto'){ applyTheme(); render(); } });

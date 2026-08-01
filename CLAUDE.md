@@ -74,9 +74,14 @@ Pre-Comp or Comp exams in primary — don't copy those milestones across.
 Deliberately not a re-skin of Ad Astra — the siblings should not feel like they
 got the same app.
 
-- Base is **indigo-slate**, not teal-black. Default accent is **amber**; her
-  picker is Amber / Sunset / Sky / Mint / Lilac / Rose.
-- Avatars lean adventure rather than celestial (🧭 🦊 🐉 🚀 …).
+- Base is a **plum-violet night sky** — deep purple canvas with a faint starfield
+  layered above the colour washes (`--stars`, dark mode only; `none` in light).
+  Ad Astra is teal-black, so the two never read as the same app.
+- Default accent is **Blossom** (pink); her picker leads with pink and purple —
+  Blossom / Orchid / Lilac / Rose / Sky / Mint. Pink and purple were her request.
+- Avatars lean playful-celestial (🌸 🦄 🦋 🐉 🌙 ⭐ …).
+- Every accent was measured against both canvases: worst case 6.4:1, so all of
+  them clear WCAG AA. Keep new options in that range.
 - Subject textures: graph paper (Math), ruled paper (English), tighter rules
   (Writing), cell dots (Science), columns (History), blueprint grid
   (Engineering), pixel grid (Computers), paint spatter (Art), curtain (Theatre).
