@@ -178,6 +178,10 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 /* Schedule rows: a colour wash bleeding in from the left plus a painted icon
    chip. Enough character to read as "this is Physics" without eight saturated
    bars fighting each other. The current period still gets the full fill. */
+/* Bookends read as quieter than a class — no colour wash, dashed edge. */
+.period.bookend{background:transparent;border:1px dashed var(--line);border-left:2px dashed var(--line)}
+.period.bookend .nm{font-weight:600;color:var(--muted)}
+.period.bookend .pchip{background:var(--raised);box-shadow:none;opacity:.9}
 .period.tinted{background-image:none;color:var(--text);
   background:linear-gradient(90deg,
     color-mix(in srgb, var(--c1) 30%, var(--surface)) 0%,
@@ -412,6 +416,7 @@ function setRoster(k,v){
 }
 const teacherOf = id => (roster().teachers||{})[id] || '';
 function whereLine(c){
+  if(c.bookend) return c.note;
   const t = teacherOf(c.id);
   return `Room ${c.room}${t ? ' · '+t : ''}`;
 }
@@ -436,7 +441,10 @@ const SUBJECTS = [
   {id:'martial',     name:'PE: Martial Arts',   short:'Martial Arts',room:'Gym',  icon:'🥋', pal:'ember', break:true},
   {id:'study',       name:'Study Hall',         short:'Study Hall',  room:'136',  icon:'🗂️', pal:'slate', break:true},
   {id:'recess',      name:'Recess',             short:'Recess',      room:'Play', icon:'🌳', pal:'lime',  break:true},
-  {id:'lunch',       name:'Lunch',              short:'Lunch',       room:'MPR',  icon:'🥪', pal:'slate', break:true}
+  {id:'lunch',       name:'Lunch',              short:'Lunch',       room:'MPR',  icon:'🥪', pal:'slate', break:true},
+  /* Bookends, not classes — added around every school day by dayClasses(). */
+  {id:'dropoff',     name:'Drop-off',           short:'Drop-off',    room:'',     icon:'🚗', pal:'slate', break:true, bookend:true, note:'By 7:15 AM'},
+  {id:'pickup',      name:'Pick-up',            short:'Pick-up',     room:'',     icon:'🏡', pal:'slate', break:true, bookend:true, note:'2:40 PM'}
 ];
 const SUBJ_BY_ID = Object.fromEntries(SUBJECTS.map(s=>[s.id,s]));
 const CLASS_BY_ID = SUBJ_BY_ID;
@@ -455,7 +463,11 @@ const WEEK = {
 function dayClasses(ds){
   const ids = WEEK[AZ.weekday(ds)];
   if(!ids) return [];
-  return ids.map((id,i)=>({ ...SUBJ_BY_ID[id], start:SLOTS[i][0], end:SLOTS[i][1] }));
+  return [
+    { ...SUBJ_BY_ID.dropoff, start:420, end:435 },
+    ...ids.map((id,i)=>({ ...SUBJ_BY_ID[id], start:SLOTS[i][0], end:SLOTS[i][1] })),
+    { ...SUBJ_BY_ID.pickup,  start:880, end:895 }
+  ];
 }
 /* The next weekday that actually has classes, for weekends and breaks. */
 function nextSchoolDay(ds){
@@ -469,6 +481,7 @@ function nextSchoolDay(ds){
 
 /* Which weekdays a subject shows up on, e.g. "Tue & Fri". */
 function daysFor(id){
+  if(SUBJ_BY_ID[id] && SUBJ_BY_ID[id].bookend) return 'Every day';
   const nm = {1:'Mon',2:'Tue',3:'Wed',4:'Thu',5:'Fri'};
   const ds = Object.keys(WEEK).filter(d=>WEEK[d].includes(id)).map(d=>nm[d]);
   if(ds.length===5) return 'Every day';
@@ -1093,11 +1106,13 @@ SCREENS.today = function(root){
     const cur = today.find(c=>now>=c.start&&now<c.end), next = today.find(c=>c.start>now);
     if(cur){
       st.appendChild(el('h3',null,`${cur.icon} ${cur.name}`));
-      st.appendChild(el('p',null, cur.break ? `Until ${fmtTime(cur.end)}.`
+      st.appendChild(el('p',null, cur.bookend ? cur.note : cur.break ? `Until ${fmtTime(cur.end)}.`
         : `${whereLine(cur)} · until ${fmtTime(cur.end)}`));
     } else if(next){
       st.appendChild(el('h3',null,'Before the bell'));
-      st.appendChild(el('p',null,`Next: ${next.name} at ${fmtTime(next.start)}, room ${next.room}.`));
+      st.appendChild(el('p',null, next.bookend
+        ? `Next: ${next.name.toLowerCase()}, ${next.note.toLowerCase()}.`
+        : `Next: ${next.name} at ${fmtTime(next.start)}, room ${next.room}.`));
     } else {
       st.appendChild(el('h3',null,'School day is over'));
       st.appendChild(el('p',null,'Best window for studying — it is still fresh.'));
@@ -1142,13 +1157,13 @@ SCREENS.today = function(root){
   const now = AZ.nowMinutes();
   dayClasses(shownDate).forEach(c=>{
     const live = schoolDay && now>=c.start && now<c.end;
-    const cls0 = 'period'+(live?' now':'')+(schoolDay&&now>=c.end?' done':'');
+    const cls0 = 'period'+(live?' now':'')+(schoolDay&&now>=c.end?' done':'')+(c.bookend?' bookend':'');
     /* Live period gets the full painted fill; the rest get a colour wash. */
     const p = live ? paint(el('div',cls0), c) : tint(el('div',cls0+' tinted'), c);
     p.appendChild(paint(el('div','pchip',c.icon), c));
     const m = el('div','meta');
     m.appendChild(el('div','nm',c.name));
-    m.appendChild(el('div','dt', whereLine(c)));
+    m.appendChild(el('div','dt', c.bookend ? c.note : whereLine(c)));
     p.appendChild(m);
     if(live) p.appendChild(el('span','tag-now','NOW'));
     else p.appendChild(el('div','tm',fmtTime(c.start)));
