@@ -1,8 +1,13 @@
 # Claude Guide — Wayfinder
 
-River's learning PWA. **4th grade, BASIS Chandler Primary South, SY 2026–27.**
+> **This repo is public.** Names, schools, teachers and Drive folder IDs are
+> deliberately absent here — they live in the `roster` record (entered in the
+> grown-up settings, carried by the private Gist) and in Claude's private
+> project memory. Do not paste them back into any tracked file.
 
-Same engine as [Ad Astra](../ad-astra) (Sedona's app) — record store, Gist sync,
+A learning PWA for one **4th-grade** student on a rotating timetable, SY 2026–27.
+
+Same engine as [Ad Astra](../ad-astra), the older sibling's app — record store, Gist sync,
 study plan, tutor, focus timer, emotion checks, parent view all work identically.
 **Read `../ad-astra/CLAUDE.md` first**; everything there applies unless listed
 below. This file documents only what differs.
@@ -11,12 +16,12 @@ below. This file documents only what differs.
 
 ## Pitch it a year or two up
 
-Both girls attend a school that teaches roughly a year ahead, and they read and
-behave accordingly. River is 9 but the material and the tone should land like
-**middle school**, not lower primary. Sedona's app is pitched at high school for
-the same reason.
+Both siblings attend a school that teaches roughly a year ahead, and they read and
+behave accordingly. This student is 9, but the material and tone should land like
+**middle school**, not lower primary. Ad Astra is pitched at high school for the
+same reason.
 
-Concretely, for River: short sentences and ordinary words, but **never** baby
+Concretely: short sentences and ordinary words, but **never** baby
 talk, never exclamation marks, never "great job!" — she gets a real explanation
 said plainly. The model prompts for the tutor and unit generation both say this
 explicitly; keep that if you edit them.
@@ -25,8 +30,8 @@ explicitly; keep that if you edit them.
 
 ## The schedule rotates — this is the main structural difference
 
-Sedona's timetable is identical every weekday, so hers is a flat `CLASSES` array.
-River's rotates, so hers is:
+Ad Astra's timetable is identical every weekday, so it uses a flat `CLASSES`
+array. This one rotates, so it uses:
 
 - `SUBJECTS` — every subject once, with its room, icon and default colour.
 - `SLOTS` — nine fixed time ranges, **identical every weekday**.
@@ -48,26 +53,26 @@ always Math, English, Recess, Lunch, Science, History.
 **Anything reading the schedule must call `dayClasses(date)`** — never iterate a
 global class list, because there isn't one.
 
-Her `.ics` has **no teacher names** (Sedona's did), so nothing in the UI shows a
-teacher. The orientation unit drills rooms *and the rotation* instead, since
+This `.ics` has **no teacher names** (Ad Astra's did), so no teacher shows unless
+one is entered in `roster`. The orientation unit drills rooms *and the rotation* instead, since
 knowing that Art is Tue & Fri is the genuinely useful week-one fact.
 
 ---
 
 ## Calendar
 
-BASIS Chandler Primary South publishes its own calendar. Same first/last day
+the primary school publishes its own calendar. Same first/last day
 (2026-08-03 → 2027-05-21), same quarters and the same closure dates as the upper
 school, but: **parent/teacher conferences** on 10/2 and 3/12 instead of comp
-exams, and **Project Week is 5/17–5/20** (Sedona's runs to 5/21). There are no
+exams, and **Project Week is 5/17–5/20** (the upper school's runs to 5/21). There are no
 Pre-Comp or Comp exams in primary — don't copy those milestones across.
 
 ---
 
 ## Identity
 
-Deliberately not a re-skin of Ad Astra — the girls should not feel like they got
-the same app.
+Deliberately not a re-skin of Ad Astra — the siblings should not feel like they
+got the same app.
 
 - Base is **indigo-slate**, not teal-black. Default accent is **amber**; her
   picker is Amber / Sunset / Sky / Mint / Lilac / Rose.
@@ -83,9 +88,9 @@ the two apps never collide even on a shared device or a shared Gist token.
 
 ## Drive
 
-Class material lands in her folder `1Qtab_VqloYC7w1HdQRcri3hzdl1kzq0c`
-("River" → BASIS Chandler Primary). Backups go to **Wayfinder Backups**,
-`14BImMb-1W-3vNw54Kyc_OC31nOPjINrt`, linked from the parent settings.
+Class material and the backup folder both live in Drive. The folder IDs are in
+Claude's private project memory, and the backup link is set per-device in the
+grown-up settings — neither belongs in this repo.
 
 ---
 

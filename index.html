@@ -358,7 +358,7 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ac)}
 
 <script>
 /* ==========================================================================
-   WAYFINDER — River's learning lab
+   WAYFINDER — a single-student learning lab
    Single file, no build step. localStorage + optional private Gist sync.
    ========================================================================== */
 
@@ -389,7 +389,7 @@ const Store = {
   remove(k){ try{localStorage.removeItem(this.ns+k);}catch(e){} }
 };
 
-/* ---------- School data (from her Drive folder: .ics schedule + BASIS calendar) ---------- */
+/* ---------- School data (times/rooms only — see `roster` for anything identifying) ---------- */
 /* Name, school, teachers and the backup-folder link are deliberately NOT in
    this file — this repo is public. They live in the `roster` record, entered
    once in the grown-up settings and carried between devices by the private
@@ -410,7 +410,7 @@ function whereLine(c){
    CSS texture (graph paper for maths, ruled paper for English, cell dots for
    Biology, orbit arcs for Physics, columns for History, a Greek key for Latin)
    so subjects are recognisable at a glance rather than all reading as teal. */
-/* River's timetable rotates by weekday, unlike Sedona's. The nine slots are the
+/* This timetable rotates by weekday. The nine slots are the
    same every day; only which subject fills slots 2, 6 and 8 changes. */
 const SUBJECTS = [
   {id:'math',        name:'Accelerated Math',   short:'Math',        room:'131',  icon:'📐', pal:'ocean'},
@@ -447,6 +447,16 @@ function dayClasses(ds){
   if(!ids) return [];
   return ids.map((id,i)=>({ ...SUBJ_BY_ID[id], start:SLOTS[i][0], end:SLOTS[i][1] }));
 }
+/* The next weekday that actually has classes, for weekends and breaks. */
+function nextSchoolDay(ds){
+  let d = ds < CAL.firstDay ? CAL.firstDay : AZ.shift(ds, 1);
+  for(let i=0;i<21;i++){
+    if(WEEK[AZ.weekday(d)] && !closedToday(d) && d>=CAL.firstDay && d<=CAL.lastDay) return d;
+    d = AZ.shift(d, 1);
+  }
+  return CAL.firstDay;
+}
+
 /* Which weekdays a subject shows up on, e.g. "Tue & Fri". */
 function daysFor(id){
   const nm = {1:'Mon',2:'Tue',3:'Wed',4:'Thu',5:'Fri'};
@@ -516,7 +526,7 @@ const CAL = {
     ['2027-03-15','2027-03-19','Spring Break'],['2027-03-26','2027-03-26','March Break'],
     ['2027-05-31','2027-05-31','Memorial Day']
   ],
-  /* BASIS Chandler Primary South publishes its own calendar — same term dates
+  /* The primary school publishes its own calendar — same term dates
      as the upper school, but conferences instead of comp exams and a shorter
      Project Week. */
   milestones:[
@@ -706,7 +716,7 @@ function relevantHabits(date, limit=2){
 /* ---------- Content model ---------- */
 const SCHEMA_VERSION = 2;
 
-/* River's schedule rotates, so week one is about *which day* a subject lands on
+/* The schedule rotates, so week one is about *which day* a subject lands on
    as much as which room it is in. Built from her real timetable — nothing here
    is invented. */
 function buildOrientationUnit(){
@@ -1105,20 +1115,22 @@ SCREENS.today = function(root){
     root.appendChild(ac);
   }
 
-  /* Schedule — this is what Chris and Kat check to know where she is, so it
-     renders every day. On a non-school day it shows as her standing timetable
-     rather than being hidden entirely. */
+  /* Schedule — this is what a parent checks to know where she is, so it renders
+     every day. Because the timetable rotates there is no single "standing" day
+     to fall back on, so on a weekend or a break we show the next school day. */
   const schoolDay = !weekend && !closed && date>=CAL.firstDay && date<=CAL.lastDay;
-  root.appendChild(divider(schoolDay ? "Today's schedule" : 'Your school day'));
+  const shownDate = schoolDay ? date : nextSchoolDay(date);
+  const dayName = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'][AZ.weekday(shownDate)];
+  root.appendChild(divider(schoolDay ? "Today's schedule" : `${dayName}'s schedule`));
   if(!schoolDay){
     const n = el('div','card quiet');
     n.appendChild(el('p',null, date<CAL.firstDay
-      ? 'This is your timetable from the first day of school onward. Same order every weekday.'
-      : 'No classes today — this is your normal weekday timetable.'));
+      ? `School starts on ${AZ.pretty(CAL.firstDay)}. This is what that day looks like — your timetable changes a bit each weekday.`
+      : `No classes today. Here is your next school day, ${AZ.pretty(shownDate)}.`));
     root.appendChild(n);
   }
   const now = AZ.nowMinutes();
-  dayClasses(date).forEach(c=>{
+  dayClasses(shownDate).forEach(c=>{
     const live = schoolDay && now>=c.start && now<c.end;
     const cls0 = 'period'+(live?' now':'')+(schoolDay&&now>=c.end?' done':'');
     /* Live period gets the full painted fill; the rest get a colour wash. */
@@ -1851,7 +1863,9 @@ async function askTutor(question){
   const moodLine = moods.length
     ? `Recent pre-quiz readiness ratings (1-5): ${moods.map(m=>m.readiness).join(', ')}.` : '';
 
-  const system = `You are a study coach for River, a bright 9-year-old in 4th grade at BASIS Chandler Primary South, a school that teaches roughly a year ahead. You are talking directly to her.
+  const who = roster().studentName || 'the student';
+  const where = roster().school ? ` at ${roster().school}` : '';
+  const system = `You are a study coach for ${who}, a bright ${STUDENT.grade}th grader${where}, at a school that teaches roughly a year ahead. You are talking directly to her.
 
 Pitch it at a capable middle-schooler: short sentences, ordinary words, no baby talk and no talking down. She can handle a real explanation, she just needs it said plainly.
 
@@ -2220,19 +2234,19 @@ SCREENS.parent = function(root){
      school and exact daily location should not be. Entered once here, then
      carried to every device by the private Gist. */
   root.appendChild(divider('Class details'));
-  const rc = el('div','card');
-  rc.appendChild(el('p',null,'Her name, school and teachers are kept out of the app\u2019s public code. Add them once here and they sync to every device.'));
+  const rost = el('div','card');
+  rost.appendChild(el('p',null,'Her name, school and teachers are kept out of the app\u2019s public code. Add them once here and they sync to every device.'));
   const r = roster();
   const nameIn = el('input'); nameIn.type='text'; nameIn.placeholder='First name'; nameIn.value=r.studentName;
   nameIn.addEventListener('change',()=>{ setRoster('studentName', nameIn.value.trim()); toast('Saved'); render(); });
-  rc.appendChild(el('label',null,'Student')); rc.appendChild(nameIn);
+  rost.appendChild(el('label',null,'Student')); rost.appendChild(nameIn);
   const schoolIn = el('input'); schoolIn.type='text'; schoolIn.placeholder='School'; schoolIn.value=r.school;
   schoolIn.addEventListener('change',()=>{ setRoster('school', schoolIn.value.trim()); toast('Saved'); render(); });
-  rc.appendChild(el('label',null,'School')); rc.appendChild(schoolIn);
+  rost.appendChild(el('label',null,'School')); rost.appendChild(schoolIn);
   const bkIn = el('input'); bkIn.type='url'; bkIn.placeholder='https://drive.google.com/drive/folders/\u2026'; bkIn.value=r.backupUrl;
   bkIn.addEventListener('change',()=>{ setRoster('backupUrl', bkIn.value.trim()); toast('Saved'); render(); });
-  rc.appendChild(el('label',null,'Backup folder link')); rc.appendChild(bkIn);
-  rc.appendChild(el('label',null,'Teachers'));
+  rost.appendChild(el('label',null,'Backup folder link')); rost.appendChild(bkIn);
+  rost.appendChild(el('label',null,'Teachers'));
   STUDY_CLASSES.forEach(c=>{
     const row = el('div','row');
     row.appendChild(el('span','k',`${c.icon} ${c.short}`));
@@ -2243,9 +2257,9 @@ SCREENS.parent = function(root){
       if(v) t[c.id]=v; else delete t[c.id];
       setRoster('teachers', t); toast('Saved');
     });
-    row.appendChild(i); rc.appendChild(row);
+    row.appendChild(i); rost.appendChild(row);
   });
-  root.appendChild(rc);
+  root.appendChild(rost);
 
   root.appendChild(divider('Shared sync'));
   const sc = el('div','card');
@@ -2484,7 +2498,7 @@ async function generateUnit(classId, notes){
   if(!key) throw new Error('NO_KEY');
   const cls = CLASS_BY_ID[classId];
   const system = [
-    `You build study material for River, a bright 9-year-old in 4th grade at BASIS Chandler Primary South taking ${cls?cls.name:'this class'}. The school teaches about a year ahead, so pitch it at a capable middle-schooler.`,
+    `You build study material for a bright ${STUDENT.grade}th grader taking ${cls?cls.name:'this class'} at a school that teaches about a year ahead, so pitch it at a capable middle-schooler.`,
     `Write 12-20 flashcards and 15-21 quiz questions (5-7 each at level 1 recall, level 2 application, level 3 reasoning).`,
     `Every question has exactly 4 options and one correct answer.`,
     `Anchor everything to the supplied notes. Do not invent facts they do not support.`,
