@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "wayfinder", "runtimeExecutable": "npx", "runtimeArgs": ["serve", "-p", "4179", "."], "port": 4179 }
+  ]
+}

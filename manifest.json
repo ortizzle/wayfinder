@@ -1,0 +1,14 @@
+{
+  "name": "Wayfinder — River's Learning Lab",
+  "short_name": "Wayfinder",
+  "description": "River's 4th grade study companion: schedule, flashcards, quizzes, and progress.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0f1e",
+  "theme_color": "#0a0f1e",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
