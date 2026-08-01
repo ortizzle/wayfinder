@@ -437,7 +437,9 @@ function dayClasses(ds){
 function daysFor(id){
   const nm = {1:'Mon',2:'Tue',3:'Wed',4:'Thu',5:'Fri'};
   const ds = Object.keys(WEEK).filter(d=>WEEK[d].includes(id)).map(d=>nm[d]);
-  return ds.length===5 ? 'Every day' : ds.join(' & ');
+  if(ds.length===5) return 'Every day';
+  if(ds.length<=1) return ds[0] || '';
+  return ds.slice(0,-1).join(', ') + ' & ' + ds[ds.length-1];
 }
 
 /* Every option is a mid-tone → deep pair, so white text over the darkened
