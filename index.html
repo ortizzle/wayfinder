@@ -178,10 +178,11 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 /* Schedule rows: a colour wash bleeding in from the left plus a painted icon
    chip. Enough character to read as "this is Physics" without eight saturated
    bars fighting each other. The current period still gets the full fill. */
-/* Bookends read as quieter than a class — no colour wash, dashed edge. */
-.period.bookend{background:transparent;border:1px dashed var(--line);border-left:2px dashed var(--line)}
+/* Bookends are not classes, so they keep the neutral slate wash their palette
+   gives them and sit quieter than the coloured subject rows around them. */
 .period.bookend .nm{font-weight:600;color:var(--muted)}
-.period.bookend .pchip{background:var(--raised);box-shadow:none;opacity:.9}
+.period.bookend.now .nm,.period.bookend.now .dt{color:#fff}
+.period.bookend .pchip{box-shadow:none;opacity:.92}
 .period.tinted{background-image:none;color:var(--text);
   background:linear-gradient(90deg,
     color-mix(in srgb, var(--c1) 30%, var(--surface)) 0%,
@@ -1111,7 +1112,7 @@ SCREENS.today = function(root){
     } else if(next){
       st.appendChild(el('h3',null,'Before the bell'));
       st.appendChild(el('p',null, next.bookend
-        ? `Next: ${next.name.toLowerCase()}, ${next.note.toLowerCase()}.`
+        ? `Next: ${next.name} · ${next.note}`
         : `Next: ${next.name} at ${fmtTime(next.start)}, room ${next.room}.`));
     } else {
       st.appendChild(el('h3',null,'School day is over'));
