@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#04141a">
+<meta name="theme-color" content="#0a0f1e">
 <title>Wayfinder</title>
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
@@ -13,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ac:#6fe3cd;                     /* personalized accent — set from prefs */
+  --ac:#f2b44c;                     /* personalized accent — set from prefs */
   --r:20px; --tap:48px;
   --ac-8:color-mix(in srgb, var(--ac) 8%, transparent);
   --ac-14:color-mix(in srgb, var(--ac) 14%, transparent);
@@ -23,24 +23,24 @@
    applyTheme(), including when the preference is "auto" — so the CSS only ever
    has two states to reason about. */
 :root, :root[data-theme="dark"]{
-  --ink:#04141a; --deep:#072027; --surface:#0b2a32; --raised:#10373f;
-  --line:#1b4a54; --line-soft:#133b44;
-  --text:#e9f4f1; --muted:#8fb0ab; --faint:#5b807b;
+  --ink:#0a0f1e; --deep:#101832; --surface:#151f3d; --raised:#1d294d;
+  --line:#2c3a63; --line-soft:#212d52;
+  --text:#eceffa; --muted:#9aa4c8; --faint:#6b769e;
   --ac-fg:var(--ac);                /* accent that is safe as *text* here */
-  --warm:#f2c48a; --bad:#ff8f9e; --good:#6fe3cd;
+  --warm:#8fd4ff; --bad:#ff8f9e; --good:#5fd6a4;
   --shadow:0 7px 20px rgba(0,0,0,.5);
   --veil:rgba(2,10,13,.8);
   --wash-1:var(--ac-14); --wash-2:rgba(242,196,138,.07);
 }
 :root[data-theme="light"]{
-  --ink:#f2f6f5; --deep:#ffffff; --surface:#ffffff; --raised:#e9f1ef;
-  --line:#cbdedb; --line-soft:#dfebe8;
-  --text:#0c2b29; --muted:#587672; --faint:#8aa4a0;
+  --ink:#f5f5fa; --deep:#ffffff; --surface:#ffffff; --raised:#eceef8;
+  --line:#d3d8ea; --line-soft:#e4e7f3;
+  --text:#141a33; --muted:#5b638a; --faint:#8b93b4;
   /* Raw aquamarine on white fails contrast, so text-weight accent is deepened.
      40% keeps the hue recognisable while clearing WCAG AA (4.5:1) for the
      small-caps labels, which are 10.5px and therefore normal-size text. */
-  --ac-fg:color-mix(in srgb, var(--ac) 40%, #04302a);
-  --warm:#a9701b; --bad:#c0374a; --good:#0d8a6d;
+  --ac-fg:color-mix(in srgb, var(--ac) 40%, #241605);
+  --warm:#2a6fa8; --bad:#c0374a; --good:#0d8a6d;
   --shadow:0 5px 16px rgba(12,43,41,.10);
   --veil:rgba(12,43,41,.45);
   --wash-1:color-mix(in srgb, var(--ac) 22%, transparent);
@@ -89,7 +89,7 @@ header{padding:22px 0 14px;display:flex;align-items:center;justify-content:space
 button{font-family:inherit;font-size:15px;cursor:pointer;border:none;background:none;color:inherit}
 .btn{min-height:var(--tap);border-radius:14px;padding:13px 18px;font-weight:600;display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;transition:transform .08s ease,opacity .15s}
 .btn:active{transform:scale(.985)}
-.btn-primary{background:var(--ac);color:#04141a}
+.btn-primary{background:var(--ac);color:#241605}
 .btn-secondary{background:var(--raised);color:var(--text);border:1px solid var(--line)}
 .btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line-soft)}
 .btn-row{display:flex;gap:10px;margin-top:4px}
@@ -111,7 +111,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .period .nm{font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .period .dt{font-size:12px;color:var(--faint)}
 .period .tm{font-size:12px;color:var(--muted);text-align:right;flex-shrink:0;font-variant-numeric:tabular-nums}
-.tag-now{background:var(--ac);color:#04141a;font-size:9px;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:.09em}
+.tag-now{background:var(--ac);color:#241605;font-size:9px;font-weight:800;padding:3px 8px;border-radius:999px;letter-spacing:.09em}
 
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px}
 .tile{background:var(--surface);border:1px solid var(--line-soft);border-left:3px solid var(--pc,var(--ac));border-radius:16px;padding:15px;min-height:var(--tap);text-align:left;display:flex;flex-direction:column;gap:4px}
@@ -131,7 +131,7 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .subj > *{position:relative;z-index:1}
 .subj .ct,.subj .dt,.subj .tm{color:rgba(255,255,255,.88)}
 .subj .nm,.subj .term,.subj .def{text-shadow:0 1px 3px rgba(0,0,0,.3)}
-.pat-algeo{background-image:
+.pat-math{background-image:
   linear-gradient(var(--pl) 1px,transparent 1px),
   linear-gradient(90deg,var(--pl) 1px,transparent 1px),
   var(--fill); background-size:16px 16px,16px 16px,cover}
@@ -139,22 +139,32 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
   repeating-linear-gradient(180deg,transparent 0 16px,var(--pl) 16px 17px),
   linear-gradient(90deg,transparent 22px,rgba(255,255,255,.34) 22px 23px,transparent 23px),
   var(--fill); background-size:auto,auto,cover}
-.pat-bio{background-image:
+.pat-science{background-image:
   radial-gradient(circle,var(--pl) 1.7px,transparent 2.1px),
   var(--fill); background-size:17px 17px,cover}
-.pat-physics{background-image:
+.pat-engineering{background-image:
   repeating-radial-gradient(circle at 12% 118%,transparent 0 14px,var(--pl) 14px 15px),
   var(--fill); background-size:auto,cover}
 .pat-history{background-image:
   repeating-linear-gradient(90deg,var(--pl) 0 2px,transparent 2px 15px),
   var(--fill); background-size:auto,cover}
-.pat-latin{background-image:
+.pat-computer{background-image:
   repeating-linear-gradient(45deg,var(--pl) 0 2px,transparent 2px 13px),
   var(--fill); background-size:auto,cover}
 .pat-theatre{background-image:
   repeating-linear-gradient(90deg,var(--pl) 0 1px,transparent 1px 11px),
   var(--fill); background-size:auto,cover}
-.pat-lunch{background-image:var(--fill);background-size:cover}
+.pat-writing{background-image:
+  repeating-linear-gradient(180deg,transparent 0 14px,var(--pl) 14px 15px),
+  var(--fill); background-size:auto,cover}
+.pat-arts{background-image:
+  radial-gradient(circle at 30% 30%,var(--pl) 3px,transparent 3.4px),
+  radial-gradient(circle at 75% 65%,var(--pl) 2px,transparent 2.4px),
+  var(--fill); background-size:34px 34px,26px 26px,cover}
+.pat-pe,.pat-martial{background-image:
+  repeating-linear-gradient(135deg,var(--pl) 0 2px,transparent 2px 16px),
+  var(--fill); background-size:auto,cover}
+.pat-study,.pat-recess,.pat-lunch{background-image:var(--fill);background-size:cover}
 /* Schedule rows: a colour wash bleeding in from the left plus a painted icon
    chip. Enough character to read as "this is Physics" without eight saturated
    bars fighting each other. The current period still gets the full fill. */
@@ -331,7 +341,7 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ac)}
     <div class="brand" id="brand" role="button" tabindex="0" aria-label="Home">
       <div class="avatar" id="avatar">✦</div>
       <div>
-        <h1 id="brandName">Ad Astra</h1>
+        <h1 id="brandName">Wayfinder</h1>
         <div class="sub" id="brandSub"></div>
       </div>
     </div>
@@ -476,9 +486,6 @@ function paint(node, cls){
   node.style.setProperty('--pc', p.g1);
   return node;
 }
-const CLASS_BY_ID = Object.fromEntries(CLASSES.map(c=>[c.id,c]));
-const STUDY_CLASSES = CLASSES.filter(c=>!c.break);
-
 const CAL = {
   firstDay:'2026-08-03', lastDay:'2027-05-21',
   quarters:[
@@ -742,15 +749,15 @@ const units = cid => !cid ? all('unit') : all('unit').filter(u=>u.classId===cid|
 
 /* ---------- Preferences (synced, so her theme follows her to any device) ---------- */
 const ACCENTS = [
-  {id:'aqua',   nm:'Aquamarine', c:'#6fe3cd'},
-  {id:'seafoam',nm:'Sea Glass',  c:'#9fd8c8'},
-  {id:'sky',    nm:'Sky',        c:'#7fc9f5'},
-  {id:'lilac',  nm:'Lilac',      c:'#c9a7f0'},
-  {id:'coral',  nm:'Coral',      c:'#ff9f8f'},
-  {id:'amber',  nm:'Amber',      c:'#f2c46a'}
+  {id:'amber',  nm:'Amber',    c:'#f2b44c'},
+  {id:'sunset', nm:'Sunset',   c:'#ff9470'},
+  {id:'sky',    nm:'Sky',      c:'#7fc9f5'},
+  {id:'mint',   nm:'Mint',     c:'#6fe3b0'},
+  {id:'lilac',  nm:'Lilac',    c:'#c9a7f0'},
+  {id:'rose',   nm:'Rose',     c:'#f79ab8'}
 ];
-const AVATARS = ['✦','🌊','🐚','🦋','🌱','🎧','📚','🔭','🪐','🌙','🐢','🎨'];
-const DEFAULT_PREFS = { accent:'aqua', avatar:'✦', nickname:'', motto:'',
+const AVATARS = ['🧭','🌊','🦊','🐉','🌲','🎧','🚀','🔭','⚡','🌙','🐬','🎨'];
+const DEFAULT_PREFS = { accent:'amber', avatar:'✦', nickname:'', motto:'',
   pomodoro:25, brk:5, goals:{}, subjectColors:{}, theme:'auto' };
 
 function prefs(){ return { ...DEFAULT_PREFS, ...(DATA.records['prefs']||{}) }; }
@@ -769,7 +776,7 @@ function applyTheme(){
   const resolved = mode==='auto' ? (prefersLight() ? 'light' : 'dark') : mode;
   document.documentElement.dataset.theme = resolved;
   const m = document.querySelector('meta[name=theme-color]');
-  if(m) m.setAttribute('content', resolved==='light' ? '#f2f6f5' : '#04141a');
+  if(m) m.setAttribute('content', resolved==='light' ? '#f5f5fa' : '#0a0f1e');
 }
 window.matchMedia('(prefers-color-scheme: light)')
   .addEventListener('change',()=>{ if((prefs().theme||'auto')==='auto'){ applyTheme(); render(); } });
@@ -1828,11 +1835,13 @@ async function askTutor(question){
   const moodLine = moods.length
     ? `Recent pre-quiz readiness ratings (1-5): ${moods.map(m=>m.readiness).join(', ')}.` : '';
 
-  const system = `You are a study coach for Sedona, a sharp 8th grader at BASIS Chandler. You are talking directly to her.
+  const system = `You are a study coach for River, a bright 9-year-old in 4th grade at BASIS Chandler Primary South, a school that teaches roughly a year ahead. You are talking directly to her.
+
+Pitch it at a capable middle-schooler: short sentences, ordinary words, no baby talk and no talking down. She can handle a real explanation, she just needs it said plainly.
 
 Ground every suggestion in her real data below. Be concrete: name the subject, the number of minutes, and what to actually do in that time. No generic advice like "make a schedule".
 
-Use techniques with real evidence: retrieval practice over rereading, spaced practice over cramming, interleaving, sleep, explaining aloud. Frame effort and strategy, never fixed ability — do not tell her she is smart or talented. Do not be saccharine or use exclamation marks. Be warm, direct, and a little dry. Keep it under 200 words. Plain prose, no headers, no bullet lists.
+Use techniques with real evidence: retrieval practice over rereading, spaced practice over cramming, interleaving, sleep, explaining aloud. Frame effort and strategy, never fixed ability — do not tell her she is smart or talented. Do not be saccharine or use exclamation marks. Keep it under 150 words. Plain prose, no headers, no bullet lists.
 
 Today is ${date}.
 Overall: level ${s.level}, ${s.xp} XP, ${s.streak}-day streak, ${s.accuracy}% accuracy across ${s.answered} questions, ${Math.round(s.seconds/60)} minutes logged, ${s.focusMin} of those in focus sessions.
@@ -2267,7 +2276,7 @@ SCREENS.parent = function(root){
   bc2.appendChild(el('div','hintline', (lb?`Last backup ${new Date(lb).toLocaleDateString()}. `:'No backup yet. ')
     + 'On a phone this opens the share sheet — choose Drive, then the Wayfinder Backups folder.'));
   const dl = el('a','hintline','Open the Wayfinder Backups folder in Drive →');
-  dl.href = 'https://drive.google.com/drive/folders/1mOLDFsQy__vR6m5R1D8SFUzIBCNqG7cI';
+  dl.href = 'https://drive.google.com/drive/folders/14BImMb-1W-3vNw54Kyc_OC31nOPjINrt';
   dl.target = '_blank'; dl.rel = 'noopener';
   dl.style.color='var(--ac)'; dl.style.display='inline-block'; dl.style.marginTop='8px';
   bc2.appendChild(dl);
@@ -2426,11 +2435,11 @@ async function generateUnit(classId, notes){
   if(!key) throw new Error('NO_KEY');
   const cls = CLASS_BY_ID[classId];
   const system = [
-    `You build study material for Sedona, a sharp 8th grader at BASIS Chandler taking ${cls?cls.name:'this class'}.`,
-    `Write 15-25 flashcards and 18-24 quiz questions (6-8 each at level 1 recall, level 2 application, level 3 analysis).`,
+    `You build study material for River, a bright 9-year-old in 4th grade at BASIS Chandler Primary South taking ${cls?cls.name:'this class'}. The school teaches about a year ahead, so pitch it at a capable middle-schooler.`,
+    `Write 12-20 flashcards and 15-21 quiz questions (5-7 each at level 1 recall, level 2 application, level 3 reasoning).`,
     `Every question has exactly 4 options and one correct answer.`,
     `Anchor everything to the supplied notes. Do not invent facts they do not support.`,
-    `Tone: direct and a little dry. Never condescending. She can handle why something is actually interesting.`,
+    `Tone: plain, direct and genuinely interested. Short sentences and ordinary words, but never babyish and never talking down.`,
     `Card hints are memory hooks or mnemonics, never restatements of the definition.`,
     `Explanations say why the right answer is right, not just what it is.`
   ].join(' ');
