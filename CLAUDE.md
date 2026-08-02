@@ -61,6 +61,13 @@ knowing that Art is Tue & Fri is the genuinely useful week-one fact.
 
 ## Calendar
 
+`CAL.events` is populated here from the school's weekly newsletter and its
+save-the-dates slide — Mini-Comps, Fast Bridge, early-release days, performances,
+community evenings, and the 4th Grade Promotion. See `../ad-astra/CLAUDE.md` for
+how the layer works. **Primary does have Mini-Comps** (Aug 11-12) despite having
+no Pre-Comp or Comp exams; do not assume "no comps at primary".
+
+
 the primary school publishes its own calendar. Same first/last day
 (2026-08-03 → 2027-05-21), same quarters and the same closure dates as the upper
 school, but: **parent/teacher conferences** on 10/2 and 3/12 instead of comp
