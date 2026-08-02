@@ -25,7 +25,7 @@
 :root, :root[data-theme="dark"]{
   --ink:#120a20; --deep:#1b1030; --surface:#22163b; --raised:#2e1d4d;
   --line:#452a68; --line-soft:#352050;
-  --text:#f4ecfa; --muted:#b9a6d0; --faint:#8974a0;
+  --text:#f4ecfa; --muted:#b9a6d0; --faint:#9683ac;
   --ac-fg:var(--ac);                /* accent that is safe as *text* here */
   --stars:radial-gradient(1.4px 1.4px at 12% 14%,rgba(255,255,255,.55),transparent),
           radial-gradient(1px 1px at 68% 8%,rgba(255,214,240,.5),transparent),
@@ -43,13 +43,15 @@
 :root[data-theme="light"]{
   --ink:#faf5fc; --deep:#ffffff; --surface:#ffffff; --raised:#f3ecf8;
   --line:#e2d3ec; --line-soft:#ede3f3;
-  --text:#2a1240; --muted:#6f5788; --faint:#9c86ad;
+  --text:#2a1240; --muted:#6f5788; --faint:#78628b;
   --stars:none;
+  /* --faint carries hints and explanations — real reading, not decoration — so
+     it is held above 4.5:1 against both the card (#fff) and the page. */
   /* Raw aquamarine on white fails contrast, so text-weight accent is deepened.
      40% keeps the hue recognisable while clearing WCAG AA (4.5:1) for the
      small-caps labels, which are 10.5px and therefore normal-size text. */
   --ac-fg:color-mix(in srgb, var(--ac) 40%, #2c0b3d);
-  --warm:#8a3ea8; --bad:#c0374a; --good:#0d8a6d;
+  --warm:#8a3ea8; --bad:#c0374a; --good:#0b7b62;
   --shadow:0 5px 16px rgba(12,43,41,.10);
   --veil:rgba(12,43,41,.45);
   --wash-1:color-mix(in srgb, var(--ac) 26%, transparent);
