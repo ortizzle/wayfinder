@@ -96,6 +96,30 @@ got the same app.
 Storage namespace is `wayfinder_` and the Gist file is `wayfinder-data.json`, so
 the two apps never collide even on a shared device or a shared Gist token.
 
+### The companion (Wayfinder-only, v13)
+
+A creature she picks and names in Settings (`prefs.companion = {sp, nm}`,
+synced; `null` = off, and "—" in the picker is a real choice). It is a
+**messenger, not a second voice**: every line comes from the curated
+`COMPANION_*` pools or is assembled from `studyPlan()`/`dueMisses()` — never
+from the model. Deliberate rules, do not relax:
+
+- **Never interrupts.** It appears in exactly two places: a perch on Study
+  (one deterministic line per day — due reviews first, else top of the study
+  plan, else an idle line) and in the quiz-results modal. Never mid-question,
+  never over the timer.
+- **Never sad or disappointed.** Under-80% quizzes get the `COMPANION_STEADY`
+  pool — calm and forward-looking. A drooping creature would re-moralize the
+  Growth Zone and import the Duolingo guilt mechanic on purpose-built grounds.
+- **Process praise only**, same Dweck grounding as the affirmations. No trait
+  praise, no exclamation marks.
+- **No care-and-feeding mechanics, no stored counters.** It owns no records
+  and no XP.
+
+Ad Astra deliberately does **not** get one — a mascot is high-risk
+condescension at 13. If she asks for one, that's her call; don't port it as
+"parity" (this is identity, not engine).
+
 ---
 
 ## Drive
