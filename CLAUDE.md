@@ -102,6 +102,11 @@ differ here: skies are Starfield / Aurora / Blossom Drift / Deep Ocean, and
 `ICON_CHOICES`/`AVATARS` lean playful. Rosters are identity; keep them
 divergent.
 
+The Sky Map (see ad-astra/CLAUDE.md) works identically, but this app's
+`CONSTELLATIONS` are invented and playful (The Otter, The Skipping Stone…)
+where Ad Astra's are the real sky. Same rule as everything else: the engine
+travels, the roster does not.
+
 ### The companion (Wayfinder-only, v13)
 
 A creature she picks and names in Settings (`prefs.companion = {sp, nm}`,

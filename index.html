@@ -446,6 +446,17 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ac)}
 .badges.pinned .bdg{transform:scale(1.06)}
 .trustrow{display:flex;gap:9px;align-items:flex-start;font-size:13px;color:var(--muted);margin-top:12px;cursor:pointer}
 .trustrow input{width:18px;height:18px;margin-top:1px;accent-color:var(--ac)}
+
+.sky-card{cursor:pointer}
+.skysvg{width:100%;height:auto;display:block;margin:6px 0 2px}
+.skysvg polyline{stroke:var(--line);stroke-width:1}
+.skysvg circle.lit{fill:var(--ac);filter:drop-shadow(0 0 3px var(--ac))}
+.skysvg circle.dim{fill:none;stroke:var(--faint);stroke-width:1;opacity:.6}
+.skysvg text{font-size:5px;fill:var(--faint);letter-spacing:.04em}
+.skygrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.skygrid .card{margin-bottom:0;padding:14px}
+.skymini-name{font-size:12.5px;font-weight:600;margin-top:4px}
+.skymini-week{font-size:10.5px;color:var(--faint)}
 @keyframes fall{to{transform:translateY(-150px) rotate(220deg);opacity:0}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 </style>
@@ -1321,6 +1332,122 @@ const BADGES = [
   {id:'tuned',   ic:'🎚️',nm:'Well Calibrated',desc:'Predict your score within 10% five times', check:()=>calibrationHits()>=5},
   {id:'days20',  ic:'📊',nm:'Twenty Days',  desc:'Study on 20 different days', check:s=>s.days>=20}
 ];
+/* ---------- The Sky Map ----------
+   A star chart in the literal sense. Each school week is a named
+   constellation of seven stars; a star lights on any day with real study
+   (a log or focus record — showing up, never the score). SKY_GOAL of 7
+   completes the week and the constellation joins the sky map. Deliberate
+   rules: nothing breaks — a short week just stays dim and the next one
+   starts fresh (no streak-style loss); everything is DERIVED from logs, no
+   stored counters; and stars are never currency — no redemption, ever. */
+const SKY_GOAL = 5;
+const SKY_SHAPES = [
+  [[8,40],[22,26],[38,34],[52,18],[66,30],[80,22],[92,38]],
+  [[10,20],[24,32],[40,28],[50,44],[64,40],[78,26],[90,34]],
+  [[12,46],[20,28],[34,20],[50,26],[64,18],[78,30],[88,46]],
+  [[10,30],[26,22],[42,30],[56,22],[70,30],[82,42],[92,26]],
+  [[14,22],[26,40],[40,46],[54,38],[66,24],[80,36],[90,20]],
+  [[8,34],[24,44],[38,36],[52,46],[68,38],[80,46],[92,30]],
+  [[12,26],[28,18],[44,24],[58,34],[70,46],[84,40],[94,28]],
+  [[10,42],[22,30],[36,40],[50,30],[64,40],[78,30],[90,42]]
+];
+/* Invented, playful constellations — hers. Ad Astra uses the real sky
+   instead; the rosters are identity and must not converge. */
+const CONSTELLATIONS = [
+  {nm:'The Otter', lore:'Floats on its back and keeps a favorite rock. Knows what matters.'},
+  {nm:'The Blossom', lore:'Five petals. Opens overnight, when nobody is watching.'},
+  {nm:'The Dolphin’s Leap', lore:'The exact moment between water and air.'},
+  {nm:'The Paper Boat', lore:'Small, handmade, still seaworthy.'},
+  {nm:'The Compass', lore:'Spin it all you like — it settles pointing somewhere true.'},
+  {nm:'The Lantern', lore:'Carried light. Works best in exactly the dark places.'},
+  {nm:'The Teacup', lore:'Holds one warm thing at a time.'},
+  {nm:'The Fox’s Tail', lore:'The last thing you see when the fox has somewhere to be.'},
+  {nm:'The Kite', lore:'Needs the wind against it to climb.'},
+  {nm:'The Snail Shell', lore:'A spiral that took its time, and is perfect because of it.'},
+  {nm:'The Acorn', lore:'Contains one entire oak, folded up.'},
+  {nm:'The Firefly Jar', lore:'Lit from the inside. Lid off, always.'},
+  {nm:'The Umbrella', lore:'Ready for weather that might not come. Fine either way.'},
+  {nm:'The Ladder', lore:'One rung at a time is the only way anyone climbs.'},
+  {nm:'The Little Door', lore:'Exactly your size. Nobody else fits through.'},
+  {nm:'The Music Box', lore:'Knows one song completely.'},
+  {nm:'The Feather', lore:'Falls slowly on purpose.'},
+  {nm:'The Bicycle', lore:'Stays up as long as you keep going.'},
+  {nm:'The Cocoa Cup', lore:'Best held with both hands.'},
+  {nm:'The Seahorse', lore:'Swims upright, slowly, and gets everywhere it means to.'},
+  {nm:'The Puzzle Piece', lore:'Odd-shaped, which is the whole point.'},
+  {nm:'The Treehouse', lore:'A house is where you live. This is where you plan.'},
+  {nm:'The Mitten', lore:'Half of a pair. The other one is around somewhere.'},
+  {nm:'The Butterfly Net', lore:'Catches things gently and lets most of them go.'},
+  {nm:'The Wishing Well', lore:'Keeps every coin and every secret.'},
+  {nm:'The Rowboat', lore:'You face backwards and still get there.'},
+  {nm:'The Bell', lore:'Silent almost always. Worth hearing when it is not.'},
+  {nm:'The Pinwheel', lore:'Turns any passing breeze into something to watch.'},
+  {nm:'The Bridge', lore:'Built once, crossed a thousand times.'},
+  {nm:'The Hummingbird', lore:'Visits a hundred flowers and remembers every one.'},
+  {nm:'The Honey Pot', lore:'Sweeter for having taken all summer.'},
+  {nm:'The Telescope', lore:'Makes far things near. Patience, in a tube.'},
+  {nm:'The Swing', lore:'Goes higher when you lean in at the right moment.'},
+  {nm:'The Ribbon', lore:'Ties the important things together.'},
+  {nm:'The Tidepool', lore:'A whole small world, refilled twice a day.'},
+  {nm:'The Cloud Sheep', lore:'Grazes across the sky, changing shape as it pleases.'},
+  {nm:'The Marble', lore:'A galaxy you can keep in your pocket.'},
+  {nm:'The Postcard', lore:'Short, sent with love, kept for years.'},
+  {nm:'The Garden Gate', lore:'Creaks so the flowers know you are coming.'},
+  {nm:'The Night Train', lore:'Runs on time through everyone’s dreams.'},
+  {nm:'The Anchor', lore:'Holds steady so the boat can rest.'},
+  {nm:'The Crown of Leaves', lore:'Won by growing. Worn lightly.'},
+  {nm:'The Skipping Stone', lore:'Touches the water five times and calls it a good throw.'},
+  {nm:'The Reading Nook', lore:'A corner, a blanket, a book. Complete.'}
+];
+function studyDates(){
+  const s = new Set();
+  all('log').forEach(l=>{ if(l.date) s.add(l.date); });
+  all('focus').forEach(f=>{ if(f.date) s.add(f.date); });
+  return s;
+}
+const skyWeek0 = () => AZ.weekStart(CAL.firstDay);
+const skyNow = date => Math.max(0, Math.round(AZ.daysBetween(skyWeek0(), AZ.weekStart(date))/7));
+function skyWeek(i, set){
+  set = set || studyDates();
+  const start = AZ.shift(skyWeek0(), i*7);
+  const days = Array.from({length:7},(_,d)=>AZ.shift(start,d));
+  const lit = days.map(d=>set.has(d));
+  const litCount = lit.filter(Boolean).length;
+  return { i, start, days, lit, litCount, done:litCount>=SKY_GOAL,
+           c: CONSTELLATIONS[i % CONSTELLATIONS.length] };
+}
+function skyDone(date){
+  const set = studyDates(); let c = 0;
+  for(let i=0;i<=skyNow(date);i++) if(skyWeek(i,set).done) c++;
+  return c;
+}
+function skyChartEl(w, mini){
+  const NS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(NS,'svg');
+  svg.setAttribute('viewBox','0 0 100 60');
+  svg.setAttribute('class','skysvg'+(mini?' mini':''));
+  const pts = SKY_SHAPES[w.i % SKY_SHAPES.length];
+  const line = document.createElementNS(NS,'polyline');
+  line.setAttribute('points', pts.map(p=>p.join(',')).join(' '));
+  line.setAttribute('fill','none');
+  svg.appendChild(line);
+  pts.forEach((p,d)=>{
+    const c = document.createElementNS(NS,'circle');
+    c.setAttribute('cx',p[0]); c.setAttribute('cy',p[1]);
+    c.setAttribute('r', mini?2.6:3.4);
+    c.setAttribute('class', w.lit[d]?'lit':'dim');
+    svg.appendChild(c);
+    if(!mini){
+      const t = document.createElementNS(NS,'text');
+      t.setAttribute('x',p[0]); t.setAttribute('y',p[1]+9);
+      t.setAttribute('text-anchor','middle');
+      t.textContent = 'SMTWTFS'[d];
+      svg.appendChild(t);
+    }
+  });
+  return svg;
+}
+
 const earned = () => new Set(all('badge').map(b=>b.badgeId));
 function checkBadges(){
   const s = stats(), have = earned(), fresh = [];
@@ -2912,7 +3039,8 @@ SCREENS.parent = function(root){
    ['Current streak', s.streak+' day'+(s.streak===1?'':'s')],
    ['Total time logged', s.seconds>=3600?`${Math.floor(s.seconds/3600)}h ${Math.round(s.seconds%3600/60)}m`:`${Math.round(s.seconds/60)}m`],
    ['Focus-timer minutes', s.focusMin],
-   ['Overall accuracy', s.answered?s.accuracy+'%':'—']
+   ['Overall accuracy', s.answered?s.accuracy+'%':'—'],
+   ['Constellations complete', `${skyDone(date)} of ${skyNow(date)+1} weeks`]
   ].forEach(([k,v])=>{ const r=el('div','row');
     r.appendChild(el('span','k',k)); r.appendChild(el('span','v',String(v))); eff.appendChild(r); });
   root.appendChild(eff);
@@ -3395,6 +3523,19 @@ SCREENS.stars = function(root){
   const s = stats(), date = AZ.today();
   root.appendChild(headline('Star chart', `Level ${s.level} · ${s.xp.toLocaleString()} XP`));
 
+  /* The week as a constellation. Stars light for showing up, never for
+     scores, and a short week simply stays dim — nothing breaks. */
+  const wk = skyWeek(skyNow(date));
+  const skc = el('div','card ac sky-card');
+  skc.appendChild(el('div','eyebrow','This week’s constellation'));
+  skc.appendChild(el('h3',null,wk.c.nm));
+  skc.appendChild(skyChartEl(wk,false));
+  skc.appendChild(el('p',null, wk.done
+    ? `Complete — ${wk.c.nm} joins your sky map.`
+    : `${wk.litCount} of 7 lit · ${SKY_GOAL} completes it`));
+  skc.addEventListener('click',()=>go('skymap'));
+  root.appendChild(skc);
+
   const lvl = el('div','card');
   const lr = el('div','row');
   lr.appendChild(el('span','k',`Level ${s.level}`));
@@ -3452,6 +3593,35 @@ SCREENS.stars = function(root){
     g.appendChild(d);
   });
   root.appendChild(g);
+};
+
+SCREENS.skymap = function(root){
+  const date = AZ.today(), n = skyNow(date), set = studyDates();
+  const weeks = [];
+  for(let i=0;i<=n;i++) weeks.push(skyWeek(i,set));
+  const done = weeks.filter(w=>w.done).length;
+  root.appendChild(headline('Sky map',
+    `${done} constellation${done===1?'':'s'} complete · week ${n+1} of the year`));
+  const grid = el('div','skygrid');
+  weeks.forEach(w=>{
+    const c = el('div','card'+(w.done||w.i===n?'':' quiet'));
+    const mini = skyChartEl(w,true);
+    if(!w.done && w.i!==n) mini.style.opacity=.45;
+    c.appendChild(mini);
+    c.appendChild(el('div','skymini-name', (w.done||w.i===n) ? w.c.nm : '·'));
+    c.appendChild(el('div','skymini-week', 'Week of '+AZ.shortDate(w.start)));
+    if(w.done || w.i===n){
+      c.style.cursor='pointer';
+      c.addEventListener('click',()=>showModal({ title:w.c.nm,
+        message:`${w.c.lore}\n\nWeek of ${AZ.shortDate(w.start)} · ${w.litCount} of 7 stars lit${w.done?' · complete':''}.`}));
+    }
+    grid.appendChild(c);
+  });
+  root.appendChild(grid);
+  const back = el('button','btn btn-ghost','← Back to Stars');
+  back.style.marginTop='14px';
+  back.addEventListener('click',()=>go('stars'));
+  root.appendChild(back);
 };
 
 function badgeModal(b, have){
