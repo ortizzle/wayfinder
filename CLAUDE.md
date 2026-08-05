@@ -96,6 +96,12 @@ got the same app.
 Storage namespace is `wayfinder_` and the Gist file is `wayfinder-data.json`, so
 the two apps never collide even on a shared device or a shared Gist token.
 
+Personalization (skies, celebration styles, subject icons, badge pins,
+companion extras) works as documented in ad-astra/CLAUDE.md — only the rosters
+differ here: skies are Starfield / Aurora / Blossom Drift / Deep Ocean, and
+`ICON_CHOICES`/`AVATARS` lean playful. Rosters are identity; keep them
+divergent.
+
 ### The companion (Wayfinder-only, v13)
 
 A creature she picks and names in Settings (`prefs.companion = {sp, nm}`,

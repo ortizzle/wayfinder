@@ -57,6 +57,16 @@
   --wash-1:color-mix(in srgb, var(--ac) 26%, transparent);
   --wash-2:rgba(178,110,235,.16);
 }
+/* Skies — her pick of canvas washes (Settings → Personalize). Only the wash
+   colours change; the canvas, starfield and every text colour stay put, so
+   the contrast measurements hold under every sky. */
+:root[data-sky="aurora"]{--wash-1:rgba(111,227,184,.14);--wash-2:rgba(178,110,235,.16)}
+:root[data-theme="light"][data-sky="aurora"]{--wash-1:rgba(11,123,98,.14);--wash-2:rgba(147,84,201,.15)}
+:root[data-sky="blossom"]{--wash-1:rgba(255,154,176,.16);--wash-2:rgba(214,155,245,.14)}
+:root[data-theme="light"][data-sky="blossom"]{--wash-1:rgba(216,27,96,.12);--wash-2:rgba(147,84,201,.13)}
+:root[data-sky="ocean"]{--wash-1:rgba(90,166,236,.14);--wash-2:rgba(111,224,184,.10)}
+:root[data-theme="light"][data-sky="ocean"]{--wash-1:rgba(59,130,200,.16);--wash-2:rgba(11,123,98,.12)}
+
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;padding:0}
 body{
@@ -428,6 +438,12 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ac)}
 #toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(86px + env(safe-area-inset-bottom));z-index:1100;background:var(--raised);border:1px solid var(--ac-25);color:var(--text);padding:11px 18px;border-radius:999px;font-size:14px;font-weight:500;opacity:0;pointer-events:none;transition:opacity .25s;max-width:88vw;text-align:center}
 #toast.on{opacity:1}
 .confetti{position:fixed;pointer-events:none;z-index:900;width:8px;height:8px;border-radius:2px;animation:fall 1.5s ease-out forwards}
+.confetti.glyph{background:none;width:auto;height:auto;font-size:15px;line-height:1}
+.glow{position:fixed;inset:0;z-index:900;pointer-events:none;
+  background:radial-gradient(60% 45% at 50% 70%, var(--ac-25), transparent 70%);
+  animation:glowfade 1.4s ease-out forwards}
+@keyframes glowfade{0%{opacity:0}25%{opacity:1}100%{opacity:0}}
+.badges.pinned .bdg{transform:scale(1.06)}
 @keyframes fall{to{transform:translateY(-150px) rotate(220deg);opacity:0}}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
 </style>
@@ -967,9 +983,31 @@ const ACCENTS = [
   {id:'sky',    nm:'Sky',     c:'#8fc9f5'},
   {id:'mint',   nm:'Mint',    c:'#7fe3c0'}
 ];
-const AVATARS = ['🌸','🦄','🦋','🐉','🌙','🎧','🚀','🔭','⭐','🌺','🐬','🎨'];
+const AVATARS = ['🌸','🦄','🦋','🐉','🌙','🎧','🚀','🔭','⭐','🌺','🐬','🎨',
+                 '🦦','🌈','🍓','🐚','🧁','✨'];
+/* Skies: which set of canvas washes the app wears. CSS owns the colours
+   (see [data-sky=…]); this list only names the choices. */
+const SKIES = [
+  {id:'starfield', nm:'Starfield'},
+  {id:'aurora',    nm:'Aurora'},
+  {id:'blossom',   nm:'Blossom Drift'},
+  {id:'ocean',     nm:'Deep Ocean'}
+];
+/* Celebration styles. Same triggers, same rules — only the look changes.
+   Opting down to quiet should cost nothing. */
+const FX_STYLES = [
+  {id:'confetti', ic:'🎊', nm:'Confetti'},
+  {id:'stars',    ic:'✦',  nm:'Stars'},
+  {id:'petals',   ic:'🌸', nm:'Petals'},
+  {id:'bubbles',  ic:'○',  nm:'Bubbles'},
+  {id:'quiet',    ic:'◐',  nm:'Quiet glow'}
+];
+/* Curated per-subject icon choices — enough personality to feel hers, few
+   enough that the schedule stays scannable. */
+const ICON_CHOICES = ['🧮','📐','📖','📚','✏️','🧪','🔬','🌋','🗺️','🏛️','⚙️','🤖','💻','🎨','🖌️','🎭','🎪','🌟'];
 const DEFAULT_PREFS = { accent:'blossom', avatar:'✦', nickname:'', motto:'',
-  pomodoro:25, brk:5, goals:{}, subjectColors:{}, theme:'auto', companion:null };
+  pomodoro:25, brk:5, goals:{}, subjectColors:{}, theme:'auto', companion:null,
+  sky:'starfield', fx:'confetti', subjectIcons:{}, pins:[], mline:'' };
 
 function prefs(){ return { ...DEFAULT_PREFS, ...(DATA.records['prefs']||{}) }; }
 function setPref(k,v){
@@ -986,6 +1024,12 @@ function applyTheme(){
   const mode = p.theme || 'auto';
   const resolved = mode==='auto' ? (prefersLight() ? 'light' : 'dark') : mode;
   document.documentElement.dataset.theme = resolved;
+  document.documentElement.dataset.sky = SKIES.some(s=>s.id===p.sky) ? p.sky : 'starfield';
+  /* Her subject icons ride the subject objects so every render site —
+     schedule, tiles, plan, parent view — picks them up without knowing the
+     feature exists. baseIcon keeps the default recoverable. */
+  SUBJECTS.forEach(c=>{ if(c.baseIcon===undefined) c.baseIcon=c.icon;
+    c.icon = (p.subjectIcons||{})[c.id] || c.baseIcon; });
   const m = document.querySelector('meta[name=theme-color]');
   if(m) m.setAttribute('content', resolved==='light' ? '#faf5fc' : '#120a20');
 }
@@ -1046,27 +1090,34 @@ const COMPANION_VOICES = {
       'That was you being patient and brave at the same time. It worked.',
       'All those little practice days just added up into this. I knew they would.',
       'You did the hard part first, and the score followed you. It usually does.',
-      'I am so glad I got to watch that round. You earned every bit of it.'
+      'I am so glad I got to watch that round. You earned every bit of it.',
+      'That was wonderful to watch, {name}.'
     ],
     steady:[
       'Some questions swam off — they always circle back, and you will be readier. I will be right here.',
       'You kept going even when it got tricky. That is the part that matters most to me.',
       'The missed ones are safe in your Growth Zone. We will meet them again together.',
       'Today you found out exactly what needs practice. That is a gift, even when it does not feel like one.',
-      'A hard round is still a good swim. You showed up, and that is the whole game.'
+      'A hard round is still a good swim. You showed up, and that is the whole game.',
+      'Still here, {name}, and still glad about how you kept trying.'
     ],
     idle:[
       'Nothing is due today. Swim wherever you like — I will keep you company.',
       'A clear, calm day. Ten curious minutes would make it even nicer.',
       'Nothing waiting, nothing chasing. Days like this are for exploring.',
-      'All clear. Pick whatever looks fun — it counts double when you chose it yourself.'
+      'All clear. Pick whatever looks fun — it counts double when you chose it yourself.',
+      'The water is calm today, {name}. Swim anywhere you like.'
     ]
   }
 };
 function companionPool(kind, comp){
   const v = comp && COMPANION_VOICES[comp.id];
-  if(v && v[kind]) return v[kind];
-  return { cheer:COMPANION_CHEER, steady:COMPANION_STEADY, idle:COMPANION_IDLE }[kind];
+  const raw = (v && v[kind]) || { cheer:COMPANION_CHEER, steady:COMPANION_STEADY, idle:COMPANION_IDLE }[kind];
+  /* {name} lines exist only when a first name is in the roster; without one
+     they drop out of the pool rather than render a blank. */
+  const name = (roster().studentName||'').trim().split(' ')[0];
+  return raw.filter(l => name || !l.includes('{name}'))
+            .map(l => l.split('{name}').join(name));
 }
 function companionOf(){
   const c = prefs().companion;
@@ -1313,15 +1364,24 @@ function showModal({title,message,confirmText='OK',cancelText=null,onConfirm=nul
   document.body.appendChild(ov); return ov;
 }
 function celebrate(){
+  const fx = prefs().fx || 'confetti';
+  if(navigator.vibrate) navigator.vibrate(fx==='quiet' ? 12 : 18);
+  if(fx==='quiet'){
+    const gl = el('div','glow');
+    document.body.appendChild(gl); setTimeout(()=>gl.remove(),1400);
+    return;
+  }
   const ac = getComputedStyle(document.documentElement).getPropertyValue('--ac').trim();
+  const glyphs = { stars:['✦','✧','★','✶'], petals:['❀','✿','🌸','❀'], bubbles:['○','◦','○','∘'] }[fx];
   const cols=[ac,'#f2c48a','#ffffff',ac];
   for(let i=0;i<26;i++){
-    const c=el('div','confetti');
+    const c=el('div','confetti'+(glyphs?' glyph':''));
     c.style.left=Math.random()*100+'vw'; c.style.top=(58+Math.random()*28)+'vh';
-    c.style.background=cols[i%cols.length]; c.style.animationDelay=(Math.random()*.4)+'s';
+    if(glyphs){ c.textContent=glyphs[i%glyphs.length]; c.style.color=cols[i%cols.length]; }
+    else c.style.background=cols[i%cols.length];
+    c.style.animationDelay=(Math.random()*.4)+'s';
     document.body.appendChild(c); setTimeout(()=>c.remove(),2000);
   }
-  if(navigator.vibrate) navigator.vibrate(18);
 }
 function shuffle(a){ const b=a.slice();
   for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];} return b; }
@@ -1581,7 +1641,11 @@ SCREENS.study = function(root){
     } else {
       const seed = date.split('-').reduce((a,b)=>a+ +b, 0);
       const idle = companionPool('idle', comp);
-      line = idle[seed % idle.length];
+      /* Her own line (Settings) joins the idle rotation — her words, her voice,
+         so the curation rules do not apply to it. */
+      const mine = (prefs().mline||'').trim();
+      const pool = mine ? idle.concat(mine) : idle;
+      line = pool[seed % pool.length];
     }
     const perch = companionSays(line, comp);
     if(dest){ perch.classList.add('tap'); perch.addEventListener('click',dest); }
@@ -2611,6 +2675,18 @@ SCREENS.setup = function(root){
   });
   pc.appendChild(sw);
 
+  pc.appendChild(el('label',null,'Sky'));
+  const skyRow = el('div','btn-row');
+  skyRow.style.flexWrap='wrap';
+  SKIES.forEach(s2=>{
+    const b = el('button','btn '+(((p.sky||'starfield')===s2.id)?'btn-primary':'btn-secondary'), s2.nm);
+    b.style.flex='1 1 40%';
+    b.addEventListener('click',()=>{ setPref('sky',s2.id); render(); toast(s2.nm); });
+    skyRow.appendChild(b);
+  });
+  pc.appendChild(skyRow);
+  pc.appendChild(el('div','hintline','The colour weather behind everything. Words and cards stay just as easy to read.'));
+
   pc.appendChild(el('label',null,'Your mark'));
   const ep = el('div','emoji-pick');
   AVATARS.forEach(a=>{
@@ -2645,7 +2721,25 @@ SCREENS.setup = function(root){
     cn.addEventListener('change',()=>{ setPref('companion',{...prefs().companion, nm:cn.value.trim()}); render(); });
     pc.appendChild(cn);
     pc.appendChild(el('div','hintline','They keep you company on Study and turn up when you finish a quiz.'));
+
+    pc.appendChild(el('label',null,'A line of yours for them to say'));
+    const ml = el('input'); ml.type='text'; ml.maxLength=90;
+    ml.placeholder='Optional — your words, said back to you now and then';
+    ml.value = p.mline || '';
+    ml.addEventListener('change',()=>{ setPref('mline', ml.value.trim()); render(); toast('Saved'); });
+    pc.appendChild(ml);
   }
+
+  pc.appendChild(el('label',null,'Celebration style'));
+  const fxRow = el('div','emoji-pick');
+  FX_STYLES.forEach(f=>{
+    const b = el('button',(p.fx||'confetti')===f.id?'on':'', f.ic);
+    b.setAttribute('aria-label',f.nm); b.title=f.nm;
+    b.addEventListener('click',()=>{ setPref('fx',f.id); render(); toast(f.nm); celebrate(); });
+    fxRow.appendChild(b);
+  });
+  pc.appendChild(fxRow);
+  pc.appendChild(el('div','hintline','How a finished quiz celebrates. Tap one to preview it.'));
 
   pc.appendChild(el('label',null,'What should this app call itself?'));
   const nn = el('input'); nn.type='text'; nn.maxLength=22;
@@ -3208,6 +3302,25 @@ function pickSubjectColour(cls){
         grid.appendChild(b);
       });
       box.appendChild(grid);
+
+      /* Icon choice rides the same modal. First option is the default;
+         picking it clears the override rather than storing a copy. */
+      box.appendChild(el('label',null,'Icon'));
+      const base = cls.baseIcon || cls.icon;
+      const ig = el('div','emoji-pick');
+      [base, ...ICON_CHOICES.filter(e=>e!==base)].forEach(e=>{
+        const b = el('button', e===cls.icon?'on':'', e);
+        b.addEventListener('click',()=>{
+          const map = {...(prefs().subjectIcons||{})};
+          if(e===base) delete map[cls.id]; else map[cls.id]=e;
+          setPref('subjectIcons', map);
+          [...ig.children].forEach(x=>x.classList.remove('on'));
+          b.classList.add('on');
+          toast(e+'  saved');
+        });
+        ig.appendChild(b);
+      });
+      box.appendChild(ig);
     },
     onConfirm:()=>render()
   });
@@ -3294,17 +3407,53 @@ SCREENS.stars = function(root){
     r.appendChild(el('span','k',k)); r.appendChild(el('span','v',String(v))); c.appendChild(r); });
   root.appendChild(c);
 
+  /* Pinned badges: up to three earned ones she chooses to feature. Autonomy
+     over how achievements display — no new mechanics, just curation. */
+  const have = earned();
+  const pins = (prefs().pins||[]).filter(id=>have.has(id));
+  if(pins.length){
+    root.appendChild(divider('Pinned'));
+    const pg = el('div','badges pinned');
+    pins.forEach(id=>{
+      const b = BADGES.find(x=>x.id===id); if(!b) return;
+      const d = el('div','bdg got');
+      d.appendChild(el('span','ic',b.ic)); d.appendChild(el('span','nm',b.nm));
+      d.addEventListener('click',()=>badgeModal(b, have));
+      pg.appendChild(d);
+    });
+    root.appendChild(pg);
+  }
+
   root.appendChild(divider('Badges'));
-  const have = earned(), g = el('div','badges');
+  const g = el('div','badges');
   BADGES.forEach(b=>{
     const d = el('div','bdg'+(have.has(b.id)?' got':''));
     d.appendChild(el('span','ic',b.ic)); d.appendChild(el('span','nm',b.nm));
-    d.addEventListener('click',()=>showModal({title:`${b.ic} ${b.nm}`,
-      message:b.desc+(have.has(b.id)?'\n\nEarned ✓':'\n\nNot yet.')}));
+    d.addEventListener('click',()=>badgeModal(b, have));
     g.appendChild(d);
   });
   root.appendChild(g);
 };
+
+function badgeModal(b, have){
+  const got = have.has(b.id);
+  showModal({
+    title:`${b.ic} ${b.nm}`,
+    message: b.desc + (got?'\n\nEarned ✓':'\n\nNot yet.'),
+    build: got ? (box, close)=>{
+      const pins = prefs().pins||[];
+      const on = pins.includes(b.id);
+      const pb = el('button','btn btn-secondary', on?'Unpin from the top':'Pin to the top');
+      pb.style.marginTop='10px';
+      pb.addEventListener('click',()=>{
+        if(!on && pins.length>=3){ toast('Three pins is the limit — unpin one first'); return; }
+        setPref('pins', on ? pins.filter(x=>x!==b.id) : pins.concat(b.id));
+        close(); render(); toast(on?'Unpinned':'Pinned');
+      });
+      box.appendChild(pb);
+    } : null
+  });
+}
 
 /* ---------- Provenance ----------
    Every generated block says where it came from, and we render that rather than
