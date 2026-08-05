@@ -116,9 +116,11 @@ from the model. Deliberate rules, do not relax:
 - **No care-and-feeding mechanics, no stored counters.** It owns no records
   and no XP.
 
-Ad Astra deliberately does **not** get one — a mascot is high-risk
-condescension at 13. If she asks for one, that's her call; don't port it as
-"parity" (this is identity, not engine).
+Ad Astra started without one — a mascot is high-risk condescension at 13 —
+but she asked (2026-08), which was the agreed bar, so it now has its own:
+different roster (night-sky/ocean, no unicorns), drier copy, same rules.
+The two are still **not** parity items: rosters and line pools are identity
+and are meant to diverge; only the rules travel.
 
 ---
 
