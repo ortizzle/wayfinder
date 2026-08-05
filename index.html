@@ -107,6 +107,11 @@ header{padding:22px 0 14px;display:flex;align-items:center;justify-content:space
 .bubble .who{font-size:10.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ac-fg);margin-bottom:3px}
 .modal-box .perch{margin:14px 0 0;text-align:left}
 
+.step{display:flex;gap:10px;align-items:flex-start;margin:9px 0}
+.step .n{flex:0 0 22px;height:22px;border-radius:50%;background:var(--ac-14);color:var(--ac-fg);
+  font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:1px}
+.step p{margin:0;font-size:14px;line-height:1.5}
+
 .card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--r);padding:20px;margin-bottom:14px}
 .card.ac{border-color:var(--ac-25);background:linear-gradient(165deg,var(--ac-8),var(--surface) 60%)}
 .card.quiet{background:transparent;border-style:dashed}
@@ -1029,6 +1034,40 @@ const COMPANION_IDLE = [    // nothing due, nothing planned
   'Quiet day. Anything you start now, future-you gets the credit for.',
   'Nothing is chasing you today. That is what being ahead feels like.'
 ];
+/* Species voices. A species listed here speaks with its own pools; everyone
+   else uses the defaults above. The dolphin is hers: bright, warm and openly
+   affectionate — but the rules still hold. Warmth lands on the PROCESS (she
+   showed up, she kept going), never on traits, and never with exclamation
+   marks. */
+const COMPANION_VOICES = {
+  dolphin:{
+    cheer:[
+      'You stayed with every question, and it showed. Watching you work is my favorite part of the day.',
+      'That was you being patient and brave at the same time. It worked.',
+      'All those little practice days just added up into this. I knew they would.',
+      'You did the hard part first, and the score followed you. It usually does.',
+      'I am so glad I got to watch that round. You earned every bit of it.'
+    ],
+    steady:[
+      'Some questions swam off — they always circle back, and you will be readier. I will be right here.',
+      'You kept going even when it got tricky. That is the part that matters most to me.',
+      'The missed ones are safe in your Growth Zone. We will meet them again together.',
+      'Today you found out exactly what needs practice. That is a gift, even when it does not feel like one.',
+      'A hard round is still a good swim. You showed up, and that is the whole game.'
+    ],
+    idle:[
+      'Nothing is due today. Swim wherever you like — I will keep you company.',
+      'A clear, calm day. Ten curious minutes would make it even nicer.',
+      'Nothing waiting, nothing chasing. Days like this are for exploring.',
+      'All clear. Pick whatever looks fun — it counts double when you chose it yourself.'
+    ]
+  }
+};
+function companionPool(kind, comp){
+  const v = comp && COMPANION_VOICES[comp.id];
+  if(v && v[kind]) return v[kind];
+  return { cheer:COMPANION_CHEER, steady:COMPANION_STEADY, idle:COMPANION_IDLE }[kind];
+}
 function companionOf(){
   const c = prefs().companion;
   if(!c || !c.sp) return null;
@@ -1160,7 +1199,7 @@ function missAsQuestion(m){
   /* The id is rewritten to the miss id: a review round gathers questions from
      many units, whose own ids restart at 1 and would otherwise collide. */
   if(Array.isArray(m.opts) && m.opts.length === 4 && m.ans != null)
-    return { id:m.id, lv:1, q:m.q, opts:m.opts, ans:m.ans, hint:'', ex:{ main:m.why||'' }, _missId:m.id };
+    return { id:m.id, lv:1, q:m.q, opts:m.opts, ans:m.ans, hint:'', ex:{ main:m.why||'' }, steps:m.steps||null, _missId:m.id };
   const u = DATA.records[m.unitId];
   const q = u && !u.deleted && u.questions && u.questions.find(x => x.id === m.qid);
   return q ? { ...q, id:m.id, _missId:m.id } : null;
@@ -1541,7 +1580,8 @@ SCREENS.study = function(root){
       dest = ()=>go('unit',{classId:topPlan.classId});
     } else {
       const seed = date.split('-').reduce((a,b)=>a+ +b, 0);
-      line = COMPANION_IDLE[seed % COMPANION_IDLE.length];
+      const idle = companionPool('idle', comp);
+      line = idle[seed % idle.length];
     }
     const perch = companionSays(line, comp);
     if(dest){ perch.classList.add('tap'); perch.addEventListener('click',dest); }
@@ -1896,7 +1936,7 @@ function timeUp(u){
     const was = DATA.records['miss_'+u.id+'_'+q.id];
     put(scheduleMiss({ id:'miss_'+u.id+'_'+q.id, type:'miss', unitId:u.id, classId:ctx.classId,
           qid:q.id, q:q.q, opts:q.opts, ans:q.ans, right:q.opts[q.ans], chose:'(ran out of time)',
-          why:q.ex?.main||'', on:(was&&!was.deleted?was.on:AZ.today()) }, false));
+          why:q.ex?.main||'', steps:q.steps||null, on:(was&&!was.deleted?was.on:AZ.today()) }, false));
   }
   if(navigator.vibrate) navigator.vibrate(60);
   render();
@@ -2024,10 +2064,33 @@ SCREENS.quiz = function(root){
     if(q.ex?.tip){ ex.appendChild(el('div','lbl','Test tip')); ex.appendChild(el('p',null,q.ex.tip)); }
     if(q.ex?.mnemonic){ ex.appendChild(el('div','lbl','Memory hook')); ex.appendChild(el('p',null,q.ex.mnemonic)); }
     root.appendChild(ex);
+    /* Wrong answer + a question that carries steps → offer the full worked
+       path, one step per tap. After the answer, so it teaches rather than
+       leaks; free, because it is remediation, not a hint economy. */
+    if(!right && Array.isArray(q.steps) && q.steps.length){
+      const shown = quizState.stepsShown || 0;
+      if(shown > 0){
+        const sc = el('div','card');
+        sc.appendChild(el('div','eyebrow','Step by step'));
+        q.steps.slice(0, shown).forEach((s,i)=>{
+          const row = el('div','step');
+          row.appendChild(el('span','n', String(i+1)));
+          row.appendChild(el('p',null,s));
+          sc.appendChild(row);
+        });
+        root.appendChild(sc);
+      }
+      if(shown < q.steps.length){
+        const wb = el('button','btn btn-secondary',
+          shown===0 ? '🧭  Walk me through it' : `Next step  (${shown} of ${q.steps.length})`);
+        wb.addEventListener('click',()=>{ quizState.stepsShown = shown+1; render(); });
+        root.appendChild(wb);
+      }
+    }
     const n = el('button','btn btn-primary', quizState.i===u.questions.length-1?'See results →':'Next question →');
     n.addEventListener('click',()=>{
       if(quizState.i<u.questions.length-1){
-        quizState.i++; quizState.answered=null; quizState.hintUsed=false;
+        quizState.i++; quizState.answered=null; quizState.hintUsed=false; quizState.stepsShown=0;
         render(); startQuestionTimer(u);
       } else finishQuiz(u);
     });
@@ -2075,7 +2138,7 @@ function answer(u,q,idx){
       const was = DATA.records['miss_'+u.id+'_'+q.id];
       put(scheduleMiss({ id:'miss_'+u.id+'_'+q.id, type:'miss', unitId:u.id, classId:ctx.classId,
             qid:q.id, q:q.q, opts:q.opts, ans:q.ans, right:q.opts[q.ans], chose,
-            why:q.ex?.main||'', on:(was&&!was.deleted?was.on:AZ.today()) }, false));
+            why:q.ex?.main||'', steps:q.steps||null, on:(was&&!was.deleted?was.on:AZ.today()) }, false));
     }
   }
   render();
@@ -2156,7 +2219,7 @@ function finishQuiz(u){
     build:(box)=>{
       const comp = companionOf();
       if(!comp) return;
-      const pool = pct>=80 ? COMPANION_CHEER : COMPANION_STEADY;
+      const pool = companionPool(pct>=80 ? 'cheer' : 'steady', comp);
       box.appendChild(companionSays(pool[logs().length % pool.length], comp));
     },
     onConfirm:()=>go('postmood',{logId:log.id, classId:clsId, missed, back: wasReview?'growth':null}) });
@@ -3511,9 +3574,10 @@ const UNIT_SCHEMA = {
       properties:{ lv:{type:'integer',enum:[1,2,3]}, q:{type:'string'},
         opts:{type:'array',items:{type:'string'}}, ans:{type:'integer',enum:[0,1,2,3]},
         hint:{type:'string'}, from:PROV,
+        steps:{type:'array',items:{type:'string'}},
         ex:{type:'object',properties:{main:{type:'string'},tip:{type:'string'},mnemonic:{type:'string'}},
             required:['main','tip'],additionalProperties:false}},
-      required:['lv','q','opts','ans','hint','ex','from'],additionalProperties:false}}
+      required:['lv','q','opts','ans','hint','ex','steps','from'],additionalProperties:false}}
   },
   required:['title','summary','why','objectives','parentNote','nextUp','cards','questions'],
   additionalProperties:false
@@ -3540,6 +3604,7 @@ async function generateUnit(classId, notes, shots, srcName){
     `nextUp — one short line to her about what to do first, with an honest estimate in minutes for the flashcards and quiz together. Do not round to a comfortable number; if it is 23 minutes, say 23.`,
 
     `Then the study material: 15-25 flashcards and 18-24 quiz questions, 6-8 each at level 1 recall, level 2 application, level 3 analysis. Every question has exactly 4 options and one correct answer.`,
+    `Every question carries "steps": 3-6 short strings that walk from the question to the answer, revealed one at a time after a wrong answer. Each step is ONE concrete move — read off a value, set up the arithmetic, apply one rule, compute one result — written so she could do it herself on paper. The last step states the answer. No step may skip work ("simplify" alone is not a step; show what it becomes).`,
     `Anchor everything to the supplied material. Do not invent facts it does not support. If the material is thin, write fewer cards rather than padding with things it never said.`,
     `Tone: direct and a little dry. Never condescending, never exclamation marks, never "great job". Card hints are memory hooks or mnemonics, never restatements of the definition. Explanations say why the right answer is right, not just what it is.`,
 

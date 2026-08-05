@@ -122,6 +122,13 @@ different roster (night-sky/ocean, no unicorns), drier copy, same rules.
 The two are still **not** parity items: rosters and line pools are identity
 and are meant to diverge; only the rules travel.
 
+**Species voices** (`COMPANION_VOICES`): a species listed there overrides the
+default pools; everyone else falls back. The dolphin's voice is hers — bright,
+warm, openly affectionate. Warmth lands on the PROCESS (she showed up, she
+kept going), never on traits, and the hard rules hold: no exclamation marks,
+no baby talk, never sad. Ad Astra's dragon is the sibling equivalent — dry and
+a shade dark — and the two must not converge.
+
 ---
 
 ## Drive
