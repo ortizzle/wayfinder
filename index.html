@@ -555,7 +555,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v24 · reading companion';
+const APP_VERSION = 'v25 · the library';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1207,6 +1207,40 @@ const Sync = {
     return DATA;
   }
 };
+const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.json'];
+
+/* ---------- The unit library ----------
+   Unit files I publish ship inside the app itself (content/ on the same
+   GitHub Pages origin), so fetching them needs no account, no backend and
+   no file juggling. Merging goes through Sync.merge, so a discarded unit's
+   tombstone always beats the library copy — nothing resurrects — and new
+   units arrive as drafts for the review queue, never straight to her. */
+async function fetchLibrary(btn){
+  if(sandboxOn()){ toast('Sandbox is on — nothing is saved'); return; }
+  const label = btn.textContent; btn.disabled = true; btn.textContent = 'Checking…';
+  let added = 0, reachable = false;
+  for(const path of CONTENT_LIBRARY){
+    try{
+      const res = await fetch(path, {cache:'no-store'});
+      if(!res.ok) continue;
+      reachable = true;
+      const inc = migrate(await res.json());
+      const fresh = Object.keys(inc.records||{}).filter(id=>{
+        const cur = DATA.records[id];
+        return !cur || (!!cur.deleted && (inc.records[id].updatedAt||0) > (cur.updatedAt||0));
+      });
+      DATA = Sync.merge(DATA, inc);
+      fresh.forEach(id=>{ const r = DATA.records[id]; if(r && !r.deleted) added++; });
+    }catch(e){}
+  }
+  saveLocal(); syncSoon();
+  btn.disabled = false; btn.textContent = label;
+  toast(!reachable ? 'Could not reach the library — try again online'
+    : added ? `${added} new unit${added===1?'':'s'} waiting in the review queue`
+    : 'Library already in sync — nothing new');
+  render();
+}
+
 let syncTimer=null;
 function syncSoon(){ if(sandboxOn() || !Sync.configured()) return;
   clearTimeout(syncTimer); syncTimer=setTimeout(()=>Sync.save().catch(()=>{}),2500); }
@@ -3563,6 +3597,11 @@ SCREENS.parent = function(root){
   mr.addEventListener('click',()=>go('review'));
   mrow.appendChild(mr);
   mat.appendChild(mrow);
+  const libBtn = el('button','btn btn-ghost','📥  Check the library for new units');
+  libBtn.style.marginTop='8px';
+  libBtn.addEventListener('click',()=>fetchLibrary(libBtn));
+  mat.appendChild(libBtn);
+  mat.appendChild(el('div','hintline','Pulls any new study units published with the app. They land in this review queue, never straight to her.'));
   root.appendChild(mat);
 
   /* Weekly goals */
@@ -3653,14 +3692,14 @@ SCREENS.parent = function(root){
   const schoolIn = el('input'); schoolIn.type='text'; schoolIn.placeholder='School'; schoolIn.value=r.school;
   schoolIn.addEventListener('change',()=>{ setRoster('school', schoolIn.value.trim()); toast('Saved'); render(); });
   rost.appendChild(el('label',null,'School')); rost.appendChild(schoolIn);
-  const bkIn = el('input'); bkIn.type='url'; bkIn.placeholder='https://drive.google.com/drive/folders/\u2026'; bkIn.value=r.backupUrl;
+  const bkIn = el('input'); bkIn.type='url'; bkIn.placeholder='https://drive.google.com/drive/folders/…'; bkIn.value=r.backupUrl;
   bkIn.addEventListener('change',()=>{ setRoster('backupUrl', bkIn.value.trim()); toast('Saved'); render(); });
   rost.appendChild(el('label',null,'Backup folder link')); rost.appendChild(bkIn);
   rost.appendChild(el('label',null,'Teachers'));
   STUDY_CLASSES.forEach(c=>{
     const row = el('div','row');
     row.appendChild(el('span','k',`${c.icon} ${c.short}`));
-    const i = el('input'); i.type='text'; i.placeholder='\u2014'; i.value = teacherOf(c.id);
+    const i = el('input'); i.type='text'; i.placeholder='—'; i.value = teacherOf(c.id);
     i.style.width='58%'; i.style.minHeight='40px'; i.style.fontSize='14px';
     i.addEventListener('change',()=>{
       const t = {...roster().teachers}; const v = i.value.trim();
