@@ -555,7 +555,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v25 · the library';
+const APP_VERSION = 'v26 · the bridge';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3684,7 +3684,7 @@ SCREENS.parent = function(root){
      carried to every device by the private Gist. */
   root.appendChild(divider('Class details'));
   const rost = el('div','card');
-  rost.appendChild(el('p',null,'Her name, school and teachers are kept out of the app\u2019s public code. Add them once here and they sync to every device.'));
+  rost.appendChild(el('p',null,'Her name, school and teachers are kept out of the app’s public code. Add them once here and they sync to every device.'));
   const r = roster();
   const nameIn = el('input'); nameIn.type='text'; nameIn.placeholder='First name'; nameIn.value=r.studentName;
   nameIn.addEventListener('change',()=>{ setRoster('studentName', nameIn.value.trim()); toast('Saved'); render(); });
@@ -3834,6 +3834,13 @@ SCREENS.parent = function(root){
   });
   fr.appendChild(frBtn);
   root.appendChild(fr);
+
+  /* Parent-side bridge to the sister app — the girls' sides stay unlinked
+     on purpose (identity, and no reason to wander). Grown-up areas only. */
+  const sib = el('a','btn btn-ghost','🧭  Ad Astra’s grown-up tools →');
+  sib.href = 'https://ortizzle.github.io/ad-astra/'; sib.target = '_blank'; sib.rel = 'noopener';
+  sib.style.textDecoration = 'none';
+  root.appendChild(sib);
 
   if(Store.get('parent_trust',false)){
     const tr = el('button','btn btn-ghost','Require the passcode again on this device');
