@@ -1,0 +1,179 @@
+{
+  "v": 3,
+  "records": {
+    "unit-m11": {
+      "id": "unit-m11",
+      "type": "unit",
+      "updatedAt": 1785974400000,
+      "classId": "math",
+      "quarter": 1,
+      "status": "draft",
+      "title": "Lesson 1-1: Numbers to One Million",
+      "srcName": "1-1 Student Edition Practice.pdf",
+      "source": "enVision Math Topic 1 Lesson 1-1 (Drive)",
+      "summary": { "text": "From '1-1 Student Edition Practice' (enVision Math, Topic 1 Lesson 1-1): how to read and write numbers up to one million in three ways — standard form, expanded form, and number names — using place value, the three-place periods (ones, thousands, millions), and the comma rule that connects digits to words.", "from": "source" },
+      "why": { "text": "Every big idea this year stands on knowing what each digit is worth — comparing, rounding, and adding across places all start here. Reading 356,039 correctly is the difference between a number meaning something and being a pile of digits.", "from": "added" },
+      "objectives": [
+        { "text": "Name the place and the value of any digit in a number up to the millions.", "from": "source" },
+        { "text": "Write a number in expanded form and as a number name, and move between all three forms.", "from": "source" },
+        { "text": "Use periods and commas correctly, in digits and in words.", "from": "source" },
+        { "text": "Spot expanded forms that are secretly equal — and ones that are not.", "from": "added" },
+        { "text": "Add 100 or 1,000 to a number, including when a place rolls over.", "from": "added" }
+      ],
+      "parentNote": { "text": "Her first real study unit, built from the Lesson 1-1 practice pages in Drive. Every question uses fresh numbers so her actual workbook homework stays her own work. The two things most likely to trip her up, based on how this lesson is usually tested: zeros inside numbers (naming 406,019 without inventing a 'sixty') and the misconception the workbook itself pokes at — that a period is 'any 3 digits' rather than three place values counted from the right. The math syllabus says quizzes may be unannounced, so short frequent reviews fit this class better than one long cram; the app's review ladder does exactly that. Kept to 12 questions so a full quiz fits one sitting — this app runs quizzes straight through.", "from": "added" },
+      "nextUp": { "text": "Run the cards once, then take the quiz. The cards are quick.", "minutes": 17, "from": "added" },
+      "cards": [
+        { "id": "c0", "term": "Place value", "def": "**A digit's position tells you what it is worth.**\n• In 356,039 the 5 sits in the ten-thousands place, so it is worth 50,000.\n• Same digit, different position, completely different value.", "hint": "Position is the whole game — a 5 can be worth 5 or 500,000.", "from": "source" },
+        { "id": "c1", "term": "Period", "def": "**A group of exactly three place values, counted from the RIGHT.**\n• Ones period, then thousands period, then millions period.\n• Commas between periods: 356,039.", "hint": "Right to left, three at a time — never 'any 3 digits'.", "from": "source" },
+        { "id": "c2", "term": "Expanded form", "def": "**The number written as the sum of each digit's value.**\n• 356,039 = 300,000 + 50,000 + 6,000 + 30 + 9.\n• Zeros add nothing, so their places are skipped.", "hint": "Stretch the number out like an accordion.", "from": "source" },
+        { "id": "c3", "term": "Number name", "def": "**The number written in words, with a comma between periods.**\n• 356,039 → three hundred fifty-six thousand, thirty-nine.\n• Say the digits in a period, then name the period.", "hint": "Read each three-digit chunk, then say its period's name.", "from": "source" },
+        { "id": "c4", "term": "The place-value chart pattern", "def": "**Every period repeats the same three columns: hundreds, tens, ones.**\n• Hundred-thousands, ten-thousands, one-thousands — then it repeats again for millions.", "hint": "One pattern, copied over and over.", "from": "source" },
+        { "id": "c5", "term": "The comma rule", "def": "**Commas in the digits match commas in the words.**\n• One comma → the number reaches the thousands.\n• Two commas → it reaches the millions.", "hint": "Count commas to see how far the number climbs.", "from": "source" },
+        { "id": "c6", "term": "Zeros in number names", "def": "**Zeros hold their place but stay silent in words.**\n• 306,041 → three hundred six thousand, forty-one.\n• You never say 'zero' — the words simply skip it.", "hint": "Zeros are placeholders, not words.", "from": "source" },
+        { "id": "c7", "term": "Value of a digit", "def": "**Value = the digit × its place.**\n• The 8 in 84,209 is 8 × 10,000 = 80,000.\n• Naming the place is step one; multiplying is step two.", "hint": "Two steps: find the place, then multiply.", "from": "source" },
+        { "id": "c8", "term": "Adding 100 or 1,000", "def": "**Change only the hundreds or thousands place — unless it rolls over.**\n• 3,975 + 100 = 4,075: the 9 hundreds become 10, and the roll carries into the thousands.", "hint": "Watch the 9s — they roll like an odometer.", "from": "source" },
+        { "id": "c9", "term": "Equal expanded forms", "def": "**Different splits can make the same number.**\n• 21,125 = 20,000 + 1,000 + 100 + 25 = 21,000 + 125.\n• Add each split up to check — never judge by looks.", "hint": "Total them. Looks lie; sums do not.", "from": "source" },
+        { "id": "c10", "term": "Millions period", "def": "**The third period from the right: one, ten, and hundred millions.**\n• A number with two commas has digits in the millions period.", "hint": "Third stop on the ride to the left.", "from": "source" },
+        { "id": "c11", "term": "Comparing numbers by periods", "def": "**Two numbers are equal only when every digit sits in the same place.**\n• Same digits in a different order inside a period → different number.", "hint": "Digits AND positions have to match — both.", "from": "source" }
+      ],
+      "questions": [
+        { "id": "q0", "lv": 1, "from": "source",
+          "q": "Which digit is in the ten-thousands place in 528,417?",
+          "opts": ["5", "2", "8", "4"], "ans": 1,
+          "hint": "Start from the right and count places: ones, tens, hundreds…",
+          "steps": [
+            "Line the number up from the RIGHT: 7 is ones, 1 is tens, 4 is hundreds.",
+            "Keep going into the thousands period: 8 is one-thousands, 2 is ten-thousands, 5 is hundred-thousands.",
+            "The ten-thousands place holds the 2."
+          ],
+          "ex": { "main": "**2.** Counting from the right — ones, tens, hundreds, thousands, ten-thousands — lands on the 2. The 5 out front is hundred-thousands.", "tip": "Always count places from the right. Counting from the left only works when you already know how long the number is." } },
+        { "id": "q1", "lv": 1, "from": "source",
+          "q": "What is the expanded form of 43,208?",
+          "opts": ["40,000 + 3,000 + 20 + 8", "4,000 + 300 + 20 + 8", "43,000 + 2,000 + 80", "40,000 + 3,000 + 200 + 8"], "ans": 3,
+          "hint": "Give every non-zero digit its full value, then add.",
+          "steps": [
+            "Find each digit's value: 4 → 40,000, 3 → 3,000, 2 → 200, 0 → nothing, 8 → 8.",
+            "The zero in the tens place is skipped — it adds nothing.",
+            "Write the sum: 40,000 + 3,000 + 200 + 8. Adding it back gives 43,208. ✓"
+          ],
+          "ex": { "main": "**40,000 + 3,000 + 200 + 8.** The trap options shrink a digit's value or move the zero to the wrong spot — re-adding each option catches them instantly.", "tip": "Check expanded form by adding it back together. If it does not rebuild the original number, it is wrong." } },
+        { "id": "q2", "lv": 1, "from": "source",
+          "q": "Which is the number name for 65,032?",
+          "opts": ["sixty-five thousand, three hundred twenty", "six thousand five hundred thirty-two", "sixty-five thousand, thirty-two", "sixty-five hundred thirty-two"], "ans": 2,
+          "hint": "The comma splits it: 65 | 032. Say each side.",
+          "steps": [
+            "Split at the comma: 65 in the thousands period, 032 in the ones period.",
+            "Say the left chunk and name its period: 'sixty-five thousand'.",
+            "Say the right chunk, skipping the zero: 032 is 'thirty-two'.",
+            "Together: sixty-five thousand, thirty-two."
+          ],
+          "ex": { "main": "**Sixty-five thousand, thirty-two.** The zero in 032 is silent — saying 'three hundred twenty' invents a digit that is not there.", "tip": "The comma in the words sits exactly where the comma in the digits sits. Match them and half the wrong options disappear." } },
+        { "id": "q3", "lv": 1, "from": "source",
+          "q": "What is the VALUE of the 7 in 471,206?",
+          "opts": ["7", "700", "70,000", "700,000"], "ans": 2,
+          "hint": "Find the place first, then multiply the digit by it.",
+          "steps": [
+            "Count from the right: 6 ones, 0 tens, 2 hundreds, 1 one-thousands, 7 ten-thousands.",
+            "The 7 sits in the ten-thousands place.",
+            "Value = 7 × 10,000 = 70,000."
+          ],
+          "ex": { "main": "**70,000.** Place first, then multiply. The 7 LOOKS like it is near the front, but counting from the right is what actually decides.", "tip": "'Which place' and 'what value' are two different questions — the value always ends in the zeros of its place." } },
+        { "id": "q4", "lv": 1, "from": "source",
+          "q": "Which statement about periods is correct?",
+          "opts": ["Any three digits anywhere in a number make a period", "Every number has exactly two periods", "Periods only matter in numbers over a million", "A period is three place values counted from the right — ones, thousands, then millions"], "ans": 3,
+          "hint": "Where do the groups of three start counting from?",
+          "steps": [
+            "Periods are groups of three PLACE VALUES, not just any three digits.",
+            "They are counted from the right: the first three places are the ones period, the next three the thousands period, then the millions period.",
+            "That is why commas land where they do: 4,281,507 marks off the millions and thousands periods."
+          ],
+          "ex": { "main": "**Three place values counted from the right.** 'Any three digits' would let you group from the left, and then 421,50 would look like a period — the commas would land in nonsense places.", "tip": "This exact wording — 'any 3 digits' — is the mistake this lesson wants you to catch. Groups always anchor at the ones place." } },
+        { "id": "q5", "lv": 2, "from": "source",
+          "q": "What is one hundred more than 3,975?",
+          "opts": ["3,985", "4,975", "4,075", "3,075"], "ans": 2,
+          "hint": "9 hundreds plus 1 more hundred — what happens?",
+          "steps": [
+            "Adding 100 targets the hundreds place: 3,975 has 9 hundreds.",
+            "9 hundreds + 1 hundred = 10 hundreds — too many for one place, so it rolls over.",
+            "10 hundreds = 1 thousand: the thousands go from 3 to 4 and the hundreds reset to 0.",
+            "Result: 4,075."
+          ],
+          "ex": { "main": "**4,075.** The 9 in the hundreds place rolls like an odometer — the carry bumps the thousands. 3,985 is the ten-more trap; 4,975 adds a whole thousand.", "tip": "Whenever the place you are adding to holds a 9, expect a rollover into the next place." } },
+        { "id": "q6", "lv": 2, "from": "source",
+          "q": "Which is equal to 58,047?",
+          "opts": ["50,000 + 800 + 40 + 7", "50,000 + 8,000 + 40 + 7", "58,000 + 400 + 7", "5,000 + 8,000 + 40 + 7"], "ans": 1,
+          "hint": "Add each option back up. Only one rebuilds 58,047.",
+          "steps": [
+            "Break 58,047 by place: 5 → 50,000, 8 → 8,000, 0 hundreds, 4 → 40, 7 → 7.",
+            "So it must total 50,000 + 8,000 + 40 + 7.",
+            "Check the imposters: 50,000 + 800 + 40 + 7 = 50,847 and 58,000 + 400 + 7 = 58,407 — the 8 and the 4 slid into the wrong places."
+          ],
+          "ex": { "main": "**50,000 + 8,000 + 40 + 7.** Every wrong option keeps the right digits but pays them the wrong value — adding each one back up exposes it in seconds.", "tip": "On 'which is equal' questions, do the addition. Eyeballing digit patterns is exactly what the wrong answers are designed to fool." } },
+        { "id": "q7", "lv": 2, "from": "source",
+          "q": "Imani writes 50,308 in a place-value chart. Which places hold a digit that is NOT zero?",
+          "opts": ["ten-thousands, hundreds, ones", "ten-thousands, thousands, ones", "thousands, hundreds, tens", "hundred-thousands, hundreds, ones"], "ans": 0,
+          "hint": "Map every digit to its place first — all five of them.",
+          "steps": [
+            "Write each digit with its place, from the right: 8 ones, 0 tens, 3 hundreds, 0 one-thousands, 5 ten-thousands.",
+            "Now collect the places where the digit is not zero: ten-thousands (5), hundreds (3), ones (8).",
+            "The tens and one-thousands hold zeros — filled with placeholders, but not counted here."
+          ],
+          "ex": { "main": "**Ten-thousands, hundreds, and ones.** The zeros in 50,308 sit in the tens and thousands — they keep the other digits in position without holding value themselves.", "tip": "A five-digit number always starts at the ten-thousands. If your biggest place came out different, recount from the right." } },
+        { "id": "q8", "lv": 2, "from": "source",
+          "q": "A ballpark sold 7,932 tickets on Friday and reports 'about one thousand more' were sold on Saturday. Exactly one thousand more than 7,932 is:",
+          "opts": ["8,932", "7,942", "8,032", "17,932"], "ans": 0,
+          "hint": "Adding 1,000 touches which place?",
+          "steps": [
+            "Adding 1,000 targets the thousands place: 7,932 has 7 thousands.",
+            "7 + 1 = 8 thousands, and no other place changes.",
+            "Result: 8,932. (Adding 10,000 by mistake gives the 17,932 trap.)"
+          ],
+          "ex": { "main": "**8,932.** Only the thousands digit moves — everything right of it stays put because nothing rolled over.", "tip": "Adding 10, 100, or 1,000 changes exactly one digit unless that digit is a 9. Anything else changing means a slip." } },
+        { "id": "q9", "lv": 2, "from": "source",
+          "q": "Mateo wants a skateboard that costs $48. He saves $7 a week for 4 weeks, then $5 a week for 4 weeks. Does he have enough?",
+          "opts": ["Yes — he saves $50, with $2 extra", "No — he is $4 short", "No — he is $8 short", "Yes — he saves exactly $48"], "ans": 3,
+          "hint": "Work out each stretch of weeks separately, then add.",
+          "steps": [
+            "First stretch: $7 a week for 4 weeks is 7 × 4 = $28.",
+            "Second stretch: $5 a week for 4 weeks is 5 × 4 = $20.",
+            "Total saved: 28 + 20 = $48.",
+            "The skateboard costs $48, so he has exactly enough — nothing to spare."
+          ],
+          "ex": { "main": "**Exactly $48.** Two multiplications and one addition — the whole problem is keeping the two savings stretches separate before combining them.", "tip": "In two-part word problems, finish part one completely before touching part two. Mixing them mid-way is where the arithmetic slips in." } },
+        { "id": "q10", "lv": 3, "from": "source",
+          "q": "What is one thousand more than 599,200?",
+          "opts": ["599,300", "600,200", "590,200", "600,100"], "ans": 1,
+          "hint": "The thousands place holds a 9 — and so does the ten-thousands.",
+          "steps": [
+            "Adding 1,000 targets the thousands place: 599,200 has 9 one-thousands.",
+            "9 + 1 = 10 thousands, which rolls into the ten-thousands — but that place ALSO holds a 9.",
+            "The roll keeps going: 599 thousand becomes 600 thousand.",
+            "Everything below the thousands stays put: 600,200."
+          ],
+          "ex": { "main": "**600,200.** A double rollover — the two 9s fall like dominoes and the 5 becomes a 6. The ones period (200) never moves.", "tip": "Chained 9s all roll together, exactly like a car odometer passing 599,999. Read the answer back to make sure only the correct end changed." } },
+        { "id": "q11", "lv": 2, "from": "source",
+          "q": "Which is the number name for 406,019?",
+          "opts": ["four hundred six thousand, nineteen", "four hundred sixty thousand, nineteen", "four hundred six thousand, ninety", "forty-six thousand, nineteen"], "ans": 0,
+          "hint": "Two zeros are hiding in there. Neither one gets a word.",
+          "steps": [
+            "Split at the comma: 406 in the thousands period, 019 in the ones period.",
+            "Say the left chunk: 'four hundred six' — the zero tens are silent — then name the period: 'thousand'.",
+            "Say the right chunk: 019 is 'nineteen', with the zero hundreds silent too.",
+            "Together: four hundred six thousand, nineteen."
+          ],
+          "ex": { "main": "**Four hundred six thousand, nineteen.** Both zeros stay silent. 'Sixty' and 'ninety' are what happens when a zero drags its neighbor into the wrong place.", "tip": "Numbers with inside zeros are the most-missed naming questions. Write the two chunks separately before saying anything." } },
+        { "id": "q12", "lv": 3, "from": "source",
+          "q": "Ravi says 90,000 + 7,000 + 50 equals 97,050. Nika says it equals 9,750. Who is right?",
+          "opts": ["Ravi — the empty hundreds and ones places hold zeros: 97,050", "Nika — you write the digits 9, 7, 5 next to each other", "Both, depending on how you read it", "Neither — it equals 97,500"], "ans": 0,
+          "hint": "What fills the places that the sum skips over?",
+          "steps": [
+            "Give each addend its place: 90,000 fills the ten-thousands, 7,000 the thousands, 50 the tens.",
+            "The hundreds and the ones were never mentioned — so they hold ZEROS, not nothing.",
+            "Assemble by place: 9, 7, 0, 5, 0 → 97,050.",
+            "Nika's 9,750 squeezes the digits together and silently deletes two places — that changes the number's size entirely."
+          ],
+          "ex": { "main": "**Ravi — 97,050.** Skipped places still exist; zeros hold them open. Collapsing them shrinks a ninety-seven-thousand number into a nine-thousand one.", "tip": "When adding expanded form back up, write a slot for every place first, then fill. Empty slots get zeros, never deleted." } }
+      ]
+    }
+  }
+}

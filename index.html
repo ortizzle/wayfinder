@@ -256,6 +256,8 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .face .wm{position:absolute;font-size:130px;opacity:.045;pointer-events:none;user-select:none}
 .face .term{font-family:'Fraunces',serif;font-size:29px;line-height:1.2;position:relative}
 .face .def{font-size:16px;line-height:1.6;position:relative}
+/* Bullet lines in definitions and explanations are real lines. */
+.def,.explain p,.rev .q,.rev .why,.rev .o,.miss .q,.face .def,.o.flat{white-space:pre-line}
 .face .eq{font-family:ui-monospace,Menlo,monospace;background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:10px;padding:9px 13px;margin-top:12px;font-size:14.5px;position:relative}
 .face .hint{margin-top:14px;font-size:13px;color:var(--ac-fg);position:relative}
 .face .tap{position:absolute;bottom:15px;font-size:10.5px;color:var(--faint);letter-spacing:.12em;text-transform:uppercase}
@@ -1058,6 +1060,18 @@ function applyTheme(){
 window.matchMedia('(prefers-color-scheme: light)')
   .addEventListener('change',()=>{ if((prefs().theme||'auto')==='auto'){ applyTheme(); render(); } });
 
+/* ---------- Student hours ----------
+   From the four course syllabi (Aug 2026). Times only — teacher names live
+   in the roster record, never in this public file. Both core teachers pair
+   their subjects, so entries carry multiple subject ids. d is the weekday
+   (0 = Sunday). Schedule changes are published in ParentSquare; when one
+   lands, edit here and redeploy. */
+const STUDENT_HOURS = [
+  {ids:['english','writing'], d:1, label:'Mondays',   times:'7:00–7:30 am and 3:30–4:00 pm'},
+  {ids:['math','science'],    d:4, label:'Thursdays', times:'7:00–7:30 am or 3:30–4:00 pm'}
+];
+const hoursFor = id => STUDENT_HOURS.find(h=>h.ids.includes(id));
+
 /* ---------- The companion ----------
    A creature she picks and names in Settings. It is a messenger, not a second
    voice: everything it says comes from these curated pools or from
@@ -1605,6 +1619,16 @@ function openCalc(){
 function shuffle(a){ const b=a.slice();
   for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];} return b; }
 const uid = p => p+'_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8);
+/* **bold** in card definitions and explanations renders as real bold — never
+   innerHTML with content. Ported from Ad Astra (v22 parity, Chris-approved). */
+function richify(node, text){
+  String(text ?? '').split(/\*\*(.+?)\*\*/g).forEach((part, i)=>{
+    if(!part) return;
+    if(i % 2) node.appendChild(el('b', null, part));
+    else node.appendChild(document.createTextNode(part));
+  });
+  return node;
+}
 function divider(text){ const d=el('div','divider'); d.appendChild(el('span',null,text)); return d; }
 function headline(title,sub){ const d=el('div','card ac');
   d.appendChild(el('h2',null,title)); if(sub) d.appendChild(el('p',null,sub)); return d; }
@@ -1785,6 +1809,24 @@ SCREENS.today = function(root){
     root.appendChild(p);
   });
 
+  /* Student hours for the day being shown — the rotation decides her classes;
+     this shows where extra help is on offer. */
+  const sh = STUDENT_HOURS.filter(h=>h.d===AZ.weekday(shownDate));
+  if(sh.length){
+    const hc = el('div','card quiet');
+    hc.appendChild(el('div','eyebrow', schoolDay ? 'Student hours today' : `Student hours ${dayName}`));
+    sh.forEach(h=>{
+      const names = h.ids.map(id=>CLASS_BY_ID[id]?.short||id).join(' & ');
+      const r = el('div','row');
+      const kk = el('span','k',`🕖 ${names}`);
+      kk.appendChild(el('small',null,h.times));
+      r.appendChild(kk);
+      hc.appendChild(r);
+    });
+    hc.appendChild(el('div','hintline','Extra time with your teacher. Anyone can go — it is help, not trouble.'));
+    root.appendChild(hc);
+  }
+
   const ms = nextMilestone(date);
   if(ms){
     root.appendChild(divider('On the horizon'));
@@ -1952,6 +1994,8 @@ SCREENS.unit = function(root){
   head.appendChild(el('p',null, st.answered
     ? `${st.sessions} session${st.sessions>1?'s':''} · ${st.answered} questions · ${st.accuracy}% · ${st.minutes} min`
     : 'No study sessions logged yet.'));
+  const hrs = hoursFor(c.id);
+  if(hrs) head.appendChild(el('div','hintline',`🕖 Student hours: ${hrs.label} ${hrs.times} — extra help from your teacher, open to anyone.`));
   root.appendChild(head);
 
   const goal = prefs().goals[c.id];
@@ -2139,7 +2183,7 @@ SCREENS.cards = function(root){
   front.appendChild(el('div','term',card.term));
   front.appendChild(el('div','tap','Tap to reveal'));
   const back = paint(el('div','face back'), cls);
-  back.appendChild(el('div','def',card.def));
+  back.appendChild(richify(el('div','def'), card.def));
   if(card.eq) back.appendChild(el('div','eq',card.eq));
   if(card.hint) back.appendChild(el('div','hint','💡 '+card.hint));
   back.appendChild(el('div','tap','Tap to flip back'));
@@ -2347,7 +2391,7 @@ SCREENS.quiz = function(root){
     const ex = el('div','explain '+(right?'ok':'no'));
     ex.appendChild(el('div','lbl', right?'Correct'
       : quizState.answered===-1 ? 'Out of time' : 'Not quite'));
-    ex.appendChild(el('p',null, q.ex?.main || `The answer is ${q.opts[q.ans]}.`));
+    ex.appendChild(richify(el('p'), q.ex?.main || `The answer is ${q.opts[q.ans]}.`));
     if(q.ex?.tip){ ex.appendChild(el('div','lbl','Test tip')); ex.appendChild(el('p',null,q.ex.tip)); }
     if(q.ex?.mnemonic){ ex.appendChild(el('div','lbl','Memory hook')); ex.appendChild(el('p',null,q.ex.mnemonic)); }
     root.appendChild(ex);
@@ -3387,6 +3431,7 @@ SCREENS.parent = function(root){
     });
     row.appendChild(i); rost.appendChild(row);
   });
+  rost.appendChild(el('div','hintline','Parent hours, from the syllabi — call the office or email to book: Math & Science on Tuesdays 9:45–10:15 am or 3:00–3:30 pm · English & Writing on Wednesdays 11:15–11:45 am and Thursdays 2:00–2:30 pm.'));
   root.appendChild(rost);
 
   root.appendChild(divider('Shared sync'));
@@ -3923,7 +3968,7 @@ SCREENS.reviewunit = function(root){
     u.cards.forEach(card=>{
       const d = el('div','rev'+(cutC.has(card.id)?' cut':''));
       d.appendChild(el('div','q',card.term));
-      d.appendChild(el('div','o flat',card.def));
+      d.appendChild(richify(el('div','o flat'), card.def));
       if(card.hint) d.appendChild(el('div','why','Hint: '+card.hint));
       if(card.from){ const t=el('div'); t.style.marginTop='8px'; t.appendChild(provTag(card.from)); d.appendChild(t); }
       const x = el('button','cut-btn', cutC.has(card.id)?'↩':'✕');

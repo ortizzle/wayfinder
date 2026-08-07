@@ -53,6 +53,17 @@ always Math, English, Recess, Lunch, Science, History.
 **Anything reading the schedule must call `dayClasses(date)`** — never iterate a
 global class list, because there isn't one.
 
+### Student hours (v22)
+
+`STUDENT_HOURS` carries the teachers' help-hours from the four course syllabi
+(times only — teacher names live in `roster`, never in this public file). Both
+core teachers pair their subjects: English & Writing on Mondays, Math & Science
+on Thursdays, 7:00–7:30 am and 3:30–4:00 pm. Rendered in three places: a quiet
+card on Today for the day being shown, a hintline on the subject's unit screen,
+and the parents' own hours in the grown-up Class details card. The syllabi say
+schedule changes are published in ParentSquare — when one lands, edit the
+constant and redeploy.
+
 This `.ics` has **no teacher names** (Ad Astra's did), so no teacher shows unless
 one is entered in `roster`. The orientation unit drills rooms *and the rotation* instead, since
 knowing that Art is Tue & Fri is the genuinely useful week-one fact.
@@ -159,8 +170,14 @@ are meant to diverge; the engine is not.
 
 ### Pending parity: Ad Astra v20–v22 (2026-08, Chris-approved for BOTH apps)
 
-Ad Astra shipped a run of engine/UX features this app does not have yet. Port
-them before (or alongside) River's first real study unit:
+Ad Astra shipped a run of engine/UX features this app does not have yet.
+**Already ported here:** `steps[]` walkthroughs, `richify()` bold, `\n• `
+bullet rendering (white-space:pre-line), and everything from v23 on (sandbox,
+companion, personalization, sky map, calculator). **Still pending** from the
+list below: graphs (`renderGraph`), back-stack chips, quiz rounds of 5,
+Beat-the-clock calibration, `CHEER_*` pools, `APP_VERSION` display, and the
+v22 layout polish. Until quiz rounds land, keep hand-built units at ~12
+questions so a full quiz fits one sitting.
 
 - **v20** — `renderGraph()` worksheet-style SVG graphs on cards/questions/review/
   Growth Zone; `\n• ` bullet rendering (white-space:pre-line); grid-stacked
