@@ -88,6 +88,12 @@ body::before{
 h1,h2,h3,.display{font-family:'Fraunces',Georgia,serif;font-weight:500;letter-spacing:-.015em;margin:0;line-height:1.15}
 .eyebrow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ac-fg);font-weight:700;opacity:.85}
 
+#screen{--ac-8:color-mix(in srgb, var(--ac) 8%, transparent);
+  --ac-14:color-mix(in srgb, var(--ac) 14%, transparent);
+  --ac-25:color-mix(in srgb, var(--ac) 25%, transparent)}
+:root[data-theme="dark"] #screen{--ac-fg:var(--ac)}
+:root[data-theme="light"] #screen{--ac-fg:color-mix(in srgb, var(--ac) 40%, #2c0b3d)}
+
 header{padding:22px 0 14px;display:flex;align-items:center;justify-content:space-between;gap:14px}
 .brand{display:flex;align-items:center;gap:11px;min-width:0}
 .avatar{width:44px;height:44px;border-radius:14px;background:var(--ac-14);border:1px solid var(--ac-25);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
@@ -137,6 +143,9 @@ button{font-family:inherit;font-size:15px;cursor:pointer;border:none;background:
 .btn-primary{background:var(--ac);color:#2b0f3d}
 .btn-secondary{background:var(--raised);color:var(--text);border:1px solid var(--line)}
 .btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--line-soft)}
+.btn+.btn,.btn-row+.btn,.btn+.btn-row{margin-top:10px}
+.btn-row .btn+.btn{margin-top:0}
+.back-chip{display:inline-flex;align-items:center;min-height:40px;padding:8px 16px;margin-bottom:10px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--muted)}
 .btn-row{display:flex;gap:10px;margin-top:4px}
 .btn-row .btn{width:auto;flex:1}
 .btn-sm{min-height:40px;padding:8px 14px;font-size:13px;width:auto;border-radius:11px}
@@ -245,22 +254,27 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .qtimer-track > i.low{background:var(--bad)}
 
 .flip{perspective:1500px;margin:14px 0}
-.flip-in{position:relative;width:100%;min-height:290px;transition:transform .55s cubic-bezier(.3,.9,.3,1);transform-style:preserve-3d;cursor:pointer}
+/* Grid-stacked faces (not absolute): the card grows to fit its tallest face,
+   so a graph or a long bulleted definition never gets clipped. */
+.flip-in{position:relative;width:100%;min-height:290px;display:grid;transition:transform .55s cubic-bezier(.3,.9,.3,1);transform-style:preserve-3d;cursor:pointer}
 .flip.on .flip-in{transform:rotateY(180deg)}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--r);padding:28px 24px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border:1px solid var(--line);overflow:hidden}
+/* Left-aligned like a ruled page — centered text reads as a poster, not
+   study material. The watermark and tap-cue stay centered underneath. */
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:var(--r);padding:28px 24px 44px;display:flex;flex-direction:column;align-items:stretch;justify-content:center;text-align:left;border:1px solid var(--line);overflow:hidden}
 /* :not(.subj) so a subject-painted card keeps its own texture — a plain
    `background` shorthand here would wipe the pattern layers. */
 .face:not(.subj){background:var(--surface)}
 .face.back{transform:rotateY(180deg)}
 .face.back:not(.subj){background:linear-gradient(165deg,var(--ac-14),var(--deep));border-color:var(--ac-25)}
-.face .wm{position:absolute;font-size:130px;opacity:.045;pointer-events:none;user-select:none}
-.face .term{font-family:'Fraunces',serif;font-size:29px;line-height:1.2;position:relative}
-.face .def{font-size:16px;line-height:1.6;position:relative}
-/* Bullet lines in definitions and explanations are real lines. */
-.def,.explain p,.rev .q,.rev .why,.rev .o,.miss .q,.face .def,.o.flat{white-space:pre-line}
-.face .eq{font-family:ui-monospace,Menlo,monospace;background:rgba(0,0,0,.28);border:1px solid var(--line);border-radius:10px;padding:9px 13px;margin-top:12px;font-size:14.5px;position:relative}
+.face .wm{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:130px;opacity:.045;pointer-events:none;user-select:none}
+.face .term{font-family:'Fraunces',serif;font-size:27px;line-height:1.25;position:relative;text-align:center}
+.face .def{font-size:16px;line-height:1.65;position:relative}
+/* The straightforward answer leads each definition in bold. */
+.def b,.explain p b,.o b{font-weight:800}
+/* Formulas set like a textbook: serif italics, not code. */
+.face .eq{font-family:'Fraunces',Georgia,serif;font-style:italic;font-weight:500;background:rgba(0,0,0,.22);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:12px;font-size:17.5px;letter-spacing:.02em;position:relative}
 .face .hint{margin-top:14px;font-size:13px;color:var(--ac-fg);position:relative}
-.face .tap{position:absolute;bottom:15px;font-size:10.5px;color:var(--faint);letter-spacing:.12em;text-transform:uppercase}
+.face .tap{position:absolute;bottom:15px;left:0;right:0;text-align:center;font-size:10.5px;color:var(--faint);letter-spacing:.12em;text-transform:uppercase}
 .face.subj .tap{color:rgba(255,255,255,.6)}
 .face.subj .hint{color:#fff;opacity:.92}
 .face.subj .eq{background:rgba(0,0,0,.22);border-color:rgba(255,255,255,.28)}
@@ -535,6 +549,9 @@ const Store = {
    once in the grown-up settings and carried between devices by the private
    Gist. The app is fully usable before any of it is set. */
 const STUDENT = { grade:4 };
+/* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
+   as 'vNN · one-to-three words on what shipped'. */
+const APP_VERSION = 'v23 · caught up to the ship';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -915,43 +932,13 @@ function relevantHabits(date, limit=2){
 }
 
 /* ---------- Content model ---------- */
-const SCHEMA_VERSION = 3;
+const SCHEMA_VERSION = 4;
 
 /* The schedule rotates, so week one is about *which day* a subject lands on
    as much as which room it is in. Built from her real timetable — nothing here
    is invented. */
-function buildOrientationUnit(){
-  const qs = [];
-  const rotating = SUBJECTS.filter(s=>daysFor(s.id)!=='Every day' && s.id!=='lunch' && s.id!=='recess');
-  SUBJECTS.filter(s=>s.id!=='recess'&&s.id!=='lunch').forEach(c=>{
-    const others = SUBJECTS.filter(x=>x.id!==c.id && x.room!==c.room);
-    qs.push({ id:`orient-room-${c.id}`, lv:1, q:`Which room is ${c.name} in?`,
-      opts: shuffle([c.room, ...shuffle([...new Set(others.map(x=>x.room))]).slice(0,3)]), ansValue:c.room,
-      hint:'Picture the walk from the class before it.',
-      ex:{ main:`${c.name} is in room ${c.room}.`,
-           tip:'Room numbers stick faster if you picture the route rather than the number.' } });
-  });
-  rotating.forEach(c=>{
-    const wrong = shuffle(['Mon & Wed','Tue & Thu','Wed & Fri','Mon & Fri','Tue & Wed','Thu & Fri']
-      .filter(x=>x!==daysFor(c.id))).slice(0,3);
-    qs.push({ id:`orient-days-${c.id}`, lv:2, q:`Which days do you have ${c.name}?`,
-      opts: shuffle([daysFor(c.id), ...wrong]), ansValue:daysFor(c.id),
-      hint:'Think about what you carry to school on those mornings.',
-      ex:{ main:`${c.name} is on ${daysFor(c.id)}.`,
-           tip:'Knowing the rotation means you pack the right things the night before.' } });
-  });
-  qs.forEach(q=>{ q.ans = q.opts.indexOf(q.ansValue); delete q.ansValue; });
-
-  const cards = SUBJECTS.filter(s=>s.id!=='recess'&&s.id!=='lunch').map(c=>({
-    id:`orient-card-${c.id}`, term:c.name,
-    def:`Room ${c.room} · ${daysFor(c.id)}`,
-    hint: daysFor(c.id)==='Every day' ? 'One of your everyday classes.' : 'This one rotates.' }));
-  return { id:'unit-orientation', classId:'__all__', title:'First Week: Rooms & Rotation',
-    quarter:1, source:'Class schedule (Drive)', cards, questions:qs };
-}
-
-/* ---------- Record store (sync-safe: id + updatedAt, tombstones) ---------- */
-let DATA = { v:SCHEMA_VERSION, records:{} };
+/* The boot-generated orientation unit retired at v23 (schema v4 tombstones
+   it on migrate) — same as Ad Astra v22. Do not reintroduce it. */
 
 function migrate(d){
   if(!d.v) d.v = 1;
@@ -962,15 +949,18 @@ function migrate(d){
     });
     d.v = 3;
   }
+  if(d.v < 4){                // v4 retired the built-in First Week orientation unit
+    const o = d.records && d.records['unit-orientation'];
+    if(o && !o.deleted) d.records['unit-orientation'] =
+      { id:'unit-orientation', type:'unit', deleted:true, updatedAt:Date.now() };
+    d.v = 4;
+  }
   d.v = SCHEMA_VERSION;
   return d;
 }
 function loadLocal(){
   const d = Store.get('data', null);
   DATA = (d && d.records) ? migrate(d) : { v:SCHEMA_VERSION, records:{} };
-  const o = buildOrientationUnit();
-  const ex = DATA.records[o.id];
-  if(!ex || !ex.deleted) DATA.records[o.id] = {...o, type:'unit', updatedAt: ex?.updatedAt || Date.now()};
   saveLocal();
 }
 /* Sandbox: a per-device switch (localStorage, never a record, never syncs) so a
@@ -1619,6 +1609,114 @@ function openCalc(){
 function shuffle(a){ const b=a.slice();
   for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]];} return b; }
 const uid = p => p+'_'+Date.now().toString(36)+'_'+Math.random().toString(36).slice(2,8);
+/* ---------- Graphs ----------
+   A card or question can carry a `graph` spec and it renders as worksheet-
+   style graph paper. No expressions are ever evaluated — series are typed
+   (line y=mx+b, parabola/abs in vertex form a·(x−h)²+k, or explicit pts)
+   and sampled here in code.
+   Spec: { w:[xmin,xmax,ymin,ymax], gx?,gy? (grid steps), xl?,yl? (axis
+   labels), series:[{type,'m','b','a','h','k',dom?,pts?}], pts:[{x,y,label?}] } */
+const GRAPH_INK='#3f4d63', GRAPH_GRID='#dbe4ee', GRAPH_CURVES=['#d81b60','#1565c0'];
+function niceStep(span){
+  const raw=span/8, p=Math.pow(10,Math.floor(Math.log10(raw)));
+  for(const m of [1,2,2.5,5,10]) if(raw<=m*p) return m*p;
+  return 10*p;
+}
+function seriesSamples(ser,x0,x1){
+  if(ser.type==='pts') return (ser.pts||[]).slice();
+  const a=ser.a??1,h=ser.h??0,k=ser.k??0,m=ser.m??1,b=ser.b??0;
+  const lo=ser.dom?Math.max(ser.dom[0],x0):x0, hi=ser.dom?Math.min(ser.dom[1],x1):x1;
+  if(hi<=lo) return [];
+  if(ser.type==='line'){
+    /* Sampled, not two endpoints: an endpoint outside the y-window would be
+       dropped by clipping and take the whole segment with it. */
+    const out=[]; for(let i=0;i<=60;i++){ const x=lo+(hi-lo)*i/60; out.push([x,m*x+b]); }
+    return out;
+  }
+  if(ser.type==='abs'){
+    /* Sampled like the parabola (same clipping reason), with the exact vertex
+       spliced in so the V's corner stays sharp. */
+    const f=x=>a*Math.abs(x-h)+k, out=[];
+    for(let i=0;i<=60;i++){ const x=lo+(hi-lo)*i/60;
+      if(h>lo&&h<hi&&out.length&&out[out.length-1][0]<h&&x>h) out.push([h,k]);
+      out.push([x,f(x)]); }
+    return out;
+  }
+  const f=x=>a*(x-h)*(x-h)+k, out=[];
+  for(let i=0;i<=60;i++){ const x=lo+(hi-lo)*i/60; out.push([x,f(x)]); }
+  return out;
+}
+function renderGraph(g){
+  try{
+    const [x0,x1,y0,y1]=g.w;
+    if(!(x1>x0&&y1>y0)) return null;
+    const W=300,H=210,P=26;
+    const sx=x=>P+(x-x0)/(x1-x0)*(W-2*P), sy=y=>H-P-(y-y0)/(y1-y0)*(H-2*P);
+    const NS='http://www.w3.org/2000/svg';
+    const svg=document.createElementNS(NS,'svg');
+    svg.setAttribute('viewBox',`0 0 ${W} ${H}`);
+    svg.setAttribute('role','img');
+    const add=(tag,attrs)=>{ const n=document.createElementNS(NS,tag);
+      for(const [k2,v] of Object.entries(attrs)) n.setAttribute(k2,v); svg.appendChild(n); return n; };
+    const txt=(x,y,t,anchor='middle',size=8.5,weight=400)=>{
+      const n=add('text',{x,y,'text-anchor':anchor,'font-size':size,fill:GRAPH_INK,
+        'font-family':'Inter,system-ui,sans-serif','font-weight':weight}); n.textContent=t; return n; };
+    const gx=g.gx||niceStep(x1-x0), gy=g.gy||niceStep(y1-y0);
+    const fmt=v=>{ const r=Math.round(v*100)/100; return Object.is(r,-0)?0:r; };
+    /* grid */
+    for(let x=Math.ceil(x0/gx-1e-9)*gx; x<=x1+1e-9; x+=gx)
+      add('line',{x1:sx(x),y1:sy(y0),x2:sx(x),y2:sy(y1),stroke:GRAPH_GRID,'stroke-width':1});
+    for(let y=Math.ceil(y0/gy-1e-9)*gy; y<=y1+1e-9; y+=gy)
+      add('line',{x1:sx(x0),y1:sy(y),x2:sx(x1),y2:sy(y),stroke:GRAPH_GRID,'stroke-width':1});
+    /* axes with arrowheads; drawn on the window edge when 0 is off-screen */
+    const ax=y0<=0&&y1>=0?sy(0):sy(y0), ay=x0<=0&&x1>=0?sx(0):sx(x0);
+    add('line',{x1:P-6,y1:ax,x2:W-P+6,y2:ax,stroke:GRAPH_INK,'stroke-width':1.4});
+    add('line',{x1:ay,y1:H-P+6,x2:ay,y2:P-6,stroke:GRAPH_INK,'stroke-width':1.4});
+    add('path',{d:`M ${W-P+6} ${ax} l -5 -3 v 6 z`,fill:GRAPH_INK});
+    add('path',{d:`M ${ay} ${P-6} l -3 5 h 6 z`,fill:GRAPH_INK});
+    /* numbers along the axes (0 once, at the origin corner) */
+    for(let x=Math.ceil(x0/gx-1e-9)*gx; x<=x1+1e-9; x+=gx){
+      if(Math.abs(x)<gx/2&&x0<=0) continue;
+      txt(sx(x),ax+11,fmt(x));
+    }
+    for(let y=Math.ceil(y0/gy-1e-9)*gy; y<=y1+1e-9; y+=gy){
+      if(Math.abs(y)<gy/2&&y0<=0) continue;
+      txt(ay-4,sy(y)+3,fmt(y),'end');
+    }
+    if(x0<=0&&y0<=0) txt(ay-4,ax+11,'0','end');
+    /* series, clipped to the window (a segment breaks where it leaves it) */
+    (g.series||[]).forEach((ser,si)=>{
+      const col=GRAPH_CURVES[si%GRAPH_CURVES.length];
+      let seg=[];
+      const flush=()=>{ if(seg.length>1)
+        add('polyline',{points:seg.map(([px,py])=>`${sx(px)},${sy(py)}`).join(' '),
+          fill:'none',stroke:col,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'});
+        seg=[]; };
+      for(const [px,py] of seriesSamples(ser,x0,x1)){
+        if(py>=y0-1e-9&&py<=y1+1e-9&&px>=x0-1e-9&&px<=x1+1e-9) seg.push([px,py]); else flush();
+      }
+      flush();
+    });
+    /* marked points */
+    (g.pts||[]).forEach(p=>{
+      add('circle',{cx:sx(p.x),cy:sy(p.y),r:3.4,fill:GRAPH_CURVES[0],stroke:'#fffdf4','stroke-width':1.4});
+      if(p.label) txt(sx(p.x)+6,sy(p.y)-6,p.label,'start',8.5,700);
+    });
+    /* axis titles */
+    if(g.xl) txt(W/2,H-3,g.xl,'middle',9.5,600);
+    if(g.yl){ const n=txt(9,H/2,g.yl,'middle',9.5,600);
+      n.setAttribute('transform',`rotate(-90 9 ${H/2})`); }
+    return svg;
+  }catch(e){ return null; }
+}
+function graphNode(g){
+  if(!g) return null;
+  const svg=renderGraph(g);
+  if(!svg) return null;
+  const w=el('div','graph-wrap'); w.appendChild(svg); return w;
+}
+/* **bold** in definitions and explanations — built with elements, never
+   innerHTML, so content stays inert text. */
 /* **bold** in card definitions and explanations renders as real bold — never
    innerHTML with content. Ported from Ad Astra (v22 parity, Chris-approved). */
 function richify(node, text){
@@ -1648,7 +1746,25 @@ const NAV = [
   {id:'setup', ic:'⚙️',nm:'Settings'}
 ];
 let view='today', ctx={};
-function go(v,c={}){ view=v; ctx=c; render(); window.scrollTo(0,0); }
+/* Back-stack navigation: tab roots clear it, everything else pushes, and
+   render() shows a ← chip whenever there is somewhere to go back to. The
+   mood check-in never lands on the stack — backing into it would re-ask. */
+const ROOT_SCREENS = new Set(['today','study','growth','stars','setup']);
+const SKIP_HIST = new Set(['checkin','postmood']);
+let HIST = [];
+function go(v,c={},opts={}){
+  if(ROOT_SCREENS.has(v)) HIST = [];
+  else if(!opts.back && view && view!==v && !SKIP_HIST.has(view)){
+    HIST.push([view,ctx]);
+    if(HIST.length>24) HIST.shift();
+  }
+  view=v; ctx=c; render(); window.scrollTo(0,0);
+}
+function goBack(){
+  const prev = HIST.pop();
+  if(prev){ view=prev[0]; ctx=prev[1]; render(); window.scrollTo(0,0); }
+  else go('today');
+}
 
 const SCREENS = {};
 function render(){
@@ -1680,6 +1796,16 @@ function render(){
     off.addEventListener('click',()=>setSandbox(false));
     sb.appendChild(off);
     main.appendChild(sb);
+  }
+  /* Subject screens wear their subject's colour: buttons, bars, eyebrows all
+     pick up the class palette while she studies that class. */
+  const subjCls = CLASS_BY_ID[ctx.classId] || CLASS_BY_ID[DATA.records[ctx.unitId]?.classId];
+  if(subjCls && !ROOT_SCREENS.has(view)) main.style.setProperty('--ac', palOf(subjCls).g1);
+  else main.style.removeProperty('--ac');
+  if(HIST.length && !ROOT_SCREENS.has(view)){
+    const bb = el('button','back-chip','←  Back');
+    bb.addEventListener('click',()=>{ if(view==='quiz') stopQuestionTimer(); goBack(); });
+    main.appendChild(bb);
   }
   (SCREENS[view] || SCREENS.today)(main);
 }
@@ -1861,13 +1987,17 @@ SCREENS.study = function(root){
     aff.appendChild(m);
   }
   const acts = el('div','affirm-acts');
+  /* Toggles, not one-way switches — a tap that didn't land can be taken back.
+     The day's XP stays as long as EITHER action is on; undoing both takes it
+     back too (no farming by re-tapping: it is the same one award). */
   const mark = (field, xp) => {
     const prev = DATA.records['affirm_'+date] || {id:'affirm_'+date, type:'affirm', date, xp:0};
-    if(prev[field]) return;                      // never double-award
-    prev[field] = true;
-    if(!prev.xp && xp){ prev.xp = xp; }          // XP is for the day, not per button
+    const turningOn = !prev[field];
+    prev[field] = turningOn;
+    const anyOn = prev.liked || prev.read;
+    prev.xp = anyOn ? (prev.xp || xp) : 0;
     put(prev); checkBadges(); syncSoon();
-    if(xp && !seen) toast(`+${xp} XP`);
+    if(turningOn && xp && !seen) toast(`+${xp} XP`);
     render();
   };
   const heart = el('button','act'+(seen&&seen.liked?' on':''));
@@ -2039,7 +2169,7 @@ SCREENS.unit = function(root){
       card.appendChild(el('h3',null,u.title));
       const bits = el('div');
       bits.appendChild(el('span','pill',`${u.cards.length} cards`));
-      bits.appendChild(el('span','pill',`${u.questions.length} questions`));
+      bits.appendChild(el('span','pill',`${u.questions.length} questions · rounds of ${Math.min(QUIZ_ROUND,u.questions.length)}`));
       if(u.nextUp && u.nextUp.minutes) bits.appendChild(el('span','pill',`~${u.nextUp.minutes} min`));
       if(u.source) bits.appendChild(el('span','pill',u.source));
       card.appendChild(bits);
@@ -2235,26 +2365,59 @@ const FEELING = [
 ];
 function launchQuiz(unitId, classId, timed){ go('checkin',{unitId,classId,timed:!!timed}); }
 
+/* Quizzes run in short rounds — a few questions feels attainable in the car
+   on the way to school; the next round picks up whatever is least practised,
+   so repeated rounds still cycle the whole unit. */
+const QUIZ_ROUND = 5;
+function pickRound(u){
+  if(u.id==='__review__') return shuffle(u.questions.map((_,i)=>i));
+  const att = q => (DATA.records['qstat_'+u.id+'_'+q.id]?.attempts)||0;
+  const idx = u.questions.map((q,i)=>({i, a:att(q), r:Math.random()}));
+  idx.sort((x,y)=> x.a-y.a || x.r-y.r);
+  return shuffle(idx.slice(0, Math.min(QUIZ_ROUND, idx.length)).map(x=>x.i));
+}
+
 /* Timed mode. Each question gets a countdown; answering faster is worth more,
    and running out of time simply moves on. The deadline is an absolute
-   timestamp so a re-render never resets the clock. */
-const QUIZ_LIMIT = 20000;
+   timestamp so a re-render never resets the clock.
+   The countdown calibrates to HER: regular (untimed) quizzes measure how long
+   she actually takes per answer, and Beat the clock uses that average —
+   clamped to 8–40s, 20s until there is data. */
+function quizLimit(){
+  let ms=0, n=0;
+  logs().forEach(l=>{ if(l.mode==='quiz' && !l.timed && l.ansSeconds && l.ansCount){ ms += l.ansSeconds*1000; n += l.ansCount; } });
+  if(!n) return 20000;
+  return Math.round(Math.min(40000, Math.max(8000, ms/n)));
+}
 let quizTimer = null;
 function stopQuestionTimer(){ clearInterval(quizTimer); quizTimer = null; }
 function startQuestionTimer(u){
   stopQuestionTimer();
   if(!quizState || !quizState.timed) return;
-  quizState.deadline = Date.now() + QUIZ_LIMIT;
+  quizState.deadline = Date.now() + quizState.limit;
   quizTimer = setInterval(()=>{
     if(!quizState || quizState.answered !== null){ stopQuestionTimer(); return; }
     const left = quizState.deadline - Date.now();
     const bar = document.getElementById('qtimer');
     if(bar){
-      bar.style.width = Math.max(0, left/QUIZ_LIMIT*100)+'%';
+      bar.style.width = Math.max(0, left/quizState.limit*100)+'%';
       bar.className = left < 5000 ? 'low' : '';
     }
     if(left <= 0){ stopQuestionTimer(); timeUp(u); }
   }, 100);
+}
+
+/* Varied, honest encouragement — the label on every answer, not a flat
+   'Correct'. Picked deterministically so re-renders don't reshuffle it. */
+const CHEER_RIGHT = ['Nailed it','That one is yours now','Clean','Exactly right','Yes — that is the one','Locked in','Sharp','You saw straight through that one','Textbook','Called it'];
+const CHEER_WRONG = ['Not this one — the why is below','Close. Read the why and it sticks','Good swing — here is the why','Not yet. This is what learning feels like','A miss here beats a miss on the test','Worth the stumble — this one will come back'];
+function cheerLabel(right, timedOut){
+  if(timedOut) return 'Out of time';
+  if(right){
+    if(quizState.runStreak>=3) return `${quizState.runStreak} in a row — on a roll`;
+    return CHEER_RIGHT[(quizState.correct*7+quizState.i)%CHEER_RIGHT.length];
+  }
+  return CHEER_WRONG[(quizState.missed.length*5+quizState.i)%CHEER_WRONG.length];
 }
 function timeUp(u){
   const q = u.questions[quizState.order[quizState.i]];
@@ -2267,7 +2430,8 @@ function timeUp(u){
     const was = DATA.records['miss_'+u.id+'_'+q.id];
     put(scheduleMiss({ id:'miss_'+u.id+'_'+q.id, type:'miss', unitId:u.id, classId:ctx.classId,
           qid:q.id, q:q.q, opts:q.opts, ans:q.ans, right:q.opts[q.ans], chose:'(ran out of time)',
-          why:q.ex?.main||'', steps:q.steps||null, on:(was&&!was.deleted?was.on:AZ.today()) }, false));
+          why:q.ex?.main||'', graph:q.graph||null, steps:q.steps||null,
+          on:(was&&!was.deleted?was.on:AZ.today()) }, false));
   }
   if(navigator.vibrate) navigator.vibrate(60);
   render();
@@ -2341,30 +2505,33 @@ SCREENS.quiz = function(root){
      and Beat the clock never resumes the other one's half-finished run. */
   if(!quizState || quizState.unitId!==u.id || quizState.timed !== !!ctx.timed)
     quizState = {unitId:u.id,i:0,correct:0,answered:null,start:Date.now(),
-      order:shuffle(u.questions.map((_,i)=>i)),missed:[],hintUsed:false,hints:0,pre:ctx.pre||null,
-      timed:!!ctx.timed, speedBonus:0, fastest:null, deadline:0, seen:[]};
+      order:pickRound(u),missed:[],hintUsed:false,hints:0,pre:ctx.pre||null,
+      timed:!!ctx.timed, speedBonus:0, fastest:null, deadline:0, seen:[],
+      limit:quizLimit(), runStreak:0, qShownAt:Date.now(), ansMs:0, ansN:0};
     if(quizState.timed) startQuestionTimer(u);   // sets the deadline synchronously
   const q = u.questions[quizState.order[quizState.i]];
 
   const head = el('div','card');
   head.appendChild(el('div','eyebrow',`${u.title} · Level ${q.lv||1}`));
   const r = el('div','row');
-  r.appendChild(el('span','k',`Question ${quizState.i+1} of ${u.questions.length}`));
+  r.appendChild(el('span','k',`Question ${quizState.i+1} of ${quizState.order.length}`));
   r.appendChild(el('span','v',`${quizState.correct} correct`));
   head.appendChild(r);
   const bar = el('div','bar'), fi = el('i');
-  fi.style.width = (quizState.i/u.questions.length*100)+'%'; bar.appendChild(fi); head.appendChild(bar);
+  fi.style.width = (quizState.i/quizState.order.length*100)+'%'; bar.appendChild(fi); head.appendChild(bar);
   if(quizState.timed){
     const t = el('div','qtimer-track'), ti = el('i');
     ti.id = 'qtimer';
     const left = quizState.answered===null ? Math.max(0, quizState.deadline - Date.now()) : 0;
-    ti.style.width = (left/QUIZ_LIMIT*100)+'%';
+    ti.style.width = (left/quizState.limit*100)+'%';
     if(left < 5000 && quizState.answered===null) ti.className='low';
     t.appendChild(ti); head.appendChild(t);
   }
   root.appendChild(head);
 
-  const qc = el('div','card ac'); qc.appendChild(el('h3',null,q.q)); root.appendChild(qc);
+  const qc = el('div','card ac'); qc.appendChild(el('h3',null,q.q));
+  const qg = graphNode(q.graph); if(qg) qc.appendChild(qg);
+  root.appendChild(qc);
 
   q.opts.forEach((text,idx)=>{
     const b = el('button','opt');
@@ -2389,8 +2556,7 @@ SCREENS.quiz = function(root){
   } else {
     const right = quizState.answered===q.ans;
     const ex = el('div','explain '+(right?'ok':'no'));
-    ex.appendChild(el('div','lbl', right?'Correct'
-      : quizState.answered===-1 ? 'Out of time' : 'Not quite'));
+    ex.appendChild(el('div','lbl', cheerLabel(right, quizState.answered===-1)));
     ex.appendChild(richify(el('p'), q.ex?.main || `The answer is ${q.opts[q.ans]}.`));
     if(q.ex?.tip){ ex.appendChild(el('div','lbl','Test tip')); ex.appendChild(el('p',null,q.ex.tip)); }
     if(q.ex?.mnemonic){ ex.appendChild(el('div','lbl','Memory hook')); ex.appendChild(el('p',null,q.ex.mnemonic)); }
@@ -2406,7 +2572,7 @@ SCREENS.quiz = function(root){
         q.steps.slice(0, shown).forEach((s,i)=>{
           const row = el('div','step');
           row.appendChild(el('span','n', String(i+1)));
-          row.appendChild(el('p',null,s));
+          row.appendChild(richify(el('p'), s));
           sc.appendChild(row);
         });
         root.appendChild(sc);
@@ -2418,10 +2584,11 @@ SCREENS.quiz = function(root){
         root.appendChild(wb);
       }
     }
-    const n = el('button','btn btn-primary', quizState.i===u.questions.length-1?'See results →':'Next question →');
+    const n = el('button','btn btn-primary', quizState.i===quizState.order.length-1?'See results →':'Next question →');
     n.addEventListener('click',()=>{
-      if(quizState.i<u.questions.length-1){
+      if(quizState.i<quizState.order.length-1){
         quizState.i++; quizState.answered=null; quizState.hintUsed=false; quizState.stepsShown=0;
+        quizState.qShownAt = Date.now();
         render(); startQuestionTimer(u);
       } else finishQuiz(u);
     });
@@ -2442,17 +2609,23 @@ SCREENS.quiz = function(root){
 function answer(u,q,idx){
   /* Kahoot-style: the faster it lands, the bigger the bonus. */
   if(quizState.timed){
-    const used = QUIZ_LIMIT - Math.max(0, quizState.deadline - Date.now());
+    const used = quizState.limit - Math.max(0, quizState.deadline - Date.now());
     stopQuestionTimer();
     if(idx===q.ans){
-      quizState.speedBonus += Math.round(10 * Math.max(0, 1 - used/QUIZ_LIMIT));
+      quizState.speedBonus += Math.round(10 * Math.max(0, 1 - used/quizState.limit));
       const secs = used/1000;
       if(quizState.fastest===null || secs<quizState.fastest) quizState.fastest = secs;
     }
+  } else {
+    /* Untimed rounds measure her real pace — this average becomes Beat the
+       clock's countdown. Walk-aways (>2 min on one question) don't count. */
+    const d = Date.now() - (quizState.qShownAt || Date.now());
+    if(d > 0 && d < 120000){ quizState.ansMs += d; quizState.ansN++; }
   }
   quizState.answered = idx;
   if(!quizState.seen.includes(q.id)) quizState.seen.push(q.id);
   const right = idx===q.ans;
+  quizState.runStreak = right ? (quizState.runStreak||0)+1 : 0;
   if(right) quizState.correct++;
   /* Review questions are on loan from other units — credit the tally to where
      the question actually lives, or the parent view attributes it to nothing. */
@@ -2476,13 +2649,14 @@ function answer(u,q,idx){
       const was = DATA.records['miss_'+u.id+'_'+q.id];
       put(scheduleMiss({ id:'miss_'+u.id+'_'+q.id, type:'miss', unitId:u.id, classId:ctx.classId,
             qid:q.id, q:q.q, opts:q.opts, ans:q.ans, right:q.opts[q.ans], chose,
-            why:q.ex?.main||'', steps:q.steps||null, on:(was&&!was.deleted?was.on:AZ.today()) }, false));
+            why:q.ex?.main||'', graph:q.graph||null, steps:q.steps||null,
+            on:(was&&!was.deleted?was.on:AZ.today()) }, false));
     }
   }
   render();
 }
 function finishQuiz(u){
-  const total = u.questions.length, pct = Math.round(quizState.correct/total*100);
+  const total = quizState.order.length, pct = Math.round(quizState.correct/total*100);
   const secs = Math.round((Date.now()-quizState.start)/1000);
   const bonus = pct===100?50 : pct>=80?25 : 0;
   const speed = quizState.timed ? quizState.speedBonus : 0;
@@ -2493,7 +2667,8 @@ function finishQuiz(u){
   const hintsUsed = quizState.hints, pre = quizState.pre;
   const log = put({ id:uid('log'), type:'log', mode:'quiz', classId:ctx.classId, unitId:u.id,
     date:AZ.today(), at:Date.now(), correct:quizState.correct, total, seconds:secs, xp,
-    hints:hintsUsed, timed:wasTimed, speedBonus:speed });
+    hints:hintsUsed, timed:wasTimed, speedBonus:speed,
+    ansSeconds:Math.round((quizState.ansMs||0)/1000), ansCount:quizState.ansN||0 });
   if(pre) put({ id:uid('mood'), type:'mood', when:'pre', logId:log.id, classId:ctx.classId,
     unitId:u.id, readiness:pre.readiness, feeling:pre.feeling, date:AZ.today(), at:Date.now() });
 
@@ -3075,8 +3250,9 @@ SCREENS.setup = function(root){
 
   const ver = el('div','hintline');
   ver.style.textAlign='center'; ver.style.marginTop='22px';
-  ver.textContent = `Wayfinder · ${roster().school || 'SY 2026–27'}`;
+  ver.textContent = `Wayfinder ${APP_VERSION} · ${roster().school || 'SY 2026–27'}`;
   root.appendChild(ver);
+
 };
 
 /* ================= PARENT VIEW ================= */
@@ -4040,6 +4216,21 @@ const PROV = {type:'string', enum:['source','added']};
 const BLOCK = extra => ({type:'object', properties:{text:{type:'string'}, from:PROV, ...(extra||{})},
   required:['text','from'], additionalProperties:false});
 
+/* Optional plotted graph on a card or question — see renderGraph(). */
+const GRAPH = {type:'object', properties:{
+  w:{type:'array',items:{type:'number'},minItems:4,maxItems:4},
+  gx:{type:'number'}, gy:{type:'number'}, xl:{type:'string'}, yl:{type:'string'},
+  series:{type:'array',items:{type:'object',properties:{
+    type:{type:'string',enum:['line','parabola','abs','pts']},
+    m:{type:'number'}, b:{type:'number'}, a:{type:'number'}, h:{type:'number'}, k:{type:'number'},
+    dom:{type:'array',items:{type:'number'},minItems:2,maxItems:2},
+    pts:{type:'array',items:{type:'array',items:{type:'number'},minItems:2,maxItems:2}}
+  },required:['type'],additionalProperties:false}},
+  pts:{type:'array',items:{type:'object',properties:{
+    x:{type:'number'}, y:{type:'number'}, label:{type:'string'}
+  },required:['x','y'],additionalProperties:false}}
+},required:['w','series'],additionalProperties:false};
+
 const UNIT_SCHEMA = {
   type:'object',
   properties:{
@@ -4056,12 +4247,12 @@ const UNIT_SCHEMA = {
     /* One short line for her, plus an honest estimate in minutes. */
     nextUp:BLOCK({minutes:{type:'integer'}}),
     cards:{type:'array',items:{type:'object',
-      properties:{term:{type:'string'},def:{type:'string'},hint:{type:'string'},eq:{type:'string'},from:PROV},
+      properties:{term:{type:'string'},def:{type:'string'},hint:{type:'string'},eq:{type:'string'},graph:GRAPH,from:PROV},
       required:['term','def','hint','from'],additionalProperties:false}},
     questions:{type:'array',items:{type:'object',
       properties:{ lv:{type:'integer',enum:[1,2,3]}, q:{type:'string'},
         opts:{type:'array',items:{type:'string'}}, ans:{type:'integer',enum:[0,1,2,3]},
-        hint:{type:'string'}, from:PROV,
+        hint:{type:'string'}, graph:GRAPH, from:PROV,
         steps:{type:'array',items:{type:'string'}},
         ex:{type:'object',properties:{main:{type:'string'},tip:{type:'string'},mnemonic:{type:'string'}},
             required:['main','tip'],additionalProperties:false}},
@@ -4093,6 +4284,7 @@ async function generateUnit(classId, notes, shots, srcName){
 
     `Then the study material: 15-25 flashcards and 18-24 quiz questions, 6-8 each at level 1 recall, level 2 application, level 3 analysis. Every question has exactly 4 options and one correct answer.`,
     `Every question carries "steps": 3-6 short strings that walk from the question to the answer, revealed one at a time after a wrong answer. Each step is ONE concrete move — read off a value, set up the arithmetic, apply one rule, compute one result — written so she could do it herself on paper. The last step states the answer. No step may skip work ("simplify" alone is not a step; show what it becomes).`,
+    `If the subject is mathematical and a question is about reading a graph, attach a "graph" object and refer to it as "the graph shown". Window w is [xmin,xmax,ymin,ymax]; series are typed line (y=mx+b), parabola or abs in vertex form (a, h, k), or pts (straight segments through the listed points, for piecewise shapes); pts on the graph object marks labelled dots. Double-check that the plotted function actually has the features the question claims.`,
     `Anchor everything to the supplied material. Do not invent facts it does not support. If the material is thin, write fewer cards rather than padding with things it never said.`,
     `Tone: direct and a little dry. Never condescending, never exclamation marks, never "great job". Card hints are memory hooks or mnemonics, never restatements of the definition. Explanations say why the right answer is right, not just what it is.`,
 

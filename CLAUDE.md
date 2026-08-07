@@ -168,32 +168,17 @@ buildless. When you fix an engine bug (sync, streaks, timer, quiz), **check
 whether the other app has it too**. Content, schedule, calendar, palette and copy
 are meant to diverge; the engine is not.
 
-### Pending parity: Ad Astra v20–v22 (2026-08, Chris-approved for BOTH apps)
+### Parity with Ad Astra: complete as of v23 (2026-08)
 
-Ad Astra shipped a run of engine/UX features this app does not have yet.
-**Already ported here:** `steps[]` walkthroughs, `richify()` bold, `\n• `
-bullet rendering (white-space:pre-line), and everything from v23 on (sandbox,
-companion, personalization, sky map, calculator). **Still pending** from the
-list below: graphs (`renderGraph`), back-stack chips, quiz rounds of 5,
-Beat-the-clock calibration, `CHEER_*` pools, `APP_VERSION` display, and the
-v22 layout polish. Until quiz rounds land, keep hand-built units at ~12
-questions so a full quiz fits one sitting.
-
-- **v20** — `renderGraph()` worksheet-style SVG graphs on cards/questions/review/
-  Growth Zone; `\n• ` bullet rendering (white-space:pre-line); grid-stacked
-  flashcard faces that grow to fit content; graph support in `UNIT_SCHEMA` +
-  generation prompt.
-- **v21** — back-stack navigation with ← chips; quiz **rounds of 5** picking
-  least-practised questions; Beat-the-clock countdown calibrated from her
-  measured per-answer pace (`ansSeconds`/`ansCount` on logs, clamped 8–40s);
-  varied encouragement (`CHEER_RIGHT`/`CHEER_WRONG` + streak lines); left-aligned
-  card definitions (terms stay centered); formulas in Fraunces italic.
-- **v22** — `**bold**` answer-first card definitions via `richify()`; subject-
-  coloured accent on study screens (`--ac` override on `#screen`); looser button
-  spacing; visible `APP_VERSION` in Settings (bump with `CACHE_VERSION`, same
-  number); orientation unit retired (schema v4 tombstones it on migrate);
-  affirmation heart/read are toggles (undo removes the day's XP only when both
-  come off).
+The approved v20–v22 backlog is fully ported: graphs (`renderGraph` +
+`UNIT_SCHEMA`/prompt support), quiz rounds of 5 with least-practised
+selection, Beat-the-clock calibrated to her measured pace, `CHEER_*` pools,
+back-stack ← chips, grid-stacked left-aligned flashcards, `eq` formulas in
+Fraunces italic, subject-coloured `--ac` on `#screen`, `.btn+.btn` spacing,
+visible `APP_VERSION` in Settings, affirmation heart/read toggles, and the
+orientation unit retired (schema v4 tombstones `unit-orientation` on
+migrate — don't reintroduce boot-generated units). From here, keep the two
+engines in step per "Keeping the two apps in step" above.
 
 ### Content rules (apply here exactly as in Ad Astra)
 
