@@ -1,0 +1,179 @@
+{
+  "v": 4,
+  "records": {
+    "unit-lc1": {
+      "id": "unit-lc1",
+      "type": "unit",
+      "updatedAt": 1786147300000,
+      "classId": "english",
+      "quarter": 1,
+      "status": "draft",
+      "book": true,
+      "title": "The Lemonade Crime · Ch. 1–5: The Accusation",
+      "srcName": "The Lemonade Crime, chapters 1–5 (pages in Drive)",
+      "source": "The Lemonade Crime (Jacqueline Davies), reading companion 1 of 3",
+      "summary": { "text": "The opening of The Lemonade Crime, chapters 1–5 (Fraud through Accused): Evan and Jessie Treski start fourth grade in the same class, Evan is certain Scott Spencer stole the $208 he earned in last summer's lemonade war at Jack's pool party, and Jessie — who believes in rules the way other people believe in weather — starts turning the playground toward a trial. Every chapter opens with a real legal term and its definition.", "from": "source" },
+      "why": { "text": "This book does something sneaky: it teaches real courtroom ideas — evidence, hearsay, the accused, making amends — through a playground fight over stolen lemonade money. The table of contents is a map of a trial. If you learn each chapter's legal word as you go, you will finish the book knowing how fairness actually works, not just how it feels.", "from": "source" },
+      "objectives": [
+        { "text": "Define the early legal terms the chapters are named for: fraud, revenge, eyewitness, hearsay, accused.", "from": "source" },
+        { "text": "Tell the difference between being certain someone did something and having proof they did.", "from": "added" },
+        { "text": "Track what Evan knows, what he believes, and what he can show — three different piles.", "from": "added" },
+        { "text": "Use the table of contents to predict where the story is headed.", "from": "source" }
+      ],
+      "parentNote": { "text": "Built from the pages you dropped in Drive (table of contents plus the chapter 1, 2 and 5 openers — the quoted definitions in the passage questions are verbatim from those pages). Covers chapters 1–5 only. Heads-up on naming: the file says 'lemonade war' but the pages are from The Lemonade Crime, the sequel on her syllabus — this unit follows the pages. The legal-term chapter titles are the spine here, and they're genuinely useful vocabulary. The certainty-vs-proof thread is the one worth a dinner conversation, and the first ponder card is built for it — everyone at the table will have an opinion about what should happen to Scott. Two words (eyewitness, hearsay) are defined by me ahead of their chapters and marked as study suggestions rather than from the material.", "from": "added" },
+      "nextUp": { "text": "Read through chapter 5 first. Then cards once, and a quiz round.", "minutes": 15, "from": "added" },
+      "cards": [
+        { "id": "c0", "term": "Evan Treski", "def": "**Fourth grader, big brother, and the wronged party — he's missing $208.**\n• Earned every dollar in last summer's lemonade war.\n• It vanished at Jack's pool party, and Evan is CERTAIN Scott took it. Watch the gap between certain and proven.", "hint": "Evan's problem isn't just the money. It's that nobody can prove anything.", "from": "source" },
+        { "id": "c1", "term": "Jessie Treski", "def": "**Evan's younger sister — she skipped a grade, so it's the fourth day of fourth grade for BOTH of them.**\n• Rules, lists, and fairness are her native language.\n• Her answer to an unfair world: run it like a courtroom.", "hint": "Jessie doesn't get mad at unfairness. She organizes against it.", "from": "source" },
+        { "id": "c2", "term": "Scott Spencer", "def": "**The accused.** He was at Jack's pool party when the money disappeared.\n• Everyone is sure. No one saw it happen.\n• The book keeps asking: what does the difference between those two sentences mean for Scott?", "hint": "Being unpopular isn't evidence. That's sort of the whole point.", "from": "source" },
+        { "id": "c3", "term": "Megan Moriarty", "def": "**Jessie's friend — and the first person pulled into her plans.**\n• Chapter 5 opens with Jessie calling her at 7:00, 7:30, 7:55 and 8:10 to get moving.\n• 'I was late because you kept calling me' — Megan, telling the exact truth.", "hint": "Megan is the friend who comes along AND says the honest thing.", "from": "source" },
+        { "id": "c4", "term": "The missing $208", "def": "**The whole case in one number.**\n• Earned in the lemonade war, gone after pool basketball at Jack's house.\n• Everything in this book — the anger, the trial, the ending — orbits this money.", "hint": "Keep asking: where is the money RIGHT NOW? The book knows you're wondering.", "from": "source" },
+        { "id": "c5", "term": "The lemonade war (last summer)", "def": "**The backstory: Evan and Jessie once ran rival lemonade stands in an all-out earnings war.**\n• That war is where the $208 came from.\n• The war was brother versus sister. This book starts with them on the same side.", "hint": "Book one was sibling against sibling. Book two needs them together.", "from": "source" },
+        { "id": "c6", "term": "Chapter titles = a trial, in order", "def": "**The table of contents is a courtroom map: Fraud → Revenge → Eyewitness → Hearsay → Accused → Impartial → Due Diligence → Defense → Bona Fide → Trial by Jury → Perjury → Sixth Amendment → Circumstantial Evidence → Fighting Words → Balance → Amends.**\n• The story will walk the whole path of a real case.\n• Last stop: Amends — making things right, not just winning.", "hint": "The contents page is the biggest spoiler-free prediction tool you'll ever get.", "from": "source" },
+        { "id": "c7", "term": "fraud", "def": "**The crime of deceiving someone for personal or financial gain; a person who pretends to be something he or she is not.**\n• That's the book's own definition, word for word, at the top of chapter 1.\n• Two meanings: the trick, and the person doing the tricking.", "hint": "A fraud lies to GET something — money, credit, a reputation.", "from": "source" },
+        { "id": "c8", "term": "revenge", "def": "**The act of causing pain or harm to another person because that person has injured you in some way.**\n• Chapter 2's definition, verbatim.\n• Notice what revenge is not: it is not getting the money back, and it is not fairness.", "hint": "Revenge answers harm with harm. Justice answers harm with repair.", "from": "source" },
+        { "id": "c9", "term": "accused", "def": "**A person who has been charged with a crime or who is on trial for a crime.**\n• Chapter 5's definition, verbatim.\n• Being the accused is a position, not a verdict — the trial hasn't happened yet.", "hint": "Accused means charged, not guilty. Courts exist for the space between.", "from": "source" },
+        { "id": "c10", "term": "eyewitness", "def": "**Someone who saw the thing happen with their own eyes.**\n• Chapter 3's title word — the strongest kind of ordinary evidence.\n• 'I saw him do it' is eyewitness. 'Everyone knows he did it' is not.", "hint": "Eye + witness: the eyes have to have been there.", "from": "added" },
+        { "id": "c11", "term": "hearsay", "def": "**Something you know only because someone else said it — you heard, you didn't see.**\n• Chapter 4's title word. Real courts are very suspicious of it.\n• Hearsay can be true. The problem is nobody can check it.", "hint": "HEAR-say: it reached your ears, not your eyes.", "from": "added" },
+        { "id": "c12", "term": "Certainty vs. proof (theme)", "def": "**Evan is completely sure. He can't prove anything. Those are different problems.**\n• Certainty is a feeling inside one person.\n• Proof is something other people can check for themselves.\n• The whole trial exists to bridge that gap — or expose it.", "hint": "The more someone says 'I just KNOW', the more this book wants you to ask 'how?'", "from": "added" },
+        { "id": "c13", "term": "Ponder: what should happen to Scott?", "def": "**Everyone is sure Scott did it. Nobody saw him do it.**\n• Before reading on: what would be FAIR to do next — and who gets to decide?\n• Ask this one at dinner. Watch how different the answers are.", "hint": "No wrong answers. But notice whether your answer needs proof or just certainty.", "from": "added" },
+        { "id": "c14", "term": "Ponder: the last chapter is 'Amends'", "def": "**The book ends on making-things-right, not on winning.**\n• Prediction: how does this end — punishment, payback, or something harder than both?\n• Write your guess down and check it at the finish.", "hint": "Titles keep promises. This one is promising something about the ending.", "from": "added" }
+      ],
+      "questions": [
+        { "id": "q0", "lv": 2, "from": "source", "kind": "mc",
+          "passage": "fraud (frôd), n. The crime of deceiving someone for personal or financial gain; a person who pretends to be something that he or she is not.",
+          "q": "Using the book's own definition, which of these is fraud?",
+          "opts": ["A kid who accidentally gives back the wrong change", "A kid who asks to borrow five dollars", "A kid selling 'magic' rocks, claiming they grant wishes, for $5 each", "A kid selling lemonade cheaper than the stand next door"], "ans": 2,
+          "hint": "Fraud needs two parts: deception, and something gained by it.",
+          "steps": [
+            "Pull the two requirements out of the definition: deceiving someone + doing it for gain.",
+            "Test each option: wrong change is a mistake (no deceiving on purpose); borrowing is honest; underselling is just competition.",
+            "The magic rocks are a lie told to collect $5 — deception, for gain. That is fraud by the book's exact definition."
+          ],
+          "ex": { "main": "**The magic rocks.** Fraud = a lie with a payday. Mistakes, requests and competition all lack the deliberate deception.", "tip": "When a definition is quoted, grade every option against its exact parts — the wrong answers usually fail one specific word." } },
+        { "id": "q1", "lv": 2, "from": "source", "kind": "mc",
+          "passage": "\"Fine,\" said Evan, taking out one cookie and putting it back in the cookie jar. \"Three for you. Three for me. Happy?\"",
+          "q": "The book opens with Evan and Jessie splitting cookies exactly evenly. Why start there?",
+          "opts": ["It shows this family keeps careful score — fairness is the house language, and this whole book is about fairness", "It shows Evan and Jessie are not speaking to each other", "It shows Evan always takes more than his share", "It shows Jessie doesn't actually care about the cookies"], "ans": 0,
+          "hint": "First scenes are promises. What is this one promising the book will be about?",
+          "steps": [
+            "Look at what actually happens: Jessie calls 'no fair', Evan recounts, they land on three-and-three.",
+            "Notice it works: these two argue in the language of fairness and settle in it too.",
+            "Now zoom out: a book that opens with an exactly-fair split is announcing its subject — what fairness costs and how you get it.",
+            "That is why chapter 1 is called Fraud: the fair-split family is about to meet someone who doesn't play by split rules."
+          ],
+          "ex": { "main": "**It plants fairness as the family language.** Authors spend page one carefully. Cookies split three-and-three is this book's whole theme in miniature.", "tip": "When a small scene opens a book, ask what bigger thing it rehearses. Openings are rarely about the cookies." } },
+        { "id": "q2", "lv": 2, "from": "source", "kind": "mc",
+          "passage": "revenge (ri-věnj′), n. The act of causing pain or harm to another person because that person has injured you in some way.",
+          "q": "By this definition, which response to a stolen bike is REVENGE?",
+          "opts": ["Reporting it to the school office", "Asking the kid to give it back", "Holding a fair hearing about who took it", "Scratching up the bike of the kid you think took yours"], "ans": 3,
+          "hint": "Revenge answers harm with harm — no referee involved.",
+          "steps": [
+            "The definition's key parts: causing pain or harm, because they harmed you first.",
+            "Reporting, asking, and holding a hearing all aim at fixing the wrong — none of them injure anyone.",
+            "Scratching the other bike creates new harm as payback. That is revenge, exactly as defined.",
+            "Hold onto this line — the book is going to make Evan choose between this word and chapter 10's."
+          ],
+          "ex": { "main": "**Scratching the other kid's bike.** Revenge manufactures new harm; the other three options try to repair the old one. The book titled chapter 2 'Revenge' as a warning about which road Evan is standing on.", "tip": "Revenge vs. justice questions come down to one test: does the response repair harm, or manufacture more of it?" } },
+        { "id": "q3", "lv": 1, "from": "source", "kind": "mc",
+          "q": "Where did Evan's $208 disappear?",
+          "opts": ["At Jack's house, while the boys played pool basketball", "At school, out of his desk", "At the lemonade stand, during the war", "On the school bus"], "ans": 0,
+          "hint": "Heat wave. Pool. All the guys were there.",
+          "steps": [
+            "Chapter 2 lays out the scene: last week, mid heat wave, at Jack's house.",
+            "The boys — Paul, Ryan, Kevin, Malik and Scott — were playing pool basketball.",
+            "Evan had the $208 there, and afterward he didn't. That opportunity is why his suspicion lands on that afternoon."
+          ],
+          "ex": { "main": "**At Jack's pool party.** The scene matters because everyone accused-adjacent was there — which is exactly what makes proving anything so hard.", "tip": "In mystery-shaped books, pin down the where and when of the loss first. Every argument afterward leans on it." } },
+        { "id": "q4", "lv": 2, "from": "source", "kind": "order", "ans": 0,
+          "q": "Put the story so far in order.",
+          "opts": ["Last summer's lemonade war leaves Evan with $208", "The money disappears at Jack's pool party", "Evan crushes the note, certain Scott stole it", "Jessie starts steering the playground toward a trial"],
+          "hint": "Money earned, money gone, anger, then Jessie's kind of answer.",
+          "steps": [
+            "The lemonade war is the prequel — it is where the $208 came from, before this book begins.",
+            "Then the pool party: the money vanishes during pool basketball at Jack's.",
+            "Chapter 2 opens on the anger: Evan crushing the note, more certain than ever about Scott.",
+            "And because this family speaks fairness, Jessie's response isn't a punch — it is a court. That is where the story is heading."
+          ],
+          "ex": { "main": "**War → pool party → the note → toward a trial.** Earn, lose, rage, organize. Each step follows from the one before — and the chapter titles predicted the last one.", "tip": "The order of events in a mystery is itself evidence. Get the timeline straight before judging anyone in it." } },
+        { "id": "q5", "lv": 2, "from": "source", "kind": "mc",
+          "q": "Jessie calls Megan at 7:00, 7:30, 7:55 AND 8:10 to make sure they get to school on time. What does that show about Jessie?",
+          "opts": ["She is forgetful and keeps losing track", "When something matters to her, she cannot let it go — she manages it minute by minute", "She secretly dislikes Megan", "She is usually the one running late"], "ans": 1,
+          "hint": "Four calls before 8:15 is not an accident. It's a personality.",
+          "steps": [
+            "Count the calls: four, spaced tighter as the deadline nears — that is monitoring, not forgetting.",
+            "Megan's grumble ('I was late because you kept calling me') confirms it landed as pressure.",
+            "This is the same Jessie who will organize a whole trial: intense, systematic, unable to leave an important thing alone.",
+            "The book shows you her character in a phone log before it tells you anything."
+          ],
+          "ex": { "main": "**She can't let go of what matters.** Four calls in seventy minutes is Jessie's engine on display — the same engine that will build the courtroom.", "tip": "Small habits are character evidence. Authors plant them early so the big actions later feel inevitable." } },
+        { "id": "q6", "lv": 1, "from": "source", "kind": "mc",
+          "passage": "accused (ə-kyoozd′), n. A person who has been charged with a crime or who is on trial for a crime.",
+          "q": "According to this definition, being 'the accused' means:",
+          "opts": ["You have been proven guilty", "You saw the crime happen", "You have been charged — the trial hasn't decided anything yet", "You are the person who was harmed"], "ans": 2,
+          "hint": "Charged and guilty are two different words on purpose.",
+          "steps": [
+            "Read the definition closely: charged with a crime, or on trial for one.",
+            "Neither of those words means guilty — a verdict is what a trial produces at the END.",
+            "So the accused stands in the space between suspicion and judgment. Scott is about to live in that space.",
+            "This is the word the whole book turns on: what do we owe someone who is accused but not proven?"
+          ],
+          "ex": { "main": "**Charged, not judged.** Accused is a position in a process, not an outcome. The book names chapter 5 for it right as the playground starts forgetting the difference.", "tip": "Legal words are precise on purpose. When the book bolds a definition, expect the plot to test exactly that precision." } },
+        { "id": "q7", "lv": 3, "from": "added", "kind": "mc",
+          "q": "Kevin says: \"Malik told me he saw Scott near the backpacks.\" As evidence, what is Kevin's statement?",
+          "opts": ["Hearsay — Kevin heard it; he didn't see anything himself", "Eyewitness testimony", "Solid proof", "Perjury"], "ans": 0,
+          "hint": "Whose eyes actually saw it — the speaker's, or someone else's?",
+          "steps": [
+            "Split the sentence: MALIK (maybe) saw something; KEVIN only heard Malik say so.",
+            "Eyewitness means your own eyes were there. Kevin's weren't.",
+            "Knowledge that arrives through someone else's mouth is hearsay — chapter 4's title word — and courts distrust it because nobody can check it.",
+            "If the trial wants what Malik saw, it needs Malik. That is the rule hiding in this question."
+          ],
+          "ex": { "main": "**Hearsay.** Kevin is repeating, not witnessing. It might even be true — the problem is that no one can test it through him. Real courts make the original witness show up for exactly this reason.", "tip": "For eyewitness-vs-hearsay, trace the chain: every extra mouth between the event and the courtroom weakens the evidence." } },
+        { "id": "q8", "lv": 3, "from": "added", "kind": "mc",
+          "q": "Evan is COMPLETELY certain Scott took the money. What is the difference between his certainty and actual proof?",
+          "opts": ["There is no difference if you're certain enough", "Certainty is a feeling inside one person; proof is something other people can check for themselves", "Proof is just certainty shared by more people", "Certainty counts as proof if you were the victim"], "ans": 1,
+          "hint": "Which one could convince a fair stranger who wasn't there?",
+          "steps": [
+            "Define each honestly: certainty lives inside Evan — nobody else can look at it.",
+            "Proof lives outside: a witness, the money found somewhere, something a stranger could examine.",
+            "Notice the trap in the other options: many people being certain is still just stacked feelings, and being the victim makes you the most certain and the least neutral at once.",
+            "The book's whole trial exists because the playground has maximum certainty and, so far, zero proof."
+          ],
+          "ex": { "main": "**Certainty is private; proof is checkable.** Evan may even be RIGHT — and it still wouldn't make his feeling into evidence. That uncomfortable gap is the engine of the entire book.", "tip": "This distinction shows up far beyond novels: every argument about who did what runs on it. Ask 'could a fair stranger verify this?'" } },
+        { "id": "q9", "lv": 2, "from": "source", "kind": "mc",
+          "q": "Why is it a big deal that it's \"the fourth day of fourth grade for both of them\"?",
+          "opts": ["They are twins who were separated before", "Their school just opened", "Jessie skipped a grade — so the little sister now sits in her big brother's class", "Evan was held back a year"], "ans": 2,
+          "hint": "One of them isn't the usual age for fourth grade.",
+          "steps": [
+            "The line quietly tells you something unusual: brother AND sister, same grade, same class.",
+            "Jessie skipped ahead — she is younger and now shares Evan's room, teacher and friends.",
+            "That arrangement caused the lemonade war last summer; now it means every playground event happens in front of both of them.",
+            "Keep it in mind during the trial: the sibling dynamic is always in the courtroom too."
+          ],
+          "ex": { "main": "**Jessie skipped a grade into Evan's class.** One quiet phrase carries the whole sibling setup — and explains why Jessie's fairness campaign happens on Evan's turf.", "tip": "When a book states something odd very casually, it is trusting you to notice. The casual ones are load-bearing." } },
+        { "id": "q10", "lv": 2, "from": "source", "kind": "mc",
+          "q": "The chapters run: Fraud, Revenge, Eyewitness, Hearsay, Accused … Trial by Jury … and finally Amends. What does the table of contents promise?",
+          "opts": ["Each chapter is a separate story about a different crime", "The trial happens in chapter one and the rest is aftermath", "The conflict will be handled like a real court case — and end not with winning, but with making things right", "The book is secretly a law textbook"], "ans": 2,
+          "hint": "Read the titles as a path. Where does the path end?",
+          "steps": [
+            "Read the titles in order: they trace a real case — the wrong, the anger, the evidence types, the accusation, the trial itself.",
+            "Now look at the final title: Amends — making up for a wrong. Not 'Verdict', not 'Winner'.",
+            "That ending word is a promise: whatever the jury decides, the story's real finish line is repair.",
+            "This is why the contents page is worth reading in any book — authors sign their intentions there."
+          ],
+          "ex": { "main": "**A court-shaped story that ends in repair.** Sixteen legal terms in trial order, closing on Amends — the author tells you the destination before page one, if you look.", "tip": "A patterned table of contents is a free prediction machine. Check your predictions against it as you read." } },
+        { "id": "q11", "lv": 1, "from": "added", "kind": "mc",
+          "q": "The last chapter is titled 'Amends.' To make amends means:",
+          "opts": ["To win the argument", "To get even with someone", "To forget the whole thing happened", "To make up for a wrong you did"], "ans": 3,
+          "hint": "It's what comes after someone admits a wrong.",
+          "steps": [
+            "Amends is about repair: doing something real to make up for harm you caused.",
+            "Check it against the impostors: winning is about you, getting even is revenge (chapter 2's word), forgetting fixes nothing.",
+            "Making amends requires admitting the wrong first — which is why it makes such a heavy final-chapter title."
+          ],
+          "ex": { "main": "**To make up for a wrong you did.** Amends is repair plus responsibility — the exact opposite of revenge, which is where the book started. Chapter 2 to chapter 16 is the whole journey.", "tip": "First and last chapter titles often argue with each other. Revenge → Amends is this book's argument in two words." } }
+      ]
+    }
+  }
+}
