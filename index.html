@@ -670,7 +670,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v39 · doors everywhere';
+const APP_VERSION = 'v40 · lesson three';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1476,7 +1476,7 @@ const Sync = {
     return DATA;
   }
 };
-const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.json', 'content/wordly-wise-5-01.json', 'content/wordly-wise-5-02.json', 'content/lemonade-crime-1.json'];
+const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.json', 'content/wordly-wise-5-01.json', 'content/wordly-wise-5-02.json', 'content/wordly-wise-5-03.json', 'content/lemonade-crime-1.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
