@@ -408,6 +408,10 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .chipbtn{min-height:44px;padding:8px 15px;border-radius:999px;border:1px solid var(--line);
   background-color:var(--raised);font-size:13.5px;line-height:1.2}
 .chipbtn.on{border-color:var(--ac);background-color:var(--ac-8)}
+/* Reference sheet rows inside the modal. */
+.frow{display:flex;flex-direction:column;gap:2px;padding:8px 0;border-bottom:1px solid var(--line-soft)}
+.frow .fn{font-size:12px;color:var(--faint)}
+.frow .eq{margin-top:0}
 /* Illustrated empty states. */
 .empty .scene{margin-bottom:6px}
 /* The Today strip: three numbers that are doors, not a scoreboard. */
@@ -694,7 +698,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v43 · three doors';
+const APP_VERSION = 'v44 · reference sheets';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1865,6 +1869,28 @@ function celebrate(){
    NEVER eval() — the expression is parsed by hand (recursive descent), so
    only digits and the listed operators can ever run. It stores nothing. */
 const CALC_CLASSES = new Set(['math','science']);
+/* Reference sheets — one per subject, each a study TOOL like the calculator,
+   openable from the subject screen and from inside a quiz. Empty until a
+   teacher issues one; add {classId: {nm, ic, note, sections}} and both
+   buttons appear. (Ad Astra carries a formula sheet and a conversion table.) */
+const SHEETS = {};
+function openSheet(classId){
+  const sh = SHEETS[classId];
+  if(!sh) return;
+  showModal({ title: sh.nm, confirmText:'Close', cancelText:null,
+    build:(box)=>{
+      box.appendChild(el('p',null, sh.note));
+      sh.sections.forEach(sec=>{
+        box.appendChild(el('div','eyebrow',sec.h));
+        sec.rows.forEach(([nm,eq])=>{
+          const r = el('div','frow');
+          r.appendChild(el('span','fn',nm));
+          r.appendChild(el('span','eq',eq));
+          box.appendChild(r);
+        });
+      });
+    }});
+}
 function calcEval(s){
   let i = 0;
   const eat = c=>{ if(s[i]===c){ i++; return true; } return false; };
@@ -2586,6 +2612,10 @@ SCREENS.unit = function(root){
   if(CALC_CLASSES.has(c.id)){
     const cb = el('button','btn btn-secondary','🧮  Calculator');
     cb.addEventListener('click',openCalc); root.appendChild(cb);
+  }
+  if(SHEETS[c.id]){
+    const fsb = el('button','btn btn-secondary', SHEETS[c.id].ic+'  '+SHEETS[c.id].nm);
+    fsb.addEventListener('click',()=>openSheet(c.id)); root.appendChild(fsb);
   }
   const fb = el('button','btn btn-secondary','🍅  Focus session for '+c.short);
   fb.addEventListener('click',()=>go('focus',{classId:c.id})); root.appendChild(fb);
@@ -3348,6 +3378,11 @@ SCREENS.quiz = function(root){
     const calcBtn = el('button','btn btn-ghost','🧮  Calculator');
     calcBtn.addEventListener('click',openCalc);
     root.appendChild(calcBtn);
+  }
+  if(SHEETS[ctx.classId]){
+    const fBtn = el('button','btn btn-ghost', SHEETS[ctx.classId].ic+'  '+SHEETS[ctx.classId].nm);
+    fBtn.addEventListener('click',()=>openSheet(ctx.classId));
+    root.appendChild(fBtn);
   }
   const quit = el('button','btn btn-ghost','Exit quiz');
   const back = ctx.unitId==='__review__' ? ['growth',{}] : ['unit',{classId:ctx.classId}];
