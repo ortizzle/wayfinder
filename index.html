@@ -670,7 +670,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v38 · a clearer telescope';
+const APP_VERSION = 'v39 · doors everywhere';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -2165,14 +2165,14 @@ SCREENS.today = function(root){
     const c = CLASS_BY_ID[a.classId], k = KINDS[a.kind]||KINDS.test;
     return { on:a.date, icon:k.ic, name:a.title, sub:`${c?c.name:''} · ${AZ.shortDate(a.date)}`,
              when: (dd=>dd===0?'Today':dd===1?'Tomorrow':`${dd} days`)(AZ.daysBetween(date,a.date)),
-             soon: AZ.daysBetween(date,a.date)<=2 };
+             soon: AZ.daysBetween(date,a.date)<=2, classId:a.classId };
   });
   const upE = upcomingEvents(date, 21).map(e=>{
     const span = evEnd(e)===e.start ? AZ.shortDate(e.start)
       : `${AZ.shortDate(e.start)} – ${AZ.shortDate(evEnd(e))}`;
     return { on:e.start, icon:e.icon, name:e.name, sub: e.note ? `${span} · ${e.note}` : span,
              when: whenLabel(date, e), soon: date>=e.start || AZ.daysBetween(date,e.start)<=2,
-             quiet: e.kind==='early' || e.kind==='note' };
+             quiet: e.kind==='early' || e.kind==='note', screen: e.screen||null };
   });
   const up = [...upA, ...upE].sort((a,b)=>a.on.localeCompare(b.on));
   if(up.length){
@@ -2183,7 +2183,13 @@ SCREENS.today = function(root){
       const kk = el('span','k',`${u.icon} ${u.name}`);
       kk.appendChild(el('small',null,u.sub));
       r.appendChild(kk);
-      r.appendChild(el('span','v'+(u.soon && !u.quiet ? '' : ' plain'), u.when));
+      /* Anything actionable is a door: a test opens its subject's shelf. */
+      const clickable = u.screen || u.classId;
+      r.appendChild(el('span','v'+(u.soon && !u.quiet ? '' : ' plain'), clickable ? u.when+'  ›' : u.when));
+      if(clickable){
+        r.style.cursor = 'pointer';
+        r.addEventListener('click',()=> u.screen ? go(u.screen) : go('unit',{classId:u.classId}));
+      }
       ac.appendChild(r);
     });
     root.appendChild(ac);
