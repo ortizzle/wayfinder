@@ -53,16 +53,17 @@ always Math, English, Recess, Lunch, Science, History.
 **Anything reading the schedule must call `dayClasses(date)`** — never iterate a
 global class list, because there isn't one.
 
-### Student hours (v22)
+### Student hours (v22, updated v33)
 
-`STUDENT_HOURS` carries the teachers' help-hours from the four course syllabi
-(times only — teacher names live in `roster`, never in this public file). Both
-core teachers pair their subjects: English & Writing on Mondays, Math & Science
-on Thursdays, 7:00–7:30 am and 3:30–4:00 pm. Rendered in three places: a quiet
-card on Today for the day being shown, a hintline on the subject's unit screen,
-and the parents' own hours in the grown-up Class details card. The syllabi say
-schedule changes are published in ParentSquare — when one lands, edit the
-constant and redeploy.
+`STUDENT_HOURS` carries the teachers' help-hours (times only — teacher names
+live in `roster`, never in this public file). Source of truth is the **weekly
+newsletter** (which superseded the syllabi in week one): English & Writing on
+Mondays, History on Tuesdays, Math & Science on Thursdays — 7:00–7:30 am or
+3:30–4:00 pm. `HOURS_START` (2026-08-17, from the first newsletter) gates both
+render sites so hours don't show before they exist. Rendered in three places:
+a quiet card on Today for the day being shown, a hintline on the subject's
+unit screen, and the parents' own hours in the grown-up Class details card.
+When a newsletter changes the schedule, edit the constant and redeploy.
 
 This `.ics` has **no teacher names** (Ad Astra's did), so no teacher shows unless
 one is entered in `roster`. The orientation unit drills rooms *and the rotation* instead, since

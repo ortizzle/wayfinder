@@ -601,7 +601,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v32 · solid spines';
+const APP_VERSION = 'v33 · newsletter week one';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -754,8 +754,10 @@ const CAL = {
      `kind` sets the tone as well as the icon. A benchmark that reads like an
      exam gets revised for, which is exactly the wrong response to a diagnostic. */
   events:[
-    {start:'2026-08-11', end:'2026-08-12', name:'Mini-Comps', icon:'✍️', kind:'exam',
-     note:'Short versions of the comp exams — a check on the quarter so far.'},
+    {start:'2026-08-11', name:'Math Mini-Comp', icon:'✍️', kind:'exam',
+     note:'A short version of a comp exam — a check on where math is so far.'},
+    {start:'2026-08-12', name:'English Mini-Comp', icon:'✍️', kind:'exam',
+     note:'Same shape as the math one, for English.'},
     {start:'2026-08-17', name:'Student Hours begin', icon:'🕐', kind:'note'},
     {start:'2026-08-17', end:'2026-08-19', name:'Fast Bridge Testing', icon:'📊', kind:'benchmark',
      note:'This one measures where you are right now. There is nothing to revise for.'},
@@ -1170,9 +1172,13 @@ window.matchMedia('(prefers-color-scheme: light)')
    lands, edit here and redeploy. */
 const STUDENT_HOURS = [
   {ids:['english','writing'], d:1, label:'Mondays',   times:'7:00–7:30 am and 3:30–4:00 pm'},
+  {ids:['history'],           d:2, label:'Tuesdays',  times:'7:00–7:30 am or 3:30–4:00 pm'},
   {ids:['math','science'],    d:4, label:'Thursdays', times:'7:00–7:30 am or 3:30–4:00 pm'}
 ];
-const hoursFor = id => STUDENT_HOURS.find(h=>h.ids.includes(id));
+/* The first newsletter: student hours start the week of 8/17 — showing them
+   earlier would send her to a door that isn't open yet. */
+const HOURS_START = '2026-08-17';
+const hoursFor = id => AZ.today() >= HOURS_START ? STUDENT_HOURS.find(h=>h.ids.includes(id)) : null;
 
 /* ---------- The companion ----------
    A creature she picks and names in Settings. It is a messenger, not a second
@@ -2083,7 +2089,7 @@ SCREENS.today = function(root){
 
   /* Student hours for the day being shown — the rotation decides her classes;
      this shows where extra help is on offer. */
-  const sh = STUDENT_HOURS.filter(h=>h.d===AZ.weekday(shownDate));
+  const sh = shownDate >= HOURS_START ? STUDENT_HOURS.filter(h=>h.d===AZ.weekday(shownDate)) : [];
   if(sh.length){
     const hc = el('div','card quiet');
     hc.appendChild(el('div','eyebrow', schoolDay ? 'Student hours today' : `Student hours ${dayName}`));
@@ -3896,7 +3902,7 @@ SCREENS.parent = function(root){
     });
     row.appendChild(i); rost.appendChild(row);
   });
-  rost.appendChild(el('div','hintline','Parent hours, from the syllabi — call the office or email to book: Math & Science on Tuesdays 9:45–10:15 am or 3:00–3:30 pm · English & Writing on Wednesdays 11:15–11:45 am and Thursdays 2:00–2:30 pm.'));
+  rost.appendChild(el('div','hintline','Parent hours, from the weekly newsletter — call the office or email to book: Math & Science on Tuesdays 9:45–10:15 am or 3:00–3:30 pm · English & Writing on Wednesdays 11:15–11:45 am or Thursdays 2:00–2:30 pm · History on Tuesdays 1:00–1:30 pm.'));
   root.appendChild(rost);
 
   root.appendChild(divider('Shared sync'));
