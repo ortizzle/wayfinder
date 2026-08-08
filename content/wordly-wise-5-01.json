@@ -1,0 +1,516 @@
+{
+  "v": 4,
+  "records": {
+    "unit-ww501": {
+      "id": "unit-ww501",
+      "type": "unit",
+      "updatedAt": 1786147200000,
+      "classId": "english",
+      "quarter": 1,
+      "status": "draft",
+      "title": "Wordly Wise · Lesson 1",
+      "srcName": "Wordly Wise 3000 Book 5, Lesson 1",
+      "source": "Wordly Wise 3000 Book 5, Lesson 1 (photos in Drive)",
+      "summary": {
+        "text": "The fifteen words of Wordly Wise 3000 Book 5, Lesson 1: accustom, alert, assign, budge, burly, companion, compatible, concept, distract, jostle, obedient, obstacle, patient, pedestrian, and retire — including the extra forms the book teaches (accustomed, assignment, distraction, obedience, patience, retirement) and the words that carry more than one meaning.",
+        "from": "source"
+      },
+      "why": {
+        "text": "These fifteen words show up everywhere once you own them — and vocabulary is the one part of English where a few minutes of practice, spread across days, beats an hour of cramming every time. The tricky ones here are the shape-shifters: alert, patient and retire each mean different things in different sentences.",
+        "from": "added"
+      },
+      "objectives": [
+        {
+          "text": "Give the meaning of all fifteen Lesson 1 words when they appear in a brand-new sentence.",
+          "from": "source"
+        },
+        {
+          "text": "Tell the multiple meanings apart: alert as a warning vs. wide-awake, patient as a person vs. willing to wait, retire as stopping work vs. going to bed.",
+          "from": "source"
+        },
+        {
+          "text": "Use the related forms — assignment, distraction, obedience, patience, retirement — as comfortably as the base words.",
+          "from": "source"
+        }
+      ],
+      "parentNote": {
+        "text": "Built from the Lesson 1 word-list pages you photographed (transcription saved in Drive under English → Wordly Wise). Definitions match the workbook; every quiz sentence is FRESH — the workbook's own exercises stay her homework, per the house rules. The high-value targets are the multi-meaning words (alert, patient, retire), which is exactly what Wordly Wise quizzes love to test. Anything she misses enters the review ladder automatically, which spreads practice across days — the right shape for a class where quizzes can be unannounced. Beat-the-clock stays available on vocab units; her countdown is calibrated to her own pace.",
+        "from": "added"
+      },
+      "nextUp": {
+        "text": "Cards first, once through. Then a quiz round a day beats one long session.",
+        "minutes": 16,
+        "from": "added"
+      },
+      "cards": [
+        {
+          "id": "c0",
+          "term": "accustom",
+          "def": "**To make familiar — to get someone used to something.** (verb)\n• accustomed (adj.): usual (\"our accustomed places\") or used to (\"accustomed to the dark\").",
+          "hint": "Think 'custom' hiding inside — what you're used to becomes your custom.",
+          "from": "source"
+        },
+        {
+          "id": "c1",
+          "term": "alert",
+          "def": "**Watchful; wide-awake.** (adjective)\n• As a verb: to warn to be ready — \"the sign alerted drivers.\"\n• As a noun: the warning itself — \"a fire alert.\"",
+          "hint": "One word, three jobs: being watchful, warning someone, or the warning itself.",
+          "from": "source"
+        },
+        {
+          "id": "c2",
+          "term": "assign",
+          "def": "**To pick someone for a job, or give out work to be done.** (verb)\n• assignment (n.): the work that got given out.\n• A coach assigns positions; a teacher assigns homework.",
+          "hint": "A-S-S-I-G-N: someone in charge signs you up for it.",
+          "from": "source"
+        },
+        {
+          "id": "c3",
+          "term": "budge",
+          "def": "**To move or shift — usually just barely, or not at all.** (verb)\n• Almost always shows up with 'wouldn't' or 'couldn't': the trunk wouldn't budge.",
+          "hint": "If it budges, it barely moved. If it won't, it's going nowhere.",
+          "from": "source"
+        },
+        {
+          "id": "c4",
+          "term": "burly",
+          "def": "**Big and strongly built.** (adjective)\n• Describes bodies, not personalities — a burly mover, a burly linebacker.",
+          "hint": "Burly rhymes with 'surely' — surely you don't want to arm-wrestle him.",
+          "from": "source"
+        },
+        {
+          "id": "c5",
+          "term": "companion",
+          "def": "**Someone who spends time with you or does things with you.** (noun)\n• A travel companion, a walking companion — company, in person form.",
+          "hint": "Same root as 'company' — the person keeping you company.",
+          "from": "source"
+        },
+        {
+          "id": "c6",
+          "term": "compatible",
+          "def": "**Getting along well together.** (adjective)\n• People can be compatible; so can roommates, teammates, even chargers and phones.",
+          "hint": "Com- = together. Compatible things fit together without a fight.",
+          "from": "source"
+        },
+        {
+          "id": "c7",
+          "term": "concept",
+          "def": "**A general idea or thought about something.** (noun)\n• The concept comes first; the details come after — \"we started with the concept of helping our community.\"",
+          "hint": "A concept is the idea before it grows details.",
+          "from": "source"
+        },
+        {
+          "id": "c8",
+          "term": "distract",
+          "def": "**To pull someone's thoughts or attention away from what they're doing.** (verb)\n• distraction (n.): the thing doing the pulling — sirens, pop-ups, a buzzing phone.",
+          "hint": "Dis-TRACT: yanked off your track.",
+          "from": "source"
+        },
+        {
+          "id": "c9",
+          "term": "jostle",
+          "def": "**To push or shove.** (verb)\n• Crowd word: you get jostled in packed hallways, stadiums, subways.",
+          "hint": "Sounds like 'hustle and jostle' — elbows in a crowd.",
+          "from": "source"
+        },
+        {
+          "id": "c10",
+          "term": "obedient",
+          "def": "**Doing what one is asked or told.** (adjective)\n• obedience (n.): the state of doing what you're told — what puppy school teaches.",
+          "hint": "OBEY is hiding right at the front of it.",
+          "from": "source"
+        },
+        {
+          "id": "c11",
+          "term": "obstacle",
+          "def": "**Something that blocks you from moving forward.** (noun)\n• A fallen tree on the trail, a wall in your way — or something invisible, like stage fright.",
+          "hint": "An obstacle stands in the way — that's its whole job.",
+          "from": "source"
+        },
+        {
+          "id": "c12",
+          "term": "patient",
+          "def": "**Willing to wait without complaining.** (adjective)\n• As a noun: a person in a doctor's care.\n• patience (n.): the willingness to wait — the thing long lines test.",
+          "hint": "The waiting-room joke is real: patients need patience.",
+          "from": "source"
+        },
+        {
+          "id": "c13",
+          "term": "pedestrian",
+          "def": "**A person who is walking; someone traveling on foot.** (noun)\n• Crosswalks, sidewalks and walk signals all exist for pedestrians.",
+          "hint": "Ped- = foot (like pedal). A pedestrian runs on foot power.",
+          "from": "source"
+        },
+        {
+          "id": "c14",
+          "term": "retire",
+          "def": "**To stop working for good, usually because of age.** (verb)\n• Second meaning: to go to bed — \"I retired early.\"\n• retirement (n.): the years of no longer working.",
+          "hint": "Both meanings are about stopping for a rest — one for a night, one for good.",
+          "from": "source"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q0",
+          "lv": 2,
+          "from": "source",
+          "kind": "mc",
+          "q": "After a week at the cabin, Mara had grown ___ to the rooster crowing at dawn — she slept right through it.",
+          "opts": [
+            "accustomed",
+            "obedient",
+            "burly",
+            "compatible"
+          ],
+          "ans": 0,
+          "hint": "Which word means 'used to it'?",
+          "steps": [
+            "Find the clue: she now sleeps through a noise that used to wake her — she is USED TO it.",
+            "Match to the list: accustomed means used to; that is the fit.",
+            "Check the impostors: obedient is about following orders, burly is about build, compatible is about getting along — none mean 'used to'."
+          ],
+          "ex": {
+            "main": "**Accustomed.** The sentence describes getting used to something over time — accustom's whole job.",
+            "tip": "On fill-in-the-blank vocab, find what the sentence PROVES happened first, then pick the word that means that."
+          }
+        },
+        {
+          "id": "q1",
+          "lv": 3,
+          "from": "source",
+          "kind": "mc",
+          "q": "In which sentence is 'alert' used as a NOUN?",
+          "opts": [
+            "The alert crossing guard spotted the runaway cart.",
+            "The weather service issued a flood alert for the valley.",
+            "Loudspeakers alerted swimmers to leave the water.",
+            "Stay alert during the last five minutes of the game."
+          ],
+          "ans": 1,
+          "hint": "The noun is the warning itself — a thing you can issue.",
+          "steps": [
+            "Recall alert's three jobs: adjective (watchful), verb (to warn), noun (the warning signal).",
+            "Test each sentence: 'alert crossing guard' describes the guard — adjective. 'Loudspeakers alerted' is an action — verb. 'Stay alert' describes you — adjective.",
+            "'Issued a flood alert' — the alert is a THING being issued. That is the noun."
+          ],
+          "ex": {
+            "main": "**'Issued a flood alert.'** If you can put 'a' or 'the' in front of it and it names a thing, it is the noun.",
+            "tip": "Wordly Wise loves part-of-speech questions on multi-meaning words. Ask: is it describing, doing, or naming?"
+          }
+        },
+        {
+          "id": "q2",
+          "lv": 1,
+          "from": "source",
+          "kind": "mc",
+          "q": "The drama teacher will assign the parts for the play on Friday. What does 'assign' mean here?",
+          "opts": [
+            "To rehearse",
+            "To applaud",
+            "To postpone",
+            "To select people for positions"
+          ],
+          "ans": 3,
+          "hint": "Who decides which student plays which role?",
+          "steps": [
+            "The teacher is deciding who gets which part — matching people to positions.",
+            "That is assign's first meaning: to select for a position.",
+            "Its cousin meaning — giving out work, like homework — uses the same idea: someone in charge hands out who-does-what."
+          ],
+          "ex": {
+            "main": "**To select people for positions.** Casting a play is assigning at its purest: one person in charge, matching people to roles.",
+            "tip": "Assign has two flavors — assigning PEOPLE to spots, and assigning WORK to people. Both start with someone in charge."
+          }
+        },
+        {
+          "id": "q3",
+          "lv": 1,
+          "from": "source",
+          "kind": "mc",
+          "q": "The puppy planted all four paws, and no amount of leash-pulling would make him ___.",
+          "opts": [
+            "retire",
+            "jostle",
+            "budge",
+            "distract"
+          ],
+          "ans": 2,
+          "hint": "The classic stubborn-dog word.",
+          "steps": [
+            "Picture it: something refusing to move even a little.",
+            "Budge means to move or shift — and it almost always appears with 'wouldn't' or 'couldn't'.",
+            "Jostle is pushing THROUGH a crowd, distract is about attention, retire is about stopping work — only budge is about the not-moving itself."
+          ],
+          "ex": {
+            "main": "**Budge.** 'Wouldn't budge' is practically one word in English — refusal to move even slightly.",
+            "tip": "Some vocabulary words live inside set phrases. Budge nearly always travels with a 'not'."
+          }
+        },
+        {
+          "id": "q4",
+          "lv": 1,
+          "from": "source",
+          "kind": "mc",
+          "q": "Which person is best described as 'burly'?",
+          "opts": [
+            "A quick, wiry gymnast",
+            "A tall, thin librarian",
+            "A big, broad-shouldered firefighter",
+            "A tiny, energetic toddler"
+          ],
+          "ans": 2,
+          "hint": "Big AND strongly built — both parts have to be true.",
+          "steps": [
+            "Burly = big and strongly built, so check each person against BOTH parts.",
+            "Wiry means thin and springy — strong maybe, big no. Tall-and-thin fails the strongly-built half. A toddler fails the big half.",
+            "The broad-shouldered firefighter is the only one who is both."
+          ],
+          "ex": {
+            "main": "**The big, broad-shouldered firefighter.** Burly is a two-part word: size plus strength. Half credit does not count.",
+            "tip": "When a definition has an AND in it, wrong answers usually satisfy exactly one half."
+          }
+        },
+        {
+          "id": "q5",
+          "lv": 1,
+          "from": "source",
+          "kind": "mc",
+          "q": "A 'companion' is:",
+          "opts": [
+            "Someone who spends time or does things with you",
+            "Someone who lives next door",
+            "Someone who competes against you",
+            "Someone who gives you orders"
+          ],
+          "ans": 0,
+          "hint": "It shares a root with 'company'.",
+          "steps": [
+            "Companion comes from the same root as company — someone keeping you company.",
+            "The key is WITH: a companion does things alongside you.",
+            "A neighbor merely lives nearby, a rival competes against you, a boss directs you — none of those require the together part."
+          ],
+          "ex": {
+            "main": "**Someone who spends time or does things with you.** The with is the whole word.",
+            "tip": "Root families are free hints: companion, company, accompany — all about being together."
+          }
+        },
+        {
+          "id": "q6",
+          "lv": 2,
+          "from": "source",
+          "kind": "mc",
+          "q": "Which pair is most clearly 'compatible'?",
+          "opts": [
+            "Two magnets pushing away from each other",
+            "Two apps that crash whenever both are open",
+            "A cat and the neighbor's dog that chases it daily",
+            "Lab partners who finish each other's ideas without arguing"
+          ],
+          "ans": 3,
+          "hint": "Compatible things work well side by side.",
+          "steps": [
+            "Compatible means getting along well together — no friction.",
+            "Scan for friction: repelling magnets, a chase, crashing apps — all three are conflict in costume.",
+            "The lab partners who work smoothly together are the only friction-free pair."
+          ],
+          "ex": {
+            "main": "**The lab partners.** Every other option is a picture of things clashing — which is the exact opposite, incompatible.",
+            "tip": "For 'which pair fits the word' questions, hunt for the conflict. The odd one out is usually your answer."
+          }
+        },
+        {
+          "id": "q7",
+          "lv": 2,
+          "from": "source",
+          "kind": "mc",
+          "q": "\"Our science fair project began with a simple ___: what if plants could water themselves?\" Which word fits?",
+          "opts": [
+            "obstacle",
+            "concept",
+            "companion",
+            "distraction"
+          ],
+          "ans": 1,
+          "hint": "The idea comes first; the project grows from it.",
+          "steps": [
+            "The blank names the starting IDEA behind the project.",
+            "Concept means exactly that — a general idea or thought that things get built from.",
+            "An obstacle would block the project, a distraction would derail it, a companion would just watch."
+          ],
+          "ex": {
+            "main": "**Concept.** Projects, inventions and stories all start as concepts — the idea before the details arrive.",
+            "tip": "'Began with' and 'started from' are concept's favorite neighbors in a sentence."
+          }
+        },
+        {
+          "id": "q8",
+          "lv": 2,
+          "from": "source",
+          "kind": "mc",
+          "q": "Which one is a 'distraction' while you are doing homework?",
+          "opts": [
+            "A sharpened pencil on the desk",
+            "A finished math worksheet",
+            "A glass of water",
+            "A phone buzzing with game invites"
+          ],
+          "ans": 3,
+          "hint": "Which one pulls your attention off the homework?",
+          "steps": [
+            "A distraction is something that PULLS your thoughts away from the task.",
+            "Test each item: pencil, water and a finished worksheet all sit quietly — no pull.",
+            "The buzzing phone actively grabs your attention away. That is the distraction."
+          ],
+          "ex": {
+            "main": "**The buzzing phone.** A distraction has to do something — it pulls. Objects that just sit there are scenery.",
+            "tip": "Distract literally means 'pull away from the track'. Look for the thing doing the pulling."
+          }
+        },
+        {
+          "id": "q9",
+          "lv": 1,
+          "from": "source",
+          "kind": "mc",
+          "q": "Coming off the crowded bus, Theo was ___ so hard he nearly dropped his backpack.",
+          "opts": [
+            "assigned",
+            "accustomed",
+            "retired",
+            "jostled"
+          ],
+          "ans": 3,
+          "hint": "Crowds do this with their elbows.",
+          "steps": [
+            "The scene is a crowd plus a shove hard enough to knock something loose.",
+            "Jostle means to push or shove — the crowd word exactly.",
+            "Assigned, accustomed and retired have nothing to do with pushing."
+          ],
+          "ex": {
+            "main": "**Jostled.** Crowded bus + nearly dropped backpack = shoved. Jostle is the push-and-shove of packed places.",
+            "tip": "Jostle almost always comes with a crowd attached. See a crowd in the sentence, check for jostle in the options."
+          }
+        },
+        {
+          "id": "q10",
+          "lv": 2,
+          "from": "source",
+          "kind": "mc",
+          "q": "Which action shows a dog being 'obedient'?",
+          "opts": [
+            "Barking at the mail carrier",
+            "Digging under the fence",
+            "Sitting the moment it hears 'sit'",
+            "Sleeping through dinner"
+          ],
+          "ans": 2,
+          "hint": "Obedient = doing what one is TOLD.",
+          "steps": [
+            "Obedient means doing what one is asked or told — so look for a command being followed.",
+            "Only one option contains a command at all: 'sit'.",
+            "The dog sits when told — asked, then done. That is obedience; the rest are just dog moments."
+          ],
+          "ex": {
+            "main": "**Sitting on 'sit'.** Obedience needs two parts: an instruction, and someone following it. No command, no obedience — just behavior.",
+            "tip": "For obedient/obedience questions, first find the order being given. No order in the sentence is usually a wrong answer."
+          }
+        },
+        {
+          "id": "q11",
+          "lv": 2,
+          "from": "source",
+          "kind": "mc",
+          "q": "The runners rounded the corner and found their path blocked by a fallen branch. In this sentence, the branch is:",
+          "opts": [
+            "an obstacle",
+            "an assignment",
+            "an alert",
+            "a concept"
+          ],
+          "ans": 0,
+          "hint": "What do you call a thing standing in the way?",
+          "steps": [
+            "Name what the branch is DOING: preventing the runners from moving forward.",
+            "That is the definition of an obstacle, word for word.",
+            "An assignment is given work, an alert is a warning, a concept is an idea — none of them block a path."
+          ],
+          "ex": {
+            "main": "**An obstacle.** Anything that stands between you and forward motion — physical like a branch, or invisible like fear — earns the name.",
+            "tip": "Obstacle questions often hide the definition in the sentence itself ('blocked', 'in the way', 'couldn't get past')."
+          }
+        },
+        {
+          "id": "q12",
+          "lv": 3,
+          "from": "source",
+          "kind": "mc",
+          "q": "In which sentence is 'patient' used as a NOUN?",
+          "opts": [
+            "The patient line of customers stretched out the door.",
+            "Grandpa is patient with my hundred questions.",
+            "The nurse brought the patient an extra blanket.",
+            "Be patient — the cookies need ten more minutes."
+          ],
+          "ans": 2,
+          "hint": "The noun version is a person in a doctor's care.",
+          "steps": [
+            "Patient the adjective describes someone willing to wait; patient the noun IS someone — a person under medical care.",
+            "Test each: 'patient line' describes the line, 'is patient' and 'be patient' describe people's behavior — all adjectives.",
+            "'Brought the patient a blanket' — the patient is a person receiving care. Noun."
+          ],
+          "ex": {
+            "main": "**The nurse's patient.** When 'patient' has a nurse or doctor nearby and names a person, it is the noun.",
+            "tip": "Same trick as alert: describing, doing, or naming? Naming a person or thing = noun."
+          }
+        },
+        {
+          "id": "q13",
+          "lv": 1,
+          "from": "source",
+          "kind": "mc",
+          "q": "The new crossing signal gives ___ six extra seconds to reach the other side.",
+          "opts": [
+            "patients",
+            "pedestrians",
+            "companions",
+            "concepts"
+          ],
+          "ans": 1,
+          "hint": "Ped- means foot.",
+          "steps": [
+            "Who uses a crossing signal? People traveling on foot.",
+            "Pedestrian means exactly that — ped- is the foot root, like in pedal.",
+            "Patients belong in a clinic sentence; the near-lookalike is the trap."
+          ],
+          "ex": {
+            "main": "**Pedestrians.** Crosswalks, sidewalks and walk signals are pedestrian territory. The patients/pedestrians lookalike trap is a Wordly Wise favorite — read the whole word.",
+            "tip": "Roots rescue you here: ped = foot (pedal, pedestrian), pat- in patient comes from 'suffering/enduring'. Different families."
+          }
+        },
+        {
+          "id": "q14",
+          "lv": 3,
+          "from": "source",
+          "kind": "mc",
+          "q": "\"Feeling a cold coming on, Dad retired right after dinner.\" What does 'retired' mean HERE?",
+          "opts": [
+            "Stopped working for good",
+            "Went to bed",
+            "Got tired again",
+            "Left the dinner table angrily"
+          ],
+          "ans": 1,
+          "hint": "The cold and the clock are the clues.",
+          "steps": [
+            "Retire has two meanings: stop working at a certain age, or go to bed.",
+            "Check the clues: a cold coming on, right after dinner — this is about one evening, not a career.",
+            "So retired here means went to bed. 'Got tired again' is a sound-alike trick — re-tired is not a word the way it looks."
+          ],
+          "ex": {
+            "main": "**Went to bed.** Context picks the meaning: careers end once; going to bed happens nightly. A cold after dinner points firmly at bedtime.",
+            "tip": "For multi-meaning words, the sentence always votes. Ask which meaning the OTHER words in the sentence support."
+          }
+        }
+      ]
+    }
+  }
+}
