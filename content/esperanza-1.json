@@ -1,470 +1,470 @@
 {
-  "v": 4,
-  "records": {
-    "unit-er1": {
-      "id": "unit-er1",
-      "type": "unit",
-      "updatedAt": 1786060800000,
-      "classId": "english",
-      "quarter": 1,
-      "status": "draft",
-      "book": true,
-      "title": "Esperanza Rising · Mexico to the Border",
-      "srcName": "Esperanza Rising, through \"Las Guayabas\"",
-      "source": "Esperanza Rising (Pam Muñoz Ryan), reading companion 1 of 3",
-      "summary": {
-        "text": "The opening of Esperanza Rising, from the Aguascalientes prologue through \"Las Guayabas\": Esperanza's life on El Rancho de las Rosas, Papa's death during the grape harvest, the uncles' pressure on Mama, the fire, and the secret journey north by wagon and train to the United States border.",
-        "from": "source"
-      },
-      "why": {
-        "text": "This is the part of the book where Esperanza loses almost everything — and where the author hides every idea she will spend the rest of the story growing back. If you notice the blanket, the phoenix, and the river now, the ending will feel like a promise kept.",
-        "from": "added"
-      },
-      "objectives": [
-        {
-          "text": "Retell the chain of events that pushes the family out of Mexico, in order.",
-          "from": "source"
-        },
-        {
-          "text": "Explain what the blanket stitches, the phoenix, and the river each stand for.",
-          "from": "source"
-        },
-        {
-          "text": "Notice how the story shows who is generous and who is greedy — through actions, not labels.",
-          "from": "added"
-        },
-        {
-          "text": "Use the Spanish chapter names to track time the way a farm does: by what is being harvested.",
-          "from": "source"
-        }
-      ],
-      "parentNote": {
-        "text": "First of three reading-companion units, covering only the prologue through \"Las Guayabas\" — it stops at the border, before the farm camp, so nothing is spoiled. It uses the new question styles: quoted passages for close reading, a put-in-order question for the chain of events, and one spot-the-false-statement question. Two ungraded ponder cards are meant for conversation — the doll-on-the-train one especially, since the honest answer for most of us is not flattering, and that is the discussion worth having. Watch-out: she may need help with why Mama cannot simply refuse the uncles and keep the ranch — the unit explains it as power (the bank, the mayor's office, and 1924 customs about women and land) rather than law. Beat-the-clock is off for book units.",
-        "from": "added"
-      },
-      "nextUp": {
-        "text": "Read to the end of \"Las Guayabas\" first, then do the cards and one quiz round.",
-        "minutes": 18,
-        "from": "added"
-      },
-      "cards": [
-        {
-          "id": "c0",
-          "term": "Esperanza Ortega",
-          "def": "**Twelve years old, about to turn thirteen — the only child of the richest rancher in the valley.**\n• Servants, silk dresses, a birthday every harvest.\n• Her name means \"hope\" in Spanish — remember that as everything else is taken away.",
-          "hint": "Watch what she still has when the things are gone.",
-          "from": "source"
-        },
-        {
-          "id": "c1",
-          "term": "Papa (Sixto Ortega)",
-          "def": "**The heart of the ranch — killed by bandits during the grape harvest, the night before Esperanza's birthday.**\n• Taught her to lie down in the vineyard and feel the earth's heartbeat.\n• His roses and his sayings keep showing up after he is gone. Keep count.",
-          "hint": "Papa dies in chapter one, but he is in every chapter after.",
-          "from": "source"
-        },
-        {
-          "id": "c2",
-          "term": "Mama (Ramona)",
-          "def": "**The book's quiet spine — she loses her husband, her house, and her place, and does not bend.**\n• Refuses Tío Luis's marriage offer even with everything at stake.\n• Chooses hard work in a strange country over comfort with strings attached.",
-          "hint": "Mama's strength shows in what she turns DOWN.",
-          "from": "source"
-        },
-        {
-          "id": "c3",
-          "term": "Abuelita",
-          "def": "**Esperanza's grandmother — hurt in the fire, she stays behind with the nuns and promises to follow.**\n• Gives Esperanza her unfinished blanket to work on until they meet again.\n• Her two gifts are really the same gift: the blanket, and the words about starting over.",
-          "hint": "Abuelita packs wisdom lighter than luggage.",
-          "from": "source"
-        },
-        {
-          "id": "c4",
-          "term": "Miguel",
-          "def": "**Hortensia and Alfonso's son — Esperanza's oldest friend, and the housekeeper's boy.**\n• Dreams of working with trains; in Mexico, boys like him rarely get the chance.\n• Once, Esperanza told him a river ran between them. He has not forgotten.",
-          "hint": "Miguel says little. His silences are worth reading twice.",
-          "from": "source"
-        },
-        {
-          "id": "c5",
-          "term": "Tío Luis",
-          "def": "**Papa's stepbrother — president of the bank, and suddenly very interested in Mama.**\n• His marriage offer is a business move: the ranch, the respect, the family name.\n• The fire happens right after Mama says no. The book lets you do that math yourself.",
-          "hint": "Luis never raises his voice. Powerful people often don't have to.",
-          "from": "source"
-        },
-        {
-          "id": "c6",
-          "term": "The blanket stitches",
-          "def": "**Zigzag rows — mountains and valleys — crocheted into Abuelita's unfinished blanket.**\n• The shape of the stitch is the shape of a life: ups, downs, and you keep stitching.\n• Unfinished on purpose: Esperanza is supposed to add rows until Abuelita comes.",
-          "hint": "Every time the blanket appears, ask: is Esperanza in a mountain row or a valley row?",
-          "from": "source"
-        },
-        {
-          "id": "c7",
-          "term": "The phoenix",
-          "def": "**The firebird that burns and rises new from its own ashes — Abuelita's picture for their family after the fire.**\n• Not a promise that nothing burns. A promise that burning is not the end.\n• The book's whole title lives inside this one image: Esperanza, rising.",
-          "hint": "Ashes first. Rising second. The order matters.",
-          "from": "source"
-        },
-        {
-          "id": "c8",
-          "term": "The heartbeat of the land",
-          "def": "**In the prologue, Papa and little Esperanza lie in the vineyard and feel the valley's heartbeat under them.**\n• It is how the book shows belonging: the land knows her, and she knows the land.\n• Keep this scene in your pocket — the story will come back for it.",
-          "hint": "A heartbeat you can lose and listen for again.",
-          "from": "source"
-        },
-        {
-          "id": "c9",
-          "term": "The porcelain doll",
-          "def": "**Papa's last birthday gift, bought before he died.**\n• On the train, a barefoot little girl reaches for it — and Esperanza snatches it away.\n• Mama's answer: she crochets the girl a yarn doll on the spot. Two mothers' lessons in one scene.",
-          "hint": "The doll measures Esperanza. Check it again at the end of the book.",
-          "from": "source"
-        },
-        {
-          "id": "c10",
-          "term": "The river (motif)",
-          "def": "**Esperanza once told Miguel that a river ran between them — the rancher's daughter on one bank, the servant's son on the other.**\n• On the train north, everything about that river is suddenly in question.\n• The book will keep asking: who dug that river, and can it be crossed?",
-          "hint": "Rivers in stories are rarely about water.",
-          "from": "source"
-        },
-        {
-          "id": "c11",
-          "term": "Chapters named for harvests",
-          "def": "**Las Uvas (grapes), Las Papayas, Los Higos (figs), Las Guayabas (guavas) — the chapters are crops.**\n• On a farm, time is measured by what is being picked, not by months.\n• The story opens at the grape harvest. Notice which crop is on the label whenever something big happens.",
-          "hint": "The table of contents is secretly a calendar.",
-          "from": "source"
-        },
-        {
-          "id": "c12",
-          "term": "Mexico, 1924",
-          "def": "**The Revolution is over, but the anger that fueled it is not.**\n• Many campesinos — farm workers — still owned nothing, while families like Esperanza's owned everything in sight.\n• That anger is why bandits target wealthy ranchers, and why the rich feel safe only in town.",
-          "hint": "History explains the bandits without excusing them.",
-          "from": "source"
-        },
-        {
-          "id": "c13",
-          "term": "Carmen, the egg woman",
-          "def": "**A poor traveler on the peasant train car — six children, a proud heart, and full hands anyway.**\n• Shares her food, gives to a beggar at the station, and pities no one, least of all herself.\n• Esperanza watches her the way you watch a math problem that will not come out: generosity is not supposed to work this way.",
-          "hint": "Carmen has the least and gives the most. The book does that on purpose.",
-          "from": "source"
-        },
-        {
-          "id": "c14",
-          "term": "Ponder: the doll on the train",
-          "def": "**Esperanza would not let the barefoot girl hold her doll — the last thing Papa ever gave her.**\n• Honestly: what would YOU have done? The truthful answer is allowed to be complicated.\n• Good one to ask at dinner. Everyone at the table will answer differently.",
-          "hint": "No grade, no wrong answer. Just be honest with yourself.",
-          "from": "added"
-        },
-        {
-          "id": "c15",
-          "term": "Ponder: the unfinished blanket",
-          "def": "**Abuelita said they would finish the blanket together.**\n• Prediction, before you read on: how do Esperanza and the blanket each change by the last page?\n• Write your guess down. Check it when you finish the book — the comparison is the fun part.",
-          "hint": "Stories keep their promises in unexpected ways.",
-          "from": "added"
-        }
-      ],
-      "questions": [
-        {
-          "id": "q0",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "passage": "“We are like the phoenix,” said Abuelita. “Rising again, with a new life ahead of us.”",
-          "q": "When does Abuelita say this, and what is she really telling the family?",
-          "opts": [
-            "Before the harvest — a wish for a good crop",
-            "After the fire — losing everything is not the same as being finished",
-            "On the train — a story to pass the time",
-            "At the border — a warning about what is ahead"
-          ],
-          "ans": 1,
-          "hint": "A phoenix needs ashes first. Where do the ashes come from?",
-          "steps": [
-            "Place the line: the house has just burned, and the family is deciding what is left to do.",
-            "Recall what a phoenix is: a bird that burns up and then rises, new, out of its own ashes.",
-            "So Abuelita is renaming the disaster: the fire is not their ending — it is the ashes their next life rises from.",
-            "That is why this line sits at the story's turning point: it turns escape into a beginning."
-          ],
-          "ex": {
-            "main": "**After the fire — burning is not the end.** Abuelita hands the family a story to live inside: ashes first, rising second. The book's title is this sentence wearing different clothes.",
-            "tip": "When a character reaches for a legend or an image, ask what they are renaming. Metaphors in hard moments are always doing work."
-          }
-        },
-        {
-          "id": "q1",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "passage": "“Do not be afraid to start over.”",
-          "q": "Abuelita gives Esperanza this advice as everything falls apart. Why is starting over the exact thing Esperanza is afraid of?",
-          "opts": [
-            "She is afraid of trains and travel",
-            "She is worried about learning English",
-            "She thinks the family will return to the ranch soon",
-            "Starting over means becoming a different Esperanza — one without the ranch, the dresses, or the servants that told her who she was"
-          ],
-          "ans": 3,
-          "hint": "What did Esperanza lose besides things?",
-          "steps": [
-            "List what the fire and the flight take: the house, the harvest parties, the dresses — but also her PLACE: being the ranch owner's daughter.",
-            "Starting over in the north means starting as nobody special, on the servants' side of everything.",
-            "So the advice aims past the luggage: Abuelita is telling her the self she is losing is not the only self she can be.",
-            "That is why the line is scary and kind at the same time — and why the book will test it for the rest of the story."
-          ],
-          "ex": {
-            "main": "**Starting over means a new Esperanza, not just a new address.** The things she lost were also her mirror. Abuelita's advice only sounds simple — it asks her to rebuild who she is.",
-            "tip": "When advice in a book seems obvious, ask what it costs the person receiving it. The cost is the story."
-          }
-        },
-        {
-          "id": "q2",
-          "lv": 2,
-          "from": "source",
-          "kind": "order",
-          "ans": 0,
-          "q": "Put the events that push the family out of Mexico in order.",
-          "opts": [
-            "Papa does not come home from the fields",
-            "Esperanza's birthday — and Papa's last gift, the doll",
-            "The house fire in the night",
-            "Hiding in the wagon, then the train north"
-          ],
-          "hint": "The chapters are crops: grapes, papayas, figs, guavas.",
-          "steps": [
-            "Las Uvas, the grape harvest: Papa rides out and does not come home — the bandits' work.",
-            "Las Papayas: the saddest birthday — the presents Papa chose before he died, including the porcelain doll.",
-            "Los Higos: after Mama refuses Tío Luis, the house burns in the night.",
-            "Las Guayabas: with nothing left to hold them, the secret journey — the wagon, then the long train ride toward the border."
-          ],
-          "ex": {
-            "main": "**Papa's death → the birthday doll → the fire → the journey north.** Each chapter takes one more thing: first the person, then the celebration, then the house, then the country.",
-            "tip": "This book gives you its timeline for free — the fruit on each chapter tells you where in the farm year you stand."
-          }
-        },
-        {
-          "id": "q3",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "What do Tío Luis and Tío Marco use to pressure Mama after Papa dies?",
-          "opts": [
-            "A letter from the government",
-            "A promise from Abuelita",
-            "Their grip on the town — the bank, the mayor's office — and the custom that a widow could not run the ranch alone",
-            "A debt Papa owed them"
-          ],
-          "ans": 2,
-          "hint": "What jobs do the two uncles hold?",
-          "steps": [
-            "Note the uncles' positions: Luis runs the bank, Marco is the mayor — money and power in the same family.",
-            "In 1924, custom said a woman alone could not simply take over a great ranch — she needed a man attached, in the town's eyes.",
-            "So Luis's marriage proposal is a trap dressed as a rescue: marry me, or watch everything become impossible.",
-            "That is why Mama's 'no' takes courage — she is refusing the only easy door out."
-          ],
-          "ex": {
-            "main": "**The bank, the mayor's office, and the customs of 1924.** The uncles never need to threaten out loud — their positions do it for them. The book shows power working politely.",
-            "tip": "When a villain stays calm, look at what he controls. The pressure is in the setup, not the shouting."
-          }
-        },
-        {
-          "id": "q4",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "Why does the family leave Mexico secretly, hidden in a wagon, instead of just buying train tickets in town?",
-          "opts": [
-            "Tío Luis is powerful enough to stop them — or punish anyone who helped them go",
-            "The trains were full at harvest time",
-            "Mama wanted to surprise Abuelita",
-            "They could not find the station"
-          ],
-          "ans": 0,
-          "hint": "Who would hear about it first if they bought tickets openly?",
-          "steps": [
-            "Remember what Luis wants: Mama, the ranch, and the appearance of respectability — a fleeing widow ruins all three.",
-            "He controls the bank and his brother controls the town, so nothing bought openly stays secret.",
-            "So the escape has to look like nothing: a servant's wagon rolling out, a family that is simply gone one morning.",
-            "The secrecy tells you the danger is real — you only sneak away from someone who can stop you."
-          ],
-          "ex": {
-            "main": "**Because Luis could stop them — or make anyone who helped them pay.** The hidden wagon is the book's proof of how much power the uncles hold; you measure a cage by how carefully you leave it.",
-            "tip": "HOW characters leave a place tells you what they are afraid of. Sneaking = someone is watching."
-          }
-        },
-        {
-          "id": "q5",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "Three of these are true when the family reaches the border. Which one is NOT?",
-          "opts": [
-            "Abuelita is on the train with them",
-            "Papa's porcelain doll made the journey",
-            "They rode in the car with the campesinos, not in first class",
-            "Hortensia, Alfonso and Miguel are traveling with them"
-          ],
-          "ans": 0,
-          "hint": "Who stayed with the nuns?",
-          "steps": [
-            "Check each person and thing against the journey you read: the doll is in Esperanza's arms on the train — true.",
-            "They ride with the campesinos — true, and Esperanza can hardly believe it.",
-            "Hortensia, Alfonso and Miguel lead the whole escape — true.",
-            "Abuelita is the one missing: hurt in the fire, she stays behind with the nuns and promises to come later. Her absence is the loose thread the rest of the book pulls."
-          ],
-          "ex": {
-            "main": "**Abuelita stayed behind.** Injured, she remains with the nuns — which turns the blanket from a keepsake into a promise: finish the rows until I come.",
-            "tip": "On NOT-true questions, tick each option against a scene you can picture. The one with no scene is your answer."
-          }
-        },
-        {
-          "id": "q6",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "On the train, Carmen — who has six children and a basket of eggs to her name — shares her food and gives to a beggar at the station. What is Esperanza supposed to learn from watching her?",
-          "opts": [
-            "That eggs were valuable in 1924",
-            "That poor travelers are careless with money",
-            "That generosity is a choice about heart, not a leftover of wealth",
-            "That Mama should stop talking to strangers"
-          ],
-          "ans": 2,
-          "hint": "Compare what Carmen has with what Carmen gives.",
-          "steps": [
-            "Set up the math the way Esperanza does: Carmen has almost nothing, so she should give almost nothing.",
-            "Then watch what actually happens: food shared on the train, coins for the beggar, warmth for everyone.",
-            "The math fails because generosity was never a percentage of wealth — it is a decision about other people.",
-            "Esperanza cannot solve it yet. That confusion is the lesson beginning to work on her."
-          ],
-          "ex": {
-            "main": "**Generosity comes from the heart, not the wallet.** Carmen, with the least, gives the most easily — and Esperanza's confusion at that is the first crack in her old way of seeing people.",
-            "tip": "When a book pairs a rich character with a poor one, watch the giving. It is usually the author's scale for measuring them."
-          }
-        },
-        {
-          "id": "q7",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "q": "Esperanza once told Miguel that a deep river ran between them. What did she mean — and why does that river suddenly look different on the train north?",
-          "opts": [
-            "A real river separated their houses on the ranch",
-            "She meant the gap between rich and poor could never be crossed — and now she is on the poor side of it, riding the same bench as everyone else",
-            "She meant Miguel was too old to be her friend",
-            "She meant she was moving to a town across the river"
-          ],
-          "ans": 1,
-          "hint": "Which bank of that river is she sitting on now?",
-          "steps": [
-            "Unpack the metaphor: the river was class — rancher's daughter on one bank, housekeeper's son on the other, no bridge.",
-            "Saying it out loud told Miguel exactly where he stood with her, and he has carried it since.",
-            "Now the fire and the flight have thrown Esperanza across her own river: no ranch, no servants, third-class bench.",
-            "The question the train ride quietly asks: was the river ever real — or was it something her old life built?"
-          ],
-          "ex": {
-            "main": "**The river was the wall between rich and poor — and she has just landed on the other bank.** The book plants it now so it can keep asking whether the river was ever really there.",
-            "tip": "When a metaphor from earlier in a book reappears after everything changes, re-read it with the new situation. That is where authors hide their questions."
-          }
-        },
-        {
-          "id": "q8",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "After Esperanza snatches the doll away from the barefoot girl, Mama crochets the child a yarn doll. What does Mama's gift do that Esperanza's refusal did not?",
-          "opts": [
-            "It proves Mama is better at crafts",
-            "It shows the doll was too fragile to share",
-            "It teaches the girl to make her own toys",
-            "It treats the girl as someone who matters — without costing Esperanza her doll"
-          ],
-          "ans": 3,
-          "hint": "Two problems existed in that moment. Mama solved both.",
-          "steps": [
-            "Name what actually hurt: not being refused the doll, but being refused like she was nothing.",
-            "Mama's yarn doll answers the real wound: it says you are worth stopping for, worth making something for.",
-            "And notice it costs Esperanza nothing — Papa's gift stays hers. Kindness did not require the sacrifice she feared.",
-            "That is the lesson in one scene: there is almost always a generous move that was available the whole time."
-          ],
-          "ex": {
-            "main": "**It treats the girl as a person — and Papa's doll stays Esperanza's.** Mama finds the third option Esperanza could not see through her panic: dignity for the child, no loss required.",
-            "tip": "In scenes where a character does something ungenerous, look for the adult's quiet counter-move. It is usually the author showing the better answer."
-          }
-        },
-        {
-          "id": "q9",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "Abuelita's blanket is crocheted in zigzag rows she calls mountains and valleys. What is the blanket teaching Esperanza to expect?",
-          "opts": [
-            "That crochet takes patience",
-            "That a life goes up and down by turns — and you keep adding rows through both",
-            "That the blanket must be finished before winter",
-            "That valleys are safer than mountains"
-          ],
-          "ans": 1,
-          "hint": "Where in the zigzag is Esperanza's family right now?",
-          "steps": [
-            "Look at the stitch itself: up to a peak, down to a valley, again and again — no row is flat.",
-            "Abuelita says it plainly: right now they are in a valley, and the mountains will come again.",
-            "The instruction hiding inside: valleys are not where the blanket stops. You keep stitching.",
-            "Unfinished on purpose, it makes Esperanza the one who must add the rows — which is the whole book in craft form."
-          ],
-          "ex": {
-            "main": "**Ups and downs, and you keep stitching through both.** The blanket is a life you can hold: peaks, valleys, and rows that only grow if Esperanza keeps working them.",
-            "tip": "Objects that get explained by a wise character are never just objects. Track the blanket every time it appears."
-          }
-        },
-        {
-          "id": "q10",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "q": "Why might Pam Muñoz Ryan have named every chapter after a fruit or vegetable harvest?",
-          "opts": [
-            "Because farm life measures time in crops, not months — and the harvests quietly tell you the season of Esperanza's own life",
-            "To teach Spanish food vocabulary",
-            "Because the publisher asked for short titles",
-            "To hide the chapter numbers"
-          ],
-          "ans": 0,
-          "hint": "Who measures a year by grapes and figs instead of January and June?",
-          "steps": [
-            "Notice whose calendar this is: on a ranch — and later, in the fields — work and time ARE the harvest.",
-            "So the chapter names put you inside farm time from the first page, even while Esperanza still lives above it.",
-            "Then look closer: the story opens at the grape harvest, and each crop marks what her life holds in that season.",
-            "It is a promise about where the story is headed, hiding in the table of contents."
-          ],
-          "ex": {
-            "main": "**Farm time is crop time — and the harvests mirror Esperanza's seasons.** The naming pulls you into the workers' way of measuring a year before Esperanza herself has to learn it.",
-            "tip": "Chapter titles are free clues. When they follow a pattern, the pattern is part of the story."
-          }
-        },
-        {
-          "id": "q11",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "It is 1924 and the Mexican Revolution is over. Why are wealthy ranchers like Papa still in danger?",
-          "opts": [
-            "The government taxes them heavily",
-            "Bandits target anyone who travels at night",
-            "The anger behind the revolution remains — many campesinos still own nothing while a few families own everything",
-            "The ranchers refuse to hire guards"
-          ],
-          "ans": 2,
-          "hint": "A war can end before the reasons for it do.",
-          "steps": [
-            "Recall what the Revolution was about: land and fairness — most people worked land they could never own.",
-            "The fighting stopped, but the ownership mostly did not change: families like the Ortegas still hold the valley.",
-            "So the resentment stays live, and bandits aim it at the visible winners — the rich ranchers.",
-            "The book is careful here: it explains Papa's death without excusing it, and without pretending the anger came from nowhere."
-          ],
-          "ex": {
-            "main": "**The revolution's anger outlived the revolution.** Papa is kind, and it does not save him — the book wants you to see unfairness so large that even good individuals are caught inside it.",
-            "tip": "Historical fiction often opens by showing why the history is personal. This is that scene."
-          }
-        }
-      ]
+ "v": 4,
+ "records": {
+  "unit-er1": {
+   "id": "unit-er1",
+   "type": "unit",
+   "updatedAt": 1786284278283,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "book": true,
+   "title": "Esperanza Rising · Mexico to the Border",
+   "srcName": "Esperanza Rising, through \"Las Guayabas\"",
+   "source": "Esperanza Rising (Pam Muñoz Ryan), reading companion 1 of 3",
+   "summary": {
+    "text": "The opening of Esperanza Rising, from the Aguascalientes prologue through \"Las Guayabas\": Esperanza's life on El Rancho de las Rosas, Papa's death during the grape harvest, the uncles' pressure on Mama, the fire, and the secret journey north by wagon and train to the United States border.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the part of the book where Esperanza loses almost everything — and where the author hides every idea she will spend the rest of the story growing back. If you notice the blanket, the phoenix, and the river now, the ending will feel like a promise kept.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Retell the chain of events that pushes the family out of Mexico, in order.",
+     "from": "source"
+    },
+    {
+     "text": "Explain what the blanket stitches, the phoenix, and the river each stand for.",
+     "from": "source"
+    },
+    {
+     "text": "Notice how the story shows who is generous and who is greedy — through actions, not labels.",
+     "from": "added"
+    },
+    {
+     "text": "Use the Spanish chapter names to track time the way a farm does: by what is being harvested.",
+     "from": "source"
     }
+   ],
+   "parentNote": {
+    "text": "First of three reading-companion units, covering only the prologue through \"Las Guayabas\" — it stops at the border, before the farm camp, so nothing is spoiled. It uses the new question styles: quoted passages for close reading, a put-in-order question for the chain of events, and one spot-the-false-statement question. Two ungraded ponder cards are meant for conversation — the doll-on-the-train one especially, since the honest answer for most of us is not flattering, and that is the discussion worth having. Watch-out: she may need help with why Mama cannot simply refuse the uncles and keep the ranch — the unit explains it as power (the bank, the mayor's office, and 1924 customs about women and land) rather than law. Beat-the-clock is off for book units.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Read to the end of \"Las Guayabas\" first, then do the cards and one quiz round.",
+    "minutes": 18,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Esperanza Ortega",
+     "def": "**Twelve years old, about to turn thirteen — the only child of the richest rancher in the valley.**\n• Servants, silk dresses, a birthday every harvest.\n• Her name means \"hope\" in Spanish — remember that as everything else is taken away.",
+     "hint": "Watch what she still has when the things are gone.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Papa (Sixto Ortega)",
+     "def": "**The heart of the ranch — killed by bandits during the grape harvest, the night before Esperanza's birthday.**\n• Taught her to lie down in the vineyard and feel the earth's heartbeat.\n• His roses and his sayings keep showing up after he is gone. Keep count.",
+     "hint": "Papa dies in chapter one, but he is in every chapter after.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Mama (Ramona)",
+     "def": "**The book's quiet spine — she loses her husband, her house, and her place, and does not bend.**\n• Refuses Tío Luis's marriage offer even with everything at stake.\n• Chooses hard work in a strange country over comfort with strings attached.",
+     "hint": "Mama's strength shows in what she turns DOWN.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Abuelita",
+     "def": "**Esperanza's grandmother — hurt in the fire, she stays behind with the nuns and promises to follow.**\n• Gives Esperanza her unfinished blanket to work on until they meet again.\n• Her two gifts are really the same gift: the blanket, and the words about starting over.",
+     "hint": "Abuelita packs wisdom lighter than luggage.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Miguel",
+     "def": "**Hortensia and Alfonso's son — Esperanza's oldest friend, and the housekeeper's boy.**\n• Dreams of working with trains; in Mexico, boys like him rarely get the chance.\n• Once, Esperanza told him a river ran between them. He has not forgotten.",
+     "hint": "Miguel says little. His silences are worth reading twice.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Tío Luis",
+     "def": "**Papa's stepbrother — president of the bank, and suddenly very interested in Mama.**\n• His marriage offer is a business move: the ranch, the respect, the family name.\n• The fire happens right after Mama says no. The book lets you do that math yourself.",
+     "hint": "Luis never raises his voice. Powerful people often don't have to.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "The blanket stitches",
+     "def": "**Zigzag rows — mountains and valleys — crocheted into Abuelita's unfinished blanket.**\n• The shape of the stitch is the shape of a life: ups, downs, and you keep stitching.\n• Unfinished on purpose: Esperanza is supposed to add rows until Abuelita comes.",
+     "hint": "Every time the blanket appears, ask: is Esperanza in a mountain row or a valley row?",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "The phoenix",
+     "def": "**The firebird that burns and rises new from its own ashes — Abuelita's picture for their family after the fire.**\n• Not a promise that nothing burns. A promise that burning is not the end.\n• The book's whole title lives inside this one image: Esperanza, rising.",
+     "hint": "Ashes first. Rising second. The order matters.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "The heartbeat of the land",
+     "def": "**In the prologue, Papa and little Esperanza lie in the vineyard and feel the valley's heartbeat under them.**\n• It is how the book shows belonging: the land knows her, and she knows the land.\n• Keep this scene in your pocket — the story will come back for it.",
+     "hint": "A heartbeat you can lose and listen for again.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "The porcelain doll",
+     "def": "**Papa's last birthday gift, bought before he died.**\n• On the train, a barefoot little girl reaches for it — and Esperanza snatches it away.\n• Mama's answer: she crochets the girl a yarn doll on the spot. Two mothers' lessons in one scene.",
+     "hint": "The doll measures Esperanza. Check it again at the end of the book.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "The river (motif)",
+     "def": "**Esperanza once told Miguel that a river ran between them — the rancher's daughter on one bank, the servant's son on the other.**\n• On the train north, everything about that river is suddenly in question.\n• The book will keep asking: who dug that river, and can it be crossed?",
+     "hint": "Rivers in stories are rarely about water.",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "Chapters named for harvests",
+     "def": "**Las Uvas (grapes), Las Papayas, Los Higos (figs), Las Guayabas (guavas) — the chapters are crops.**\n• On a farm, time is measured by what is being picked, not by months.\n• The story opens at the grape harvest. Notice which crop is on the label whenever something big happens.",
+     "hint": "The table of contents is secretly a calendar.",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "Mexico, 1924",
+     "def": "**The Revolution is over, but the anger that fueled it is not.**\n• Many campesinos — farm workers — still owned nothing, while families like Esperanza's owned everything in sight.\n• That anger is why bandits target wealthy ranchers, and why the rich feel safe only in town.",
+     "hint": "History explains the bandits without excusing them.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "Carmen, the egg woman",
+     "def": "**A poor traveler on the peasant train car — six children, a proud heart, and full hands anyway.**\n• Shares her food, gives to a beggar at the station, and pities no one, least of all herself.\n• Esperanza watches her the way you watch a math problem that will not come out: generosity is not supposed to work this way.",
+     "hint": "Carmen has the least and gives the most. The book does that on purpose.",
+     "from": "source"
+    },
+    {
+     "id": "c14",
+     "term": "Ponder: the doll on the train",
+     "def": "**Esperanza would not let the barefoot girl hold her doll — the last thing Papa ever gave her.**\n• Honestly: what would YOU have done? The truthful answer is allowed to be complicated.\n• Good one to ask at dinner. Everyone at the table will answer differently.",
+     "hint": "No grade, no wrong answer. Just be honest with yourself.",
+     "from": "added"
+    },
+    {
+     "id": "c15",
+     "term": "Ponder: the unfinished blanket",
+     "def": "**Abuelita said they would finish the blanket together.**\n• Prediction, before you read on: how do Esperanza and the blanket each change by the last page?\n• Write your guess down. Check it when you finish the book — the comparison is the fun part.",
+     "hint": "Stories keep their promises in unexpected ways.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "passage": "“We are like the phoenix,” said Abuelita. “Rising again, with a new life ahead of us.”",
+     "q": "When does Abuelita say this, and what is she really telling the family?",
+     "opts": [
+      "Before the harvest — a wish for a good crop",
+      "After the fire — losing everything is not the same as being finished",
+      "On the train — a story to pass the time",
+      "At the border — a warning about what is ahead"
+     ],
+     "ans": 1,
+     "hint": "A phoenix needs ashes first. Where do the ashes come from?",
+     "steps": [
+      "Place the line: the house has just burned, and the family is deciding what is left to do.",
+      "Recall what a phoenix is: a bird that burns up and then rises, new, out of its own ashes.",
+      "So Abuelita is renaming the disaster: the fire is not their ending — it is the ashes their next life rises from.",
+      "That is why this line sits at the story's turning point: it turns escape into a beginning."
+     ],
+     "ex": {
+      "main": "**After the fire — burning is not the end.** Abuelita hands the family a story to live inside: ashes first, rising second. The book's title is this sentence wearing different clothes.",
+      "tip": "When a character reaches for a legend or an image, ask what they are renaming. Metaphors in hard moments are always doing work."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "passage": "“Do not be afraid to start over.”",
+     "q": "Abuelita gives Esperanza this advice as everything falls apart. Why is starting over the exact thing Esperanza is afraid of?",
+     "opts": [
+      "She is afraid of trains and travel",
+      "She is worried about learning English",
+      "She thinks the family will return to the ranch soon",
+      "Starting over means becoming a different Esperanza — one without the ranch, the dresses, or the servants that told her who she was"
+     ],
+     "ans": 3,
+     "hint": "What did Esperanza lose besides things?",
+     "steps": [
+      "List what the fire and the flight take: the house, the harvest parties, the dresses — but also her PLACE: being the ranch owner's daughter.",
+      "Starting over in the north means starting as nobody special, on the servants' side of everything.",
+      "So the advice aims past the luggage: Abuelita is telling her the self she is losing is not the only self she can be.",
+      "That is why the line is scary and kind at the same time — and why the book will test it for the rest of the story."
+     ],
+     "ex": {
+      "main": "**Starting over means a new Esperanza, not just a new address.** The things she lost were also her mirror. Abuelita's advice only sounds simple — it asks her to rebuild who she is.",
+      "tip": "When advice in a book seems obvious, ask what it costs the person receiving it. The cost is the story."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "order",
+     "ans": 0,
+     "q": "Put the events that push the family out of Mexico in order.",
+     "opts": [
+      "Papa does not come home from the fields",
+      "Esperanza's birthday — and Papa's last gift, the doll",
+      "The house fire in the night",
+      "Hiding in the wagon, then the train north"
+     ],
+     "hint": "The chapters are crops: grapes, papayas, figs, guavas.",
+     "steps": [
+      "Las Uvas, the grape harvest: Papa rides out and does not come home — the bandits' work.",
+      "Las Papayas: the saddest birthday — the presents Papa chose before he died, including the porcelain doll.",
+      "Los Higos: after Mama refuses Tío Luis, the house burns in the night.",
+      "Las Guayabas: with nothing left to hold them, the secret journey — the wagon, then the long train ride toward the border."
+     ],
+     "ex": {
+      "main": "**Papa's death → the birthday doll → the fire → the journey north.** Each chapter takes one more thing: first the person, then the celebration, then the house, then the country.",
+      "tip": "This book gives you its timeline for free — the fruit on each chapter tells you where in the farm year you stand."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What do Tío Luis and Tío Marco use to pressure Mama after Papa dies?",
+     "opts": [
+      "A letter from the government",
+      "A promise from Abuelita",
+      "Their grip on the town — the bank, the mayor's office — and the custom that a widow could not run the ranch alone",
+      "A debt Papa owed them"
+     ],
+     "ans": 2,
+     "hint": "What jobs do the two uncles hold?",
+     "steps": [
+      "Note the uncles' positions: Luis runs the bank, Marco is the mayor — money and power in the same family.",
+      "In 1924, custom said a woman alone could not simply take over a great ranch — she needed a man attached, in the town's eyes.",
+      "So Luis's marriage proposal is a trap dressed as a rescue: marry me, or watch everything become impossible.",
+      "That is why Mama's 'no' takes courage — she is refusing the only easy door out."
+     ],
+     "ex": {
+      "main": "**The bank, the mayor's office, and the customs of 1924.** The uncles never need to threaten out loud — their positions do it for them. The book shows power working politely.",
+      "tip": "When a villain stays calm, look at what he controls. The pressure is in the setup, not the shouting."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does the family leave Mexico secretly, hidden in a wagon, instead of just buying train tickets in town?",
+     "opts": [
+      "Tío Luis is powerful enough to stop them — or punish anyone who helped them go",
+      "The trains were full at harvest time",
+      "Mama wanted to surprise Abuelita",
+      "They could not find the station"
+     ],
+     "ans": 0,
+     "hint": "Who would hear about it first if they bought tickets openly?",
+     "steps": [
+      "Remember what Luis wants: Mama, the ranch, and the appearance of respectability — a fleeing widow ruins all three.",
+      "He controls the bank and his brother controls the town, so nothing bought openly stays secret.",
+      "So the escape has to look like nothing: a servant's wagon rolling out, a family that is simply gone one morning.",
+      "The secrecy tells you the danger is real — you only sneak away from someone who can stop you."
+     ],
+     "ex": {
+      "main": "**Because Luis could stop them — or make anyone who helped them pay.** The hidden wagon is the book's proof of how much power the uncles hold; you measure a cage by how carefully you leave it.",
+      "tip": "HOW characters leave a place tells you what they are afraid of. Sneaking = someone is watching."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three of these are true when the family reaches the border. Which one is NOT?",
+     "opts": [
+      "Abuelita is on the train with them",
+      "Papa's porcelain doll made the journey",
+      "They rode in the car with the campesinos, not in first class",
+      "Hortensia, Alfonso and Miguel are traveling with them"
+     ],
+     "ans": 0,
+     "hint": "Who stayed with the nuns?",
+     "steps": [
+      "Check each person and thing against the journey you read: the doll is in Esperanza's arms on the train — true.",
+      "They ride with the campesinos — true, and Esperanza can hardly believe it.",
+      "Hortensia, Alfonso and Miguel lead the whole escape — true.",
+      "Abuelita is the one missing: hurt in the fire, she stays behind with the nuns and promises to come later. Her absence is the loose thread the rest of the book pulls."
+     ],
+     "ex": {
+      "main": "**Abuelita stayed behind.** Injured, she remains with the nuns — which turns the blanket from a keepsake into a promise: finish the rows until I come.",
+      "tip": "On NOT-true questions, tick each option against a scene you can picture. The one with no scene is your answer."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "On the train, Carmen — who has six children and a basket of eggs to her name — shares her food and gives to a beggar at the station. What is Esperanza supposed to learn from watching her?",
+     "opts": [
+      "That eggs were valuable in 1924",
+      "That poor travelers are careless with money",
+      "That generosity is a choice about heart, not a leftover of wealth",
+      "That Mama should stop talking to strangers"
+     ],
+     "ans": 2,
+     "hint": "Compare what Carmen has with what Carmen gives.",
+     "steps": [
+      "Set up the math the way Esperanza does: Carmen has almost nothing, so she should give almost nothing.",
+      "Then watch what actually happens: food shared on the train, coins for the beggar, warmth for everyone.",
+      "The math fails because generosity was never a percentage of wealth — it is a decision about other people.",
+      "Esperanza cannot solve it yet. That confusion is the lesson beginning to work on her."
+     ],
+     "ex": {
+      "main": "**Generosity comes from the heart, not the wallet.** Carmen, with the least, gives the most easily — and Esperanza's confusion at that is the first crack in her old way of seeing people.",
+      "tip": "When a book pairs a rich character with a poor one, watch the giving. It is usually the author's scale for measuring them."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Esperanza once told Miguel that a deep river ran between them. What did she mean — and why does that river suddenly look different on the train north?",
+     "opts": [
+      "A real river separated their houses on the ranch",
+      "She meant the gap between rich and poor could never be crossed — and now she is on the poor side of it, riding the same bench as everyone else",
+      "She meant Miguel was too old to be her friend",
+      "She meant she was moving to a town across the river"
+     ],
+     "ans": 1,
+     "hint": "Which bank of that river is she sitting on now?",
+     "steps": [
+      "Unpack the metaphor: the river was class — rancher's daughter on one bank, housekeeper's son on the other, no bridge.",
+      "Saying it out loud told Miguel exactly where he stood with her, and he has carried it since.",
+      "Now the fire and the flight have thrown Esperanza across her own river: no ranch, no servants, third-class bench.",
+      "The question the train ride quietly asks: was the river ever real — or was it something her old life built?"
+     ],
+     "ex": {
+      "main": "**The river was the wall between rich and poor — and she has just landed on the other bank.** The book plants it now so it can keep asking whether the river was ever really there.",
+      "tip": "When a metaphor from earlier in a book reappears after everything changes, re-read it with the new situation. That is where authors hide their questions."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "After Esperanza snatches the doll away from the barefoot girl, Mama crochets the child a yarn doll. What does Mama's gift do that Esperanza's refusal did not?",
+     "opts": [
+      "It proves Mama is better at crafts",
+      "It shows the doll was too fragile to share",
+      "It teaches the girl to make her own toys",
+      "It treats the girl as someone who matters — without costing Esperanza her doll"
+     ],
+     "ans": 3,
+     "hint": "Two problems existed in that moment. Mama solved both.",
+     "steps": [
+      "Name what actually hurt: not being refused the doll, but being refused like she was nothing.",
+      "Mama's yarn doll answers the real wound: it says you are worth stopping for, worth making something for.",
+      "And notice it costs Esperanza nothing — Papa's gift stays hers. Kindness did not require the sacrifice she feared.",
+      "That is the lesson in one scene: there is almost always a generous move that was available the whole time."
+     ],
+     "ex": {
+      "main": "**It treats the girl as a person — and Papa's doll stays Esperanza's.** Mama finds the third path Esperanza could not see through her panic: dignity for the child, no loss required.",
+      "tip": "In scenes where a character does something ungenerous, look for the adult's quiet counter-move. It is usually the author showing the better answer."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Abuelita's blanket is crocheted in zigzag rows she calls mountains and valleys. What is the blanket teaching Esperanza to expect?",
+     "opts": [
+      "That crochet takes patience",
+      "That a life goes up and down by turns — and you keep adding rows through both",
+      "That the blanket must be finished before winter",
+      "That valleys are safer than mountains"
+     ],
+     "ans": 1,
+     "hint": "Where in the zigzag is Esperanza's family right now?",
+     "steps": [
+      "Look at the stitch itself: up to a peak, down to a valley, again and again — no row is flat.",
+      "Abuelita says it plainly: right now they are in a valley, and the mountains will come again.",
+      "The instruction hiding inside: valleys are not where the blanket stops. You keep stitching.",
+      "Unfinished on purpose, it makes Esperanza the one who must add the rows — which is the whole book in craft form."
+     ],
+     "ex": {
+      "main": "**Ups and downs, and you keep stitching through both.** The blanket is a life you can hold: peaks, valleys, and rows that only grow if Esperanza keeps working them.",
+      "tip": "Objects that get explained by a wise character are never just objects. Track the blanket every time it appears."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why might Pam Muñoz Ryan have named every chapter after a fruit or vegetable harvest?",
+     "opts": [
+      "Because farm life measures time in crops, not months — and the harvests quietly tell you the season of Esperanza's own life",
+      "To teach Spanish food vocabulary",
+      "Because the publisher asked for short titles",
+      "To hide the chapter numbers"
+     ],
+     "ans": 0,
+     "hint": "Who measures a year by grapes and figs instead of January and June?",
+     "steps": [
+      "Notice whose calendar this is: on a ranch — and later, in the fields — work and time ARE the harvest.",
+      "So the chapter names put you inside farm time from the first page, even while Esperanza still lives above it.",
+      "Then look closer: the story opens at the grape harvest, and each crop marks what her life holds in that season.",
+      "It is a promise about where the story is headed, hiding in the table of contents."
+     ],
+     "ex": {
+      "main": "**Farm time is crop time — and the harvests mirror Esperanza's seasons.** The naming pulls you into the workers' way of measuring a year before Esperanza herself has to learn it.",
+      "tip": "Chapter titles are free clues. When they follow a pattern, the pattern is part of the story."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "It is 1924 and the Mexican Revolution is over. Why are wealthy ranchers like Papa still in danger?",
+     "opts": [
+      "The government taxes them heavily",
+      "Bandits target anyone who travels at night",
+      "The anger behind the revolution remains — many campesinos still own nothing while a few families own everything",
+      "The ranchers refuse to hire guards"
+     ],
+     "ans": 2,
+     "hint": "A war can end before the reasons for it do.",
+     "steps": [
+      "Recall what the Revolution was about: land and fairness — most people worked land they could never own.",
+      "The fighting stopped, but the ownership mostly did not change: families like the Ortegas still hold the valley.",
+      "So the resentment stays live, and bandits aim it at the visible winners — the rich ranchers.",
+      "The book is careful here: it explains Papa's death without excusing it, and without pretending the anger came from nowhere."
+     ],
+     "ex": {
+      "main": "**The revolution's anger outlived the revolution.** Papa is kind, and it does not save him — the book wants you to see unfairness so large that even good individuals are caught inside it.",
+      "tip": "Historical fiction often opens by showing why the history is personal. This is that scene."
+     }
+    }
+   ]
   }
+ }
 }
