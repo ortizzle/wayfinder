@@ -327,6 +327,25 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 /* On the light canvas the cream scrap needs a warmer, stronger shadow to separate. */
 [data-theme="light"] .passage{filter:drop-shadow(0 2px 3px rgba(74,55,25,.35))}
 
+/* ---- Analogies (kind:'analogy') ---- */
+/* The stem of a test-style analogy: A : B :: ? : ?. Rendered as its own
+   plate rather than an ordinary question heading, because the shape IS the
+   instruction — she has met this format on standardized tests and should
+   recognise it instantly. Caps + letterspacing is the convention those tests
+   use for the stem pair; the options stay lowercase, same as the real thing.
+   Underneath it is an ordinary multiple choice, so shuffling, the miss
+   ladder and qstats all work untouched. */
+.analogy{font-family:'Fraunces',Georgia,serif;text-align:center;
+  padding:15px 10px 16px;margin:12px 2px 4px;
+  border-top:1px solid var(--ac-25);border-bottom:1px solid var(--ac-25);
+  background:var(--ac-8);border-radius:6px;
+  font-size:18px;font-weight:600;letter-spacing:.07em;line-height:1.55;
+  text-transform:uppercase;color:var(--ac-fg)}
+.analogy .cln{opacity:.5;padding:0 .28em;font-weight:400}
+.analogy .dbl{opacity:.75;padding:0 .34em;letter-spacing:.02em}
+.analogy .blank{opacity:.42;letter-spacing:.16em}
+@media (max-width:360px){.analogy{font-size:16px;letter-spacing:.04em}}
+
 /* ---- The Bookshelf ---- */
 /* Spines are a SOLID colour — each series' SUBJECT_PALETTE deep (g2) darkened
    15% in spineEl(), which puts white labels at ≥5.3:1 across all twelve
@@ -735,7 +754,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v57 · the math shelf';
+const APP_VERSION = 'v58 · analogies';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -2136,6 +2155,23 @@ function renderGraph(g){
     return svg;
   }catch(e){ return null; }
 }
+/* Render an analogy stem: "INJURY : TRAUMA" -> INJURY : TRAUMA :: ? : ?
+   Split on the single colon so the punctuation can carry its own styling —
+   never innerHTML, per the DOM rule. A stem that does not parse falls back
+   to plain text rather than rendering something misleading. */
+function analogyStem(text){
+  const box = el('div','analogy');
+  const parts = String(text||'').split(':').map(s=>s.trim()).filter(Boolean);
+  if(parts.length !== 2){ box.textContent = text||''; return box; }
+  box.appendChild(el('span',null,parts[0]));
+  box.appendChild(el('span','cln',':'));
+  box.appendChild(el('span',null,parts[1]));
+  box.appendChild(el('span','dbl','::'));
+  box.appendChild(el('span','blank','?'));
+  box.appendChild(el('span','cln',':'));
+  box.appendChild(el('span','blank','?'));
+  return box;
+}
 function graphNode(g){
   if(!g) return null;
   const svg=renderGraph(g);
@@ -3524,7 +3560,13 @@ SCREENS.quiz = function(root){
   }
   root.appendChild(head);
 
-  const qc = el('div','card ac'); qc.appendChild(el('h3',null,q.q));
+  const qc = el('div','card ac');
+  /* An analogy's stem is the question — it gets the plate, not an h3. */
+  if(q.kind==='analogy'){
+    qc.appendChild(el('div','eyebrow','Complete the analogy'));
+    qc.appendChild(analogyStem(q.q));
+    qc.appendChild(el('div','hintline','Work out how the first pair relates, then find the pair that relates the same way.'));
+  } else qc.appendChild(el('h3',null,q.q));
   if(q.passage) qc.appendChild(el('div','passage', q.passage));
   const qg = graphNode(q.graph); if(qg) qc.appendChild(qg);
   root.appendChild(qc);
@@ -5614,7 +5656,8 @@ SCREENS.reviewunit = function(root){
     u.questions.forEach(q=>{
       const d = el('div','rev'+(cutQ.has(q.id)?' cut':''));
       d.appendChild(el('div','eyebrow', LV[q.lv]||('Level '+q.lv)));
-      d.appendChild(el('div','q',q.q));
+      if(q.kind==='analogy') d.appendChild(analogyStem(q.q));
+      else d.appendChild(el('div','q',q.q));
       if(q.passage) d.appendChild(el('div','passage', q.passage));
       if(q.kind==='order'){
         d.appendChild(el('div','hintline','Put-in-order — listed here in the correct sequence; she sees them shuffled.'));
@@ -5717,7 +5760,7 @@ const UNIT_SCHEMA = {
       properties:{ lv:{type:'integer',enum:[1,2,3]}, q:{type:'string'},
         opts:{type:'array',items:{type:'string'}}, ans:{type:'integer',enum:[0,1,2,3]},
         hint:{type:'string'}, from:PROV,
-        kind:{type:'string',enum:['mc','order']}, passage:{type:'string'},
+        kind:{type:'string',enum:['mc','order','analogy']}, passage:{type:'string'},
         steps:{type:'array',items:{type:'string'}},
         ex:{type:'object',properties:{main:{type:'string'},tip:{type:'string'},mnemonic:{type:'string'}},
             required:['main','tip'],additionalProperties:false}},
@@ -5771,6 +5814,7 @@ async function generateUnit(classId, notes, shots, srcName){
     `· Carry the units. Where a rate is per second, ask a question posed in minutes. The conversion is part of the work and should not be smoothed away.`,
     `Do not describe or reference a diagram, figure or plotted graph — this format cannot render one you invent. Ask about relationships in words instead, or use the eq field for a formula.`,
     `For literature or other reading material: when a question analyses specific lines, quote a SHORT excerpt (under 40 words) in a "passage" field — she sees it styled as a quotation above the choices. For chronology, set kind:"order": opts must then list exactly 4 events in their CORRECT order (she sees them shuffled and taps them into sequence; still include ans:0).`,
+    `For VOCABULARY material, include 3-5 analogy questions: set kind:"analogy", put ONLY the stem pair in "q" formatted exactly as "WORD : WORD" (two words, one colon, no other text, no "::"), and make each of the 4 opts a lowercase pair formatted "word : word". The correct option must hold the SAME relationship as the stem, and every wrong option must hold a DIFFERENT, nameable relationship — never a near-miss of the right one. Use real relationships: synonym, antonym, degree (glad:elated), part-to-whole, worker-to-tool, cause-to-effect, word-to-definition. In ex.main, NAME the relationship in words ("both pairs are degree: the second is an extreme form of the first") — naming it is the skill being taught, not the answer itself.`,
     `Anchor everything to the supplied material. Do not invent facts it does not support. If the material is thin, write fewer cards rather than padding with things it never said.`,
     `Tone: direct and a little dry. Never condescending, never exclamation marks, never "great job". Card hints are memory hooks or mnemonics, never restatements of the definition. Explanations say why the right answer is right, not just what it is.`,
 
