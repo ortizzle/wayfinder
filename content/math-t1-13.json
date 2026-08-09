@@ -1,0 +1,333 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m13": {
+   "id": "unit-m13",
+   "type": "unit",
+   "updatedAt": 1786291368186,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 1 · 1-3 Compare Whole Numbers",
+   "round": 10,
+   "srcName": "enVision Math G4, HW 1-3 (Drive)",
+   "source": "Accelerated Math, Topic 1 (Drive folder)",
+   "summary": {
+    "text": "Lesson 1-3 of enVision Math Grade 4: comparing numbers by lining up places and marching from the left until the digits differ. Covers the > < = symbols, naming the deciding place, digit-count comparisons, and comparing numbers written in expanded form.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Comparing is the first place the ten-times staircase gets USED for something. The skill under test is naming which place decided — that is the reasoning teachers ask her to show, and it is also what rounding needs next lesson.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Compare two numbers with > < = by finding the leftmost differing place",
+     "from": "source"
+    },
+    {
+     "text": "Name the place that decides a comparison",
+     "from": "source"
+    },
+    {
+     "text": "Use digit count to compare numbers of different lengths",
+     "from": "source"
+    },
+    {
+     "text": "Rebuild expanded form before comparing",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the HW 1-3 sheet. Two deliberate hard spots: one question gives correct-answer-wrong-reasoning and asks her to spot the broken step (comparing digits from different places), because her sheet asks for explanations and that is where points are lost; and one question runs the rule backwards — build a number where a NAMED place decides. Fresh scenarios throughout; her sheet's numbers were not reused.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Quiz in one sitting. Say the deciding place out loud on every question — that habit is the lesson.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "How to compare two numbers",
+     "def": "**Line up the places, start at the LEFT, and find the first place where the digits differ.**\n• That one place decides the whole comparison.\n• Everything to the right of it cannot change the answer.",
+     "hint": "Leftmost difference wins. Nothing after it matters.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The symbols",
+     "def": "**> means is greater than, < means is less than, = means equal.**\n• 6,378 > 6,356 and 6,356 < 6,378 say the same fact both ways.\n• The open side always faces the bigger number.",
+     "eq": "6,356 < 6,378",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "More digits usually wins",
+     "def": "**A whole number with more digits is always greater than one with fewer.**\n• Any 6-digit number beats any 5-digit number: even 100,000 > 99,999.\n• This is why you count digits before comparing anything else.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Comparing expanded form",
+     "def": "**Rebuild each number from its parts before comparing.**\n• 30,000 + 5,000 + 3 is 35,003.\n• Never compare the parts one by one — one big part can beat several small ones.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Which place decides",
+     "def": "**The deciding place is the leftmost one where the digits differ.**\n• For 60,618 and 60,647: ten thousands match, thousands match, hundreds match — the TENS decide.\n• Naming the deciding place is how you show your reasoning, not just your answer.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which symbol makes this true?  428,617 ○ 431,502",
+     "opts": [
+      "<",
+      ">",
+      "=",
+      "No symbol works"
+     ],
+     "ans": 0,
+     "hint": "Same number of digits, so compare from the left.",
+     "steps": [
+      "Both have six digits, so compare place by place from the left.",
+      "Hundred thousands: 4 = 4. Ten thousands: 2 versus 3.",
+      "2 < 3, so 428,617 < 431,502 — the ten thousands place decided it."
+     ],
+     "ex": {
+      "main": "**<.** The first differing place was the ten thousands, and nothing after it could change the answer.",
+      "tip": "The open mouth of the symbol always faces the larger number."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which place would you use to compare 87,309 and 87,344?",
+     "opts": [
+      "The tens place",
+      "The hundreds place",
+      "The thousands place",
+      "The ones place"
+     ],
+     "ans": 0,
+     "hint": "Walk left to right until the digits stop matching.",
+     "steps": [
+      "Ten thousands: 8 = 8. Thousands: 7 = 7. Hundreds: 3 = 3.",
+      "Tens: 0 versus 4 — the first difference.",
+      "So the tens place decides: 87,309 < 87,344."
+     ],
+     "ex": {
+      "main": "**The tens place.** You only name the FIRST place where the digits differ.",
+      "tip": "Being able to name the deciding place is what the test questions ask for, not just the symbol."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is true about 9,999 and 10,001?",
+     "opts": [
+      "10,001 is greater because it has more digits",
+      "9,999 is greater because 9 beats 1",
+      "They are equal",
+      "9,999 is greater because it has more nines"
+     ],
+     "ans": 0,
+     "hint": "Count digits before comparing anything.",
+     "steps": [
+      "9,999 has four digits. 10,001 has five.",
+      "A five-digit whole number is always greater than a four-digit one.",
+      "So 10,001 > 9,999, even though its digits look smaller."
+     ],
+     "ex": {
+      "main": "**10,001 is greater — more digits wins.** The size of the individual digits never overcomes an extra place.",
+      "tip": "The digit-count check takes one second and prevents the most tempting wrong answer in the lesson."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two towns report their populations: Kestrel 530,240 and Marlow 503,240. Which town is larger, and which place decided it?",
+     "opts": [
+      "Kestrel — the ten thousands place decided",
+      "Marlow — the thousands place decided",
+      "They are equal",
+      "Kestrel — the ones place decided"
+     ],
+     "ans": 0,
+     "hint": "The digits look similar. March left to right carefully.",
+     "steps": [
+      "Hundred thousands: 5 = 5.",
+      "Ten thousands: 3 versus 0 — the first difference.",
+      "3 > 0, so 530,240 > 503,240. Kestrel is larger.",
+      "Everything after the ten thousands place is identical, and irrelevant anyway."
+     ],
+     "ex": {
+      "main": "**Kestrel, decided at the ten thousands.** Transposed-looking numbers like these are exactly where careful place-marching earns its keep.",
+      "tip": "When two numbers share digits in a different order, the leftmost difference still settles it."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is greater: 40,000 + 2,000 + 600 + 4, or 40,000 + 3,000 + 10?",
+     "opts": [
+      "40,000 + 3,000 + 10, because 43,010 > 42,604",
+      "The one with more parts",
+      "40,000 + 2,000 + 600 + 4, because 600 > 10",
+      "They are equal"
+     ],
+     "ans": 0,
+     "hint": "Rebuild both numbers first. Do not compare the pieces.",
+     "steps": [
+      "First: 40,000 + 2,000 + 600 + 4 = 42,604.",
+      "Second: 40,000 + 3,000 + 10 = 43,010.",
+      "Compare: thousands place is 2 versus 3, so 43,010 is greater.",
+      "The extra parts in the first number never made up for the missing thousand."
+     ],
+     "ex": {
+      "main": "**43,010 is greater.** One step up in a bigger place beats any pile of smaller parts.",
+      "tip": "Expanded-form comparisons are place-value questions in disguise. Always rebuild first."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A number is compared to 68,314 and the hundreds place decides it. Which number could it be?",
+     "opts": [
+      "68,714",
+      "58,314",
+      "68,324",
+      "68,315"
+     ],
+     "ans": 0,
+     "hint": "The deciding place is the FIRST difference — so everything left of the hundreds must match.",
+     "steps": [
+      "For the hundreds to decide, the ten thousands and thousands must match 68,314: they must start 68,—.",
+      "58,314 differs at the ten thousands, so that place would decide. Out.",
+      "68,324 first differs at the tens; 68,315 at the ones. Both decided later than hundreds. Out.",
+      "68,714 matches 6 and 8, then differs at the hundreds: 7 versus 3. The hundreds decide."
+     ],
+     "ex": {
+      "main": "**68,714.** Building a number to order like this proves you understand the rule, not just follow it.",
+      "tip": "Reverse questions — build the example instead of checking one — are how this shows up on tests."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A stadium sold 91,867 tickets on Saturday and 91,876 on Sunday. Which day sold more?",
+     "opts": [
+      "Sunday — the tens place decides, 7 > 6",
+      "Saturday — the ones place decides",
+      "They sold the same",
+      "Saturday — 8 beats 7 in the tens"
+     ],
+     "ans": 0,
+     "hint": "The digits are nearly identical. Find the first difference.",
+     "steps": [
+      "Ten thousands, thousands and hundreds all match: 9, 1, 8.",
+      "Tens: 6 versus 7 — the first difference.",
+      "7 > 6, so 91,876 > 91,867. Sunday sold more."
+     ],
+     "ex": {
+      "main": "**Sunday.** Two numbers built from the same digits are the easiest place to rush and the best place not to.",
+      "tip": "Swapped neighbouring digits are a favourite trap. The left-to-right march does not fall for it."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student claims: \"A whole number with 4 digits is always greater than a whole number with 3 digits.\" Is the claim true, and what is the strongest support?",
+     "opts": [
+      "True — the smallest 4-digit number, 1,000, already beats the largest 3-digit number, 999",
+      "True — because 4 is greater than 3",
+      "False — 999 is greater than 1,000",
+      "False — it depends on the digits"
+     ],
+     "ans": 0,
+     "hint": "Test the claim at its weakest point: the smallest 4-digit versus the largest 3-digit.",
+     "steps": [
+      "The smallest whole number with 4 digits is 1,000.",
+      "The largest whole number with 3 digits is 999.",
+      "Since 1,000 > 999, even the worst case wins — so every case wins.",
+      "Checking the extreme case is what makes this an argument rather than a guess."
+     ],
+     "ex": {
+      "main": "**True, and the boundary case proves it.** If the smallest of one group beats the largest of the other, no comparison can go the other way.",
+      "tip": "Testing a claim at its extreme is a real proof move. It shows up in every grade of math from here on."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A classmate says: \"76,842 > 76,839 because 8 > 3.\" The answer happens to be right. What is wrong with the reasoning?",
+     "opts": [
+      "It compared digits from different places — the tens decide here, not a mismatched pair",
+      "Nothing is wrong",
+      "The answer is actually wrong",
+      "You cannot compare numbers this close"
+     ],
+     "ans": 0,
+     "hint": "Check WHICH digits the reasoning compared, and which places they came from.",
+     "steps": [
+      "March left: 7 = 7, 6 = 6, 8 = 8. The hundreds MATCH.",
+      "The first difference is the tens: 4 versus 3, so 76,842 > 76,839. The answer is right.",
+      "But \"8 > 3\" compared the hundreds of one number to the tens of the other — different places.",
+      "Right answer, broken reasoning — on a test that asks you to explain, this loses the points."
+     ],
+     "ex": {
+      "main": "**The reasoning compared digits from different places.** A correct answer with wrong reasoning fails the moment the numbers change.",
+      "tip": "Always name the place you are comparing. It keeps the digits honest."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three friends measure reading minutes this month: Ana 12,408, Bo 12,480, Cami 12,048. Order them from most to least.",
+     "opts": [
+      "Bo, Ana, Cami",
+      "Ana, Bo, Cami",
+      "Cami, Bo, Ana",
+      "Bo, Cami, Ana"
+     ],
+     "ans": 0,
+     "hint": "Same first two digits everywhere. The hundreds and tens sort it out.",
+     "steps": [
+      "All three start 12,—, so compare the hundreds: Ana 4, Bo 4, Cami 0. Cami is last.",
+      "Ana versus Bo: hundreds tie at 4, so compare tens — Ana 0, Bo 8.",
+      "Bo 12,480 > Ana 12,408, so the order is Bo, Ana, Cami."
+     ],
+     "ex": {
+      "main": "**Bo, Ana, Cami.** Ordering three numbers is just the two-number compare, applied twice with care.",
+      "tip": "Sort out the easy separations first (Cami), then settle the close pair."
+     }
+    }
+   ]
+  }
+ }
+}

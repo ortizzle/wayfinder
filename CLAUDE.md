@@ -181,6 +181,31 @@ orientation unit retired (schema v4 tombstones `unit-orientation` on
 migrate — don't reintroduce boot-generated units). From here, keep the two
 engines in step per "Keeping the two apps in step" above.
 
+### The math program (v57)
+
+Accelerated Math runs on the enVision G4 textbook. The material arrives as
+scans in the Drive math folder, one subfolder per topic — and **the folder
+names are authoritative over the book's printed topic numbers**, because the
+course spans two volumes that each restart numbering (the folder called
+"Topic 3" may print "Topic 1" inside).
+
+- **Every lesson is one unit**, titled `Topic N · N-L Title` so the topic
+  shelves as a book, with **~10 questions and `round:10`** — the quiz is one
+  sitting, matching a lesson-a-day pace (Chris, 2026-08). Fewer is fine when
+  the material is thin; never pad.
+- **Each topic ends with `Topic N · Topic Review`**: a 24-question pool with
+  `round:12` and recap cards. Questions are fresh, never copies of lesson
+  questions. From Topic 2 onward ~6 review questions **spiral earlier
+  topics** — the syllabus says most tests spiral, so the review practises
+  deciding which skill a question even wants.
+- Lessons are approved as the class reaches them; reviews when test week
+  arrives. Everything ships draft as always.
+- `unit-m11` (1-1) was retitled onto the shelf **keeping its id**, so the
+  progress from before the shelf existed stayed attached. Retitle, never
+  re-mint, when moving a unit into a series.
+- School rounding rule throughout: 5 rounds up (and Python's banker-rounding
+  `round()` disagrees — the builder uses its own `sround()`).
+
 ### Content rules (apply here exactly as in Ad Astra)
 
 See "Content rules" in ad-astra/CLAUDE.md — standalone questions (no worksheet

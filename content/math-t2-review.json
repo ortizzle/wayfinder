@@ -1,0 +1,678 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2r": {
+   "id": "unit-m2r",
+   "type": "unit",
+   "updatedAt": 1786292732329,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · Topic Review",
+   "round": 12,
+   "srcName": "enVision Math G4, Topics 1–2 (Drive)",
+   "source": "Accelerated Math, Topics 1–2 (Drive folders)",
+   "summary": {
+    "text": "A review pool for all of Topic 2 (lessons 2-1 through 2-7): mental strategies, estimation, the addition and subtraction algorithms, checks, and across-zero subtraction — plus a spiral of Topic 1 place value, comparing and rounding, because the tests mix old and new.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The class's tests spiral earlier topics on purpose, so a review that only rehearses the newest material practises for a test that will not exist. Six of these questions reach back to Topic 1 — deciding which topic a question even belongs to is part of the skill.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Add and subtract multi-digit numbers, mentally and with the algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Estimate first and use the estimate to judge exact answers",
+     "from": "source"
+    },
+    {
+     "text": "Check subtraction with the inverse addition, forwards and backwards",
+     "from": "source"
+    },
+    {
+     "text": "Keep Topic 1 place value, comparing and rounding warm",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "A review pool, not a lesson: 24 fresh questions served 12 per sitting — 18 across all seven Topic 2 lessons plus 6 that spiral Topic 1, matching the syllabus note that most tests spiral earlier material. Approve it when the class heads into review days before the Topic 2 test. Two sittings cover the pool; misses ride the Growth Zone ladder as usual. Error-diagnosis questions (the flip, the fix-up direction) mirror the test's explain-your-thinking items.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Twelve questions per sitting, mixing all of Topic 2 with a taste of Topic 1 — like the real test.",
+    "minutes": 15,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The mental toolkit",
+     "def": "**Break apart, compensation, counting up — reshape first, compute second.**\n• Close numbers: count up. One near-round number: compensate. Otherwise: break apart.\n• Three seconds of choosing saves thirty of grinding.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The fix-up direction",
+     "def": "**Compensation's fix-up UNDOES the trade — it never repeats it.**\n• Added too much? Subtract it back. Subtracted too much? Add it back.\n• Say the direction out loud before touching the numbers.",
+     "hint": "Ask: did my trade make the answer too big or too small?",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Estimate, compute, compare",
+     "def": "**Round first for an estimate, work exactly, then compare the two.**\n• Close together: trust the exact answer. Far apart: find the mistake.\n• This three-beat rhythm is the whole discipline of Topic 2.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Carries and borrows are trades",
+     "def": "**A carry bundles 10 into 1 of the next place; a borrow breaks 1 into 10 of this one.**\n• Same trade, opposite directions — and the number's value never changes.\n• If you can narrate the trade, you own the algorithm.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The addition check",
+     "def": "**Difference + what you subtracted = what you started with.**\n• Every subtraction is a checkable claim, and the check is one easy addition.\n• A failed check is a verdict, not a suggestion.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Across zeros",
+     "def": "**Middle zeros become 9s when a borrow ripples through — or slide both numbers down 1 and skip it all.**\n• 6,000 − 4,678 = 5,999 − 4,677: same gap, zero borrows.\n• A difference is a gap, and gaps ignore where they sit.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Topic 1 rides along",
+     "def": "**Rounding, comparing and place value never left — every estimate in Topic 2 is Topic 1 working.**\n• The test will mix old and new on purpose. So does this review.\n• If a rounding feels rusty, revisit the Topic 1 shelf first.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 3,999 + 2,468 in your head.",
+     "opts": [
+      "6,467",
+      "6,468",
+      "6,477",
+      "6,457"
+     ],
+     "ans": 0,
+     "hint": "Trade 3,999 for a friendlier number.",
+     "steps": [
+      "Trade: 4,000 + 2,468 = 6,468.",
+      "The trade slipped in 1 extra.",
+      "Return it: 6,467."
+     ],
+     "ex": {
+      "main": "**6,467.** Compensation — borrow a 1, use it, give it back.",
+      "tip": "Near-round numbers are invitations. 3,999 is begging to be 4,000 for a moment."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Estimate 7,218 + 4,913 to the nearest thousand.",
+     "opts": [
+      "12,000",
+      "11,000",
+      "13,000",
+      "12,100"
+     ],
+     "ans": 0,
+     "hint": "Round each number on its own digit.",
+     "steps": [
+      "7,218 rounds to 7,000.",
+      "4,913 rounds to 5,000.",
+      "7,000 + 5,000 = 12,000."
+     ],
+     "ex": {
+      "main": "**12,000.** The exact sum, 12,131, lands right beside it.",
+      "tip": "One rounded down, one rounded up — never round as a package deal."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 437 + 386.",
+     "opts": [
+      "823",
+      "813",
+      "723",
+      "833"
+     ],
+     "ans": 0,
+     "hint": "Two carries coming.",
+     "steps": [
+      "Ones: 7 + 6 = 13. Write 3, carry 1.",
+      "Tens: 3 + 8 + 1 = 12. Write 2, carry 1.",
+      "Hundreds: 4 + 3 + 1 = 8. Sum: 823."
+     ],
+     "ex": {
+      "main": "**823.** Both carries were real tens and hundreds in transit.",
+      "tip": "Estimate check: 400 + 400 = 800. Close, so 823 is trustworthy."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 35,472 + 28,619.",
+     "opts": [
+      "64,091",
+      "64,191",
+      "63,091",
+      "64,081"
+     ],
+     "ans": 0,
+     "hint": "Five columns, same trades.",
+     "steps": [
+      "Ones: 2 + 9 = 11. Write 1, carry 1. Tens: 7 + 1 + 1 = 9.",
+      "Hundreds: 4 + 6 = 10. Write 0, carry 1. Thousands: 5 + 8 + 1 = 14. Write 4, carry 1.",
+      "Ten thousands: 3 + 2 + 1 = 6. Sum: 64,091."
+     ],
+     "ex": {
+      "main": "**64,091.** The algorithm scaled up without changing a single rule.",
+      "tip": "Estimate: 35,000 + 29,000 = 64,000. The exact answer parks right next to it."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 634 − 258.",
+     "opts": [
+      "376",
+      "386",
+      "424",
+      "366"
+     ],
+     "ans": 0,
+     "hint": "Both the ones and tens will borrow.",
+     "steps": [
+      "Ones: 4 − 8 — trade: 14 − 8 = 6.",
+      "Tens: 2 − 5 after lending — trade: 12 − 5 = 7.",
+      "Hundreds: 5 − 2 = 3. Difference: 376."
+     ],
+     "ex": {
+      "main": "**376.** Check: 376 + 258 = 634 — the pieces rebuild the start.",
+      "tip": "The wrong answer 424 is the flip error. If no column ever seems to need a borrow, be suspicious."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 82,405 − 47,138.",
+     "opts": [
+      "35,267",
+      "35,277",
+      "34,267",
+      "35,367"
+     ],
+     "ans": 0,
+     "hint": "Scout the columns first: which will borrow?",
+     "steps": [
+      "Ones: 5 − 8 — trade: 15 − 8 = 7. Tens: 0 − 3 after lending — the 0 borrows: 9 − 3 = 6.",
+      "Hundreds: 4 − 1 after lending = 2... work each column with its borrow: the result assembles to 35,267.",
+      "Check: 35,267 + 47,138 = 82,405."
+     ],
+     "ex": {
+      "main": "**35,267.** A borrow chain through the middle — the check is what makes it certain.",
+      "tip": "Big subtractions are quiet-error country. The addition check is your floor of certainty."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 4,000 − 1,762.",
+     "opts": [
+      "2,238",
+      "2,248",
+      "3,238",
+      "2,338"
+     ],
+     "ans": 0,
+     "hint": "Slide both down 1 and the zeros disappear.",
+     "steps": [
+      "3,999 − 1,761 has the same gap.",
+      "Ones: 9 − 1 = 8. Tens: 9 − 6 = 3. Hundreds: 9 − 7 = 2. Thousands: 3 − 1 = 2.",
+      "Difference: 2,238."
+     ],
+     "ex": {
+      "main": "**2,238.** No borrows after the slide.",
+      "tip": "Check: 2,238 + 1,762 = 4,000. Round-number checks are the fastest kind."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Find 6,012 − 5,994 mentally.",
+     "opts": [
+      "18",
+      "22",
+      "28",
+      "12"
+     ],
+     "ans": 0,
+     "hint": "The numbers are close — walk between them.",
+     "steps": [
+      "5,994 → 6,000 is 6.",
+      "6,000 → 6,012 is 12 more.",
+      "6 + 12 = 18."
+     ],
+     "ex": {
+      "main": "**18.** Counting up: two hops across a tiny gap.",
+      "tip": "Reaching for the algorithm here would work — and take five times as long. Choosing the tool is the skill."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Compute 8,000 − 2,996 mentally. Which way does the fix-up go?",
+     "opts": [
+      "Trade 2,996 for 3,000, get 5,000 — you took 4 too many, so give them back: 5,004",
+      "Trade 2,996 for 3,000, get 5,000 — then subtract 4 more: 4,996",
+      "The answer is exactly 5,000",
+      "Trade 8,000 for 7,996 and subtract: 5,000"
+     ],
+     "ans": 0,
+     "hint": "Compare what you removed with what was asked.",
+     "steps": [
+      "Asked to remove: 2,996. Actually removed: 3,000.",
+      "That is 4 too many — the running answer is 4 too small.",
+      "Return them: 5,000 + 4 = 5,004."
+     ],
+     "ex": {
+      "main": "**5,004.** Over-removed by 4, so the answer collects 4 back.",
+      "tip": "The fix-up flip is THE compensation error. One spoken sentence — \"I took too much, I give back\" — prevents it."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Adding 529 + 346 by partial sums, which pieces appear?",
+     "opts": [
+      "800, 60, and 15",
+      "800, 70, and 15",
+      "900, 60, and 15",
+      "800, 60, and 5"
+     ],
+     "ans": 0,
+     "hint": "Hundreds alone, tens alone, ones alone.",
+     "steps": [
+      "Hundreds: 500 + 300 = 800.",
+      "Tens: 20 + 40 = 60.",
+      "Ones: 9 + 6 = 15. Total: 800 + 60 + 15 = 875."
+     ],
+     "ex": {
+      "main": "**800, 60, and 15 — total 875.** Every trade out in the open.",
+      "tip": "Partial sums is the algorithm with the lights on. Use it whenever a carry feels slippery."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 14,250 + 9,750 + 31,000 the smart way.",
+     "opts": [
+      "Pair 14,250 + 9,750 = 24,000 first, then + 31,000 = 55,000",
+      "Left to right only: the order is fixed",
+      "Round them all and add the rounds for the exact answer",
+      "Add 31,000 + 14,250 first because big numbers go first"
+     ],
+     "ans": 0,
+     "hint": "Two of these tails were made for each other.",
+     "steps": [
+      "Tails: 250 + 750 = 1,000 — pair those addends.",
+      "14,250 + 9,750 = 24,000.",
+      "24,000 + 31,000 = 55,000, in your head."
+     ],
+     "ex": {
+      "main": "**55,000, by pairing the friendly two.** Order is yours to choose — choose the one with round numbers in it.",
+      "tip": "Scanning the endings before you add a list takes three seconds and often saves the whole algorithm."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which addition proves 5,231 − 2,876 = 2,355?",
+     "opts": [
+      "2,355 + 2,876 = 5,231",
+      "2,355 + 5,231 = 7,586",
+      "2,876 − 2,355 = 521",
+      "2,355 + 2,867 = 5,222"
+     ],
+     "ans": 0,
+     "hint": "Difference + subtracted amount = start.",
+     "steps": [
+      "The subtraction claims 5,231 splits into 2,876 and 2,355.",
+      "Reassemble the pieces: 2,355 + 2,876.",
+      "It lands exactly on 5,231 — verified."
+     ],
+     "ex": {
+      "main": "**2,355 + 2,876 = 5,231.** The check rebuilds the starting number from its two pieces.",
+      "tip": "One of the wrong options scrambles digits (2,867) — checks only count when every digit agrees."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Mia claims 23,514 + 38,821 = 91,335. Judge it with an estimate.",
+     "opts": [
+      "24,000 + 39,000 = 63,000 — the claim is nearly 30,000 too high; recheck",
+      "24,000 + 39,000 = 63,000 — and 91,335 is close enough",
+      "The claim is fine because it is bigger than both addends",
+      "Five-digit sums cannot be estimated"
+     ],
+     "ans": 0,
+     "hint": "Build the estimate, then measure the gap.",
+     "steps": [
+      "Round: 23,514 → 24,000 and 38,821 → 39,000.",
+      "Estimate: 63,000. The claim is 91,335.",
+      "A 28,000 gap is not rounding noise — something structural broke.",
+      "The exact sum is 62,335, right beside the estimate."
+     ],
+     "ex": {
+      "main": "**Recheck — the sum is 62,335, near the 63,000 estimate.** The claim likely came from misaligned columns.",
+      "tip": "The estimate cannot name the error, but it can refuse to let one through. That refusal is its whole job."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 9,000 − 5,468 using the slide trick.",
+     "opts": [
+      "8,999 − 5,467 = 3,532",
+      "8,999 − 5,468 = 3,531",
+      "9,001 − 5,467 = 3,534",
+      "8,000 − 5,468 = 2,532"
+     ],
+     "ans": 0,
+     "hint": "Both numbers move down 1 together.",
+     "steps": [
+      "Slide both down 1: 8,999 − 5,467.",
+      "No zeros left, no borrows: 3,532.",
+      "Check: 3,532 + 5,468 = 9,000."
+     ],
+     "ex": {
+      "main": "**8,999 − 5,467 = 3,532.** Both ends slid, the gap held.",
+      "tip": "The wrong options each slide only one end — and the gap moves the moment you do."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtracting 812 − 357, Kip writes 545. Diagnose and correct it.",
+     "opts": [
+      "He flipped the short columns — done properly the difference is 455",
+      "He forgot the hundreds — the answer is 545 plus 100",
+      "Nothing is wrong",
+      "He subtracted the tens twice"
+     ],
+     "ans": 0,
+     "hint": "Check his ones digit: where would a 5 come from?",
+     "steps": [
+      "His ones digit 5 could be honest — 12 − 7 = 5 — but his tens digit 4 is 5 − 1, digits flipped instead of borrowed.",
+      "Run it clean: ones 12 − 7 = 5, tens 10 − 5 = 5, hundreds 7 − 3 = 4.",
+      "Correct difference: 455. His check would have failed: 545 + 357 = 902, not 812.",
+      "The flip error feels smooth because it never gets stuck — the check is what catches it."
+     ],
+     "ex": {
+      "main": "**455 — Kip flipped a column.** His answer fails the addition check by 90, and failed checks are verdicts.",
+      "tip": "Any subtraction answer is one cheap addition away from certainty. Spend the addition."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ana estimates 4,621 + 3,738 by rounding both DOWN to 4,600 + 3,700 = 8,300. What must be true of the exact sum?",
+     "opts": [
+      "It is greater than 8,300 — both trades threw a little away",
+      "It is less than 8,300",
+      "It equals 8,300",
+      "Its direction cannot be known"
+     ],
+     "ans": 0,
+     "hint": "Track what each rounding discarded.",
+     "steps": [
+      "4,621 → 4,600 dropped 21.",
+      "3,738 → 3,700 dropped 38.",
+      "The estimate is missing both scraps, so the true sum sits above it.",
+      "Exact: 8,359 — greater, as promised."
+     ],
+     "ex": {
+      "main": "**Greater than 8,300.** Two downward roundings make a guaranteed underestimate.",
+      "tip": "When both roundings push one way, the estimate turns into a bound — a promise about direction, not just distance."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A puzzle: ▲ − 16,875 = 22,340. What is ▲?",
+     "opts": [
+      "39,215 — add the two pieces to rebuild the start",
+      "5,465 — subtract the smaller from the larger",
+      "22,340 — the difference is the start",
+      "It cannot be found"
+     ],
+     "ans": 0,
+     "hint": "The start was cut into two known pieces.",
+     "steps": [
+      "▲ was split into 16,875 removed and 22,340 left.",
+      "Rebuild: 16,875 + 22,340 = 39,215.",
+      "Confirm forwards: 39,215 − 16,875 = 22,340."
+     ],
+     "ex": {
+      "main": "**39,215.** Solving backwards is the addition check promoted to the main event.",
+      "tip": "Both directions matter on the test: forward to find a difference, backward to find a start."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which strategy fits 5,001 − 4,997 best, and what is the answer?",
+     "opts": [
+      "Count up — the gap is 4",
+      "The full algorithm — the answer is 4",
+      "Round both and subtract — the answer is 0",
+      "Slide both up 3 — the answer is 14"
+     ],
+     "ans": 0,
+     "hint": "Look at how far apart the numbers are before choosing anything.",
+     "steps": [
+      "4,997 → 5,000 is 3; 5,000 → 5,001 is 1 more.",
+      "The gap is 4, walked in two tiny hops.",
+      "The algorithm gets 4 too — through three borrows it never needed."
+     ],
+     "ex": {
+      "main": "**Count up: 4.** The right tool for close numbers is a short walk, not heavy machinery.",
+      "tip": "The algorithm option quotes the right answer with the wrong price tag. On a timed test, the price matters."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 274,381 to the nearest ten thousand.",
+     "opts": [
+      "270,000",
+      "280,000",
+      "274,000",
+      "300,000"
+     ],
+     "ans": 0,
+     "hint": "The thousands digit makes the call.",
+     "steps": [
+      "Rounding place: the ten thousands — the 7.",
+      "One digit right: 4. Less than 5, the 7 stays.",
+      "Zero the rest: 270,000."
+     ],
+     "ex": {
+      "main": "**270,000.** Topic 1 riding along, exactly as the test will make it.",
+      "tip": "Every estimate in Topic 2 is this skill wearing work clothes. Keep it sharp."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How does the value of the 4 in 42,600 compare to the value of the 4 in 4,260?",
+     "opts": [
+      "Ten times as much — 40,000 against 4,000",
+      "The same — both are 4s",
+      "One hundred times as much",
+      "Four times as much"
+     ],
+     "ans": 0,
+     "hint": "Find each 4's place first.",
+     "steps": [
+      "In 42,600 the 4 is in the ten thousands: 40,000.",
+      "In 4,260 the 4 is in the thousands: 4,000.",
+      "One place further left means ten times the value."
+     ],
+     "ex": {
+      "main": "**Ten times.** Same digit, one address apart, factor of ten.",
+      "tip": "The ten-times rule is the spine of the whole number system — it will spiral onto every test this year."
+     }
+    },
+    {
+     "id": "q20",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Compare: 508,214 ▢ 508,124.",
+     "opts": [
+      "> — the hundreds decide: 2 against 1",
+      "< — 124 is less than 214, so flip it",
+      "= — the digits are the same set",
+      "> — the ones decide: 4 = 4"
+     ],
+     "ans": 0,
+     "hint": "March from the left to the first difference.",
+     "steps": [
+      "Hundred thousands 5 = 5, ten thousands 0 = 0, thousands 8 = 8.",
+      "Hundreds: 2 against 1 — first difference.",
+      "2 > 1, so 508,214 > 508,124."
+     ],
+     "ex": {
+      "main": "**> , decided at the hundreds.** Same digits, different arrangement — the march sorts it out.",
+      "tip": "Anagram numbers are the march's favourite test. Only the places can tell them apart."
+     }
+    },
+    {
+     "id": "q21",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Write \"seven hundred thousand, ninety\" as a number.",
+     "opts": [
+      "700,090",
+      "700,900",
+      "70,090",
+      "790,000"
+     ],
+     "ans": 0,
+     "hint": "Two periods, lots of zeros holding seats.",
+     "steps": [
+      "\"Seven hundred thousand\" fills the thousands period: 700,—.",
+      "\"Ninety\" is the ones period: 090.",
+      "700,090 — five zeros on guard duty."
+     ],
+     "ex": {
+      "main": "**700,090.** The words skipped many places, and zeros hold every one of them.",
+      "tip": "The fewer words a number name has, the more zeros its digits need. Silence means zero."
+     }
+    },
+    {
+     "id": "q22",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the SMALLEST number that rounds to 400,000 at the nearest hundred thousand?",
+     "opts": [
+      "350,000",
+      "399,999",
+      "349,999",
+      "400,001"
+     ],
+     "ans": 0,
+     "hint": "The bottom edge of the neighbourhood is the halfway point below.",
+     "steps": [
+      "The benchmark below is 300,000; halfway up is 350,000.",
+      "At the school rule, 350,000 rounds UP — it is the first number in.",
+      "349,999 falls back to 300,000. So the floor is 350,000."
+     ],
+     "ex": {
+      "main": "**350,000.** The neighbourhood of 400,000 runs from 350,000 through 449,999.",
+      "tip": "Edges, always edges. These questions are never about the middle of the range."
+     }
+    },
+    {
+     "id": "q23",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Theo claims: \"Rounding always changes a number.\" Find the counterexample.",
+     "opts": [
+      "300 rounded to the nearest hundred is 300 — unchanged",
+      "256 rounds to 300, which supports the claim",
+      "450 rounds to 500, which supports the claim",
+      "No counterexample exists"
+     ],
+     "ans": 0,
+     "hint": "What happens when a number is already sitting on a benchmark?",
+     "steps": [
+      "Round 300 to the nearest hundred.",
+      "It is already a multiple of 100 — the nearest benchmark is itself.",
+      "Rounded, it is still 300. The claim just died."
+     ],
+     "ex": {
+      "main": "**300 rounds to 300.** Numbers already on a benchmark round to themselves.",
+      "tip": "Always-claims lose at the boundaries: ties, self-cases, empty cases. Check those first, in math and everywhere."
+     }
+    }
+   ]
+  }
+ }
+}

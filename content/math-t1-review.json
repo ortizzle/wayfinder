@@ -1,0 +1,678 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m1r": {
+   "id": "unit-m1r",
+   "type": "unit",
+   "updatedAt": 1786292732325,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 1 · Topic Review",
+   "round": 12,
+   "srcName": "enVision Math G4, Topic 1 (HW 1-1 to 1-5, Drive)",
+   "source": "Accelerated Math, Topic 1 (Drive folder)",
+   "summary": {
+    "text": "A review pool for all of Topic 1 (lessons 1-1 through 1-5): place value and periods, the ten-times relationship, word and expanded forms, comparing and ordering, rounding to any place, rounding neighbourhoods, and constructing arguments with counterexamples.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The end-of-topic test mixes every lesson together, so practice should too. A 12-question sitting drawn from a 24-question pool means two passes cover everything — and the mix itself is the practice, because deciding WHICH skill a question wants is half the test.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Read, write, compare and round numbers through one million",
+     "from": "source"
+    },
+    {
+     "text": "Use the ten-times place-value relationship",
+     "from": "source"
+    },
+    {
+     "text": "Reason about rounding neighbourhoods in both directions",
+     "from": "source"
+    },
+    {
+     "text": "Construct and critique comparison arguments",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "A review pool, not a lesson: 24 fresh questions across all five Topic 1 lessons, served 12 per sitting with flashcards that recap each big idea. Approve it when the class heads into review days before the Topic 1 test. Two sittings cover the pool; questions she misses go to the Growth Zone ladder like always. The word-problem and argument questions deliberately mirror the test's explain-your-reasoning style.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Twelve questions per sitting — a fuller round, like the real test. Two sittings covers the pool.",
+    "minutes": 15,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Periods",
+     "def": "**A big number reads in three-digit chunks called periods, separated by commas.**\n• 415,203: the thousands period says 415, the ones period says 203.\n• Read the chunk, say the period's name, move right.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The ten-times rule",
+     "def": "**A digit one place to the left is worth ten times as much.**\n• In 66,000 the left 6 is 60,000 and the right 6 is 6,000.\n• Same digit, different address, ten times the value.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The comparison march",
+     "def": "**Compare from the LEFT, place by place; the first difference decides.**\n• More digits wins outright — 102,003 beats 98,764 before any marching.\n• Digits after the deciding place never get a vote.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "The rounding digit rule",
+     "def": "**Find the rounding place, look one digit right: 5 or more rounds up. Zero out the rest.**\n• 68,341 to the nearest thousand: the 3 says stay — 68,000.\n• The number line's halfway point says the same thing, slower and surer.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The rounding neighbourhood",
+     "def": "**Every benchmark owns a range: from its halfway point below to just under its halfway point above.**\n• 60,000 (nearest ten thousand) collects everything from 55,000 through 64,999.\n• You cannot un-round — the original is a range, not a number.",
+     "hint": "A rounded number is a neighbourhood, not an address.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Words to digits",
+     "def": "**Translate one period at a time; missing places fill with zeros.**\n• \"Two hundred five thousand, sixty\" → 205,—, then 060: 205,060.\n• Most wrong arguments about big numbers begin with a wrong translation.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Arguments and counterexamples",
+     "def": "**A math argument names its deciding place; one counterexample kills an always-claim.**\n• \"Because it looks bigger\" is a feeling. \"The hundreds differ: 2 > 0\" is an argument.\n• To break \"always\", find one case that fails — that is a complete proof.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the value of the 7 in 738,251?",
+     "opts": [
+      "700,000",
+      "70,000",
+      "7,000",
+      "700"
+     ],
+     "ans": 0,
+     "hint": "Name the place before naming the value.",
+     "steps": [
+      "The 7 sits in the hundred thousands place.",
+      "Its value is 7 × 100,000.",
+      "So the 7 is worth 700,000."
+     ],
+     "ex": {
+      "main": "**700,000.** The digit is 7; the place multiplies it by one hundred thousand.",
+      "tip": "Digit and value are different questions. The place is what turns one into the other."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Write \"two hundred five thousand, sixty\" as a number.",
+     "opts": [
+      "205,060",
+      "250,060",
+      "205,600",
+      "2,005,060"
+     ],
+     "ans": 0,
+     "hint": "One period at a time — and let zeros hold the empty places.",
+     "steps": [
+      "\"Two hundred five thousand\" fills the thousands period: 205,—.",
+      "\"Sixty\" fills the ones period as 060.",
+      "Together: 205,060."
+     ],
+     "ex": {
+      "main": "**205,060.** The words skipped the hundreds and the ones, so zeros hold those seats.",
+      "tip": "The comma you hear in the words is the comma you write in the number."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the expanded form of 480,209?",
+     "opts": [
+      "400,000 + 80,000 + 200 + 9",
+      "400,000 + 8,000 + 200 + 9",
+      "48,000 + 200 + 9",
+      "400,000 + 80,000 + 20 + 9"
+     ],
+     "ans": 0,
+     "hint": "Every nonzero digit contributes its place value.",
+     "steps": [
+      "4 is in the hundred thousands: 400,000.",
+      "8 is in the ten thousands: 80,000.",
+      "2 is in the hundreds: 200, and 9 is in the ones: 9.",
+      "The zeros in the thousands and tens contribute nothing to write."
+     ],
+     "ex": {
+      "main": "**400,000 + 80,000 + 200 + 9.** Expanded form is the number confessing what each digit is worth.",
+      "tip": "Zeros appear in standard form but vanish in expanded form — they hold places, not value."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 66,000, how does the value of the left 6 compare to the right 6?",
+     "opts": [
+      "It is ten times as much — 60,000 against 6,000",
+      "They are equal — the digit is the same",
+      "It is one hundred times as much",
+      "It is six times as much"
+     ],
+     "ans": 0,
+     "hint": "Same digit, neighbouring places.",
+     "steps": [
+      "The left 6 is in the ten thousands: 60,000.",
+      "The right 6 is in the thousands: 6,000.",
+      "One step left multiplies a digit's value by ten."
+     ],
+     "ex": {
+      "main": "**Ten times as much.** Place, not the digit itself, sets the value.",
+      "tip": "This is THE place-value relationship — every column is worth ten of the one to its right."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Compare: 372,845 ▢ 372,899. Which symbol, and which place decides?",
+     "opts": [
+      "< — the tens differ: 4 tens against 9 tens",
+      "> — 845 has a bigger hundreds digit",
+      "= — the first four digits match",
+      "< — the ones decide it"
+     ],
+     "ans": 0,
+     "hint": "March from the left until the digits disagree.",
+     "steps": [
+      "Hundred thousands, ten thousands, thousands, hundreds: 3, 7, 2, 8 — all match.",
+      "Tens: 4 against 9. First difference.",
+      "4 tens < 9 tens, so 372,845 < 372,899."
+     ],
+     "ex": {
+      "main": "**< , decided at the tens.** Every place before it agreed, so the tens got the vote.",
+      "tip": "Name the deciding place in every comparison — that is the argument, not just the answer."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 68,341 to the nearest thousand.",
+     "opts": [
+      "68,000",
+      "69,000",
+      "68,300",
+      "70,000"
+     ],
+     "ans": 0,
+     "hint": "One digit right of the thousands place makes the call.",
+     "steps": [
+      "The rounding place is the thousands: the 8.",
+      "One digit right: 3. Less than 5, so the 8 stays.",
+      "Zero out the rest: 68,000."
+     ],
+     "ex": {
+      "main": "**68,000.** The 341 tail is below the halfway point, so the number settles down.",
+      "tip": "Rounding looks at ONE digit. Everything past it is already decided."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 452,616 to the nearest hundred thousand.",
+     "opts": [
+      "500,000",
+      "400,000",
+      "450,000",
+      "460,000"
+     ],
+     "ans": 0,
+     "hint": "The ten thousands digit decides.",
+     "steps": [
+      "The rounding place is the hundred thousands: the 4.",
+      "One digit right: 5. Five or more rounds up.",
+      "The 4 becomes 5, the rest zero out: 500,000."
+     ],
+     "ex": {
+      "main": "**500,000.** The 5 in the ten thousands is exactly enough to push it up.",
+      "tip": "At the school rule, 5 always rounds up — no coin flips, no exceptions."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the halfway point between 23,000 and 24,000?",
+     "opts": [
+      "23,500",
+      "23,050",
+      "23,555",
+      "22,500"
+     ],
+     "ans": 0,
+     "hint": "Half of the gap, added to the lower benchmark.",
+     "steps": [
+      "The gap between the benchmarks is 1,000.",
+      "Half of 1,000 is 500.",
+      "23,000 + 500 = 23,500."
+     ],
+     "ex": {
+      "main": "**23,500.** Below it rounds down; at or above it rounds up.",
+      "tip": "Halfway points end in 5-then-zeros. Spot the shape and you can write them instantly."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The comma in 415,203 separates which two things?",
+     "opts": [
+      "The thousands period from the ones period",
+      "The big digits from the small ones",
+      "The even places from the odd places",
+      "Nothing — it is decoration"
+     ],
+     "ans": 0,
+     "hint": "Commas mark off three-digit reading chunks.",
+     "steps": [
+      "415,203 reads as two chunks: 415 and 203.",
+      "The left chunk is the thousands period: \"four hundred fifteen thousand\".",
+      "The right chunk is the ones period: \"two hundred three\"."
+     ],
+     "ex": {
+      "main": "**The thousands period from the ones period.** The comma is where you say the word \"thousand\".",
+      "tip": "Reading big numbers is chunking. The commas are the chunk boundaries, printed."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In which number is the 5 worth exactly 50,000?",
+     "opts": [
+      "352,610",
+      "35,261",
+      "523,000",
+      "3,520"
+     ],
+     "ans": 0,
+     "hint": "Find where each 5 lives before judging its worth.",
+     "steps": [
+      "352,610: the 5 sits in the ten thousands — worth 50,000.",
+      "35,261: that 5 is in the thousands — 5,000.",
+      "523,000: hundred thousands — 500,000. And 3,520: hundreds — 500."
+     ],
+     "ex": {
+      "main": "**352,610.** Only there does the 5 occupy the ten thousands seat.",
+      "tip": "Same digit, four different values. The address does all the work."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Order these from least to greatest: 89,420 · 89,204 · 98,024.",
+     "opts": [
+      "89,204 < 89,420 < 98,024",
+      "89,420 < 89,204 < 98,024",
+      "98,024 < 89,420 < 89,204",
+      "89,204 < 98,024 < 89,420"
+     ],
+     "ans": 0,
+     "hint": "Compare pairs with the left-to-right march.",
+     "steps": [
+      "98,024 starts with 9 ten thousands — it beats both 8-starters. Greatest.",
+      "Between 89,420 and 89,204: ten thousands and thousands match; hundreds 4 against 2.",
+      "89,204 has the smaller hundreds, so it is least: 89,204 < 89,420 < 98,024."
+     ],
+     "ex": {
+      "main": "**89,204 < 89,420 < 98,024.** One march settled the twins; the digit count settled the third.",
+      "tip": "Ordering is just comparison run twice. Do the easy elimination first."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What number is ten times 8,700?",
+     "opts": [
+      "87,000",
+      "8,710",
+      "870,000",
+      "80,700"
+     ],
+     "ans": 0,
+     "hint": "Ten times means every digit moves one place left.",
+     "steps": [
+      "Ten times a number shifts each digit one place left.",
+      "8 thousands become 8 ten thousands; 7 hundreds become 7 thousands.",
+      "8,700 × 10 = 87,000."
+     ],
+     "ex": {
+      "main": "**87,000.** The digits kept their order and moved up one address each.",
+      "tip": "Multiplying by ten never changes the digits — only their places."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the SMALLEST number that rounds to 60,000 at the nearest ten thousand?",
+     "opts": [
+      "55,000",
+      "50,000",
+      "59,999",
+      "55,001"
+     ],
+     "ans": 0,
+     "hint": "The bottom of the neighbourhood is the halfway point below.",
+     "steps": [
+      "Numbers reach 60,000 from below starting at the halfway point.",
+      "Halfway between 50,000 and 60,000 is 55,000 — and 5 rounds up.",
+      "So 55,000 is the smallest; 54,999 drops to 50,000 instead."
+     ],
+     "ex": {
+      "main": "**55,000.** The neighbourhood of 60,000 runs from 55,000 through 64,999.",
+      "tip": "Smallest-possible questions always land ON the halfway point. Largest-possible land just under the next one."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the LARGEST number that rounds to 341,000 at the nearest thousand?",
+     "opts": [
+      "341,499",
+      "341,500",
+      "341,999",
+      "340,999"
+     ],
+     "ans": 0,
+     "hint": "Just under the halfway point above.",
+     "steps": [
+      "The next benchmark up is 342,000; the halfway point is 341,500.",
+      "At 341,500 the school rule says round UP — too far.",
+      "One less, 341,499, still rounds down to 341,000. That is the ceiling."
+     ],
+     "ex": {
+      "main": "**341,499.** The halfway point itself defects to 342,000, so the largest keeper is one below it.",
+      "tip": "The \"largest that rounds to\" answer always ends in 499…, one short of the halfway point."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A sign says a stadium holds \"about 30,000\", rounded to the nearest ten thousand. Which could be the exact capacity?",
+     "opts": [
+      "34,999",
+      "35,000",
+      "24,999",
+      "36,500"
+     ],
+     "ans": 0,
+     "hint": "Find the full range that rounds to 30,000 first.",
+     "steps": [
+      "The 30,000 neighbourhood runs from 25,000 through 34,999.",
+      "34,999 is inside it — just barely.",
+      "35,000 and 36,500 belong to 40,000; 24,999 belongs to 20,000."
+     ],
+     "ex": {
+      "main": "**34,999.** Un-rounding gives a range, and this is its very top.",
+      "tip": "Boundary numbers are where these questions live. Check the edges, not the middle."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Compare 98,764 and 102,003. Which is greater, and why?",
+     "opts": [
+      "102,003 — it has a hundred thousands place and 98,764 does not",
+      "98,764 — its digits are bigger",
+      "98,764 — 9 beats 1",
+      "They cannot be compared with different digit counts"
+     ],
+     "ans": 0,
+     "hint": "Count the digits before comparing any of them.",
+     "steps": [
+      "98,764 has five digits; 102,003 has six.",
+      "A six-digit number has a hundred thousands place — worth more than any five-digit number can reach.",
+      "So 102,003 > 98,764, before any digit-by-digit march."
+     ],
+     "ex": {
+      "main": "**102,003.** More places beats bigger digits, every time.",
+      "tip": "The 9-beats-1 trap only works on numbers the same length. Length first, march second."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Write (3 × 100,000) + (4 × 1,000) + (7 × 10) as a standard number.",
+     "opts": [
+      "304,070",
+      "340,070",
+      "304,700",
+      "34,070"
+     ],
+     "ans": 0,
+     "hint": "Give every unmentioned place a zero.",
+     "steps": [
+      "3 × 100,000 = 300,000. 4 × 1,000 = 4,000. 7 × 10 = 70.",
+      "No ten thousands, no hundreds, no ones — zeros hold those places.",
+      "300,000 + 4,000 + 70 = 304,070."
+     ],
+     "ex": {
+      "main": "**304,070.** Three values, three zeros standing guard between them.",
+      "tip": "Building from expanded form is a seating chart: every place gets a digit, even if it is 0."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rosa claims: \"A number that contains a 9 is always greater than a number with no 9s.\" Which counterexample breaks it?",
+     "opts": [
+      "9,999 < 10,000 — the all-9s number loses to one with none",
+      "99 > 88, which supports the claim",
+      "19 > 12, which supports the claim",
+      "No counterexample exists; the claim is true"
+     ],
+     "ans": 0,
+     "hint": "Hunt for a 9-heavy number that still loses.",
+     "steps": [
+      "9,999 is nothing but 9s. 10,000 contains none.",
+      "But 10,000 has five digits against four — it is greater.",
+      "One failing case, claim finished: digit VALUE never beats place count."
+     ],
+     "ex": {
+      "main": "**9,999 < 10,000.** The claim dies in one line, because places outrank digits.",
+      "tip": "Supporting examples never prove an always-claim. One counterexample disproves it. Attack is cheaper."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Lena rounds 47,562 to the nearest thousand and announces 50,000. What actually happened?",
+     "opts": [
+      "She rounded to the nearest ten thousand — the nearest thousand is 48,000",
+      "Nothing; 50,000 is correct",
+      "She should have said 47,000",
+      "She rounded down instead of up"
+     ],
+     "ans": 0,
+     "hint": "Check which place her answer is faithful to.",
+     "steps": [
+      "Nearest thousand: rounding digit 7, next digit 5 — round up to 48,000.",
+      "50,000 is what the nearest TEN thousand gives (the 7 pushes the 4 up).",
+      "Her arithmetic was fine; her place was wrong."
+     ],
+     "ex": {
+      "main": "**Wrong place — 48,000 was the ask.** A correct rounding of the wrong place is still a wrong answer.",
+      "tip": "Underline the place word in every rounding question. It is the most commonly dropped word in the topic."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "To argue 512,006 < 512,600 completely, which sentence chain does it?",
+     "opts": [
+      "The first three places match at 5, 1, 2 — then the hundreds differ: 0 < 6",
+      "512,600 simply looks bigger",
+      "The ones differ: 6 > 0, so 512,006 is greater",
+      "Both have six digits, so they are equal"
+     ],
+     "ans": 0,
+     "hint": "Anchor the matching places, then name the deciding one.",
+     "steps": [
+      "Hundred thousands, ten thousands, thousands: 5, 1, 2 — identical.",
+      "Hundreds: 0 against 6. First difference.",
+      "0 hundreds < 6 hundreds settles it; the later digits never vote.",
+      "Stating the matches first is what makes the argument checkable."
+     ],
+     "ex": {
+      "main": "**Match, match, match, then 0 < 6 at the hundreds.** The boring steps are part of the proof.",
+      "tip": "The ones-place option reaches a wrong verdict from real digits — deciding from the wrong place is the classic broken argument."
+     }
+    },
+    {
+     "id": "q20",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A sign reads \"four hundred sixteen thousand visitors\". Rio writes 400,016. Diagnose the translation.",
+     "opts": [
+      "The whole 416 belongs in the thousands period — the number is 416,000",
+      "Rio is correct",
+      "It should be 400,160",
+      "It should be 4,016"
+     ],
+     "ans": 0,
+     "hint": "Which words live inside the thousands period?",
+     "steps": [
+      "\"Four hundred sixteen\" is all one chunk, and \"thousand\" names its period.",
+      "So 416 fills the thousands period: 416,000.",
+      "Rio split the chunk — he sent 400 to the thousands and 16 to the ones.",
+      "The ones period is empty here: no words came after \"thousand\"."
+     ],
+     "ex": {
+      "main": "**416,000.** Everything before the word \"thousand\" stays together in that period.",
+      "tip": "Splitting a period's chunk is the source of most translation errors. The comma in the words marks the only legal cut."
+     }
+    },
+    {
+     "id": "q21",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ben claims: \"If one number is bigger than another, its rounded value is bigger too.\" Which counterexample breaks it?",
+     "opts": [
+      "62 and 58 — 62 > 58, but both round to 60 at the nearest ten",
+      "70 and 30 — they round to different numbers",
+      "91 > 89, and 90 > 90 fails… so the claim holds",
+      "No counterexample exists"
+     ],
+     "ans": 0,
+     "hint": "Look for two different numbers sharing a rounding neighbourhood.",
+     "steps": [
+      "62 > 58 — the numbers genuinely differ.",
+      "But both live in 60's neighbourhood: each rounds to 60.",
+      "\"Bigger\" promised bigger; equal is not bigger. Claim broken."
+     ],
+     "ex": {
+      "main": "**62 and 58 both round to 60.** Rounding flattens small differences, so bigger-in, bigger-out fails.",
+      "tip": "Rounding is many-to-one — that single fact generates most of its counterexamples."
+     }
+    },
+    {
+     "id": "q22",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A poster says a whale sanctuary hosts 4,120 visitors a day — \"about ten times\" the 43 daily visitors of a tide-pool exhibit. Test the claim with estimates.",
+     "opts": [
+      "It fails — ten times 43 is about 430; 4,120 is closer to one hundred times",
+      "It holds — both numbers are large",
+      "It holds — 4,120 contains a 4 and so does 43",
+      "It cannot be tested without exact figures"
+     ],
+     "ans": 0,
+     "hint": "Multiply the small number by ten and compare.",
+     "steps": [
+      "Ten times 43 is 430.",
+      "4,120 is nearly ten times THAT — around a hundred times 43.",
+      "The estimate alone settles it: the claim overshoots by a factor of ten."
+     ],
+     "ex": {
+      "main": "**It fails — 430 is ten times 43, and 4,120 is far past it.** Estimates are enough to sink a bad ratio claim.",
+      "tip": "Times-ten claims are place-value claims: one place left is ×10, two places is ×100. Count the shift."
+     }
+    },
+    {
+     "id": "q23",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A librarian says the collection holds \"about 341,000 books, to the nearest thousand\". Could the exact count be 340,512?",
+     "opts": [
+      "Yes — the 5 in the hundreds rounds 340,512 up to 341,000",
+      "No — 340,512 rounds to 340,000",
+      "Yes — any count starting with 340 works",
+      "Yes — rounding does not restrict the count"
+     ],
+     "ans": 0,
+     "hint": "Round 340,512 to the nearest thousand and see where it lands.",
+     "steps": [
+      "Rounding place: the thousands (the 0 in 340,512).",
+      "One digit right: 5 — five or more rounds up.",
+      "340,512 → 341,000. It fits the sign after all."
+     ],
+     "ex": {
+      "main": "**Yes — 340,512 rounds up to 341,000.** The neighbourhood runs 340,500 through 341,499, and it is inside.",
+      "tip": "Work the rule before trusting your gut — 340,512 FEELS like it belongs to 340,000, and the 5 says otherwise."
+     }
+    }
+   ]
+  }
+ }
+}

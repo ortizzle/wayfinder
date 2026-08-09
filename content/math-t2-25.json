@@ -1,0 +1,327 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m25": {
+   "id": "unit-m25",
+   "type": "unit",
+   "updatedAt": 1786292498239,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · 2-5 Subtract Whole Numbers",
+   "round": 10,
+   "srcName": "enVision Math G4, Topic 2 textbook (Drive)",
+   "source": "Accelerated Math, Topic 2 (Drive folder)",
+   "summary": {
+    "text": "Lesson 2-5 of enVision Math Grade 4: subtracting with regrouping — what the trade really is, the addition check, and the flip error that dodges regroups by subtracting digits in the wrong direction.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Subtraction with regrouping is the first algorithm where a wrong method can feel perfectly smooth — the flip error never gets stuck, it just gets wrong answers. Learning to catch it with the addition check is the real lesson.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Subtract multi-digit numbers with regrouping",
+     "from": "source"
+    },
+    {
+     "text": "Check a subtraction by adding the difference to the subtrahend",
+     "from": "source"
+    },
+    {
+     "text": "Explain a regroup as a ten-for-one trade that keeps the value",
+     "from": "source"
+    },
+    {
+     "text": "Recognize and name the flip error",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the Topic 2 textbook scan, Lesson 2-5. THE thing to watch in her written work: the flip error — subtracting the smaller digit from the larger regardless of which is on top. It never jams, so it feels fine while producing wrong answers. The habit that beats it is the addition check, which two questions here are built around. A difference is also framed as a gap on the number line — that picture pays off in 2-7.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. Check one subtraction by adding — feel how fast it is.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Regrouping in subtraction",
+     "def": "**When a digit is too small to subtract from, trade 1 of the next place for 10 of this one.**\n• 358 − 172: only 5 tens on top, 7 tens to remove — so 3 hundreds 5 tens becomes 2 hundreds 15 tens.\n• It is the addition carry running in reverse.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The check",
+     "def": "**Difference + what you subtracted = what you started with.**\n• 358 − 172 = 186, and the check is 186 + 172 = 358.\n• Addition undoes subtraction — the check costs one easy addition and catches almost everything.",
+     "hint": "Add your answer to the number you took away. You should land exactly where you started.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The flip error",
+     "def": "**You cannot dodge a regroup by subtracting the digits in whichever order is easier.**\n• In 534 − 278, the ones are 4 − 8. Flipping to 8 − 4 quietly changes the problem.\n• The top number owns the digits. When its digit is small, regroup — never flip.",
+     "hint": "If you ever subtract upward in a column, stop. That column needed a trade.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "A difference is a gap",
+     "def": "**Subtraction measures the gap between two numbers on the number line.**\n• Slide both numbers the same amount and the gap does not move: 600 − 250 and 650 − 300 are both 350.\n• This picture is why counting up works, and why the across-zeros trick will work in 2-7.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 358 − 172.",
+     "opts": [
+      "186",
+      "226",
+      "196",
+      "176"
+     ],
+     "ans": 0,
+     "hint": "The tens column needs a trade.",
+     "steps": [
+      "Ones: 8 − 2 = 6. No trade needed.",
+      "Tens: 5 − 7 cannot go. Trade 1 hundred for 10 tens: now 15 − 7 = 8.",
+      "Hundreds: 2 − 1 = 1. Difference: 186."
+     ],
+     "ex": {
+      "main": "**186.** One trade in the tens; the flipped-digit answer 226 is the trap this lesson exists to close.",
+      "tip": "Check it: 186 + 172 = 358. Ten seconds, total certainty."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 425 − 267.",
+     "opts": [
+      "158",
+      "168",
+      "242",
+      "148"
+     ],
+     "ans": 0,
+     "hint": "Both the ones and the tens need trades.",
+     "steps": [
+      "Ones: 5 − 7 cannot go. Trade a ten: 15 − 7 = 8.",
+      "Tens: after lending, 1 − 6 cannot go. Trade a hundred: 11 − 6 = 5.",
+      "Hundreds: 3 − 2 = 1. Difference: 158."
+     ],
+     "ex": {
+      "main": "**158.** Two trades back to back — each column borrowed exactly once.",
+      "tip": "The wrong answer 242 comes from flipping every short column. If no column ever seems to need a trade, be suspicious."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To subtract 358 − 172, the 5 tens on top are too few to give up 7 tens. What trade fixes it?",
+     "opts": [
+      "Trade 1 hundred for 10 tens — 3 hundreds 5 tens becomes 2 hundreds 15 tens",
+      "Trade 1 ten for 10 hundreds",
+      "Swap the 5 and the 7 so the bigger digit is on top",
+      "Subtract the tens column in the other direction"
+     ],
+     "ans": 0,
+     "hint": "Help comes from the next place to the left.",
+     "steps": [
+      "The tens column is short: 5 on top, 7 to remove.",
+      "One hundred is worth exactly 10 tens.",
+      "Trade one across: 2 hundreds remain, and the tens column now holds 15.",
+      "15 − 7 = 8, and the problem moves on."
+     ],
+     "ex": {
+      "main": "**Trade 1 hundred for 10 tens.** The total on top never changed — it is just dressed differently.",
+      "tip": "Regrouping never changes a number's value, only its outfit. 300 + 50 + 8 and 200 + 150 + 8 are the same 358."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A theater has 743 seats and 458 are taken. How many seats are empty?",
+     "opts": [
+      "285",
+      "295",
+      "315",
+      "275"
+     ],
+     "ans": 0,
+     "hint": "Two trades coming — narrate them.",
+     "steps": [
+      "Ones: 3 − 8 cannot go. Trade a ten: 13 − 8 = 5.",
+      "Tens: after lending, 3 − 5 cannot go. Trade a hundred: 13 − 5 = 8.",
+      "Hundreds: 6 − 4 = 2. Empty seats: 285."
+     ],
+     "ex": {
+      "main": "**285.** Check: 285 + 458 = 743. The books balance.",
+      "tip": "Word problems change nothing about the arithmetic — find the two numbers and the direction, then work as usual."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which addition CHECKS the subtraction 612 − 347 = 265?",
+     "opts": [
+      "265 + 347 = 612",
+      "612 + 347 = 959",
+      "265 + 612 = 877",
+      "347 − 265 = 82"
+     ],
+     "ans": 0,
+     "hint": "Rebuild the starting number from its two pieces.",
+     "steps": [
+      "Subtraction split 612 into two pieces: the 347 removed and the 265 left.",
+      "The check reassembles them: 265 + 347.",
+      "If that lands on 612 — and it does — the subtraction was right."
+     ],
+     "ex": {
+      "main": "**265 + 347 = 612.** Difference plus subtracted amount rebuilds the start.",
+      "tip": "The check is always difference + subtrahend = start. The other combinations rebuild nothing."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtracting 534 − 278, Leo writes 344. Diagnose it.",
+     "opts": [
+      "He flipped short columns — doing 8 − 4 in the ones instead of regrouping to take 8 from 14",
+      "He regrouped one time too many",
+      "He subtracted the hundreds column first",
+      "Nothing is wrong — 344 is correct"
+     ],
+     "ans": 0,
+     "hint": "Check his ones digit: where could a 4 have come from?",
+     "steps": [
+      "The ones ask for 4 − 8, which needs a regroup: 14 − 8 = 6.",
+      "Leo's ones digit is 4 — that is 8 − 4, the flip.",
+      "His tens digit 4 is 7 − 3 flipped the same way.",
+      "Regrouped properly, 534 − 278 = 256. The check 256 + 278 = 534 confirms it."
+     ],
+     "ex": {
+      "main": "**The flip error — the true difference is 256.** Flipping feels harmless because every column \"works\", which is exactly what makes it dangerous.",
+      "tip": "His check would have caught it: 344 + 278 = 622, not 534. The check exists for precisely this quiet kind of error."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bake sale starts with 850 cookies and sells 365. How many are left?",
+     "opts": [
+      "485",
+      "495",
+      "515",
+      "585"
+     ],
+     "ans": 0,
+     "hint": "Estimate first: about 850 − 400 = 450-ish.",
+     "steps": [
+      "Ones: 0 − 5 cannot go. Trade a ten: 10 − 5 = 5.",
+      "Tens: after lending, 4 − 6 cannot go. Trade a hundred: 14 − 6 = 8.",
+      "Hundreds: 7 − 3 = 4. Left over: 485."
+     ],
+     "ex": {
+      "main": "**485.** Two trades, and the estimate stood close by the whole time.",
+      "tip": "A zero on top of the ones is the most common trade trigger there is — expect it, do not fear it."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 9▢4 − 372 = 582, what digit is hiding under ▢?",
+     "opts": [
+      "5",
+      "4",
+      "6",
+      "7"
+     ],
+     "ans": 0,
+     "hint": "Work column by column and ask what each one needed.",
+     "steps": [
+      "Ones: 4 − 2 = 2. Matches the 2 in 582 with no trade.",
+      "Tens: ▢ − 7 must give 8. No single digit does that directly, so a trade happened: ▢ + 10 − 7 = 8, meaning ▢ = 5.",
+      "Hundreds: 9 lent one away, so 8 − 3 = 5. Matches.",
+      "The hidden digit is 5: 954 − 372 = 582."
+     ],
+     "ex": {
+      "main": "**5.** The tens column only works if it borrowed — the puzzle is really asking you to spot the trade.",
+      "tip": "When a column's numbers seem impossible, a regroup is usually hiding in it. That is true in puzzles and in checking your own work."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does adding the difference back to what you subtracted ALWAYS return the starting number?",
+     "opts": [
+      "Subtraction splits the start into two pieces — the amount removed and the amount left — and addition reassembles them",
+      "It only works when no regrouping happened",
+      "Because both numbers get rounded the same way",
+      "It is a lucky pattern that might fail someday"
+     ],
+     "ans": 0,
+     "hint": "Think of the starting number as something cut in two.",
+     "steps": [
+      "358 − 172 cuts 358 into two pieces: the 172 taken and the 186 left.",
+      "Nothing vanished — every unit is in one piece or the other.",
+      "Adding the pieces back together must rebuild the whole: 186 + 172 = 358.",
+      "That is why the check works every single time, regroups or not."
+     ],
+     "ex": {
+      "main": "**Subtraction cuts; addition reassembles.** The two pieces always sum to the whole because nothing ever left the table.",
+      "tip": "This is what \"inverse operations\" means beneath the vocabulary: one operation undoes the cut the other one made."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "True or false, and why: if BOTH numbers in a subtraction grow by 50, the difference grows too.",
+     "opts": [
+      "False — both numbers slide up together, so the gap between them stays exactly the same",
+      "True — there is more being subtracted",
+      "True — the difference grows by 100",
+      "False — the difference shrinks by 50"
+     ],
+     "ans": 0,
+     "hint": "Picture both numbers on a number line, sliding together.",
+     "steps": [
+      "Try it: 600 − 250 = 350.",
+      "Grow both by 50: 650 − 300 = 350.",
+      "The gap did not move, because both ends of it moved together.",
+      "Contrast with addition, where growing both addends grows the sum by both amounts."
+     ],
+     "ex": {
+      "main": "**False — the difference holds still.** A difference is a gap, and a gap ignores where it sits on the line.",
+      "tip": "This same-slide idea becomes an actual technique in lesson 2-7. You are meeting it early, as a reason."
+     }
+    }
+   ]
+  }
+ }
+}

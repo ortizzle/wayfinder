@@ -1,0 +1,333 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m14": {
+   "id": "unit-m14",
+   "type": "unit",
+   "updatedAt": 1786291745750,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 1 · 1-4 Round Whole Numbers",
+   "round": 10,
+   "srcName": "enVision Math G4, HW 1-4 (Drive)",
+   "source": "Accelerated Math, Topic 1 (Drive folder)",
+   "summary": {
+    "text": "Lesson 1-4 of enVision Math Grade 4: rounding to any place using the number line's halfway point or the digit rule. Covers picking the rounding digit, the 5-or-more rule, what range of numbers rounds to a given benchmark, and spotting the wrong-place rounding error.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Rounding is the tool the next topic runs on — every estimate before an exact answer in Topic 2 is a rounding move. It is also the first place math asks you to reason about a RANGE of possible numbers instead of one, which is a genuinely new kind of thinking.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Round any number up to one million to a named place",
+     "from": "source"
+    },
+    {
+     "text": "Use the halfway point on a number line to justify a rounding",
+     "from": "source"
+    },
+    {
+     "text": "Find the range of numbers that round to a given benchmark",
+     "from": "source"
+    },
+    {
+     "text": "Spot a correct rounding of the wrong place",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the HW 1-4 sheet. The error to watch for is rounding the WRONG PLACE correctly — her sheet and this quiz both feature it, because it is the top scoring leak on rounding tests. The other stretch here is un-rounding: 'the announcer said about 40,000 — what could the real number be?' Those range questions are where the level 3s live. School rule applied throughout: 5 rounds up.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. Underline the place word in every question before answering.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "What rounding is",
+     "def": "**Rounding replaces a number with the nearest benchmark — the nearest multiple of 10, 100, 1,000 and so on.**\n• 181,376 to the nearest thousand is 181,000, because it is closer to 181,000 than to 182,000.\n• A rounded number trades exactness for ease.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The halfway point",
+     "def": "**A number below the halfway point rounds down; at halfway or above, it rounds up.**\n• Between 181,000 and 182,000 the halfway point is 181,500.\n• 181,376 sits below it, so it rounds down.",
+     "hint": "Picture the number line. Which benchmark is it actually closer to?",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The digit rule",
+     "def": "**Find the rounding place, look ONE digit to its right: 5 or more rounds up, less than 5 leaves it alone. Then zero out everything to the right.**\n• Round 181,376 to the nearest hundred: the 3 is the rounding digit, the 7 to its right says round up — 181,400.\n• The number-line picture and the digit rule always agree; the rule is just faster.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Rounding is many-to-one",
+     "def": "**Many different numbers round to the same benchmark.**\n• Every number from 84,500 up to 85,499 rounds to 85,000 at the nearest thousand.\n• That is why you cannot un-round: the original is gone.",
+     "hint": "A rounded number is a neighbourhood, not an address.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Choosing the rounding place",
+     "def": "**The place you round to sets how rough the estimate is.**\n• 46,512 is 47,000 to the nearest thousand but 46,500 to the nearest hundred.\n• Rougher is faster; finer is closer. Which you want depends on the question.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 73,481 to the nearest thousand.",
+     "opts": [
+      "73,000",
+      "74,000",
+      "73,500",
+      "70,000"
+     ],
+     "ans": 0,
+     "hint": "The digit to the right of the thousands place makes the call.",
+     "steps": [
+      "The rounding place is the thousands: the 3.",
+      "Look one digit right: 4. Less than 5, so the 3 stays.",
+      "Zero out the rest: 73,000."
+     ],
+     "ex": {
+      "main": "**73,000.** The 481 tail is below the halfway point of 500, so the number rounds down.",
+      "tip": "Only the single digit to the right of the rounding place matters. The rest is noise."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 249,731 to the nearest hundred thousand.",
+     "opts": [
+      "200,000",
+      "300,000",
+      "250,000",
+      "249,000"
+     ],
+     "ans": 0,
+     "hint": "The ten thousands digit decides.",
+     "steps": [
+      "The rounding place is the hundred thousands: the 2.",
+      "One digit right: 4. Less than 5, so the 2 stays.",
+      "Everything else becomes zero: 200,000."
+     ],
+     "ex": {
+      "main": "**200,000.** Close call — 249,731 is only 269 short of rounding the other way at 250,000.",
+      "tip": "The bigger the rounding place, the more gets thrown away. Here almost fifty thousand vanished."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the halfway point between 56,000 and 57,000?",
+     "opts": [
+      "56,500",
+      "56,050",
+      "56,555",
+      "55,500"
+     ],
+     "ans": 0,
+     "hint": "Halfway between two neighbouring thousands.",
+     "steps": [
+      "The two benchmarks are 56,000 and 57,000, a gap of 1,000.",
+      "Half of 1,000 is 500.",
+      "So the halfway point is 56,000 + 500 = 56,500."
+     ],
+     "ex": {
+      "main": "**56,500.** Anything below it rounds to 56,000; anything at or above it rounds to 57,000.",
+      "tip": "The halfway point always ends in 5 followed by zeros. That shape is the tell."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 46,512 to the nearest thousand AND to the nearest hundred. Which pair is right?",
+     "opts": [
+      "47,000 and 46,500",
+      "46,000 and 46,500",
+      "47,000 and 46,600",
+      "46,000 and 46,510"
+     ],
+     "ans": 0,
+     "hint": "Two separate roundings of the same number. Do them one at a time.",
+     "steps": [
+      "Nearest thousand: rounding digit 6, next digit 5 — round up. 47,000.",
+      "Nearest hundred: rounding digit 5, next digit 1 — stays. 46,500.",
+      "One number, two answers, because the rounding place changed."
+     ],
+     "ex": {
+      "main": "**47,000 and 46,500.** Notice they even moved in different directions — the thousand rounded up while the hundred stayed.",
+      "tip": "Always restate WHICH place you are rounding to. The same number gives different answers."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A stadium announcer says attendance was \"about 40,000\", rounded to the nearest ten thousand. Which could be the actual attendance?",
+     "opts": [
+      "41,377",
+      "46,200",
+      "34,980",
+      "45,000"
+     ],
+     "ans": 0,
+     "hint": "Find the full range of numbers that round to 40,000.",
+     "steps": [
+      "To round to 40,000 at the nearest ten thousand, a number must be from 35,000 up to 44,999.",
+      "41,377 is inside that range.",
+      "46,200 and 45,000 round to 50,000; 34,980 rounds to 30,000."
+     ],
+     "ex": {
+      "main": "**41,377.** Un-rounding gives a range, never a single answer — the exact count is unrecoverable.",
+      "tip": "The range for a benchmark runs from its halfway point below to just before its halfway point above."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three parks report visitors: Elm 218,943, Oak 224,500, Cedar 214,067. Rounded to the nearest ten thousand, which parks show the SAME number?",
+     "opts": [
+      "Elm and Oak — both 220,000",
+      "Elm and Cedar — both 220,000",
+      "Oak and Cedar — both 210,000",
+      "All three round to different numbers"
+     ],
+     "ans": 0,
+     "hint": "Round each one separately, then compare the results.",
+     "steps": [
+      "Elm 218,943: thousands digit 8 rounds the ten thousands up — 220,000.",
+      "Oak 224,500: thousands digit 4 leaves it — 220,000.",
+      "Cedar 214,067: thousands digit 4 leaves it too — 210,000.",
+      "Elm and Oak both show 220,000; Cedar stands apart."
+     ],
+     "ex": {
+      "main": "**Elm and Oak, both 220,000.** Rounding erases differences — two parks over 5,000 visitors apart become identical.",
+      "tip": "When rounded numbers match, the originals can still be far apart. That is the cost of rounding."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A number rounds to 85,000 at the nearest thousand. What is the SMALLEST it could be?",
+     "opts": [
+      "84,500",
+      "84,000",
+      "84,999",
+      "85,001"
+     ],
+     "ans": 0,
+     "hint": "The bottom of the neighbourhood is the halfway point below.",
+     "steps": [
+      "Numbers round to 85,000 from both sides.",
+      "From below, the first number that rounds UP to 85,000 is the halfway point: 84,500.",
+      "One less, 84,499, rounds down to 84,000 instead.",
+      "So the smallest possibility is 84,500."
+     ],
+     "ex": {
+      "main": "**84,500.** The neighbourhood of 85,000 runs from 84,500 through 85,499.",
+      "tip": "Smallest-possible and largest-possible questions are asking for the two ends of the range."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Kenji says 296,480 rounded to the nearest thousand is 300,000. What went wrong?",
+     "opts": [
+      "He rounded to the nearest hundred thousand instead — nearest thousand gives 296,000",
+      "Nothing, he is correct",
+      "He should have gotten 297,000",
+      "He rounded down when he should have rounded up"
+     ],
+     "ans": 0,
+     "hint": "Check which place his answer is actually rounded to.",
+     "steps": [
+      "Nearest thousand: rounding digit is the 6, next digit is 4, so it stays — 296,000.",
+      "300,000 is what you get rounding to the nearest hundred thousand.",
+      "Kenji did a correct rounding — of the wrong place.",
+      "The fix is not new arithmetic; it is re-reading which place was asked for."
+     ],
+     "ex": {
+      "main": "**He rounded to the wrong place.** His arithmetic was fine and his answer is still wrong — precision about the question is part of the skill.",
+      "tip": "Wrong-place rounding is the most common error on these tests. Underline the place word in the question."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A librarian rounds the book count to the nearest hundred for a poster and gets 12,300. A visitor asks whether the library could have exactly 12,349 books. What is the right answer?",
+     "opts": [
+      "Yes — 12,349 rounds to 12,300, so it is possible",
+      "No — 12,349 rounds to 12,350",
+      "No — the count must end in zero",
+      "Yes — any number near 12,300 is possible, even 12,251"
+     ],
+     "ans": 0,
+     "hint": "Round 12,349 to the nearest hundred and see if it lands on 12,300.",
+     "steps": [
+      "Nearest hundred for 12,349: rounding digit 3, next digit 4, stays — 12,300.",
+      "So 12,349 is inside the 12,300 neighbourhood, which runs 12,250 to 12,349.",
+      "It is in fact the LARGEST number that still rounds to 12,300.",
+      "So yes, the library could have exactly 12,349 books."
+     ],
+     "ex": {
+      "main": "**Yes.** A rounded number is consistent with a whole range of exact counts — reasoning about that range is the real skill.",
+      "tip": "Note the neighbour: 12,350 would round UP to 12,400. One book changes the poster."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "If a number rounds UP when rounded to the nearest ten, does it always round up to the nearest hundred too?",
+     "opts": [
+      "No — 146 rounds up to 150 at the nearest ten but down to 100 at the nearest hundred",
+      "Yes — rounding direction is a property of the number",
+      "Yes — bigger places always follow smaller ones",
+      "No — it always rounds down instead"
+     ],
+     "ans": 0,
+     "hint": "Find one number that goes up at tens and down at hundreds. One example settles it.",
+     "steps": [
+      "Take 146. Nearest ten: ones digit 6, round up — 150.",
+      "Nearest hundred: tens digit 4, stays — 100.",
+      "Same number, up at one place, down at another.",
+      "One counterexample is all it takes to defeat an \"always\" claim."
+     ],
+     "ex": {
+      "main": "**No — 146 rounds up to 150 but down to 100.** Each rounding place makes its own decision from its own neighbour digit.",
+      "tip": "To break any \"always\" statement, hunt for one counterexample. That is a full proof."
+     }
+    }
+   ]
+  }
+ }
+}

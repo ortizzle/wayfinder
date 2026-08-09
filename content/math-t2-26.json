@@ -1,0 +1,327 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m26": {
+   "id": "unit-m26",
+   "type": "unit",
+   "updatedAt": 1786292498244,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · 2-6 Subtract Greater Numbers",
+   "round": 10,
+   "srcName": "enVision Math G4, Topic 2 textbook (Drive)",
+   "source": "Accelerated Math, Topic 2 (Drive folder)",
+   "summary": {
+    "text": "Lesson 2-6 of enVision Math Grade 4: the subtraction algorithm on greater numbers — borrow chains through zeros, the inverse-operation check, scouting regroups in advance, and estimates as the guard rail.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Big subtractions are where quiet errors thrive: a flipped column or a lost borrow looks fine on the page. The two habits taught here — scout the columns, run the addition check — are what make five-digit answers trustworthy.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Subtract numbers through six digits with regrouping",
+     "from": "source"
+    },
+    {
+     "text": "Check a subtraction with the inverse addition",
+     "from": "source"
+    },
+    {
+     "text": "Solve backwards for a missing starting number",
+     "from": "source"
+    },
+    {
+     "text": "Predict where the regroups will happen before working",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the Topic 2 textbook scan, Lesson 2-6. The two-alarm habit is the theme: estimate before, addition-check after. One question makes her act on a FAILED check — that is deliberate; knowing what to do when the alarm rings matters more than the alarm. Borrow chains through zeros appear here gently and become the whole of lesson 2-7.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. Scout each subtraction's columns before working it.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Greater subtraction",
+     "def": "**More columns, same trades — the subtraction algorithm scales without changing.**\n• 34,287 − 21,893 runs exactly like 534 − 278, five columns wide.\n• Slow is fine. Every column is its own small problem.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Inverse operations",
+     "def": "**Addition and subtraction undo each other — which turns every answer into a checkable claim.**\n• 34,287 − 21,893 = 12,394, because 12,394 + 21,893 = 34,287.\n• With five-digit numbers the check earns its keep: more columns, more places to slip.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Scout the regroups",
+     "def": "**Before subtracting, scan each column: anywhere the top digit is smaller, a trade is coming.**\n• In 82,354 − 47,182: the tens (5 under 8) and the thousands (2 under 7) will both borrow.\n• Knowing where the trades live turns the algorithm from a surprise into a plan.",
+     "hint": "Read the columns before you work them, like reading the road before you drive it.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "The estimate brackets it",
+     "def": "**Round both numbers, subtract the rounds, and keep that number in view.**\n• 34,287 − 21,893: about 34,000 − 22,000 = 12,000.\n• An exact answer thousands away from the estimate does not get the benefit of the doubt.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A national park logs 34,287 visitors in July and 21,893 in August. How many more visited in July?",
+     "opts": [
+      "12,394",
+      "12,494",
+      "13,394",
+      "12,384"
+     ],
+     "ans": 0,
+     "hint": "Estimate first: about 34,000 − 22,000.",
+     "steps": [
+      "Ones: 7 − 3 = 4. Tens: 8 − 9 cannot go — trade: 18 − 9 = 9.",
+      "Hundreds: after lending, 1 − 8 cannot go — trade: 11 − 8 = 3.",
+      "Thousands: after lending, 3 − 1 = 2. Ten thousands: 3 − 2 = 1.",
+      "Difference: 12,394 — right beside the 12,000 estimate."
+     ],
+     "ex": {
+      "main": "**12,394.** Two mid-number trades, and the estimate vouches for the result.",
+      "tip": "Check: 12,394 + 21,893 = 34,287. With this many columns, the check is not optional politeness."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 76,450 − 32,180.",
+     "opts": [
+      "44,270",
+      "44,370",
+      "44,260",
+      "43,270"
+     ],
+     "ans": 0,
+     "hint": "Only one column needs a trade.",
+     "steps": [
+      "Ones: 0 − 0 = 0. Tens: 5 − 8 cannot go — trade: 15 − 8 = 7.",
+      "Hundreds: after lending, 3 − 1 = 2. Thousands: 6 − 2 = 4.",
+      "Ten thousands: 7 − 3 = 4. Difference: 44,270."
+     ],
+     "ex": {
+      "main": "**44,270.** One trade in the tens; everything else subtracts cleanly.",
+      "tip": "Not every big subtraction is a regrouping storm. Scout the columns first and you will know what is coming."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which estimate belongs beside the exact work for 34,287 − 21,893?",
+     "opts": [
+      "34,000 − 22,000 = 12,000",
+      "34,000 − 21,000 = 13,000",
+      "40,000 − 20,000 = 20,000",
+      "35,000 − 22,000 = 13,000"
+     ],
+     "ans": 0,
+     "hint": "Round each number to the nearest thousand on its own digit.",
+     "steps": [
+      "34,287: the 2 in the hundreds keeps it at 34,000.",
+      "21,893: the 8 in the hundreds pushes it to 22,000.",
+      "Estimate: 34,000 − 22,000 = 12,000."
+     ],
+     "ex": {
+      "main": "**12,000.** Each number rounded on its own digit — 21,893 goes up, not down.",
+      "tip": "Misrounding 21,893 to 21,000 is the tempting error: the 8 in its hundreds place says up."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 52,306 − 28,417.",
+     "opts": [
+      "23,889",
+      "23,989",
+      "24,889",
+      "23,879"
+     ],
+     "ans": 0,
+     "hint": "Almost every column borrows — take them one at a time.",
+     "steps": [
+      "Ones: 6 − 7 needs a borrow, but the tens hold 0 — the ripple runs left to the 3 hundreds.",
+      "After the ripple the top reads 2 hundreds, 9 tens, 16 ones. Ones: 16 − 7 = 9. Tens: 9 − 1 = 8.",
+      "Hundreds: 2 − 4 borrows from the thousands: 12 − 4 = 8. Thousands: 1 − 8 borrows again: 11 − 8 = 3. Ten thousands: 4 − 2 = 2.",
+      "Difference: 23,889. Check: 23,889 + 28,417 = 52,306."
+     ],
+     "ex": {
+      "main": "**23,889.** A borrow chain ran through the zero — the check is what makes the answer trustworthy.",
+      "tip": "When a borrow passes through a 0, the 0 becomes 9 and passes the request left. That chain is 2-7's whole subject."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which addition proves 45,162 − 18,725 = 26,437?",
+     "opts": [
+      "26,437 + 18,725 = 45,162",
+      "26,437 + 18,726 = 45,163",
+      "45,162 + 26,437 = 71,599",
+      "18,725 + 26,347 = 45,072"
+     ],
+     "ans": 0,
+     "hint": "Difference + subtracted amount = starting number.",
+     "steps": [
+      "The subtraction claims 45,162 splits into 18,725 and 26,437.",
+      "Reassemble: 26,437 + 18,725.",
+      "It lands on 45,162 exactly — claim verified."
+     ],
+     "ex": {
+      "main": "**26,437 + 18,725 = 45,162.** The two pieces rebuild the start, so the difference is right.",
+      "tip": "The near-miss options are off by one or scramble the digits — the check only counts if every digit agrees."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A concert sells 61,500 tickets and 45,987 people have arrived. How many are still to come?",
+     "opts": [
+      "15,513",
+      "15,613",
+      "16,513",
+      "15,503"
+     ],
+     "ans": 0,
+     "hint": "Estimate: about 61,500 − 46,000.",
+     "steps": [
+      "Ones: 0 − 7 — trade: 10 − 7 = 3. Tens: after lending, the 0 borrows too: 9 − 8 = 1.",
+      "Hundreds: 4 − 9 — trade: 14 − 9 = 5. Thousands: 0 after lending — borrow: 10 − 5 = 5.",
+      "Ten thousands: 5 − 4 = 1. Still to come: 15,513.",
+      "Check: 15,513 + 45,987 = 61,500."
+     ],
+     "ex": {
+      "main": "**15,513.** Borrows rippled across four columns — exactly the terrain where the check matters.",
+      "tip": "Ticket-counter problems are subtraction saying \"how far apart are these two numbers\" — the gap picture again."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtracting 82,354 − 47,182, in which place does the FIRST regroup happen?",
+     "opts": [
+      "The tens — 5 tens cannot give up 8 tens",
+      "The ones",
+      "The hundreds",
+      "No regroup is needed anywhere"
+     ],
+     "ans": 0,
+     "hint": "Scan right to left for the first top digit that is too small.",
+     "steps": [
+      "Ones: 4 − 2 works, no trade.",
+      "Tens: 5 − 8 cannot go — first trade, right here.",
+      "For the record, the thousands will also borrow (2 under 7), and the difference is 35,172."
+     ],
+     "ex": {
+      "main": "**The tens.** Scouting the columns before working them tells you the whole shape of the problem.",
+      "tip": "This scan takes five seconds and removes every surprise from the algorithm. Make it a ritual."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Dev computes 43,512 − 19,268 and gets 36,356. His check: 36,356 + 19,268 = 55,624, which is not 43,512. What should Dev do with that information?",
+     "opts": [
+      "Trust the check — the answer is wrong; he flipped every short column, and the true difference is 24,244",
+      "Trust his first answer — checks sometimes fail",
+      "Round the check until it matches",
+      "Split the difference between the two numbers"
+     ],
+     "ans": 0,
+     "hint": "The check cannot lie. What kind of error makes an answer too BIG?",
+     "steps": [
+      "The check failed by a lot, so the subtraction is wrong — that part is settled.",
+      "His answer is bigger than a sensible estimate (44,000 − 19,000 = 25,000), which points at flipped columns.",
+      "Flipping short columns steals from the answer's neighbours and inflates it: 36,356.",
+      "Regrouped properly: 43,512 − 19,268 = 24,244, and 24,244 + 19,268 = 43,512 checks."
+     ],
+     "ex": {
+      "main": "**The check has spoken — redo it; 24,244 is the truth.** A failed check is not a suggestion.",
+      "tip": "The estimate flagged it too — 36,356 is eleven thousand past 25,000. Two alarms, same fire."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A puzzle: ▲ − 21,893 = 12,394. What is ▲, and how do you find it?",
+     "opts": [
+      "34,287 — add the two known pieces; subtraction run backwards is addition",
+      "9,499 — subtract the two known numbers",
+      "12,394 — the difference is always the start",
+      "It cannot be found without more information"
+     ],
+     "ans": 0,
+     "hint": "The start was split into two known pieces. Rebuild it.",
+     "steps": [
+      "▲ was cut into two pieces: the 21,893 removed and the 12,394 left.",
+      "Rebuild the whole: 21,893 + 12,394 = 34,287.",
+      "Confirm forwards: 34,287 − 21,893 = 12,394.",
+      "Solving backwards is just the check, promoted to the main event."
+     ],
+     "ex": {
+      "main": "**34,287, by adding the pieces.** Every subtraction fact hides an addition fact, and this puzzle asks for it.",
+      "tip": "Forward: predict the difference. Backward: recover the start. Owning both directions is what mastery means here."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Estimating 61,234 − 29,876 as 61,000 − 30,000 = 31,000: is the exact answer above or below 31,000?",
+     "opts": [
+      "Above — rounding pushed the start down AND the amount subtracted up, so the estimate dug too deep both ways",
+      "Below — estimates always land high",
+      "Exactly 31,000",
+      "No direction can be known"
+     ],
+     "ans": 0,
+     "hint": "Track each rounding separately: which way did each one push?",
+     "steps": [
+      "61,234 → 61,000: the start shrank by 234, pushing the result down.",
+      "29,876 → 30,000: the amount removed grew by 124, pushing the result down again.",
+      "Both pushes point the same way, so the estimate must sit BELOW the truth.",
+      "Exact: 31,358 — above 31,000, as promised."
+     ],
+     "ex": {
+      "main": "**Above.** When both roundings push the same direction, the estimate stops guessing and starts promising.",
+      "tip": "This is 2-2's over/under reasoning applied to subtraction — the logic transfers, with the directions flipped for the subtrahend."
+     }
+    }
+   ]
+  }
+ }
+}

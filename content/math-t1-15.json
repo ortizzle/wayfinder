@@ -1,0 +1,334 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m15": {
+   "id": "unit-m15",
+   "type": "unit",
+   "updatedAt": 1786291745753,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 1 · 1-5 Construct Arguments",
+   "round": 10,
+   "srcName": "enVision Math G4, HW 1-5 (Drive)",
+   "source": "Accelerated Math, Topic 1 (Drive folder)",
+   "summary": {
+    "text": "Lesson 1-5 of enVision Math Grade 4, the topic's math-practices lesson: constructing arguments about place value and comparison. Covers conjectures, what a complete argument contains, counterexamples, judging someone else's reasoning, and translating number names correctly.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the lesson where the answer stops being enough — the argument IS the assignment. That is how her tests will grade explanation questions all year, and honestly, it is the most transferable skill in the whole topic.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "State what a conjecture is and test one with numbers",
+     "from": "source"
+    },
+    {
+     "text": "Construct a complete comparison argument that names the deciding place",
+     "from": "source"
+    },
+    {
+     "text": "Break an always-claim with a single counterexample",
+     "from": "source"
+    },
+    {
+     "text": "Judge another student's reasoning, including right-answer-wrong-method",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the HW 1-5 sheet, which is the practices lesson closing Topic 1. The recurring move: judge REASONING separately from ANSWERS — two questions feature arguments that reach correct conclusions through broken methods, because that distinction is exactly what her sheet's Critique Reasoning problems test. The ten-times conjecture questions echo the sheet's planet-equator task with fresh scenarios.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Quiz in one sitting. On every question, ask what the ARGUMENT is, not just the answer.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Conjecture",
+     "def": "**A statement believed to be true that has not been proven yet.**\n• \"Arizona had more retail sales than Massachusetts\" is a conjecture until the numbers back it.\n• Testing conjectures is the whole job of this lesson.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "What makes a math argument",
+     "def": "**Clear and complete reasoning, correct numbers and symbols, and something that justifies each step.**\n• Drawings, place-value blocks and number lines all count as justification.\n• \"Because it looks bigger\" is a feeling, not an argument.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Counterexample",
+     "def": "**One example that breaks a claim.**\n• The claim \"any number with more 9s is greater\" dies against 999 < 1,000.\n• One counterexample defeats an always-statement completely — no second one needed.",
+     "hint": "To attack a claim, hunt for the single case that breaks it.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Compare the right digits",
+     "def": "**An argument about comparing must march places from the left — quoting two stray digits proves nothing.**\n• $13,637 > $13,533 because the HUNDREDS differ: 600 > 500.\n• Saying \"7 > 3\" compares the ones — those digits never got a vote.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Numbers written in words",
+     "def": "**Translate number names carefully: three hundred thousand, twenty-seven is 300,027 — not 327,000.**\n• Missing places fill with zeros.\n• Most wrong arguments about big numbers start with a wrong translation.",
+     "hint": "Write the places as blanks first: ___ ___ ___, ___ ___ ___. Then fill what the words actually say.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is a conjecture?",
+     "opts": [
+      "A statement believed true but not yet proven",
+      "A statement that has been proven",
+      "A number written in expanded form",
+      "A kind of rounding"
+     ],
+     "ans": 0,
+     "hint": "It is a claim waiting for an argument.",
+     "steps": [
+      "A conjecture is a belief about how something works.",
+      "It might be right or wrong — nobody has shown which yet.",
+      "Your job is to build the argument that settles it."
+     ],
+     "ex": {
+      "main": "**A statement believed true but not proven.** Once a solid argument lands, it stops being a conjecture.",
+      "tip": "Scientists and mathematicians both live on conjectures. The argument is what separates believing from knowing."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is a real math argument that 5,280 > 5,190?",
+     "opts": [
+      "The thousands match, and in the hundreds 2 > 1, so 5,280 is greater",
+      "5,280 looks bigger",
+      "80 is bigger than 90 backwards",
+      "Both have four digits"
+     ],
+     "ans": 0,
+     "hint": "A real argument names the deciding place.",
+     "steps": [
+      "March from the left: thousands are 5 and 5 — equal.",
+      "Hundreds: 2 versus 1. First difference.",
+      "2 hundreds > 1 hundred, so 5,280 > 5,190. That names the place and the reason."
+     ],
+     "ex": {
+      "main": "**The hundreds decide: 2 > 1.** The other choices are feelings or noise — nothing a reader could check.",
+      "tip": "A good argument survives being checked by someone who disagrees with you."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is a counterexample?",
+     "opts": [
+      "One example that shows a claim is false",
+      "An example that supports a claim",
+      "A second way of writing a number",
+      "An estimate used for checking"
+     ],
+     "ans": 0,
+     "hint": "It is the single case that breaks the rule.",
+     "steps": [
+      "A claim like \"this always happens\" promises every case works.",
+      "Finding even ONE case where it fails breaks the promise.",
+      "That one case is a counterexample, and it finishes the argument."
+     ],
+     "ex": {
+      "main": "**One example that shows a claim is false.** Against an always-claim, one is enough.",
+      "tip": "Defending a claim takes every case. Breaking one takes a single case. Attack is cheaper — use that."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Mara claims: \"$41,268 is more than $41,832 because 8 > 3.\" Construct the correct judgement of her argument.",
+     "opts": [
+      "Her conclusion AND her method are wrong — the hundreds decide, and 2 < 8, so $41,268 is less",
+      "Her conclusion is right but her method is wrong",
+      "Her conclusion and method are both right",
+      "Her method is right but she compared the wrong numbers"
+     ],
+     "ans": 0,
+     "hint": "Check the comparison honestly first, then check what her digits were.",
+     "steps": [
+      "March left: 4 = 4, 1 = 1. Hundreds: 2 versus 8.",
+      "2 < 8, so $41,268 < $41,832. Her conclusion is false.",
+      "Her \"8 > 3\" pulled digits from different places — the ones of one number, the hundreds of the other.",
+      "So both the answer and the reasoning fail. The fix is the left-to-right march."
+     ],
+     "ex": {
+      "main": "**Both wrong.** Comparing digits from different places can produce any answer at all — sometimes even the right one, by luck.",
+      "tip": "The march exists because it never needs luck."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A sign says a city's population is \"six hundred four thousand, fifty\". A student writes 604,050 and another writes 645,000. Who translated correctly?",
+     "opts": [
+      "The first: six hundred four thousand is 604,—, and fifty fills in as 050",
+      "The second: the words say 645",
+      "Both are acceptable",
+      "Neither is right"
+     ],
+     "ans": 0,
+     "hint": "Translate in two chunks: the thousands part, then the rest.",
+     "steps": [
+      "\"Six hundred four thousand\" is 604 in the thousands period: 604,—.",
+      "\"Fifty\" is what fills the last three places: 050.",
+      "Together: 604,050.",
+      "645,000 invents a 45 the words never said — the classic mistranslation."
+     ],
+     "ex": {
+      "main": "**604,050.** Missing places fill with zeros; nothing in the words lets digits move houses.",
+      "tip": "Read number names one period at a time. The comma in the words matches the comma in the number."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ravi conjectures a blue whale is about ten times as long as a school bus. The whale measures 98 feet; the bus measures 40 feet. Judge the conjecture.",
+     "opts": [
+      "It fails — 98 is about 100, and ten times 40 is 400, which is way past 100",
+      "It holds — both numbers are big",
+      "It holds — 98 is close to 40 × 10",
+      "It fails — whales are actually shorter than buses"
+     ],
+     "ans": 0,
+     "hint": "Estimate both, then test the ten-times claim against the estimates.",
+     "steps": [
+      "Estimate: the whale is about 100 feet, the bus about 40 feet.",
+      "Ten times the bus would be 40 × 10 = 400 feet.",
+      "The whale's 100 feet is nowhere near 400 — it is closer to 2 and a half times the bus.",
+      "So the conjecture fails, and the estimates are the argument."
+     ],
+     "ex": {
+      "main": "**It fails — ten times a bus would be 400 feet.** Testing a conjecture with rounded numbers is usually enough to settle it.",
+      "tip": "Estimate first. If the claim fails on estimates, exact arithmetic is not needed."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "To argue that 356,208 > 356,079, which sentence does the real work?",
+     "opts": [
+      "The hundreds differ: 2 hundreds > 0 hundreds",
+      "Both numbers are in the three hundred thousands",
+      "The ones differ: 8 > 9 is false, so check again",
+      "356,208 has a 2 in it"
+     ],
+     "ans": 0,
+     "hint": "The deciding sentence names the first differing place and compares it.",
+     "steps": [
+      "Hundred thousands, ten thousands and thousands all match: 3, 5, 6.",
+      "The hundreds are the first difference: 2 versus 0.",
+      "2 hundreds > 0 hundreds settles it — every later digit is irrelevant."
+     ],
+     "ex": {
+      "main": "**The hundreds sentence.** Everything else in the list is true-but-useless, which is the difference between facts and arguments.",
+      "tip": "An argument is the minimum set of facts that FORCES the conclusion. Extra facts are decoration."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Nia claims: \"If you round two different numbers to the same place, the bigger number always gives the bigger rounded answer.\" Find the counterexample.",
+     "opts": [
+      "82 and 78 to the nearest ten: both give 80 — bigger did not give bigger",
+      "91 and 89 to the nearest ten give 90 and 90",
+      "146 and 150 give different answers",
+      "There is no counterexample; the claim is true"
+     ],
+     "ans": 0,
+     "hint": "Try two different numbers that live in the same rounding neighbourhood.",
+     "steps": [
+      "82 rounds to 80 at the nearest ten. 78 also rounds to 80.",
+      "82 > 78, but the rounded answers are equal — not bigger.",
+      "The claim said \"always gives the bigger\", and equal is not bigger.",
+      "One counterexample, claim finished. (Both numbers just have to share a neighbourhood.)"
+     ],
+     "ex": {
+      "main": "**82 and 78 both round to 80.** Rounding flattens differences, so \"bigger stays bigger\" fails whenever two numbers share a benchmark.",
+      "tip": "When a claim says ALWAYS, look for the flattening cases: ties, boundaries, and shared neighbourhoods."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A newspaper claims: \"Star Stadium (61,500 seats) is about ten times the size of Riverside Field (5,986 seats).\" Construct the supporting argument.",
+     "opts": [
+      "Round: 61,500 is about 60,000 and 5,986 is about 6,000; 6,000 × 10 = 60,000, so the claim holds",
+      "Count the digits: five beats four, so it is ten times",
+      "The claim fails because 61,500 is not exactly 59,860",
+      "61,500 − 5,986 is big, so the claim holds"
+     ],
+     "ans": 0,
+     "hint": "Ten-times claims are place-value claims. Round both numbers first.",
+     "steps": [
+      "Round both: 61,500 → about 60,000; 5,986 → about 6,000.",
+      "Test the claim: 6,000 × 10 = 60,000.",
+      "The estimates match the ten-times relationship almost exactly.",
+      "\"About ten times\" only needs the estimates to line up — exactness was never claimed."
+     ],
+     "ex": {
+      "main": "**Round both, then test: 6,000 × 10 = 60,000.** The word \"about\" means the argument runs on estimates, and that is legitimate.",
+      "tip": "Subtraction tells you the gap. Only the times-ten test tells you the RATIO, which is what the claim was about."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Tomás argues: \"300,027 < 316,042 because my number has a zero in the ten thousands place and hers has a one, and 0 < 1.\" Is his argument complete?",
+     "opts": [
+      "Almost — he must first note the hundred thousands MATCH, or the comparison is not anchored",
+      "Yes — it is complete as stated",
+      "No — he should compare the ones place",
+      "No — zeros cannot be compared"
+     ],
+     "ans": 0,
+     "hint": "The march has to start at the left. What did he skip?",
+     "steps": [
+      "His deciding place is right: ten thousands, 0 versus 1.",
+      "But that place only decides IF every place to its left matches.",
+      "The complete argument says: hundred thousands match at 3, THEN ten thousands differ, 0 < 1.",
+      "Without the first sentence, a reader cannot know the earlier places did not already decide it."
+     ],
+     "ex": {
+      "main": "**Almost — the argument must first anchor the matching places.** The conclusion is right; the argument has a missing rung.",
+      "tip": "Complete arguments state the boring steps too. The boring steps are what make them checkable."
+     }
+    }
+   ]
+  }
+ }
+}

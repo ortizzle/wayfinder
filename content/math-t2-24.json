@@ -1,0 +1,330 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m24": {
+   "id": "unit-m24",
+   "type": "unit",
+   "updatedAt": 1786292300890,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · 2-4 Add Greater Numbers",
+   "round": 10,
+   "srcName": "enVision Math G4, Topic 2 textbook (Drive)",
+   "source": "Accelerated Math, Topic 2 (Drive folder)",
+   "summary": {
+    "text": "Lesson 2-4 of enVision Math Grade 4: the addition algorithm on greater numbers — four, five and six digits, three addends, alignment by place value, and estimates as the guard rail.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Same algorithm, higher stakes: with more columns there are more places for a carry to vanish, which is exactly why the estimate habit from 2-2 matters more here, not less.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Add numbers through six digits with the standard algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Add three addends, choosing a helpful order",
+     "from": "source"
+    },
+    {
+     "text": "Align digits by place value and explain why it matters",
+     "from": "source"
+    },
+    {
+     "text": "Use an estimate to reject an unreasonable sum",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the Topic 2 textbook scan, Lesson 2-4. Two things to watch: alignment (one question shows the left-edge error and its wildly wrong result) and finishing all three addends (the running total after two is a distractor on purpose). The mental-math questions are there to show the algorithm is not always the best tool, even at this size.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. Write the estimate down before every exact answer.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Bigger numbers, same algorithm",
+     "def": "**The addition algorithm does not change with size — more columns, same trades.**\n• 24,595 + 19,255 works exactly like 358 + 277, just five columns wide.\n• If it works for hundreds, it works for hundred thousands.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Line up places, not edges",
+     "def": "**Digits must be stacked by place value — ones under ones, tens under tens.**\n• Adding 5,306 + 473 with left edges aligned adds the 4 hundreds as 4 thousands.\n• Lining up the RIGHT edge does this automatically for whole numbers.",
+     "hint": "The ones digits anchor the whole stack. Start there.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Three or more addends",
+     "def": "**Add two numbers, then add the next to that running total — or pair friendly numbers first.**\n• The Commutative and Associative Properties make any order legal.\n• Watch for columns that pass 19: a carry can be 2.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Estimate brackets the answer",
+     "def": "**With big numbers, the estimate matters more, not less — mistakes grow with the columns.**\n• 24,595 + 19,255: estimate 25,000 + 19,000 = 44,000 before touching the algorithm.\n• An exact answer far from the estimate is guilty until proven innocent.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two towns count their recycling: 24,595 pounds and 19,255 pounds. What is the total?",
+     "opts": [
+      "43,850",
+      "43,750",
+      "44,850",
+      "43,840"
+     ],
+     "ans": 0,
+     "hint": "Same algorithm as three-digit numbers — just more columns.",
+     "steps": [
+      "Ones: 5 + 5 = 10. Write 0, carry 1.",
+      "Tens: 9 + 5 + 1 = 15. Write 5, carry 1. Hundreds: 5 + 2 + 1 = 8.",
+      "Thousands: 4 + 9 = 13. Write 3, carry 1. Ten thousands: 2 + 1 + 1 = 4.",
+      "Total: 43,850."
+     ],
+     "ex": {
+      "main": "**43,850.** Three carries, five columns, nothing new — just more of the same trades.",
+      "tip": "Check against the estimate: 25,000 + 19,000 = 44,000. The exact answer sits right beside it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 41,306 + 22,589.",
+     "opts": [
+      "63,895",
+      "63,885",
+      "64,895",
+      "63,795"
+     ],
+     "ans": 0,
+     "hint": "Work right to left, column by column.",
+     "steps": [
+      "Ones: 6 + 9 = 15. Write 5, carry 1.",
+      "Tens: 0 + 8 + 1 = 9. Hundreds: 3 + 5 = 8.",
+      "Thousands: 1 + 2 = 3. Ten thousands: 4 + 2 = 6.",
+      "Sum: 63,895."
+     ],
+     "ex": {
+      "main": "**63,895.** One early carry, then clean columns the rest of the way.",
+      "tip": "A zero inside a big number is just another digit — it takes the carry and passes the sum along."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Before adding 24,595 + 19,255 exactly, you estimate by rounding each to the nearest thousand. Which estimate is right?",
+     "opts": [
+      "25,000 + 19,000 = 44,000",
+      "24,000 + 19,000 = 43,000",
+      "25,000 + 20,000 = 45,000",
+      "20,000 + 20,000 = 40,000"
+     ],
+     "ans": 0,
+     "hint": "Round each number at the thousands place on its own merits.",
+     "steps": [
+      "24,595: the 5 in the hundreds rounds it UP to 25,000.",
+      "19,255: the 2 in the hundreds leaves it at 19,000.",
+      "Estimate: 25,000 + 19,000 = 44,000."
+     ],
+     "ex": {
+      "main": "**44,000.** One number rounded up, one stayed — each on its own digit.",
+      "tip": "The wrong options each misround one number. Rounding is per-number, never a package deal."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A city collects 30,283 pounds of paper, 63,423 pounds of glass, and 6,538 pounds of metal. What is the total?",
+     "opts": [
+      "100,244",
+      "99,244",
+      "100,144",
+      "93,706"
+     ],
+     "ans": 0,
+     "hint": "Add two, then add the third to the running total.",
+     "steps": [
+      "30,283 + 63,423 = 93,706.",
+      "Then 93,706 + 6,538: ones 6 + 8 = 14, tens 0 + 3 + 1 = 4, hundreds 7 + 5 = 12.",
+      "Keep going: 93,706 + 6,538 = 100,244.",
+      "Three addends crossed into six digits — the algorithm did not blink."
+     ],
+     "ex": {
+      "main": "**100,244.** Two additions in a row, and the total crossed one hundred thousand.",
+      "tip": "The distractor 93,706 is the running total after two addends — finishing all three is the test of attention here."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 57,468 + 29,777.",
+     "opts": [
+      "87,245",
+      "87,235",
+      "86,245",
+      "87,145"
+     ],
+     "ans": 0,
+     "hint": "This one carries in almost every column.",
+     "steps": [
+      "Ones: 8 + 7 = 15. Write 5, carry 1.",
+      "Tens: 6 + 7 + 1 = 14. Write 4, carry 1. Hundreds: 4 + 7 + 1 = 12. Write 2, carry 1.",
+      "Thousands: 7 + 9 + 1 = 17. Write 7, carry 1. Ten thousands: 5 + 2 + 1 = 8.",
+      "Sum: 87,245."
+     ],
+     "ex": {
+      "main": "**87,245.** Four carries in a row — a good stress test of the trade routine.",
+      "tip": "Heavy-carry additions are where narrating each trade earns its keep. Rushing is how carries vanish."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Adding 5,306 + 473, Marco lines the 4 of 473 under the 5 of 5,306 and gets 10,036. What went wrong?",
+     "opts": [
+      "He lined up left edges instead of place values — 473 has no thousands, so its 4 belongs under the hundreds",
+      "He forgot to regroup",
+      "His addition facts were off",
+      "Nothing — 10,036 is correct"
+     ],
+     "ans": 0,
+     "hint": "What did the 4 of 473 get added to?",
+     "steps": [
+      "Lined up by left edges, the 4 hundreds sat in the thousands column.",
+      "Marco really computed 5,306 + 4,730 — a different problem.",
+      "Stacked by place value, 5,306 + 473 = 5,779.",
+      "Right-edge alignment puts every whole-number digit in its true column automatically."
+     ],
+     "ex": {
+      "main": "**Misalignment — the true sum is 5,779.** His arithmetic was fine; his columns were lying to him.",
+      "tip": "A sum wildly bigger than both addends suggests digits sat in the wrong columns. The estimate (5,000 + 500) would have caught it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "One stadium seats 68,745 people and another seats 25,899. How many seats do they hold together?",
+     "opts": [
+      "94,644",
+      "94,544",
+      "93,644",
+      "94,654"
+     ],
+     "ans": 0,
+     "hint": "Estimate first: about 69,000 + 26,000 = 95,000.",
+     "steps": [
+      "Ones: 5 + 9 = 14. Write 4, carry 1.",
+      "Tens: 4 + 9 + 1 = 14. Write 4, carry 1. Hundreds: 7 + 8 + 1 = 16. Write 6, carry 1.",
+      "Thousands: 8 + 5 + 1 = 14. Write 4, carry 1. Ten thousands: 6 + 2 + 1 = 9.",
+      "Together: 94,644 — right beside the 95,000 estimate."
+     ],
+     "ex": {
+      "main": "**94,644.** Every column traded, and the estimate stood guard the whole way.",
+      "tip": "When every column carries, slow down on purpose. This is exactly where speed leaks digits."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 49,999 + 50,001, and what is the FASTEST honest way to see it?",
+     "opts": [
+      "100,000 — move 1 from 50,001 to 49,999 and the problem becomes 50,000 + 50,000",
+      "100,000 — but only the full algorithm can be trusted",
+      "99,999 — the numbers nearly cancel",
+      "100,001 — the extra 1 survives"
+     ],
+     "ans": 0,
+     "hint": "One addend is 1 short of round; the other is 1 over.",
+     "steps": [
+      "49,999 is 1 below 50,000; 50,001 is 1 above.",
+      "Slide that 1 across: 50,000 + 50,000.",
+      "Total: 100,000 — no columns, no carries.",
+      "Moving an amount between addends never changes a sum. That is lesson 2-1 working at scale."
+     ],
+     "ex": {
+      "main": "**100,000, by moving the 1 across.** Mental strategies do not expire when the numbers get big.",
+      "tip": "Before any big addition, spend three seconds looking for a reshape. Sometimes the algorithm never needs to show up."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "To add 9,875 + 12,125 + 30,000 quickly, which plan wins?",
+     "opts": [
+      "Pair 9,875 + 12,125 = 22,000 first, then add 30,000 — total 52,000",
+      "Strictly left to right, always",
+      "Add 30,000 to 9,875 first because it is the biggest",
+      "Round everything to the nearest ten thousand and call the result exact"
+     ],
+     "ans": 0,
+     "hint": "Two of these addends were made for each other.",
+     "steps": [
+      "Look at the tails: 875 + 125 = 1,000. These two want to be paired.",
+      "9,875 + 12,125 = 22,000, clean.",
+      "22,000 + 30,000 = 52,000, done in your head.",
+      "Any order is legal — so choose the order that makes round numbers."
+     ],
+     "ex": {
+      "main": "**Pair the friendly two first: 52,000.** Order is a free choice; spend it where it pays.",
+      "tip": "Scan the endings before adding a list. Tails that sum to 1,000 are gifts, and they are common in real data."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jon claims 24,595 + 19,255 = 63,850. His estimate was 44,000. What should he conclude?",
+     "opts": [
+      "The claim is about 20,000 past the estimate — recheck; the true sum is near 44,000",
+      "The estimate must be the wrong one",
+      "A bigger answer is safer, so keep 63,850",
+      "Estimates cannot judge five-digit sums"
+     ],
+     "ans": 0,
+     "hint": "Measure the gap between claim and estimate first.",
+     "steps": [
+      "Estimate: 44,000. Claim: 63,850. Gap: nearly 20,000.",
+      "Rounding error at the thousands place cannot produce a 20,000 gap.",
+      "So the exact work has a mistake — likely a phantom carry in the ten thousands.",
+      "Redone, the sum is 43,850, snug against the estimate."
+     ],
+     "ex": {
+      "main": "**Recheck the work — 43,850 is the real sum.** A 20,000 gap is a siren, not noise.",
+      "tip": "Trust the estimate exactly this far: it cannot find the error, but it can refuse to let a wrong answer through."
+     }
+    }
+   ]
+  }
+ }
+}

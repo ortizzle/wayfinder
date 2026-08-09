@@ -1,0 +1,328 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m27": {
+   "id": "unit-m27",
+   "type": "unit",
+   "updatedAt": 1786292498247,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · 2-7 Subtract Across Zeros",
+   "round": 10,
+   "srcName": "enVision Math G4, Topic 2 textbook (Drive)",
+   "source": "Accelerated Math, Topic 2 (Drive folder)",
+   "summary": {
+    "text": "Lesson 2-7 of enVision Math Grade 4: subtracting when the top number is full of zeros — the borrow ripple that turns middle zeros into 9s, the slide-both-down-1 shortcut, and counting up when the numbers are close.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Across-zero subtraction is where the algorithm feels hardest — and where the best move is often not the algorithm at all. Knowing three routes and choosing between them is the difference between doing math and following it.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Subtract across zeros by regrouping, with middle zeros becoming 9s",
+     "from": "source"
+    },
+    {
+     "text": "Use the slide trick: subtract 1 from both numbers to avoid borrowing",
+     "from": "source"
+    },
+    {
+     "text": "Choose counting up when the numbers are close",
+     "from": "source"
+    },
+    {
+     "text": "Explain why sliding both numbers preserves a difference",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the Topic 2 textbook scan, Lesson 2-7 — the last lesson of the topic. The slide trick (6,000 − 4,678 = 5,999 − 4,677) is the star; the WHY behind it was planted in 2-5's gap picture, so ask her to explain it rather than just use it. The error question has a fingerprint worth naming out loud: an answer too big by double one piece means that piece traveled the wrong way.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. Try the slide trick on paper once — feel the borrows vanish.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Across zeros",
+     "def": "**A zero has nothing to lend — the borrow travels left until it finds a digit that does.**\n• To take anything from 6,000, the trade starts at the 6 and ripples right.\n• After the ripple: 5 thousands, 9 hundreds, 9 tens, 10 ones. Same value, ready to subtract.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Slide both down 1",
+     "def": "**Subtracting 1 from BOTH numbers keeps the difference and deletes the zeros problem.**\n• 6,000 − 4,678 = 5,999 − 4,677 — and 5,999 never needs a single borrow.\n• The gap between the numbers did not move, because both ends slid together.",
+     "hint": "One tiny slide, zero regroups. This trick alone is worth the lesson.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Counting up beats the chain",
+     "def": "**When the numbers are close, count up and skip the borrowing entirely.**\n• 3,000 − 1,998: from 1,998, hop 2 to reach 2,000, then 1,000 more — 1,002.\n• The worst across-zero subtractions are often the easiest count-ups.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Why the slide works",
+     "def": "**A difference is a gap, and a gap does not care where it sits on the number line.**\n• Slide both numbers down 1, down 3, up 10 — the gap is identical every time.\n• This is lesson 2-5's number-line picture, turned into a technique.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school fundraiser aims to raise $6,000 and has $4,678 so far. How much is left to raise?",
+     "opts": [
+      "$1,322",
+      "$1,332",
+      "$2,322",
+      "$1,422"
+     ],
+     "ans": 0,
+     "hint": "Either regroup across the zeros, or slide both numbers down 1.",
+     "steps": [
+      "The slide: 6,000 − 4,678 has the same answer as 5,999 − 4,677.",
+      "5,999 − 4,677 needs no borrowing at all: 1,322.",
+      "The regroup route lands in the same place: 1,322."
+     ],
+     "ex": {
+      "main": "**$1,322.** The slide turned a triple-borrow monster into a no-borrow stroll.",
+      "tip": "Whenever the top number is all zeros after its first digit, think slide first, algorithm second."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 500 − 236.",
+     "opts": [
+      "264",
+      "274",
+      "336",
+      "254"
+     ],
+     "ans": 0,
+     "hint": "The zeros will pass the borrow along — or slide both down 1.",
+     "steps": [
+      "Slide: 499 − 235 has the same gap.",
+      "Ones: 9 − 5 = 4. Tens: 9 − 3 = 6. Hundreds: 4 − 2 = 2.",
+      "Difference: 264."
+     ],
+     "ex": {
+      "main": "**264.** No borrows after the slide — the zeros never got a vote.",
+      "tip": "Check: 264 + 236 = 500. Nice round checks are the fastest kind."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To subtract anything from 6,000 by regrouping, what does the top number become?",
+     "opts": [
+      "5 thousands, 9 hundreds, 9 tens, 10 ones",
+      "6 thousands, 0 hundreds, 0 tens, 10 ones",
+      "5 thousands, 10 hundreds, 10 tens, 10 ones",
+      "5 thousands, 9 hundreds, 10 tens, 0 ones"
+     ],
+     "ans": 0,
+     "hint": "Follow the borrow as it ripples right from the 6.",
+     "steps": [
+      "The ones need 10, but the tens have nothing — nor do the hundreds.",
+      "The 6 thousands lend one: 5 thousands, 10 hundreds.",
+      "A hundred lends: 9 hundreds, 10 tens. A ten lends: 9 tens, 10 ones.",
+      "Result: 5 | 9 | 9 | 10 — still exactly 6,000, dressed for subtraction."
+     ],
+     "ex": {
+      "main": "**5 thousands, 9 hundreds, 9 tens, 10 ones.** Every middle zero becomes a 9; the last place gets the 10.",
+      "tip": "The 9s are the signature of borrowing across zeros. If your regrouped middle digits are not 9s, retrace the ripple."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does 6,000 − 4,678 give the same answer as 5,999 − 4,677?",
+     "opts": [
+      "Both numbers slid down by 1, so the gap between them did not move",
+      "Because 5,999 rounds up to 6,000",
+      "It does not — the answers differ by 1",
+      "Because subtraction ignores the ones place"
+     ],
+     "ans": 0,
+     "hint": "Picture the two numbers on a number line, both stepping left once.",
+     "steps": [
+      "A difference measures the gap between two points on the number line.",
+      "Move both points down 1: each end of the gap shifts equally.",
+      "The gap itself — the answer — is untouched: 1,322 both ways.",
+      "The payoff: 5,999 has no zeros, so nothing needs to borrow."
+     ],
+     "ex": {
+      "main": "**Both slid together, so the gap held still.** The trick is the number-line picture wearing work clothes.",
+      "tip": "Slide by whatever amount kills the zeros — down 1 is almost always the right dose."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 8,000 − 3,547.",
+     "opts": [
+      "4,453",
+      "4,443",
+      "5,453",
+      "4,463"
+     ],
+     "ans": 0,
+     "hint": "Slide both down 1 and the zeros vanish.",
+     "steps": [
+      "7,999 − 3,546 has the same gap.",
+      "Ones: 9 − 6 = 3. Tens: 9 − 4 = 5. Hundreds: 9 − 5 = 4. Thousands: 7 − 3 = 4.",
+      "Difference: 4,453."
+     ],
+     "ex": {
+      "main": "**4,453.** Four clean columns instead of a borrow chain.",
+      "tip": "Check: 4,453 + 3,547 = 8,000. When the check is this tidy, enjoy it."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A warehouse holds 40,500 boxes and ships 26,384. How many remain?",
+     "opts": [
+      "14,116",
+      "14,216",
+      "13,116",
+      "14,126"
+     ],
+     "ans": 0,
+     "hint": "Only some columns touch a zero — scout first.",
+     "steps": [
+      "Ones: 0 − 4 needs a borrow, and the tens are 0 too — the ripple runs left to the 5 hundreds.",
+      "After the ripple: 4 hundreds, 9 tens, 10 ones. Ones: 10 − 4 = 6. Tens: 9 − 8 = 1. Hundreds: 4 − 3 = 1.",
+      "Thousands: 0 − 6 borrows from the 4 ten thousands: 10 − 6 = 4. Ten thousands: 3 − 2 = 1.",
+      "Remaining: 14,116. Check: 14,116 + 26,384 = 40,500."
+     ],
+     "ex": {
+      "main": "**14,116.** Two separate borrow ripples — one through the trailing zeros, one at the thousands.",
+      "tip": "Zeros in the middle of a number each get their own ripple. Scout them before starting and none of them surprises you."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 7,003 − 2,675.",
+     "opts": [
+      "4,328",
+      "4,338",
+      "4,428",
+      "5,328"
+     ],
+     "ans": 0,
+     "hint": "The two middle zeros will both turn into 9s.",
+     "steps": [
+      "Ones: 3 − 5 — the borrow ripples through the two zeros to the 7.",
+      "The top becomes 6 thousands, 9 hundreds, 9 tens, 13 ones.",
+      "Ones: 13 − 5 = 8. Tens: 9 − 7 = 2. Hundreds: 9 − 6 = 3. Thousands: 6 − 2 = 4.",
+      "Difference: 4,328."
+     ],
+     "ex": {
+      "main": "**4,328.** The middle zeros became 9s — the across-zeros signature, right on schedule.",
+      "tip": "Or slide both down 4: 6,999 − 2,671 = 4,328. Any slide that empties the zeros is legal."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "For 5,000 − 2,368, Amara answers 3,368. What did she actually compute?",
+     "opts": [
+      "5,000 − 2,000 + 368 — she subtracted the thousands but ADDED the rest back instead of subtracting it",
+      "5,000 − 2,368, correctly",
+      "5,000 rounded to 5,368",
+      "2,368 − 5,000, reversed"
+     ],
+     "ans": 0,
+     "hint": "Compare her answer to the true one and measure the miss.",
+     "steps": [
+      "The true difference: 5,000 − 2,368 = 2,632.",
+      "Amara's 3,368 is too big by 736 — which is exactly 2 × 368.",
+      "That fingerprint means the 368 went the wrong way: subtracted the 2,000, then added 368 back.",
+      "All of 2,368 must leave: the thousands AND the 368. Check: 2,632 + 2,368 = 5,000."
+     ],
+     "ex": {
+      "main": "**She added the 368 back instead of subtracting it — the truth is 2,632.** Splitting a number is fine; both pieces must still leave.",
+      "tip": "An error of exactly double one piece of the number means that piece traveled the wrong direction. Fingerprints like this make errors readable."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which strategy makes 3,000 − 1,998 the easiest, and what is the answer?",
+     "opts": [
+      "Count up: 2 to reach 2,000, then 1,000 more — 1,002",
+      "Regroup across all three zeros — 1,002",
+      "Round 1,998 to 2,000 and answer 1,000",
+      "Slide both numbers up by 2 — 998"
+     ],
+     "ans": 0,
+     "hint": "The numbers are close together. What does that suggest?",
+     "steps": [
+      "1,998 sits only 2 below 2,000, and 2,000 is 1,000 below 3,000.",
+      "Count up: 2 + 1,000 = 1,002. Two hops, no borrowing.",
+      "Regrouping also reaches 1,002, but through a triple borrow chain — legal, just slow.",
+      "Rounding to \"1,000\" throws away the 2 — an estimate posing as an answer."
+     ],
+     "ex": {
+      "main": "**Counting up: 1,002.** When numbers are close, the gap is small enough to walk.",
+      "tip": "The slide-up-by-2 option computes 3,002 − 2,000 correctly as 1,002 — but the option SAYS 998, and a right method quoted with a wrong result is still wrong."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which subtraction has EXACTLY the same answer as 70,000 − 23,456?",
+     "opts": [
+      "69,999 − 23,455",
+      "69,999 − 23,456",
+      "70,001 − 23,455",
+      "69,000 − 23,000"
+     ],
+     "ans": 0,
+     "hint": "Only a slide that moves BOTH numbers the same amount keeps the gap.",
+     "steps": [
+      "70,000 − 23,456 = 46,544 — that is the gap to preserve.",
+      "69,999 − 23,455 slides both down 1: gap intact, 46,544.",
+      "69,999 − 23,456 slides only the top: gap shrinks to 46,543.",
+      "70,001 − 23,455 slides the ends apart: gap grows to 46,546. And 69,000 − 23,000 is a rounded estimate, not an equal."
+     ],
+     "ex": {
+      "main": "**69,999 − 23,455.** Same slide on both ends, same gap — everything else moved one end and lost the equality.",
+      "tip": "The test for any rewrite: did both numbers move by the same amount in the same direction? If not, the answer moved too."
+     }
+    }
+   ]
+  }
+ }
+}

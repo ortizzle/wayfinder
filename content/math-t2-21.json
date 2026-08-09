@@ -1,0 +1,331 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m21": {
+   "id": "unit-m21",
+   "type": "unit",
+   "updatedAt": 1786292300885,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · 2-1 Mental Math: Add and Subtract",
+   "round": 10,
+   "srcName": "enVision Math G4, Topic 2 textbook (Drive)",
+   "source": "Accelerated Math, Topic 2 (Drive folder)",
+   "summary": {
+    "text": "Lesson 2-1 of enVision Math Grade 4: adding and subtracting mentally by reshaping numbers first — breaking apart by place value, compensation with a fix-up, counting up when numbers are close, and reordering addends with the Commutative and Associative Properties.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Mental math is the first thing Topic 2 builds because everything after it — estimating, checking the algorithm — leans on being able to move numbers around in your head. It is also the skill you will actually use at a store, not the algorithm.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Add and subtract mentally using break apart, compensation, and counting up",
+     "from": "source"
+    },
+    {
+     "text": "Use the Commutative and Associative Properties to reorder addends",
+     "from": "source"
+    },
+    {
+     "text": "Pick the strategy that fits the numbers, and say why",
+     "from": "added"
+    },
+    {
+     "text": "Explain which way a compensation fix-up must go",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the Topic 2 textbook scan, Lesson 2-1. The one thing to watch: the fix-up direction in compensation. Rounding a number UP before adding means SUBTRACTING the extra at the end — two questions target exactly that flip because it is the error the lesson itself warns about. Everything here is meant to be done without paper.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first, then the quiz in one sitting — and genuinely no paper. That is the point.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Mental math",
+     "def": "**Some additions and subtractions are faster in your head than on paper — if you reshape the numbers first.**\n• The three big reshaping tools: break apart, compensation, counting up.\n• The reshaping is the skill. The adding at the end should feel easy.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Break apart",
+     "def": "**Split one number by place value and add the pieces one at a time.**\n• 3,450 + 2,380: add 2,000, then 300, then 80 — landing on 5,830.\n• Each step is a one-place addition your head can hold.",
+     "hint": "Peel the second number like an onion: thousands layer, hundreds layer, tens layer.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Compensation",
+     "def": "**Trade a number for a friendlier one, then fix the answer by exactly what the trade changed.**\n• 4,999 + 2,375: use 5,000, get 7,375, take the borrowed 1 back — 7,374.\n• The fix-up UNDOES the trade. If the trade added, the fix-up subtracts.",
+     "hint": "Borrowed amounts always get returned. Compensation is honest bookkeeping.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Counting up",
+     "def": "**When the two numbers in a subtraction are close, walk from the smaller up to the larger and add your steps.**\n• 3,004 − 2,997: 3 steps to reach 3,000, then 4 more — the difference is 7.\n• No regrouping, no algorithm, just two small hops.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Reordering addends",
+     "def": "**Addends can swap order (Commutative Property) and regroup (Associative Property) — the sum never changes.**\n• 47 + 38 + 53: pair 47 + 53 = 100 first, then add 38 — 138.\n• Hunt the ones digits for pairs that make ten.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 4,999 + 2,375 in your head. What is the sum?",
+     "opts": [
+      "7,374",
+      "7,375",
+      "7,376",
+      "7,364"
+     ],
+     "ans": 0,
+     "hint": "Trade 4,999 for a friendlier number first.",
+     "steps": [
+      "Trade 4,999 for 5,000 — that slips 1 extra into the sum.",
+      "5,000 + 2,375 = 7,375.",
+      "Take the borrowed 1 back: 7,374."
+     ],
+     "ex": {
+      "main": "**7,374.** Compensation: compute with 5,000, then return the 1 you borrowed.",
+      "tip": "The fix-up always undoes exactly what the trade did — nothing more, nothing less."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To add 47 + 38 + 53 in your head, which first move makes it easiest?",
+     "opts": [
+      "Pair 47 and 53 to make 100, then add 38",
+      "Add 47 and 38 first because they come first",
+      "Round every number to the nearest ten and add the rounds",
+      "Add all the ones digits, then start over with the tens"
+     ],
+     "ans": 0,
+     "hint": "Look for two ones digits that make ten.",
+     "steps": [
+      "Scan for a friendly pair: 47 + 53 = 100.",
+      "Addends may be reordered and regrouped freely — the sum cannot change.",
+      "100 + 38 = 138, done in one breath."
+     ],
+     "ex": {
+      "main": "**Pair 47 and 53 — they make 100.** Order never matters in addition, so pick the order that helps.",
+      "tip": "The tell is in the ones digits: 7 and 3 make ten. Train your eye to spot those pairs."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Subtract 700 − 398 in your head.",
+     "opts": [
+      "302",
+      "298",
+      "312",
+      "308"
+     ],
+     "ans": 0,
+     "hint": "Trade 398 for a rounder number, then settle up.",
+     "steps": [
+      "Trade 398 for 400: 700 − 400 = 300.",
+      "Subtracting 400 took away 2 too many.",
+      "Give the 2 back: 302."
+     ],
+     "ex": {
+      "main": "**302.** Taking away 400 overshoots by 2, so the answer collects them back.",
+      "tip": "When you round the number being subtracted UP, your first answer is too SMALL. Push it back up."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Compute 6,000 − 1,998 mentally. What is the difference?",
+     "opts": [
+      "4,002",
+      "3,998",
+      "4,000",
+      "4,008"
+     ],
+     "ans": 0,
+     "hint": "Which way does the fix-up go after trading 1,998 for 2,000?",
+     "steps": [
+      "Trade 1,998 for 2,000: 6,000 − 2,000 = 4,000.",
+      "2,000 is 2 more than the problem asked you to remove.",
+      "You took 2 too many, so hand them back: 4,002."
+     ],
+     "ex": {
+      "main": "**4,002.** The trade removed 2 extra, and the fix-up returns exactly those 2.",
+      "tip": "Say the direction out loud: \"I subtracted too much, so I add back.\" That sentence prevents the classic flip."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which subtraction is the best fit for counting UP instead of the written algorithm?",
+     "opts": [
+      "3,004 − 2,997",
+      "8,000 − 3,127",
+      "9,451 − 2,003",
+      "7,265 − 4,181"
+     ],
+     "ans": 0,
+     "hint": "Counting up shines when the gap is small.",
+     "steps": [
+      "Counting up means walking from the smaller number to the larger one.",
+      "3,004 and 2,997 are only a few apart: 3 to reach 3,000, then 4 more — 7.",
+      "The other pairs are thousands apart; walking that far defeats the point."
+     ],
+     "ex": {
+      "main": "**3,004 − 2,997.** The gap is tiny, so two easy hops finish it.",
+      "tip": "Close numbers: count up. Far-apart numbers: break apart, compensate, or use the algorithm."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A library adds 3,450 books one year and 2,380 the next. Break 2,380 apart by place value to find the total mentally.",
+     "opts": [
+      "5,830",
+      "5,730",
+      "5,820",
+      "6,830"
+     ],
+     "ans": 0,
+     "hint": "Add the thousands, then the hundreds, then the tens.",
+     "steps": [
+      "Start at 3,450. Add the thousands: 3,450 + 2,000 = 5,450.",
+      "Add the hundreds: 5,450 + 300 = 5,750.",
+      "Add the tens: 5,750 + 80 = 5,830."
+     ],
+     "ex": {
+      "main": "**5,830.** Break apart turns one hard addition into three easy ones.",
+      "tip": "Each step touches one place value. If a step feels hard, you broke the number apart too coarsely."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Find 8,003 − 7,985 mentally.",
+     "opts": [
+      "18",
+      "22",
+      "15",
+      "28"
+     ],
+     "ans": 0,
+     "hint": "The numbers are close together — walk between them.",
+     "steps": [
+      "Count up from 7,985.",
+      "7,985 to 8,000 is 15.",
+      "8,000 to 8,003 is 3 more. 15 + 3 = 18."
+     ],
+     "ex": {
+      "main": "**18.** Two short hops: 15 to reach the round number, 3 to finish.",
+      "tip": "Aim your first hop at the nearest round number — it splits the walk into pieces you can hold."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "To add 1,985 + 2,595, Elena trades 1,985 for 2,000, gets 2,000 + 2,595 = 4,595, then ADDS 15 more for a final answer of 4,610. Judge her work.",
+     "opts": [
+      "Her trade was fine, but the fix-up runs the other way — the sum is 4,580",
+      "Her answer 4,610 is correct",
+      "She should have traded 2,595 for 2,600 so no fix-up is needed",
+      "Compensation cannot be used on four-digit numbers"
+     ],
+     "ans": 0,
+     "hint": "Did her trade make the running total too big or too small?",
+     "steps": [
+      "Trading 1,985 up to 2,000 slipped an extra 15 INTO the sum.",
+      "The fix-up must take that 15 back out: 4,595 − 15 = 4,580.",
+      "Elena added 15 again instead, landing 30 too high at 4,610.",
+      "The fix-up UNDOES the trade — it never repeats it."
+     ],
+     "ex": {
+      "main": "**The fix-up runs backwards — 4,580.** She padded the sum by 15 with the trade, then padded it again.",
+      "tip": "After any trade, ask one question: did that make my answer too big or too small? Then push it back."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Maya computes 5,996 + 3,477 as 6,000 + 3,477 − 4. Jae computes it as 6,000 + 3,473. Who gets the right answer?",
+     "opts": [
+      "Both — each removed exactly the 4 that the trade added",
+      "Only Maya — the fix-up must come at the end",
+      "Only Jae — the fix-up must come before adding",
+      "Neither — trading changes the sum for good"
+     ],
+     "ans": 0,
+     "hint": "Track the extra 4. Does each method get rid of it once?",
+     "steps": [
+      "Trading 5,996 for 6,000 adds a 4 that was never there.",
+      "Maya removes it after adding: 9,477 − 4 = 9,473.",
+      "Jae removes it from the other addend first: 3,477 − 4 = 3,473, then 6,000 + 3,473 = 9,473.",
+      "Same 4, removed exactly once each way — both land on 9,473."
+     ],
+     "ex": {
+      "main": "**Both — 9,473 either way.** The extra 4 has to leave once; when it leaves is a matter of taste.",
+      "tip": "Moving an amount from one addend to the other never changes a sum. That sentence IS compensation."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does the trick 700 − 398 = 700 − 400 + 2 actually work?",
+     "opts": [
+      "Subtracting 400 removes 2 more than asked, and adding 2 puts back exactly that overshoot",
+      "Because 398 rounds to 400, and rounded answers always agree",
+      "Because addition and subtraction are the same operation",
+      "It only works when the answer ends in 2"
+     ],
+     "ans": 0,
+     "hint": "Compare what was asked with what was actually removed.",
+     "steps": [
+      "The problem asks you to remove 398.",
+      "You removed 400 instead — that digs exactly 2 too deep.",
+      "Adding 2 refills exactly that hole, no more.",
+      "Every borrowed amount gets returned; the trick is bookkeeping, not magic."
+     ],
+     "ex": {
+      "main": "**The overshoot is exactly 2, and the +2 repairs exactly that.** Compensation always balances its books.",
+      "tip": "If you can say WHERE the fix-up number comes from, you own the strategy instead of memorizing it."
+     }
+    }
+   ]
+  }
+ }
+}

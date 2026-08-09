@@ -1,0 +1,326 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m23": {
+   "id": "unit-m23",
+   "type": "unit",
+   "updatedAt": 1786292300889,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 2 · 2-3 Add Whole Numbers",
+   "round": 10,
+   "srcName": "enVision Math G4, Topic 2 textbook (Drive)",
+   "source": "Accelerated Math, Topic 2 (Drive folder)",
+   "summary": {
+    "text": "Lesson 2-3 of enVision Math Grade 4: adding whole numbers with partial sums and with the standard algorithm, understanding what a carried digit really is, and estimating before computing.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is where the algorithm stops being a ritual. Partial sums shows every trade in the open; once those trades make sense, the standard algorithm is just the fast version of something you already understand.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Add multi-digit numbers with the standard algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Add with partial sums and connect them to the algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Explain what a carried digit is worth and where it came from",
+     "from": "source"
+    },
+    {
+     "text": "Recognize the fingerprint of a dropped carry",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the Topic 2 textbook scan, Lesson 2-3. The diagnostic to watch: answers that come out short by exactly 10, 100, or 110 mean carries are being dropped — one question trains her to spot that fingerprint. If the algorithm wobbles, have her do the same problem in partial sums; the two agreeing is the confidence builder.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. Narrate every carry: ten of these made one of those.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Partial sums",
+     "def": "**Add each place separately, then combine the pieces.**\n• 358 + 277: hundreds give 500, tens give 120, ones give 15.\n• 500 + 120 + 15 = 635. Every piece is visible — nothing is carried in secret.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The standard algorithm",
+     "def": "**Work right to left; whenever a column passes 9, trade 10 of that place for 1 of the next.**\n• It is partial sums compressed — faster, but the trades happen in small print.\n• Speed comes AFTER the trades make sense, not instead of it.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "What the carried 1 means",
+     "def": "**The small 1 written above a column is a real trade: 10 ones became 1 ten.**\n• In 358 + 277, the ones make 15 — write 5, and the 1 above the tens IS the other ten.\n• Nothing was moved for luck. It is place value doing its job.",
+     "hint": "Read the carry as a sentence: \"ten of these made one of those.\"",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Estimate first",
+     "def": "**Write an estimate before the exact work, and compare after.**\n• 358 + 277: estimate 400 + 300 = 700, exact 635 — close, so trust it.\n• The estimate is lesson 2-2 working as a seatbelt.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 358 + 277.",
+     "opts": [
+      "635",
+      "625",
+      "535",
+      "645"
+     ],
+     "ans": 0,
+     "hint": "The ones make more than 9 — a trade is coming.",
+     "steps": [
+      "Ones: 8 + 7 = 15. Write 5, trade 10 ones for 1 ten.",
+      "Tens: 5 + 7 + 1 = 13 tens. Write 3, trade 10 tens for 1 hundred.",
+      "Hundreds: 3 + 2 + 1 = 6. Answer: 635."
+     ],
+     "ex": {
+      "main": "**635.** Two trades: 15 ones became a ten, 13 tens became a hundred.",
+      "tip": "Each carry is a trade of ten-for-one. If you can narrate the trades, the algorithm is yours."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Adding 446 + 293 by partial sums, which three partial sums appear?",
+     "opts": [
+      "600, 130, and 9",
+      "600, 120, and 9",
+      "700, 130, and 9",
+      "600, 130, and 19"
+     ],
+     "ans": 0,
+     "hint": "Add the hundreds alone, the tens alone, the ones alone.",
+     "steps": [
+      "Hundreds: 400 + 200 = 600.",
+      "Tens: 40 + 90 = 130.",
+      "Ones: 6 + 3 = 9. Then 600 + 130 + 9 = 739."
+     ],
+     "ex": {
+      "main": "**600, 130, and 9 — total 739.** Each partial sum is one place value added on its own.",
+      "tip": "Partial sums let you add in any order and see every piece. Use them whenever the algorithm feels like a black box."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Add 507 + 385.",
+     "opts": [
+      "892",
+      "882",
+      "792",
+      "891"
+     ],
+     "ans": 0,
+     "hint": "Watch the ones column first.",
+     "steps": [
+      "Ones: 7 + 5 = 12. Write 2, trade for 1 ten.",
+      "Tens: 0 + 8 + 1 = 9. No trade.",
+      "Hundreds: 5 + 3 = 8. Answer: 892."
+     ],
+     "ex": {
+      "main": "**892.** One trade in the ones; the zero in the tens just takes what it is given.",
+      "tip": "A zero in an addend is not a problem — it adds nothing, and the carry still lands on it normally."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the standard algorithm for 358 + 277, a small 1 is written above the tens column. What is that 1 really worth?",
+     "opts": [
+      "One ten — the 15 ones were traded for 5 ones and 1 ten",
+      "One — it is just a reminder mark",
+      "One hundred",
+      "Nothing; careful adders can skip it"
+     ],
+     "ans": 0,
+     "hint": "Where did it come from? The ones column made 15.",
+     "steps": [
+      "The ones column made 15 — more than one place can hold.",
+      "Ten of those ones were bundled into 1 ten.",
+      "That bundle is the small 1: a genuine ten now living in the tens column."
+     ],
+     "ex": {
+      "main": "**One ten.** The carry is a real quantity in transit between columns, not a decoration.",
+      "tip": "Every carry has a value you can name. Name it and the algorithm stops being mysterious."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school collects 268 cans in week one and 575 in week two. Which pair — estimate, then exact — is right?",
+     "opts": [
+      "About 900; exactly 843",
+      "About 900; exactly 743",
+      "About 700; exactly 733",
+      "About 1,000; exactly 943"
+     ],
+     "ans": 0,
+     "hint": "Round to the nearest hundred for the estimate, then add exactly.",
+     "steps": [
+      "Estimate: 268 → 300 and 575 → 600, so about 900.",
+      "Exact — ones: 8 + 5 = 13, write 3 carry 1. Tens: 6 + 7 + 1 = 14, write 4 carry 1.",
+      "Hundreds: 2 + 5 + 1 = 8. Exactly 843.",
+      "843 sits near 900 — the estimate approves."
+     ],
+     "ex": {
+      "main": "**About 900, exactly 843.** Estimate first, compute second, compare third.",
+      "tip": "That three-beat rhythm — estimate, compute, compare — is the whole discipline of this topic."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Adding 356 + 488, Priya gets 734. What happened?",
+     "opts": [
+      "She dropped both carries — the ten from 6 + 8 = 14 and the hundred from the tens column never got added",
+      "She added an extra ten",
+      "She lined the numbers up wrong",
+      "Nothing — 734 is correct"
+     ],
+     "ans": 0,
+     "hint": "Run the ones column and see what should have happened to the 14.",
+     "steps": [
+      "Ones: 6 + 8 = 14. Write 4 — and the 1 ten must move left. Dropping it loses 10.",
+      "Tens: 5 + 8 (+1) = 14 tens. Dropping that trade loses 100 more.",
+      "Priya's 734 is exactly 110 short: the correct sum is 844.",
+      "Both trades vanished — the digits she wrote were right, the carries were not."
+     ],
+     "ex": {
+      "main": "**She dropped the carries — the true sum is 844.** Losing carries always leaves an answer short by round amounts.",
+      "tip": "An answer short by exactly 10, 100, or 110 is the fingerprint of dropped carries. Learn to read it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three classes recycle 189, 204, and 367 bottles. How many altogether?",
+     "opts": [
+      "760",
+      "750",
+      "770",
+      "660"
+     ],
+     "ans": 0,
+     "hint": "Add two of them, then add the third.",
+     "steps": [
+      "189 + 204 = 393.",
+      "393 + 367: ones 3 + 7 = 10, write 0 carry 1.",
+      "Tens: 9 + 6 + 1 = 16, write 6 carry 1. Hundreds: 3 + 3 + 1 = 7.",
+      "Altogether: 760."
+     ],
+     "ex": {
+      "main": "**760.** Three addends is just two additions in a row.",
+      "tip": "You may also pair the friendliest two first — 393 + 367 or 189 + 367 — the total cannot change."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Partial sums and the standard algorithm give the same answer for every addition. Why?",
+     "opts": [
+      "Both add the same place values — they only record the work in a different order",
+      "They only match when no regrouping happens",
+      "The algorithm rounds and partial sums do not",
+      "It is a coincidence that has held so far"
+     ],
+     "ans": 0,
+     "hint": "What is each method actually adding?",
+     "steps": [
+      "Partial sums adds hundreds, tens, and ones separately, out in the open.",
+      "The algorithm adds the same hundreds, tens, and ones — the carries just move the pieces mid-stream.",
+      "Same pieces, same total; only the bookkeeping differs."
+     ],
+     "ex": {
+      "main": "**Same place values, different bookkeeping.** A method is just a way of organizing work the numbers already agree on.",
+      "tip": "When two methods disagree, one of them made a bookkeeping error — the numbers themselves never disagree."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 4▢7 + 258 = 715, what digit is hiding under ▢?",
+     "opts": [
+      "5",
+      "4",
+      "6",
+      "3"
+     ],
+     "ans": 0,
+     "hint": "Work the ones column first and track what it sends left.",
+     "steps": [
+      "Ones: 7 + 8 = 15 — write 5, carry 1 ten. The 715 checks out so far.",
+      "Tens: ▢ + 5 + 1 must end in 1. So ▢ + 6 = 11, meaning ▢ = 5, carrying 1 hundred.",
+      "Hundreds: 4 + 2 + 1 = 7 — matches 715.",
+      "So the hidden digit is 5: 457 + 258 = 715."
+     ],
+     "ex": {
+      "main": "**5.** Solving backwards means running the algorithm forwards and asking what each column needed.",
+      "tip": "Missing-digit puzzles are the algorithm in reverse — they test whether you know WHY each column says what it says."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two addends each grow by exactly 100. What happens to their sum?",
+     "opts": [
+      "It grows by 200 — each extra 100 lands in the total",
+      "It grows by 100",
+      "It stays the same",
+      "It doubles"
+     ],
+     "ans": 0,
+     "hint": "Try it on a small example and watch the total.",
+     "steps": [
+      "Take 300 + 450 = 750.",
+      "Grow both: 400 + 550 = 950.",
+      "The sum climbed by 200 — one hundred from each addend.",
+      "Everything added to an addend flows straight into the sum."
+     ],
+     "ex": {
+      "main": "**Grows by 200.** A sum collects every change made to its addends.",
+      "tip": "Compare with subtraction, where growing BOTH numbers changes nothing. The two operations treat change very differently."
+     }
+    }
+   ]
+  }
+ }
+}

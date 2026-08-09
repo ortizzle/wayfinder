@@ -1,0 +1,333 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m12": {
+   "id": "unit-m12",
+   "type": "unit",
+   "updatedAt": 1786291368184,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 1 · 1-2 Place Value Relationships",
+   "round": 10,
+   "srcName": "enVision Math G4, HW 1-2 (Drive)",
+   "source": "Accelerated Math, Topic 1 (Drive folder)",
+   "summary": {
+    "text": "Lesson 1-2 of enVision Math Grade 4: how neighbouring places relate. A digit one place to the left is worth ten times as much; one place to the right is worth one-tenth as much. Covers digit values, comparing the same digit in different places, and times-ten and divide-by-ten problems.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Every lesson after this one leans on the ten-times staircase — comparing, rounding, and eventually multiplying and dividing by tens all come back to this single picture. Get the staircase and the rest of the topic is walking it.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "State how a digit's value changes one place left or right",
+     "from": "source"
+    },
+    {
+     "text": "Find the value of any digit in a number up to one million",
+     "from": "source"
+    },
+    {
+     "text": "Compare the values of the same digit in two different places",
+     "from": "source"
+    },
+    {
+     "text": "Solve times-ten and divide-by-ten problems with the place-value slide",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the HW 1-2 sheet in her Drive folder. Every question is fresh — the sheet stays her homework. The one confusion this lesson exists to remove: two identical digits do NOT have the same value unless they share a place (the sheet's own 5,555 question is about exactly this, and two questions here work it). One-sitting quiz of 10 per the new lesson-a-day format.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz in one sitting. If the two-7s question is easy, this lesson is in.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Ten times as much",
+     "def": "**A digit one place to the LEFT is worth ten times as much.**\n• 10 is ten times 1, 100 is ten times 10, 1,000 is ten times 100.\n• That is the whole design of our number system: each place is a ten-times step.",
+     "eq": "100 × 10 = 1,000",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "One-tenth as much",
+     "def": "**A digit one place to the RIGHT is worth one-tenth as much.**\n• 100 is one-tenth of 1,000.\n• Same staircase as ten-times, walked the other direction.",
+     "eq": "1,000 ÷ 10 = 100",
+     "hint": "Left is times ten. Right is divide by ten. One staircase, two directions.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Value of a digit",
+     "def": "**A digit's value is the digit times its place.**\n• In 23,406 the 3 is in the thousands place, so its value is 3,000.\n• The 4 is in the hundreds place, so its value is 400.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Same digit, different places",
+     "def": "**The same digit two places apart differs in value by 100 times, not 10.**\n• In 44,492 the first 4 is worth 40,000 and the second is worth 4,000 — ten times apart.\n• The third 4 is worth 400 — a hundred times less than the first.",
+     "hint": "Count the places between the digits. Each place is one more factor of ten.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The digits are not the values",
+     "def": "**Two 5s in one number never have the same value unless they share a place.**\n• In 5,555 the digits are identical but the values are 5,000, 500, 50 and 5.\n• Saying the digits are equal is true; saying the values are equal is the classic mistake.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 68,517, what is the value of the 8?",
+     "opts": [
+      "8,000",
+      "800",
+      "80,000",
+      "8"
+     ],
+     "ans": 0,
+     "hint": "Name the place first, then multiply.",
+     "steps": [
+      "Read the places from the right: 7 ones, 1 ten, 5 hundreds, 8 thousands, 6 ten thousands.",
+      "The 8 sits in the thousands place.",
+      "So its value is 8 × 1,000 = 8,000."
+     ],
+     "ex": {
+      "main": "**8,000.** The digit only tells you WHICH number of that place you have — the place supplies the size.",
+      "tip": "Say the number aloud: sixty-eight thousand… you can hear the 8 living in the thousands."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "1,000 is how many times as much as 100?",
+     "opts": [
+      "10 times",
+      "100 times",
+      "2 times",
+      "1,000 times"
+     ],
+     "ans": 0,
+     "hint": "How many hundreds fit inside a thousand?",
+     "steps": [
+      "Count up: 100, 200, 300 … 1,000 takes ten steps.",
+      "So ten hundreds make one thousand.",
+      "1,000 is 10 times as much as 100."
+     ],
+     "ex": {
+      "main": "**10 times.** Every neighbouring pair of places has this exact relationship.",
+      "tip": "This never changes as numbers grow: a million is ten times a hundred thousand, too."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number is one-tenth of 40,000?",
+     "opts": [
+      "4,000",
+      "400",
+      "4",
+      "400,000"
+     ],
+     "ans": 0,
+     "hint": "One-tenth means one place to the right.",
+     "steps": [
+      "One-tenth of a number is that number divided by 10.",
+      "40,000 ÷ 10 = 4,000.",
+      "Check backwards: 4,000 × 10 = 40,000. It fits."
+     ],
+     "ex": {
+      "main": "**4,000.** The 4 slides one place to the right and its value drops by a factor of ten.",
+      "tip": "The backwards check (multiply by 10) catches almost every slip on these."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A charity collects 6,000 cans and shares them equally among 10 food banks. How many cans does each food bank get?",
+     "opts": [
+      "600",
+      "60",
+      "6,000",
+      "5,990"
+     ],
+     "ans": 0,
+     "hint": "Sharing equally among 10 is dividing by 10.",
+     "steps": [
+      "Equal shares among 10 means 6,000 ÷ 10.",
+      "Dividing by ten moves the value one place to the right: 6,000 becomes 600.",
+      "Check: 600 × 10 = 6,000. Every can is accounted for."
+     ],
+     "ex": {
+      "main": "**600.** Dividing by ten is a place-value slide, not a long-division job.",
+      "tip": "Whenever the divider is exactly 10, look for the slide instead of computing."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school library has 90 atlases and ten times as many novels. How many novels does it have?",
+     "opts": [
+      "900",
+      "9,000",
+      "100",
+      "190"
+     ],
+     "ans": 0,
+     "hint": "Ten times as many means multiply by ten.",
+     "steps": [
+      "Ten times as many novels as 90 atlases is 90 × 10.",
+      "Multiplying by ten slides the value one place left: 90 becomes 900.",
+      "So the library has 900 novels."
+     ],
+     "ex": {
+      "main": "**900.** \"Ten times as many\" is the phrase this whole lesson lives inside.",
+      "tip": "Adding ten (100) and ten TIMES (900) are very different — the word \"times\" is the signal."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 77,215, how does the value of the first 7 compare to the value of the second 7?",
+     "opts": [
+      "It is ten times as great",
+      "It is one hundred times as great",
+      "They are equal",
+      "It is one-tenth as great"
+     ],
+     "ans": 0,
+     "hint": "The two 7s sit in neighbouring places.",
+     "steps": [
+      "The first 7 is in the ten thousands place: value 70,000.",
+      "The second 7 is in the thousands place: value 7,000.",
+      "70,000 is ten times 7,000, so the first is ten times as great."
+     ],
+     "ex": {
+      "main": "**Ten times as great.** Neighbouring places always differ by a factor of exactly ten.",
+      "tip": "Write the two values out before comparing. The places do the work for you."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Write a number where the 6 is worth ten times as much as the 6 in 236,894. Which works?",
+     "opts": [
+      "261,000",
+      "236,900",
+      "2,600",
+      "620"
+     ],
+     "ans": 0,
+     "hint": "Find the value of the 6 first, then find a number where a 6 is worth ten times that.",
+     "steps": [
+      "In 236,894 the 6 sits in the thousands place, so it is worth 6,000.",
+      "Ten times 6,000 is 60,000 — you need a 6 in the ten thousands place.",
+      "In 261,000 the 6 is in the ten thousands place: worth 60,000. That works.",
+      "In the others, the 6 is worth 6,000, 600 or 20 — none is 60,000."
+     ],
+     "ex": {
+      "main": "**261,000.** The question is really \"put a 6 in the ten thousands place\", once you translate it.",
+      "tip": "Translate value questions into place questions. Places are easier to see than values."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student says that in 3,533, the two 3s have the same value because they are the same digit. What is the best correction?",
+     "opts": [
+      "The digits match but the places differ — one 3 is worth 3,000 and the other is worth 3",
+      "The student is right, digits always keep their value",
+      "The 3s are worth 300 each",
+      "Only the 5 has a value in this number"
+     ],
+     "ans": 0,
+     "hint": "Digit and value are different things. Where does each 3 sit?",
+     "steps": [
+      "The first 3 is in the thousands place: value 3,000.",
+      "The last 3 is in the ones place: value 3.",
+      "Same digit, different places — the values differ by a factor of 1,000.",
+      "A digit has no size of its own until a place gives it one."
+     ],
+     "ex": {
+      "main": "**Same digit, different places, different values.** This is the exact confusion the lesson is built to remove.",
+      "tip": "When you hear \"same digit\", immediately ask \"same place?\" If not, the values differ."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 55,055, the two 5s at the front are next to each other, and so are the two 5s at the back. Is the relationship between each pair the same?",
+     "opts": [
+      "Yes — in each pair, the left 5 is worth ten times the right 5",
+      "No — the front pair differs by ten times, the back pair by one hundred",
+      "No — only the front pair are related",
+      "Yes — all four 5s have equal value"
+     ],
+     "ans": 0,
+     "hint": "Work out all four values, then compare within each pair.",
+     "steps": [
+      "Front pair: 50,000 and 5,000 — the left is ten times the right.",
+      "Back pair: 50 and 5 — the left is ten times the right.",
+      "Both pairs are neighbours, so both step by a factor of ten.",
+      "The SIZES differ between pairs, but the relationship inside each pair is identical."
+     ],
+     "ex": {
+      "main": "**Yes — each left neighbour is worth ten times its right neighbour.** The ten-times rule holds anywhere in the number, big places or small.",
+      "tip": "This is the deep fact of the lesson: the rule does not care where in the number you stand."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A game doubles your points every level, starting at 2,000. A different game multiplies points by ten each level, starting at 2,000. After one level, how do the two scores compare?",
+     "opts": [
+      "4,000 versus 20,000 — the ten-times game gives five times as much",
+      "Both give 20,000",
+      "4,000 versus 40,000",
+      "Both give 4,000"
+     ],
+     "ans": 0,
+     "hint": "Work each game out separately, then compare.",
+     "steps": [
+      "Doubling 2,000 gives 4,000.",
+      "Ten times 2,000 gives 20,000 — the value slides one whole place left.",
+      "Compare: 20,000 ÷ 4,000 = 5, so the ten-times game gives five times as much after one level."
+     ],
+     "ex": {
+      "main": "**4,000 versus 20,000.** Times ten is a place-value jump; doubling is not — keeping those separate is real number sense.",
+      "tip": "A place-value slide beats a double every time. That gap only grows with more levels."
+     }
+    }
+   ]
+  }
+ }
+}
