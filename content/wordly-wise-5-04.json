@@ -1,0 +1,664 @@
+{
+ "v": 4,
+ "records": {
+  "unit-ww504": {
+   "id": "unit-ww504",
+   "type": "unit",
+   "updatedAt": 1786230917615,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Wordly Wise · Lesson 4",
+   "srcName": "Wordly Wise 3000 Book 5, Lesson 4",
+   "source": "Wordly Wise 3000 Book 5, Lesson 4 (PDF in Drive)",
+   "summary": {
+    "text": "Word List 4 from Wordly Wise 3000 Book 5: accurate, approximate, course, depart, despair, destination, deteriorate, gale, horizon, jubilation, navigate, nostalgia, revive, sever and voyage — plus the related forms the list gives (accuracy, departure, horizontal, jubilant, navigation, nostalgic). Most of these words belong to journeys and to the sea.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This list holds together better than most, because nearly all of it is about travelling: where you are going, how you get there, the weather on the way, and how you feel about it. Learning them as a group is easier than learning fifteen separate words, and you will meet almost all of them in adventure stories.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Give the meaning of each of the fifteen words on Word List 4",
+     "from": "source"
+    },
+    {
+     "text": "Use the related forms correctly — accuracy, departure, horizontal, jubilant, nostalgic",
+     "from": "source"
+    },
+    {
+     "text": "Choose between accurate and approximate, which are close in topic and opposite in meaning",
+     "from": "added"
+    },
+    {
+     "text": "Say each word aloud correctly, using the pronunciation guide on every card",
+     "from": "source"
+    },
+    {
+     "text": "Spell the words whose sound and spelling do not match, like nostalgia",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Word List 4 from the Lesson 4 PDF in her Drive folder. Every card carries the book's own pronunciation guide, respelled into plain letters, and the speaker button reads it aloud — this is the first Wordly Wise unit to use that, and this list earns it (nostalgia, jubilation and deteriorate are all words she is more likely to read than hear). The list is unusually coherent: most of it is journey vocabulary, so I grouped the questions that way. Two pairs are worth checking she has straight — accurate versus approximate, and route versus destination. Two spelling questions cover the words where sound and spelling part company. Every question is standalone, with fresh sentences rather than the book's own exercises.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Do the cards out loud with the speaker button. Half of these are words you have read but never said.",
+    "minutes": 20,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "accurate",
+     "def": "**Correct, with no mistakes.** (adjective)\n• Second meaning: able to give a correct reading or measurement — an accurate clock.\n• accuracy (noun): correctness, exactness.",
+     "sp": "AK-yuh-rut",
+     "hint": "Hidden inside it is \"cure\" — an accurate answer has had its errors cured.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "approximate",
+     "def": "**Not exact, but close enough to be about right.** (adjective)\n• The approximate weight of the puppy was ten pounds — near enough, not measured.\n• It is the opposite of accurate, and the two are often used in the same breath.",
+     "sp": "uh-PRAHK-suh-mut",
+     "hint": "It contains \"proxim-\", the same root as proximity, meaning nearness.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "course",
+     "def": "**The path something moves along.** (noun)\n• Second meaning: a way of acting — our best course is to wait in the car.\n• Third meaning: a subject you study — the science course includes field trips.",
+     "sp": "korss",
+     "hint": "Three meanings, one idea: a course is the line you follow, whether through water, a decision, or a school year.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "depart",
+     "def": "**To leave; to go away from a place.** (verb)\n• The bus for Detroit departs at ten o'clock.\n• departure (noun): the act of leaving.",
+     "sp": "dih-PART",
+     "hint": "The departures board at an airport lists everything going away.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "despair",
+     "def": "**To lose hope.** (verb)\n• As a noun it means a total lack of hope — the look of despair on their faces.\n• Notice it is the exact opposite of optimism.",
+     "sp": "dih-SPAIR",
+     "hint": "\"De-\" often means away or down. Despair is hope going away.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "destination",
+     "def": "**The place someone or something is going.** (noun)\n• Tell the clerk your destination when you buy your ticket.\n• The destination is the end of a journey; the route is how you get there.",
+     "sp": "dess-tuh-NAY-shun",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "deteriorate",
+     "def": "**To make or become worse.** (verb)\n• The sidewalks deteriorated because the city did not take care of them.\n• It usually happens slowly, over time, rather than all at once.",
+     "sp": "dih-TEER-ee-uh-rayt",
+     "hint": "Things left alone tend to deteriorate. Nothing has to happen for it to happen.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "gale",
+     "def": "**A very strong wind.** (noun)\n• Last night's gale tore several tiles off the roof.\n• Second meaning: a loud outburst — gales of laughter coming from the party.",
+     "sp": "gayl",
+     "hint": "A gale of wind and a gale of laughter are both something bursting out loudly.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "horizon",
+     "def": "**The line in the distance where the sky seems to meet the sea or land.** (noun)\n• We watched the setting sun sink slowly over the horizon.\n• horizontal (adjective): going straight across from side to side.",
+     "sp": "huh-RY-zun",
+     "hint": "The horizon runs side to side, which is exactly what horizontal means.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "jubilation",
+     "def": "**A feeling or show of great joy.** (noun)\n• There was jubilation among the fans when the team won the championship.\n• jubilant (adjective): very happy.",
+     "sp": "joo-buh-LAY-shun",
+     "hint": "Bigger than pleased. Jubilation is the kind of joy that makes noise.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "navigate",
+     "def": "**To work out and steer the course of a ship or aircraft.** (verb)\n• Sailors navigate their ships into port when they need supplies.\n• navigation (noun): the science or practice of navigating.",
+     "sp": "NAV-uh-gayt",
+     "hint": "\"Nav-\" comes from the Latin for ship. A navy sails; a navigator steers.",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "nostalgia",
+     "def": "**A longing for a certain time in the past.** (noun)\n• Seeing photographs of my first dog filled me with nostalgia.\n• nostalgic (adjective): having that feeling.\n• It is a mixed feeling — fond and a little sad at once.",
+     "sp": "nahs-TAL-juh",
+     "hint": "Not quite sadness and not quite happiness. It is missing something you enjoyed.",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "revive",
+     "def": "**To make or become strong again.** (verb)\n• A short rest will revive you.\n• Second meaning: to bring back into use or fashion — the show revives old songs.",
+     "sp": "rih-VYVE",
+     "hint": "\"Re-\" means again and \"-vive\" means live. To revive is to bring back to life.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "sever",
+     "def": "**To cut in two, or to break off completely.** (verb)\n• Irving accidentally severed the garden hose while mowing the lawn.\n• Also used for relationships: the two families severed all ties.",
+     "sp": "SEV-ur",
+     "hint": "It looks like \"seven\" with the n knocked off — which is roughly what severing does.",
+     "from": "source"
+    },
+    {
+     "id": "c14",
+     "term": "voyage",
+     "def": "**A long journey by sea or in space.** (noun)\n• The voyage across the Pacific will take three weeks.\n• As a verb: the Vikings voyaged across the Atlantic long before Columbus.\n• A voyage is long. A quick trip across a lake is not one.",
+     "sp": "VOY-ij",
+     "hint": "Sea or space only. You do not voyage to the shops.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does accurate mean?",
+     "opts": [
+      "Correct, with no mistakes",
+      "Close enough, but not exact",
+      "Very fast",
+      "Difficult to understand"
+     ],
+     "ans": 0,
+     "hint": "One of the first two options is accurate and the other is approximate.",
+     "steps": [
+      "Accurate describes something that is right.",
+      "It means correct, with no errors in it.",
+      "The option about being close but not exact describes approximate instead — the opposite idea."
+     ],
+     "ex": {
+      "main": "**Correct, with no mistakes.** An accurate clock keeps exactly the right time.",
+      "tip": "Accurate and approximate are a pair this lesson wants you to keep apart."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is a gale?",
+     "opts": [
+      "A very strong wind",
+      "A light rain",
+      "A long sea journey",
+      "A deep crack in rock"
+     ],
+     "ans": 0,
+     "hint": "Strong enough to tear tiles off a roof.",
+     "steps": [
+      "A gale is weather, and it is wind rather than rain.",
+      "It is not a gentle breeze — a gale can pull tiles off a roof.",
+      "So a gale is a very strong wind."
+     ],
+     "ex": {
+      "main": "**A very strong wind.** It also means a loud outburst, as in gales of laughter.",
+      "tip": "Both meanings involve something bursting out with force. That is the link."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does depart mean?",
+     "opts": [
+      "To leave a place",
+      "To arrive somewhere",
+      "To repair something",
+      "To choose a route"
+     ],
+     "ans": 0,
+     "hint": "Think about an airport sign that says Departures.",
+     "steps": [
+      "At an airport, the Departures board lists flights that are going away.",
+      "The opposite board is Arrivals.",
+      "So depart means to leave, to go away from a place."
+     ],
+     "ex": {
+      "main": "**To leave a place.** The noun is departure — the act of leaving.",
+      "tip": "Depart and destination both belong to travel, but one is the leaving and the other is the arriving place."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does it mean to revive something?",
+     "opts": [
+      "To make or become strong again",
+      "To cut it in two",
+      "To make it worse over time",
+      "To leave it behind"
+     ],
+     "ans": 0,
+     "hint": "Break the word up: \"re-\" plus \"-vive\".",
+     "steps": [
+      "\"Re-\" at the start of a word usually means again.",
+      "\"-vive\" comes from the Latin for live, the same root as survive.",
+      "Put them together and revive means to bring back to life, or to make strong again."
+     ],
+     "ex": {
+      "main": "**To make or become strong again.** A short rest revives you; a new show can revive an old song.",
+      "tip": "Words that start with re- are worth pulling apart. The \"again\" meaning holds surprisingly often."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is a voyage?",
+     "opts": [
+      "A long journey by sea or in space",
+      "A short walk",
+      "A strong wind",
+      "A feeling of great joy"
+     ],
+     "ans": 0,
+     "hint": "Two settings only, and both are large.",
+     "steps": [
+      "A voyage is a journey, so the walk and the wind are out.",
+      "It is specifically a long journey.",
+      "And it happens by sea or in space — not by road."
+     ],
+     "ex": {
+      "main": "**A long journey by sea or in space.** Long is part of the meaning; a quick trip across a pond is not a voyage.",
+      "tip": "You could voyage to Mars or across the Pacific. You could not voyage to the corner shop."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which word means a longing for a certain time in the past?",
+     "opts": [
+      "nostalgia",
+      "despair",
+      "jubilation",
+      "destination"
+     ],
+     "ans": 0,
+     "hint": "It is the feeling old photographs give you.",
+     "steps": [
+      "Despair is a total lack of hope, which is about now, not the past.",
+      "Jubilation is great joy.",
+      "A destination is a place, not a feeling.",
+      "Nostalgia is the one that means missing a time gone by."
+     ],
+     "ex": {
+      "main": "**Nostalgia.** It is a mixed feeling — warm and slightly sad at the same time.",
+      "tip": "The adjective is nostalgic: hearing an old song can make you nostalgic."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word that means a very strong wind.",
+     "opts": [
+      "gale"
+     ],
+     "ans": 0,
+     "hint": "Four letters, and it rhymes with sail.",
+     "steps": [
+      "The word is said \"gayl\".",
+      "It is spelled with a silent e at the end, which is what makes the a say its own name.",
+      "That gives g-a-l-e: gale."
+     ],
+     "ex": {
+      "main": "**gale.** The silent e is what turns \"gal\" into \"gayl\".",
+      "tip": "Sail, tail, gale — the same long a sound reached three different ways in English."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A weather forecast says \"the approximate rainfall will be two inches.\" What is the forecaster telling you?",
+     "opts": [
+      "Around two inches, but not measured exactly",
+      "Exactly two inches, measured precisely",
+      "At least two inches, possibly far more",
+      "Less than two inches for certain"
+     ],
+     "ans": 0,
+     "hint": "Approximate is the opposite of accurate. What does that rule out?",
+     "steps": [
+      "Approximate means close enough to be about right, not exact.",
+      "So the forecaster is not promising a precise figure.",
+      "They are also not promising a minimum or a maximum — just a number in the region of two inches."
+     ],
+     "ex": {
+      "main": "**Around two inches, but not measured exactly.** If they could measure it precisely they would have said accurate instead.",
+      "tip": "Weather forecasts are almost always approximate. That is not a flaw; it is honest about what can be known."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bridge is inspected each year and the reports show its condition getting steadily worse. Which word fits?",
+     "opts": [
+      "deteriorating",
+      "reviving",
+      "departing",
+      "navigating"
+     ],
+     "ans": 0,
+     "hint": "Which of these words means becoming worse over time?",
+     "steps": [
+      "Reviving would mean getting stronger, which is the opposite of what is described.",
+      "Departing means leaving, and navigating means steering a course — neither fits a bridge.",
+      "Deteriorate means to become worse, usually slowly.",
+      "So the bridge is deteriorating."
+     ],
+     "ex": {
+      "main": "**Deteriorating.** The slow, over-time quality is part of the word — it is not a sudden collapse.",
+      "tip": "Deteriorate and revive are opposites. One gets worse, the other gets better again."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A ship's captain plots a path around a storm. Which word describes what the captain is doing?",
+     "opts": [
+      "navigating",
+      "departing",
+      "severing",
+      "despairing"
+     ],
+     "ans": 0,
+     "hint": "This word comes from the Latin for ship.",
+     "steps": [
+      "Departing would only cover leaving port, not choosing a path.",
+      "Severing means cutting, and despairing means losing hope.",
+      "Navigating means working out and steering the course of a ship.",
+      "Plotting a path around a storm is exactly that."
+     ],
+     "ex": {
+      "main": "**Navigating.** The word is built on the Latin for ship, which is also where navy comes from.",
+      "tip": "You can navigate a plane, a spacecraft, or even a difficult conversation. The idea of steering carries over."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which sentence uses \"sever\" correctly?",
+     "opts": [
+      "The falling branch severed the power line",
+      "She severed the room with fresh paint",
+      "They severed toward the summit all morning",
+      "The crowd severed with joy"
+     ],
+     "ans": 0,
+     "hint": "Sever means to cut in two or break off completely. Try each sentence against that.",
+     "steps": [
+      "Painting a room does not cut it in two, so that one is wrong.",
+      "Moving toward a summit is climbing, not cutting.",
+      "A crowd full of joy would be jubilant, not severed.",
+      "A falling branch cutting a power line is exactly severing — cutting something in two."
+     ],
+     "ex": {
+      "main": "**The falling branch severed the power line.** Sever is a cutting word, whether the thing cut is a cable or a friendship.",
+      "tip": "When a word has a physical meaning and a feelings meaning, check the physical one first. It is usually clearer."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "After a long hike, a cold drink and twenty minutes in the shade make you feel strong again. Which word describes the drink and the rest?",
+     "opts": [
+      "They revived you",
+      "They severed you",
+      "They deteriorated you",
+      "They departed you"
+     ],
+     "ans": 0,
+     "hint": "Which word means to make strong again?",
+     "steps": [
+      "Sever means cut, deteriorate means become worse, and depart means leave — none of those fit.",
+      "Revive means to make or become strong again.",
+      "The drink and the rest brought your strength back, so they revived you."
+     ],
+     "ex": {
+      "main": "**They revived you.** The book's own example is exactly this: a short rest will revive you.",
+      "tip": "A \"reviving\" cup of tea is a very common way to use this word."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A train leaves Chicago at nine in the morning and arrives in Denver that night. Which word names Denver, and which names the nine o'clock leaving?",
+     "opts": [
+      "Denver is the destination; nine o'clock is the departure",
+      "Denver is the departure; nine o'clock is the destination",
+      "Both are the destination",
+      "Denver is the voyage; nine o'clock is the destination"
+     ],
+     "ans": 0,
+     "hint": "One of these words is about arriving and the other is about leaving.",
+     "steps": [
+      "A destination is the place someone or something is going.",
+      "The train is going to Denver, so Denver is the destination.",
+      "A departure is the act of leaving, and the train leaves at nine.",
+      "So nine o'clock is the departure and Denver is the destination."
+     ],
+     "ex": {
+      "main": "**Denver is the destination; nine o'clock is the departure.** The two words mark the two ends of a journey — one where it starts, one where it finishes.",
+      "tip": "An airport puts these on two separate boards for exactly that reason: Departures and Arrivals."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word that means a longing for a time in the past.",
+     "opts": [
+      "nostalgia"
+     ],
+     "ans": 0,
+     "hint": "It is said \"nahs-TAL-juh\", and the ending is spelled -gia even though it sounds like \"juh\".",
+     "steps": [
+      "Break it into sounds: nahs · TAL · juh.",
+      "The first part is spelled nost-, with an s before the t.",
+      "The \"juh\" sound at the end is spelled -gia, the same ending as in Georgia.",
+      "That gives nostalgia."
+     ],
+     "ex": {
+      "main": "**nostalgia.** The -gia ending is the hard part; it sounds like \"juh\" but never looks like it.",
+      "tip": "Say it slowly while you write it. The s and the g are the two letters people drop."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "A story says \"gales of laughter came from the kitchen.\" Nothing about the weather is being described. Why does gale still work here?",
+     "opts": [
+      "A gale bursts out with force, and so does that kind of laughter",
+      "Because the kitchen window was open",
+      "Because gale can mean any loud noise",
+      "It does not work — the writer made a mistake"
+     ],
+     "ans": 0,
+     "hint": "What do a strong wind and a burst of laughter have in common?",
+     "steps": [
+      "Literally, a gale is a very strong wind — something that arrives suddenly and with force.",
+      "Laughter from a kitchen is not weather, so the word is being stretched.",
+      "What carries across is the force: the laughter burst out the way a gale does.",
+      "The book gives this as the word's second meaning, so it is a real use, not an error."
+     ],
+     "ex": {
+      "main": "**A gale bursts out with force, and so does that kind of laughter.** Weather words get borrowed for sudden, forceful things all the time.",
+      "tip": "When a word turns up somewhere odd, picture the literal version and ask what carried over. There is nearly always a link."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Why do \"despair\" and \"jubilation\" belong together in a vocabulary list, even though they mean opposite things?",
+     "opts": [
+      "They are both strong feelings, and opposites are easier to learn as a pair",
+      "They both describe travel",
+      "They both come from the same root word",
+      "They are used only in poetry"
+     ],
+     "ans": 0,
+     "hint": "What do the two words have in common besides being opposites?",
+     "steps": [
+      "Despair is a total lack of hope; jubilation is great joy.",
+      "Both are feelings, and both are at the extreme end — neither is mild.",
+      "Learning a word alongside its opposite gives you two anchors instead of one, which makes both easier to hold on to.",
+      "They do not share a root and neither is about travel."
+     ],
+     "ex": {
+      "main": "**Both are strong feelings, and opposites are easier to learn as a pair.** Your memory holds contrasts better than isolated facts.",
+      "tip": "Try this deliberately: when you learn a new word, ask what its opposite is. It is worth the extra few seconds."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A hiker writes: \"We reached the ridge at dusk. Below us the valley had already gone dark, but the sun still sat on the horizon.\" What does this tell you about where the hikers were standing?",
+     "opts": [
+      "High up, since they could still see the sun that the valley could not",
+      "In the valley, looking upward",
+      "On flat ground beside the sea",
+      "Underground"
+     ],
+     "ans": 0,
+     "hint": "The horizon is where the sky seems to meet the land. Who can see further — someone high up or someone low down?",
+     "steps": [
+      "The horizon is the distant line where sky meets land or sea.",
+      "The higher you stand, the further away your horizon is.",
+      "The valley below was already dark, meaning the sun had dropped below its horizon.",
+      "The hikers could still see the sun, so their horizon was further out — they must have been higher up."
+     ],
+     "ex": {
+      "main": "**High up.** Height pushes your horizon further away, which is why sunset arrives later on a mountain than in the valley beneath it.",
+      "tip": "This is why lighthouses are tall. Height buys you distance to the horizon."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which sentence uses \"course\" in the same sense as \"The spaceship is now on a course for Mars\"?",
+     "opts": [
+      "The river changed its course after the flood",
+      "She signed up for a pottery course",
+      "Of course we will be there",
+      "The main course was chicken"
+     ],
+     "ans": 0,
+     "hint": "In the spaceship sentence, course means the path something moves along. Find the option that matches that meaning.",
+     "steps": [
+      "The spaceship sentence uses course to mean the path it travels.",
+      "A pottery course is a set of lessons — a different meaning.",
+      "\"Of course\" is a fixed phrase, and a main course is part of a meal.",
+      "A river changing its course means the path it flows along, which matches the spaceship exactly."
+     ],
+     "ex": {
+      "main": "**The river changed its course.** Same meaning: the path something moves along.",
+      "tip": "When a word has several meanings, test each option by swapping in the definition. Only the right one still makes sense."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A ship's log reads: \"Day 40. Sails deteriorating, water low. The crew does not despair; they remain jubilant at the sight of land on the horizon.\" What has just happened?",
+     "opts": [
+      "Conditions are bad but land has come into view, so spirits are high",
+      "The ship has already arrived at its destination",
+      "The crew has given up hope",
+      "The voyage has only just begun"
+     ],
+     "ans": 0,
+     "hint": "Read the feelings words carefully — one is negated.",
+     "steps": [
+      "Deteriorating sails and low water mean conditions are poor.",
+      "\"Does not despair\" is a negative, so the crew has NOT lost hope.",
+      "Jubilant means very happy, and the reason given is the sight of land on the horizon.",
+      "Land on the horizon means it is visible in the distance but not yet reached — so they have not arrived, but they can see they will."
+     ],
+     "ex": {
+      "main": "**Conditions are bad but land has come into view.** \"On the horizon\" means still distant — visible, not arrived.",
+      "tip": "Watch for \"does not\" in front of a feeling word. It flips the whole sentence, and it is easy to read past."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which pair of this lesson's words could describe the same journey from two different points of view?",
+     "opts": [
+      "departure and destination — one is the leaving, the other is the arriving place",
+      "accurate and approximate",
+      "gale and blizzard",
+      "sever and revive"
+     ],
+     "ans": 0,
+     "hint": "Look for two words that describe different ends of one journey rather than opposite ideas.",
+     "steps": [
+      "Accurate and approximate are opposites about precision, not a journey.",
+      "Sever and revive are opposites too, and neither is about travel.",
+      "A gale is a strong wind — nothing to do with the two ends of a trip.",
+      "A departure is the leaving and a destination is the place being reached, so together they describe the start and end of one journey."
+     ],
+     "ex": {
+      "main": "**Departure and destination.** Not opposites exactly — two ends of the same thing, which is a different relationship.",
+      "tip": "Opposite, related, and two-ends-of-one-thing are three different links. Naming which one you have makes words stick."
+     }
+    }
+   ]
+  }
+ }
+}

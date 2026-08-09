@@ -1,0 +1,667 @@
+{
+ "v": 4,
+ "records": {
+  "unit-ww505": {
+   "id": "unit-ww505",
+   "type": "unit",
+   "updatedAt": 1786230850599,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Wordly Wise · Lesson 5",
+   "srcName": "Wordly Wise 3000 Book 5, Lesson 5",
+   "source": "Wordly Wise 3000 Book 5, Lesson 5 (PDF in Drive)",
+   "summary": {
+    "text": "Word List 5 from Wordly Wise 3000 Book 5: avalanche, blizzard, challenge, conquer, crevice, foolhardy, lure, makeshift, optimist, previous, route, summit, terse, thwart and vertical — plus the related forms the list gives (conquest, optimistic, optimism). Much of this list belongs to mountains, weather and the business of getting past obstacles.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Like Lesson 4, this list hangs together: most of it belongs to a story about climbing something difficult in bad weather. Several of the words also carry a judgement rather than just a fact — foolhardy, terse and optimist all say something about a person, not just describe one.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Give the meaning of each of the fifteen words on Word List 5",
+     "from": "source"
+    },
+    {
+     "text": "Use the related forms conquest, optimistic and optimism correctly",
+     "from": "source"
+    },
+    {
+     "text": "Tell foolhardy apart from brave, and optimistic apart from foolhardy",
+     "from": "added"
+    },
+    {
+     "text": "Pick the right meaning of challenge, which has four uses in this list alone",
+     "from": "source"
+    },
+    {
+     "text": "Spell the words whose sound and spelling disagree, like thwart",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Word List 5 from the Lesson 5 PDF in her Drive folder, built to match Lesson 4. Every card carries the book's pronunciation guide, respelled plainly, with the speaker button reading it aloud. Three things worth checking with her. First, challenge has four distinct uses in this one list (two noun, two verb) and the level 3 question tests exactly that. Second, foolhardy is not a synonym for brave — the word contains a judgement that the risk was not worth taking, and she may need that pointed out. Third, thwart applies to plans and not to people, which is the kind of distinction that shows up in a matching exercise. One note on the pronunciation of route: the book gives it as rhyming with boot, so that is what the app says, though rhyming it with out is also common and neither is wrong.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards with the speaker button first, then the quiz. Five of these words are much easier to say once you have heard them.",
+    "minutes": 20,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "avalanche",
+     "def": "**A great mass of snow, ice, earth and rock sliding down a mountain.** (noun)\n• Second meaning: a great amount of something — an avalanche of orders after the ad went out.\n• Both meanings share the idea of far too much arriving all at once.",
+     "sp": "AV-uh-lanch",
+     "hint": "The second meaning is the first one borrowed: too much, too fast, no stopping it.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "blizzard",
+     "def": "**A heavy snowstorm with strong winds.** (noun)\n• The Chicago airport closed for two days because of the blizzard.\n• Snow alone is not enough — a blizzard needs the wind too.",
+     "sp": "BLIZ-urd",
+     "hint": "Snowstorm plus wind. Take the wind away and it is just heavy snow.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "challenge",
+     "def": "**Something that takes real skill or effort.** (noun)\n• Also a call to take part in a contest — I accepted the challenge to run the marathon.\n• As a verb it has a third meaning: to question or argue against something unfair.",
+     "sp": "CHAL-unj",
+     "hint": "Three meanings: a hard task, an invitation to compete, and an objection.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "conquer",
+     "def": "**To defeat, or to get the better of.** (verb)\n• It works for enemies and for feelings: swimming lessons helped me conquer my fear of water.\n• conquest (noun): the act of defeating.",
+     "sp": "KAHN-kur",
+     "hint": "You can conquer an army or conquer a fear. The second is the more useful one.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "crevice",
+     "def": "**A deep, narrow opening in rock, caused by a split or crack.** (noun)\n• The crevice had filled with soil, and small red flowers were growing in it.\n• Narrow is the key word — a crevice is a crack, not a cave.",
+     "sp": "KREV-iss",
+     "hint": "Narrow enough to be a crack. If you could walk into it, it is not a crevice.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "foolhardy",
+     "def": "**Bold or daring in an unwise way.** (adjective)\n• It would be foolhardy to go swimming during a gale.\n• It is not the same as brave — foolhardy means the risk was not worth taking.",
+     "sp": "FOOL-har-dee",
+     "hint": "The word has \"fool\" hidden at the front, and that is the whole difference from brave.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "lure",
+     "def": "**To tempt or attract with the promise of something good.** (verb)\n• The hope of owning land lured many people to travel west.\n• As a noun: something that attracts, or the artificial bait used in fishing.",
+     "sp": "loor",
+     "hint": "A fishing lure looks like food and is not. That is the flavour of the whole word.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "makeshift",
+     "def": "**Used as a temporary replacement, and usually not as good.** (adjective)\n• We use the cooler as a makeshift table when we have a picnic.\n• Also a noun: the thing standing in until the real one arrives.",
+     "sp": "MAYK-shift",
+     "hint": "Something you made do with. It works for now, and only for now.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "optimist",
+     "def": "**A person who looks at things in the most positive way.** (noun)\n• optimistic (adjective): cheerful and hopeful.\n• optimism (noun): the feeling of hope itself.\n• An optimist is hopeful about what is coming, not just happy about now.",
+     "sp": "AHP-tuh-mist",
+     "hint": "Three forms to keep straight: the person, the mood, the feeling.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "previous",
+     "def": "**Earlier; happening before.** (adjective)\n• Although I missed the last practice, I attended the two previous ones.\n• It always points backwards from some other moment, not from today.",
+     "sp": "PREE-vee-us",
+     "hint": "\"Pre-\" at the front means before. Previous, preview, predict.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "route",
+     "def": "**The path that must be followed to get to a place.** (noun)\n• Our route to Seattle takes us through Denver.\n• Second meaning: a fixed round assigned to someone — a newspaper route.",
+     "sp": "root",
+     "hint": "The book says it rhymes with boot. Some people say it to rhyme with out; both are heard.",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "summit",
+     "def": "**The highest part; the top.** (noun)\n• It took us three hours to climb to the summit of the mountain.\n• Second meaning: a meeting of the top leaders of governments.",
+     "sp": "SUM-it",
+     "hint": "Both meanings are about the top — of a mountain, or of a government.",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "terse",
+     "def": "**Short and to the point.** (adjective)\n• When I said I was sure we would be rescued, my friend's terse reply was, \"How?\"\n• A terse answer is brief, and often a little blunt.",
+     "sp": "terss",
+     "hint": "The word itself is short, which is a fair clue to what it means.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "thwart",
+     "def": "**To block or defeat someone's plans or efforts.** (verb)\n• Heavy flooding thwarted the attempts to deliver food.\n• You thwart a plan, not a person — the plan is what gets stopped.",
+     "sp": "thwort",
+     "hint": "The spelling is odd: th-w-a-r-t, but it rhymes with short.",
+     "from": "source"
+    },
+    {
+     "id": "c14",
+     "term": "vertical",
+     "def": "**Running straight up and down; upright.** (adjective)\n• The black vertical lines in the painting are what you notice first.\n• Its opposite is horizontal, which runs side to side.",
+     "sp": "VUR-tih-kul",
+     "hint": "Vertical goes up like a person standing. Horizontal lies flat like the horizon.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is a blizzard?",
+     "opts": [
+      "A heavy snowstorm with strong winds",
+      "A deep crack in rock",
+      "A mass of snow sliding down a mountain",
+      "A path followed to reach a place"
+     ],
+     "ans": 0,
+     "hint": "Two of these involve snow. Only one of them is a storm.",
+     "steps": [
+      "A blizzard is weather that is happening in the air around you.",
+      "It is snow, and it also needs strong wind.",
+      "Snow sliding down a mountain is an avalanche — related, but that is snow already fallen."
+     ],
+     "ex": {
+      "main": "**A heavy snowstorm with strong winds.** Without the wind it is just heavy snow.",
+      "tip": "Blizzard and avalanche both involve snow. One falls from the sky, the other slides down a slope."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does foolhardy mean?",
+     "opts": [
+      "Bold or daring in an unwise way",
+      "Very brave and wise",
+      "Slow and careful",
+      "Cheerful and hopeful"
+     ],
+     "ans": 0,
+     "hint": "Look at the first half of the word.",
+     "steps": [
+      "The word starts with \"fool\", which is a strong hint.",
+      "It does describe boldness, so it is about taking a risk.",
+      "But the \"fool\" part means the risk is unwise — the danger outweighed the point of it."
+     ],
+     "ex": {
+      "main": "**Bold or daring in an unwise way.** It is the word for courage aimed at something not worth the risk.",
+      "tip": "Brave and foolhardy can look identical from outside. The difference is whether the risk was worth taking."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is a summit?",
+     "opts": [
+      "The highest part; the top",
+      "A deep narrow crack",
+      "A temporary replacement",
+      "A short, blunt reply"
+     ],
+     "ans": 0,
+     "hint": "Climbers talk about reaching it.",
+     "steps": [
+      "A summit is the highest point of something.",
+      "Most often it means the top of a mountain.",
+      "It also names a meeting of the top leaders of governments — the same \"highest\" idea."
+     ],
+     "ex": {
+      "main": "**The highest part; the top.** Both meanings come from the same idea of being at the top.",
+      "tip": "A summit meeting is called that because the people at it are at the top of their governments."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does terse mean?",
+     "opts": [
+      "Short and to the point",
+      "Long and detailed",
+      "Cheerful and warm",
+      "Confusing and unclear"
+     ],
+     "ans": 0,
+     "hint": "The word is short itself, which is a decent clue.",
+     "steps": [
+      "Terse describes the way something is said or written.",
+      "It means brief — using very few words.",
+      "It usually carries a slight bluntness with it, as in a one-word reply."
+     ],
+     "ex": {
+      "main": "**Short and to the point.** A terse answer is not rude exactly, but it is not warm either.",
+      "tip": "The book's example is a friend answering a hopeful statement with just \"How?\" — one word, and it lands."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does previous mean?",
+     "opts": [
+      "Earlier; happening before",
+      "Coming next",
+      "Happening right now",
+      "Happening every time"
+     ],
+     "ans": 0,
+     "hint": "The prefix \"pre-\" is the clue.",
+     "steps": [
+      "\"Pre-\" at the front of a word means before.",
+      "You see it in preview (see before) and predict (say before).",
+      "So previous means earlier, or happening before."
+     ],
+     "ex": {
+      "main": "**Earlier; happening before.** It always points backwards from some other moment.",
+      "tip": "Watch for pre- at the start of unfamiliar words. It reliably means before."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which word means to block or defeat someone's plans?",
+     "opts": [
+      "thwart",
+      "lure",
+      "revive",
+      "navigate"
+     ],
+     "ans": 0,
+     "hint": "It rhymes with short and starts with the same two letters as \"the\".",
+     "steps": [
+      "Lure means to tempt or attract, which is nearly the opposite.",
+      "Revive means to make strong again and navigate means to steer a course.",
+      "Thwart means to block or defeat plans or efforts."
+     ],
+     "ex": {
+      "main": "**Thwart.** The flooding thwarted the food deliveries — it stopped the plan, not the people.",
+      "tip": "The spelling is the hard part: th-w-a-r-t, even though it sounds like \"thwort\"."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word that means the highest part or the top.",
+     "opts": [
+      "summit"
+     ],
+     "ans": 0,
+     "hint": "Six letters, said \"SUM-it\", with a double letter in the middle.",
+     "steps": [
+      "The word is said SUM-it.",
+      "It begins like the word \"sum\".",
+      "The m is doubled before the ending: s-u-m-m-i-t.",
+      "That gives summit."
+     ],
+     "ex": {
+      "main": "**summit.** The double m is what people miss — \"sumit\" is the usual wrong version.",
+      "tip": "When a short vowel is followed by one consonant sound, that consonant is often doubled in English."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A hiker sets out for the peak in worsening weather, with no map and no jacket. Which word best describes the decision?",
+     "opts": [
+      "foolhardy",
+      "optimistic",
+      "terse",
+      "previous"
+     ],
+     "ans": 0,
+     "hint": "It is bold. Is it wise?",
+     "steps": [
+      "Setting out in bad weather without a map or jacket is certainly bold.",
+      "But the risk is high and nothing is gained by taking it.",
+      "Bold in an unwise way is exactly foolhardy.",
+      "Optimistic would mean hopeful, which does not capture the danger."
+     ],
+     "ex": {
+      "main": "**Foolhardy.** Optimistic is close in feel but misses the point — the problem is not the mood, it is the risk.",
+      "tip": "Ask whether the risk bought anything. If not, foolhardy is usually the right word."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which sentence uses \"makeshift\" correctly?",
+     "opts": [
+      "They built a makeshift shelter from branches until help arrived",
+      "She gave a makeshift reply of one word",
+      "The makeshift wind blew all night",
+      "He makeshift the mountain in four hours"
+     ],
+     "ans": 0,
+     "hint": "Makeshift means a temporary stand-in for the real thing.",
+     "steps": [
+      "A one-word reply is terse, not makeshift.",
+      "Wind is not a replacement for anything, and makeshift is not a verb.",
+      "A shelter built from branches is standing in for a real shelter until help comes.",
+      "Temporary, and not as good as the real thing — that is makeshift exactly."
+     ],
+     "ex": {
+      "main": "**A makeshift shelter from branches.** The word carries both parts: temporary, and not as good.",
+      "tip": "It is an adjective and a noun, never a verb. \"He makeshift\" cannot happen."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A shop puts a free sample table by its door to bring people inside. What is the shop doing?",
+     "opts": [
+      "Luring customers in",
+      "Thwarting customers",
+      "Conquering customers",
+      "Severing customers"
+     ],
+     "ans": 0,
+     "hint": "Which word means tempting someone with the promise of something good?",
+     "steps": [
+      "Thwarting would mean blocking them, which is the opposite of what the shop wants.",
+      "Conquering means defeating, which does not fit.",
+      "Lure means to tempt or attract with the promise of something good.",
+      "A free sample is exactly that promise, so the shop is luring customers in."
+     ],
+     "ex": {
+      "main": "**Luring customers in.** A fishing lure works the same way — the promise of something good, used to draw you closer.",
+      "tip": "Lure often has a slightly sly edge. What is promised is not always quite what arrives."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Someone finally swims in deep water after years of being afraid. Which sentence describes it best?",
+     "opts": [
+      "She conquered her fear",
+      "She thwarted her fear",
+      "She lured her fear",
+      "She severed her fear"
+     ],
+     "ans": 0,
+     "hint": "Conquer works for enemies and for feelings. Which of these is used that way?",
+     "steps": [
+      "Thwart applies to plans, and a fear is not a plan.",
+      "Lure means to tempt, which makes no sense aimed at your own fear.",
+      "Conquer means to defeat or get the better of, and it is regularly used for feelings.",
+      "The book's own example is swimming lessons helping someone conquer a fear of water."
+     ],
+     "ex": {
+      "main": "**She conquered her fear.** Conquer stretches naturally from armies to feelings, and the feelings use is the commoner one.",
+      "tip": "The noun is conquest, though that one stays mostly with battles rather than feelings."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A flagpole and a fallen ladder lie in a yard. Which is vertical and which is horizontal?",
+     "opts": [
+      "The flagpole is vertical; the fallen ladder is horizontal",
+      "The flagpole is horizontal; the fallen ladder is vertical",
+      "Both are vertical",
+      "Both are horizontal"
+     ],
+     "ans": 0,
+     "hint": "Vertical goes up and down. Horizontal goes side to side, like the horizon.",
+     "steps": [
+      "Vertical means running straight up and down.",
+      "A flagpole stands upright, so it is vertical.",
+      "Horizontal means going straight across, side to side.",
+      "A fallen ladder lies flat across the ground, so it is horizontal."
+     ],
+     "ex": {
+      "main": "**Flagpole vertical, ladder horizontal.** Horizontal shares its root with horizon, which is the flat line where sky meets land.",
+      "tip": "If you forget which is which, picture the horizon. It is flat, and it names horizontal."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "After a storm, a delivery company receives ten times its usual number of complaints in one day. Which word fits best?",
+     "opts": [
+      "an avalanche of complaints",
+      "a crevice of complaints",
+      "a summit of complaints",
+      "a makeshift of complaints"
+     ],
+     "ans": 0,
+     "hint": "Which word has a second meaning of \"a great amount\"?",
+     "steps": [
+      "A crevice is a narrow crack, a summit is the top, and makeshift means temporary — none describe a quantity.",
+      "An avalanche literally means a mass of snow and rock sliding down a mountain.",
+      "Its second meaning is a great amount of something.",
+      "Ten times the usual complaints, all at once, is an avalanche of them."
+     ],
+     "ex": {
+      "main": "**An avalanche of complaints.** The image carries over: far too much, arriving all at once, impossible to stop.",
+      "tip": "English borrows big weather and landslide words for big amounts constantly — a flood of letters, a storm of protest."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word that means to block or defeat someone's plans.",
+     "opts": [
+      "thwart"
+     ],
+     "ans": 0,
+     "hint": "It sounds like \"thwort\", but no o appears in it.",
+     "steps": [
+      "The word is said thwort, rhyming with short.",
+      "It begins with th, then w — an unusual pair in English.",
+      "The vowel is spelled with an a, not the o you hear: -war-.",
+      "It ends in t, giving t-h-w-a-r-t: thwart."
+     ],
+     "ex": {
+      "main": "**thwart.** The a doing the work of an o is the whole difficulty. Compare war and warm, which do the same thing.",
+      "tip": "After a w, the letter a often sounds like o. War, warm, swarm, thwart — same trick each time."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Explain why an optimist and a foolhardy person might make the same decision for different reasons.",
+     "opts": [
+      "The optimist expects things to go well; the foolhardy person ignores the risk entirely",
+      "They are the same thing",
+      "The optimist is always right and the foolhardy person always wrong",
+      "Neither of them takes risks"
+     ],
+     "ans": 0,
+     "hint": "One of these words is about what you expect. The other is about what you fail to consider.",
+     "steps": [
+      "An optimist looks at things in the most positive way and expects a good outcome.",
+      "A foolhardy person is bold in an unwise way — the problem is the size of the risk, not the mood.",
+      "Both might set out on the same risky hike.",
+      "The optimist has judged it and believes it will go well; the foolhardy person has not really judged it at all."
+     ],
+     "ex": {
+      "main": "**The optimist expects things to go well; the foolhardy person ignores the risk.** Same action, different thinking behind it.",
+      "tip": "Words that describe people are often about the reasoning, not the behaviour. Two people can do the same thing for very different reasons."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A rescue report reads: \"Our previous route was thwarted by an avalanche, so we made a makeshift bridge across the crevice and reached the summit by dusk.\" What happened, in order?",
+     "opts": [
+      "The old path was blocked, they improvised a crossing, and they got to the top",
+      "They reached the top, then the path was blocked",
+      "They gave up and turned back",
+      "They were blocked and never crossed"
+     ],
+     "ans": 0,
+     "hint": "Take the sentence one clause at a time and translate each word as you go.",
+     "steps": [
+      "\"Previous route was thwarted\" — the earlier path was blocked. That is the first event.",
+      "\"By an avalanche\" gives the cause: sliding snow and rock closed the path.",
+      "\"Made a makeshift bridge across the crevice\" — they improvised a temporary crossing over a narrow crack.",
+      "\"Reached the summit by dusk\" — they got to the top before dark. So: blocked, improvised, arrived."
+     ],
+     "ex": {
+      "main": "**Blocked, improvised, arrived.** Five of this lesson's words in one sentence, and each one is carrying real information.",
+      "tip": "When a sentence is dense with new words, translate them one at a time in order. The story assembles itself."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Why does \"avalanche\" work as a description of a large amount of email, while \"crevice\" would not work as a description of a small problem?",
+     "opts": [
+      "Avalanche has an established second meaning about quantity; crevice does not",
+      "Crevice is not a real word",
+      "Avalanche is longer",
+      "Both work equally well"
+     ],
+     "ans": 0,
+     "hint": "Which of the two words does the book give a second meaning for?",
+     "steps": [
+      "The book gives avalanche two meanings: the snow, and a great amount of something.",
+      "That second meaning is established — people use it and are understood.",
+      "Crevice is given only one meaning: a deep narrow opening in rock.",
+      "You could invent \"a crevice of a problem\" and a reader might guess it, but it is not a use the language has settled on."
+     ],
+     "ex": {
+      "main": "**Avalanche has an established second meaning; crevice does not.** Which words stretch and which do not is decided by use, not by logic.",
+      "tip": "This is why dictionaries list several meanings for some words and one for others. The list records what people actually do."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which two words in this lesson are near-opposites in the way they treat difficulty?",
+     "opts": [
+      "conquer and thwart — one gets past an obstacle, the other creates one",
+      "summit and crevice",
+      "terse and previous",
+      "lure and blizzard"
+     ],
+     "ans": 0,
+     "hint": "Look for the pair where one word means getting past something and the other means being stopped.",
+     "steps": [
+      "Summit and crevice are both places — high and low, but neither is about difficulty.",
+      "Terse and previous have nothing to do with each other.",
+      "Conquer means to defeat or get the better of something.",
+      "Thwart means to block or defeat someone's efforts. So one is overcoming an obstacle and the other is being the obstacle."
+     ],
+     "ex": {
+      "main": "**Conquer and thwart.** Both are about a struggle, from the two opposite sides of it.",
+      "tip": "Notice that \"defeat\" appears in both definitions. The difference is who is doing it to whom."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A sign at a trailhead reads: \"Route closed. Use marked detour.\" A hiker ignores it and climbs anyway. Which two words from this lesson best describe the hiker and what happened to the original plan?",
+     "opts": [
+      "The hiker was foolhardy, and the original route was thwarted",
+      "The hiker was optimistic, and the route was conquered",
+      "The hiker was terse, and the route was lured",
+      "The hiker was previous, and the route was makeshift"
+     ],
+     "ans": 0,
+     "hint": "One word describes the person, the other describes what happened to the path.",
+     "steps": [
+      "The sign warns the route is closed, so climbing it anyway is bold and unwise — foolhardy.",
+      "Terse describes speech and previous means earlier, so neither describes a person here.",
+      "Something has blocked the original route, which is what thwart means.",
+      "So: the hiker was foolhardy and the route was thwarted."
+     ],
+     "ex": {
+      "main": "**Foolhardy hiker, thwarted route.** Thwart applies to the plan or path, never to the person — you thwart an attempt, not a hiker.",
+      "tip": "Check which words attach to people and which attach to plans. Getting that wrong is a common slip."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "The word \"challenge\" can be a noun or a verb, with different meanings. Which sentence uses it as a verb meaning \"to question or argue against\"?",
+     "opts": [
+      "Few scientists challenge the idea that a meteorite killed the dinosaurs",
+      "Living out of our backpacks for a week was a real challenge",
+      "I accepted the challenge to run in the marathon",
+      "This trail challenges even the best hikers"
+     ],
+     "ans": 0,
+     "hint": "Three of these use challenge in other senses. Find the one that means disagreeing with an idea.",
+     "steps": [
+      "\"Was a real challenge\" is a noun meaning a hard task.",
+      "\"Accepted the challenge\" is a noun meaning an invitation to compete.",
+      "\"Challenges even the best hikers\" is a verb, but it means demands skill and effort, not argues against.",
+      "\"Few scientists challenge the idea\" is a verb meaning to question or argue against something. That is the one."
+     ],
+     "ex": {
+      "main": "**Few scientists challenge the idea.** Same word, four uses in this lesson alone — noun twice, verb twice, and the two verb senses differ.",
+      "tip": "When a word has this many senses, the sentence around it is what tells you which one is meant. Read the whole sentence, not the word."
+     }
+    }
+   ]
+  }
+ }
+}
