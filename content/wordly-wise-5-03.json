@@ -4,7 +4,7 @@
   "unit-ww503": {
    "id": "unit-ww503",
    "type": "unit",
-   "updatedAt": 1786284278283,
+   "updatedAt": 1786299404508,
    "classId": "english",
    "quarter": 1,
    "status": "draft",
@@ -52,105 +52,120 @@
      "term": "ancestor",
      "def": "**A person from whom one is descended.** (noun)\n• Second meaning: an early kind of animal from which later ones developed — a forerunner.\n• The dog-sized mesohippus is an ancestor of the modern horse.",
      "hint": "Your family tree going UP — and a species' family tree going back.",
-     "from": "source"
+     "from": "source",
+     "sp": "AN-sess-tur"
     },
     {
      "id": "c1",
      "term": "carnivore",
      "def": "**A flesh-eating animal.** (noun)\n• carnivorous (adj.): flesh-eating — 'dogs are carnivorous but eat other foods too.'\n• Sharp, pointed teeth are the giveaway.",
      "hint": "Carne means meat — a carnivore is a meat-eater.",
-     "from": "source"
+     "from": "source",
+     "sp": "KAR-nih-vor"
     },
     {
      "id": "c2",
      "term": "comprehend",
      "def": "**To understand.** (verb)\n• comprehension (noun): the act or ability of understanding.\n• You can comprehend a language better than you speak it.",
      "hint": "Reading comprehension = did you UNDERSTAND what you read.",
-     "from": "source"
+     "from": "source",
+     "sp": "kahm-pree-HEND"
     },
     {
      "id": "c3",
      "term": "duration",
      "def": "**The time during which something lasts or continues.** (noun)\n• 'For the duration of the storm' = the whole time it lasted.",
      "hint": "How long it endures — duration and endure share a root.",
-     "from": "source"
+     "from": "source",
+     "sp": "doo-RAY-shun"
     },
     {
      "id": "c4",
      "term": "evident",
      "def": "**Easy to see and understand; obvious, clear.** (adjective)\n• 'It is evident from your face that you're happy.' The evidence is right there.",
      "hint": "Evident and evidence: what the proof makes plain.",
-     "from": "source"
+     "from": "source",
+     "sp": "EV-uh-dunt"
     },
     {
      "id": "c5",
      "term": "extinct",
      "def": "**No longer existing or living.** (adjective)\n• Second meaning: no longer active — Mount St. Helens was called an extinct volcano until 1980 proved otherwise.\n• Species and volcanoes share this word.",
      "hint": "Extinguished — the flame is out, for mammoths and mountains alike.",
-     "from": "source"
+     "from": "source",
+     "sp": "ek-STINKT"
     },
     {
      "id": "c6",
      "term": "ferocious",
      "def": "**Savage; fierce.** (adjective)\n• ferocity (noun): the state or quality of being fierce — 'the ferocity of the storm.'\n• Guard dogs and storms both qualify.",
      "hint": "Fero- like feral — wild with teeth.",
-     "from": "source"
+     "from": "source",
+     "sp": "fuh-ROH-shuss"
     },
     {
      "id": "c7",
      "term": "gigantic",
      "def": "**Very large; like a giant in size.** (adjective)\n• The Spruce Goose was a gigantic airplane that made exactly one flight.",
      "hint": "Giant is hiding inside gigantic.",
-     "from": "source"
+     "from": "source",
+     "sp": "jy-GAN-tik"
     },
     {
      "id": "c8",
      "term": "obscure",
      "def": "**To cover up or keep from being seen.** (verb)\n• As an adjective: hard to see ('an obscure shape in the mist') — or hard to understand ('obscure words like cauldron and phoenix').\n• One word, three jobs.",
      "hint": "Clouds obscure the moon; strange words obscure the meaning.",
-     "from": "source"
+     "from": "source",
+     "sp": "ub-SKYOOR"
     },
     {
      "id": "c9",
      "term": "option",
      "def": "**A choice, or something available as a choice.** (noun)\n• optional (adj.): left to choice — 'lunch was required, dinner was optional.'",
      "hint": "Opt = choose. Options are the things you may opt for.",
-     "from": "source"
+     "from": "source",
+     "sp": "AHP-shun"
     },
     {
      "id": "c10",
      "term": "premature",
      "def": "**Too early; happening or arriving before the proper time.** (adjective)\n• Premature babies arrive early; a premature celebration happens before the win is real.",
      "hint": "Pre- (before) + mature (ready): before it's ready.",
-     "from": "source"
+     "from": "source",
+     "sp": "pree-muh-CHOOR"
     },
     {
      "id": "c11",
      "term": "preserve",
      "def": "**To save; to keep from harm; to protect.** (verb)\n• Second meaning: to keep from rotting or spoiling — preserving peaches by canning.\n• Laws preserve forests; jars preserve fruit.",
      "hint": "Pre-SERVE: keep it safe so it can serve later.",
-     "from": "source"
+     "from": "source",
+     "sp": "prih-ZURV"
     },
     {
      "id": "c12",
      "term": "prey",
      "def": "**An animal that is hunted for food.** (noun)\n• Also: a victim — 'prey to thieves.'\n• As a verb: to hunt for food, or to rob using violence or trickery — 'wolves prey on the weakest deer.'",
      "hint": "Prey is the hunted; the predator does the preying. (Don't spell it 'pray.')",
-     "from": "source"
+     "from": "source",
+     "sp": "pray"
     },
     {
      "id": "c13",
      "term": "puny",
      "def": "**Weak.** (adjective)\n• Second meaning: lacking in size, strength, or power — 'my one-dollar offering seemed puny.'",
      "hint": "The opposite of gigantic, two cards up.",
-     "from": "source"
+     "from": "source",
+     "sp": "PYOO-nee"
     },
     {
      "id": "c14",
      "term": "survive",
      "def": "**To stay alive where there is a chance of dying.** (verb)\n• Also: to continue existing through a threatening situation — two of eight maples survived the hurricane.\n• survivor (noun): one who stays alive where others do not.",
      "hint": "Sur- (through) + vive (live): to live through it.",
-     "from": "source"
+     "from": "source",
+     "sp": "sur-VYVE"
     }
    ],
    "questions": [

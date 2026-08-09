@@ -1,451 +1,541 @@
 {
-  "v": 4,
-  "records": {
-    "unit-ww502": {
-      "id": "unit-ww502",
-      "type": "unit",
-      "updatedAt": 1786165100000,
-      "classId": "english",
-      "quarter": 1,
-      "status": "draft",
-      "title": "Wordly Wise · Lesson 2",
-      "srcName": "Wordly Wise 3000 Book 5, Lesson 2",
-      "source": "Wordly Wise 3000 Book 5, Lesson 2 (PDF in Drive)",
-      "summary": {
-        "text": "The fifteen words of Wordly Wise 3000 Book 5, Lesson 2: aroma, beverage, bland, brittle, cluster, combine, consume, crave, cultivate, equivalent, export, extract, introduce, purchase, and tropical — including the related forms the book teaches (combination, craving, introduction) and the words that carry more than one meaning.",
-        "from": "source"
-      },
-      "why": {
-        "text": "This lesson is heavy on shape-shifters: consume, cultivate and introduce each carry three meanings, and export and extract even change their sound — the stress moves when they switch from verb to noun. Own the pattern once (EX-port the noun, ex-PORT the verb) and you get two words for the price of one.",
-        "from": "added"
-      },
-      "objectives": [
-        {
-          "text": "Give the meaning of all fifteen Lesson 2 words when they appear in a brand-new sentence.",
-          "from": "source"
-        },
-        {
-          "text": "Tell the multiple meanings apart: consume as use up / eat / destroy, cultivate as farm / grow / encourage, introduce as make known / bring to attention / bring into use.",
-          "from": "source"
-        },
-        {
-          "text": "Spot the verb-noun pairs — export, extract, purchase, cluster, equivalent — and hear the stress shift in export and extract.",
-          "from": "source"
-        },
-        {
-          "text": "Use the related forms — combination, craving, introduction — as comfortably as the base words.",
-          "from": "source"
-        }
-      ],
-      "parentNote": {
-        "text": "Built from the Lesson 2 PDF you uploaded to Drive (English → Wordly Wise). Definitions match the workbook; every quiz sentence is fresh, so the workbook's own exercises stay her homework. The high-value pattern this lesson is part-of-speech switching — five of the fifteen words work as both noun and verb, and two of them (export, extract) move their stress when they switch, which is exactly the kind of thing that shows up on quizzes. Food words dominate the list (aroma, beverage, bland, consume, crave), so dinner is a natural place to work them in casually.",
-        "from": "added"
-      },
-      "nextUp": {
-        "text": "Cards first, once through. Then a quiz round a day beats one long session.",
-        "minutes": 16,
-        "from": "added"
-      },
-      "cards": [
-        {
-          "id": "c0",
-          "term": "aroma",
-          "def": "**A smell or odor, especially a pleasant one.** (noun)\n• Usually good news: bread baking, popcorn, rain on warm pavement.\n• For a bad smell, English reaches for 'odor' or 'stench' instead.",
-          "hint": "Aroma leans pleasant — your nose is glad to meet one.",
-          "from": "source"
-        },
-        {
-          "id": "c1",
-          "term": "beverage",
-          "def": "**A liquid used as a drink.** (noun)\n• Lemonade, milk, juice, water — if you can drink it, it qualifies.\n• The formal word menus use when they mean 'drinks.'",
-          "hint": "Menus say 'beverages' when they mean drinks.",
-          "from": "source"
-        },
-        {
-          "id": "c2",
-          "term": "bland",
-          "def": "**Lacking a strong flavor.** (adjective)\n• Second meaning: not irritating, exciting, or disturbing — a bland manner, a bland reply.\n• Both meanings share one idea: nothing sharp in it.",
-          "hint": "Bland food and a bland voice have the same problem: no spice.",
-          "from": "source"
-        },
-        {
-          "id": "c3",
-          "term": "brittle",
-          "def": "**Easily broken; not flexible.** (adjective)\n• Candy canes, icicles, dry twigs — one snap and done.\n• Opposite territory: flexible, bendy, springy.",
-          "hint": "Brittle things don't bend. They snap.",
-          "from": "source"
-        },
-        {
-          "id": "c4",
-          "term": "cluster",
-          "def": "**A number of similar things grouped together.** (noun)\n• As a verb: to gather or come together in a group — 'the children clustered around the storyteller.'\n• Grapes grow in clusters; so do stars.",
-          "hint": "Picture a bunch of grapes — that shape is a cluster.",
-          "from": "source"
-        },
-        {
-          "id": "c5",
-          "term": "combine",
-          "def": "**To join or bring together.** (verb)\n• combination (noun): the joining itself — 'a combination of hard work and good luck.'\n• Oil and vinegar, blue and yellow, two lines into one.",
-          "hint": "Com- means 'together' — combining is bringing together.",
-          "from": "source"
-        },
-        {
-          "id": "c6",
-          "term": "consume",
-          "def": "**To use up.** (verb)\n• Also: to eat or drink — 'a horse consumes fifty pounds of hay a day.'\n• Also: to do away with or destroy — 'the fire consumed two thousand acres.'\n• Three senses, one engine: something gets used until it's gone.",
-          "hint": "Consumed means gone — whether eaten, spent, or burned.",
-          "from": "source"
-        },
-        {
-          "id": "c7",
-          "term": "crave",
-          "def": "**To have a strong desire for.** (verb)\n• craving (noun): the strong desire itself — 'a craving for lots of cool water.'\n• Stronger than want — young Abraham Lincoln craved knowledge enough to walk miles for one book.",
-          "hint": "A craving nags at you. Wanting is quieter than craving.",
-          "from": "source"
-        },
-        {
-          "id": "c8",
-          "term": "cultivate",
-          "def": "**To prepare land for the growing of crops.** (verb)\n• Also: to grow or help grow — 'Ana cultivates tomatoes every year.'\n• Also: to encourage something to develop by attention or study — 'cultivate a love of nature.'\n• The word starts in the garden and climbs outward to habits and skills.",
-          "hint": "You can cultivate a field, a tomato, or a habit — soil first, then anything you help grow.",
-          "from": "source"
-        },
-        {
-          "id": "c9",
-          "term": "equivalent",
-          "def": "**Equal to.** (adjective)\n• As a noun: the thing that IS equal — 'one dog year is the equivalent of seven human years.'\n• 0.5 and 1/2 look different and are equivalent amounts.",
-          "hint": "Equi = equal, valent = value: equal in value.",
-          "from": "source"
-        },
-        {
-          "id": "c10",
-          "term": "export",
-          "def": "**To send goods to another country for sale.** (verb)\n• As a noun: the goods themselves — 'grain is an important export of the United States.'\n• Say it both ways: the verb is ex-PORT, the noun is EX-port.",
-          "hint": "Ex- means out. Exports go OUT of the country.",
-          "from": "source"
-        },
-        {
-          "id": "c11",
-          "term": "extract",
-          "def": "**To remove or take out.** (verb)\n• Also: to obtain with an effort — 'I extracted a promise from them.'\n• As a noun: the thing taken out — vanilla extract comes from vanilla seedpods.\n• Same stress trick as export: the verb is ex-TRACT, the noun is EX-tract.",
-          "hint": "A dentist extracts a tooth; a baker uses vanilla extract — both are 'pulled out.'",
-          "from": "source"
-        },
-        {
-          "id": "c12",
-          "term": "introduce",
-          "def": "**To cause to know; to make known by name.** (verb)\n• Also: to bring to someone's attention for the first time — 'they introduced us to scuba diving.'\n• Also: to bring into use — 'the airplane introduced a new way of traveling.'\n• introduction (noun): the making-known — or the part of a book before the main part.",
-          "hint": "Intro- means into. Introducing brings someone INTO knowing.",
-          "from": "source"
-        },
-        {
-          "id": "c13",
-          "term": "purchase",
-          "def": "**To buy.** (verb)\n• As a noun: the thing bought — or the act of buying itself.\n• The formal cousin of 'buy' — receipts say purchase.",
-          "hint": "Receipts never say 'thanks for buying' — they say 'thank you for your purchase.'",
-          "from": "source"
-        },
-        {
-          "id": "c14",
-          "term": "tropical",
-          "def": "**Of, from, or similar to the regions near the equator.** (adjective)\n• Second meaning: hot and moist — 'tropical weather,' even far from the equator.\n• Ecuador is tropical by geography; a steamy August afternoon is tropical by feel.",
-          "hint": "Tropical points at the equator first, at the weather second.",
-          "from": "source"
-        }
-      ],
-      "questions": [
-        {
-          "id": "q0",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "The ___ of cinnamon rolls drifted up the stairs and woke the whole house before the alarm did.",
-          "opts": ["aroma", "beverage", "cluster", "extract"],
-          "ans": 0,
-          "hint": "Which word is the SMELL — and a pleasant one at that?",
-          "steps": [
-            "Find the clue: something is drifting up the stairs and reaching noses — it's a smell.",
-            "Match to the list: aroma means a smell, especially a pleasant one. Cinnamon rolls qualify.",
-            "Check the impostors: a beverage is a drink, a cluster is a group, an extract is something taken out — none of them float upstairs."
-          ],
-          "ex": {
-            "main": "**Aroma.** The sentence needs a smell good enough to beat an alarm clock — aroma's exact job.",
-            "tip": "On fill-in-the-blank vocab, find what the sentence PROVES is happening (something smellable), then pick the word that means that."
-          }
-        },
-        {
-          "id": "q1",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "The nurse kept her voice bland while explaining the shot, and the nervous kindergartner calmed down. Which meaning of 'bland' is that?",
-          "opts": ["Easily broken", "Lacking a strong flavor", "Not irritating, exciting, or disturbing — deliberately calm", "Hot and moist"],
-          "ans": 2,
-          "hint": "Nobody is tasting the nurse's voice.",
-          "steps": [
-            "Bland has two meanings: weak-flavored, and not-irritating.",
-            "A voice has no flavor, so the food meaning is out.",
-            "The effect in the sentence — a nervous child calming down — is exactly what a soothing, unexciting manner produces. That's the second meaning.",
-            "The workbook's own example is the same move: 'the doctor's bland manner soon calmed the crying child.'"
-          ],
-          "ex": {
-            "main": "**Deliberately calm and unexciting.** When bland describes a person, a voice, or a manner, it means nothing-sharp-in-it — soothing, not tasteless.",
-            "tip": "For multi-meaning words, look at WHAT is being described. Food takes one meaning; people and manners take the other."
-          }
-        },
-        {
-          "id": "q2",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "After the ice storm, the frozen branches were so ___ that they snapped under a sparrow's weight.",
-          "opts": ["tropical", "brittle", "equivalent", "bland"],
-          "ans": 1,
-          "hint": "The branches aren't bending. They're breaking.",
-          "steps": [
-            "Find the clue: the branches SNAP under almost no weight — easily broken.",
-            "Match to the list: brittle means easily broken, not flexible.",
-            "Check the impostors: tropical is equator-hot, equivalent is equal-to, bland is flavorless — none describe snapping."
-          ],
-          "ex": {
-            "main": "**Brittle.** Snaps-under-a-sparrow is the definition acted out: easily broken, no bend in it.",
-            "tip": "Brittle pairs with a snap you can almost hear. If the sentence breaks something cleanly, brittle is circling."
-          }
-        },
-        {
-          "id": "q3",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "In which sentence is 'cluster' used as a VERB?",
-          "opts": ["A cluster of mushrooms appeared by the fence overnight.", "The fans clustered around the team bus, hoping for autographs.", "She photographed a star cluster through the telescope.", "One last cluster of grapes hung on the vine."],
-          "ans": 1,
-          "hint": "The verb is the act of gathering — something people DO.",
-          "steps": [
-            "Recall cluster's two jobs: noun (the group itself) and verb (to gather into a group).",
-            "Test each sentence: 'a cluster of mushrooms', 'a star cluster', 'one last cluster' — each names a thing. Nouns.",
-            "'The fans clustered around the bus' — clustering is what the fans DID. That's the verb."
-          ],
-          "ex": {
-            "main": "**'The fans clustered around the team bus.'** If the word is the action of the sentence, it's the verb; if it names a bunch, it's the noun.",
-            "tip": "Wordly Wise loves noun-or-verb questions. Ask: is the word naming something, or is it what someone is doing?"
-          }
-        },
-        {
-          "id": "q4",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "To make green paint, you ___ blue and yellow.",
-          "opts": ["consume", "extract", "combine", "export"],
-          "ans": 2,
-          "hint": "Two colors go in, one comes out. What happened to them?",
-          "steps": [
-            "Find the clue: two things are being brought together to make one new thing.",
-            "Match to the list: combine means to join or bring together.",
-            "Check the impostors: consume is to use up, extract is to take OUT, export is to ship abroad — only combine puts things together."
-          ],
-          "ex": {
-            "main": "**Combine.** Blue plus yellow is a joining — and the result is a combination, the noun form riding along with the verb.",
-            "tip": "The com- prefix means 'together.' When a sentence merges things, look for a com- word."
-          }
-        },
-        {
-          "id": "q5",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "q": "'Rehearsals for the spring play consumed every afternoon that week.' Which sense of 'consume' is that?",
-          "opts": ["To eat or drink", "To do away with or destroy", "To send to another country", "To use up"],
-          "ans": 3,
-          "hint": "Nothing is being eaten or burned. Something is being spent.",
-          "steps": [
-            "Lay out consume's three senses: use up, eat or drink, destroy.",
-            "Nobody is eating afternoons, and the afternoons aren't destroyed in flames — they were spent on rehearsal.",
-            "Time that gets filled completely is time USED UP — the first sense. The workbook's example is a twin: 'piano practice consumes all of Alex's free time.'",
-            "Watch for this one: the use-up sense is the most common in real writing, and the least obvious from the word's eating roots."
-          ],
-          "ex": {
-            "main": "**To use up.** When consume takes 'time', 'energy', or 'attention' as its object, it means spent-until-gone — no chewing involved.",
-            "tip": "Multi-sense verbs sort by their OBJECT: consume + food = eat; consume + time = use up; consume + by fire = destroy."
-          }
-        },
-        {
-          "id": "q6",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "All through the dusty hike, Dana ___ a cold glass of lemonade — she could almost taste it.",
-          "opts": ["craved", "cultivated", "purchased", "introduced"],
-          "ans": 0,
-          "hint": "This is stronger than wanting. It's wanting with teeth.",
-          "steps": [
-            "Find the clue: she can ALMOST TASTE it — this is a strong desire, not a mild preference.",
-            "Match to the list: crave means to have a strong desire for.",
-            "Check the impostors: cultivate is to grow, purchase is to buy, introduce is to make known — none carry the ache.",
-            "Bonus form: the noun is craving — 'a craving for lemonade' — the desire itself."
-          ],
-          "ex": {
-            "main": "**Craved.** The almost-tasting detail is what separates craving from plain wanting — crave is desire turned up loud.",
-            "tip": "When a sentence dramatizes how MUCH someone wants something, reach past 'want' words for crave."
-          }
-        },
-        {
-          "id": "q7",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "q": "'The coach cultivated patience in her youngest players, praising every calm restart.' What does 'cultivated' mean here?",
-          "opts": ["Prepared land for planting", "Encouraged something to develop by attention", "Harvested a crop", "Removed with great effort"],
-          "ans": 1,
-          "hint": "No dirt in this sentence — but something is still being grown.",
-          "steps": [
-            "Lay out cultivate's three senses: prepare soil, grow plants, encourage development.",
-            "There's no field and no crop here — the thing being grown is patience, a quality inside people.",
-            "Growing a quality by steady attention is the third sense: to encourage development by attention or study.",
-            "The workbook's own example matches: parents cultivating a love of nature by taking kids on hikes."
-          ],
-          "ex": {
-            "main": "**Encouraged to develop.** Cultivate keeps its gardening shape even out of the garden: steady tending, slow growth — just applied to patience instead of tomatoes.",
-            "tip": "When a farming word takes a non-farm object (patience, friendship, a skill), it has climbed to its figurative sense. The metaphor still works underneath."
-          }
-        },
-        {
-          "id": "q8",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "Four quarters are ___ to one dollar.",
-          "opts": ["brittle", "tropical", "combined", "equivalent"],
-          "ans": 3,
-          "hint": "Different shapes, same value.",
-          "steps": [
-            "Find the clue: four quarters and a dollar bill look different but are worth the same.",
-            "Match to the list: equivalent means equal to.",
-            "Check the near-miss: 'combined' is tempting because quarters add up — but the sentence isn't about joining them, it's about their VALUE matching the dollar's."
-          ],
-          "ex": {
-            "main": "**Equivalent.** Equal in value, even when the form differs — coins to a bill, 0.5 to 1/2, a dog year to seven human years.",
-            "tip": "Equivalent is math's favorite adjective. If the sentence compares worth or amount, it beats the join-words."
-          }
-        },
-        {
-          "id": "q9",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "Which of these is an example of EXPORTING?",
-          "opts": ["A family bringing souvenirs home from vacation", "A store buying fruit from a farm across town", "A Brazilian company shipping coffee to Canada for sale", "A warehouse storing grain until winter"],
-          "ans": 2,
-          "hint": "Ex- means out. Goods have to LEAVE a country, for sale.",
-          "steps": [
-            "Pull the requirements from the definition: goods, sent to ANOTHER COUNTRY, for sale.",
-            "Test each option: souvenirs coming home aren't for sale; the farm sale never crosses a border; stored grain goes nowhere.",
-            "Coffee leaving Brazil for Canada, to be sold — goods out of the country for sale. That's exporting, and the coffee itself is an export."
-          ],
-          "ex": {
-            "main": "**The coffee shipped from Brazil to Canada.** Exporting needs a border crossing and a sale — one without the other doesn't count.",
-            "tip": "Export's mirror word is import: the same shipment is an export leaving Brazil and an import arriving in Canada. One event, two viewpoints."
-          }
-        },
-        {
-          "id": "q10",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "q": "In which sentence is 'extract' a NOUN?",
-          "opts": ["The dentist will extract the loose tooth on Friday.", "She extracted the splinter with tweezers.", "Add a spoonful of vanilla extract to the batter.", "The reporters finally extracted the truth."],
-          "ans": 2,
-          "hint": "The noun is the stuff that WAS taken out — and you say it EX-tract.",
-          "steps": [
-            "Recall extract's jobs: verb (to take out, to obtain with effort) and noun (the thing taken out).",
-            "Test each sentence: the dentist WILL extract, she EXTRACTED, reporters EXTRACTED — all actions. Verbs.",
-            "'Vanilla extract' names a thing you can spoon — the flavoring pulled out of vanilla seedpods. That's the noun.",
-            "Say them aloud: the verb is ex-TRACT, the noun is EX-tract. The stress moves when the job changes — same trick as export."
-          ],
-          "ex": {
-            "main": "**'Vanilla extract.'** The noun names what was pulled out; the verb does the pulling. And the accent jumps to the front for the noun — EX-tract, like EX-port.",
-            "tip": "English does this stress-shift on several verb/noun twins: exPORT/EXport, exTRACT/EXtract, reCORD/REcord. Hearing the pattern once unlocks all of them."
-          }
-        },
-        {
-          "id": "q11",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "'The new phone introduced a faster way to pay for groceries.' Which meaning of 'introduce' is that?",
-          "opts": ["To bring into use", "To make known by name", "To write the opening part of a book", "To take out with effort"],
-          "ans": 0,
-          "hint": "Nobody is shaking hands with the phone.",
-          "steps": [
-            "Lay out introduce's senses: make known by name, bring to someone's attention, bring into use.",
-            "No people are being named here, and nothing is being brought to one person's attention — a NEW METHOD is entering the world.",
-            "A new way of doing something arriving for everyone is 'bring into use' — the workbook's example is the airplane introducing a new way of traveling."
-          ],
-          "ex": {
-            "main": "**To bring into use.** When the subject is an invention and the object is 'a new way to…', introduce means the method just entered service.",
-            "tip": "Introduce sorts by object: introduce a PERSON = name them; introduce someone TO something = first taste; introduce a WAY or SYSTEM = bring into use."
-          }
-        },
-        {
-          "id": "q12",
-          "lv": 1,
-          "from": "source",
-          "kind": "mc",
-          "q": "With two years of saved allowance, Priya finally ___ the telescope she'd been reading reviews about.",
-          "opts": ["purchased", "exported", "craved", "clustered"],
-          "ans": 0,
-          "hint": "Saved money, then the money changed hands.",
-          "steps": [
-            "Find the clue: saved allowance plus 'finally' — the money is being spent on the thing.",
-            "Match to the list: purchase means to buy.",
-            "Check the near-miss: she certainly CRAVED the telescope while saving — but the sentence describes the moment of buying, not the wanting. The telescope is now her purchase, the noun form."
-          ],
-          "ex": {
-            "main": "**Purchased.** The buying moment takes the buying word — and what she carried home is 'her purchase,' the same word wearing its noun hat.",
-            "tip": "Several lesson words moonlight as nouns: a purchase, an export, an extract, a cluster. Check which hat the sentence needs."
-          }
-        },
-        {
-          "id": "q13",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "q": "Phoenix sits nowhere near the equator, but during monsoon season the weather report still calls the sticky air 'tropical.' Which meaning is that?",
-          "opts": ["From the regions near the equator", "Hot and moist", "Lacking strong flavor", "Easily broken"],
-          "ans": 1,
-          "hint": "It's about how the air FEELS, not where it came from.",
-          "steps": [
-            "Tropical has two senses: near-the-equator by geography, and hot-and-moist by feel.",
-            "Phoenix's location rules out the geography sense — the sentence says so itself.",
-            "Sticky monsoon air is being described by how it feels: hot and moist. That's the second sense — the workbook's example is Miami's tropical winter weather."
-          ],
-          "ex": {
-            "main": "**Hot and moist.** Weather can be tropical anywhere — the word borrowed the equator's climate and now lends it out to any sticky afternoon.",
-            "tip": "Place-words often split like this: literal (from the place) and borrowed (like the place). Check whether the sentence is about geography or feel."
-          }
-        },
-        {
-          "id": "q14",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "q": "Which word fits BOTH blanks: 'Our win came from a ___ of practice and luck' and 'I forgot the ___ to my bike lock'?",
-          "opts": ["cluster", "craving", "introduction", "combination"],
-          "ans": 3,
-          "hint": "One word covers things-joined-together AND the numbers that open a lock.",
-          "steps": [
-            "Work the first blank: practice and luck JOINED to produce the win — a joining is a combination.",
-            "Work the second blank: the numbers that open a lock are also called a combination — because they only work together, in order.",
-            "Test the others in both blanks: a cluster of practice? an introduction to a bike lock? Each fits one blank at best.",
-            "Only combination covers both — the everyday lock meaning grew straight out of the join-together meaning."
-          ],
-          "ex": {
-            "main": "**Combination.** Both blanks want things-working-together: skills joined for a win, numbers joined to open a lock. One meaning, two costumes.",
-            "tip": "Both-blanks questions are testing whether you know the word's CORE idea, not one memorized sentence. Find the idea that survives both contexts."
-          }
-        }
-      ]
+ "v": 4,
+ "records": {
+  "unit-ww502": {
+   "id": "unit-ww502",
+   "type": "unit",
+   "updatedAt": 1786299404508,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Wordly Wise · Lesson 2",
+   "srcName": "Wordly Wise 3000 Book 5, Lesson 2",
+   "source": "Wordly Wise 3000 Book 5, Lesson 2 (PDF in Drive)",
+   "summary": {
+    "text": "The fifteen words of Wordly Wise 3000 Book 5, Lesson 2: aroma, beverage, bland, brittle, cluster, combine, consume, crave, cultivate, equivalent, export, extract, introduce, purchase, and tropical — including the related forms the book teaches (combination, craving, introduction) and the words that carry more than one meaning.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This lesson is heavy on shape-shifters: consume, cultivate and introduce each carry three meanings, and export and extract even change their sound — the stress moves when they switch from verb to noun. Own the pattern once (EX-port the noun, ex-PORT the verb) and you get two words for the price of one.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Give the meaning of all fifteen Lesson 2 words when they appear in a brand-new sentence.",
+     "from": "source"
+    },
+    {
+     "text": "Tell the multiple meanings apart: consume as use up / eat / destroy, cultivate as farm / grow / encourage, introduce as make known / bring to attention / bring into use.",
+     "from": "source"
+    },
+    {
+     "text": "Spot the verb-noun pairs — export, extract, purchase, cluster, equivalent — and hear the stress shift in export and extract.",
+     "from": "source"
+    },
+    {
+     "text": "Use the related forms — combination, craving, introduction — as comfortably as the base words.",
+     "from": "source"
     }
+   ],
+   "parentNote": {
+    "text": "Built from the Lesson 2 PDF you uploaded to Drive (English → Wordly Wise). Definitions match the workbook; every quiz sentence is fresh, so the workbook's own exercises stay her homework. The high-value pattern this lesson is part-of-speech switching — five of the fifteen words work as both noun and verb, and two of them (export, extract) move their stress when they switch, which is exactly the kind of thing that shows up on quizzes. Food words dominate the list (aroma, beverage, bland, consume, crave), so dinner is a natural place to work them in casually.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first, once through. Then a quiz round a day beats one long session.",
+    "minutes": 16,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "aroma",
+     "def": "**A smell or odor, especially a pleasant one.** (noun)\n• Usually good news: bread baking, popcorn, rain on warm pavement.\n• For a bad smell, English reaches for 'odor' or 'stench' instead.",
+     "hint": "Aroma leans pleasant — your nose is glad to meet one.",
+     "from": "source",
+     "sp": "uh-ROH-muh"
+    },
+    {
+     "id": "c1",
+     "term": "beverage",
+     "def": "**A liquid used as a drink.** (noun)\n• Lemonade, milk, juice, water — if you can drink it, it qualifies.\n• The formal word menus use when they mean 'drinks.'",
+     "hint": "Menus say 'beverages' when they mean drinks.",
+     "from": "source",
+     "sp": "BEV-ur-ij"
+    },
+    {
+     "id": "c2",
+     "term": "bland",
+     "def": "**Lacking a strong flavor.** (adjective)\n• Second meaning: not irritating, exciting, or disturbing — a bland manner, a bland reply.\n• Both meanings share one idea: nothing sharp in it.",
+     "hint": "Bland food and a bland voice have the same problem: no spice.",
+     "from": "source",
+     "sp": "bland"
+    },
+    {
+     "id": "c3",
+     "term": "brittle",
+     "def": "**Easily broken; not flexible.** (adjective)\n• Candy canes, icicles, dry twigs — one snap and done.\n• Opposite territory: flexible, bendy, springy.",
+     "hint": "Brittle things don't bend. They snap.",
+     "from": "source",
+     "sp": "BRIT-ul"
+    },
+    {
+     "id": "c4",
+     "term": "cluster",
+     "def": "**A number of similar things grouped together.** (noun)\n• As a verb: to gather or come together in a group — 'the children clustered around the storyteller.'\n• Grapes grow in clusters; so do stars.",
+     "hint": "Picture a bunch of grapes — that shape is a cluster.",
+     "from": "source",
+     "sp": "KLUS-tur"
+    },
+    {
+     "id": "c5",
+     "term": "combine",
+     "def": "**To join or bring together.** (verb)\n• combination (noun): the joining itself — 'a combination of hard work and good luck.'\n• Oil and vinegar, blue and yellow, two lines into one.",
+     "hint": "Com- means 'together' — combining is bringing together.",
+     "from": "source",
+     "sp": "kum-BYNE"
+    },
+    {
+     "id": "c6",
+     "term": "consume",
+     "def": "**To use up.** (verb)\n• Also: to eat or drink — 'a horse consumes fifty pounds of hay a day.'\n• Also: to do away with or destroy — 'the fire consumed two thousand acres.'\n• Three senses, one engine: something gets used until it's gone.",
+     "hint": "Consumed means gone — whether eaten, spent, or burned.",
+     "from": "source",
+     "sp": "kun-SOOM"
+    },
+    {
+     "id": "c7",
+     "term": "crave",
+     "def": "**To have a strong desire for.** (verb)\n• craving (noun): the strong desire itself — 'a craving for lots of cool water.'\n• Stronger than want — young Abraham Lincoln craved knowledge enough to walk miles for one book.",
+     "hint": "A craving nags at you. Wanting is quieter than craving.",
+     "from": "source",
+     "sp": "krayv"
+    },
+    {
+     "id": "c8",
+     "term": "cultivate",
+     "def": "**To prepare land for the growing of crops.** (verb)\n• Also: to grow or help grow — 'Ana cultivates tomatoes every year.'\n• Also: to encourage something to develop by attention or study — 'cultivate a love of nature.'\n• The word starts in the garden and climbs outward to habits and skills.",
+     "hint": "You can cultivate a field, a tomato, or a habit — soil first, then anything you help grow.",
+     "from": "source",
+     "sp": "KUL-tih-vayt"
+    },
+    {
+     "id": "c9",
+     "term": "equivalent",
+     "def": "**Equal to.** (adjective)\n• As a noun: the thing that IS equal — 'one dog year is the equivalent of seven human years.'\n• 0.5 and 1/2 look different and are equivalent amounts.",
+     "hint": "Equi = equal, valent = value: equal in value.",
+     "from": "source",
+     "sp": "ih-KWIV-uh-lunt"
+    },
+    {
+     "id": "c10",
+     "term": "export",
+     "def": "**To send goods to another country for sale.** (verb)\n• As a noun: the goods themselves — 'grain is an important export of the United States.'\n• Say it both ways: the verb is ex-PORT, the noun is EX-port.",
+     "hint": "Ex- means out. Exports go OUT of the country.",
+     "from": "source",
+     "sp": "ek-SPORT"
+    },
+    {
+     "id": "c11",
+     "term": "extract",
+     "def": "**To remove or take out.** (verb)\n• Also: to obtain with an effort — 'I extracted a promise from them.'\n• As a noun: the thing taken out — vanilla extract comes from vanilla seedpods.\n• Same stress trick as export: the verb is ex-TRACT, the noun is EX-tract.",
+     "hint": "A dentist extracts a tooth; a baker uses vanilla extract — both are 'pulled out.'",
+     "from": "source",
+     "sp": "ek-STRAKT"
+    },
+    {
+     "id": "c12",
+     "term": "introduce",
+     "def": "**To cause to know; to make known by name.** (verb)\n• Also: to bring to someone's attention for the first time — 'they introduced us to scuba diving.'\n• Also: to bring into use — 'the airplane introduced a new way of traveling.'\n• introduction (noun): the making-known — or the part of a book before the main part.",
+     "hint": "Intro- means into. Introducing brings someone INTO knowing.",
+     "from": "source",
+     "sp": "in-truh-DOOSS"
+    },
+    {
+     "id": "c13",
+     "term": "purchase",
+     "def": "**To buy.** (verb)\n• As a noun: the thing bought — or the act of buying itself.\n• The formal cousin of 'buy' — receipts say purchase.",
+     "hint": "Receipts never say 'thanks for buying' — they say 'thank you for your purchase.'",
+     "from": "source",
+     "sp": "PUR-chuss"
+    },
+    {
+     "id": "c14",
+     "term": "tropical",
+     "def": "**Of, from, or similar to the regions near the equator.** (adjective)\n• Second meaning: hot and moist — 'tropical weather,' even far from the equator.\n• Ecuador is tropical by geography; a steamy August afternoon is tropical by feel.",
+     "hint": "Tropical points at the equator first, at the weather second.",
+     "from": "source",
+     "sp": "TRAHP-ih-kul"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The ___ of cinnamon rolls drifted up the stairs and woke the whole house before the alarm did.",
+     "opts": [
+      "aroma",
+      "beverage",
+      "cluster",
+      "extract"
+     ],
+     "ans": 0,
+     "hint": "Which word is the SMELL — and a pleasant one at that?",
+     "steps": [
+      "Find the clue: something is drifting up the stairs and reaching noses — it's a smell.",
+      "Match to the list: aroma means a smell, especially a pleasant one. Cinnamon rolls qualify.",
+      "Check the impostors: a beverage is a drink, a cluster is a group, an extract is something taken out — none of them float upstairs."
+     ],
+     "ex": {
+      "main": "**Aroma.** The sentence needs a smell good enough to beat an alarm clock — aroma's exact job.",
+      "tip": "On fill-in-the-blank vocab, find what the sentence PROVES is happening (something smellable), then pick the word that means that."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "The nurse kept her voice bland while explaining the shot, and the nervous kindergartner calmed down. Which meaning of 'bland' is that?",
+     "opts": [
+      "Easily broken",
+      "Lacking a strong flavor",
+      "Not irritating, exciting, or disturbing — deliberately calm",
+      "Hot and moist"
+     ],
+     "ans": 2,
+     "hint": "Nobody is tasting the nurse's voice.",
+     "steps": [
+      "Bland has two meanings: weak-flavored, and not-irritating.",
+      "A voice has no flavor, so the food meaning is out.",
+      "The effect in the sentence — a nervous child calming down — is exactly what a soothing, unexciting manner produces. That's the second meaning.",
+      "The workbook's own example is the same move: 'the doctor's bland manner soon calmed the crying child.'"
+     ],
+     "ex": {
+      "main": "**Deliberately calm and unexciting.** When bland describes a person, a voice, or a manner, it means nothing-sharp-in-it — soothing, not tasteless.",
+      "tip": "For multi-meaning words, look at WHAT is being described. Food takes one meaning; people and manners take the other."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "After the ice storm, the frozen branches were so ___ that they snapped under a sparrow's weight.",
+     "opts": [
+      "tropical",
+      "brittle",
+      "equivalent",
+      "bland"
+     ],
+     "ans": 1,
+     "hint": "The branches aren't bending. They're breaking.",
+     "steps": [
+      "Find the clue: the branches SNAP under almost no weight — easily broken.",
+      "Match to the list: brittle means easily broken, not flexible.",
+      "Check the impostors: tropical is equator-hot, equivalent is equal-to, bland is flavorless — none describe snapping."
+     ],
+     "ex": {
+      "main": "**Brittle.** Snaps-under-a-sparrow is the definition acted out: easily broken, no bend in it.",
+      "tip": "Brittle pairs with a snap you can almost hear. If the sentence breaks something cleanly, brittle is circling."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In which sentence is 'cluster' used as a VERB?",
+     "opts": [
+      "A cluster of mushrooms appeared by the fence overnight.",
+      "The fans clustered around the team bus, hoping for autographs.",
+      "She photographed a star cluster through the telescope.",
+      "One last cluster of grapes hung on the vine."
+     ],
+     "ans": 1,
+     "hint": "The verb is the act of gathering — something people DO.",
+     "steps": [
+      "Recall cluster's two jobs: noun (the group itself) and verb (to gather into a group).",
+      "Test each sentence: 'a cluster of mushrooms', 'a star cluster', 'one last cluster' — each names a thing. Nouns.",
+      "'The fans clustered around the bus' — clustering is what the fans DID. That's the verb."
+     ],
+     "ex": {
+      "main": "**'The fans clustered around the team bus.'** If the word is the action of the sentence, it's the verb; if it names a bunch, it's the noun.",
+      "tip": "Wordly Wise loves noun-or-verb questions. Ask: is the word naming something, or is it what someone is doing?"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To make green paint, you ___ blue and yellow.",
+     "opts": [
+      "consume",
+      "extract",
+      "combine",
+      "export"
+     ],
+     "ans": 2,
+     "hint": "Two colors go in, one comes out. What happened to them?",
+     "steps": [
+      "Find the clue: two things are being brought together to make one new thing.",
+      "Match to the list: combine means to join or bring together.",
+      "Check the impostors: consume is to use up, extract is to take OUT, export is to ship abroad — only combine puts things together."
+     ],
+     "ex": {
+      "main": "**Combine.** Blue plus yellow is a joining — and the result is a combination, the noun form riding along with the verb.",
+      "tip": "The com- prefix means 'together.' When a sentence merges things, look for a com- word."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "'Rehearsals for the spring play consumed every afternoon that week.' Which sense of 'consume' is that?",
+     "opts": [
+      "To eat or drink",
+      "To do away with or destroy",
+      "To send to another country",
+      "To use up"
+     ],
+     "ans": 3,
+     "hint": "Nothing is being eaten or burned. Something is being spent.",
+     "steps": [
+      "Lay out consume's three senses: use up, eat or drink, destroy.",
+      "Nobody is eating afternoons, and the afternoons aren't destroyed in flames — they were spent on rehearsal.",
+      "Time that gets filled completely is time USED UP — the first sense. The workbook's example is a twin: 'piano practice consumes all of Alex's free time.'",
+      "Watch for this one: the use-up sense is the most common in real writing, and the least obvious from the word's eating roots."
+     ],
+     "ex": {
+      "main": "**To use up.** When consume takes 'time', 'energy', or 'attention' as its object, it means spent-until-gone — no chewing involved.",
+      "tip": "Multi-sense verbs sort by their OBJECT: consume + food = eat; consume + time = use up; consume + by fire = destroy."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "All through the dusty hike, Dana ___ a cold glass of lemonade — she could almost taste it.",
+     "opts": [
+      "craved",
+      "cultivated",
+      "purchased",
+      "introduced"
+     ],
+     "ans": 0,
+     "hint": "This is stronger than wanting. It's wanting with teeth.",
+     "steps": [
+      "Find the clue: she can ALMOST TASTE it — this is a strong desire, not a mild preference.",
+      "Match to the list: crave means to have a strong desire for.",
+      "Check the impostors: cultivate is to grow, purchase is to buy, introduce is to make known — none carry the ache.",
+      "Bonus form: the noun is craving — 'a craving for lemonade' — the desire itself."
+     ],
+     "ex": {
+      "main": "**Craved.** The almost-tasting detail is what separates craving from plain wanting — crave is desire turned up loud.",
+      "tip": "When a sentence dramatizes how MUCH someone wants something, reach past 'want' words for crave."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "'The coach cultivated patience in her youngest players, praising every calm restart.' What does 'cultivated' mean here?",
+     "opts": [
+      "Prepared land for planting",
+      "Encouraged something to develop by attention",
+      "Harvested a crop",
+      "Removed with great effort"
+     ],
+     "ans": 1,
+     "hint": "No dirt in this sentence — but something is still being grown.",
+     "steps": [
+      "Lay out cultivate's three senses: prepare soil, grow plants, encourage development.",
+      "There's no field and no crop here — the thing being grown is patience, a quality inside people.",
+      "Growing a quality by steady attention is the third sense: to encourage development by attention or study.",
+      "The workbook's own example matches: parents cultivating a love of nature by taking kids on hikes."
+     ],
+     "ex": {
+      "main": "**Encouraged to develop.** Cultivate keeps its gardening shape even out of the garden: steady tending, slow growth — just applied to patience instead of tomatoes.",
+      "tip": "When a farming word takes a non-farm object (patience, friendship, a skill), it has climbed to its figurative sense. The metaphor still works underneath."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Four quarters are ___ to one dollar.",
+     "opts": [
+      "brittle",
+      "tropical",
+      "combined",
+      "equivalent"
+     ],
+     "ans": 3,
+     "hint": "Different shapes, same value.",
+     "steps": [
+      "Find the clue: four quarters and a dollar bill look different but are worth the same.",
+      "Match to the list: equivalent means equal to.",
+      "Check the near-miss: 'combined' is tempting because quarters add up — but the sentence isn't about joining them, it's about their VALUE matching the dollar's."
+     ],
+     "ex": {
+      "main": "**Equivalent.** Equal in value, even when the form differs — coins to a bill, 0.5 to 1/2, a dog year to seven human years.",
+      "tip": "Equivalent is math's favorite adjective. If the sentence compares worth or amount, it beats the join-words."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is an example of EXPORTING?",
+     "opts": [
+      "A family bringing souvenirs home from vacation",
+      "A store buying fruit from a farm across town",
+      "A Brazilian company shipping coffee to Canada for sale",
+      "A warehouse storing grain until winter"
+     ],
+     "ans": 2,
+     "hint": "Ex- means out. Goods have to LEAVE a country, for sale.",
+     "steps": [
+      "Pull the requirements from the definition: goods, sent to ANOTHER COUNTRY, for sale.",
+      "Test each option: souvenirs coming home aren't for sale; the farm sale never crosses a border; stored grain goes nowhere.",
+      "Coffee leaving Brazil for Canada, to be sold — goods out of the country for sale. That's exporting, and the coffee itself is an export."
+     ],
+     "ex": {
+      "main": "**The coffee shipped from Brazil to Canada.** Exporting needs a border crossing and a sale — one without the other doesn't count.",
+      "tip": "Export's mirror word is import: the same shipment is an export leaving Brazil and an import arriving in Canada. One event, two viewpoints."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In which sentence is 'extract' a NOUN?",
+     "opts": [
+      "The dentist will extract the loose tooth on Friday.",
+      "She extracted the splinter with tweezers.",
+      "Add a spoonful of vanilla extract to the batter.",
+      "The reporters finally extracted the truth."
+     ],
+     "ans": 2,
+     "hint": "The noun is the stuff that WAS taken out — and you say it EX-tract.",
+     "steps": [
+      "Recall extract's jobs: verb (to take out, to obtain with effort) and noun (the thing taken out).",
+      "Test each sentence: the dentist WILL extract, she EXTRACTED, reporters EXTRACTED — all actions. Verbs.",
+      "'Vanilla extract' names a thing you can spoon — the flavoring pulled out of vanilla seedpods. That's the noun.",
+      "Say them aloud: the verb is ex-TRACT, the noun is EX-tract. The stress moves when the job changes — same trick as export."
+     ],
+     "ex": {
+      "main": "**'Vanilla extract.'** The noun names what was pulled out; the verb does the pulling. And the accent jumps to the front for the noun — EX-tract, like EX-port.",
+      "tip": "English does this stress-shift on several verb/noun twins: exPORT/EXport, exTRACT/EXtract, reCORD/REcord. Hearing the pattern once unlocks all of them."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "'The new phone introduced a faster way to pay for groceries.' Which meaning of 'introduce' is that?",
+     "opts": [
+      "To bring into use",
+      "To make known by name",
+      "To write the opening part of a book",
+      "To take out with effort"
+     ],
+     "ans": 0,
+     "hint": "Nobody is shaking hands with the phone.",
+     "steps": [
+      "Lay out introduce's senses: make known by name, bring to someone's attention, bring into use.",
+      "No people are being named here, and nothing is being brought to one person's attention — a NEW METHOD is entering the world.",
+      "A new way of doing something arriving for everyone is 'bring into use' — the workbook's example is the airplane introducing a new way of traveling."
+     ],
+     "ex": {
+      "main": "**To bring into use.** When the subject is an invention and the object is 'a new way to…', introduce means the method just entered service.",
+      "tip": "Introduce sorts by object: introduce a PERSON = name them; introduce someone TO something = first taste; introduce a WAY or SYSTEM = bring into use."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "With two years of saved allowance, Priya finally ___ the telescope she'd been reading reviews about.",
+     "opts": [
+      "purchased",
+      "exported",
+      "craved",
+      "clustered"
+     ],
+     "ans": 0,
+     "hint": "Saved money, then the money changed hands.",
+     "steps": [
+      "Find the clue: saved allowance plus 'finally' — the money is being spent on the thing.",
+      "Match to the list: purchase means to buy.",
+      "Check the near-miss: she certainly CRAVED the telescope while saving — but the sentence describes the moment of buying, not the wanting. The telescope is now her purchase, the noun form."
+     ],
+     "ex": {
+      "main": "**Purchased.** The buying moment takes the buying word — and what she carried home is 'her purchase,' the same word wearing its noun hat.",
+      "tip": "Several lesson words moonlight as nouns: a purchase, an export, an extract, a cluster. Check which hat the sentence needs."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Phoenix sits nowhere near the equator, but during monsoon season the weather report still calls the sticky air 'tropical.' Which meaning is that?",
+     "opts": [
+      "From the regions near the equator",
+      "Hot and moist",
+      "Lacking strong flavor",
+      "Easily broken"
+     ],
+     "ans": 1,
+     "hint": "It's about how the air FEELS, not where it came from.",
+     "steps": [
+      "Tropical has two senses: near-the-equator by geography, and hot-and-moist by feel.",
+      "Phoenix's location rules out the geography sense — the sentence says so itself.",
+      "Sticky monsoon air is being described by how it feels: hot and moist. That's the second sense — the workbook's example is Miami's tropical winter weather."
+     ],
+     "ex": {
+      "main": "**Hot and moist.** Weather can be tropical anywhere — the word borrowed the equator's climate and now lends it out to any sticky afternoon.",
+      "tip": "Place-words often split like this: literal (from the place) and borrowed (like the place). Check whether the sentence is about geography or feel."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which word fits BOTH blanks: 'Our win came from a ___ of practice and luck' and 'I forgot the ___ to my bike lock'?",
+     "opts": [
+      "cluster",
+      "craving",
+      "introduction",
+      "combination"
+     ],
+     "ans": 3,
+     "hint": "One word covers things-joined-together AND the numbers that open a lock.",
+     "steps": [
+      "Work the first blank: practice and luck JOINED to produce the win — a joining is a combination.",
+      "Work the second blank: the numbers that open a lock are also called a combination — because they only work together, in order.",
+      "Test the others in both blanks: a cluster of practice? an introduction to a bike lock? Each fits one blank at best.",
+      "Only combination covers both — the everyday lock meaning grew straight out of the join-together meaning."
+     ],
+     "ex": {
+      "main": "**Combination.** Both blanks want things-working-together: skills joined for a win, numbers joined to open a lock. One meaning, two costumes.",
+      "tip": "Both-blanks questions are testing whether you know the word's CORE idea, not one memorized sentence. Find the idea that survives both contexts."
+     }
+    }
+   ]
   }
+ }
 }
