@@ -1,0 +1,493 @@
+{
+ "v": 4,
+ "records": {
+  "unit-hist-5ws": {
+   "id": "unit-hist-5ws",
+   "type": "unit",
+   "updatedAt": 1786530144734,
+   "classId": "history",
+   "quarter": 1,
+   "status": "draft",
+   "title": "History · The 5 Ws and Reliable News",
+   "srcName": "History — 5 Ws: Reliable vs Unreliable News (Drive)",
+   "source": "4th Grade History (Drive folder)",
+   "summary": {
+    "text": "From the History extra-practice sheet: the five questions a news report should answer — Who, What, When, Where and Why — and how to judge whether a report can be trusted, using the author, the date, the source it came from, and whether the claim itself is believable.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Almost everything you will read online is written by someone who wants something. Knowing the four quick checks — who wrote it, when, where it was published, and is the claim reasonable — is one of the most useful habits there is, and it takes about ten seconds.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Answer all five Ws about a short news article",
+     "from": "source"
+    },
+    {
+     "text": "Judge a report as reliable or unreliable and give a reason",
+     "from": "source"
+    },
+    {
+     "text": "Notice when one of the five Ws is missing instead of guessing it",
+     "from": "added"
+    },
+    {
+     "text": "Explain why a named author and a date make a report checkable",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the 5 Ws extra-practice sheet in the History folder. It uses the sheet's own two test headlines — the alien story and the kitten rescue — because the contrast between them is the whole lesson. Two ideas go slightly beyond the sheet and are worth talking about: a MISSING W should be named rather than guessed at, and when two sources both look plausible, the next move is checking whether other known outlets report the same thing.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first, then the quiz. Try the four checks on something you read this week.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The 5 Ws",
+     "def": "**Who, What, When, Where and Why — the five questions a news report should answer.**\n• Answer all five and you have understood the story.\n• A report that leaves one out has a hole in it, and the hole is worth noticing.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Who",
+     "def": "**The people the story is about.**\n• In a story about a new playground: the families who came, and the mayor who spoke.\n• Not the reporter — the reporter wrote it, the Who is in it.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "What",
+     "def": "**The thing that happened.**\n• \"A brand-new playground opened.\" One sentence, no extra detail.\n• Say it plainly first; the details belong to the other four questions.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "When",
+     "def": "**The time it happened.**\n• \"This Saturday.\" A date or a day, taken from the article rather than guessed.\n• If the article never says, that is worth noticing too.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Where",
+     "def": "**The place it happened.**\n• \"Lincoln Park.\" As exact as the article makes it.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Why it matters",
+     "def": "**The reason the story is worth reporting at all.**\n• Kids in the area now have a safe place to play.\n• This is the only one of the five that asks you to think rather than to find.",
+     "hint": "Four of the five you FIND in the article. Why-it-matters you WORK OUT.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Reliable source",
+     "def": "**A report you have good reason to trust.**\n• It names a real author, gives a date, and comes from a known news organisation.\n• Reliable does not mean boring — it means checkable.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Unreliable source",
+     "def": "**A report you have good reason to doubt.**\n• No author name, no date, an odd website, or a claim too wild to believe.\n• One warning sign is enough to slow down; several together is a clear answer.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "Author",
+     "def": "**The person who wrote it, named so you can check them.**\n• \"Written by Jane Martin\" can be looked up. \"Anonymous\" cannot.\n• Hiding the author is a choice, and it is worth asking why.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Date",
+     "def": "**When it was published.**\n• A dated report can be checked against what else was happening.\n• No date means you cannot tell whether it is news or years old.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "The source itself",
+     "def": "**Who published it — the newspaper, station or website behind the report.**\n• \"City News Daily\" is a news organisation. \"spacefunnews.biz\" says fun right in the name.\n• Read the web address as part of the evidence.",
+     "hint": "The name of the website is a clue. Read it like you would read a headline.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The 5 Ws are:",
+     "opts": [
+      "Who, What, When, Where and Why",
+      "Who, What, Where, Which and Why",
+      "What, When, Where, Whether and Why",
+      "Who, What, When, Why and How"
+     ],
+     "ans": 0,
+     "hint": "Five questions, all starting with W.",
+     "steps": [
+      "The five questions are Who, What, When, Where and Why.",
+      "Each one asks for a different piece of the story.",
+      "Answer all five and you have understood the report."
+     ],
+     "ex": {
+      "main": "**Who, What, When, Where and Why.** Five questions, and a full report answers all of them.",
+      "tip": "Say them in order every time. The habit is what makes you notice when one is missing."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "\"A brand-new playground opened this Saturday at Lincoln Park.\" Which W does \"at Lincoln Park\" answer?",
+     "opts": [
+      "Where",
+      "When",
+      "What",
+      "Who"
+     ],
+     "ans": 0,
+     "hint": "It names a place.",
+     "steps": [
+      "Where asks for the place something happened.",
+      "\"At Lincoln Park\" names the place.",
+      "\"This Saturday\" would answer When, and the playground opening is the What."
+     ],
+     "ex": {
+      "main": "**Where.** The place is Lincoln Park.",
+      "tip": "Match each phrase in a sentence to its W. One sentence often answers two or three at once."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these makes a news report MORE reliable?",
+     "opts": [
+      "It names the author and gives a date",
+      "It has an exciting headline",
+      "It is very short",
+      "It appears on a colourful website"
+     ],
+     "ans": 0,
+     "hint": "Which one can you actually check?",
+     "steps": [
+      "A reliable report gives you things you can check.",
+      "An author with a name can be looked up; a date can be compared with other reports.",
+      "Excitement, length and colour tell you nothing about whether it is true."
+     ],
+     "ex": {
+      "main": "**Naming the author and the date.** Reliability is about what can be checked, not about how it looks.",
+      "tip": "Ask \"could I check this?\" Excitement is not evidence."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of the 5 Ws asks you to think rather than just find the answer in the article?",
+     "opts": [
+      "Why it matters",
+      "Who",
+      "When",
+      "Where"
+     ],
+     "ans": 0,
+     "hint": "Four are hiding in the text. One is not.",
+     "steps": [
+      "Who, What, When and Where are all stated somewhere in a good article.",
+      "Why it matters usually is not stated — you work it out from what happened.",
+      "That is what makes it the hardest of the five, and the most interesting."
+     ],
+     "ex": {
+      "main": "**Why it matters.** The other four you find; this one you work out.",
+      "tip": "If a question can be answered by pointing at a line, it is a finding question. If not, it needs your thinking."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "An article says: \"Mayor Thompson said, 'We're happy to give kids a safe place to play.'\" Who is the article about?",
+     "opts": [
+      "The families and children using the new playground, and the mayor who opened it",
+      "Only Mayor Thompson",
+      "The reporter who wrote the article",
+      "The city workers who were paid for the project"
+     ],
+     "ans": 0,
+     "hint": "Who is the story ABOUT, not who is quoted in it.",
+     "steps": [
+      "Who asks about the people the story concerns.",
+      "The story concerns the families and children who gathered to use the playground.",
+      "The mayor appears too, as the person who opened it and spoke.",
+      "A reporter writes the story but is not in it."
+     ],
+     "ex": {
+      "main": "**The families and children, plus the mayor.** A quote makes someone part of the story, not the whole of it.",
+      "tip": "Careful with Who: the loudest voice in an article is not always what the article is about."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Article A: \"Aliens Land on School Roof and Eat Lunch in Cafeteria!\" — Anonymous, no date, from www.spacefunnews.biz. Is it reliable?",
+     "opts": [
+      "No — no author, no date, a joke website, and an unbelievable claim",
+      "Yes — it gives a specific location, so it can be checked",
+      "Yes — the headline is very detailed",
+      "It cannot be judged without reading the whole article"
+     ],
+     "ans": 0,
+     "hint": "Count the warning signs.",
+     "steps": [
+      "No author is named, so nobody can be checked.",
+      "There is no date, so you cannot tell when or whether it happened.",
+      "The web address says \"spacefunnews\" — fun, not news.",
+      "And the claim itself is extraordinary. Four warning signs together is a clear answer."
+     ],
+     "ex": {
+      "main": "**No — four warning signs at once.** No author, no date, a joke source, and a wild claim.",
+      "tip": "One warning sign means slow down. Several together means you already have your answer."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Article B: \"Local Firefighters Rescue Kitten From Tree\" — Jane Martin, August 4 2025, City News Daily. Is it reliable?",
+     "opts": [
+      "Yes — a named author, a date, a real news source, and an ordinary claim",
+      "No — a kitten in a tree is too small to be real news",
+      "No — one newspaper is not enough to prove anything",
+      "Only if another newspaper reports the same thing"
+     ],
+     "ans": 0,
+     "hint": "Check the same four things you used on the alien story.",
+     "steps": [
+      "The author is named: Jane Martin, someone who can be looked up.",
+      "The date is given: August 4, 2025.",
+      "City News Daily is a news organisation, not a joke site.",
+      "And the event is ordinary — nothing about it demands extra proof."
+     ],
+     "ex": {
+      "main": "**Yes — it passes all four checks.** Named author, clear date, real source, believable claim.",
+      "tip": "Small stories can be perfectly reliable. Importance and reliability are different questions."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A report answers Who, What, Where and Why, but never says when it happened. What should you do?",
+     "opts": [
+      "Notice the gap and treat the report as incomplete until you find the date",
+      "Assume it happened today",
+      "Decide the whole report is false",
+      "Ignore it — four out of five is close enough"
+     ],
+     "ans": 0,
+     "hint": "A missing W is information too.",
+     "steps": [
+      "A complete report answers all five questions.",
+      "A missing When means you cannot tell whether this is news or years old.",
+      "That does not make it false — but it does make it incomplete, and worth checking.",
+      "Assuming a date would be inventing information, which is worse than noticing it is absent."
+     ],
+     "ex": {
+      "main": "**Notice the gap and go looking.** Missing is not the same as false, but it is worth knowing.",
+      "tip": "Never fill a missing W with a guess. Say \"the article does not say\" — that is the honest answer."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two websites report the same fire. One is \"City News Daily\", the other \"realtruthnews.fun\". Both name an author and a date. What should you check next?",
+     "opts": [
+      "Whether other known news sources report the same thing",
+      "Which headline is more exciting",
+      "Which website loads faster",
+      "Which article is longer"
+     ],
+     "ans": 0,
+     "hint": "They pass the same first checks. What separates them?",
+     "steps": [
+      "Both have an author and a date, so those checks do not separate them.",
+      "The web addresses differ in character, but a name alone is not proof either way.",
+      "The strongest next step is to see whether other established news sources report the same event.",
+      "Agreement across independent sources is much harder to fake than one convincing-looking page."
+     ],
+     "ex": {
+      "main": "**Check whether other known sources report it too.** Independent agreement is the strongest signal you can get.",
+      "tip": "When the easy checks tie, look for a second source. One report is a claim; several independent ones are evidence."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does a reliable news report name its author instead of publishing anonymously?",
+     "opts": [
+      "So readers can check who wrote it and hold them responsible for getting it right",
+      "So the article looks longer",
+      "Because it is a legal requirement everywhere",
+      "So the newspaper can charge more for it"
+     ],
+     "ans": 0,
+     "hint": "What can you do with a name that you cannot do without one?",
+     "steps": [
+      "A named author can be looked up — what else they have written, and whether it held up.",
+      "It also means someone has put their reputation behind the report.",
+      "Anonymity removes both: nobody to check, and nobody answerable if it is wrong.",
+      "That is why \"Anonymous\" is a warning sign rather than a neutral detail."
+     ],
+     "ex": {
+      "main": "**So readers can check them and they are answerable for getting it right.** A name is accountability.",
+      "tip": "Ask what a detail lets you DO. A name lets you check and hold responsible; that is why it matters."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does the \"What\" question ask for?",
+     "opts": [
+      "The thing that happened",
+      "The people involved",
+      "The reason it matters",
+      "The place it happened"
+     ],
+     "ans": 0,
+     "hint": "Say the event plainly, in one sentence.",
+     "steps": [
+      "What asks for the event itself.",
+      "\"A brand-new playground opened\" is the What.",
+      "People are the Who, the reason is the Why, the place is the Where."
+     ],
+     "ex": {
+      "main": "**The thing that happened.** Say it in one plain sentence and save the details for the other questions.",
+      "tip": "Answer What first. Once the event is clear, the other four fall into place around it."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A website address ends in \".biz\" and includes the word \"fun\". Why is that worth noticing?",
+     "opts": [
+      "The name is a clue about what the site is for",
+      "Only .com websites are ever real",
+      "Long addresses are always false",
+      "It means the site is new"
+     ],
+     "ans": 0,
+     "hint": "Read the address like a headline.",
+     "steps": [
+      "A web address often says something about the publisher.",
+      "\"spacefunnews.biz\" puts fun in the middle of its own name.",
+      "That is a clue, not a proof — but it is worth reading before you trust the page.",
+      "Plenty of trustworthy sites use unusual endings, so it is one signal among several."
+     ],
+     "ex": {
+      "main": "**The name is a clue about what the site is for.** One signal, read alongside the author, the date and the claim.",
+      "tip": "No single check settles it. Stack them: author, date, source, and is the claim believable."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A friend shows you a headline with no author and no date, but it says something you already believe. What should you do?",
+     "opts": [
+      "Apply the same checks you would to anything else",
+      "Trust it, because it matches what you know",
+      "Reject it immediately for having no author",
+      "Share it and let others decide"
+     ],
+     "ans": 0,
+     "hint": "Does agreeing with a story make it better evidence?",
+     "steps": [
+      "The checks do not change based on whether you like the answer.",
+      "Agreeing with a claim is not evidence that it is true.",
+      "A missing author and date are still missing, so the report is still unchecked.",
+      "That does not make it false either — it means it needs checking, exactly like any other story."
+     ],
+     "ex": {
+      "main": "**Apply the same checks.** A story agreeing with you deserves the same scrutiny, not less.",
+      "tip": "The hardest source to question is the one you already agree with. That is exactly when to slow down."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "An article about the playground never explains why the story matters. How would you answer that W?",
+     "opts": [
+      "Work it out: children in the area now have a safe place to play",
+      "Write \"the article does not say\" and stop",
+      "Copy the headline as the answer",
+      "Say the story does not matter at all"
+     ],
+     "ans": 0,
+     "hint": "Why-it-matters is the one you work out rather than find.",
+     "steps": [
+      "Four of the five Ws are found in the text; Why it matters usually is not.",
+      "You reason from what happened: a new playground was built for local families.",
+      "So the significance is that children in the area now have somewhere safe to play.",
+      "That reasoning is the answer — unlike a missing date, this W is meant to be worked out."
+     ],
+     "ex": {
+      "main": "**Work it out from what happened.** This is the one W you supply rather than find.",
+      "tip": "A missing DATE you report as missing. A missing WHY you reason your way to. Know which is which."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Both a reliable and an unreliable article can have an exciting headline. What does that tell you about using headlines to judge a source?",
+     "opts": [
+      "Headlines are written to attract readers, so they say little about reliability",
+      "Exciting headlines always mean a story is false",
+      "Dull headlines are always more reliable",
+      "Headlines are the best single test of a source"
+     ],
+     "ans": 0,
+     "hint": "What is a headline actually FOR?",
+     "steps": [
+      "A headline exists to make you want to read the article.",
+      "Both careful reporters and careless ones want readers, so both write attention-grabbing headlines.",
+      "Because it does not separate the two, a headline is weak evidence about reliability.",
+      "The author, the date and the publisher are far more useful, because they can be checked."
+     ],
+     "ex": {
+      "main": "**Headlines are built to attract readers, so they barely help.** Judge by what can be checked instead.",
+      "tip": "When a signal appears equally in true and false reports, it cannot tell them apart. Find a signal that can."
+     }
+    }
+   ]
+  }
+ }
+}
