@@ -4,7 +4,7 @@
   "unit-m1r": {
    "id": "unit-m1r",
    "type": "unit",
-   "updatedAt": 1786292732325,
+   "updatedAt": 1786629245318,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -672,7 +672,9 @@
       "tip": "Work the rule before trusting your gut — 340,512 FEELS like it belongs to 340,000, and the 5 says otherwise."
      }
     }
-   ]
+   ],
+   "capstone": true,
+   "libv": 1
   }
  }
 }

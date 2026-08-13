@@ -4,7 +4,7 @@
   "unit-m2r": {
    "id": "unit-m2r",
    "type": "unit",
-   "updatedAt": 1786292732329,
+   "updatedAt": 1786629245320,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -672,7 +672,9 @@
       "tip": "Always-claims lose at the boundaries: ties, self-cases, empty cases. Check those first, in math and everywhere."
      }
     }
-   ]
+   ],
+   "capstone": true,
+   "libv": 1
   }
  }
 }
