@@ -1,0 +1,475 @@
+<meta charset="utf-8">
+<title>Wayfinder Playtest</title>
+<style>
+/* ------------------------------------------------------------------
+   Wayfinder prototype — two mechanics, playable, before either is built.
+   Palette and type are the app's own tokens, not a new identity: the point
+   is to judge the MECHANIC against the app she already has.
+   Dev artifact. Not linked from the app, not in the service worker shell.
+   ------------------------------------------------------------------ */
+
+/* Dark is the identity here — the starfield only exists in dark — so the
+   complete palette lives on bare :root and light is the override. */
+:root{
+  --ink:#120a20; --deep:#1b1030; --surface:#22163b; --raised:#2e1d4d;
+  --line:#452a68; --line-soft:#352050;
+  --text:#f4ecfa; --muted:#b9a6d0; --faint:#9683ac;
+  --ac:#f78ac8; --ac-fg:#f78ac8;
+  --gold:#f2ca63; --good:#6fe0b8;
+  --ac-8:color-mix(in srgb, var(--ac) 8%, transparent);
+  --ac-14:color-mix(in srgb, var(--ac) 14%, transparent);
+  --ac-25:color-mix(in srgb, var(--ac) 25%, transparent);
+  --stars:radial-gradient(1.4px 1.4px at 12% 14%,rgba(255,255,255,.55),transparent),
+          radial-gradient(1px 1px at 68% 8%,rgba(255,214,240,.5),transparent),
+          radial-gradient(1.6px 1.6px at 34% 40%,rgba(226,190,255,.45),transparent),
+          radial-gradient(1px 1px at 84% 29%,rgba(255,255,255,.4),transparent),
+          radial-gradient(1px 1px at 22% 63%,rgba(255,214,240,.35),transparent),
+          radial-gradient(1.4px 1.4px at 91% 70%,rgba(226,190,255,.38),transparent),
+          radial-gradient(1px 1px at 55% 86%,rgba(255,255,255,.34),transparent),
+          radial-gradient(1px 1px at 7% 89%,rgba(255,214,240,.3),transparent);
+  --tap:48px; --r:20px;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --ink:#faf5fc; --deep:#ffffff; --surface:#ffffff; --raised:#f3ecf8;
+    --line:#e2d3ec; --line-soft:#ede3f3;
+    --text:#2a1240; --muted:#6f5788; --faint:#78628b;
+    --ac-fg:#b43d85; --gold:#9a6b00; --good:#0f7a58;
+    --stars:none;
+  }
+}
+:root[data-theme="light"]{
+  --ink:#faf5fc; --deep:#ffffff; --surface:#ffffff; --raised:#f3ecf8;
+  --line:#e2d3ec; --line-soft:#ede3f3;
+  --text:#2a1240; --muted:#6f5788; --faint:#78628b;
+  --ac-fg:#b43d85; --gold:#9a6b00; --good:#0f7a58;
+  --stars:none;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ink); background-image:var(--stars);
+  color:var(--text); font-size:16px; line-height:1.55;
+  font-family:'Plus Jakarta Sans',ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;
+  padding:28px 18px 72px;
+}
+.wrap{max-width:940px; margin:0 auto; display:flex; flex-direction:column; gap:38px}
+
+h1{font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:clamp(28px,6vw,40px);
+   margin:0; line-height:1.15; text-wrap:balance}
+h2{font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:23px; margin:0;
+   text-wrap:balance}
+h3{font-family:'Fraunces',Georgia,serif; font-weight:600; font-size:17px; margin:0}
+p{margin:0}
+.lede{color:var(--muted); max-width:60ch}
+.eyebrow{font-size:10.5px; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--ac-fg); font-weight:700}
+
+.spec{display:flex; flex-direction:column; gap:16px}
+.spechead{display:flex; flex-direction:column; gap:7px}
+.note{color:var(--faint); font-size:13.5px; max-width:62ch}
+
+/* the phone-width frame both mocks live in */
+.frame{width:100%; max-width:392px; margin:0 auto; background:var(--deep);
+  border:1px solid var(--line); border-radius:26px; padding:16px;
+  box-shadow:0 18px 46px rgba(0,0,0,.42)}
+:root[data-theme="light"] .frame,
+:root:not([data-theme="dark"]) .frame{box-shadow:0 12px 34px rgba(80,40,110,.14)}
+.card{background:var(--surface); border:1px solid var(--line-soft);
+  border-radius:var(--r); padding:17px}
+
+/* ---------------- A. the round bar ---------------- */
+.band{display:block; width:100%; height:78px; overflow:visible}
+.band .seg{stroke:var(--gold); stroke-width:1.6; fill:none; opacity:.75;
+  stroke-linecap:round}
+.band .seg.miss{stroke:var(--muted); opacity:.5}
+.band .halo{fill:var(--gold); opacity:0}
+.band .star{fill:var(--line); transition:fill .35s ease}
+.band .star.lit{fill:var(--gold)}
+.band .star.dim{fill:var(--muted)}
+.band .star.now{fill:var(--ac)}
+@media (prefers-reduced-motion: no-preference){
+  .band .seg{stroke-dasharray:1; stroke-dashoffset:1; animation:draw .5s ease forwards}
+  .band .star.lit{animation:pop .45s ease}
+  .band .halo.on{animation:halo .7s ease forwards}
+}
+@keyframes draw{to{stroke-dashoffset:0}}
+@keyframes pop{0%{transform:scale(.4)}60%{transform:scale(1.35)}100%{transform:scale(1)}}
+@keyframes halo{0%{opacity:.5; r:3}100%{opacity:0; r:15}}
+
+.qmeta{display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  margin-bottom:3px}
+.qtext{font-size:17px; line-height:1.45; margin:12px 0 14px; text-wrap:balance}
+.opt{display:flex; align-items:center; gap:11px; width:100%; min-height:var(--tap);
+  padding:12px 14px; margin-bottom:9px; border:1px solid var(--line);
+  border-radius:14px; background:var(--deep); color:var(--text);
+  font:inherit; font-size:15px; text-align:left; cursor:pointer;
+  transition:border-color .15s, background .15s}
+.opt:hover:not(:disabled){border-color:var(--ac-25)}
+.opt:focus-visible{outline:2px solid var(--ac-fg); outline-offset:2px}
+.opt:disabled{cursor:default}
+.opt .ltr{flex:0 0 24px; height:24px; border-radius:7px; background:var(--raised);
+  color:var(--muted); font-size:12px; font-weight:700; display:flex;
+  align-items:center; justify-content:center}
+.opt.right{border-color:var(--good); background:color-mix(in srgb,var(--good) 12%,transparent)}
+.opt.right .ltr{background:var(--good); color:#06251b}
+.opt.wrong{border-color:var(--ac); background:var(--ac-8)}
+.verdict{font-size:14px; color:var(--muted); margin-top:4px; min-height:1.5em}
+.verdict b{color:var(--text); font-weight:600}
+
+.shapeout{margin-top:14px; padding:13px 15px; border-radius:15px;
+  background:var(--ac-8); border:1px solid var(--ac-25)}
+.shapeout .nm{font-family:'Fraunces',Georgia,serif; font-size:19px; font-weight:600}
+.shapeout .sub{font-size:13.5px; color:var(--muted); margin-top:3px}
+
+/* ---------------- B. the topic map ---------------- */
+.map{position:relative; padding:8px 0 4px; display:flex; flex-direction:column; gap:2px}
+.map::before{content:''; position:absolute; left:50%; top:16px; bottom:16px; width:2px;
+  margin-left:-1px; background:linear-gradient(to bottom,transparent,var(--line) 10%,
+  var(--line) 90%,transparent)}
+.stop{display:grid; grid-template-columns:1fr 44px 1fr; align-items:center;
+  gap:10px; padding:7px 0}
+.stop .pip{grid-column:2; justify-self:center}
+.stop .stopbody{grid-column:1; text-align:right}
+.stop:nth-child(even) .stopbody{grid-column:3; text-align:left}
+.pip{width:40px; height:40px; border-radius:50%; border:2px solid var(--line);
+  background:var(--deep); display:flex; align-items:center; justify-content:center;
+  font-size:13px; font-weight:700; color:var(--faint); position:relative; z-index:1}
+.pip.part{border-color:var(--ac-25); color:var(--ac-fg)}
+.pip.done{border-color:var(--gold); background:var(--gold); color:#2a1c00}
+.stopbody{flex:1; min-width:0}
+.stopbody .t{font-size:14px; font-weight:600; line-height:1.35}
+.stop.dimmed .t{color:var(--muted)}
+.stopbody .s{font-size:11.5px; color:var(--faint); margin-top:2px}
+.bar{height:4px; border-radius:2px; background:var(--line-soft); margin-top:6px;
+  overflow:hidden; max-width:130px; margin-left:auto}
+.stop:nth-child(even) .bar{margin-left:0; margin-right:auto}
+.bar i{display:block; height:100%; background:var(--ac); border-radius:2px;
+  transition:width .5s ease}
+.stop.rev .pip{border-style:dashed}
+
+.crest{display:flex; align-items:center; gap:13px; margin-top:14px; padding:14px;
+  border-radius:16px; border:1px solid var(--line); background:var(--deep)}
+.crest.won{border-color:var(--gold); background:color-mix(in srgb,var(--gold) 10%,transparent)}
+.crest .sig{flex:0 0 46px; height:46px; border-radius:50%; border:2px solid var(--line);
+  display:flex; align-items:center; justify-content:center; font-size:21px;
+  filter:grayscale(1) opacity(.6)}
+.crest.won .sig{border-color:var(--gold); filter:none}
+.crest .ct{font-family:'Fraunces',Georgia,serif; font-size:16px; font-weight:600}
+.crest .cs{font-size:12.5px; color:var(--faint); margin-top:2px}
+
+/* ---------------- controls ---------------- */
+.ctrls{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-top:14px}
+.chip{min-height:44px; padding:9px 16px; border-radius:999px; border:1px solid var(--line);
+  background:transparent; color:var(--muted); font:inherit; font-size:13.5px;
+  font-weight:600; cursor:pointer}
+.chip:hover{border-color:var(--ac-25); color:var(--text)}
+.chip:focus-visible{outline:2px solid var(--ac-fg); outline-offset:2px}
+.chip.on{border-color:var(--ac); background:var(--ac-8); color:var(--text)}
+
+.tail{border-top:1px solid var(--line-soft); padding-top:22px;
+  display:flex; flex-direction:column; gap:12px}
+.tail ul{margin:0; padding-left:20px; color:var(--muted); display:flex;
+  flex-direction:column; gap:7px; max-width:62ch}
+.tail b{color:var(--text)}
+</style>
+
+<div class="wrap">
+  <header class="spechead">
+    <span class="eyebrow">Wayfinder · prototype</span>
+    <h1>Two ideas for the quizzes</h1>
+    <p class="lede">Both of these are playable. Nothing here is in the app yet —
+      try them and say which is worth building.</p>
+  </header>
+
+  <!-- ============================ A ============================ -->
+  <section class="spec">
+    <div class="spechead">
+      <span class="eyebrow">Idea one</span>
+      <h2>The round draws a constellation</h2>
+      <p class="note">Every question is a star. Answering lights it and draws
+        the line to the last one, so by the end of the round you have made a
+        shape. Get one wrong and the star still lights, just dimmer — nothing
+        breaks, and nothing is taken away.</p>
+    </div>
+
+    <div class="frame">
+      <div class="card">
+        <div class="qmeta">
+          <span class="eyebrow">Topic 2 · 2-3 Add Whole Numbers</span>
+          <span class="eyebrow" id="qcount" style="color:var(--faint)"></span>
+        </div>
+        <svg class="band" id="band" viewBox="0 0 320 78" aria-hidden="true"></svg>
+        <p class="qtext" id="qtext"></p>
+        <div id="opts"></div>
+        <p class="verdict" id="verdict"></p>
+        <div id="shape"></div>
+      </div>
+    </div>
+
+    <div class="ctrls">
+      <button class="chip" id="again" type="button">Start the round again</button>
+    </div>
+  </section>
+
+  <!-- ============================ B ============================ -->
+  <section class="spec">
+    <div class="spechead">
+      <span class="eyebrow">Idea two</span>
+      <h2>The topic map</h2>
+      <p class="note">A topic is seven lessons and a review — a finish line you
+        can actually see. Each stop fills in as you meet its questions. Nothing
+        is locked: you can open any lesson whenever you like, the map just
+        shows where you have been.</p>
+    </div>
+
+    <div class="frame">
+      <div class="card">
+        <div class="qmeta">
+          <span class="eyebrow">Accelerated Math</span>
+        </div>
+        <h3 style="margin:2px 0 4px">Topic 2 · Add and Subtract Whole Numbers</h3>
+        <p class="note" id="mapstate" style="margin-bottom:6px"></p>
+        <div class="map" id="map"></div>
+        <div class="crest" id="crest">
+          <span class="sig">🌸</span>
+          <div>
+            <div class="ct">Topic 2 crest</div>
+            <div class="cs" id="crestsub"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ctrls" id="mapctrls"></div>
+  </section>
+
+  <!-- ============================ note ============================ -->
+  <section class="tail">
+    <span class="eyebrow">For Chris — what these deliberately are not</span>
+    <ul>
+      <li><b>Nothing is currency.</b> No points to spend, no shop, nothing
+        unlockable. The crest records that a topic happened; it cannot be
+        bought or traded.</li>
+      <li><b>Nothing breaks.</b> A missed question still lights its star, and a
+        half-finished topic just sits there. There is no streak to lose and no
+        disappointed face.</li>
+      <li><b>Neither rewards time spent</b>, which would quietly reward
+        dawdling. Both reward finishing something and coming back.</li>
+      <li><b>Both are derived from records the app already writes</b> — question
+        coverage and round results. No new counters, nothing extra to sync.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+/* ---------------------------------------------------------------- A ---- */
+const QS = [
+  {q:'What is 3,482 + 2,619?', o:['5,091','6,101','6,001','5,101'], a:1,
+   why:'Adding the hundreds carries into the thousands: 3,482 + 2,619 = 6,101.'},
+  {q:'Round 47,318 to the nearest thousand.', o:['47,000','48,000','47,300','50,000'], a:0,
+   why:'The hundreds digit is 3, which is below 5, so the thousands stay at 47.'},
+  {q:'What is 8,000 − 3,465?', o:['4,535','5,535','4,645','5,445'], a:0,
+   why:'Subtracting across the zeros: 8,000 − 3,465 = 4,535.'},
+  {q:'Estimate 6,203 + 3,891 by rounding each to the nearest thousand.', o:['9,000','11,000','10,000','12,000'], a:2,
+   why:'6,203 rounds to 6,000 and 3,891 rounds to 4,000, so the estimate is 10,000.'},
+  {q:'Which number has a 7 in the ten-thousands place?', o:['107,204','470,912','27,940','718,003'], a:1,
+   why:'In 470,912 the digits read 4 hundred-thousands, 7 ten-thousands, 0 thousands.'},
+  {q:'What is 12,405 − 9,876?', o:['3,529','2,529','2,629','3,429'], a:1,
+   why:'12,405 − 9,876 = 2,529. Regrouping runs through every column.'},
+  {q:'A library had 15,240 books and added 3,875 more. How many now?', o:['18,015','19,115','19,015','18,115'], a:3,
+   why:'15,240 + 3,875 = 19,115.'},
+  {q:'Which sum is greater than 20,000?', o:['9,850 + 9,900','11,300 + 8,600','12,400 + 7,500','10,700 + 9,450'], a:3,
+   why:'10,700 + 9,450 = 20,150, the only one that passes 20,000.'}
+];
+/* Star positions, hand-placed so the finished line reads as a constellation
+   rather than a dotted rule. */
+const PTS = [[20,50],[62,26],[100,56],[142,32],[180,54],[218,22],[258,44],[300,28]];
+const SVGNS = 'http://www.w3.org/2000/svg';
+const band = document.getElementById('band');
+const qtext = document.getElementById('qtext');
+const optbox = document.getElementById('opts');
+const verdict = document.getElementById('verdict');
+const shapebox = document.getElementById('shape');
+const qcount = document.getElementById('qcount');
+let at = 0, results = [];
+
+const svg = (t, attrs) => { const n = document.createElementNS(SVGNS, t);
+  for(const k in attrs) n.setAttribute(k, attrs[k]); return n; };
+
+function starPath(cx, cy, r){
+  /* four-point sparkle, the same mark the app uses for a lit day */
+  const i = r * 0.34;
+  return `M${cx} ${cy-r} Q${cx+i} ${cy-i} ${cx+r} ${cy}` +
+         ` Q${cx+i} ${cy+i} ${cx} ${cy+r} Q${cx-i} ${cy+i} ${cx-r} ${cy}` +
+         ` Q${cx-i} ${cy-i} ${cx} ${cy-r} Z`;
+}
+
+function drawBand(){
+  band.textContent = '';
+  /* segments first so the stars sit on top of the line */
+  for(let i = 1; i < PTS.length; i++){
+    if(results[i-1] == null || results[i] == null) continue;
+    const [x1,y1] = PTS[i-1], [x2,y2] = PTS[i];
+    const seg = svg('line', {x1, y1, x2, y2, class:'seg' + (results[i] ? '' : ' miss'),
+      pathLength:1});
+    band.appendChild(seg);
+  }
+  PTS.forEach(([cx,cy], i) => {
+    if(results[i] != null){
+      band.appendChild(svg('circle', {cx, cy, r:3, class:'halo on'}));
+    }
+    const cls = results[i] == null ? (i === at ? 'star now' : 'star')
+      : (results[i] ? 'star lit' : 'star dim');
+    const s = svg('path', {d: starPath(cx, cy, results[i] != null ? 7 : 4.5), class: cls});
+    s.style.transformOrigin = `${cx}px ${cy}px`;
+    band.appendChild(s);
+  });
+}
+
+function renderQ(){
+  const done = at >= QS.length;
+  qcount.textContent = done ? 'round complete' : `${at + 1} of ${QS.length}`;
+  drawBand();
+  if(done){
+    qtext.textContent = '';
+    optbox.textContent = '';
+    verdict.textContent = '';
+    const right = results.filter(Boolean).length;
+    shapebox.textContent = '';
+    const box = document.createElement('div');
+    box.className = 'shapeout';
+    const nm = document.createElement('div');
+    nm.className = 'nm'; nm.textContent = 'You drew The Otter';
+    const sub = document.createElement('div');
+    sub.className = 'sub';
+    sub.textContent = `${right} of ${QS.length} met on the first try. Every star is lit — the round is finished.`;
+    box.appendChild(nm); box.appendChild(sub);
+    shapebox.appendChild(box);
+    return;
+  }
+  shapebox.textContent = '';
+  const q = QS[at];
+  qtext.textContent = q.q;
+  optbox.textContent = '';
+  verdict.textContent = '';
+  q.o.forEach((text, k) => {
+    const b = document.createElement('button');
+    b.type = 'button'; b.className = 'opt';
+    const ltr = document.createElement('span');
+    ltr.className = 'ltr'; ltr.textContent = String.fromCharCode(65 + k);
+    const tx = document.createElement('span'); tx.textContent = text;
+    b.appendChild(ltr); b.appendChild(tx);
+    b.addEventListener('click', () => pick(k));
+    optbox.appendChild(b);
+  });
+}
+
+function pick(k){
+  const q = QS[at];
+  const right = k === q.a;
+  results[at] = right;
+  [...optbox.children].forEach((b, i) => {
+    b.disabled = true;
+    if(i === q.a) b.classList.add('right');
+    else if(i === k) b.classList.add('wrong');
+  });
+  verdict.textContent = '';
+  const lead = document.createElement('b');
+  lead.textContent = right ? 'That is it. ' : 'Not this time. ';
+  verdict.appendChild(lead);
+  verdict.appendChild(document.createTextNode(q.why));
+  drawBand();
+  setTimeout(() => { at++; renderQ(); }, right ? 900 : 2100);
+}
+
+document.getElementById('again').addEventListener('click', () => {
+  at = 0; results = []; renderQ();
+});
+renderQ();
+
+/* ---------------------------------------------------------------- B ---- */
+const LESSONS = [
+  '2-1 Mental Math: Add and Subtract',
+  '2-2 Estimate Sums and Differences',
+  '2-3 Add Whole Numbers',
+  '2-4 Add Greater Numbers',
+  '2-5 Subtract Whole Numbers',
+  '2-6 Subtract Greater Numbers',
+  '2-7 Subtract Across Zeros'
+];
+/* coverage per stop, 0..1 — the same thing unitDone() already derives from
+   qstat: how many of a lesson's questions she has met at least once. */
+const STATES = {
+  fresh:   {cov:[0,0,0,0,0,0,0], rev:0,
+            line:'Nothing met yet. Seven lessons, then the review.'},
+  partway: {cov:[1,1,1,.6,0,0,0], rev:0,
+            line:'Three lessons done, one part-way. Four stops to go.'},
+  nearly:  {cov:[1,1,1,1,1,1,1], rev:0,
+            line:'Every lesson met. The review is the last stop.'},
+  done:    {cov:[1,1,1,1,1,1,1], rev:1,
+            line:'Topic finished — lessons and review both.'}
+};
+let mapState = 'partway';
+const mapEl = document.getElementById('map');
+const crestEl = document.getElementById('crest');
+
+function renderMap(){
+  const st = STATES[mapState];
+  document.getElementById('mapstate').textContent = st.line;
+  mapEl.textContent = '';
+
+  const stops = LESSONS.map((t, i) => ({t, cov: st.cov[i], rev: false}))
+    .concat([{t:'Topic Review', cov: st.rev, rev: true}]);
+
+  stops.forEach((s, i) => {
+    const row = document.createElement('div');
+    row.className = 'stop' + (s.cov === 0 ? ' dimmed' : '') + (s.rev ? ' rev' : '');
+    const pip = document.createElement('span');
+    pip.className = 'pip' + (s.cov >= 1 ? ' done' : s.cov > 0 ? ' part' : '');
+    pip.textContent = s.rev ? '★' : (s.cov >= 1 ? '✦' : String(i + 1));
+    const body = document.createElement('div');
+    body.className = 'stopbody';
+    const t = document.createElement('div');
+    t.className = 't'; t.textContent = s.t;
+    const sub = document.createElement('div');
+    sub.className = 's';
+    sub.textContent = s.cov >= 1 ? 'every question met'
+      : s.cov > 0 ? Math.round(s.cov * 10) + ' of 10 met' : 'not yet';
+    body.appendChild(t); body.appendChild(sub);
+    if(s.cov > 0 && s.cov < 1){
+      const bar = document.createElement('div');
+      bar.className = 'bar';
+      const fill = document.createElement('i');
+      fill.style.width = Math.round(s.cov * 100) + '%';
+      bar.appendChild(fill); body.appendChild(bar);
+    }
+    row.appendChild(pip); row.appendChild(body);
+    mapEl.appendChild(row);
+  });
+
+  const won = st.cov.every(c => c >= 1) && st.rev >= 1;
+  crestEl.className = 'crest' + (won ? ' won' : '');
+  document.getElementById('crestsub').textContent = won
+    ? 'Earned by finishing every lesson and the review.'
+    : 'Appears when the whole topic is done.';
+}
+
+const CTRL = [['fresh','Not started'],['partway','Part-way'],
+              ['nearly','Lessons done'],['done','Finished']];
+const ctrls = document.getElementById('mapctrls');
+CTRL.forEach(([id, label]) => {
+  const b = document.createElement('button');
+  b.type = 'button';
+  b.className = 'chip' + (mapState === id ? ' on' : '');
+  b.textContent = label;
+  b.addEventListener('click', () => {
+    mapState = id;
+    [...ctrls.children].forEach(c => c.classList.remove('on'));
+    b.classList.add('on');
+    renderMap();
+  });
+  ctrls.appendChild(b);
+});
+renderMap();
+</script>
