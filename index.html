@@ -162,7 +162,7 @@ button{font-family:inherit;font-size:15px;cursor:pointer;border:none;background:
 .btn-row .btn{width:auto;flex:1}
 .inrow{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:end;margin-top:16px}
 .inrow label{margin-top:0}
-.btn-sm{min-height:40px;padding:8px 14px;font-size:13px;width:auto;border-radius:11px}
+.btn-sm{min-height:var(--tap);padding:8px 14px;font-size:13px;width:auto;border-radius:11px}
 .btn[disabled]{opacity:.5;pointer-events:none}
 
 nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in srgb, var(--ink) 92%, transparent);backdrop-filter:blur(16px);border-top:1px solid var(--line-soft);padding-bottom:env(safe-area-inset-bottom)}
@@ -834,7 +834,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v67 · one topic, one shelf';
+const APP_VERSION = 'v68 · tap targets';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
