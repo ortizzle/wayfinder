@@ -1,0 +1,186 @@
+<meta charset="utf-8">
+<title>Surfaces, not outlines</title>
+<style>
+/* ------------------------------------------------------------------
+   Proposal: borders → tonal hierarchy.
+   Today, nearly every element is a 1px-bordered box, which is why screens
+   can feel busy even when the content is light. The proposal: borders stay
+   on things you can PRESS (answers, tools, chips); everything static
+   separates by surface tone and spacing instead.
+   Flip between the current style and the tonal one — same markup, same
+   content, both apps' palettes. Dev artifact: not linked, not cached.
+   ------------------------------------------------------------------ */
+:root{
+  --ink:#0b1c22; --deep:#11262e; --surface:#16303a; --tonal-surface:#1a3641;
+  --raised:#1f3f4c; --line:#2e5361; --line-soft:#22424e;
+  --text:#eef6f4; --muted:#9dbdba; --faint:#84a5a2;
+  --ac:#6fe3cd; --ac-fg:#6fe3cd; --tap:48px;
+}
+:root[data-pal="wf"]{
+  --ink:#120a20; --deep:#1b1030; --surface:#22163b; --tonal-surface:#271a42;
+  --raised:#2e1d4d; --line:#452a68; --line-soft:#352050;
+  --text:#f4ecfa; --muted:#b9a6d0; --faint:#9683ac;
+  --ac:#f78ac8; --ac-fg:#f78ac8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--text);
+  font:16px/1.55 ui-sans-serif,system-ui,-apple-system,sans-serif;
+  padding:26px 18px 70px}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:30px}
+h1{font-family:Georgia,serif;font-weight:600;margin:0;font-size:clamp(26px,6vw,36px);line-height:1.15}
+h2{font-family:Georgia,serif;font-weight:600;font-size:21px;margin:0}
+p{margin:0}
+.lede{color:var(--muted);max-width:62ch}
+.note{color:var(--faint);font-size:13px;max-width:62ch}
+.eyebrow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ac-fg);font-weight:700}
+.bar{display:flex;gap:9px;flex-wrap:wrap}
+.chip{min-height:44px;padding:9px 17px;border-radius:999px;border:1px solid var(--line);
+  background:transparent;color:var(--muted);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.chip.on{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 12%,transparent);color:var(--text)}
+.chip:focus-visible{outline:2px solid var(--ac-fg);outline-offset:2px}
+
+.two{display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:880px){.two{grid-template-columns:1fr 1fr}}
+.frame{width:100%;max-width:392px;margin:0 auto;background:var(--deep);
+  border-radius:26px;padding:15px;box-shadow:0 18px 46px rgba(0,0,0,.45)}
+.frame .fl{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+  text-align:center;margin:2px 0 12px;font-weight:700}
+
+/* ---- shared componentry, styled two ways via [data-style] ---- */
+.card{border-radius:20px;padding:16px;margin-bottom:11px}
+.hero{border-left:4px solid var(--ac)}
+.plan{border-radius:16px;padding:13px 15px;margin-bottom:9px;border-left:3px solid var(--ac)}
+.plan .hd{display:flex;justify-content:space-between;font-weight:600;font-size:14px}
+.plan .why{color:var(--faint);font-size:12.5px;margin-top:3px}
+.tilegrid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:11px}
+.tile{border-radius:16px;padding:14px;min-height:74px;display:flex;flex-direction:column;gap:3px}
+.tile .ic{font-size:19px}
+.tile .nm{font-weight:600;font-size:13px}
+.tile .ct{color:var(--faint);font-size:11.5px}
+.opt{display:flex;align-items:center;gap:11px;width:100%;min-height:var(--tap);
+  padding:12px 14px;margin-bottom:9px;border-radius:14px;background:var(--deep);
+  color:var(--text);font:inherit;font-size:14px;text-align:left;cursor:pointer}
+.opt .ltr{flex:0 0 24px;height:24px;border-radius:7px;background:var(--raised);
+  color:var(--muted);font-size:11.5px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.divider{display:flex;align-items:center;gap:10px;color:var(--faint);font-size:10.5px;
+  letter-spacing:.16em;text-transform:uppercase;font-weight:700;margin:15px 0 10px}
+.divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--line-soft)}
+.rowline{display:flex;justify-content:space-between;font-size:13px;padding:8px 0;color:var(--muted)}
+.rowline b{color:var(--text);font-weight:600}
+
+/* ---- STYLE A: today — a border on every box ---- */
+[data-style="border"] .card{background:var(--surface);border:1px solid var(--line-soft)}
+[data-style="border"] .plan{background:var(--surface);border:1px solid var(--line-soft);border-left:3px solid var(--ac)}
+[data-style="border"] .tile{background:var(--surface);border:1px solid var(--line-soft)}
+[data-style="border"] .opt{border:1px solid var(--line)}
+[data-style="border"] .rowline{border-bottom:1px solid var(--line-soft)}
+
+/* ---- STYLE B: proposed — borders only where you can press ----
+   Static cards: one tone up from the page, NO outline; hierarchy comes from
+   tone + spacing. Interactive: options and chips keep their borders (the
+   affordance), and get a slightly stronger fill so they read as pressable. */
+[data-style="tonal"] .card{background:var(--tonal-surface)}
+[data-style="tonal"] .plan{background:var(--tonal-surface)}
+[data-style="tonal"] .tile{background:var(--tonal-surface)}
+[data-style="tonal"] .opt{border:1px solid var(--line);background:var(--surface)}
+[data-style="tonal"] .rowline{border-bottom:1px solid rgba(255,255,255,.05)}
+[data-style="tonal"] .card,[data-style="tonal"] .plan,[data-style="tonal"] .tile{
+  box-shadow:0 1px 0 rgba(255,255,255,.03) inset}
+
+.tail ul{margin:0;padding-left:20px;color:var(--muted);display:flex;flex-direction:column;gap:7px;max-width:64ch}
+.tail b{color:var(--text)}
+</style>
+
+<div class="wrap">
+  <header style="display:flex;flex-direction:column;gap:8px">
+    <span class="eyebrow">Both apps · proposal</span>
+    <h1>Surfaces, not outlines</h1>
+    <p class="lede">The same screen twice. On the left, today's style: a 1px border
+      on every box. On the right, the proposal: borders only on things you can
+      press — everything else separates by tone and room.</p>
+    <div class="bar" id="palbar"></div>
+  </header>
+
+  <div class="two">
+    <section>
+      <div class="frame" data-style="border"><div class="fl">Today — bordered</div><div class="mock"></div></div>
+    </section>
+    <section>
+      <div class="frame" data-style="tonal"><div class="fl">Proposed — tonal</div><div class="mock"></div></div>
+    </section>
+  </div>
+
+  <section class="tail" style="border-top:1px solid var(--line-soft);padding-top:18px;display:flex;flex-direction:column;gap:10px">
+    <span class="eyebrow">What the rule would be</span>
+    <ul>
+      <li><b>A border means "you can press this".</b> Answer options, tools, and
+        chips keep theirs — it is the affordance. Static cards lose theirs and
+        sit one tone above the page instead.</li>
+      <li><b>Nothing gets lighter to read.</b> Text tokens and every measured
+        contrast ratio are untouched; only box outlines change.</li>
+      <li><b>Subject colour still anchors.</b> The left-edge subject bars, the
+        painted tiles, and the accent rules all stay exactly as they are.</li>
+      <li><b>If it ships, it ships measured</b> — the usual sweep across accent ×
+        sky × theme, plus screenshots of every screen in both apps.</li>
+    </ul>
+  </section>
+</div>
+
+<script>
+const el=(t,c,x)=>{const n=document.createElement(t);if(c)n.className=c;
+  if(x!=null)n.textContent=x;return n;};
+function mock(root){
+  root.textContent='';
+  const hero=el('div','card hero');
+  hero.appendChild(el('div','eyebrow','Pick up the thread'));
+  hero.appendChild(el('div',null,'Topic 2 · 2-4 Add Greater Numbers'));
+  const hs=el('div','note','6 questions left in this lesson.');
+  hero.appendChild(hs); root.appendChild(hero);
+
+  const dv1=el('div','divider','What to study today'); root.appendChild(dv1);
+  const plan=el('div','plan');
+  const hd=el('div','hd'); hd.appendChild(el('span',null,'📐 Accelerated Math'));
+  hd.appendChild(el('span',null,'25 min')); plan.appendChild(hd);
+  plan.appendChild(el('div','why','test in 2 days · 5 in your Growth Zone'));
+  root.appendChild(plan);
+
+  const dv2=el('div','divider','Your subjects'); root.appendChild(dv2);
+  const g=el('div','tilegrid');
+  [['📐','Math','12 units · 84%'],['📖','English','3 units · 91%'],
+   ['🧫','Science','2 units'],['🏛️','History','2 units · 78%']].forEach(([ic,nm,ct])=>{
+    const t=el('div','tile');
+    t.appendChild(el('span','ic',ic)); t.appendChild(el('span','nm',nm));
+    t.appendChild(el('span','ct',ct)); g.appendChild(t);
+  });
+  root.appendChild(g);
+
+  const dv3=el('div','divider','A question'); root.appendChild(dv3);
+  const qc=el('div','card');
+  qc.appendChild(el('div',null,'Which number has a 7 in the ten-thousands place?'));
+  root.appendChild(qc);
+  ['470,912','107,204','27,940','718,003'].forEach((o,i)=>{
+    const b=el('button','opt');
+    b.appendChild(el('span','ltr',String.fromCharCode(65+i)));
+    b.appendChild(el('span',null,o));
+    root.appendChild(b);
+  });
+
+  const st=el('div','card');
+  [['Current streak','4 days'],['Questions answered','182'],['Focus minutes','75']].forEach(([k,v])=>{
+    const r=el('div','rowline'); r.appendChild(el('span',null,k));
+    const bb=el('b',null,v); r.appendChild(bb); st.appendChild(r);
+  });
+  root.appendChild(st);
+}
+document.querySelectorAll('.mock').forEach(mock);
+[['aa','Ad Astra palette'],['wf','Wayfinder palette']].forEach(([id,label],i)=>{
+  const b=el('button','chip'+(i===0?' on':''),label); b.type='button';
+  b.addEventListener('click',()=>{
+    if(id==='aa') delete document.documentElement.dataset.pal;
+    else document.documentElement.dataset.pal=id;
+    document.querySelectorAll('#palbar .chip').forEach(c=>c.classList.remove('on'));
+    b.classList.add('on');
+  });
+  document.getElementById('palbar').appendChild(b);
+});
+</script>

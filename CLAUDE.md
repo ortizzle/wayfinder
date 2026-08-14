@@ -108,6 +108,12 @@ got the same app.
 Storage namespace is `wayfinder_` and the Gist file is `wayfinder-data.json`, so
 the two apps never collide even on a shared device or a shared Gist token.
 
+Light mode is **blossom-warmed paper** (v75) — tinted ground, white cards,
+washes visible — where Ad Astra's is sea-glass. The paper colours are
+identity; the rule that every reading token holds 4.5:1 against the page,
+the card, the raised surface and the wash-tinted worst case is engine
+(`tools/contrast_light.js`).
+
 Personalization (skies, celebration styles, subject icons, badge pins,
 companion extras) works as documented in ad-astra/CLAUDE.md — only the rosters
 differ here: skies are Starfield / Aurora / Blossom Drift / Deep Ocean / River,
