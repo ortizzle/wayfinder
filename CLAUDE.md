@@ -110,9 +110,33 @@ the two apps never collide even on a shared device or a shared Gist token.
 
 Personalization (skies, celebration styles, subject icons, badge pins,
 companion extras) works as documented in ad-astra/CLAUDE.md — only the rosters
-differ here: skies are Starfield / Aurora / Blossom Drift / Deep Ocean, and
-`ICON_CHOICES`/`AVATARS` lean playful. Rosters are identity; keep them
+differ here: skies are Starfield / Aurora / Blossom Drift / Deep Ocean / River,
+and `ICON_CHOICES`/`AVATARS` lean playful. Rosters are identity; keep them
 divergent.
+
+### River, and what a sky is allowed to do (v72)
+
+River asked for a water theme; it ships as a **sky**, not a replacement, so
+she picks it herself and can back out for free. It is the first sky that is
+not wash-only, which changes the contract:
+
+- **Every other sky sets `--wash-1/2` and nothing else** — deliberately, so
+  the contrast measurements taken against the plum canvas stay valid for all
+  of them. River repaints the canvas itself (`--ink`, `--deep`, `--surface`,
+  `--raised`, `--line`, `--text`, `--muted`, `--faint`).
+- **So the rule is now: a sky MAY override the surface tokens, and when it
+  does, every accent is re-measured against it in BOTH themes before it
+  ships.** `contrast_sky.js` walks accent × sky × theme — 300 samples. River's
+  worst case is **5.79:1**, the best of the five; its light `--muted`/`--faint`
+  measured **4.39:1** on the first pass and were deepened to `#3a5c72` /
+  `#3f647b`. A new full-canvas sky without that sweep is not shippable.
+- **Blue, never teal.** Ad Astra owns teal-black and the two apps must never
+  read as the same app.
+- **The accent is untouched**, so her Blossom pink rides on top of deep water
+  — that combination is the point, not a compromise.
+- `--stars` becomes a **current** rather than a starfield: slow diagonals with
+  a little spray caught in them. Dark mode only, `none` in light, same as
+  every other sky.
 
 The Sky Map (see ad-astra/CLAUDE.md) works identically, but this app's
 `CONSTELLATIONS` are invented and playful (The Otter, The Skipping Stone…)

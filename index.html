@@ -65,6 +65,37 @@
 :root[data-sky="blossom"]{--wash-1:rgba(255,154,176,.16);--wash-2:rgba(214,155,245,.14)}
 :root[data-theme="light"][data-sky="blossom"]{--wash-1:rgba(216,27,96,.12);--wash-2:rgba(147,84,201,.13)}
 :root[data-sky="ocean"]{--wash-1:rgba(90,166,236,.14);--wash-2:rgba(111,224,184,.10)}
+/* ---- River (v72) — the first sky that is not wash-only ----
+   Every other sky changes --wash-1/2 and nothing else, deliberately, so the
+   contrast measurements taken against the plum canvas stay valid. River
+   repaints the canvas itself, so the contract is now: a sky MAY override the
+   surface tokens, and when it does, every accent is re-measured against it in
+   both themes before it ships. River's worst case is recorded in CLAUDE.md.
+
+   Blue, never teal. Ad Astra owns teal-black and the two apps must never read
+   as the same app. The accent is untouched, so her Blossom pink still rides on
+   top — pink on deep water is the whole idea rather than a compromise. */
+:root[data-sky="river"]{
+  --ink:#07182a; --deep:#0c2338; --surface:#143049; --raised:#1d4363;
+  --line:#2a5876; --line-soft:#1d3f5a;
+  --text:#e9f4fb; --muted:#9dc0d6; --faint:#8badc7;
+  --wash-1:rgba(90,170,215,.15); --wash-2:rgba(120,200,235,.10);
+  /* Current, not starfield: slow diagonals with a little spray caught in them. */
+  --stars:linear-gradient(105deg,transparent 0 46%,rgba(120,190,230,.055) 46% 47%,transparent 47%),
+          linear-gradient(98deg,transparent 0 22%,rgba(150,215,240,.05) 22% 23%,transparent 23%),
+          linear-gradient(112deg,transparent 0 71%,rgba(120,190,230,.045) 71% 72%,transparent 72%),
+          linear-gradient(96deg,transparent 0 88%,rgba(150,215,240,.04) 88% 89%,transparent 89%),
+          radial-gradient(1.6px 1.6px at 18% 22%,rgba(255,214,240,.30),transparent),
+          radial-gradient(1.3px 1.3px at 76% 61%,rgba(255,255,255,.22),transparent),
+          radial-gradient(1.2px 1.2px at 44% 84%,rgba(190,230,250,.26),transparent);
+}
+:root[data-theme="light"][data-sky="river"]{
+  --ink:#eef6fb; --deep:#ffffff; --surface:#ffffff; --raised:#e4eff7;
+  --line:#c9dced; --line-soft:#dfebf4;
+  --text:#0e2637; --muted:#3a5c72; --faint:#3f647b;
+  --wash-1:rgba(59,130,200,.16); --wash-2:rgba(90,170,215,.12);
+  --stars:none;
+}
 :root[data-theme="light"][data-sky="ocean"]{--wash-1:rgba(59,130,200,.16);--wash-2:rgba(11,123,98,.12)}
 
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -928,7 +959,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v71 · the round, drawn';
+const APP_VERSION = 'v72 · river';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1598,6 +1629,7 @@ const SKIES = [
   {id:'aurora',    nm:'Aurora'},
   {id:'blossom',   nm:'Blossom Drift'},
   {id:'ocean',     nm:'Deep Ocean'},
+  {id:'river',     nm:'River'},
   {id:'seasonal',  nm:'Seasonal'}
 ];
 /* 'Seasonal' resolves to one of the real skies by the Arizona calendar, so it
