@@ -65,6 +65,21 @@ a quiet card on Today for the day being shown, a hintline on the subject's
 unit screen, and the parents' own hours in the grown-up Class details card.
 When a newsletter changes the schedule, edit the constant and redeploy.
 
+**Confirmed unchanged by the 8/14 newsletter** (v78): Math & Science Thursdays,
+English & Writing Mondays, History Tuesdays, all 7:00–7:30 am or 3:30–4:00 pm,
+starting the week of 8/17. The newsletter also carries each teacher's PARENT
+hours, which the app does not store anywhere — a gap, if it is ever wanted.
+
+**A window is only offered while it is still ahead of her** (`usableTimes`).
+Two ways it can fail to be, both of which the runway card got wrong at first:
+a slot on the day of the test that runs *after* school (the quiz is already
+over), and a slot earlier today that has simply passed. Real case from that
+newsletter — History hours are Tuesdays and the History quiz is Tuesday 8/18,
+so "7:00–7:30 am or 3:30–4:00 pm — the last one before it" was half wrong. It
+now trims to the morning and says "the morning of, and the last chance", and
+drops the day entirely when nothing is left (Ad Astra's `algeo` hours are
+afternoon-only, so a Tuesday test has no usable window at all).
+
 This `.ics` has **no teacher names** (Ad Astra's did), so no teacher shows unless
 one is entered in `roster`. The orientation unit drills rooms *and the rotation* instead, since
 knowing that Art is Tue & Fri is the genuinely useful week-one fact.

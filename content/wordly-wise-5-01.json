@@ -4,7 +4,7 @@
   "unit-ww501": {
    "id": "unit-ww501",
    "type": "unit",
-   "updatedAt": 1786299404508,
+   "updatedAt": 1786800510754,
    "classId": "english",
    "quarter": 1,
    "status": "draft",
@@ -524,8 +524,134 @@
       "main": "**Went to bed.** Context picks the meaning: careers end once; going to bed happens nightly. A cold after dinner points firmly at bedtime.",
       "tip": "For multi-meaning words, the sentence always votes. Ask which meaning the OTHER words in the sentence support."
      }
+    },
+    {
+     "id": "q15",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the sentence \"The burly mover lifted the sofa alone,\" what part of speech is *burly*?",
+     "opts": [
+      "adjective",
+      "verb",
+      "noun",
+      "adverb"
+     ],
+     "ans": 0,
+     "hint": "It is sitting right in front of a noun, describing it.",
+     "steps": [
+      "Find the word: burly, sitting just before the noun mover.",
+      "Ask what it is doing: it tells you WHAT KIND of mover — big and strong.",
+      "A word that describes a noun is an adjective.",
+      "So burly is an adjective."
+     ],
+     "ex": {
+      "main": "**Adjective.** *Burly* describes a noun — it tells you what kind of mover he is. Words that describe nouns are adjectives.",
+      "tip": "If you can put the word between \"the\" and a noun and it still makes sense, it is almost always an adjective."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the sentence \"Please do not distract the driver,\" what part of speech is *distract*?",
+     "opts": [
+      "verb",
+      "noun",
+      "adjective",
+      "adverb"
+     ],
+     "ans": 0,
+     "hint": "It is the action the sentence is telling you not to do.",
+     "steps": [
+      "Find the word: distract, right after \"do not\".",
+      "Ask what it is doing: it names an ACTION — pulling someone's attention away.",
+      "A word that names an action is a verb.",
+      "So distract is a verb."
+     ],
+     "ex": {
+      "main": "**Verb.** *Distract* names an action — the thing you are being told not to do. Action words are verbs.",
+      "tip": "If the word fits after \"do not ___\" or \"they will ___\", it is a verb."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the sentence \"A pedestrian waited at the corner,\" what part of speech is *pedestrian*?",
+     "opts": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb"
+     ],
+     "ans": 0,
+     "hint": "It is the person the sentence is about.",
+     "steps": [
+      "Find the word: pedestrian, right after \"A\".",
+      "Ask what it is doing: it names a PERSON — someone walking.",
+      "A word that names a person, place or thing is a noun.",
+      "So pedestrian is a noun."
+     ],
+     "ex": {
+      "main": "**Noun.** *Pedestrian* names a person — someone travelling on foot. Words that name people, places or things are nouns.",
+      "tip": "If \"a\" or \"the\" can sit in front of it and it names something, it is a noun."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three of these words are the same part of speech. Which one is the odd one out?",
+     "opts": [
+      "companion",
+      "budge",
+      "assign",
+      "retire"
+     ],
+     "ans": 0,
+     "hint": "Three of them are things you DO. One of them is someone you have.",
+     "steps": [
+      "Sort them: budge, assign and retire are all actions.",
+      "Actions are verbs, so those three are verbs.",
+      "Companion names a person — someone who goes along with you.",
+      "A word that names a person is a noun, so companion is the odd one out."
+     ],
+     "ex": {
+      "main": "**Companion.** *Budge*, *assign* and *retire* are all verbs — things you do. *Companion* is a noun: it names a person who goes with you.",
+      "tip": "To sort a list fast, try each word in \"they will ___\". The ones that fit are verbs."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "*Accustom* is a verb. In \"She was accustomed to the cold,\" the word *accustomed* is doing a different job. Which job?",
+     "opts": [
+      "describing her, like an adjective",
+      "naming a thing, like a noun",
+      "it is still a plain action verb",
+      "describing how, like an adverb"
+     ],
+     "ans": 0,
+     "hint": "It comes after \"was\" and tells you something about HER.",
+     "steps": [
+      "Start from the base word: accustom is a verb meaning to get someone used to something.",
+      "Look at the sentence: accustomed comes after \"was\" and tells you about She.",
+      "A word that tells you what someone or something is like is working as an adjective.",
+      "So accustomed is describing her, like an adjective."
+     ],
+     "ex": {
+      "main": "**Describing her, like an adjective.** *Accustom* is a verb, but the -ed form *accustomed* describes what someone is like — \"accustomed to the dark\", \"our accustomed places\". One word family can hold more than one part of speech.",
+      "tip": "When a word ends in -ed and follows a form of \"to be\" (is, was, were), check whether it is describing rather than acting."
+     }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }
