@@ -1046,7 +1046,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v79 · one rhythm';
+const APP_VERSION = 'v80 · said once';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3271,7 +3271,9 @@ SCREENS.today = function(root){
     const d = AZ.daysBetween(date, ms.date);
     r.appendChild(el('span','v', d===0?'Today':d===1?'Tomorrow':`${d} days`));
     c.appendChild(r);
-    if(q){ const r2=el('div','row');
+    /* Only when it is a DIFFERENT fact: when the next milestone is itself the
+       end of the quarter, this row restated it word for word, same number. */
+    if(q && ms.date !== q.end){ const r2=el('div','row');
       r2.appendChild(el('span','k',`Quarter ${q.n} ends`));
       r2.appendChild(el('span','v plain',`${AZ.daysBetween(date,q.end)} days`)); c.appendChild(r2); }
     root.appendChild(c);
