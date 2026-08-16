@@ -1,0 +1,636 @@
+{
+  "v": 4,
+  "records": {
+    "unit-hist-u2u3": {
+      "id": "unit-hist-u2u3",
+      "type": "unit",
+      "updatedAt": 1786910709985,
+      "libv": 1,
+      "classId": "history",
+      "quarter": 1,
+      "status": "draft",
+      "title": "History · Units 2–3 Review: Fact, Sources and Timelines",
+      "srcName": "History Units 2 and 3 Quiz Review — Research Skills, Fact and Opinion, Timelines (Drive)",
+      "source": "Science 4 / History 4, Units 2 & 3 quiz review worksheet (Drive)",
+      "summary": {
+        "text": "The Units 2 and 3 review covers three research skills. Fact and opinion: telling a statement that can be checked from one that is somebody's feeling. Sources: deciding whether a news source is credible, remembering that reliable is not the same as unbiased, and sorting primary sources (made by someone who was there) from secondary ones (made later by someone who was not). And timelines: what BC, BCE, AD and CE mean, why CE and BCE are used now, which direction each set of years counts, and putting dates in the right order.",
+        "from": "source"
+      },
+      "why": {
+        "text": "These are the tools you use on every piece of history for the rest of the year — and on everything you read outside school. Once you can spot an opinion dressed up as a fact, and tell who actually witnessed something, you stop having to take anyone's word for anything.",
+        "from": "added"
+      },
+      "objectives": [
+        {
+          "text": "Label a statement as fact or opinion, and say how you decided.",
+          "from": "source"
+        },
+        {
+          "text": "Give three ways to judge whether a news source is credible.",
+          "from": "source"
+        },
+        {
+          "text": "Sort sources into primary and secondary, and explain each choice.",
+          "from": "source"
+        },
+        {
+          "text": "Say what BC, BCE, AD and CE stand for, and why CE and BCE are now preferred.",
+          "from": "source"
+        },
+        {
+          "text": "Put BCE and CE dates in the correct order, counting each direction properly.",
+          "from": "source"
+        }
+      ],
+      "parentNote": {
+        "text": "Built from the Units 2 and 3 quiz review worksheet, for the History quiz on Tuesday 18 August. It covers all four sections of that sheet: fact and opinion, judging credible news, primary versus secondary sources, and timelines. None of the questions reuse the sheet's own items, so she can work through this and still have the sheet as fresh practice. Two things to know. The sheet has a typo in the timeline exercise — one date is printed '44 BC/CE' where it should read '44 BC/BCE' — so if she asks, that is a misprint and not a new label. And the thing most likely to trip her up is that BCE years count backwards: 3000 BCE is earlier than 500 BCE, even though 3000 is the bigger number. Two put-in-order questions drill exactly that, one within BCE and one crossing from BCE into CE.",
+        "from": "added"
+      },
+      "nextUp": {
+        "text": "Cards first, then a quiz round. Slow down on the two timeline ordering questions — that is where the quiz will catch people.",
+        "minutes": 18,
+        "from": "added"
+      },
+      "cards": [
+        {
+          "id": "c0",
+          "term": "Fact",
+          "from": "source",
+          "def": "**A statement that can be checked and proved.**\n• Brazil is a country in South America. You can look it up and settle it.\n• It does not matter whether you like it — what matters is that it can be tested.",
+          "hint": "If two people disagree, is there a way to settle it? Then it is a fact."
+        },
+        {
+          "id": "c1",
+          "term": "Opinion",
+          "from": "source",
+          "def": "**A statement about what somebody believes, likes or feels.**\n• Tacos are better than pizza. There is no test that settles it.\n• Not wrong — just not something you can prove.",
+          "hint": "An opinion changes depending on who you ask. A fact does not."
+        },
+        {
+          "id": "c2",
+          "term": "Opinion signal words",
+          "from": "added",
+          "def": "**Best, worst, better, prettiest, most fun, should.**\n• These words carry somebody's judgment inside them.\n• Mr Rawson is the best English teacher ever — the word best makes it an opinion, however much you agree.",
+          "hint": "Spot the judgment word and you have usually spotted the opinion."
+        },
+        {
+          "id": "c3",
+          "term": "A fact can still be wrong",
+          "from": "added",
+          "def": "**Fact means checkable, not correct.**\n• Brazil is in Europe is a factual statement — you can check it, and it is false.\n• So the question is never is this true, it is could this be checked.",
+          "hint": "Fact is about the KIND of statement, not about the answer."
+        },
+        {
+          "id": "c4",
+          "term": "A credible source",
+          "from": "source",
+          "def": "**A news source you have reason to trust.**\n• Who wrote it — is it a real named author or organisation with expertise?\n• When was it written — is it recent enough to still be right?\n• What is it built on — does it give evidence, and do other sources agree?",
+          "hint": "Who, when, and what is it built on. Three checks, every time."
+        },
+        {
+          "id": "c5",
+          "term": "Reliable is not the same as unbiased",
+          "from": "source",
+          "def": "**A trustworthy source can still tell you only one side.**\n• Bias is not lying — it is choosing what to include and how to say it.\n• So always check your sources and look at more than one perspective.",
+          "hint": "Two different questions: is this true, and is this the whole picture?"
+        },
+        {
+          "id": "c6",
+          "term": "Primary source",
+          "from": "source",
+          "def": "**Made by someone who was actually there, at the time.**\n• An interview with a soldier who served in Iraq.\n• A writer talking about his own book.\n• Letters, diaries, photographs, and objects from the time all count.",
+          "hint": "Primary = first-hand. The person lived it."
+        },
+        {
+          "id": "c7",
+          "term": "Secondary source",
+          "from": "source",
+          "def": "**Made later, by someone who was not there, describing what happened.**\n• A movie about the life of George Washington.\n• An article written in 2001 about the Great Depression of the 1930s.\n• Textbooks and student reports are secondary too.",
+          "hint": "Secondary = second-hand. Somebody is retelling it."
+        },
+        {
+          "id": "c8",
+          "term": "The test for primary or secondary",
+          "from": "added",
+          "def": "**Ask whether the maker was there when it happened.**\n• Yes, and they made it then → primary.\n• No, they studied it afterwards → secondary.\n• Being about a real event is not enough; a careful movie is still secondary.",
+          "hint": "Were they in the room? That is the whole question."
+        },
+        {
+          "id": "c9",
+          "term": "Tricky sources",
+          "from": "added",
+          "def": "**The date something was made matters more than the subject.**\n• A 2001 article about the 1930s: written seventy years late, so secondary.\n• A writer discussing his own new book: he made the thing, so primary.\n• A student reading a report aloud in class: retelling somebody else's work, so secondary.",
+          "hint": "Look for the gap between when it happened and when it was made."
+        },
+        {
+          "id": "c10",
+          "term": "Timeline",
+          "from": "source",
+          "def": "**A line that shows events in the order they happened.**\n• Earliest on the left, latest on the right.\n• It shows not just what happened but how far apart things were.",
+          "hint": "Left to right is always earliest to latest."
+        },
+        {
+          "id": "c11",
+          "term": "BC and BCE",
+          "from": "source",
+          "def": "**BC stands for Before Christ. BCE stands for Before Common Era.**\n• They mean the same stretch of time and use exactly the same numbers.\n• Both cover everything before the year 1.",
+          "hint": "Same years, two names. Only the wording differs."
+        },
+        {
+          "id": "c12",
+          "term": "AD and CE",
+          "from": "source",
+          "def": "**AD stands for Anno Domini, Latin for in the year of our Lord. CE stands for Common Era.**\n• Again the same years with two different names.\n• AD does not mean After Death — that is the usual wrong guess.",
+          "hint": "Anno Domini is Latin, so AD comes BEFORE the number in careful writing: AD 1500."
+        },
+        {
+          "id": "c13",
+          "term": "Why CE and BCE are used now",
+          "from": "source",
+          "def": "**They keep the same dates without tying them to one religion.**\n• BC and AD measure history from a Christian starting point.\n• Common Era describes the same numbering in words that everyone can use, whatever they believe.",
+          "hint": "Nothing about the dates changed — only the labels did."
+        },
+        {
+          "id": "c14",
+          "term": "BCE counts backwards",
+          "from": "source",
+          "def": "**In BC/BCE, the bigger number is the earlier date.**\n• 3000 BCE is a long time before 500 BCE.\n• The years count down as they get closer to the year 1.",
+          "hint": "Think of a countdown: 3000, 2000, 1000 … then CE begins."
+        },
+        {
+          "id": "c15",
+          "term": "CE counts forwards",
+          "from": "source",
+          "def": "**In AD/CE, the bigger number is the later date.**\n• 1945 CE comes after 1492 CE.\n• This is the direction you already use for years, so it is the easy half.",
+          "hint": "After the year 1, everything counts up the normal way."
+        },
+        {
+          "id": "c16",
+          "term": "There is no year zero",
+          "from": "added",
+          "def": "**The year 1 BCE is followed straight away by the year 1 CE.**\n• The two systems meet in the middle with no zero between them.\n• So a date in BCE and a date in CE are always on opposite sides of that join.",
+          "hint": "Count 2, 1, then straight into 1, 2 — no zero in the gap."
+        },
+        {
+          "id": "c17",
+          "term": "Ordering across the join",
+          "from": "added",
+          "def": "**Every BCE date comes before every CE date.**\n• 100 BCE is earlier than 200 CE, even though 200 is the bigger number.\n• Sort the BCE dates largest-first, then the CE dates smallest-first.",
+          "hint": "Do the BCE pile backwards, the CE pile forwards, then stack them."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q0",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What makes a statement a fact rather than an opinion?",
+          "opts": [
+            "It can be checked and proved",
+            "Most people agree with it",
+            "It sounds serious and formal",
+            "A teacher was the one who said it"
+          ],
+          "ans": 0,
+          "hint": "Is there a way to settle a disagreement about it?",
+          "steps": [
+            "A fact is a statement you can test against the world.",
+            "If two people disagree, there is some way to look it up and settle it.",
+            "Agreement, tone and who said it do not decide the matter — plenty of people agree about opinions.",
+            "So a fact is a statement that can be checked and proved."
+          ],
+          "ex": {
+            "main": "**It can be checked and proved.** Agreement is not the test — lots of people share the same opinion, and it stays an opinion.",
+            "tip": "Ask: could I settle an argument about this? If yes, it is a fact."
+          }
+        },
+        {
+          "id": "q1",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What does BCE stand for?",
+          "opts": [
+            "Before Christian Era",
+            "Before Common Era",
+            "Before Current Empire",
+            "Beginning of Common Era"
+          ],
+          "ans": 1,
+          "hint": "It is the partner of CE, Common Era.",
+          "steps": [
+            "CE stands for Common Era, the years from 1 onwards.",
+            "BCE is the same phrase with Before in front of it.",
+            "So BCE is Before Common Era.",
+            "It covers exactly the same years as BC, Before Christ."
+          ],
+          "ex": {
+            "main": "**Before Common Era.** It covers the same years as BC — only the wording is different.",
+            "tip": "CE and BCE are a matched pair. Learn one and you have the other."
+          }
+        },
+        {
+          "id": "q2",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What does AD stand for?",
+          "opts": [
+            "After Death",
+            "Ancient Days",
+            "Anno Domini",
+            "After Dark ages"
+          ],
+          "ans": 2,
+          "hint": "It is Latin, and it is the partner of BC.",
+          "steps": [
+            "AD is a Latin abbreviation, not an English one.",
+            "It stands for Anno Domini, which means in the year of our Lord.",
+            "The common wrong guess is After Death, which would leave a strange gap in history.",
+            "AD covers the same years as CE."
+          ],
+          "ex": {
+            "main": "**Anno Domini.** Latin for in the year of our Lord. After Death is the usual wrong answer — and it cannot be right, or there would be a missing thirty-year hole in the calendar.",
+            "tip": "AD is Latin, so in careful writing it goes before the number: AD 1500."
+          }
+        },
+        {
+          "id": "q3",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What is a primary source?",
+          "opts": [
+            "The first source you happen to find",
+            "The most important source on a topic",
+            "Something made by someone who was there",
+            "A source your teacher has approved"
+          ],
+          "ans": 2,
+          "hint": "Primary means first-hand, not first-found.",
+          "steps": [
+            "Primary sources come straight from the event itself.",
+            "That means the person who made it was present at the time.",
+            "Letters, diaries, photographs and interviews with people who were there all count.",
+            "It has nothing to do with which source you found first or rated highest."
+          ],
+          "ex": {
+            "main": "**Something made by someone who was there.** Primary means first-hand. The word is about the maker's position, not the source's importance.",
+            "tip": "Primary or secondary is decided by the maker, never by the quality."
+          }
+        },
+        {
+          "id": "q4",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "On a timeline, where do the earliest events go?",
+          "opts": [
+            "On the left",
+            "On the right",
+            "In the middle",
+            "Wherever there is room"
+          ],
+          "ans": 0,
+          "hint": "Timelines read the same direction as a sentence.",
+          "steps": [
+            "A timeline runs in one direction to show the passing of time.",
+            "It is read left to right, like a line of writing.",
+            "So the earliest event is at the left-hand end.",
+            "The latest is at the right-hand end."
+          ],
+          "ex": {
+            "main": "**On the left.** Timelines read left to right, earliest to latest — the same direction you read a sentence.",
+            "tip": "If a timeline looks confusing, find the two ends first."
+          }
+        },
+        {
+          "id": "q5",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which of these statements is an opinion?",
+          "opts": [
+            "Brazil is a country in South America",
+            "George Washington was the first president",
+            "Tacos taste better than pizza",
+            "There are seven days in a week"
+          ],
+          "ans": 2,
+          "hint": "Which one would change depending on who you asked?",
+          "steps": [
+            "Test each one for whether it could be settled by checking.",
+            "Brazil's location, Washington's presidency and the length of a week can all be looked up.",
+            "Which food tastes better cannot — it depends entirely on the person eating.",
+            "So the taste comparison is the opinion."
+          ],
+          "ex": {
+            "main": "**Tacos taste better than pizza.** No amount of checking settles it, because the answer lives in the person, not in the world.",
+            "tip": "Comparison words like better and best are where opinions usually hide."
+          }
+        },
+        {
+          "id": "q6",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "A history student finds a letter written by a soldier during a war, describing the day of a battle. Is it primary or secondary, and why?",
+          "opts": [
+            "Secondary — a letter is only one person's view",
+            "Primary — written by someone present, at the time",
+            "Secondary — it was not published in a book",
+            "Primary — because it is very old"
+          ],
+          "ans": 1,
+          "hint": "Was the writer there when it happened?",
+          "steps": [
+            "Check who made it: a soldier who was at the battle.",
+            "Check when: during the war, not years afterwards.",
+            "Present at the event and writing at the time makes it first-hand.",
+            "Age and publication do not decide it — a brand new interview with a witness is primary too."
+          ],
+          "ex": {
+            "main": "**Primary — the writer was there, at the time.** Being one person's view does not demote it; almost every primary source is one person's view. That is what makes them worth reading carefully.",
+            "tip": "Old does not mean primary. A very old textbook about older events is still secondary."
+          }
+        },
+        {
+          "id": "q7",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "A film made in 2020 tells the story of an explorer who sailed in 1503. What kind of source is the film?",
+          "opts": [
+            "Primary — it shows the voyage as it happened",
+            "Primary — films count as eyewitness records",
+            "Neither, because a film is not really a source",
+            "Secondary — made centuries after the voyage"
+          ],
+          "ans": 3,
+          "hint": "Count the years between the event and the film.",
+          "steps": [
+            "The voyage happened in 1503; the film was made in 2020.",
+            "Nobody involved in making it was present at the voyage.",
+            "They studied it afterwards and retold it, which is exactly what secondary means.",
+            "Showing something on screen does not make it eyewitness — it makes it a retelling."
+          ],
+          "ex": {
+            "main": "**Secondary — made centuries later.** A film can be careful and accurate and still be secondary. What matters is that its makers learned about the event rather than living it.",
+            "tip": "Watch for the gap between when it happened and when it was made. The gap is the answer."
+          }
+        },
+        {
+          "id": "q8",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which year is earlier: 2500 BCE or 700 BCE?",
+          "opts": [
+            "700 BCE, because 700 is the smaller number",
+            "2500 BCE, because BCE years count backwards",
+            "They are the same distance from now",
+            "You cannot compare two BCE years"
+          ],
+          "ans": 1,
+          "hint": "In BCE, which direction are the numbers counting?",
+          "steps": [
+            "BCE years count down as they approach the year 1.",
+            "So a bigger BCE number sits further back in time.",
+            "2500 is bigger than 700, so 2500 BCE is the earlier date.",
+            "This is the reverse of how CE years work, which is why it catches people."
+          ],
+          "ex": {
+            "main": "**2500 BCE — the bigger number is the earlier date.** BCE is a countdown running towards the year 1, so the numbers shrink as time moves forward.",
+            "tip": "Say it out loud as a countdown: 2500, 2000, 1000, 700 … then CE starts."
+          }
+        },
+        {
+          "id": "q9",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "A website has no author's name, no date, and does not say where its information came from. What should you conclude?",
+          "opts": [
+            "No way to judge it, so treat it with caution",
+            "It is fine if the writing looks professional",
+            "It is credible as long as it agrees with you",
+            "It must be false, since it is hiding its sources"
+          ],
+          "ans": 0,
+          "hint": "The three checks are who, when, and what it is built on.",
+          "steps": [
+            "Run the three credibility checks: who wrote it, when, and on what evidence.",
+            "This source fails all three — no author, no date, no sources given.",
+            "Failing the checks does not prove it false; it means you have no reason to trust it.",
+            "So the honest conclusion is caution, and finding a source you can check."
+          ],
+          "ex": {
+            "main": "**There is no way to judge it, so be cautious.** Unable to verify is not the same as proven false. It means look elsewhere before you rely on it.",
+            "tip": "Looking professional is not a check. Anyone can make a page look tidy."
+          }
+        },
+        {
+          "id": "q10",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which of these is a fact rather than an opinion?",
+          "opts": [
+            "Winter is the most miserable season",
+            "Arizona has fewer rainy days than Florida",
+            "Everyone should learn to swim",
+            "History is the most interesting subject"
+          ],
+          "ans": 1,
+          "hint": "Which one could you settle with records?",
+          "steps": [
+            "Look for the statement that could be checked against records or measurements.",
+            "Miserable, should and most interesting all carry somebody's judgment.",
+            "The number of rainy days in two places is recorded and comparable.",
+            "So the rainfall comparison is the fact."
+          ],
+          "ex": {
+            "main": "**Arizona has fewer rainy days than Florida.** Weather records settle it. The other three use judgment words — miserable, should, most interesting.",
+            "tip": "A fact can compare things. It just has to be comparable with evidence, not with taste."
+          }
+        },
+        {
+          "id": "q11",
+          "lv": 3,
+          "kind": "order",
+          "from": "added",
+          "q": "Put these BCE dates in order, earliest first.",
+          "opts": [
+            "3000 BCE",
+            "1200 BCE",
+            "800 BCE",
+            "150 BCE"
+          ],
+          "ans": 0,
+          "hint": "BCE counts backwards, so the biggest number happened first.",
+          "steps": [
+            "All four dates are BCE, so they all count backwards towards the year 1.",
+            "That means the largest number is the furthest back in time: 3000 BCE.",
+            "Then the numbers shrink as time moves forward: 1200, then 800.",
+            "The smallest number, 150 BCE, is the most recent of the four."
+          ],
+          "ex": {
+            "main": "**3000 → 1200 → 800 → 150.** In BCE the numbers run down as time runs forward, so ordering them earliest-first means ordering them largest-first.",
+            "tip": "If a list is all BCE, sort it biggest to smallest and you are done."
+          }
+        },
+        {
+          "id": "q12",
+          "lv": 3,
+          "kind": "order",
+          "from": "added",
+          "q": "Put these dates in order, earliest first. Watch the labels — they are not all the same.",
+          "opts": [
+            "600 BCE",
+            "50 BCE",
+            "400 CE",
+            "1600 CE"
+          ],
+          "ans": 0,
+          "hint": "Every BCE date comes before every CE date. Sort each group separately, then join them.",
+          "steps": [
+            "Split the list into two piles: the BCE dates and the CE dates.",
+            "Every BCE date is earlier than every CE date, so the BCE pile goes first.",
+            "Inside BCE, count backwards: 600 BCE comes before 50 BCE.",
+            "Inside CE, count forwards: 400 CE comes before 1600 CE. Joined up: 600 BCE, 50 BCE, 400 CE, 1600 CE."
+          ],
+          "ex": {
+            "main": "**600 BCE → 50 BCE → 400 CE → 1600 CE.** The two halves run in opposite directions, which is the whole difficulty. Sort each pile on its own, then stack BCE in front of CE.",
+            "tip": "Never sort a mixed list by number alone — 1600 looks biggest but 600 BCE is the oldest thing there."
+          }
+        },
+        {
+          "id": "q13",
+          "lv": 3,
+          "kind": "mc",
+          "from": "source",
+          "q": "Why do many historians now write CE and BCE instead of AD and BC?",
+          "opts": [
+            "The dates were recalculated and shifted along",
+            "CE and BCE are simply shorter to write down",
+            "Same dates, without tying them to one religion",
+            "BC and AD were found to be badly inaccurate"
+          ],
+          "ans": 2,
+          "hint": "Did anything about the numbers change, or only the words?",
+          "steps": [
+            "Compare the two systems: 1500 AD and 1500 CE are the same year.",
+            "So nothing about the counting was recalculated or corrected.",
+            "What changed is the wording: BC and AD name a Christian starting point.",
+            "Common Era describes the same numbering in terms anyone can use, whatever they believe."
+          ],
+          "ex": {
+            "main": "**They keep the same dates without tying them to one religion.** The numbers are identical — only the labels changed, so that a shared calendar can be described in shared words.",
+            "tip": "When a question offers 'the dates changed', check whether any number actually moved. Here none did."
+          }
+        },
+        {
+          "id": "q14",
+          "lv": 3,
+          "kind": "mc",
+          "from": "source",
+          "q": "A well-known newspaper reports a story accurately, but only interviews people from one side of the argument. What is the problem?",
+          "opts": [
+            "Nothing — an accurate report is all you need",
+            "It is unreliable, so the facts are probably wrong",
+            "Reliable but biased — you see one perspective",
+            "It is a primary source and cannot be trusted"
+          ],
+          "ans": 2,
+          "hint": "Two different questions: is it true, and is it the whole picture?",
+          "steps": [
+            "Check accuracy first: the facts reported are correct, so the source is reliable.",
+            "Now check completeness: only one side was asked.",
+            "Leaving out perspectives is bias, and bias is not the same as lying.",
+            "So the report can be trusted as far as it goes — and you still need another source to see the rest."
+          ],
+          "ex": {
+            "main": "**Reliable but biased.** Bias is about what gets left out and how it is framed, not about false facts. That is why the rule is to check more than one perspective even when a source is trustworthy.",
+            "tip": "Reliable and unbiased are separate tests. A source can pass one and fail the other."
+          }
+        },
+        {
+          "id": "q15",
+          "lv": 3,
+          "kind": "mc",
+          "from": "source",
+          "q": "Someone says: 'This statement is a fact, because it is true.' What is wrong with that reasoning?",
+          "opts": [
+            "Nothing — facts are the statements that are true",
+            "Fact means checkable, not necessarily correct",
+            "Only scientists get to decide what is a fact",
+            "Facts have to be about the past to count"
+          ],
+          "ans": 1,
+          "hint": "Is 'Brazil is in Europe' an opinion?",
+          "steps": [
+            "Take a statement that is checkable but wrong: Brazil is in Europe.",
+            "It is not an opinion — nobody's feelings are involved, and it can be looked up.",
+            "So a false statement can still be a factual claim; it is simply an incorrect one.",
+            "That means fact describes the kind of statement, not whether the answer is right."
+          ],
+          "ex": {
+            "main": "**Fact means checkable, not correct.** Brazil is in Europe is a factual claim that happens to be false. Opinions are a different category entirely — they cannot be checked at all.",
+            "tip": "Sort statements by 'could this be checked' first. Deciding whether it is TRUE is the next job, not the same one."
+          }
+        },
+        {
+          "id": "q16",
+          "lv": 3,
+          "kind": "mc",
+          "from": "source",
+          "q": "A student reads a report aloud to the class about a battle from 1863. The report is careful and well researched. Is it primary or secondary?",
+          "opts": [
+            "Primary — the class heard it directly from her",
+            "Primary — careful research makes a source primary",
+            "Secondary only if the student got something wrong",
+            "Secondary — she is retelling, not reporting"
+          ],
+          "ans": 3,
+          "hint": "Hearing something first-hand is not the same as the source being first-hand.",
+          "steps": [
+            "Identify the event: a battle in 1863.",
+            "Ask whether the student was present at it — no, by well over a century.",
+            "The student gathered other people's accounts and retold them, which is secondary by definition.",
+            "Hearing it live, and the quality of the research, change nothing about that."
+          ],
+          "ex": {
+            "main": "**Secondary.** The classification is about the distance between the maker and the event, not between the source and you. A brilliant report about 1863 is still a retelling.",
+            "tip": "Careful work does not promote a source to primary. Only having been there does."
+          }
+        },
+        {
+          "id": "q17",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "An author is interviewed about the novel she has just written. What kind of source is that interview, for someone studying her novel?",
+          "opts": [
+            "Secondary — an interview is always about something else",
+            "Primary — she made the thing being studied",
+            "Secondary — she is only giving an opinion",
+            "Primary — all interviews are primary sources"
+          ],
+          "ans": 1,
+          "hint": "Who made the thing being studied?",
+          "steps": [
+            "Work out what is being studied: her novel.",
+            "Ask who made it — she did, so she is as first-hand as it gets.",
+            "Her account of her own work is therefore a primary source for it.",
+            "Note the trap: not all interviews are primary. An interview with a critic who merely read the novel would be secondary."
+          ],
+          "ex": {
+            "main": "**Primary — she made the thing being studied.** Careful, though: an interview is only primary when the person was there for whatever you are researching.",
+            "tip": "Always ask 'primary for WHAT?'. The same source can be primary for one topic and secondary for another."
+          }
+        }
+      ]
+    }
+  }
+}
