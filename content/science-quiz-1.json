@@ -4,8 +4,8 @@
     "unit-sci-q1": {
       "id": "unit-sci-q1",
       "type": "unit",
-      "updatedAt": 1786903718697,
-      "libv": 1,
+      "updatedAt": 1786913435239,
+      "libv": 2,
       "classId": "science",
       "quarter": 1,
       "status": "draft",
@@ -346,7 +346,7 @@
           "lv": 2,
           "kind": "mc",
           "from": "source",
-          "q": "The same student then writes: It rained last night. Is that an observation or an inference?",
+          "q": "A student sees that the sidewalk outside is wet, and writes: It rained last night. Is that an observation or an inference?",
           "opts": [
             "An observation, because the sidewalk really is wet",
             "An observation, because rain is a real event",
@@ -356,10 +356,10 @@
           "ans": 3,
           "hint": "Was the student outside at midnight watching?",
           "steps": [
-            "Ask whether the student actually saw rain fall. They did not — they were asleep.",
-            "They saw a wet sidewalk and explained it using what they know: rain makes things wet.",
-            "Explaining an observation with what you already know is inferring.",
-            "It might even be correct — but a sprinkler would have left the same puddle, so it is still an inference."
+            "Ask what the student actually saw: a wet sidewalk, and nothing else.",
+            "They did not see rain fall — they were not outside overnight.",
+            "They explained the wet sidewalk using what they know: rain makes things wet.",
+            "Explaining an observation with what you already know is inferring — and a sprinkler would have left the same puddle."
           ],
           "ex": {
             "main": "**An inference.** The student worked it out rather than seeing it, and being right would not change that.",
