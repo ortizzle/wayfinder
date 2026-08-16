@@ -1,0 +1,647 @@
+{
+  "v": 4,
+  "records": {
+    "unit-sci-q1": {
+      "id": "unit-sci-q1",
+      "type": "unit",
+      "updatedAt": 1786903718697,
+      "libv": 1,
+      "classId": "science",
+      "quarter": 1,
+      "status": "draft",
+      "title": "Science · Quiz 1: Thinking Like a Scientist",
+      "srcName": "Science Quiz 1 — Hypothesis Practice and Observation vs. Inference (Drive)",
+      "source": "Science 4, Quiz 1 material — 'Hypothesis Practice' and 'Observation vs. Inference' (Drive)",
+      "summary": {
+        "text": "The Quiz 1 material covers three skills that go together. Observing: using your five senses to collect information, either as something you can measure and count, or as something you can only describe. Inferring: explaining what you observed using what you already know. And asking and answering: telling a scientific question (one you can test) from an opinion question, then turning that question into a hypothesis written as an If... then... statement.",
+        "from": "source"
+      },
+      "why": {
+        "text": "These three skills are the ones you use in every science lab for the rest of the year — and every one of those labs starts by making you write a hypothesis. Knowing the difference between what you saw and what you worked out is also just useful. Most arguments are people mixing up the two.",
+        "from": "added"
+      },
+      "objectives": [
+        {
+          "text": "Tell an observation apart from an inference, and explain how you know.",
+          "from": "source"
+        },
+        {
+          "text": "Decide whether a question is scientific or is really about opinion.",
+          "from": "source"
+        },
+        {
+          "text": "Write a hypothesis in correct If... then... format from a question.",
+          "from": "source"
+        },
+        {
+          "text": "Name the thing being changed and the thing being measured in an investigation.",
+          "from": "added"
+        },
+        {
+          "text": "Explain why a hypothesis that turns out wrong is still a good hypothesis.",
+          "from": "added"
+        }
+      ],
+      "parentNote": {
+        "text": "Built from the two Quiz 1 handouts: the hypothesis packet (scenarios, an If/then worksheet, and an identifying-scientific-questions page) and the Observation vs. Inference sheet. Her Observation vs. Inference sheet came back at 90%, and the items that cost the points are the boundary cases — statements that sound like plain facts but are actually conclusions, such as saying someone is cold rather than saying they are wearing a heavy coat. That boundary is what this unit drills hardest. None of the questions here refer back to the sheets, so she can do them without hunting for the originals. One thing worth watching: on the popcorn scenario her hypothesis named a brand without an If/then structure, so the format itself — not the science — is the part to practise.",
+        "from": "added"
+      },
+      "nextUp": {
+        "text": "Cards first, then a quiz round. The observation-or-inference questions are the ones worth slowing down on.",
+        "minutes": 15,
+        "from": "added"
+      },
+      "cards": [
+        {
+          "id": "c0",
+          "term": "Observation",
+          "from": "source",
+          "def": "**Something you notice using your five senses.**\n• You see it, hear it, feel it, smell it or taste it — right now.\n• No explaining, no guessing. Just what is there.",
+          "hint": "If you had to shut your eyes and take someone's word for it, it was not your observation."
+        },
+        {
+          "id": "c1",
+          "term": "Measurable observation",
+          "from": "source",
+          "def": "**An observation you can put a number on.**\n• The rabbit weighs 12 pounds. The plant is 8 centimetres tall. There are 14 seeds.\n• Also called countable. Anyone with the same ruler or scale would get the same answer.",
+          "hint": "If a number fits in the sentence, it is this kind."
+        },
+        {
+          "id": "c2",
+          "term": "Describable observation",
+          "from": "source",
+          "def": "**An observation you can only put into words, not numbers.**\n• The rabbit is light grey and furry with brown eyes.\n• Still a real observation — you are using your senses. It just has no number.",
+          "hint": "Words instead of numbers. Both count as observing."
+        },
+        {
+          "id": "c3",
+          "term": "Inference",
+          "from": "source",
+          "def": "**A conclusion you reach by explaining what you observed.**\n• You use what you already know to work out what is happening, what happened, or what will happen.\n• Example: the lion is growling, so he must be hungry. The growling is observed. The hungry part is the inference.",
+          "hint": "An inference is your brain adding something your senses did not give you."
+        },
+        {
+          "id": "c4",
+          "term": "The test: observation or inference?",
+          "from": "added",
+          "def": "**Ask whether someone standing next to you could see it too, right now.**\n• If yes, it is an observation.\n• If they would have to agree with your reasoning first, it is an inference.\n• Careful: an inference can be completely correct and still be an inference.",
+          "hint": "Right in front of you, or worked out in your head. That is the only question."
+        },
+        {
+          "id": "c5",
+          "term": "Inferences can be wrong",
+          "from": "added",
+          "def": "**Two people can observe exactly the same thing and infer different explanations.**\n• Wet grass could mean rain, or sprinklers, or dew.\n• That is not a failure. It means an inference needs evidence behind it, and more evidence makes it stronger.",
+          "hint": "Observations are what happened. Inferences are your best explanation so far."
+        },
+        {
+          "id": "c6",
+          "term": "Scientific question",
+          "from": "source",
+          "def": "**A question you can answer by testing or observing.**\n• Which type of soil helps bean plants grow the tallest?\n• How does water temperature affect how fast sugar dissolves?\n• You could go and find out, and everyone would get the same answer.",
+          "hint": "If you can picture the experiment, it is a scientific question."
+        },
+        {
+          "id": "c7",
+          "term": "Not a scientific question",
+          "from": "source",
+          "def": "**A question based on opinions, values or personal preferences.**\n• What is the most beautiful flower? Which video game is the most fun? Should everyone recycle?\n• There is no test that settles it, because the answer changes depending on who you ask.",
+          "hint": "Watch for best, prettiest, most fun, and should. Those are opinion words."
+        },
+        {
+          "id": "c8",
+          "term": "Hypothesis",
+          "from": "source",
+          "def": "**A testable prediction, written as an If... then... statement.**\n• If the marble is dropped down a longer slide, then it will roll faster.\n• It has to be something an experiment could show is right or wrong.",
+          "hint": "A hypothesis is a prediction with a reason built into its shape."
+        },
+        {
+          "id": "c9",
+          "term": "The If... then... format",
+          "from": "source",
+          "def": "**If [the thing you change], then [what you predict will happen].**\n• The If part names what you will do differently.\n• The then part names what you expect to measure.\n• Both halves are required. A hypothesis missing one is not finished.",
+          "hint": "If I change this, then that will happen. Fill in the two blanks."
+        },
+        {
+          "id": "c10",
+          "term": "The thing you change",
+          "from": "added",
+          "def": "**The one thing you deliberately make different between your tests.**\n• In How does the brand of popcorn affect how many kernels are left?, the thing you change is the brand.\n• Change only one thing at a time, or you will not know which change caused the result.",
+          "hint": "It is the part right after How does in the question."
+        },
+        {
+          "id": "c11",
+          "term": "The thing you measure",
+          "from": "added",
+          "def": "**What you watch, count or measure to see if anything happened.**\n• In How does the brand of popcorn affect how many kernels are left?, you measure the leftover kernels.\n• This is the part your then goes with.",
+          "hint": "It is the part right after affect in the question."
+        },
+        {
+          "id": "c12",
+          "term": "Turning a question into a hypothesis",
+          "from": "added",
+          "def": "**Take the question apart and put the two pieces into If and then.**\n• Question: How does the amount of sunlight affect how tall a sunflower grows?\n• Change: amount of sunlight. Measure: height.\n• Hypothesis: If a sunflower gets more sunlight, then it will grow taller.",
+          "hint": "Find the two pieces first. The sentence almost writes itself after that."
+        },
+        {
+          "id": "c13",
+          "term": "A hypothesis has to be testable",
+          "from": "added",
+          "def": "**If no experiment could ever check it, it is not a hypothesis.**\n• If I wish hard enough, then my plant will grow taller — nothing here can be measured or repeated.\n• If my plant gets fertilizer, then it will grow taller — this one you could set up tomorrow.",
+          "hint": "Ask yourself: what would I actually do to find out?"
+        },
+        {
+          "id": "c14",
+          "term": "Being wrong is allowed",
+          "from": "added",
+          "def": "**A hypothesis that turns out wrong is still a good hypothesis.**\n• You were not guessing the answer — you were making a prediction clear enough to check.\n• The experiment worked. It told you something true, which is the whole job.",
+          "hint": "The only bad hypothesis is one too vague to be checked."
+        },
+        {
+          "id": "c15",
+          "term": "Write it before you start",
+          "from": "added",
+          "def": "**Scientists write the hypothesis down before running the experiment.**\n• Written first, it is a real prediction you are committed to.\n• Written afterwards, it is just a description of what already happened — and you can no longer be surprised.",
+          "hint": "Predict first. Otherwise you are only reporting."
+        }
+      ],
+      "questions": [
+        {
+          "id": "q0",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What is an observation?",
+          "opts": [
+            "A guess about what will happen next time",
+            "Something you notice with your senses",
+            "An explanation of why something happened",
+            "A question you would like to answer"
+          ],
+          "ans": 1,
+          "hint": "Which one uses your eyes, ears, nose, tongue or skin?",
+          "steps": [
+            "An observation is information you collect directly, right now.",
+            "You collect it with your five senses — seeing, hearing, feeling, smelling, tasting.",
+            "Explaining why something happened is a different skill, called inferring.",
+            "So an observation is something you notice with your senses."
+          ],
+          "ex": {
+            "main": "**Something you notice with your senses.** Explaining why comes later, and has a different name.",
+            "tip": "Observing comes first. Everything else in science is built on top of it."
+          }
+        },
+        {
+          "id": "q1",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What is an inference?",
+          "opts": [
+            "Anything you can measure with a ruler",
+            "A question that cannot be tested",
+            "A list of materials for an experiment",
+            "A conclusion based on an observation"
+          ],
+          "ans": 3,
+          "hint": "It is the part your brain adds after your senses have done their work.",
+          "steps": [
+            "Start from something you noticed — an observation.",
+            "Add what you already know about how the world works.",
+            "Put the two together and you reach a conclusion about what is going on.",
+            "That conclusion is the inference."
+          ],
+          "ex": {
+            "main": "**A conclusion based on an observation.** The lion is growling is the observation; he must be hungry is the inference.",
+            "tip": "Observation, then inference. In that order, always."
+          }
+        },
+        {
+          "id": "q2",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which format should a hypothesis be written in?",
+          "opts": [
+            "Because... so...",
+            "If... then...",
+            "First... next...",
+            "Who... what... when..."
+          ],
+          "ans": 1,
+          "hint": "Two blanks: one for what you change, one for what you predict.",
+          "steps": [
+            "A hypothesis has to name the change you will make and the result you expect.",
+            "The If half carries the change; the then half carries the prediction.",
+            "That gives the If... then... format.",
+            "Leave either half out and the hypothesis is not finished."
+          ],
+          "ex": {
+            "main": "**If... then...** The If names what you are changing, the then names what you predict will happen.",
+            "tip": "If a sentence has no then, it is not yet a hypothesis."
+          }
+        },
+        {
+          "id": "q3",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which of these is a measurable observation?",
+          "opts": [
+            "The puppy is adorable",
+            "The puppy will be big when it grows up",
+            "The puppy weighs 9 pounds",
+            "The puppy is probably hungry"
+          ],
+          "ans": 2,
+          "hint": "Which one has a number that anyone with a scale could check?",
+          "steps": [
+            "A measurable observation has a number you could check with a tool.",
+            "Adorable has no number and depends on who is asking — that is an opinion.",
+            "Probably hungry and will be big are conclusions and guesses, not things you can weigh today.",
+            "Weighs 9 pounds is a number from a scale, so it is the measurable observation."
+          ],
+          "ex": {
+            "main": "**The puppy weighs 9 pounds.** Numbers make it measurable — anyone with a scale gets the same answer. Adorable is an opinion, and the other two are guesses about things nobody can weigh yet.",
+            "tip": "Measurable observations survive being checked by someone else. That is what makes them useful."
+          }
+        },
+        {
+          "id": "q4",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "What makes a question a scientific question?",
+          "opts": [
+            "It sounds serious and uses proper science words",
+            "It is about plants or animals",
+            "It has one right answer everybody knows",
+            "It can be answered by testing or observing"
+          ],
+          "ans": 3,
+          "hint": "Could you go and find out?",
+          "steps": [
+            "Ask what you would actually do to answer the question.",
+            "If you can describe a test or something to observe, it is scientific.",
+            "The topic does not decide it — a question about video games can be scientific if something is measurable.",
+            "Sounding serious does not decide it either."
+          ],
+          "ex": {
+            "main": "**You can answer it by testing or observing.** What matters is whether an experiment could settle it, not what the question is about.",
+            "tip": "Ask yourself: what would I do to find out? If you can answer that, the question is scientific."
+          }
+        },
+        {
+          "id": "q5",
+          "lv": 1,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which word in a question is the strongest signal that it is about opinion rather than science?",
+          "opts": [
+            "Best",
+            "How many",
+            "Taller",
+            "Faster"
+          ],
+          "ans": 0,
+          "hint": "Which one changes depending on who you ask?",
+          "steps": [
+            "Check each word for whether it can be measured with a tool.",
+            "How many is counted, taller is measured with a ruler, faster is timed.",
+            "Best cannot be measured — it depends entirely on who is answering.",
+            "So best is the opinion signal."
+          ],
+          "ex": {
+            "main": "**Best.** Best, prettiest and most fun all depend on the person answering. The others can be measured, and everybody measuring carefully gets the same answer.",
+            "tip": "Opinion words to watch: best, worst, most beautiful, most fun, should."
+          }
+        },
+        {
+          "id": "q6",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "A student writes: The sidewalk is wet. Is that an observation or an inference?",
+          "opts": [
+            "An inference, because water on the ground means rain",
+            "An observation — the water is visible right now",
+            "An inference, because the student is predicting rain",
+            "Neither an observation nor an inference"
+          ],
+          "ans": 1,
+          "hint": "Could someone standing beside the student see it too, this second?",
+          "steps": [
+            "Apply the test: could someone standing next to the student see this right now?",
+            "Yes — the wetness is visible to anyone looking at the sidewalk.",
+            "Nothing has been explained yet; no reason has been given for the water.",
+            "So it is an observation."
+          ],
+          "ex": {
+            "main": "**An observation.** The wetness is right there for anyone's eyes, and explaining is what turns an observation into an inference.",
+            "tip": "The someone-standing-next-to-you test settles almost all of these."
+          }
+        },
+        {
+          "id": "q7",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "The same student then writes: It rained last night. Is that an observation or an inference?",
+          "opts": [
+            "An observation, because the sidewalk really is wet",
+            "An observation, because rain is a real event",
+            "A hypothesis about last night's weather",
+            "An inference — nobody saw the rain happen"
+          ],
+          "ans": 3,
+          "hint": "Was the student outside at midnight watching?",
+          "steps": [
+            "Ask whether the student actually saw rain fall. They did not — they were asleep.",
+            "They saw a wet sidewalk and explained it using what they know: rain makes things wet.",
+            "Explaining an observation with what you already know is inferring.",
+            "It might even be correct — but a sprinkler would have left the same puddle, so it is still an inference."
+          ],
+          "ex": {
+            "main": "**An inference.** The student worked it out rather than seeing it, and being right would not change that.",
+            "tip": "An inference being correct does not make it an observation. How you got it is what decides."
+          }
+        },
+        {
+          "id": "q8",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "Which of these is a scientific question?",
+          "opts": [
+            "Which paper towel brand absorbs the most water?",
+            "Which paper towel has the nicest pattern on it?",
+            "Should everyone use paper towels at home?",
+            "Is summer a better season than winter?"
+          ],
+          "ans": 0,
+          "hint": "Only one of these could be settled with a measuring cup.",
+          "steps": [
+            "Test each one by asking what experiment would answer it.",
+            "Nicest pattern, should everyone, and better season all depend on personal opinion.",
+            "How much water a towel absorbs can be measured with a measuring cup, the same way every time.",
+            "So the absorbing question is the scientific one."
+          ],
+          "ex": {
+            "main": "**Which paper towel brand absorbs the most water?** You pour a measured amount of water and see how much each towel soaks up. The others are about taste, values and preference.",
+            "tip": "Nicest, should and better all do the same job: turning a question into an opinion."
+          }
+        },
+        {
+          "id": "q9",
+          "lv": 2,
+          "kind": "mc",
+          "from": "source",
+          "q": "Question: How does the amount of sunlight affect how tall a sunflower grows? Which hypothesis fits it correctly?",
+          "opts": [
+            "Sunflowers usually grow tall in the summer months",
+            "I think that sunlight is important for sunflowers",
+            "If sunflowers are pretty, then people will plant them",
+            "If a sunflower gets more sun, then it grows taller"
+          ],
+          "ans": 3,
+          "hint": "The If should name sunlight, and the then should name height.",
+          "steps": [
+            "Pull the two pieces out of the question: the change is sunlight, the measurement is height.",
+            "The hypothesis must use If... then..., with the change in the If half.",
+            "Rule out anything without that structure, and anything about prettiness, which the question never asked.",
+            "If a sunflower gets more sun, then it grows taller puts sunlight in the If and height in the then."
+          ],
+          "ex": {
+            "main": "**If a sunflower gets more sun, then it grows taller.** The If names what is being changed and the then names what is being measured.",
+            "tip": "Match your two halves to the two halves of the question. They line up every time."
+          }
+        },
+        {
+          "id": "q10",
+          "lv": 2,
+          "kind": "mc",
+          "from": "added",
+          "q": "In the question How does water temperature affect how fast sugar dissolves?, what is the thing you would deliberately change?",
+          "opts": [
+            "The temperature of the water",
+            "How fast the sugar dissolves",
+            "The type of sugar used",
+            "The size of the cup"
+          ],
+          "ans": 0,
+          "hint": "Look at the words right after How does.",
+          "steps": [
+            "The question has the shape How does [what you change] affect [what you measure]?",
+            "Right after How does comes water temperature, so that is what you change.",
+            "How fast the sugar dissolves comes after affect, so that is what you measure.",
+            "The sugar and the cup should be kept exactly the same, so they cannot spoil the result."
+          ],
+          "ex": {
+            "main": "**The temperature of the water.** That is what you set up differently between tests, while everything else is held steady.",
+            "tip": "Every question on this topic follows the same shape. Find How does and affect, and the two pieces fall out."
+          }
+        },
+        {
+          "id": "q11",
+          "lv": 2,
+          "kind": "mc",
+          "from": "added",
+          "q": "Which of these hypotheses is written correctly?",
+          "opts": [
+            "Fertilizer is good for growing bean plants",
+            "If bean plants grow taller, then the fertilizer works",
+            "If a bean plant gets fertilizer, then it grows taller",
+            "Bean plants grow better when fertilizer is added"
+          ],
+          "ans": 2,
+          "hint": "One of them has If and then in the right order — change first, result second.",
+          "steps": [
+            "A correct hypothesis uses If... then..., so rule out anything without both words.",
+            "The If half must name what you do; the then half must name what you predict.",
+            "One option puts the result in the If half, which predicts the cause from the effect — backwards.",
+            "If a bean plant gets fertilizer, then it grows taller has the change first and the prediction second."
+          ],
+          "ex": {
+            "main": "**If a bean plant gets fertilizer, then it grows taller.** The change comes first, the prediction second. The version starting If bean plants grow taller has them backwards.",
+            "tip": "Read your own If half and ask: is this the thing I am doing? If it is the thing you are hoping to see, swap them."
+          }
+        },
+        {
+          "id": "q12",
+          "lv": 3,
+          "kind": "order",
+          "from": "added",
+          "q": "Put these four steps of an investigation in the order a scientist does them.",
+          "opts": [
+            "Ask a question you can test",
+            "Write a hypothesis as an If... then... statement",
+            "Run the test and record your observations",
+            "Decide whether the results support the hypothesis"
+          ],
+          "ans": 0,
+          "hint": "One of these has to happen before you touch any equipment — and it is not the test.",
+          "steps": [
+            "Everything starts with a question worth answering, so that comes first.",
+            "Next comes the hypothesis, written before the test so the results can prove it wrong.",
+            "Then you run the test and record what you observe.",
+            "Only at the end can you compare the results to the prediction and decide what they show."
+          ],
+          "ex": {
+            "main": "**Question → hypothesis → test → decide.** The order that matters most is hypothesis before test. Swap those two and your prediction can never be wrong, which makes it useless.",
+            "tip": "If you are ever unsure of the order, ask which step would be pointless if done later."
+          }
+        },
+        {
+          "id": "q13",
+          "lv": 3,
+          "kind": "mc",
+          "from": "added",
+          "q": "A student writes two sentences about a classroom: There are 22 coats on the hooks. The class went outside today. What is the relationship between them?",
+          "opts": [
+            "Both are observations, since both describe the room",
+            "Both are inferences, since nobody was watching",
+            "The first is an inference, the second an observation",
+            "The first is an observation, the second an inference"
+          ],
+          "ans": 3,
+          "hint": "One of them could be counted. The other is a story about why.",
+          "steps": [
+            "Take the coats sentence: you could walk over and count them, so it is an observation.",
+            "Take the going-outside sentence: nobody saw that happen, it was worked out from the coats.",
+            "Working something out from what you observed is inferring.",
+            "So the counted one is the observation and the explanation is the inference."
+          ],
+          "ex": {
+            "main": "**Observation first, inference second.** And the inference could easily be wrong: maybe the class never left and the coats never moved.",
+            "tip": "When two sentences sit side by side, the one you could check with your own eyes is the observation."
+          }
+        },
+        {
+          "id": "q14",
+          "lv": 3,
+          "kind": "mc",
+          "from": "added",
+          "q": "Why is If I wish hard enough, then my plant will grow taller not a usable hypothesis, even though it uses If and then?",
+          "opts": [
+            "It is far too short to count as a hypothesis",
+            "Nobody can measure or repeat wishing",
+            "Plants are not really a scientific topic",
+            "It should use because instead of the word then"
+          ],
+          "ans": 1,
+          "hint": "How would you set up two groups, one wishing and one not?",
+          "steps": [
+            "Check the format first: it does use If... then..., so the format is not the problem.",
+            "Now check the If half: it has to name something you can actually do, the same way twice.",
+            "Wishing hard enough cannot be measured or repeated, so no test could ever check it.",
+            "Swap wishing for fertilizer and the same sentence becomes a real experiment."
+          ],
+          "ex": {
+            "main": "**Nothing about it can be measured or repeated.** The If... then... format is necessary but not enough — the If half has to name something you can physically do.",
+            "tip": "Correct format, untestable idea: a trap worth spotting. Always ask what you would actually do."
+          }
+        },
+        {
+          "id": "q15",
+          "lv": 3,
+          "kind": "mc",
+          "from": "added",
+          "q": "A student predicted that seeds in the dark would sprout faster. They did not. The student says the experiment failed. What is wrong with saying that?",
+          "opts": [
+            "Nothing is wrong — a wrong hypothesis means it failed",
+            "They should change the hypothesis to match the result",
+            "The experiment worked; a wrong prediction is a result",
+            "They should repeat it until the prediction comes true"
+          ],
+          "ans": 2,
+          "hint": "What was the experiment actually for — proving the student right, or finding out?",
+          "steps": [
+            "Ask what the experiment was built to do: find out whether darkness speeds up sprouting.",
+            "It answered that question, so it did its job.",
+            "A hypothesis is a prediction you commit to before you know, not an answer you must get right.",
+            "Rewriting it afterwards, or repeating until you like the result, would throw away what you actually learned."
+          ],
+          "ex": {
+            "main": "**The experiment worked.** It was built to find out, and it found out. A wrong prediction is a real result.",
+            "tip": "The only real failure is a test so vague that the result cannot tell you anything either way."
+          }
+        },
+        {
+          "id": "q16",
+          "lv": 3,
+          "kind": "mc",
+          "from": "added",
+          "q": "You observe that a classmate's lunchbox is still completely full at the end of lunch. Which inference does that observation support best?",
+          "opts": [
+            "They hate every food their family packs them",
+            "They will probably be sick again tomorrow morning",
+            "Something stopped them eating — time, or hunger",
+            "They already ate three other lunches earlier"
+          ],
+          "ans": 2,
+          "hint": "Which explanation stays closest to what you actually saw?",
+          "steps": [
+            "Write down exactly what was observed: the food was not eaten.",
+            "A good inference explains that and no more than that.",
+            "Hating every food, being sick tomorrow, and eating three lunches all add claims the lunchbox cannot support.",
+            "Something stopped them eating — no time, or no hunger — stays inside the evidence."
+          ],
+          "ex": {
+            "main": "**Something kept them from eating.** A full lunchbox tells you the food was not eaten. It does not tell you their opinion of it, their health tomorrow, or their morning.",
+            "tip": "Strong inferences stay small. If yours needs three extra assumptions, it needs more evidence first."
+          }
+        },
+        {
+          "id": "q17",
+          "lv": 3,
+          "kind": "mc",
+          "from": "added",
+          "q": "Two students test the same question about ramps and toy cars. One changes the ramp height. The other changes the ramp height and swaps to a heavier car. Why is the second student's test a problem?",
+          "opts": [
+            "You could not tell which change caused the result",
+            "Heavier cars are not allowed in fair experiments",
+            "They should have changed three things, not two",
+            "Their hypothesis will automatically turn out wrong"
+          ],
+          "ans": 0,
+          "hint": "Two changes, one result. Which change gets the credit?",
+          "steps": [
+            "The second student changed two things at once: the height and the car's weight.",
+            "Suppose the car goes faster. Was that the height, the weight, or both together?",
+            "There is no way to separate them from a single result, so the test cannot answer the question.",
+            "Changing one thing at a time is what makes the answer traceable to a cause."
+          ],
+          "ex": {
+            "main": "**You could not tell which change caused the result.** The second student will still get a number at the end — it just will not answer their question.",
+            "tip": "Before you start, list what stays the same. That list does more work than it looks like."
+          }
+        },
+        {
+          "id": "q18",
+          "lv": 3,
+          "kind": "mc",
+          "from": "added",
+          "q": "Why do scientists write their hypothesis down before running the experiment rather than afterwards?",
+          "opts": [
+            "Because the teacher checks the paper first",
+            "Written first, the results can prove it wrong",
+            "Because it is quicker before you get tired",
+            "Because a hypothesis has to match the results"
+          ],
+          "ans": 1,
+          "hint": "What can a prediction do that a description cannot?",
+          "steps": [
+            "A hypothesis written beforehand is a genuine prediction — you do not yet know the answer.",
+            "That means the results are able to disagree with it.",
+            "Written afterwards, it only describes what already happened, so it can never be wrong.",
+            "Something that can never be wrong teaches you nothing, so the order is what gives it value."
+          ],
+          "ex": {
+            "main": "**So the results can actually prove it wrong.** A hypothesis written beforehand is a risk you take, and the ability to be wrong is what makes it worth writing.",
+            "tip": "Predict, then test, then compare. Swapping the order quietly removes the point."
+          }
+        }
+      ]
+    }
+  }
+}
