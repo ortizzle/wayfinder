@@ -288,7 +288,20 @@ Rules that are the point:
   light) across every palette in both themes.
 - **The 3px rules use `--pc-fg`, never raw `--pc`** — the same call `.row.now`
   already made for `--ac-fg`. Raw `--pc` as a rule measured **1.65:1** in light:
-  a hue, not a mark. With `--pc-fg`, 5.98:1.
+  a hue, not a mark. With `--pc-fg`, 5.98:1. The same upgrade was applied to the
+  four pre-existing raw-`--pc` rules (`.rw.lead`, `.lk`, `.tile`, `.plan`);
+  painted `.subj` tiles are unaffected — they hide their border by design
+  because the fill IS the subject colour.
+- **`--pc-fg` must be DECLARED on every element that can carry its own `--pc`.**
+  An unregistered custom property resolves its `var()` references on the element
+  where it is declared, so a week-card row that overrides `--pc` still inherits
+  the CARD's already-computed `--pc-fg` — the lead rows wore the focus subject's
+  colour no matter whose door they were. The declaration selector list therefore
+  names `.rw.lead`, `.lk`, `.tile` and `.plan` alongside the `subj-a` classes.
+- **The week card's doors are not all one subject.** A lesson door can point at
+  another class, so the row rule lives on `.rw.lead` (which carries its own
+  `--pc`), and the card-wide `.rw` rule is scoped to the runway — whose rows
+  really are all the card's subject.
 - **`.row.now` still wins over `.row.subj-a`** (later in the sheet, equal
   specificity), and that is correct: accent means "this lands today", subject
   hue means "this subject". Today is a different axis from topic.
