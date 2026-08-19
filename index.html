@@ -243,6 +243,15 @@ header{padding:22px 0 14px;display:flex;align-items:center;justify-content:space
 .skyhint{margin-top:var(--gap-row);padding:9px 12px;border-radius:11px;background:var(--deep);
   border-left:3px solid var(--ac-fg);font-size:13.5px;line-height:1.45;color:var(--muted)}
 .skysay{margin-top:var(--gap-row);font-size:13.5px;line-height:1.45;color:var(--warm)}
+/* Spelling Bee letter row: her own confirmed letters, filled in left to
+   right as she says them. Ordinary theme tokens — the bee identity lives on
+   the flashcards; this is a normal app screen with a bee theme in copy and
+   emoji only. */
+.beeword{display:flex;flex-wrap:wrap;gap:6px;margin:11px 0}
+.beebox{min-width:32px;height:40px;padding:0 4px;display:flex;align-items:center;
+  justify-content:center;border-radius:9px;border:1px solid var(--line);background:var(--deep);
+  font-family:'Fraunces',Georgia,serif;font-size:19px;font-weight:700;color:var(--good)}
+.beebox.on{border-color:var(--good);background:var(--ac-8)}
 /* The revealed word, called out the same way a Growth Zone miss marks its
    correct answer (.miss .a) — bold and --good, not just plain text in a
    sentence she has to parse. Both are already held to 4.5:1 on card and page. */
@@ -612,6 +621,32 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .face .subjtag{position:absolute;top:14px;left:16px;font-size:9.5px;letter-spacing:.14em;
   text-transform:uppercase;font-weight:800;color:rgba(255,255,255,.65)}
 .face.back .wm{display:none}
+/* Bee-shaped flashcards (content flag u.bee) — River's Spelling Bee word
+   list. A literal bee silhouette would clip text right off the card, so the
+   shape reads as a honeycomb cell instead: an octagon with generous flat
+   top/bottom edges, so the reading area never nears a clipped corner.
+   Colours are FIXED, not theme tokens — like the note-from-home post-it,
+   this card is meant to feel like a physical object, not UI chrome, so it
+   looks the same in light and dark. Measured directly: ink on the honey
+   gradient's darker end is 10.0:1, worst case — both faces, both themes. */
+/* .face.back.bee, not just .face.bee: .face.back:not(.subj) sets its own
+   background at (0,3,0) specificity, which beat my (0,2,0) bee rule on the
+   BACK face only — caught by rendering, not reading, same trap the pattern-
+   layer comment above already warns about. Tied at (0,3,0), source order
+   (this rule is later) settles it. */
+.face.bee,.face.back.bee{clip-path:polygon(7% 0%,93% 0%,100% 22%,100% 78%,93% 100%,7% 100%,0% 78%,0% 22%);
+  background-color:#FFE9A8;background-image:linear-gradient(165deg,#FFF3D6,#FFE9A8);
+  border:2px solid #D9A441;color:#3A2600;padding-top:56px}
+.face.bee::before{content:'';position:absolute;top:0;left:0;right:0;height:40px;
+  background-color:#FFC93C;
+  background-image:repeating-linear-gradient(180deg,transparent 0 6px,#1F1B12 6px 12px)}
+.face.bee .wm{opacity:.1}
+.face.bee .term,.face.bee .def{color:#3A2600}
+.face.bee .saidas{color:#5c4008}
+.face.bee .hint{color:#8A5A00}
+.face.bee .eq{background:rgba(255,255,255,.55);border-color:#D9A441}
+.face.bee .tap{color:#8A5A00}
+.face.bee .sayb{top:48px;background-color:rgba(58,38,0,.14);border-color:#D9A441}
 
 .opt{width:100%;text-align:left;min-height:var(--tap);padding:14px 16px;margin-bottom:var(--gap-row);border-radius:14px;background:var(--surface);border:1px solid var(--line);font-size:15px;display:flex;gap:12px;align-items:flex-start;line-height:1.45}
 /* Passage excerpts render as a scrap torn out of the book: cream paper in BOTH
@@ -1281,7 +1316,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v98 · the answer, called out';
+const APP_VERSION = 'v99 · hear it, spell it — the bee is here';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -2469,7 +2504,8 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/history-5ws.json', 'content/science-quiz-1.json', 'content/history-u2-u3-review.json',
   'content/math-t3-31.json', 'content/math-t3-32.json', 'content/math-t3-33.json', 'content/math-t3-34.json',
   'content/math-t3-35.json', 'content/math-t3-36.json', 'content/math-t3-37.json', 'content/math-t3-review.json',
-  'content/science-measurement.json'];
+  'content/science-measurement.json',
+  'content/spelling-bee-1.json', 'content/spelling-bee-2.json', 'content/spelling-bee-3.json', 'content/spelling-bee-4.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
@@ -2581,6 +2617,7 @@ const focusLogs = () => all('focus').sort((a,b)=>b.at-a.at);
 function modeLabel(l){
   if(l.mode==='cards')   return 'Flashcards';
   if(l.mode==='starsky') return 'Star sky';
+  if(l.mode==='bee') return 'Spelling Bee';
   if(l.mode==='read')    return 'Reading';
   if(l.mode==='readfin') return 'Finished a book';
   if(l.mode==='quiz'){
@@ -4233,10 +4270,14 @@ function unitCard(u, c, label){
       ()=>go('cards',{unitId:u.id, classId:c.id})));
     return card;
   }
-  const row = el('div','mrow'+(!u.book?' three':''));
+  /* Beat the clock is dropped for bee units for the same reason as book
+     units: pickRound already excludes kind:'spell' questions from timed
+     rounds (typing against a countdown tests typing, not spelling), so a
+     bee unit's clock tile would simply serve an empty round. */
+  const row = el('div','mrow'+(!u.book && !u.bee?' three':''));
   row.appendChild(modeTile('cards','Flashcards','flip & check',()=>go('cards',{unitId:u.id,classId:c.id})));
   row.appendChild(modeTile('quiz','Quiz','prove it',()=>launchQuiz(u.id,c.id,false)));
-  if(!u.book){
+  if(!u.book && !u.bee){
     /* Book-companion units never race a clock — speed-reading a novel
        quiz teaches exactly the wrong thing. */
     row.appendChild(modeTile('clock','Beat the clock','race your pace',()=>launchQuiz(u.id,c.id,true)));
@@ -4253,6 +4294,14 @@ function unitCard(u, c, label){
     const sk = el('button','btn btn-secondary','🌌  Star sky — say the words');
     sk.addEventListener('click',()=>{ skyState = null; go('starsky',{unitId:u.id, classId:c.id}); });
     card.appendChild(sk);
+  }
+  /* Spelling Bee: explicit content flag, never inferred — this is Chris's
+     real word list, not a generic vocabulary shelf, so it opts in by name
+     rather than by shape the way Star Sky's Wordly Wise gate does. */
+  if(u.bee){
+    const bz = el('button','btn btn-secondary','🐝  Spelling Bee — hear it, spell it');
+    bz.addEventListener('click',()=>{ beeState = null; go('beeround',{unitId:u.id, classId:c.id}); });
+    card.appendChild(bz);
   }
   return card;
 }
@@ -4420,9 +4469,12 @@ SCREENS.cards = function(root){
   /* The card wears its subject: graph paper for maths, ruled paper for English,
      cell dots for Biology, and so on. */
   const flip = el('div','flip'+(cardState.flipped?' on':'')), inner = el('div','flip-in');
-  const front = paint(el('div','face front'), cls);
-  front.appendChild(el('div','wm', cls?cls.icon:'✦'));
-  if(cls) front.appendChild(el('div','subjtag', cls.name));
+  /* A bee-flagged unit skips paint() entirely — its own fixed honeycomb
+     identity, not the subject's texture. Content flag, never inferred. */
+  const isBee = !!u.bee;
+  const front = isBee ? el('div','face front bee') : paint(el('div','face front'), cls);
+  front.appendChild(el('div','wm', isBee ? '🐝' : (cls?cls.icon:'✦')));
+  if(cls && !isBee) front.appendChild(el('div','subjtag', cls.name));
   front.appendChild(el('div','term',card.term));
   /* A hand-checked respelling, for material where reading it is not the same
      as saying it. Shown as well as spoken — she can check the voice against
@@ -4442,7 +4494,7 @@ SCREENS.cards = function(root){
     front.appendChild(sp);
   }
   front.appendChild(el('div','tap','Tap to reveal'));
-  const back = paint(el('div','face back'), cls);
+  const back = isBee ? el('div','face back bee') : paint(el('div','face back'), cls);
   back.appendChild(defEl(card.def));
   if(card.eq) back.appendChild(el('div','eq',card.eq));
   if(card.hint) back.appendChild(el('div','hint','💡 '+card.hint));
@@ -5773,6 +5825,299 @@ SCREENS.starsky = function(root){
   }
   const leave = el('button','btn btn-ghost','Back to the unit');
   leave.addEventListener('click', () => { skyLog(u); skyState = null; go('unit', {classId: ctx.classId}); });
+  root.appendChild(leave);
+};
+
+/* ---- The Spelling Bee (Wayfinder only) ----
+   Chris added a real word list to River's account; this practises it the way
+   a real bee runs: the word is ANNOUNCED, never shown as text, and she may
+   ask to hear it again, hear its meaning, or hear it used in a sentence —
+   exactly what a contestant is allowed to ask a pronouncer. Then she spells
+   it aloud, letter by letter, and the app listens for the letters in order.
+
+   Rules that are the point:
+   - The word is spoken, never shown, until she has produced it (or given up
+     and asked for it) — showing it first would make this a copying
+     exercise, not a spelling one.
+   - Letter NAMES are genuinely hard for a recognizer — B/D/E/G/P/T/V/Z sound
+     alike to it, same as they do on a bad phone line — so the matcher is
+     deliberately conservative: an unmapped or ambiguous sound is skipped
+     rather than guessed, and a mismatch never erases letters already heard
+     correctly. She is never marked wrong for the microphone's mistake.
+   - Typing is always visible, not hidden behind repeated failure the way
+     Star Sky hides spelling behind repeated mishearings of a WHOLE word —
+     here the fallback produces the identical outcome (a spelled word), so
+     there is no reason to make her earn the escape hatch.
+   - No new record types. One ordinary log (mode:'bee') per session, same
+     shape as Star Sky's mode:'starsky'. */
+let beeState = null;
+const BEE_XP = 6;
+/* Common spoken forms of each letter name, including the ones a recognizer
+   is likely to transcribe them as ("b" often comes back as "be" or "bee").
+   Deliberately conservative: only unambiguous forms are mapped — a heard
+   word that isn't here is simply skipped, never guessed at. */
+const BEE_LETTERS = {
+  a:'A', ay:'A', b:'B', be:'B', bee:'B', c:'C', see:'C', sea:'C', d:'D', dee:'D',
+  e:'E', ee:'E', f:'F', ef:'F', eff:'F', g:'G', gee:'G', h:'H', aitch:'H', haitch:'H',
+  i:'I', eye:'I', j:'J', jay:'J', k:'K', kay:'K', l:'L', el:'L', ell:'L', m:'M', em:'M',
+  n:'N', en:'N', o:'O', oh:'O', p:'P', pee:'P', pea:'P', q:'Q', cue:'Q', queue:'Q',
+  r:'R', ar:'R', are:'R', s:'S', es:'S', ess:'S', t:'T', tee:'T', tea:'T',
+  u:'U', you:'U', yu:'U', v:'V', vee:'V', w:'W', x:'X', ex:'X', y:'Y', why:'Y',
+  z:'Z', zee:'Z', zed:'Z'
+};
+/* "double u"/"double you" is the one two-word letter name — folded to a
+   single token before the rest split on whitespace and map independently. */
+function beeParseLetters(transcript){
+  const t = String(transcript||'').toLowerCase().replace(/double[\s-]*u\b|double[\s-]*you\b/g,' w ');
+  return t.replace(/[^a-z\s]/g,' ').split(/\s+/).map(tok=>BEE_LETTERS[tok]).filter(Boolean);
+}
+function beeLog(u){
+  const done = beeState.results.filter(Boolean).length;
+  if(!done) return;
+  beeState.logId = beeState.logId || uid('log');
+  put({ id: beeState.logId, type:'log', mode:'bee', classId: ctx.classId, unitId: u.id,
+        date: AZ.today(), at: beeState.start, correct: beeState.correct, total: done,
+        seconds: Math.round((Date.now()-beeState.start)/1000),
+        xp: beeState.correct*BEE_XP, hints: 0 });
+}
+SCREENS.beeround = function(root){
+  const u = unitFor(ctx.unitId);
+  const words = u ? skyCards(u) : [];
+  if(!u || !words.length) return go('unit', {classId: ctx.classId});
+  if(!beeState || beeState.unitId !== u.id)
+    beeState = { unitId:u.id, order:shuffle(words.map((_,i)=>i)), i:0, correct:0, results:[],
+      start:Date.now(), logId:null, heard:'', typed:'', listening:false, verdict:null,
+      tries:0, spell:false, srDead:false, revealedWord:false, showDef:false, showEx:false,
+      reveal:false, spellTries:0, _rec:null };
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const voiceOK = !!SR && !beeState.srDead;
+  const done = beeState.i >= beeState.order.length;
+
+  const head = el('div','card');
+  head.appendChild(el('div','eyebrow', u.title + ' · Spelling Bee'));
+  const hr = el('div','row');
+  hr.appendChild(el('span','k', done ? 'Round finished' : `Word ${beeState.i+1} of ${beeState.order.length}`));
+  hr.appendChild(el('span','v', `${beeState.correct} spelled`));
+  head.appendChild(hr);
+  const shapeState = beeState.results.concat(Array(beeState.order.length-beeState.results.length).fill(null));
+  head.appendChild(roundBand(u, {state: shapeState}));
+  root.appendChild(head);
+
+  if(done){
+    const secs = Math.round((Date.now()-beeState.start)/1000);
+    const fin = el('div','card ac');
+    fin.appendChild(el('div','eyebrow','🐝 Round finished'));
+    fin.appendChild(el('h3',null, beeState.correct===beeState.order.length
+      ? 'Every word, spelled.' : 'That is the whole list.'));
+    root.appendChild(fin);
+    const box = el('div','card');
+    box.insertBefore(roundBand(u,{state:beeState.results, tall:true}), box.firstChild);
+    const t = el('div','tally');
+    const chip = (n, rest) => { const s = el('span');
+      s.appendChild(el('b',null,String(n))); s.appendChild(document.createTextNode(rest)); t.appendChild(s); };
+    chip(beeState.correct, ` of ${beeState.order.length}`);
+    chip('+'+(beeState.correct*BEE_XP), ' XP');
+    chip(secs<90?secs:Math.round(secs/60), secs<90?' sec':' min');
+    box.appendChild(t);
+    root.appendChild(box);
+    const again = el('button','btn btn-primary','Study this list again');
+    again.addEventListener('click',()=>{ beeLog(u); beeState=null; render(); });
+    root.appendChild(again);
+    const leave = el('button','btn btn-ghost','Back to the unit');
+    leave.addEventListener('click',()=>{ beeLog(u); beeState=null; go('unit',{classId:ctx.classId}); });
+    root.appendChild(leave);
+    return;
+  }
+
+  const c = words[beeState.order[beeState.i]];
+  const word = c.term;
+  const resetWord = () => {
+    beeState.heard=''; beeState.typed=''; beeState.verdict=null; beeState.tries=0;
+    beeState.spell=false; beeState.revealedWord=false; beeState.showDef=false;
+    beeState.showEx=false; beeState.reveal=false; beeState.spellTries=0; beeState._rec=null;
+  };
+  const lightIt = () => {
+    beeState.results[beeState.i] = 'lit'; beeState.correct++;
+    if(navigator.vibrate) navigator.vibrate([18,40,18]);
+    const isLast = beeState.i === beeState.order.length-1;
+    celebrate(isLast ? {big:true} : undefined);
+    beeState.i++; resetWord(); render();
+  };
+  const skipWord = () => {
+    beeState.results[beeState.i] = 'dim';
+    beeState.i++; resetWord(); render();
+  };
+
+  const p = el('div','card ac');
+  p.appendChild(el('div','eyebrow','Listen, then spell it'));
+  if(!beeState.revealedWord){
+    const hear = el('button','btn btn-primary','🔊 Hear the word');
+    hear.addEventListener('click',()=>{ beeState.revealedWord=true; say(word); render(); });
+    p.appendChild(hear);
+  } else {
+    const row = el('div','btn-row');
+    const again = el('button','btn btn-secondary','🔁 Hear it again');
+    again.addEventListener('click',()=>say(word));
+    row.appendChild(again);
+    const defBtn = el('button','btn btn-secondary','📖 Meaning');
+    defBtn.addEventListener('click',()=>{ beeState.showDef=!beeState.showDef; if(beeState.showDef) say(skyDefLine(c)); render(); });
+    row.appendChild(defBtn);
+    const examples = skyExamples(c);
+    if(examples.length){
+      const exBtn = el('button','btn btn-secondary','💬 In a sentence');
+      exBtn.addEventListener('click',()=>{ beeState.showEx=!beeState.showEx; if(beeState.showEx) say(examples[0]); render(); });
+      row.appendChild(exBtn);
+    }
+    p.appendChild(row);
+    if(beeState.showDef) p.appendChild(richify(el('p'), skyDefLine(c)));
+    if(beeState.showEx && examples.length) p.appendChild(el('p',null, examples[0]));
+
+    /* Her own confirmed letters, shown as she says them — unlike a guessing
+       game, there is nothing here to hide. Empty boxes are what is left. */
+    const lrow = el('div','beeword');
+    for(let k=0;k<word.length;k++){
+      const box = el('span','beebox'+(k<beeState.heard.length?' on':''));
+      box.textContent = k<beeState.heard.length ? beeState.heard[k].toUpperCase() : '';
+      lrow.appendChild(box);
+    }
+    p.appendChild(lrow);
+
+    if(beeState.listening){
+      const li = el('div','skylisten');
+      li.appendChild(el('span','dot'));
+      li.appendChild(el('span',null,'Listening — spell it letter by letter'));
+      p.appendChild(li);
+    }
+    if(beeState.verdict) p.appendChild(el('p','skysay', beeState.verdict));
+
+    const btns = el('div','btn-row');
+    const markTry = () => { beeState.tries++; };
+    if(voiceOK && !beeState.spell){
+      const mic = el('button','btn btn-primary', beeState.listening ? '● Listening…' : '🎤 Spell it');
+      mic.disabled = beeState.listening;
+      mic.addEventListener('click', () => {
+        beeState.listening = true; beeState.verdict = null; render();
+        if(navigator.vibrate) navigator.vibrate(25);
+        const r = new SR(); r.lang='en-US'; r.continuous=true; r.interimResults=true; r.maxAlternatives=1;
+        beeState._rec = r;
+        let processed = 0, stopped = false, sawFinal = false;
+        const finishListening = () => { if(stopped) return; stopped=true; clearTimeout(safety); try{r.stop();}catch(e){} };
+        /* continuous:true never auto-stops on a pause — that is the point,
+           letter-to-letter pauses must not end the session — but it also
+           never auto-stops on its own, so a bound is needed or an
+           abandoned session listens forever. */
+        const safety = setTimeout(finishListening, 22000);
+        r.onresult = e => {
+          for(let i=processed;i<e.results.length;i++){
+            if(!e.results[i].isFinal) continue;
+            processed = i+1; sawFinal = true;
+            const before = beeState.heard.length;
+            const letters = beeParseLetters(e.results[i][0].transcript);
+            let lastHeard = null;
+            letters.forEach(L=>{
+              lastHeard = L;
+              if(beeState.heard.length < word.length && L === word[beeState.heard.length].toUpperCase())
+                beeState.heard += word[beeState.heard.length];
+            });
+            if(beeState.heard.length === word.length){
+              finishListening(); beeState.listening=false; lightIt(); return;
+            }
+            if(beeState.heard.length === before){
+              markTry();
+              beeState.verdict = lastHeard ? ('Heard "' + lastHeard + '" — try the next letter again.')
+                : 'That did not sound like a letter — try again.';
+              if(beeState.tries >= 2){
+                finishListening(); beeState.listening = false; beeState.spell = true;
+                beeState.verdict = 'Voice is tricky on tight letters — typing counts just the same.';
+              }
+            }
+          }
+          render();
+        };
+        r.onerror = e => {
+          if(stopped) return;
+          const k = e.error;
+          clearTimeout(safety); beeState.listening = false;
+          if(k === 'no-speech'){
+            markTry();
+            beeState.verdict = 'It did not catch anything — hold the phone closer and try again.';
+          } else if(k === 'not-allowed' || k === 'service-not-allowed'){
+            beeState.srDead = true; beeState.spell = true;
+            beeState.verdict = 'The microphone is blocked for this site, so typing is the game today. A grown-up can allow the mic in the browser settings.';
+          } else if(k === 'network'){
+            beeState.srDead = true; beeState.spell = true;
+            beeState.verdict = 'Voice checking needs the internet and could not reach it — typing counts just the same.';
+          } else if(k === 'audio-capture'){
+            beeState.srDead = true; beeState.spell = true;
+            beeState.verdict = 'No microphone could be found — typing counts just the same.';
+          } else if(k !== 'aborted'){
+            markTry();
+            beeState.verdict = 'The microphone had trouble (' + k + ') — try again, or type it.';
+          }
+          render();
+        };
+        r.onend = () => {
+          if(!beeState.listening) return;
+          beeState.listening = false;
+          if(!sawFinal){ markTry();
+            beeState.verdict = 'It stopped listening before it heard you — tap and try again.'; }
+          if(beeState.tries >= 2) beeState.spell = true;
+          render();
+        };
+        try { r.start(); }
+        catch(err){ beeState.listening = false; beeState.spell = true;
+          beeState.verdict = 'The microphone would not start — type it instead.'; render(); }
+      });
+      btns.appendChild(mic);
+    }
+    p.appendChild(btns);
+    /* Always visible, never earned by failing first — typing produces the
+       identical outcome (a spelled word), so there is no reason to hide it
+       the way Star Sky hides spelling behind a whole-word mishearing. It
+       also doubles as the way to bail out of a stuck listening session. */
+    if(voiceOK && !beeState.spell){
+      const sp2 = el('button','btn btn-ghost','Type it instead');
+      sp2.addEventListener('click',()=>{
+        if(beeState._rec){ try{beeState._rec.stop();}catch(e){} }
+        beeState.listening=false; beeState.spell=true; beeState.verdict=null; render();
+      });
+      p.appendChild(sp2);
+    }
+    if(!voiceOK || beeState.spell){
+      const ti = el('input'); ti.type='text';
+      ti.autocapitalize='none'; ti.autocomplete='off'; ti.spellcheck=false;
+      ti.placeholder='Type the spelling';
+      ti.value = beeState.typed || '';
+      ti.addEventListener('input',()=>{ beeState.typed = ti.value; });
+      p.appendChild(ti);
+      if(beeState.reveal){
+        const rv = el('p','skyreveal');
+        rv.appendChild(el('span',null,'It is spelled '));
+        rv.appendChild(el('span','a', word));
+        rv.appendChild(el('span',null,' — type it once to mark it spelled.'));
+        p.appendChild(rv);
+      }
+      const chk = el('button','btn btn-primary','Check my spelling');
+      chk.addEventListener('click',()=>{
+        const norm = t => String(t).toLowerCase().replace(/[^a-z]/g,'');
+        if(norm(beeState.typed) === norm(word)) lightIt();
+        else {
+          beeState.spellTries++;
+          beeState.verdict = 'Not quite — check it letter by letter.';
+          if(beeState.spellTries >= 2) beeState.reveal = true;
+          render();
+        }
+      });
+      p.appendChild(chk);
+    }
+    const skip = el('button','btn btn-ghost','Skip for now →');
+    skip.addEventListener('click', skipWord);
+    p.appendChild(skip);
+  }
+  root.appendChild(p);
+
+  const leave = el('button','btn btn-ghost','Leave the round');
+  leave.addEventListener('click', () => { beeLog(u); beeState=null; go('unit', {classId: ctx.classId}); });
   root.appendChild(leave);
 };
 

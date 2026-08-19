@@ -1,0 +1,439 @@
+{
+ "v": 4,
+ "records": {
+  "unit-bee2": {
+   "id": "unit-bee2",
+   "type": "unit",
+   "updatedAt": 1787097494070,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Spelling Bee · List 2",
+   "srcName": "Spelling Bee Words — 2026-27 Scripps 'Two Bee' 4th Grade Study List (Drive)",
+   "source": "Scripps National Spelling Bee, 2026-27 Two Bee Study Words for Fourth Grade — official 50-word study list (Drive)",
+   "summary": {
+    "text": "List 2 of River's Spelling Bee study words: sniffling, beneath, tractor, permit, awning, fickle, relief, lunar, boycotting, molten, elite, woven, proclaim.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the real Scripps \"Two Bee\" fourth-grade word list — the words a school spelling bee actually draws from. Saying each word aloud, letter by letter, is the same skill a real bee tests, not just recognizing the word on a page.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Spell every word on this list correctly, letter by letter, from hearing it alone.",
+     "from": "added"
+    },
+    {
+     "text": "State each word's meaning in your own words.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from \"Spelling Bee Words\", the 2026-27 Scripps Two Bee fourth-grade study list you added to her Drive folder. All 50 official words are split across four lessons; every definition and example sentence here was written fresh, since the source is a bare word list with no definitions to copy. The flashcards use the honeycomb \"bee\" look, and each lesson also opens the Spelling Bee voice game — hear it, spell it aloud letter by letter.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first to learn the meanings, then the Spelling Bee game to practice saying the letters aloud.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "sniffling",
+     "def": "**Breathing in short, audible sniffs through the nose, often from crying or a cold.**\n• He came in sniffling and wiping his nose after the walk in the rain.",
+     "hint": "Double F before -ling: SNIFF + LING.",
+     "from": "added",
+     "sp": "SNIF-ling"
+    },
+    {
+     "id": "c1",
+     "term": "beneath",
+     "def": "**In or to a lower position than something else; underneath.**\n• The cat curled up beneath the porch to stay cool.",
+     "hint": "BE- + NEATH — \"neath\" is an old word for \"under\" on its own.",
+     "from": "added",
+     "sp": "bih-NEETH"
+    },
+    {
+     "id": "c2",
+     "term": "tractor",
+     "def": "**A powerful vehicle with large wheels, used to pull farm machinery or heavy loads.**\n• The farmer drove the tractor slowly along the fence line.",
+     "hint": "TRACT- (like \"traction\") + -OR.",
+     "from": "added",
+     "sp": "TRAK-ter"
+    },
+    {
+     "id": "c3",
+     "term": "permit",
+     "def": "**To allow something to happen, or an official paper that gives permission for something.**\n• You need a permit to build a fence that tall.",
+     "hint": "PER- + -MIT, like \"permission\" cut short.",
+     "from": "added",
+     "sp": "per-MIT"
+    },
+    {
+     "id": "c4",
+     "term": "awning",
+     "def": "**A rooflike cover, often made of canvas or metal, that extends over a window, door, or patio.**\n• Rain drummed steadily on the striped awning above the café tables.",
+     "hint": "AWN- + -ING — do not forget the N before -ing.",
+     "from": "added",
+     "sp": "AW-ning"
+    },
+    {
+     "id": "c5",
+     "term": "fickle",
+     "def": "**Likely to change opinions, loyalty, or feelings suddenly and without warning.**\n• The weather this week has been fickle — sun one hour, rain the next.",
+     "hint": "FICK- + -LE, and it rhymes with \"pickle\".",
+     "from": "added",
+     "sp": "FIK-ul"
+    },
+    {
+     "id": "c6",
+     "term": "relief",
+     "def": "**A feeling of comfort or reassurance after worry, pain, or difficulty ends.**\n• Finding her lost keys brought a wave of relief.",
+     "hint": "\"I\" before \"E\" except after \"C\" — so it is L-I-E-F.",
+     "from": "added",
+     "sp": "rih-LEEF"
+    },
+    {
+     "id": "c7",
+     "term": "lunar",
+     "def": "**Relating to or connected with the moon.**\n• A lunar eclipse happens when Earth's shadow falls across the moon.",
+     "hint": "LUN- (like \"lunatic\", which the Romans blamed on the moon) + -AR.",
+     "from": "added",
+     "sp": "LOO-ner"
+    },
+    {
+     "id": "c8",
+     "term": "boycotting",
+     "def": "**Refusing to buy, use, or take part in something, as a form of organized protest.**\n• The neighborhood was boycotting the store until it lowered its prices.",
+     "hint": "BOYCOTT doubles the T before -ING.",
+     "from": "added",
+     "sp": "BOI-kot-ing"
+    },
+    {
+     "id": "c9",
+     "term": "molten",
+     "def": "**Melted by great heat, especially describing rock or metal in liquid form.**\n• Molten lava glowed orange as it flowed down the volcano's side.",
+     "hint": "MOLT- + -EN, like \"melt\" with a different vowel.",
+     "from": "added",
+     "sp": "MOHL-tun"
+    },
+    {
+     "id": "c10",
+     "term": "elite",
+     "def": "**A select, small group of people considered the best, most skilled, or most powerful in their field.**\n• Only the elite runners qualified for the final race.",
+     "hint": "One L, then -LITE, like \"light\" without the GH.",
+     "from": "added",
+     "sp": "ih-LEET"
+    },
+    {
+     "id": "c11",
+     "term": "woven",
+     "def": "**Formed by crossing threads or strips over and under one another, as cloth or a basket is made.**\n• The basket was woven from thin strips of willow.",
+     "hint": "WOVE (past tense of \"weave\") + -N.",
+     "from": "added",
+     "sp": "WOH-vun"
+    },
+    {
+     "id": "c12",
+     "term": "proclaim",
+     "def": "**To announce something officially and publicly, often with importance or authority.**\n• The mayor stood on the steps to proclaim the city's new holiday.",
+     "hint": "PRO- + CLAIM — \"claim\" hides right inside it.",
+     "from": "added",
+     "sp": "proh-KLAYM"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: breathing in short, audible sniffs through the nose, often from crying or a cold.",
+     "opts": [
+      "sniffling"
+     ],
+     "ans": 0,
+     "hint": "Double F before -ling: SNIFF + LING.",
+     "steps": [
+      "Start with \"sniff\": S-N-I-F-F.",
+      "Drop the final F is wrong — keep both Fs.",
+      "Add L-I-N-G.",
+      "SNIFFLING"
+     ],
+     "ex": {
+      "main": "**sniffling.**",
+      "tip": "\"Sniff\" keeps its double F all the way through, even with -ling attached."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: in or to a lower position than something else; underneath.",
+     "opts": [
+      "beneath"
+     ],
+     "ans": 0,
+     "hint": "BE- + NEATH — \"neath\" is an old word for \"under\" on its own.",
+     "steps": [
+      "Two syllables: be and neath.",
+      "B-E, then N-E-A-T-H.",
+      "The EA says a long E sound, like in \"each\".",
+      "BENEATH"
+     ],
+     "ex": {
+      "main": "**beneath.**",
+      "tip": "\"Neath\" rhymes with \"teeth\" — same EA-TH pattern."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a powerful vehicle with large wheels, used to pull farm machinery or heavy loads.",
+     "opts": [
+      "tractor"
+     ],
+     "ans": 0,
+     "hint": "TRACT- (like \"traction\") + -OR.",
+     "steps": [
+      "Two syllables: tract and or.",
+      "T-R-A-C-T, same as \"traction\" without the -ion.",
+      "Finish with O-R, not E-R.",
+      "TRACTOR"
+     ],
+     "ex": {
+      "main": "**tractor.**",
+      "tip": "It ends in -OR like \"actor\" and \"doctor\", not -ER."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to allow something to happen, or an official paper that gives permission for something.",
+     "opts": [
+      "permit"
+     ],
+     "ans": 0,
+     "hint": "PER- + -MIT, like \"permission\" cut short.",
+     "steps": [
+      "Two syllables: per and mit.",
+      "P-E-R, then M-I-T.",
+      "One T at the end, not two.",
+      "PERMIT"
+     ],
+     "ex": {
+      "main": "**permit.**",
+      "tip": "Related to \"permission\" and \"permissible\" — all share the same PER-M- start."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a rooflike cover, often made of canvas or metal, that extends over a window, door, or patio.",
+     "opts": [
+      "awning"
+     ],
+     "ans": 0,
+     "hint": "AWN- + -ING — do not forget the N before -ing.",
+     "steps": [
+      "Two syllables: awn and ing.",
+      "A-W-N, three letters before the ending.",
+      "Add I-N-G.",
+      "AWNING"
+     ],
+     "ex": {
+      "main": "**awning.**",
+      "tip": "It is easy to drop the N by accident — say \"awn\" slowly to hear it."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: likely to change opinions, loyalty, or feelings suddenly and without warning.",
+     "opts": [
+      "fickle"
+     ],
+     "ans": 0,
+     "hint": "FICK- + -LE, and it rhymes with \"pickle\".",
+     "steps": [
+      "Two syllables: fick and le.",
+      "F-I-C-K, ending in CK like \"pick\".",
+      "Finish with L-E.",
+      "FICKLE"
+     ],
+     "ex": {
+      "main": "**fickle.**",
+      "tip": "Rhyme it with \"pickle\" and the CK-LE pattern falls into place."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a feeling of comfort or reassurance after worry, pain, or difficulty ends.",
+     "opts": [
+      "relief"
+     ],
+     "ans": 0,
+     "hint": "\"I\" before \"E\" except after \"C\" — so it is L-I-E-F.",
+     "steps": [
+      "Two syllables: re and lief.",
+      "R-E, then L.",
+      "I before E: L-I-E-F.",
+      "RELIEF"
+     ],
+     "ex": {
+      "main": "**relief.**",
+      "tip": "No C anywhere in this word, so the ordinary I-before-E rule applies with no exception."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: relating to or connected with the moon.",
+     "opts": [
+      "lunar"
+     ],
+     "ans": 0,
+     "hint": "LUN- (like \"lunatic\", which the Romans blamed on the moon) + -AR.",
+     "steps": [
+      "Two syllables: lun and ar.",
+      "L-U-N, same start as \"lunatic\".",
+      "Finish with A-R, not E-R.",
+      "LUNAR"
+     ],
+     "ex": {
+      "main": "**lunar.**",
+      "tip": "It ends in -AR, matching \"solar\" — its opposite for the sun."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: refusing to buy, use, or take part in something, as a form of organized protest.",
+     "opts": [
+      "boycotting"
+     ],
+     "ans": 0,
+     "hint": "BOYCOTT doubles the T before -ING.",
+     "steps": [
+      "Start with \"boycott\": B-O-Y-C-O-T-T.",
+      "Double T stays before the ending.",
+      "Add I-N-G.",
+      "BOYCOTTING"
+     ],
+     "ex": {
+      "main": "**boycotting.**",
+      "tip": "\"Boycott\" already ends in double T on its own — -ing does not add a third."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: melted by great heat, especially describing rock or metal in liquid form.",
+     "opts": [
+      "molten"
+     ],
+     "ans": 0,
+     "hint": "MOLT- + -EN, like \"melt\" with a different vowel.",
+     "steps": [
+      "Two syllables: molt and en.",
+      "M-O-L-T, an O not an E.",
+      "Finish with E-N.",
+      "MOLTEN"
+     ],
+     "ex": {
+      "main": "**molten.**",
+      "tip": "It looks like \"melt\" but the vowel changes to O — say it slowly to hear the difference."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a select, small group of people considered the best, most skilled, or most powerful in their field.",
+     "opts": [
+      "elite"
+     ],
+     "ans": 0,
+     "hint": "One L, then -LITE, like \"light\" without the GH.",
+     "steps": [
+      "Two syllables: e and lite.",
+      "E, one letter.",
+      "L-I-T-E — one L, silent E at the end.",
+      "ELITE"
+     ],
+     "ex": {
+      "main": "**elite.**",
+      "tip": "Just one L in the middle — doubling it is the most common slip."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: formed by crossing threads or strips over and under one another, as cloth or a basket is made.",
+     "opts": [
+      "woven"
+     ],
+     "ans": 0,
+     "hint": "WOVE (past tense of \"weave\") + -N.",
+     "steps": [
+      "Two syllables: wo and ven.",
+      "W-O-V-E, like \"wove\".",
+      "Add N at the end.",
+      "WOVEN"
+     ],
+     "ex": {
+      "main": "**woven.**",
+      "tip": "\"Weave\" becomes \"wove\" in the past tense, and \"woven\" just adds N to that."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to announce something officially and publicly, often with importance or authority.",
+     "opts": [
+      "proclaim"
+     ],
+     "ans": 0,
+     "hint": "PRO- + CLAIM — \"claim\" hides right inside it.",
+     "steps": [
+      "Two syllables: pro and claim.",
+      "P-R-O.",
+      "\"Claim\" spells exactly as you already know it: C-L-A-I-M.",
+      "PROCLAIM"
+     ],
+     "ex": {
+      "main": "**proclaim.**",
+      "tip": "If you can spell \"claim\", you already know the second half of this word."
+     }
+    }
+   ],
+   "round": 13,
+   "bee": true
+  }
+ }
+}

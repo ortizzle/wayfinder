@@ -11,8 +11,8 @@ def card(C, term, d, hint=None, eq=None, frm='source'):
     c['from'] = frm
     C.append(c)
 
-def q(Q, lv, text, opts, ans, hint, steps, main, tip, frm='source'):
-    Q.append({'id': 'q%d' % len(Q), 'lv': lv, 'from': frm, 'kind': 'mc', 'q': text,
+def q(Q, lv, text, opts, ans, hint, steps, main, tip, frm='source', kind='mc'):
+    Q.append({'id': 'q%d' % len(Q), 'lv': lv, 'from': frm, 'kind': kind, 'q': text,
               'opts': [str(o) for o in opts], 'ans': ans, 'hint': hint, 'steps': steps,
               'ex': {'main': main, 'tip': tip}})
 
@@ -33,14 +33,23 @@ def _balance(Q):
             x['ans'] = want
 
 def build(app, C, Q, uid, title, classId, summary, why, objectives, parentNote, nextUp,
-          path, srcName, source, offset_hours=4, round_=None, order_=None):
+          path, srcName, source, offset_hours=4, round_=None, order_=None, bee_=False):
     errs = []
     for c in C:
         if not c['def'].startswith('**'): errs.append('%s: def not bold-first' % c['id'])
     for x in Q:
-        if len(x['opts']) != 4: errs.append('%s: %d opts' % (x['id'], len(x['opts'])))
-        if len(set(x['opts'])) != 4: errs.append('%s: duplicate opts' % x['id'])
-        if not (0 <= x['ans'] < 4): errs.append('%s: ans out of range' % x['id'])
+        kind = x.get('kind', 'mc')
+        # kind:'spell' carries opts:[word] (one option), ans:0 — matches the
+        # engine's own contract (index.html's quiz renderer reads word from
+        # opts[ans]) and check_content.py, which likewise only enforces the
+        # 4-option/duplicate/ans-range rules for kind in ('mc','analogy').
+        if kind in ('mc', 'analogy'):
+            if len(x['opts']) != 4: errs.append('%s: %d opts' % (x['id'], len(x['opts'])))
+            if len(set(x['opts'])) != 4: errs.append('%s: duplicate opts' % x['id'])
+            if not (0 <= x['ans'] < 4): errs.append('%s: ans out of range' % x['id'])
+        elif kind == 'spell':
+            if len(x['opts']) != 1: errs.append('%s: spell must carry exactly opts:[word]' % x['id'])
+            if x['ans'] != 0: errs.append('%s: spell must have ans 0' % x['id'])
         if not (3 <= len(x['steps']) <= 6): errs.append('%s: %d steps' % (x['id'], len(x['steps'])))
         if not x['ex']['main'].startswith('**'): errs.append('%s: ex.main not bold' % x['id'])
         if x['lv'] not in (1, 2, 3): errs.append('%s: bad lv' % x['id'])
@@ -62,6 +71,7 @@ def build(app, C, Q, uid, title, classId, summary, why, objectives, parentNote, 
     }
     if round_: unit['round'] = round_
     if order_: unit['order'] = order_
+    if bee_: unit['bee'] = True
     # REPO is this repo's root; a sibling app is next to it. The old absolute
     # container path silently wrote nowhere useful on any other machine.
     root = REPO if os.path.basename(REPO) == app else os.path.join(os.path.dirname(REPO), app)

@@ -1,0 +1,409 @@
+{
+ "v": 4,
+ "records": {
+  "unit-bee4": {
+   "id": "unit-bee4",
+   "type": "unit",
+   "updatedAt": 1787097494071,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Spelling Bee · List 4",
+   "srcName": "Spelling Bee Words — 2026-27 Scripps 'Two Bee' 4th Grade Study List (Drive)",
+   "source": "Scripps National Spelling Bee, 2026-27 Two Bee Study Words for Fourth Grade — official 50-word study list (Drive)",
+   "summary": {
+    "text": "List 4 of River's Spelling Bee study words: inferior, December, duration, dictionary, business, reinstate, examine, versus, lullaby, opposite, tissues, marlin.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the real Scripps \"Two Bee\" fourth-grade word list — the words a school spelling bee actually draws from. Saying each word aloud, letter by letter, is the same skill a real bee tests, not just recognizing the word on a page.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Spell every word on this list correctly, letter by letter, from hearing it alone.",
+     "from": "added"
+    },
+    {
+     "text": "State each word's meaning in your own words.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from \"Spelling Bee Words\", the 2026-27 Scripps Two Bee fourth-grade study list you added to her Drive folder. All 50 official words are split across four lessons; every definition and example sentence here was written fresh, since the source is a bare word list with no definitions to copy. The flashcards use the honeycomb \"bee\" look, and each lesson also opens the Spelling Bee voice game — hear it, spell it aloud letter by letter.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first to learn the meanings, then the Spelling Bee game to practice saying the letters aloud.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "inferior",
+     "def": "**Lower in rank, status, or quality compared to something or someone else.**\n• The reviewer said the cheap copy felt inferior to the original.",
+     "hint": "IN- + FERIOR — it pairs with its opposite, \"superior\".",
+     "from": "added",
+     "sp": "in-FEER-ee-er"
+    },
+    {
+     "id": "c1",
+     "term": "December",
+     "def": "**The twelfth and final month of the year, marking the start of winter in the Northern Hemisphere.**\n• Snow usually starts falling here by mid-December.",
+     "hint": "Capital D, then DE- + CEM- + -BER — \"cem\" rhymes with \"gem\".",
+     "from": "added",
+     "sp": "dih-SEM-ber"
+    },
+    {
+     "id": "c2",
+     "term": "duration",
+     "def": "**The length of time that something lasts or continues.**\n• The movie's duration was just over two hours.",
+     "hint": "DUR- (like \"during\") + -ATION.",
+     "from": "added",
+     "sp": "dur-AY-shun"
+    },
+    {
+     "id": "c3",
+     "term": "dictionary",
+     "def": "**A reference book that lists words in alphabetical order along with their meanings and pronunciations.**\n• She looked up the unfamiliar word in the dictionary.",
+     "hint": "DICTION- (the way words are spoken) + -ARY.",
+     "from": "added",
+     "sp": "DIK-shuh-ner-ee"
+    },
+    {
+     "id": "c4",
+     "term": "business",
+     "def": "**A person's regular work or trade, or an organization that makes, buys, or sells goods and services.**\n• Their family business has sold bicycles for three generations.",
+     "hint": "BUSI- (from \"busy\") + -NESS — the U makes an \"i\" sound.",
+     "from": "added",
+     "sp": "BIZ-nis"
+    },
+    {
+     "id": "c5",
+     "term": "reinstate",
+     "def": "**To restore someone or something to a former position, condition, or state.**\n• The committee voted to reinstate the canceled holiday.",
+     "hint": "RE- + IN- + STATE — three small words joined.",
+     "from": "added",
+     "sp": "ree-in-STAYT"
+    },
+    {
+     "id": "c6",
+     "term": "examine",
+     "def": "**To inspect something carefully and in detail, or to test someone's knowledge.**\n• The doctor took a moment to examine the small cut on her hand.",
+     "hint": "EX- + AMINE, one M — like \"exam\" with -ine added.",
+     "from": "added",
+     "sp": "ig-ZAM-in"
+    },
+    {
+     "id": "c7",
+     "term": "versus",
+     "def": "**Against, used to describe two sides opposing each other, especially in a contest, game, or legal case.**\n• Friday's game is the home team versus their biggest rivals.",
+     "hint": "VERSUS is its own whole word — one S in the middle, one at the end.",
+     "from": "added",
+     "sp": "VER-sus"
+    },
+    {
+     "id": "c8",
+     "term": "lullaby",
+     "def": "**A soft, soothing song sung to help a baby or young child fall asleep.**\n• Her grandmother hummed the same lullaby every night before bed.",
+     "hint": "LULL (to calm) + -A- + -BY.",
+     "from": "added",
+     "sp": "LUL-uh-by"
+    },
+    {
+     "id": "c9",
+     "term": "opposite",
+     "def": "**Situated on the other side of something, or completely different in nature or direction.**\n• North is the exact opposite direction from south.",
+     "hint": "OPPO- (double P) + -SITE.",
+     "from": "added",
+     "sp": "OP-uh-zit"
+    },
+    {
+     "id": "c10",
+     "term": "tissues",
+     "def": "**Soft, absorbent paper used for wiping or blowing the nose, or the biological material that makes up living things.**\n• He grabbed a box of tissues before his nose started running.",
+     "hint": "TISSUE keeps its U even though you do not hear it — TIS- + -SUE.",
+     "from": "added",
+     "sp": "TISH-ooz"
+    },
+    {
+     "id": "c11",
+     "term": "marlin",
+     "def": "**A large, fast ocean fish with a long, spear-shaped upper jaw, prized by sport fishers.**\n• The fishing boat's crew spotted a marlin leaping near the horizon.",
+     "hint": "MAR- (like the start of \"marine\") + -LIN.",
+     "from": "added",
+     "sp": "MAR-lin"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: lower in rank, status, or quality compared to something or someone else.",
+     "opts": [
+      "inferior"
+     ],
+     "ans": 0,
+     "hint": "IN- + FERIOR — it pairs with its opposite, \"superior\".",
+     "steps": [
+      "Four syllables: in, fe, ri, or.",
+      "I-N, then F-E-R-I.",
+      "Finish with O-R.",
+      "INFERIOR"
+     ],
+     "ex": {
+      "main": "**inferior.**",
+      "tip": "\"Inferior\" and \"superior\" share the same -FERIOR/-PERIOR-style ending pattern."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: the twelfth and final month of the year, marking the start of winter in the Northern Hemisphere.",
+     "opts": [
+      "December"
+     ],
+     "ans": 0,
+     "hint": "Capital D, then DE- + CEM- + -BER — \"cem\" rhymes with \"gem\".",
+     "steps": [
+      "Three syllables: de, cem, ber.",
+      "Capital D, then E.",
+      "C-E-M, then B-E-R.",
+      "DECEMBER"
+     ],
+     "ex": {
+      "main": "**December.**",
+      "tip": "Months are always capitalized, and the middle syllable rhymes with \"gem\" and \"stem\"."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: the length of time that something lasts or continues.",
+     "opts": [
+      "duration"
+     ],
+     "ans": 0,
+     "hint": "DUR- (like \"during\") + -ATION.",
+     "steps": [
+      "Three syllables: du, ra, tion.",
+      "D-U-R, same start as \"during\".",
+      "Finish with A-T-I-O-N.",
+      "DURATION"
+     ],
+     "ex": {
+      "main": "**duration.**",
+      "tip": "The -TION ending always sounds like \"shun\" — a pattern shared with \"nation\" and \"station\"."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a reference book that lists words in alphabetical order along with their meanings and pronunciations.",
+     "opts": [
+      "dictionary"
+     ],
+     "ans": 0,
+     "hint": "DICTION- (the way words are spoken) + -ARY.",
+     "steps": [
+      "Four syllables: dic, tion, a, ry.",
+      "D-I-C-T-I-O-N, same as the word \"diction\".",
+      "Finish with A-R-Y.",
+      "DICTIONARY"
+     ],
+     "ex": {
+      "main": "**dictionary.**",
+      "tip": "\"Diction\" means the way words are said — a dictionary is where you look them up."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a person's regular work or trade, or an organization that makes, buys, or sells goods and services.",
+     "opts": [
+      "business"
+     ],
+     "ans": 0,
+     "hint": "BUSI- (from \"busy\") + -NESS — the U makes an \"i\" sound.",
+     "steps": [
+      "Three syllables: busi, ness — said as two: BIZ-nis.",
+      "B-U-S-I, from the word \"busy\".",
+      "Add N-E-S-S.",
+      "BUSINESS"
+     ],
+     "ex": {
+      "main": "**business.**",
+      "tip": "It looks like it should say \"BUS-i-ness\", but it comes from \"busy\" and sounds like \"BIZ-nis\"."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to restore someone or something to a former position, condition, or state.",
+     "opts": [
+      "reinstate"
+     ],
+     "ans": 0,
+     "hint": "RE- + IN- + STATE — three small words joined.",
+     "steps": [
+      "Three parts: re, in, state.",
+      "R-E, then I-N.",
+      "Finish with S-T-A-T-E, the word \"state\" itself.",
+      "REINSTATE"
+     ],
+     "ex": {
+      "main": "**reinstate.**",
+      "tip": "\"State\" keeps its own spelling exactly, with RE- and IN- stacked in front."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to inspect something carefully and in detail, or to test someone's knowledge.",
+     "opts": [
+      "examine"
+     ],
+     "ans": 0,
+     "hint": "EX- + AMINE, one M — like \"exam\" with -ine added.",
+     "steps": [
+      "Three syllables: ex, am, ine.",
+      "E-X-A-M, the word \"exam\" itself.",
+      "Finish with I-N-E.",
+      "EXAMINE"
+     ],
+     "ex": {
+      "main": "**examine.**",
+      "tip": "\"Exam\" is short for \"examination\" — this word is the verb they both come from."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: against, used to describe two sides opposing each other, especially in a contest, game, or legal case.",
+     "opts": [
+      "versus"
+     ],
+     "ans": 0,
+     "hint": "VERSUS is its own whole word — one S in the middle, one at the end.",
+     "steps": [
+      "Two syllables: ver and sus.",
+      "V-E-R-S, one S in the middle.",
+      "Finish with U-S.",
+      "VERSUS"
+     ],
+     "ex": {
+      "main": "**versus.**",
+      "tip": "It is a full word on its own — not an abbreviation, even though it is often shortened to \"vs.\" in print."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a soft, soothing song sung to help a baby or young child fall asleep.",
+     "opts": [
+      "lullaby"
+     ],
+     "ans": 0,
+     "hint": "LULL (to calm) + -A- + -BY.",
+     "steps": [
+      "Three syllables: lull, a, by.",
+      "L-U-L-L, double L, from the word \"lull\".",
+      "Finish with A-B-Y.",
+      "LULLABY"
+     ],
+     "ex": {
+      "main": "**lullaby.**",
+      "tip": "\"Lull\" means to calm gently — exactly what a lullaby does."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: situated on the other side of something, or completely different in nature or direction.",
+     "opts": [
+      "opposite"
+     ],
+     "ans": 0,
+     "hint": "OPPO- (double P) + -SITE.",
+     "steps": [
+      "Three syllables: op, po, site.",
+      "O-P-P, double P.",
+      "Finish with O-S-I-T-E.",
+      "OPPOSITE"
+     ],
+     "ex": {
+      "main": "**opposite.**",
+      "tip": "The double P is the part most often forgotten — say \"op-po\" slowly to hear both."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: soft, absorbent paper used for wiping or blowing the nose, or the biological material that makes up living things.",
+     "opts": [
+      "tissues"
+     ],
+     "ans": 0,
+     "hint": "TISSUE keeps its U even though you do not hear it — TIS- + -SUE.",
+     "steps": [
+      "Start with \"tissue\": T-I-S-S-U-E, double S.",
+      "The U is silent but still there.",
+      "Add S for the plural: tissues.",
+      "TISSUES"
+     ],
+     "ex": {
+      "main": "**tissues.**",
+      "tip": "\"Tissue\" has a silent U right before the E — easy to drop by accident."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a large, fast ocean fish with a long, spear-shaped upper jaw, prized by sport fishers.",
+     "opts": [
+      "marlin"
+     ],
+     "ans": 0,
+     "hint": "MAR- (like the start of \"marine\") + -LIN.",
+     "steps": [
+      "Two syllables: mar and lin.",
+      "M-A-R, same start as \"marine\".",
+      "Finish with L-I-N.",
+      "MARLIN"
+     ],
+     "ex": {
+      "main": "**marlin.**",
+      "tip": "Not \"marlyn\" or \"marlen\" — it ends plainly in -LIN."
+     }
+    }
+   ],
+   "round": 12,
+   "bee": true
+  }
+ }
+}

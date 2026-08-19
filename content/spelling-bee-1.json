@@ -1,0 +1,439 @@
+{
+ "v": 4,
+ "records": {
+  "unit-bee1": {
+   "id": "unit-bee1",
+   "type": "unit",
+   "updatedAt": 1787097494069,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Spelling Bee · List 1",
+   "srcName": "Spelling Bee Words — 2026-27 Scripps 'Two Bee' 4th Grade Study List (Drive)",
+   "source": "Scripps National Spelling Bee, 2026-27 Two Bee Study Words for Fourth Grade — official 50-word study list (Drive)",
+   "summary": {
+    "text": "List 1 of River's Spelling Bee study words: buttons, tiptoed, cuddle, clever, puffy, basement, burlap, wetlands, invite, butterflies, kelp, property, carefully.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the real Scripps \"Two Bee\" fourth-grade word list — the words a school spelling bee actually draws from. Saying each word aloud, letter by letter, is the same skill a real bee tests, not just recognizing the word on a page.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Spell every word on this list correctly, letter by letter, from hearing it alone.",
+     "from": "added"
+    },
+    {
+     "text": "State each word's meaning in your own words.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from \"Spelling Bee Words\", the 2026-27 Scripps Two Bee fourth-grade study list you added to her Drive folder. All 50 official words are split across four lessons; every definition and example sentence here was written fresh, since the source is a bare word list with no definitions to copy. The flashcards use the honeycomb \"bee\" look, and each lesson also opens the Spelling Bee voice game — hear it, spell it aloud letter by letter.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first to learn the meanings, then the Spelling Bee game to practice saying the letters aloud.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "buttons",
+     "def": "**Small fastening discs sewn onto clothing that slip through a buttonhole to hold it closed.**\n• She counted six buttons down the front of the coat.",
+     "hint": "Double T — BUT-tons, not one T.",
+     "from": "added",
+     "sp": "BUT-uns"
+    },
+    {
+     "id": "c1",
+     "term": "tiptoed",
+     "def": "**Walked quietly and carefully on the tips of the toes, to avoid making noise.**\n• She tiptoed past the sleeping baby's door.",
+     "hint": "TIP + TOED — two small words hiding inside the big one.",
+     "from": "added",
+     "sp": "TIP-tohd"
+    },
+    {
+     "id": "c2",
+     "term": "cuddle",
+     "def": "**To hold someone or something closely and warmly, usually while sitting or lying down.**\n• The kitten liked to cuddle up in the blanket.",
+     "hint": "Double D — CUD-dle, not one D.",
+     "from": "added",
+     "sp": "KUD-uhl"
+    },
+    {
+     "id": "c3",
+     "term": "clever",
+     "def": "**Quick to think of smart ideas or solve problems in an original way.**\n• Her clever plan solved the puzzle in half the time.",
+     "hint": "CLEV-er — one V, like most of \"eleven\".",
+     "from": "added",
+     "sp": "KLEV-er"
+    },
+    {
+     "id": "c4",
+     "term": "puffy",
+     "def": "**Swollen, rounded, or puffed out — often used for clouds, eyes, or sleeves.**\n• Puffy white clouds drifted across the summer sky.",
+     "hint": "Double F — PUFF, then Y.",
+     "from": "added",
+     "sp": "PUF-ee"
+    },
+    {
+     "id": "c5",
+     "term": "basement",
+     "def": "**The floor of a building that sits below ground level.**\n• The old trunks were stored in the basement.",
+     "hint": "BASE + MENT — the base of the building, plus -ment.",
+     "from": "added",
+     "sp": "BAYS-ment"
+    },
+    {
+     "id": "c6",
+     "term": "burlap",
+     "def": "**A coarse, rough fabric woven from jute or hemp fibers.**\n• The potatoes were shipped to market in a burlap sack.",
+     "hint": "Two syllables: BUR-lap — the \"ur\" sounds like \"fur\", not \"ber\".",
+     "from": "added",
+     "sp": "BUR-lap"
+    },
+    {
+     "id": "c7",
+     "term": "wetlands",
+     "def": "**Low-lying land that is soaked with water for all or part of the year, like a marsh or swamp.**\n• Herons and turtles both make their homes in the wetlands.",
+     "hint": "WET + LANDS — land that stays wet.",
+     "from": "added",
+     "sp": "WET-landz"
+    },
+    {
+     "id": "c8",
+     "term": "invite",
+     "def": "**To ask someone to come to an event or to take part in something.**\n• They plan to invite the whole class to the party.",
+     "hint": "IN- + -VITE, like \"invitation\" with the ending cut off.",
+     "from": "added",
+     "sp": "in-VYT"
+    },
+    {
+     "id": "c9",
+     "term": "butterflies",
+     "def": "**Insects with two pairs of large, often brightly patterned wings, that go through a caterpillar stage first.**\n• Orange and black butterflies gathered on the milkweed plant.",
+     "hint": "BUTTER + FLIES — and FLY changes Y to I before -es.",
+     "from": "added",
+     "sp": "BUT-er-flyz"
+    },
+    {
+     "id": "c10",
+     "term": "kelp",
+     "def": "**A large brown seaweed that grows in cold coastal waters, sometimes forming underwater forests.**\n• Sea otters wrap themselves in kelp to keep from drifting out to sea.",
+     "hint": "One syllable, straight through: K-E-L-P.",
+     "from": "added",
+     "sp": "kelp"
+    },
+    {
+     "id": "c11",
+     "term": "property",
+     "def": "**Something that belongs to a person, or the land and buildings someone owns.**\n• The old barn is still standing on their property.",
+     "hint": "PROP- + -ER + -TY — three easy parts.",
+     "from": "added",
+     "sp": "PROP-er-tee"
+    },
+    {
+     "id": "c12",
+     "term": "carefully",
+     "def": "**Done with close attention, so as to avoid mistakes, damage, or danger.**\n• She carefully carried the stack of glass plates to the sink.",
+     "hint": "CARE + FUL + LY — double L where \"full\" meets \"ly\".",
+     "from": "added",
+     "sp": "KAIR-ful-ee"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: small fastening discs sewn onto clothing that slip through a buttonhole to hold it closed.",
+     "opts": [
+      "buttons"
+     ],
+     "ans": 0,
+     "hint": "Double T — BUT-tons, not one T.",
+     "steps": [
+      "Two syllables: but and tons.",
+      "The middle doubles the T: B-U-T-T.",
+      "Finish with O-N-S.",
+      "BUTTONS"
+     ],
+     "ex": {
+      "main": "**buttons.**",
+      "tip": "A single T would say \"BYOO-tons\" — the double T keeps the short U sound."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: walked quietly and carefully on the tips of the toes, to avoid making noise.",
+     "opts": [
+      "tiptoed"
+     ],
+     "ans": 0,
+     "hint": "TIP + TOED — two small words hiding inside the big one.",
+     "steps": [
+      "Two small words joined: tip and toed.",
+      "T-I-P, then T-O-E-D.",
+      "The \"toe\" keeps its E before the D.",
+      "TIPTOED"
+     ],
+     "ex": {
+      "main": "**tiptoed.**",
+      "tip": "\"Toed\" is \"toe\" plus D for past tense — the E does not drop."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to hold someone or something closely and warmly, usually while sitting or lying down.",
+     "opts": [
+      "cuddle"
+     ],
+     "ans": 0,
+     "hint": "Double D — CUD-dle, not one D.",
+     "steps": [
+      "Two syllables: cud and dle.",
+      "The middle doubles the D: C-U-D-D.",
+      "Finish with L-E.",
+      "CUDDLE"
+     ],
+     "ex": {
+      "main": "**cuddle.**",
+      "tip": "One D would make the U sound long, like in \"food\" — the double D keeps it short."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: quick to think of smart ideas or solve problems in an original way.",
+     "opts": [
+      "clever"
+     ],
+     "ans": 0,
+     "hint": "CLEV-er — one V, like most of \"eleven\".",
+     "steps": [
+      "Two syllables: clev and er.",
+      "C-L-E-V — just one V in the middle.",
+      "Finish with E-R.",
+      "CLEVER"
+     ],
+     "ex": {
+      "main": "**clever.**",
+      "tip": "No double letters anywhere in this one — it is shorter than it sounds."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: swollen, rounded, or puffed out — often used for clouds, eyes, or sleeves.",
+     "opts": [
+      "puffy"
+     ],
+     "ans": 0,
+     "hint": "Double F — PUFF, then Y.",
+     "steps": [
+      "Start with the word \"puff\": P-U-F-F.",
+      "Swap the silent nothing for a Y at the end.",
+      "P-U-F-F-Y.",
+      "PUFFY"
+     ],
+     "ex": {
+      "main": "**puffy.**",
+      "tip": "\"Puff\" already has the double F — this word just adds a Y."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: the floor of a building that sits below ground level.",
+     "opts": [
+      "basement"
+     ],
+     "ans": 0,
+     "hint": "BASE + MENT — the base of the building, plus -ment.",
+     "steps": [
+      "Two parts: base and ment.",
+      "B-A-S-E, keeping the silent E.",
+      "Add M-E-N-T.",
+      "BASEMENT"
+     ],
+     "ex": {
+      "main": "**basement.**",
+      "tip": "The E in \"base\" stays even with -ment added after it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a coarse, rough fabric woven from jute or hemp fibers.",
+     "opts": [
+      "burlap"
+     ],
+     "ans": 0,
+     "hint": "Two syllables: BUR-lap — the \"ur\" sounds like \"fur\", not \"ber\".",
+     "steps": [
+      "Two syllables: bur and lap.",
+      "B-U-R, not B-E-R.",
+      "Finish with L-A-P.",
+      "BURLAP"
+     ],
+     "ex": {
+      "main": "**burlap.**",
+      "tip": "Say \"fur\" in your head first — \"bur\" rhymes with it exactly."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: low-lying land that is soaked with water for all or part of the year, like a marsh or swamp.",
+     "opts": [
+      "wetlands"
+     ],
+     "ans": 0,
+     "hint": "WET + LANDS — land that stays wet.",
+     "steps": [
+      "Two small words: wet and lands.",
+      "W-E-T, then L-A-N-D-S.",
+      "No joining letters needed — just put them together.",
+      "WETLANDS"
+     ],
+     "ex": {
+      "main": "**wetlands.**",
+      "tip": "Both halves are words you already know how to spell on their own."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to ask someone to come to an event or to take part in something.",
+     "opts": [
+      "invite"
+     ],
+     "ans": 0,
+     "hint": "IN- + -VITE, like \"invitation\" with the ending cut off.",
+     "steps": [
+      "Two syllables: in and vite.",
+      "I-N, then V-I-T-E.",
+      "The silent E at the end makes the I say its own name.",
+      "INVITE"
+     ],
+     "ex": {
+      "main": "**invite.**",
+      "tip": "Without the final E it would read \"invit\" — the E is what makes it \"vite\"."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: insects with two pairs of large, often brightly patterned wings, that go through a caterpillar stage first.",
+     "opts": [
+      "butterflies"
+     ],
+     "ans": 0,
+     "hint": "BUTTER + FLIES — and FLY changes Y to I before -es.",
+     "steps": [
+      "Two words joined: butter and flies.",
+      "B-U-T-T-E-R, double T.",
+      "\"Fly\" drops its Y and adds -ies: F-L-I-E-S.",
+      "BUTTERFLIES"
+     ],
+     "ex": {
+      "main": "**butterflies.**",
+      "tip": "\"Fly\" alone ends in Y, but the plural swaps that Y for I before -es."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a large brown seaweed that grows in cold coastal waters, sometimes forming underwater forests.",
+     "opts": [
+      "kelp"
+     ],
+     "ans": 0,
+     "hint": "One syllable, straight through: K-E-L-P.",
+     "steps": [
+      "One syllable, four letters.",
+      "K-E-L-P, no doubled letters.",
+      "Say it once, all the way through.",
+      "KELP"
+     ],
+     "ex": {
+      "main": "**kelp.**",
+      "tip": "No silent letters and no tricks — it is spelled exactly how it sounds."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: something that belongs to a person, or the land and buildings someone owns.",
+     "opts": [
+      "property"
+     ],
+     "ans": 0,
+     "hint": "PROP- + -ER + -TY — three easy parts.",
+     "steps": [
+      "Three syllables: prop, er, ty.",
+      "P-R-O-P, one P.",
+      "Add E-R, then T-Y.",
+      "PROPERTY"
+     ],
+     "ex": {
+      "main": "**property.**",
+      "tip": "\"Prop\" only has one P even though the whole word sounds heavy."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: done with close attention, so as to avoid mistakes, damage, or danger.",
+     "opts": [
+      "carefully"
+     ],
+     "ans": 0,
+     "hint": "CARE + FUL + LY — double L where \"full\" meets \"ly\".",
+     "steps": [
+      "Three parts: care, ful, ly.",
+      "C-A-R-E, keeping the silent E.",
+      "\"full\" drops one L before -ly: F-U-L, then L-Y.",
+      "CAREFULLY"
+     ],
+     "ex": {
+      "main": "**carefully.**",
+      "tip": "\"Full\" has two Ls on its own, but loses one when -ly is added — the other L comes from -ly itself."
+     }
+    }
+   ],
+   "round": 13,
+   "bee": true
+  }
+ }
+}

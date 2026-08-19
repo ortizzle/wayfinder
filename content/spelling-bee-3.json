@@ -1,0 +1,409 @@
+{
+ "v": 4,
+ "records": {
+  "unit-bee3": {
+   "id": "unit-bee3",
+   "type": "unit",
+   "updatedAt": 1787097494071,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Spelling Bee · List 3",
+   "srcName": "Spelling Bee Words — 2026-27 Scripps 'Two Bee' 4th Grade Study List (Drive)",
+   "source": "Scripps National Spelling Bee, 2026-27 Two Bee Study Words for Fourth Grade — official 50-word study list (Drive)",
+   "summary": {
+    "text": "List 3 of River's Spelling Bee study words: thimble, custody, granola, warrior, rigid, fierce, laughter, salary, disappear, hurdler, lounge, jovial.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the real Scripps \"Two Bee\" fourth-grade word list — the words a school spelling bee actually draws from. Saying each word aloud, letter by letter, is the same skill a real bee tests, not just recognizing the word on a page.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Spell every word on this list correctly, letter by letter, from hearing it alone.",
+     "from": "added"
+    },
+    {
+     "text": "State each word's meaning in your own words.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from \"Spelling Bee Words\", the 2026-27 Scripps Two Bee fourth-grade study list you added to her Drive folder. All 50 official words are split across four lessons; every definition and example sentence here was written fresh, since the source is a bare word list with no definitions to copy. The flashcards use the honeycomb \"bee\" look, and each lesson also opens the Spelling Bee voice game — hear it, spell it aloud letter by letter.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first to learn the meanings, then the Spelling Bee game to practice saying the letters aloud.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "thimble",
+     "def": "**A small protective cap, usually metal, worn on the finger to push a needle while sewing.**\n• Grandma always kept a silver thimble in her sewing box.",
+     "hint": "THIM- + -BLE, starting with the same TH as \"thumb\" — where it goes.",
+     "from": "added",
+     "sp": "THIM-bul"
+    },
+    {
+     "id": "c1",
+     "term": "custody",
+     "def": "**The legal right and responsibility to care for and protect someone, or the state of being guarded.**\n• After the divorce, the parents shared custody of their two children.",
+     "hint": "CUS- + TO- + DY — \"custo\" starts like \"custom\".",
+     "from": "added",
+     "sp": "KUS-tuh-dee"
+    },
+    {
+     "id": "c2",
+     "term": "granola",
+     "def": "**A breakfast and snack food made of rolled oats mixed with nuts, dried fruit, and a sweetener, often baked crisp.**\n• She packed a bag of granola for the hike.",
+     "hint": "GRAN- (like \"grain\") + -OLA.",
+     "from": "added",
+     "sp": "gruh-NOH-luh"
+    },
+    {
+     "id": "c3",
+     "term": "warrior",
+     "def": "**A person who fights in battles, especially one known for courage or skill; a brave fighter.**\n• Ancient stories often describe a lone warrior defending the village.",
+     "hint": "WAR- + -RIOR — double R sits before -ior.",
+     "from": "added",
+     "sp": "WAWR-ee-er"
+    },
+    {
+     "id": "c4",
+     "term": "rigid",
+     "def": "**Stiff and unable to bend, or — for a rule or person — very strict and unwilling to change.**\n• The metal rod stayed perfectly rigid even under heavy weight.",
+     "hint": "RIG- + -ID, one G, not two.",
+     "from": "added",
+     "sp": "RIJ-id"
+    },
+    {
+     "id": "c5",
+     "term": "fierce",
+     "def": "**Showing intense, powerful energy or aggression; wild and forceful.**\n• A fierce wind bent the young trees nearly to the ground.",
+     "hint": "\"I\" before \"E\" — FIERCE rhymes with \"pierce\".",
+     "from": "added",
+     "sp": "feers"
+    },
+    {
+     "id": "c6",
+     "term": "laughter",
+     "def": "**The action or sound of laughing, usually in response to something funny or joyful.**\n• Laughter filled the room as the puppy chased its own tail.",
+     "hint": "LAUGH (the GH sounds like an F) + -TER.",
+     "from": "added",
+     "sp": "LAF-ter"
+    },
+    {
+     "id": "c7",
+     "term": "salary",
+     "def": "**A fixed amount of money paid regularly, usually monthly or yearly, for doing a job.**\n• Her new salary let her start saving for college.",
+     "hint": "SAL- + -A- + -RY — three syllables, one L.",
+     "from": "added",
+     "sp": "SAL-uh-ree"
+    },
+    {
+     "id": "c8",
+     "term": "disappear",
+     "def": "**To stop being visible; to vanish from sight completely.**\n• The rabbit seemed to disappear into the tall grass.",
+     "hint": "DIS- + APPEAR — one S in \"dis\", double P in \"appear\".",
+     "from": "added",
+     "sp": "dis-uh-PEER"
+    },
+    {
+     "id": "c9",
+     "term": "hurdler",
+     "def": "**An athlete who runs and jumps over a series of barriers, called hurdles, in a race.**\n• The hurdler cleared every barrier without knocking one down.",
+     "hint": "HURDLE (the barrier) + -R, no extra E.",
+     "from": "added",
+     "sp": "HUR-dler"
+    },
+    {
+     "id": "c10",
+     "term": "lounge",
+     "def": "**A comfortable room for sitting and relaxing, or the act of sitting or lying back in a relaxed way.**\n• They chose to lounge by the pool instead of hiking that afternoon.",
+     "hint": "LOUNGE rhymes with \"sponge\" — the E keeps the G soft.",
+     "from": "added",
+     "sp": "lownj"
+    },
+    {
+     "id": "c11",
+     "term": "jovial",
+     "def": "**Cheerful, friendly, and full of good humor.**\n• The jovial shopkeeper greeted every customer with a joke.",
+     "hint": "JOVI- (from Jove, another name for the god linked to good fortune) + -AL.",
+     "from": "added",
+     "sp": "JOH-vee-ul"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a small protective cap, usually metal, worn on the finger to push a needle while sewing.",
+     "opts": [
+      "thimble"
+     ],
+     "ans": 0,
+     "hint": "THIM- + -BLE, starting with the same TH as \"thumb\" — where it goes.",
+     "steps": [
+      "Two syllables: thim and ble.",
+      "T-H-I-M, same TH as \"thumb\".",
+      "Finish with B-L-E.",
+      "THIMBLE"
+     ],
+     "ex": {
+      "main": "**thimble.**",
+      "tip": "A thimble protects the thumb or finger — both words share that TH start."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: the legal right and responsibility to care for and protect someone, or the state of being guarded.",
+     "opts": [
+      "custody"
+     ],
+     "ans": 0,
+     "hint": "CUS- + TO- + DY — \"custo\" starts like \"custom\".",
+     "steps": [
+      "Three syllables: cus, to, dy.",
+      "C-U-S, same start as \"custom\".",
+      "Add T-O-D-Y.",
+      "CUSTODY"
+     ],
+     "ex": {
+      "main": "**custody.**",
+      "tip": "\"Custom\" and \"custody\" share their first four letters exactly."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a breakfast and snack food made of rolled oats mixed with nuts, dried fruit, and a sweetener, often baked crisp.",
+     "opts": [
+      "granola"
+     ],
+     "ans": 0,
+     "hint": "GRAN- (like \"grain\") + -OLA.",
+     "steps": [
+      "Three syllables: gra, no, la.",
+      "G-R-A-N, like \"grain\" without the I.",
+      "Finish with O-L-A.",
+      "GRANOLA"
+     ],
+     "ex": {
+      "main": "**granola.**",
+      "tip": "It starts like \"grain\" — the food it is mostly made from."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a person who fights in battles, especially one known for courage or skill; a brave fighter.",
+     "opts": [
+      "warrior"
+     ],
+     "ans": 0,
+     "hint": "WAR- + -RIOR — double R sits before -ior.",
+     "steps": [
+      "Three syllables: war, ri, or.",
+      "W-A-R, the word \"war\" itself.",
+      "Double the R, then add I-O-R.",
+      "WARRIOR"
+     ],
+     "ex": {
+      "main": "**warrior.**",
+      "tip": "It starts with the whole word \"war\" — the fighting it describes."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: stiff and unable to bend, or — for a rule or person — very strict and unwilling to change.",
+     "opts": [
+      "rigid"
+     ],
+     "ans": 0,
+     "hint": "RIG- + -ID, one G, not two.",
+     "steps": [
+      "Two syllables: rig and id.",
+      "R-I-G, just one G.",
+      "Finish with I-D.",
+      "RIGID"
+     ],
+     "ex": {
+      "main": "**rigid.**",
+      "tip": "The G sounds soft, like a J, but it is still spelled with a plain G."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: showing intense, powerful energy or aggression; wild and forceful.",
+     "opts": [
+      "fierce"
+     ],
+     "ans": 0,
+     "hint": "\"I\" before \"E\" — FIERCE rhymes with \"pierce\".",
+     "steps": [
+      "One syllable, five letters.",
+      "F, then I before E: F-I-E.",
+      "Finish with R-C-E — the soft C sound needs that final E.",
+      "FIERCE"
+     ],
+     "ex": {
+      "main": "**fierce.**",
+      "tip": "Rhymes exactly with \"pierce\" — same I-E-R-C-E ending."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: the action or sound of laughing, usually in response to something funny or joyful.",
+     "opts": [
+      "laughter"
+     ],
+     "ans": 0,
+     "hint": "LAUGH (the GH sounds like an F) + -TER.",
+     "steps": [
+      "Two syllables: laugh and ter.",
+      "L-A-U-G-H — the GH makes an F sound.",
+      "Add T-E-R.",
+      "LAUGHTER"
+     ],
+     "ex": {
+      "main": "**laughter.**",
+      "tip": "\"Laugh\" keeps its silent-looking GH even inside a longer word."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a fixed amount of money paid regularly, usually monthly or yearly, for doing a job.",
+     "opts": [
+      "salary"
+     ],
+     "ans": 0,
+     "hint": "SAL- + -A- + -RY — three syllables, one L.",
+     "steps": [
+      "Three syllables: sal, a, ry.",
+      "S-A-L, just one L.",
+      "Finish with A-R-Y.",
+      "SALARY"
+     ],
+     "ex": {
+      "main": "**salary.**",
+      "tip": "Only one L, even though the first syllable is stressed hard."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: to stop being visible; to vanish from sight completely.",
+     "opts": [
+      "disappear"
+     ],
+     "ans": 0,
+     "hint": "DIS- + APPEAR — one S in \"dis\", double P in \"appear\".",
+     "steps": [
+      "Two parts: dis and appear.",
+      "D-I-S, one S.",
+      "\"Appear\" has double P: A-P-P-E-A-R.",
+      "DISAPPEAR"
+     ],
+     "ex": {
+      "main": "**disappear.**",
+      "tip": "The prefix DIS- has one S; the double letter is the P inside \"appear\"."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: an athlete who runs and jumps over a series of barriers, called hurdles, in a race.",
+     "opts": [
+      "hurdler"
+     ],
+     "ans": 0,
+     "hint": "HURDLE (the barrier) + -R, no extra E.",
+     "steps": [
+      "Start with \"hurdle\": H-U-R-D-L-E.",
+      "Drop nothing — just add R.",
+      "H-U-R-D-L-E-R.",
+      "HURDLER"
+     ],
+     "ex": {
+      "main": "**hurdler.**",
+      "tip": "It is \"hurdle\" plus one letter, R, at the very end."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: a comfortable room for sitting and relaxing, or the act of sitting or lying back in a relaxed way.",
+     "opts": [
+      "lounge"
+     ],
+     "ans": 0,
+     "hint": "LOUNGE rhymes with \"sponge\" — the E keeps the G soft.",
+     "steps": [
+      "One syllable, six letters.",
+      "L-O-U-N-G.",
+      "Add a final E to keep the G sound soft.",
+      "LOUNGE"
+     ],
+     "ex": {
+      "main": "**lounge.**",
+      "tip": "Without the E, \"loung\" would look like it should end hard — the E is what makes it say \"-nj\"."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "added",
+     "kind": "spell",
+     "q": "Spell the word: cheerful, friendly, and full of good humor.",
+     "opts": [
+      "jovial"
+     ],
+     "ans": 0,
+     "hint": "JOVI- (from Jove, another name for the god linked to good fortune) + -AL.",
+     "steps": [
+      "Three syllables: jo, vi, al.",
+      "J-O-V-I, no double letters.",
+      "Finish with A-L.",
+      "JOVIAL"
+     ],
+     "ex": {
+      "main": "**jovial.**",
+      "tip": "Named after Jove/Jupiter — old astrologers thought that planet brought good cheer."
+     }
+    }
+   ],
+   "round": 12,
+   "bee": true
+  }
+ }
+}

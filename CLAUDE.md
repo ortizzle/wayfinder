@@ -362,3 +362,94 @@ scaled down. **A miss deliberately gets nothing: the phone never scolds.**
 direction A carried to the screen where she acts on it). Same grammar as a
 Coming up row: this colour = this subject, wherever she meets it.
 
+### The Spelling Bee (v99, THIS APP ONLY)
+
+Chris added the real 2026-27 Scripps "Two Bee" fourth-grade study list (50
+words) to River's Drive folder and asked for bee-shaped flashcards plus a
+voice game where she spells each word aloud, letter by letter, after hearing
+it read to her. Built for River specifically — not ported to Ad Astra, the
+same bar the companion was held to ("the agreed bar for porting it was her
+asking"). All 50 official words, split into four lessons of ~12-13
+(`unit-bee1..4`, `content/spelling-bee-1..4.json`), classId `english`,
+shelving as one book via the ` · ` title convention. Every definition and
+example sentence was written fresh and verified independently — the source
+is a bare word list with no definitions to copy, so nothing in `def`/`ex`
+carries `from:'source'`; only the word itself is sourced.
+
+**The flashcards are honeycomb-shaped, not bee-shaped, on purpose.** A
+literal bee silhouette would clip text off the card; the shape reads instead
+as a honeycomb cell — an octagon (`clip-path`) with generous flat top/bottom
+edges, so the reading area never nears a clipped corner. Colours are FIXED,
+not theme tokens, gated on a new content flag `u.bee` (never inferred, same
+rule as `book`/`guide`/`capstone`): like the note-from-home post-it, this
+card is meant to feel like a physical object, not UI chrome, so it looks
+identical in light and dark. Measured directly: ink on the honey gradient's
+darker stop is 10.0:1 worst case, both faces, both themes.
+
+> ⚠️ **`.face.back:not(.subj)` already sets its own background at (0,3,0)
+> specificity — higher than a bare `.face.bee` at (0,2,0).** The back face
+> silently kept the dark accent gradient instead of the honey card until the
+> selector became `.face.bee,.face.back.bee`, tying at (0,3,0) and winning on
+> source order. Caught by flipping the card, not by reading the CSS — the
+> exact trap the pattern-layer comment two rules above already warns about.
+
+**The Bee Round is a voice game, built to mirror an actual bee.** The word is
+*announced* (`say()`), never shown as text, until she has spelled it or given
+up — showing it first would make this copying, not spelling. She may ask to
+hear it again, hear its meaning, or hear it used in a sentence (reusing
+`skyDefLine`/`skyExamples` from Star Sky) — exactly what a contestant may ask
+a real pronouncer. Then she taps "Spell it" and says the word letter by
+letter; a row of boxes (`.beeword`/`.beebox`) fills in left to right as each
+letter is confirmed, and a mismatch never erases letters already heard
+correctly.
+
+- **Letter NAMES are a harder recognition problem than whole words** —
+  B/D/E/G/P/T/V/Z are famously confusable even to a human ear, which is why
+  the NATO alphabet exists. `BEE_LETTERS` maps the common spoken/misheard
+  forms of each letter name (`"bee"`→B, `"you"`→U, `"double u"`→W, …) and is
+  deliberately conservative: an unmapped or unmatched sound is skipped, never
+  guessed. `continuous:true, interimResults:true` lets the session survive
+  the natural pause between letters (a single non-continuous recognition
+  would likely cut off after the first one or two).
+- **Typing is offered from the very first render of every word, not earned
+  by failing first.** This is a deliberate departure from Star Sky, which
+  hides its typed fallback behind a failed whole-word attempt: here the
+  fallback produces the *identical* outcome (a spelled word), so there is no
+  reason to make her earn the escape hatch, and it doubles as the only way to
+  cancel a stuck listening session (`beeState._rec.stop()`).
+- **Two stalled letters in one attempt auto-hands off to typing** — mirrors
+  Star Sky's `tried >= 2` rule, but checked inline where the mismatch is
+  detected (not deferred to `onend`), since `continuous:true` means the
+  session might otherwise keep listening indefinitely while she is already
+  trying to type.
+- **A 22-second safety timeout stops the recognizer.** `continuous:true`
+  never auto-stops on a pause — that is the point — but it also never
+  auto-stops on its own, so an abandoned session would otherwise listen
+  forever.
+- **"Skip for now" always lights `'dim'`, never blocks.** Same Sky Map rule
+  as everywhere else: showing up counts, a hard word is information not a
+  fault, and the round always has an end.
+- No new record types. One ordinary `log` (`mode:'bee'`) per session,
+  written on leaving or finishing, same shape as Star Sky's `mode:'starsky'`.
+  The finish screen reuses `roundBand`'s `opt.state` + the quiz results
+  `.tally` chip pattern, rather than pulling in `showModal()`'s mood/
+  companion machinery, which doesn't apply to a casual practice mode.
+- Beat the clock is dropped for `u.bee` units for the same reason as `u.book`
+  units: `pickRound` already excludes `kind:'spell'` from timed rounds
+  (typing against a countdown tests typing, not spelling), so the tile would
+  serve an empty round.
+
+**Verified end-to-end with a mocked `SpeechRecognition`**, since no real mic
+is available in a headless harness: all 50 words round-trip correctly through
+canonical letter names including the two-word "double u"; progress survives
+an interleaved unmapped/noise chunk without resetting; two stalled attempts
+correctly hand off to typing and stop the recognizer; two wrong typed
+attempts correctly trigger the reveal (reusing `.skyreveal`/`.a` from the
+star-sky-reveal fix); and the real browser's own mic-blocked error path fired
+organically in this sandbox and degraded exactly as designed.
+
+`unit_common.py`'s local validator never special-cased `kind:'spell'`
+(opts:[word], one option) — every spell question would have failed the
+builder's own asserts before reaching `check_content.py`, which already
+skips them correctly. Fixed alongside the new `bee_` build flag.
+
