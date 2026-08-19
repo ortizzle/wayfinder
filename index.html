@@ -1316,7 +1316,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v99 · hear it, spell it — the bee is here';
+const APP_VERSION = 'v100 · the mic that keeps listening';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -5998,75 +5998,108 @@ SCREENS.beeround = function(root){
       mic.addEventListener('click', () => {
         beeState.listening = true; beeState.verdict = null; render();
         if(navigator.vibrate) navigator.vibrate(25);
-        const r = new SR(); r.lang='en-US'; r.continuous=true; r.interimResults=true; r.maxAlternatives=1;
-        beeState._rec = r;
-        let processed = 0, stopped = false, sawFinal = false;
-        const finishListening = () => { if(stopped) return; stopped=true; clearTimeout(safety); try{r.stop();}catch(e){} };
-        /* continuous:true never auto-stops on a pause — that is the point,
-           letter-to-letter pauses must not end the session — but it also
-           never auto-stops on its own, so a bound is needed or an
-           abandoned session listens forever. */
-        const safety = setTimeout(finishListening, 22000);
-        r.onresult = e => {
-          for(let i=processed;i<e.results.length;i++){
-            if(!e.results[i].isFinal) continue;
-            processed = i+1; sawFinal = true;
-            const before = beeState.heard.length;
-            const letters = beeParseLetters(e.results[i][0].transcript);
-            let lastHeard = null;
-            letters.forEach(L=>{
-              lastHeard = L;
-              if(beeState.heard.length < word.length && L === word[beeState.heard.length].toUpperCase())
-                beeState.heard += word[beeState.heard.length];
-            });
-            if(beeState.heard.length === word.length){
-              finishListening(); beeState.listening=false; lightIt(); return;
-            }
-            if(beeState.heard.length === before){
-              markTry();
-              beeState.verdict = lastHeard ? ('Heard "' + lastHeard + '" — try the next letter again.')
-                : 'That did not sound like a letter — try again.';
-              if(beeState.tries >= 2){
-                finishListening(); beeState.listening = false; beeState.spell = true;
-                beeState.verdict = 'Voice is tricky on tight letters — typing counts just the same.';
+        /* Android Chrome's SpeechRecognition does not reliably honor
+           continuous:true — the underlying platform service ends the
+           session after a single utterance regardless of the flag, which is
+           what stranded her mid-word after 2-3 letters with no way back in
+           short of re-tapping the mic by hand. Fixed by not fighting the
+           platform: continuous:false is the well-supported, single-utterance
+           mode Star Sky already uses successfully on her phone, and THIS
+           code supplies the "keep going" behaviour itself — onend restarts
+           a fresh session automatically unless the word is done, she has
+           cancelled, a fatal error occurred, or the budget below is spent.
+           From her side the mic never stops until one of those happens. */
+        const sessionStart = Date.now();
+        const stillLive = () => beeState && beeState.unitId === u.id;
+        let restarts = 0;
+        const MAX_MS = 50000, MAX_RESTARTS = 30;
+        const giveUpToTyping = (msg) => {
+          beeState.listening = false; beeState.spell = true; beeState.verdict = msg; render();
+        };
+        const startOneSession = () => {
+          const r = new SR(); r.lang='en-US'; r.continuous=false; r.interimResults=false; r.maxAlternatives=1;
+          beeState._rec = r;
+          let sawFinal = false;
+          r.onresult = e => {
+            if(!stillLive()) return;
+            for(let i=0;i<e.results.length;i++){
+              if(!e.results[i].isFinal) continue;
+              sawFinal = true;
+              const before = beeState.heard.length;
+              const letters = beeParseLetters(e.results[i][0].transcript);
+              let lastHeard = null;
+              letters.forEach(L=>{
+                lastHeard = L;
+                if(beeState.heard.length < word.length && L === word[beeState.heard.length].toUpperCase())
+                  beeState.heard += word[beeState.heard.length];
+              });
+              if(beeState.heard.length === word.length){
+                beeState.listening = false; try{r.stop();}catch(e2){} lightIt(); return;
+              }
+              if(beeState.heard.length === before){
+                markTry();
+                beeState.verdict = lastHeard ? ('Heard "' + lastHeard + '" — try the next letter again.')
+                  : 'That did not sound like a letter — try again.';
+                if(beeState.tries >= 2){
+                  try{r.stop();}catch(e2){}
+                  giveUpToTyping('Voice is tricky on tight letters — typing counts just the same.');
+                  return;
+                }
               }
             }
-          }
-          render();
+            render();
+          };
+          r.onerror = e => {
+            if(!stillLive() || !beeState.listening) return;
+            const k = e.error;
+            if(k === 'no-speech'){
+              markTry();
+              beeState.verdict = 'It did not catch anything — try that letter again.';
+              if(beeState.tries >= 2) giveUpToTyping('Voice is tricky on tight letters — typing counts just the same.');
+              else render();
+              /* Recoverable — onend fires right after and restarts unless
+                 the give-up above already ran. */
+            } else if(k === 'not-allowed' || k === 'service-not-allowed'){
+              beeState.srDead = true;
+              giveUpToTyping('The microphone is blocked for this site, so typing is the game today. A grown-up can allow the mic in the browser settings.');
+            } else if(k === 'network'){
+              beeState.srDead = true;
+              giveUpToTyping('Voice checking needs the internet and could not reach it — typing counts just the same.');
+            } else if(k === 'audio-capture'){
+              beeState.srDead = true;
+              giveUpToTyping('No microphone could be found — typing counts just the same.');
+            } else if(k !== 'aborted'){
+              markTry();
+              beeState.verdict = 'The microphone had trouble (' + k + ') — try again, or type it.';
+              if(beeState.tries >= 2) giveUpToTyping('Voice is tricky on tight letters — typing counts just the same.');
+              else render();
+            }
+            /* 'aborted' means something already called stop() deliberately
+               (success, or the "Type it instead" cancel) — nothing to do. */
+          };
+          r.onend = () => {
+            /* Not our job if something already resolved this attempt:
+               success, a fatal error, tries exhausted, she left the screen,
+               or she tapped "Type it instead" — all of those already set
+               beeState.listening false before this fires. */
+            if(!stillLive() || !beeState.listening) return;
+            if(!sawFinal){ markTry();
+              if(beeState.tries >= 2){
+                giveUpToTyping('Voice is tricky on tight letters — typing counts just the same.');
+                return;
+              }
+            }
+            if(Date.now()-sessionStart > MAX_MS || restarts >= MAX_RESTARTS){
+              giveUpToTyping('That took a while — typing counts just the same.');
+              return;
+            }
+            restarts++;
+            startOneSession();
+          };
+          try { r.start(); }
+          catch(err){ giveUpToTyping('The microphone would not start — type it instead.'); }
         };
-        r.onerror = e => {
-          if(stopped) return;
-          const k = e.error;
-          clearTimeout(safety); beeState.listening = false;
-          if(k === 'no-speech'){
-            markTry();
-            beeState.verdict = 'It did not catch anything — hold the phone closer and try again.';
-          } else if(k === 'not-allowed' || k === 'service-not-allowed'){
-            beeState.srDead = true; beeState.spell = true;
-            beeState.verdict = 'The microphone is blocked for this site, so typing is the game today. A grown-up can allow the mic in the browser settings.';
-          } else if(k === 'network'){
-            beeState.srDead = true; beeState.spell = true;
-            beeState.verdict = 'Voice checking needs the internet and could not reach it — typing counts just the same.';
-          } else if(k === 'audio-capture'){
-            beeState.srDead = true; beeState.spell = true;
-            beeState.verdict = 'No microphone could be found — typing counts just the same.';
-          } else if(k !== 'aborted'){
-            markTry();
-            beeState.verdict = 'The microphone had trouble (' + k + ') — try again, or type it.';
-          }
-          render();
-        };
-        r.onend = () => {
-          if(!beeState.listening) return;
-          beeState.listening = false;
-          if(!sawFinal){ markTry();
-            beeState.verdict = 'It stopped listening before it heard you — tap and try again.'; }
-          if(beeState.tries >= 2) beeState.spell = true;
-          render();
-        };
-        try { r.start(); }
-        catch(err){ beeState.listening = false; beeState.spell = true;
-          beeState.verdict = 'The microphone would not start — type it instead.'; render(); }
+        startOneSession();
       });
       btns.appendChild(mic);
     }

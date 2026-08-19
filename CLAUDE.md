@@ -453,3 +453,28 @@ organically in this sandbox and degraded exactly as designed.
 builder's own asserts before reaching `check_content.py`, which already
 skips them correctly. Fixed alongside the new `bee_` build flag.
 
+**The mic that keeps listening (v100).** River reported it live: "I can only
+spell about 3 letters before it resets on me." The cause was `continuous:true`
+— Android Chrome's `SpeechRecognition` does not reliably honor it; the
+platform's underlying speech service ends the session after a single
+utterance regardless of the flag, and there was no code path bringing the mic
+back without her re-tapping "Spell it" by hand. Fixed by not fighting the
+platform: the Bee Round now uses `continuous:false, interimResults:false` —
+the exact well-supported single-utterance mode Star Sky already uses
+successfully on her phone — and supplies "keep listening" itself. `onend`
+silently starts a fresh session unless the word is finished, she has
+cancelled, a fatal error occurred, or the budget (50s / 30 restarts) is
+spent; from her side the mic never stops. `stillLive()` guards every callback
+against a stray restart firing after she has left the screen.
+
+Verified with a fake recognizer that ends its own session after every single
+final result — deliberately reproducing the Android behaviour rather than the
+"one long session" shape the original code assumed: spelling "cuddle" letter
+by letter now creates six auto-restarted sessions, one per letter, with
+`beeState.listening` staying true throughout and the word completing
+normally. The two escape hatches were re-verified under the new restart
+loop too: two stalled single-utterance attempts still hand off to typing
+(unchanged), and tapping "Type it instead" mid-chain stops it for good — no
+restart sneaks in afterward, confirmed by checking the session count is
+unchanged even after a delay.
+
