@@ -1,5 +1,6 @@
 # Builder for River's Accelerated Math units (Wayfinder).
-import json, io, time
+import json, io, time, os
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def card(C, term, d, hint=None, eq=None, frm='source'):
     c = {'id': 'c%d' % len(C), 'term': term, 'def': d}
@@ -13,8 +14,24 @@ def q(Q, lv, text, opts, ans, hint, steps, main, tip, frm='source'):
               'opts': [str(o) for o in opts], 'ans': ans, 'hint': hint, 'steps': steps,
               'ex': {'main': main, 'tip': tip}})
 
+
+def _balance(Q):
+    """Spread correct answers across positions deterministically. The app
+    shuffles options at render time (v64), so file order never reaches the
+    student — but a biased file is still a biased file: the parent review
+    queue and any future fixed-order mode read it as written, and every
+    authoring session so far has drifted to ans:0. Rotate instead of trusting
+    the author. Skips order/spell, whose opts order is semantic."""
+    slot = 0
+    for x in Q:
+        if x.get('kind') in ('order', 'spell'): continue
+        want = slot % 4; slot += 1
+        if x['ans'] != want:
+            x['opts'][x['ans']], x['opts'][want] = x['opts'][want], x['opts'][x['ans']]
+            x['ans'] = want
+
 def build(C, Q, uid, title, rnd, summary, why, objectives, parentNote, nextUp, path,
-          srcName, source, offset_hours=4):
+          srcName, source, offset_hours=4, capstone=False):
     errs = []
     for c in C:
         if not c['def'].startswith('**'): errs.append('%s: def not bold-first' % c['id'])
@@ -30,6 +47,7 @@ def build(C, Q, uid, title, rnd, summary, why, objectives, parentNote, nextUp, p
         blob = ' '.join([x['q'], x['hint'], x['ex']['main'], x['ex']['tip']] + x['steps'] + x['opts'])
         if posRef.search(blob): errs.append('%s: positional reference' % x['id'])
     assert not errs, errs
+    _balance(Q)
     unit = {
         'id': uid, 'type': 'unit',
         'updatedAt': int(time.time()*1000) - int(offset_hours*3600*1000),
@@ -43,7 +61,8 @@ def build(C, Q, uid, title, rnd, summary, why, objectives, parentNote, nextUp, p
         'nextUp': {'text': nextUp[0], 'minutes': nextUp[1], 'from': 'added'},
         'cards': C, 'questions': Q,
     }
-    io.open('/home/user/wayfinder/' + path, 'w', encoding='utf-8').write(
+    if capstone: unit['capstone'] = True
+    io.open(os.path.join(REPO, path), 'w', encoding='utf-8').write(
         json.dumps({'v': 4, 'records': {uid: unit}}, ensure_ascii=False, indent=1))
     lv = {1:0, 2:0, 3:0}
     for x in Q: lv[x['lv']] += 1

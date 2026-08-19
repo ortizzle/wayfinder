@@ -1,0 +1,327 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m33": {
+   "id": "unit-m33",
+   "type": "unit",
+   "updatedAt": 1787091843432,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · 3-3 Decimals to Thousandths",
+   "round": 10,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "Lesson 3-3 pushes the place-value chart three seats right of the decimal point: reading and writing thousandths, converting between decimals and fractions over 1,000, and the same ×10-per-seat relationship running through the point.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Thousandths are where money and measurement intuition run out and the chart has to carry you. The two classic errors — 97/1,000 as 0.97, and the ×10 rule pointed the wrong way — both come from trusting digits over seats, and both are in the quiz.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Write a thousandths fraction as a decimal and back.",
+     "from": "source"
+    },
+    {
+     "text": "Name the seat of any digit through the thousandths place.",
+     "from": "source"
+    },
+    {
+     "text": "Compare the values of one digit in neighbouring seats, in the correct direction.",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Watch the 0.097-vs-0.97 error — it is the single most common slip in this lesson, and it comes from copying digits without counting places. If she gets the Owen question wrong, the direction of the ÷10 ladder is the thing to talk through.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first — the last card is the one that prevents the classic mistake. Then the quiz.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Thousandth",
+     "def": "**One of 1,000 equal parts of a whole — written 0.001.**\n• The thousandths place is the THIRD place right of the decimal point.\n• 4/1,000 = 0.004.",
+     "hint": "Three zeros in 1,000 — three places right of the point.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The chart continues rightward",
+     "def": "**Right of the decimal point the seats are tenths, hundredths, thousandths.**\n• Each seat right is worth one-tenth of the seat before.\n• The same ×10 ladder as whole numbers, just descending.",
+     "hint": "Same ladder, going down: ÷10 every step right.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Decimal ↔ fraction",
+     "def": "**A decimal in thousandths is a fraction with denominator 1,000.**\n• 0.444 = 444/1,000.\n• The number of decimal places matches the zeros in the denominator.",
+     "hint": "Places right of the point = zeros in the bottom of the fraction.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Reading a decimal name",
+     "def": "**Read the digits as a whole number, then say the last place's name.**\n• 0.309 → \"three hundred nine thousandths\".\n• 0.05 → \"five hundredths\".",
+     "hint": "The last seat names the whole thing.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Zeros right after the point",
+     "def": "**A zero between the point and the digits pushes everything one seat smaller.**\n• 97/1,000 is 0.097 — NOT 0.97.\n• Check by counting places: thousandths needs three.",
+     "hint": "Count places, never just copy digits over.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which fraction equals 0.007?",
+     "opts": [
+      "7/1,000",
+      "7/100",
+      "7/10",
+      "70/1,000"
+     ],
+     "ans": 0,
+     "hint": "Count how many places right of the point the 7 sits.",
+     "steps": [
+      "The 7 sits three places right of the decimal point.",
+      "Three places right is the thousandths seat.",
+      "So 0.007 = 7/1,000."
+     ],
+     "ex": {
+      "main": "**7/1,000.** Third seat right of the point means thousandths.",
+      "tip": "Places right of the point and zeros in the denominator always agree."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A beetle measures 391/1,000 of a metre. How is that written as a decimal?",
+     "opts": [
+      "3.91",
+      "0.391",
+      "0.0391",
+      "39.1"
+     ],
+     "ans": 1,
+     "hint": "Thousandths means three places right of the point.",
+     "steps": [
+      "The denominator 1,000 says thousandths.",
+      "Thousandths means exactly three decimal places.",
+      "391 fills them: 0.391."
+     ],
+     "ex": {
+      "main": "**0.391 m.** Three digits, three places — a clean fit.",
+      "tip": "The unit rides along: 0.391 of a METRE. Keep units attached to answers."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which digit of 2.583 is in the thousandths place?",
+     "opts": [
+      "8",
+      "5",
+      "3",
+      "2"
+     ],
+     "ans": 2,
+     "hint": "Count seats rightward from the point.",
+     "steps": [
+      "First seat right of the point: 5 (tenths).",
+      "Second: 8 (hundredths).",
+      "Third: 3 (thousandths)."
+     ],
+     "ex": {
+      "main": "**3.** Third seat right of the point.",
+      "tip": "The ones seat is three seats left of the thousandths seat — worth 1,000 times as much. Count seats; never guess the factor."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How is \"seven hundred five thousandths\" written as a decimal?",
+     "opts": [
+      "0.0705",
+      "0.75",
+      "700.5",
+      "0.705"
+     ],
+     "ans": 3,
+     "hint": "The missing tens place still needs a digit.",
+     "steps": [
+      "Seven hundred five = 705.",
+      "Thousandths means three decimal places.",
+      "705 fills them: 0.705 — the zero holds the hundredths seat."
+     ],
+     "ex": {
+      "main": "**0.705.** The silent place in \"seven hundred five\" becomes a written 0.",
+      "tip": "Words skip empty places; decimals never can."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How does 0.04 compare to 0.004?",
+     "opts": [
+      "0.04 is 10 times as great",
+      "0.04 is 100 times as great",
+      "The two are equal",
+      "0.004 is 10 times as great"
+     ],
+     "ans": 0,
+     "hint": "One seat apart on the ladder.",
+     "steps": [
+      "0.04 has its 4 in the hundredths seat.",
+      "0.004 has its 4 in the thousandths seat — one seat further right.",
+      "One seat is one factor of 10, and leftward is greater."
+     ],
+     "ex": {
+      "main": "**0.04 is 10 times as great.** Same ×10-per-seat rule as whole numbers.",
+      "tip": "The ladder never changes — it just keeps going past the point."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A relay team ran 0.3 of the race in the rain. How many thousandths is 0.3?",
+     "opts": [
+      "3/1,000",
+      "300/1,000",
+      "30/1,000",
+      "3,000/1,000"
+     ],
+     "ans": 1,
+     "hint": "Annex zeros until you reach the thousandths seat.",
+     "steps": [
+      "0.3 = 0.300 — annexing zeros changes nothing.",
+      "0.300 read in thousandths is 300 of them.",
+      "So 0.3 = 300/1,000."
+     ],
+     "ex": {
+      "main": "**300/1,000.** Three tenths and three hundred thousandths are the same amount.",
+      "tip": "Renaming into smaller pieces is the move that makes decimal addition line up later."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Nadia says 97/1,000 can be written as 0.97. What should you tell her?",
+     "opts": [
+      "It should be 9.7 instead",
+      "She is right — 97 over 1,000 is 0.97",
+      "Thousandths needs three places, so it is 0.097",
+      "It should be 0.0097 instead"
+     ],
+     "ans": 2,
+     "hint": "Count the decimal places her version uses.",
+     "steps": [
+      "0.97 uses only two decimal places — that is 97 HUNDREDTHS.",
+      "The denominator 1,000 demands three places.",
+      "Pad the front: 097 → 0.097."
+     ],
+     "ex": {
+      "main": "**0.097.** Two places is hundredths; her digits are right but the seats are wrong.",
+      "tip": "The zero in front of the 9 is doing real work — it is not decoration."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Owen claims that in 0.555, the 5 in the thousandths place is worth 10 times the 5 in the hundredths place. What is wrong with his claim?",
+     "opts": [
+      "The factor should be 100, not 10",
+      "Nothing — the claim is correct",
+      "The two 5s are worth the same because the digits match",
+      "He has it backwards — the thousandths 5 is worth one-tenth as much"
+     ],
+     "ans": 3,
+     "hint": "Which direction does the ladder grow?",
+     "steps": [
+      "The thousandths seat is one seat RIGHT of the hundredths seat.",
+      "Each seat right is worth one-tenth as much, not ten times.",
+      "So the thousandths 5 (0.005) is a tenth of the hundredths 5 (0.05)."
+     ],
+     "ex": {
+      "main": "**He has the direction backwards.** Rightward seats shrink; leftward seats grow.",
+      "tip": "The size of the factor (10) was right — the direction is the whole question."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A number has a 6 in the tenths place. If that 6 moved one seat to the right, what would happen to its value?",
+     "opts": [
+      "It would be worth one-tenth as much",
+      "It would be worth 10 times as much",
+      "It would keep the same value",
+      "It would be worth one-hundredth as much"
+     ],
+     "ans": 0,
+     "hint": "Moving right goes down the ladder.",
+     "steps": [
+      "In the tenths seat the 6 is worth 0.6.",
+      "One seat right is the hundredths seat: 0.06.",
+      "0.06 is one-tenth of 0.6."
+     ],
+     "ex": {
+      "main": "**One-tenth as much.** Every seat rightward divides by 10.",
+      "tip": "Same digit, same rule, either side of the point."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which decimal equals 40/1,000?",
+     "opts": [
+      "0.400",
+      "0.040",
+      "0.004",
+      "4.000"
+     ],
+     "ans": 1,
+     "hint": "Three zeros below means three places — then place the 40.",
+     "steps": [
+      "Thousandths means three decimal places.",
+      "040 fills them: 0.040.",
+      "Check: 0.040 = 0.04 = 4 hundredths = 40 thousandths. ✓"
+     ],
+     "ex": {
+      "main": "**0.040.** Forty thousandths and four hundredths are the same number in two coats.",
+      "tip": "A trailing zero changes nothing; a LEADING zero after the point changes everything."
+     }
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,685 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3r": {
+   "id": "unit-m3r",
+   "type": "unit",
+   "updatedAt": 1787091843459,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · Topic Review",
+   "round": 12,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "The whole of Topic 3 in one pool: exponents and powers of 10, place value through millions, decimals to thousandths, equivalent decimals and their forms, comparing and ordering, rounding, and decimal-chart structure — served as mixed rounds so the skills interleave.",
+    "from": "source"
+   },
+   "why": {
+    "text": "A topic test asks everything at once, so practice should too. Deciding WHICH skill a question wants — exponent pattern, padding, rounding band — is itself the tested skill, and only mixed rounds train it.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Move between exponent, standard, expanded and word forms in both directions.",
+     "from": "source"
+    },
+    {
+     "text": "Compare, order and squeeze between decimals by padding to equal length.",
+     "from": "source"
+    },
+    {
+     "text": "Round decimals in one step and reason backwards from a rounded result.",
+     "from": "source"
+    },
+    {
+     "text": "Use the ×10-per-seat structure to explain, not just compute.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The capstone for Topic 3. The three-level questions lean hard on critique-reasoning — Kavya, Milo, and the hidden-digit items are where understanding shows. If the mixed rounds go well, she is ready for whatever the class calls the Topic 3 test.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Two or three mixed rounds across different days beats one long sitting — the shuffle is the point.",
+    "minutes": 15,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The one chart behind Topic 3",
+     "def": "**Everything in this topic is a single place-value chart, read left or right of the point.**\n• Exponents name the big seats; thousandths name the small ones.\n• Every seat is worth 10 times its right-hand neighbour.",
+     "hint": "One ladder. Powers of 10 go up it; decimals go down it.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Exponents, in one line",
+     "def": "**The exponent counts the 10s, and equals the zeros in the product.**\n• 10⁵ = 100,000. And 6 × 10⁴ = 60,000.",
+     "hint": "Count zeros ↔ read exponent, both directions.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Decimal ↔ fraction, in one line",
+     "def": "**Decimal places match the zeros in the denominator.**\n• 0.083 = 83/1,000 — three places, three zeros.",
+     "hint": "Places = zeros. Pad the front, never the back.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Equivalence, in one line",
+     "def": "**End zeros are free; a zero between the point and the digits changes everything.**\n• 2.5 = 2.50 = 2.500, but 2.05 is a different number.",
+     "hint": "WHERE the zero sits is the entire question.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Comparing, in one line",
+     "def": "**Stack the points, pad to equal length, first differing seat wins.**\n• 12.8 vs 12.68 → 12.80 vs 12.68 → tenths decide.",
+     "hint": "Pad, then walk left to right. Stop at the first disagreement.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Rounding, in one line",
+     "def": "**Mark the seat, let the next digit vote (5 up), drop the tail — in ONE step.**\n• 448 to the nearest hundred is 400, never via 450.",
+     "hint": "One look, one decision, no chaining.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Chart structure, in one line",
+     "def": "**Across is the small step; down is ten of them; rows end on a rollover.**\n• Two paths to a cell must agree — that is your check.",
+     "hint": "Walk the chart; don't compute it.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A warehouse stores 7 × 10⁴ boxes. How many boxes is that?",
+     "opts": [
+      "70,000",
+      "7,000",
+      "700,000",
+      "28"
+     ],
+     "ans": 0,
+     "hint": "Attach as many zeros as the exponent.",
+     "steps": [
+      "10⁴ = 10,000 — four zeros.",
+      "7 × 10,000 = 70,000.",
+      "Check: the product keeps exactly four zeros, matching the exponent."
+     ],
+     "ex": {
+      "main": "**70,000.** Four zeros follow the 7.",
+      "tip": "The 28 trap is 7 × 4 — the exponent never multiplies directly."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the value of the 5 in 2,571,368?",
+     "opts": [
+      "50,000",
+      "500,000",
+      "5,000,000",
+      "5,000"
+     ],
+     "ans": 1,
+     "hint": "Find the seat before the value.",
+     "steps": [
+      "Count seats from the right: ones, tens, hundreds, thousands, ten-thousands, hundred-thousands.",
+      "The 5 lands in the hundred-thousands seat.",
+      "5 × 100,000 = 500,000."
+     ],
+     "ex": {
+      "main": "**500,000.** The seat multiplies the digit.",
+      "tip": "Value questions are seat questions in disguise."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which decimal equals 6/1,000?",
+     "opts": [
+      "0.6",
+      "0.06",
+      "0.006",
+      "6.000"
+     ],
+     "ans": 2,
+     "hint": "Three zeros in the denominator, three decimal places.",
+     "steps": [
+      "The denominator 1,000 says thousandths.",
+      "Thousandths means exactly three decimal places.",
+      "006 fills them: 0.006 — the front zeros hold the seats."
+     ],
+     "ex": {
+      "main": "**0.006.** Pad the front to fill the seats.",
+      "tip": "Places and zeros always match — count them both."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which decimal is equivalent to 8.20?",
+     "opts": [
+      "0.82",
+      "8.02",
+      "8.22",
+      "8.2"
+     ],
+     "ans": 3,
+     "hint": "Which option only drops an END zero?",
+     "steps": [
+      "8.20's final zero is after the last nonzero digit — free.",
+      "Dropping it gives 8.2, the same number.",
+      "Say both: \"twenty hundredths\", \"two tenths\" — the same amount twice."
+     ],
+     "ex": {
+      "main": "**8.2.** Twenty hundredths is two tenths.",
+      "tip": "8.02 moves the 2 to a different seat — that zero is load-bearing."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two snail trails measure 0.54 m and 0.6 m. Which comparison is true?",
+     "opts": [
+      "0.6 > 0.54",
+      "0.54 > 0.6",
+      "0.54 = 0.6",
+      "0.6 < 0.54"
+     ],
+     "ans": 0,
+     "hint": "Pad 0.6 before comparing.",
+     "steps": [
+      "0.6 = 0.60.",
+      "Tenths: 6 > 5.",
+      "So 0.6 is the longer trail."
+     ],
+     "ex": {
+      "main": "**0.6 > 0.54.** The shorter-written decimal is the bigger number here.",
+      "tip": "Pad first and the illusion disappears."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7.85 rounded to the nearest whole number?",
+     "opts": [
+      "7",
+      "8",
+      "7.9",
+      "7.8"
+     ],
+     "ans": 1,
+     "hint": "The tenths digit votes.",
+     "steps": [
+      "Rounding place: ones — the 7.",
+      "One right: 8, which is 5 or more.",
+      "7.85 → 8, point and tail dropped."
+     ],
+     "ex": {
+      "main": "**8.** The 8 in the tenths votes up.",
+      "tip": "Whole-number rounding drops the decimal point entirely."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A national park recorded 4,060,000 visitors. Which is its expanded form using exponents?",
+     "opts": [
+      "(4 × 10⁵) + (6 × 10⁴)",
+      "(4 × 10⁶) + (6 × 10⁵)",
+      "(4 × 10⁶) + (6 × 10⁴)",
+      "(4 × 10⁶) + (6 × 10³)"
+     ],
+     "ans": 2,
+     "hint": "Seat each nonzero digit.",
+     "steps": [
+      "The 4 is in the millions seat: 4 × 10⁶.",
+      "The 6 is in the ten-thousands seat: 6 × 10⁴.",
+      "Sum: (4 × 10⁶) + (6 × 10⁴)."
+     ],
+     "ex": {
+      "main": "**(4 × 10⁶) + (6 × 10⁴).** Two filled seats, two terms.",
+      "tip": "Silent seats appear in standard form as zeros and in expanded form not at all."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How is \"three and nine hundredths\" written as a decimal?",
+     "opts": [
+      "39.0",
+      "3.9",
+      "3.009",
+      "3.09"
+     ],
+     "ans": 3,
+     "hint": "\"Hundredths\" fixes two decimal places.",
+     "steps": [
+      "Whole part 3; \"and\" is the point.",
+      "Nine hundredths needs two places: 09.",
+      "So 3.09."
+     ],
+     "ex": {
+      "main": "**3.09.** The zero holds the tenths seat.",
+      "tip": "3.9 would be \"three and nine TENTHS\" — the seat name matters."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 44,000, how do the two 4s compare?",
+     "opts": [
+      "The left 4 is worth 10 times the right 4",
+      "The left 4 is worth 100 times the right 4",
+      "The 4s are worth the same",
+      "The right 4 is worth 10 times the left 4"
+     ],
+     "ans": 0,
+     "hint": "Adjacent seats.",
+     "steps": [
+      "Left 4: ten-thousands, worth 40,000.",
+      "Right 4: thousands, worth 4,000.",
+      "One seat apart: a factor of exactly 10."
+     ],
+     "ex": {
+      "main": "**10 times.** Adjacent seats always differ by one factor of 10.",
+      "tip": "Two seats apart would make it 100 — the steps stack."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number sits between 7.1 and 7.2?",
+     "opts": [
+      "7.21",
+      "7.15",
+      "7.09",
+      "7.25"
+     ],
+     "ans": 1,
+     "hint": "Pad the ends to hundredths.",
+     "steps": [
+      "7.1 = 7.10 and 7.2 = 7.20.",
+      "7.15 sits between 710 and 720 hundredths. ✓",
+      "The others land outside the band."
+     ],
+     "ex": {
+      "main": "**7.15.** Zoom one seat deeper and the room appears.",
+      "tip": "Between any two unequal decimals there is always another — always."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A stopwatch shows 58.276 seconds. What is the time to the nearest hundredth?",
+     "opts": [
+      "58.3 s",
+      "58.27 s",
+      "58.28 s",
+      "58.276 s"
+     ],
+     "ans": 2,
+     "hint": "The thousandths digit votes.",
+     "steps": [
+      "Rounding place: hundredths — the 7.",
+      "One right: 6, five or more.",
+      "58.276 → 58.28."
+     ],
+     "ex": {
+      "main": "**58.28 s.** The 6 votes up and vanishes.",
+      "tip": "Race times round to hundredths for exactly this reason — carrying the units matters."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In a hundredths chart, one cell is reached going right from 0.67 or down from 0.58. What is in it?",
+     "opts": [
+      "0.57",
+      "0.59",
+      "0.77",
+      "0.68"
+     ],
+     "ans": 3,
+     "hint": "Both walks must agree.",
+     "steps": [
+      "Right from 0.67: +0.01 = 0.68.",
+      "Down from 0.58: +0.1 = 0.68.",
+      "Agreement confirms it."
+     ],
+     "ex": {
+      "main": "**0.68.** Two roads, one cell.",
+      "tip": "When the two paths disagree, the error is yours, not the chart's."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which equation is FALSE?",
+     "opts": [
+      "9 × 10³ = 90,000",
+      "9 × 10⁴ = 90,000",
+      "9 × 10² = 900",
+      "9 × 10⁵ = 900,000"
+     ],
+     "ans": 0,
+     "hint": "Count each option's zeros against its exponent.",
+     "steps": [
+      "9 × 10³ = 9,000 — but the option claims 90,000. False. ✓",
+      "9 × 10⁴ = 90,000 ✓ true.",
+      "9 × 10² = 900 and 9 × 10⁵ = 900,000 — both true."
+     ],
+     "ex": {
+      "main": "**9 × 10³ = 90,000 is the false one.** Three zeros make 9,000.",
+      "tip": "Hunting the FALSE statement forces you to verify all four — that is the point."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Kavya says 0.480 is greater than 0.48 \"because it has more digits\". What should you tell her?",
+     "opts": [
+      "She is right — longer decimals are greater",
+      "They are equal — the extra zero is after the last nonzero digit",
+      "0.48 is actually the greater one",
+      "They cannot be compared without a number line"
+     ],
+     "ans": 1,
+     "hint": "Is that zero free or load-bearing?",
+     "steps": [
+      "0.480 only annexes a zero to 0.48.",
+      "End zeros rename tenths/hundredths into thousandths without changing the amount.",
+      "480 thousandths = 48 hundredths."
+     ],
+     "ex": {
+      "main": "**They are equal.** Written length says nothing about size.",
+      "tip": "The same instinct wrongly says 12.68 > 12.8 — padding fixes both."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A number rounds to 6.3 to the nearest tenth AND to 6.28 to the nearest hundredth. Which could it be?",
+     "opts": [
+      "6.292",
+      "6.251",
+      "6.283",
+      "6.234"
+     ],
+     "ans": 2,
+     "hint": "Two bands must overlap — solve each, then intersect.",
+     "steps": [
+      "Nearest hundredth 6.28 needs: 6.275 up to but not including 6.285.",
+      "Nearest tenth 6.3 needs: 6.25 up to but not including 6.35.",
+      "6.283 sits inside both bands. ✓",
+      "6.251 rounds to 6.25; 6.292 rounds to 6.29; 6.234 rounds to 6.23 and 6.2 — each fails a band."
+     ],
+     "ex": {
+      "main": "**6.283.** Inside the 6.28 band, which itself sits inside the 6.3 band.",
+      "tip": "Two rounding facts about one number are two overlapping bands — the answer lives in the overlap."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Milo claims that moving a digit two seats left multiplies its value by 20. What should you tell him?",
+     "opts": [
+      "The factor depends on which digit moves",
+      "He is right — two seats, 10 each, makes 20",
+      "Two seats left divides the value by 100",
+      "Each seat multiplies by 10, so two seats multiply by 100"
+     ],
+     "ans": 3,
+     "hint": "Do seat-factors add or multiply?",
+     "steps": [
+      "One seat left: × 10.",
+      "A second seat left: × 10 again.",
+      "The factors MULTIPLY: 10 × 10 = 100, not 10 + 10 = 20."
+     ],
+     "ex": {
+      "main": "**× 100, not × 20.** Place-value steps multiply; they never add.",
+      "tip": "His error is treating a multiplicative ladder like an additive one — the single deepest misconception in this topic."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which list is ordered from least to greatest?",
+     "opts": [
+      "0.098, 0.9, 0.908, 0.98",
+      "0.9, 0.098, 0.908, 0.98",
+      "0.098, 0.908, 0.9, 0.98",
+      "0.098, 0.9, 0.98, 0.908"
+     ],
+     "ans": 0,
+     "hint": "Pad all four to thousandths.",
+     "steps": [
+      "Pad: 0.098, 0.900, 0.908, 0.980.",
+      "As integers: 98, 900, 908, 980.",
+      "That ascending order is exactly the first list."
+     ],
+     "ex": {
+      "main": "**0.098, 0.9, 0.908, 0.98.** Padded, the order is just integer order.",
+      "tip": "Every wrong list here trips on 0.9 looking small — padding is the cure."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A relay team's four splits, in seconds, were 12.06, 12.6, 12.066, and 12.61. The anchor ran the FASTEST split. Which time was the anchor's?",
+     "opts": [
+      "12.6",
+      "12.06",
+      "12.066",
+      "12.61"
+     ],
+     "ans": 1,
+     "hint": "Fastest means smallest — pad to thousandths.",
+     "steps": [
+      "Pad: 12.060, 12.600, 12.066, 12.610.",
+      "Smallest is 12.060.",
+      "So the anchor ran 12.06 seconds."
+     ],
+     "ex": {
+      "main": "**12.06 s.** Smaller time, faster runner — and 12.06 < 12.066 by six thousandths.",
+      "tip": "Fastest-vs-greatest is a reading question stacked on a math question. Read first."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round 9.996 to the nearest hundredth.",
+     "opts": [
+      "9.90",
+      "9.99",
+      "10.00",
+      "9.996"
+     ],
+     "ans": 2,
+     "hint": "The vote forces a cascade of rollovers.",
+     "steps": [
+      "Rounding place: hundredths — the second 9.",
+      "One right: 6 votes up.",
+      "9.99 + 0.01 rolls all the way over: 10.00.",
+      "The zeros after the point show the precision you rounded to."
+     ],
+     "ex": {
+      "main": "**10.00.** The round-up ripples through every 9.",
+      "tip": "Keeping the two zeros records that you rounded to hundredths — 10 alone loses that."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "One digit of 5.7■4 is hidden. Rounded to the nearest hundredth, the number is 5.72. What is the hidden digit?",
+     "opts": [
+      "7",
+      "1",
+      "3",
+      "2"
+     ],
+     "ans": 3,
+     "hint": "The 4 in the thousandths votes DOWN.",
+     "steps": [
+      "The thousandths digit is 4 — less than 5 — so rounding leaves the hundredths digit alone.",
+      "After rounding, the hundredths digit reads 2.",
+      "Since nothing changed, the hidden digit IS 2."
+     ],
+     "ex": {
+      "main": "**2.** A down-vote means the rounded digit was never touched.",
+      "tip": "Running the rounding machine backwards is the surest test you understand it forwards."
+     }
+    },
+    {
+     "id": "q20",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A thousandths chart row ends …0.038, 0.039, ■. What completes the row?",
+     "opts": [
+      "0.04",
+      "0.0391",
+      "0.05",
+      "0.14"
+     ],
+     "ans": 0,
+     "hint": "The rollover completes a hundredth.",
+     "steps": [
+      "One more thousandth after 0.039 is 0.040.",
+      "0.040 = 0.04 — the rolled-over hundredth ends the row.",
+      "The next row then opens at 0.041."
+     ],
+     "ex": {
+      "main": "**0.04.** Forty thousandths is four hundredths.",
+      "tip": "The short-looking answer is the rollover in disguise — every row ends with one."
+     }
+    },
+    {
+     "id": "q21",
+     "lv": 2,
+     "from": "source",
+     "kind": "order",
+     "q": "Order these from least to greatest.",
+     "opts": [
+      "3 × 10²",
+      "3,200",
+      "3 × 10⁴",
+      "300,000"
+     ],
+     "ans": 0,
+     "hint": "Turn everything into standard form first.",
+     "steps": [
+      "3 × 10² = 300.",
+      "3 × 10⁴ = 30,000.",
+      "Standard: 300, 3,200, 30,000, 300,000.",
+      "That is the order."
+     ],
+     "ex": {
+      "main": "**300, 3,200, 30,000, 300,000.** Convert first, order second.",
+      "tip": "Mixed representations are only hard until everything speaks standard form."
+     }
+    },
+    {
+     "id": "q22",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number is one-tenth of 4.7?",
+     "opts": [
+      "47",
+      "0.47",
+      "4.07",
+      "0.047"
+     ],
+     "ans": 1,
+     "hint": "One seat right, every digit.",
+     "steps": [
+      "One-tenth slides each digit one seat right.",
+      "4.7 → 0.47.",
+      "Check: 0.47 × 10 = 4.7. ✓"
+     ],
+     "ex": {
+      "main": "**0.47.** The ladder works in both directions.",
+      "tip": "47 is the ×10 answer — the direction of the slide is the whole question."
+     }
+    },
+    {
+     "id": "q23",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which fraction equals 0.219?",
+     "opts": [
+      "21.9/100",
+      "219/100",
+      "219/1,000",
+      "219/10,000"
+     ],
+     "ans": 2,
+     "hint": "Count the decimal places.",
+     "steps": [
+      "Count the places right of the point: three.",
+      "Three places means thousandths — denominator 1,000.",
+      "So 0.219 = 219/1,000."
+     ],
+     "ex": {
+      "main": "**219/1,000.** Three places, three zeros.",
+      "tip": "The denominator is readable straight off the number of places."
+     }
+    }
+   ],
+   "capstone": true
+  }
+ }
+}

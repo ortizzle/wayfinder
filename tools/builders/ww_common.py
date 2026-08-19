@@ -1,5 +1,6 @@
 # Builder for River's Wordly Wise units (Wayfinder).
-import json, io, time
+import json, io, time, os
+REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 def card(C, term, d, sp=None, hint=None, frm='source'):
     c = {'id': 'c%d' % len(C), 'term': term, 'def': d}
@@ -48,7 +49,7 @@ def build(C, Q, uid, title, summary, why, objectives, parentNote, nextUp, path,
         'nextUp': {'text': nextUp[0], 'minutes': nextUp[1], 'from': 'added'},
         'cards': C, 'questions': Q,
     }
-    io.open('/home/user/wayfinder/' + path, 'w', encoding='utf-8').write(
+    io.open(os.path.join(REPO, path), 'w', encoding='utf-8').write(
         json.dumps({'v': 4, 'records': {uid: unit}}, ensure_ascii=False, indent=1))
     lv = {1:0, 2:0, 3:0}
     for x in Q: lv[x['lv']] += 1

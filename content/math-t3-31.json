@@ -1,0 +1,327 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m31": {
+   "id": "unit-m31",
+   "type": "unit",
+   "updatedAt": 1787091843431,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · 3-1 Patterns with Exponents and Powers of 10",
+   "round": 10,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "Lesson 3-1 introduces exponents: the base is the number being repeated, the exponent counts how many times, and a power of 10 has exactly as many zeros as its exponent. Multiplying a number by a power of 10 attaches that many zeros.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Exponents are how big numbers stay readable — 10⁶ is easier to compare than 1,000,000 with the zeros counted by eye. The zeros pattern from this lesson is also the engine behind the decimal place-value work in the rest of the topic.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Write a power of 10 using an exponent, and read one back into a whole number.",
+     "from": "source"
+    },
+    {
+     "text": "Multiply a single digit by a power of 10 using the zeros pattern.",
+     "from": "source"
+    },
+    {
+     "text": "Explain the mistake when exponents are added instead of multiplied.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "First lesson of Topic 3, and the class has jumped books — this is 5th-grade material, which is how her accelerated track works. The classic error to watch for: reading 10⁴ as 10 × 4 = 40. The lesson check and everything after leans on the zeros-equals-exponent pattern.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first — exponent and base have to be solid words before the pattern makes sense. Then the quiz.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Exponent",
+     "def": "**The small raised number that tells how many times to use the base as a factor.**\n• In 10³, the 3 means: multiply three 10s together.\n• 10³ = 10 × 10 × 10 = 1,000.",
+     "hint": "The exponent counts copies, it never multiplies itself.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Base",
+     "def": "**The number the exponent repeats.**\n• In 10³, the base is 10 — it is the number being multiplied.\n• The exponent only says how many times.",
+     "hint": "Base = the big number on the ground floor.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Power of 10",
+     "def": "**10 multiplied by itself one or more times: 10, 100, 1,000, 10,000…**\n• 10¹ = 10, 10² = 100, 10³ = 1,000.\n• Every step up multiplies by another 10.",
+     "hint": "Each power is one storey higher — ten times higher.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "The zeros pattern",
+     "def": "**For a power of 10, the exponent equals the number of zeros in the product.**\n• 10⁴ = 10,000 — four zeros.\n• This is the pattern that makes exponents fast to read.",
+     "hint": "Count the zeros; you have read the exponent.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Multiplying by a power of 10",
+     "def": "**Write the other factor, then attach as many zeros as the exponent.**\n• 7 × 10³ = 7,000.\n• The factor does not change — only zeros are attached.",
+     "hint": "The 7 stays a 7; the 10s only bring zeros.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the value of 10⁴?",
+     "opts": [
+      "10,000",
+      "1,000",
+      "100",
+      "40"
+     ],
+     "ans": 0,
+     "hint": "The exponent counts how many zeros the answer has.",
+     "steps": [
+      "The base is 10 and the exponent is 4.",
+      "That means four 10s multiplied: 10 × 10 × 10 × 10.",
+      "10 × 10 = 100, × 10 = 1,000, × 10 = 10,000."
+     ],
+     "ex": {
+      "main": "**10,000.** Four 10s multiplied together — and four zeros, matching the exponent.",
+      "tip": "The trap answer 40 comes from multiplying 10 × 4. The exponent never multiplies."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "How is 100,000 written as a power of 10?",
+     "opts": [
+      "10⁴",
+      "10⁵",
+      "10⁶",
+      "5 × 10"
+     ],
+     "ans": 1,
+     "hint": "Count the zeros.",
+     "steps": [
+      "Count the zeros in 100,000: there are five.",
+      "For a power of 10, zeros and exponent match.",
+      "So 100,000 = 10⁵."
+     ],
+     "ex": {
+      "main": "**10⁵.** Five zeros, exponent 5 — the pattern in both directions.",
+      "tip": "Writing big round numbers this way is why scientists love exponents."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the expression 10⁶, which number is the base?",
+     "opts": [
+      "60",
+      "6",
+      "10",
+      "1,000,000"
+     ],
+     "ans": 2,
+     "hint": "The base is the number being repeated.",
+     "steps": [
+      "The base is the number the exponent copies.",
+      "Here 10 is copied six times.",
+      "So the base is 10, and 6 is the exponent."
+     ],
+     "ex": {
+      "main": "**10.** The 6 is the exponent — it counts, it is never a factor itself.",
+      "tip": "1,000,000 is the VALUE of 10⁶, not its base."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A crate holds 4 × 10³ oranges. How many oranges is that?",
+     "opts": [
+      "400",
+      "4,300",
+      "40,000",
+      "4,000"
+     ],
+     "ans": 3,
+     "hint": "Write the 4, then attach zeros.",
+     "steps": [
+      "10³ = 1,000.",
+      "So 4 × 10³ = 4 × 1,000.",
+      "Write the 4 and attach three zeros: 4,000."
+     ],
+     "ex": {
+      "main": "**4,000.** The exponent 3 attaches three zeros to the 4.",
+      "tip": "A quick check: the number of zeros in the product matches the exponent."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A city library has 8,000,000 pages across all its books. Which expression equals 8,000,000?",
+     "opts": [
+      "8 × 10⁶",
+      "8 × 10⁵",
+      "8 × 10⁷",
+      "8 × 10⁸"
+     ],
+     "ans": 0,
+     "hint": "Count the zeros after the 8.",
+     "steps": [
+      "Count the zeros in 8,000,000: six of them.",
+      "The exponent must match: 10⁶.",
+      "So 8,000,000 = 8 × 10⁶."
+     ],
+     "ex": {
+      "main": "**8 × 10⁶.** Six zeros, exponent 6 — reading the pattern backwards.",
+      "tip": "Going from the big number back to the exponent is the same pattern in reverse."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How many zeros does the product 5 × 10⁴ have?",
+     "opts": [
+      "3",
+      "4",
+      "5",
+      "9"
+     ],
+     "ans": 1,
+     "hint": "The 5 brings no zeros of its own.",
+     "steps": [
+      "10⁴ = 10,000 — four zeros.",
+      "5 × 10,000 = 50,000.",
+      "The product keeps exactly the four zeros the power of 10 brought."
+     ],
+     "ex": {
+      "main": "**4.** The zeros come from the power of 10; the 5 just sits in front of them.",
+      "tip": "If the front factor ended in 0 (like 50), the product would gain an extra zero — watch for that case later."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A farm ships 3 × 10² melons. If the exponent changed from 2 to 3, what would happen to the number of melons?",
+     "opts": [
+      "It would grow by 10 melons",
+      "It would double",
+      "It would be 10 times as many",
+      "It would be 100 times as many"
+     ],
+     "ans": 2,
+     "hint": "One more 10 joins the multiplication.",
+     "steps": [
+      "3 × 10² = 300 melons.",
+      "Raising the exponent by one multiplies by one more 10.",
+      "3 × 10³ = 3,000 — ten times 300."
+     ],
+     "ex": {
+      "main": "**10 times as many.** Each step up in the exponent is one more ×10.",
+      "tip": "Exponents grow multiplicatively — one step never just adds."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student writes 10 × 10 × 10 × 10 = 40. What mistake did they make?",
+     "opts": [
+      "They forgot to attach zeros to the 4",
+      "They used the wrong base",
+      "They multiplied one 10 too many",
+      "They added the 10s instead of multiplying them"
+     ],
+     "ans": 3,
+     "hint": "Check: what operation actually produces 40 from four 10s?",
+     "steps": [
+      "10 + 10 + 10 + 10 = 40 — that is addition.",
+      "10 × 10 × 10 × 10 multiplies: 100, then 1,000, then 10,000.",
+      "The student added where the expression says multiply."
+     ],
+     "ex": {
+      "main": "**They added instead of multiplied.** Four 10s multiplied make 10,000, not 40.",
+      "tip": "Saying HOW an answer went wrong is a stronger skill than just marking it wrong."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which equation is true?",
+     "opts": [
+      "6 × 10⁵ = 600,000",
+      "6 × 10⁵ = 60,000",
+      "6 × 10⁵ = 650,000",
+      "6 × 10⁵ = 6,500"
+     ],
+     "ans": 0,
+     "hint": "The exponent says how many zeros follow the 6.",
+     "steps": [
+      "10⁵ = 100,000.",
+      "6 × 100,000 = 600,000.",
+      "Five zeros after the 6 — matching the exponent."
+     ],
+     "ex": {
+      "main": "**6 × 10⁵ = 600,000.** Write the 6, attach five zeros.",
+      "tip": "The 650,000 trap slips a digit into the zeros — the front factor never leaks into them."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A telescope can see about 90,000 stars on a clear night. Which expression equals 90,000?",
+     "opts": [
+      "9 × 10³",
+      "9 × 10⁴",
+      "9 × 10⁵",
+      "90 × 10⁴"
+     ],
+     "ans": 1,
+     "hint": "How many zeros follow the 9?",
+     "steps": [
+      "Split 90,000 into 9 × 10,000.",
+      "10,000 has four zeros, so it is 10⁴.",
+      "So 90,000 = 9 × 10⁴."
+     ],
+     "ex": {
+      "main": "**9 × 10⁴.** Four zeros after the 9, exponent 4.",
+      "tip": "90 × 10⁴ is a trick worth pausing on: it equals 900,000 — the zero inside 90 counts too."
+     }
+    }
+   ]
+  }
+ }
+}

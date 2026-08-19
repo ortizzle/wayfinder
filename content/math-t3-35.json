@@ -1,0 +1,330 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m35": {
+   "id": "unit-m35",
+   "type": "unit",
+   "updatedAt": 1787091843458,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · 3-5 Comparing and Ordering Decimals",
+   "round": 10,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "Lesson 3-5: compare decimals by stacking the decimal points, annexing zeros to equal length, and walking left to right until the first seat disagrees. Order lists the same way, and find decimals between any two others by going one seat deeper.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The \"more digits looks bigger\" instinct from whole numbers actively misleads here — 12.8 beats 12.68. Unlearning that one reflex is most of the lesson, and it matters everywhere measurements get compared.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Compare two decimals and say which seat decided it.",
+     "from": "source"
+    },
+    {
+     "text": "Order a set of decimals by padding to equal length.",
+     "from": "source"
+    },
+    {
+     "text": "Name a decimal between two given decimals.",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "The Tomas question is the lesson's core error, verbatim from how kids actually reason. The last question (largest possible thousandths difference) is stretch material — a miss there is fine; a miss on Tomas is worth a conversation.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz. The ordering question is worth doing slowly with the padding written out.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Line up the points",
+     "def": "**To compare decimals, write them with the decimal points stacked.**\n• 3.576 vs 3.432 — points aligned, seats aligned.\n• Then it is the same left-to-right comparison as whole numbers.",
+     "hint": "Stack the points and the seats take care of themselves.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Compare from the left",
+     "def": "**Walk left to right; the first seat where the digits differ decides.**\n• 3.576 vs 3.432: ones tie (3), tenths differ (5 > 4) — done.\n• Nothing further right can overturn an earlier seat.",
+     "hint": "The first disagreement wins. Everything after is noise.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Annex zeros to compare",
+     "def": "**Different lengths? Attach end zeros until they match.**\n• 12.8 vs 12.68 → 12.80 vs 12.68 — now 8 > 6 in the tenths.\n• More digits never means bigger.",
+     "hint": "Pad with free zeros, then compare seat by seat.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Between any two decimals",
+     "def": "**There is always another decimal between two different ones.**\n• Between 0.33 and 0.34 sit 0.331, 0.335, 0.339…\n• Go one seat smaller and the room appears.",
+     "hint": "Zoom in one seat and the gap opens up.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "A number line settles it",
+     "def": "**Further right on the number line means greater — decimals included.**\n• 0.5 sits right of 0.45, so 0.5 is greater.\n• Drawing the line beats arguing about digits.",
+     "hint": "When two decimals argue, the number line is the referee.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two seeds sprouted to 4.29 cm and 4.31 cm. Which comparison is true?",
+     "opts": [
+      "4.31 > 4.29",
+      "4.29 > 4.31",
+      "4.29 = 4.31",
+      "4.31 < 4.29"
+     ],
+     "ans": 0,
+     "hint": "Ones tie — walk to the tenths.",
+     "steps": [
+      "Line up the points: 4.29 and 4.31.",
+      "Ones tie at 4.",
+      "Tenths: 3 > 2, so 4.31 is greater."
+     ],
+     "ex": {
+      "main": "**4.31 > 4.29.** The tenths seat decides; the hundredths never get a vote.",
+      "tip": "The first differing seat always finishes the comparison."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number makes this true?  ___ > 6.35",
+     "opts": [
+      "6.29",
+      "6.4",
+      "6.35",
+      "6.349"
+     ],
+     "ans": 1,
+     "hint": "Pad everything to hundredths and compare.",
+     "steps": [
+      "6.4 = 6.40; compare with 6.35: tenths tie? No — 4 > 3. Greater. ✓",
+      "6.29: tenths 2 < 3. Smaller.",
+      "6.349: 6.349 vs 6.350 — hundredths 4 < 5. Smaller.",
+      "Only 6.4 clears the bar."
+     ],
+     "ex": {
+      "main": "**6.4.** Padded to 6.40, its tenths beat 6.35's.",
+      "tip": "A shorter decimal can absolutely be the bigger one."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Tomas says 12.68 is greater than 12.8 because 68 is greater than 8. What should you tell him?",
+     "opts": [
+      "The two numbers are equal once you drop the zeros",
+      "He is right — more digits after the point means a bigger number",
+      "Pad 12.8 to 12.80 — then 80 hundredths beats 68 hundredths",
+      "You cannot compare decimals with different lengths"
+     ],
+     "ans": 2,
+     "hint": "The digits after the point are not a whole number — they are seats.",
+     "steps": [
+      "68 and 8 are not comparable as written — they occupy different seats.",
+      "Annex a zero: 12.8 = 12.80.",
+      "Now compare hundredths against hundredths: 80 > 68.",
+      "So 12.8 is the greater number."
+     ],
+     "ex": {
+      "main": "**Pad first, then compare.** 12.80 vs 12.68 — the tenths seat (8 > 6) settles it.",
+      "tip": "Reading decimal digits as one whole number is the single commonest comparison error."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which decimal sits between 0.42 and 0.43?",
+     "opts": [
+      "0.44",
+      "0.435",
+      "0.415",
+      "0.425"
+     ],
+     "ans": 3,
+     "hint": "Zoom in one seat — thousandths.",
+     "steps": [
+      "Write the ends as thousandths: 0.420 and 0.430.",
+      "0.425 sits between 420 and 430 thousandths. ✓",
+      "0.415 is below 0.420; 0.435 and 0.44 are above 0.430."
+     ],
+     "ex": {
+      "main": "**0.425.** One seat deeper and there is room to stand between any two decimals.",
+      "tip": "This trick — pad, then slide between — works between ANY two unequal decimals."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "At a gymnastics meet, the beam scores were 14.200, 15.133, 15.500, and 15.166. Which score was highest?",
+     "opts": [
+      "15.500",
+      "15.166",
+      "15.133",
+      "14.200"
+     ],
+     "ans": 0,
+     "hint": "Whole parts first, then walk right.",
+     "steps": [
+      "14.200 loses on the whole part immediately.",
+      "Among the 15s, compare tenths: 5, 1, 1.",
+      "15.500's five tenths beats both others."
+     ],
+     "ex": {
+      "main": "**15.500.** One seat of tenths outweighs any amount of hundredths.",
+      "tip": "Judges write three decimals so ties are rare — the comparison rules are the same ones you know."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these comparisons is true?",
+     "opts": [
+      "0.2 < 0.125",
+      "0.1 < 0.125",
+      "0.125 > 0.13",
+      "0.126 < 0.125"
+     ],
+     "ans": 1,
+     "hint": "Pad everything to three places before judging.",
+     "steps": [
+      "0.1 = 0.100, and 100 < 125 thousandths. True. ✓",
+      "0.2 = 0.200 > 0.125 — so that one is false.",
+      "0.125 vs 0.130: 125 < 130 — false.",
+      "0.126 vs 0.125: 126 > 125 — false."
+     ],
+     "ex": {
+      "main": "**0.1 < 0.125.** Padding to thousandths turns every option into a plain integer comparison.",
+      "tip": "Pad first, and the decimals stop being tricky at all."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "order",
+     "q": "Put these ribbon lengths in order from SHORTEST to longest.",
+     "opts": [
+      "0.309 m",
+      "0.35 m",
+      "0.39 m",
+      "0.4 m"
+     ],
+     "ans": 0,
+     "hint": "Pad all four to thousandths first.",
+     "steps": [
+      "Pad: 0.309, 0.350, 0.390, 0.400.",
+      "As thousandths: 309, 350, 390, 400.",
+      "Order: 0.309 < 0.35 < 0.39 < 0.4."
+     ],
+     "ex": {
+      "main": "**0.309, 0.35, 0.39, 0.4.** Padded to thousandths the order reads straight off.",
+      "tip": "The longest-looking decimal was the smallest — length of the writing means nothing."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A scoreboard shows Ana's floor score as 15.■6, with one digit smudged. Her beam score is 15.36. Which smudged digit would make her floor score HIGHER than her beam score?",
+     "opts": [
+      "1",
+      "2",
+      "4",
+      "0"
+     ],
+     "ans": 2,
+     "hint": "The smudge sits in the tenths seat.",
+     "steps": [
+      "Floor: 15.■6 — the smudge is the tenths digit.",
+      "Beam: 15.36 has 3 in the tenths.",
+      "Higher floor score needs tenths above 3 — of the choices, only 4 works: 15.46 > 15.36."
+     ],
+     "ex": {
+      "main": "**4.** Any tenths digit greater than 3 wins; 4 is the only such choice offered.",
+      "tip": "One seat pinned down the whole answer — that is place value doing the work."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Maya weighed 4.16 kg of apples and Jo weighed some too. Jo's bag was heavier. Which could be Jo's weight?",
+     "opts": [
+      "4.106 kg",
+      "4.09 kg",
+      "4.15 kg",
+      "4.2 kg"
+     ],
+     "ans": 3,
+     "hint": "Pad each option against 4.160.",
+     "steps": [
+      "Pad the target: 4.16 = 4.160.",
+      "4.2 = 4.200 > 4.160. ✓",
+      "4.09 (4.090), 4.15 (4.150) and 4.106 all fall below 4.160."
+     ],
+     "ex": {
+      "main": "**4.2 kg.** The only option whose padded form beats 4.160.",
+      "tip": "Carrying the units (kg) through the compare keeps the answer meaning something."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "If two decimals agree in every seat except the thousandths, what is the LARGEST amount they can differ by?",
+     "opts": [
+      "0.009",
+      "0.9",
+      "0.01",
+      "0.1"
+     ],
+     "ans": 0,
+     "hint": "How far apart can two thousandths digits be?",
+     "steps": [
+      "Only the thousandths digits differ.",
+      "The farthest apart two digits can be is 0 and 9.",
+      "That difference is 9 thousandths: 0.009."
+     ],
+     "ex": {
+      "main": "**0.009.** Nine thousandths — the widest gap a single seat can hold.",
+      "tip": "A seat bounds how much it can matter. That is why early seats always outrank later ones."
+     }
+    }
+   ]
+  }
+ }
+}

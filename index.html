@@ -1276,7 +1276,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v96 · the round found, the word said, the buzz earned';
+const APP_VERSION = 'v97 · topic three, and the measure of things';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -2461,7 +2461,10 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/math-t1-12.json', 'content/math-t1-13.json', 'content/math-t1-14.json', 'content/math-t1-15.json', 'content/math-t1-review.json',
   'content/math-t2-21.json', 'content/math-t2-22.json', 'content/math-t2-23.json', 'content/math-t2-24.json',
   'content/math-t2-25.json', 'content/math-t2-26.json', 'content/math-t2-27.json', 'content/math-t2-review.json',
-  'content/history-5ws.json', 'content/science-quiz-1.json', 'content/history-u2-u3-review.json'];
+  'content/history-5ws.json', 'content/science-quiz-1.json', 'content/history-u2-u3-review.json',
+  'content/math-t3-31.json', 'content/math-t3-32.json', 'content/math-t3-33.json', 'content/math-t3-34.json',
+  'content/math-t3-35.json', 'content/math-t3-36.json', 'content/math-t3-37.json', 'content/math-t3-review.json',
+  'content/science-measurement.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same

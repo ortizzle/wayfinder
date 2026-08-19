@@ -1,0 +1,321 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m37": {
+   "id": "unit-m37",
+   "type": "unit",
+   "updatedAt": 1787091843459,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · 3-7 Patterns in Decimal Charts",
+   "round": 10,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "Lesson 3-7 is the topic's thinking lesson: hundredths and thousandths charts follow two rules (a small step across, a step ten times bigger down), rows end on a rollover, and missing cells are found by walking the structure — with two agreeing paths as the built-in check.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is less about decimals than about USING structure — finding a rule and letting it do the work. That habit is the difference between computing forty cells and understanding one chart.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "State the across-step and down-step of a hundredths or thousandths chart.",
+     "from": "source"
+    },
+    {
+     "text": "Fill a missing cell and verify it by a second path.",
+     "from": "source"
+    },
+    {
+     "text": "Explain the rollover at the end of a row.",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "The rollover (…0.019, 0.02, 0.021…) is where the wheels come off for most kids — 0.02 looks too short to belong. The ordering question targets exactly that. The counterfactual (how the down-step scales) is stretch material.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz — and the second card is worth an extra beat, since the thousandths chart runs the whole show.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "A decimal chart has structure",
+     "def": "**In a hundredths chart, each step right adds 0.01 and each step down adds 0.1.**\n• Across a row: 0.31, 0.32, 0.33…\n• Down a column: 0.02, 0.12, 0.22…",
+     "hint": "Right = pennies. Down = dimes.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The thousandths chart",
+     "def": "**Same shape, smaller steps: right adds 0.001, down adds 0.01.**\n• Across: 0.031, 0.032, 0.033…\n• Down: 0.004, 0.014, 0.024…",
+     "hint": "Same map, zoomed in ten times.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The row-end change",
+     "def": "**The last cell of a row completes the next tenth (or hundredth).**\n• …0.08, 0.09, then 0.1 — the row ends by rolling the seat over.\n• Like an odometer: the small wheel fills up and the next one ticks.",
+     "hint": "Rows end on a rollover, not on a pattern break.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Use structure",
+     "def": "**Find the rule the chart follows, then let the rule fill the gaps.**\n• One missing cell = its neighbour plus one step.\n• Check a fill by walking to it two ways — row and column must agree.",
+     "hint": "Do not compute cells — walk to them.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In a hundredths chart, what number comes immediately to the right of 0.36?",
+     "opts": [
+      "0.37",
+      "0.46",
+      "0.35",
+      "0.361"
+     ],
+     "ans": 0,
+     "hint": "One step right is one hundredth.",
+     "steps": [
+      "Across a row, each cell adds 0.01.",
+      "0.36 + 0.01 = 0.37.",
+      "Check against the down rule: below 0.36 would be 0.46 — a different move."
+     ],
+     "ex": {
+      "main": "**0.37.** One penny more.",
+      "tip": "0.46 would be the cell BELOW — down adds a dime, not a penny."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In a hundredths chart, what number sits directly BELOW 0.24?",
+     "opts": [
+      "0.25",
+      "0.34",
+      "0.23",
+      "0.14"
+     ],
+     "ans": 1,
+     "hint": "Down a column adds a tenth.",
+     "steps": [
+      "Down one row adds 0.1.",
+      "0.24 + 0.1 = 0.34.",
+      "The hundredths digit (4) never moves — only the tenths ticks."
+     ],
+     "ex": {
+      "main": "**0.34.** The hundredths digit stays; the tenths digit ticks up.",
+      "tip": "Below and to-the-right are different moves — a dime versus a penny."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A thousandths chart row reads: 0.041, 0.042, ■, 0.044. What is the missing number?",
+     "opts": [
+      "0.0425",
+      "0.05",
+      "0.043",
+      "0.34"
+     ],
+     "ans": 2,
+     "hint": "The row counts by thousandths.",
+     "steps": [
+      "Across this chart each cell adds 0.001.",
+      "0.042 + 0.001 = 0.043.",
+      "Check the other side: 0.043 + 0.001 = 0.044. ✓"
+     ],
+     "ex": {
+      "main": "**0.043.** Both neighbours agree, which is the check that matters.",
+      "tip": "A gap with two neighbours can always be verified twice."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In a thousandths chart, what number sits directly below 0.032?",
+     "opts": [
+      "0.032",
+      "0.033",
+      "0.132",
+      "0.042"
+     ],
+     "ans": 3,
+     "hint": "Down adds 0.01 in this chart.",
+     "steps": [
+      "In a thousandths chart, down one row adds 0.01.",
+      "0.032 + 0.01 = 0.042.",
+      "Check: ten across-steps of 0.001 make one down-step. ✓"
+     ],
+     "ex": {
+      "main": "**0.042.** The hundredths seat ticks; the thousandths digit rides along unchanged.",
+      "tip": "Zoomed in ten times, \"down adds a dime\" becomes \"down adds a penny\"."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A hundredths chart row ends: …, 0.28, 0.29, ■. What is the last number in the row?",
+     "opts": [
+      "0.3",
+      "0.291",
+      "0.299",
+      "0.4"
+     ],
+     "ans": 0,
+     "hint": "The row ends by completing a tenth.",
+     "steps": [
+      "One more hundredth after 0.29 is 0.30.",
+      "0.30 = 0.3 — the row ends on the rolled-over tenth.",
+      "The next row then starts at 0.31."
+     ],
+     "ex": {
+      "main": "**0.3.** Twenty-nine hundredths plus one more makes three full tenths.",
+      "tip": "The rollover is why 0.3 belongs at the end of the 0.2-something row."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ravi walks four cells RIGHT from 0.052 in a thousandths chart. Where does he land?",
+     "opts": [
+      "0.092",
+      "0.056",
+      "0.452",
+      "0.0524"
+     ],
+     "ans": 1,
+     "hint": "Four steps, one thousandth each.",
+     "steps": [
+      "Each step right adds 0.001.",
+      "Four steps add 0.004.",
+      "0.052 + 0.004 = 0.056."
+     ],
+     "ex": {
+      "main": "**0.056.** Steps accumulate — four thousandths in total.",
+      "tip": "0.092 is the four-steps-DOWN answer; direction is half the question."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "One cell of a hundredths chart can be reached by going right from 0.43 or down from 0.34. What number is in it?",
+     "opts": [
+      "0.43",
+      "0.35",
+      "0.44",
+      "0.53"
+     ],
+     "ans": 2,
+     "hint": "Both walks must land on the same value.",
+     "steps": [
+      "Right from 0.43 adds 0.01: 0.44.",
+      "Down from 0.34 adds 0.1: 0.44.",
+      "Both roads agree: the cell holds 0.44."
+     ],
+     "ex": {
+      "main": "**0.44.** Two different walks, one destination — the chart's structure guarantees it.",
+      "tip": "Agreeing paths are the built-in answer check. Use them."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A chart counts by thousandths across each row. If the chart instead counted by hundredths, how would the down-a-column step change?",
+     "opts": [
+      "Columns would stop following a pattern",
+      "It would become 0.001",
+      "It would stay 0.01",
+      "It would become 0.1 instead of 0.01"
+     ],
+     "ans": 3,
+     "hint": "The down-step is always ten times the across-step.",
+     "steps": [
+      "In every chart of this shape, down = 10 × across.",
+      "Across by hundredths (0.01) makes down 0.1.",
+      "The structure survives the zoom — only the step sizes scale."
+     ],
+     "ex": {
+      "main": "**Down becomes 0.1.** A row holds ten cells, so a full row is ten across-steps — that is the down-step.",
+      "tip": "Understanding WHY down is 10 × across beats memorising either number."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "order",
+     "q": "Put these chart cells in the order you would meet them reading a thousandths chart left to right: they are the last two of one row and the first two of the next.",
+     "opts": [
+      "0.019",
+      "0.02",
+      "0.021",
+      "0.022"
+     ],
+     "ans": 0,
+     "hint": "One of these is a rollover in disguise.",
+     "steps": [
+      "0.019 + 0.001 = 0.020 = 0.02 — the rollover ends the row.",
+      "The next row starts 0.021, then 0.022.",
+      "Order: 0.019, 0.02, 0.021, 0.022."
+     ],
+     "ex": {
+      "main": "**0.019, 0.02, 0.021, 0.022.** The short-looking 0.02 is really 0.020 sitting snugly in sequence.",
+      "tip": "Written length says nothing — pad to three places and the order is obvious."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jun fills a missing hundredths-chart cell by adding 0.01 to the cell ABOVE it. His answer disagrees with the row neighbours. What did he do wrong?",
+     "opts": [
+      "Above-to-below adds 0.1 in this chart, not 0.01",
+      "Nothing — neighbours in a chart often disagree",
+      "He should have subtracted 0.01 instead",
+      "He read the wrong chart entirely"
+     ],
+     "ans": 0,
+     "hint": "Which move adds 0.01 in a hundredths chart?",
+     "steps": [
+      "In a hundredths chart, 0.01 is the ACROSS step.",
+      "The down step is 0.1.",
+      "He applied the across rule to a down move, so his cell is off by 0.09.",
+      "The row neighbours caught it — two paths must agree."
+     ],
+     "ex": {
+      "main": "**He used the across-step for a down move.** Down adds 0.1 here; his fill is 0.09 short.",
+      "tip": "The disagreement was the chart itself telling him to recheck — structure is self-auditing."
+     }
+    }
+   ]
+  }
+ }
+}

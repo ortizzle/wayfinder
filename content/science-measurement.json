@@ -1,0 +1,516 @@
+{
+ "v": 4,
+ "records": {
+  "unit-sci-meas": {
+   "id": "unit-sci-meas",
+   "type": "unit",
+   "updatedAt": 1787092433112,
+   "classId": "science",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Science · Quiz 1 Part 2: Measurement",
+   "srcName": "Measurements lesson check — Quiz 1 folder (Drive)",
+   "source": "Science 4, Quiz 1 material — the Measurements lesson check (Drive)",
+   "summary": {
+    "text": "The Measurements lesson check covers two skills: sorting observations into quantitative (numbers you can count or measure) and qualitative (descriptions from your senses), and choosing measurement units — the U.S. Customary and Metric systems, matching a unit to the property and size of the thing, and calculating the volume of a rectangular prism with V = l × w × h in cubic units.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Measurement is where science stops being opinions — two people can argue about \"big\" but not about 43 centimetres. The unit-choice habit (right system, right property, right size) and the volume formula both come back every year, in every lab.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Sort an observation as quantitative or qualitative and say how you know.",
+     "from": "source"
+    },
+    {
+     "text": "Choose an appropriately sized unit from the named system for length, volume or mass.",
+     "from": "source"
+    },
+    {
+     "text": "Calculate the volume of a rectangular prism and explain the cubic unit.",
+     "from": "source"
+    },
+    {
+     "text": "Work the volume formula backwards to find a missing edge.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the graded Measurements lesson check (13 points) in the Quiz 1 Drive folder. Every question here is a fresh scenario — the check's own items stay her classwork. The stretch material is the last three questions: the backwards volume, the why-cubic reasoning, and the doubling counterfactual go past what the check asked, on purpose.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first — the two systems and three properties need to be words before the choosing gets quick. Then a round or two.",
+    "minutes": 14,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Quantitative data",
+     "def": "**Data you can count or measure — it comes as a number.**\n• 6 legs, 14 petals, 2.3 metres.\n• Numerical data can be graphed and compared exactly.",
+     "hint": "QuaNtitative = Numbers.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Qualitative data",
+     "def": "**Data that describes qualities — colours, textures, smells, shapes.**\n• Fuzzy, striped, shiny, sticky.\n• It comes from your senses as descriptions, not numbers.",
+     "hint": "quaLitative = what it is Like.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The two measurement systems",
+     "def": "**The U.S. Customary System and the Metric System.**\n• Customary: inches, feet, miles, gallons, pounds.\n• Metric: metres, litres, grams — built on tens.",
+     "hint": "Two rulers for one world — know which one you are holding.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Scientists use metric",
+     "def": "**Scientists everywhere — including the United States — collect data in metric units.**\n• Metric steps are powers of ten, so converting is just sliding the decimal.\n• Sharing data worldwide only works if everyone measures alike.",
+     "hint": "Science speaks one measurement language, on purpose.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Length",
+     "def": "**How long or far something is.**\n• Customary: inches for small things, feet, then miles for distances.\n• Metric: centimetres, metres, kilometres.",
+     "hint": "Pick the unit sized to the thing — inches for a lizard, miles for a road trip.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Volume",
+     "def": "**How much space something takes up.**\n• Liquids: gallons (customary) or litres (metric).\n• Solid shapes: cubic units like cm³.",
+     "hint": "Volume fills — jugs, tanks, boxes.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Mass",
+     "def": "**How much matter is in something.**\n• Metric: grams and kilograms.\n• A kilogram is about the mass of a litre of water.",
+     "hint": "Kilograms answer \"how much stuff\", not \"how long\" or \"how full\".",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Volume of a rectangular prism",
+     "def": "**Multiply the three edge lengths: V = length × width × height.**\n• 2 cm × 10 cm × 3 cm = 60 cm³.\n• The answer is always in CUBIC units.",
+     "eq": "V = l × w × h",
+     "hint": "Three edges multiplied — never added.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "Why cubic units",
+     "def": "**Three lengths multiply, so the unit gets multiplied three times too.**\n• cm × cm × cm = cm³.\n• A cm³ is one little cube; the volume counts how many fit inside.",
+     "hint": "The ³ remembers that three directions were used.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Matching the unit to the job",
+     "def": "**A good unit is sized close to the thing being measured.**\n• A soccer field in metres, not kilometres; milk in gallons, not cups… of a tanker, anyway.\n• The wrong-sized unit buries the measurement in zeros or fractions.",
+     "hint": "If the number comes out huge or tiny, the unit was the wrong size.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student watching a beetle writes down four observations. Which one is quantitative?",
+     "opts": [
+      "It has 6 legs",
+      "Its shell is glossy",
+      "It moves slowly",
+      "It smells earthy"
+     ],
+     "ans": 0,
+     "hint": "Hunt for the number.",
+     "steps": [
+      "Quantitative data can be counted or measured.",
+      "\"6 legs\" is a count — a number.",
+      "Glossy, slowly and earthy are descriptions from the senses: qualitative."
+     ],
+     "ex": {
+      "main": "**It has 6 legs.** The only observation with a number in it.",
+      "tip": "One number is worth spotting instantly — that reflex is the whole skill."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these observations is qualitative?",
+     "opts": [
+      "The rope is 3 metres long",
+      "The blanket feels scratchy",
+      "The jar holds 2 litres",
+      "The dog has 4 paws"
+     ],
+     "ans": 1,
+     "hint": "Three of these are measurements or counts.",
+     "steps": [
+      "Scratchy is a texture — sensed, not counted.",
+      "3 metres, 2 litres and 4 paws are all numbers.",
+      "The description without a number is the qualitative one."
+     ],
+     "ex": {
+      "main": "**The blanket feels scratchy.** A quality, straight from the sense of touch.",
+      "tip": "Qualitative data is not worse data — it is just not graphable as numbers."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which statement about qualitative data is TRUE?",
+     "opts": [
+      "It is always more accurate than quantitative data",
+      "It is numerical data that can be graphed",
+      "It describes qualities you sense, like colour and texture",
+      "It can only be collected with instruments"
+     ],
+     "ans": 2,
+     "hint": "Qualitative and numerical are opposites here.",
+     "steps": [
+      "Qualitative data describes — fuzzy, red, smooth.",
+      "Numerical, graphable data is the DEFINITION of quantitative, not qualitative.",
+      "Neither kind is automatically more accurate; both are collected with plain senses or instruments."
+     ],
+     "ex": {
+      "main": "**It describes qualities you sense.** The numerical-and-graphable description belongs to quantitative data.",
+      "tip": "This exact true-or-false was on the lesson check — now you know why it is false."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A scientist working in the United States is recording plant heights. Which system of units does she use?",
+     "opts": [
+      "Both systems, averaged together",
+      "The U.S. Customary System",
+      "Whichever system is closest to hand",
+      "The Metric System"
+     ],
+     "ans": 3,
+     "hint": "Where the scientist lives does not decide.",
+     "steps": [
+      "Scientists collect data other scientists must be able to use.",
+      "The worldwide scientific standard is the Metric System.",
+      "That holds inside the U.S. too, even though daily life there runs on customary units."
+     ],
+     "ex": {
+      "main": "**The Metric System.** Science uses metric everywhere — the U.S. included.",
+      "tip": "Her grocery list can stay in pounds; her lab notebook cannot."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using the U.S. Customary System, which unit fits measuring the length of a crayon?",
+     "opts": [
+      "Inches",
+      "Centimetres",
+      "Gallons",
+      "Pounds"
+     ],
+     "ans": 0,
+     "hint": "Right system first, then right size.",
+     "steps": [
+      "The question asks for a CUSTOMARY unit — centimetres are metric, so they are out.",
+      "Gallons measure volume and pounds measure weight.",
+      "Inches are customary, measure length, and suit a crayon-sized object."
+     ],
+     "ex": {
+      "main": "**Inches.** Customary, length-sized, crayon-sized.",
+      "tip": "Two filters: the right system, then the right property. Run both every time."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using the Metric System, which unit fits measuring the length of a basketball court?",
+     "opts": [
+      "Kilometres",
+      "Metres",
+      "Feet",
+      "Litres"
+     ],
+     "ans": 1,
+     "hint": "Metric, length, and court-sized.",
+     "steps": [
+      "Feet are customary — out, whatever the size.",
+      "Litres measure volume.",
+      "Kilometres are metric length but road-trip-sized; a court measures tens of metres.",
+      "Metres fit the system, the property and the size."
+     ],
+     "ex": {
+      "main": "**Metres.** A court is about 28 of them — a sensible number.",
+      "tip": "If the answer would come out 0.028, the unit was too big. Size the unit to the thing."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A water tower holds enough water for a whole town. Using the U.S. Customary System, which unit fits its volume?",
+     "opts": [
+      "Miles",
+      "Litres",
+      "Gallons",
+      "Ounces"
+     ],
+     "ans": 2,
+     "hint": "Customary, volume, enormous.",
+     "steps": [
+      "Litres are metric — the question says customary.",
+      "Miles measure distance.",
+      "Ounces are customary volume, but sized for juice glasses, not towers.",
+      "Gallons are customary, volume, and big enough to count a tower in."
+     ],
+     "ex": {
+      "main": "**Gallons.** Customary volume at town scale.",
+      "tip": "The lesson check asked this about a milk tanker — same reasoning, new container."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Gallons, litres and cubic centimetres can all be used to measure which property?",
+     "opts": [
+      "Temperature",
+      "Mass",
+      "Length",
+      "Volume"
+     ],
+     "ans": 3,
+     "hint": "What do a jug, a bottle and a little cube have in common?",
+     "steps": [
+      "Gallons: how much liquid fills a container.",
+      "Litres: the metric version of the same idea.",
+      "Cubic centimetres: space inside a solid shape.",
+      "All three count filled space — volume."
+     ],
+     "ex": {
+      "main": "**Volume.** Three different units, one property: how much space.",
+      "tip": "Units cluster by property. Spotting the cluster answers the question."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A supply list says each student needs 2 metres of string. What property are the students measuring?",
+     "opts": [
+      "Length",
+      "Volume",
+      "Mass",
+      "Time"
+     ],
+     "ans": 0,
+     "hint": "What do metres always measure?",
+     "steps": [
+      "Metres are a metric unit of length.",
+      "String is measured end to end — a distance.",
+      "So the property is length."
+     ],
+     "ex": {
+      "main": "**Length.** Metres only ever measure how long or how far.",
+      "tip": "From unit to property is the reverse of picking a unit — practise both directions."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bag of flour is labelled 2 kilograms. What property does that 2 kg describe?",
+     "opts": [
+      "Volume",
+      "Mass",
+      "Length",
+      "Area"
+     ],
+     "ans": 1,
+     "hint": "Kilograms count stuff, not space.",
+     "steps": [
+      "Kilograms are the metric unit of mass.",
+      "Mass is how much matter the flour contains.",
+      "The bag's size (volume) could change if squashed — its 2 kg would not."
+     ],
+     "ex": {
+      "main": "**Mass.** The amount of flour, not the space it fills.",
+      "tip": "Squash the bag and the volume changes but the mass stays — that is the difference."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A jewellery box measures 4 cm long, 5 cm wide and 2 cm tall. What is its volume?",
+     "opts": [
+      "40 cm",
+      "11 cm³",
+      "40 cm³",
+      "22 cm³"
+     ],
+     "ans": 2,
+     "hint": "Multiply all three edges — and mind the unit.",
+     "steps": [
+      "V = l × w × h.",
+      "4 × 5 = 20, then 20 × 2 = 40.",
+      "Three lengths multiplied make cubic units: 40 cm³."
+     ],
+     "ex": {
+      "main": "**40 cm³.** Multiply the edges, cube the unit.",
+      "tip": "11 comes from adding the edges; 40 cm forgets the ³ — both are nameable, catchable errors."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A fish tank measures 10 cm by 3 cm by 6 cm. What is its volume? Show your work in your head as you go.",
+     "opts": [
+      "36 cm³",
+      "19 cm³",
+      "180 cm",
+      "180 cm³"
+     ],
+     "ans": 3,
+     "hint": "Two multiplications, then the cubic unit.",
+     "steps": [
+      "V = l × w × h = 10 × 3 × 6.",
+      "10 × 3 = 30.",
+      "30 × 6 = 180 — in cubic centimetres, 180 cm³."
+     ],
+     "ex": {
+      "main": "**180 cm³.** Multiply in any order — 10 × 18 or 30 × 6 — the volume is the same.",
+      "tip": "Choosing friendly pairs to multiply first is the mental-math habit from her math topic, working here too."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A box has a volume of 60 cm³. Its base is 5 cm long and 4 cm wide. How tall is it?",
+     "opts": [
+      "3 cm",
+      "51 cm",
+      "12 cm",
+      "20 cm³"
+     ],
+     "ans": 0,
+     "hint": "Run V = l × w × h backwards.",
+     "steps": [
+      "The base contributes 5 × 4 = 20.",
+      "The volume equation says 20 × height = 60.",
+      "Height = 60 ÷ 20 = 3 cm.",
+      "Check forward: 5 × 4 × 3 = 60 ✓."
+     ],
+     "ex": {
+      "main": "**3 cm.** Divide the volume by the base's two edges.",
+      "tip": "A height is a length, so the answer carries cm — not cm³."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Theo measures a box: 8 cm by 2 cm by 5 cm. He writes its volume as 15 cm³. What did he do wrong?",
+     "opts": [
+      "He used the wrong units on a correct number",
+      "He added the edges instead of multiplying them",
+      "He multiplied only two of the edges",
+      "He measured one edge twice"
+     ],
+     "ans": 1,
+     "hint": "Where could 15 come from?",
+     "steps": [
+      "8 + 2 + 5 = 15 — that is a SUM.",
+      "Volume multiplies: 8 × 2 × 5 = 80 cm³.",
+      "His unit was right; the operation underneath it was not."
+     ],
+     "ex": {
+      "main": "**He added instead of multiplied.** The right answer is 80 cm³.",
+      "tip": "Naming the wrong move — added, not multiplied — is better feedback than \"wrong\"."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why is volume written in CUBIC units, like cm³?",
+     "opts": [
+      "Because the 3 shows the answer was rounded to three places",
+      "Because volume is always measured with cube-shaped tools",
+      "Because three lengths are multiplied, the unit is multiplied three times too",
+      "Because liquids come in three standard sizes"
+     ],
+     "ans": 2,
+     "hint": "Follow the units through the multiplication.",
+     "steps": [
+      "V = l × w × h multiplies three measurements.",
+      "Each carries a cm, so the units multiply as well: cm × cm × cm.",
+      "That product is written cm³ — and it literally counts unit cubes that fit inside."
+     ],
+     "ex": {
+      "main": "**Three lengths multiply, so the unit cubes.** The ³ is bookkeeping, not decoration.",
+      "tip": "Units obey the same arithmetic the numbers do — that idea will carry through years of science."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A box measures 4 cm × 3 cm × 2 cm. If ONLY its height doubled, what would happen to its volume?",
+     "opts": [
+      "It would stay the same",
+      "It would quadruple",
+      "It would grow by 2 cm³",
+      "It would double"
+     ],
+     "ans": 3,
+     "hint": "One factor doubles — what happens to a product?",
+     "steps": [
+      "Original: 4 × 3 × 2 = 24 cm³.",
+      "Doubled height: 4 × 3 × 4 = 48 cm³.",
+      "48 is exactly twice 24 — doubling one factor doubles the product."
+     ],
+     "ex": {
+      "main": "**It would double.** Each edge is a factor, and doubling one factor doubles the whole product.",
+      "tip": "If ALL THREE edges doubled, the volume would multiply by 2 × 2 × 2 = 8 — try it."
+     }
+    }
+   ],
+   "round": 8,
+   "order": 1
+  }
+ }
+}

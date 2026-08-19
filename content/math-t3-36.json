@@ -1,0 +1,329 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m36": {
+   "id": "unit-m36",
+   "type": "unit",
+   "updatedAt": 1787091843458,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · 3-6 Rounding Decimals",
+   "round": 10,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "Lesson 3-6: round decimals by marking the rounding place, letting the single digit to its right decide (5 or greater rounds up), and dropping everything after. The number line shows why, and rounding must happen in one step from the original number.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Rounding is the everyday math skill — money, measurements, estimates all pass through it. The chain-rounding error is worth killing early because it FEELS more careful while being wrong.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Round a decimal to a named place: whole, tenth, or hundredth.",
+     "from": "source"
+    },
+    {
+     "text": "Name the numbers that round to a given target — the band, both edges.",
+     "from": "source"
+    },
+    {
+     "text": "Explain why rounding in stages can give a wrong answer.",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Two critique questions carry this lesson: Priya's chain rounding (448 → 450 → 500) and Marcus stopping short of the actual increase. The last question shows chaining failing with decimals — it is hard, and a miss there costs nothing.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz. If the band questions (which numbers round TO 12.7) wobble, draw the number line.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The rounding place",
+     "def": "**Underline the seat you are rounding to — the decision happens there.**\n• Round 2.36 to the nearest tenth: the 3 is the rounding digit.\n• Everything left of it never changes.",
+     "hint": "Mark the seat first; half of rounding errors are seat errors.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Look one seat right",
+     "def": "**The single digit to the RIGHT of the rounding place decides.**\n• 5 or greater → the rounding digit goes up one.\n• Less than 5 → it stays.",
+     "hint": "One digit votes. The rest of the number is not consulted.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Drop what follows",
+     "def": "**After deciding, drop every digit right of the rounding place.**\n• 2.36 → 2.4 (not 2.40 — the hundredths seat is gone).\n• Rounding to a whole number drops the point too.",
+     "hint": "Round, then cut. Never keep the tail.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "The number line picture",
+     "def": "**Rounding asks: which mark is this number closer to?**\n• 2.36 sits between 2.3 and 2.4, past the halfway mark 2.35.\n• Halfway itself rounds up, by agreement.",
+     "hint": "Closer mark wins; exact middle goes up.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "No chain rounding",
+     "def": "**Round in ONE step from the original number.**\n• 448 to the nearest hundred: 4 tens says stay — 400.\n• Rounding 448 → 450 → 500 uses a digit that was never the decider.",
+     "hint": "One look, one decision. Rounding a rounding is a different number.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A lizard measures 4.38 cm. What is its length to the nearest tenth?",
+     "opts": [
+      "4.4 cm",
+      "4.3 cm",
+      "4.0 cm",
+      "4.39 cm"
+     ],
+     "ans": 0,
+     "hint": "The hundredths digit casts the only vote.",
+     "steps": [
+      "Rounding place: tenths — the 3.",
+      "Look one right: 8, which is 5 or more.",
+      "The 3 goes up: 4.4. The 8 is dropped."
+     ],
+     "ex": {
+      "main": "**4.4 cm.** The 8 votes up, then disappears.",
+      "tip": "The answer to a nearest-tenth question always ends at the tenths seat."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A taxi charges by the whole mile, rounding the distance to the nearest mile. The meter reads 7.3 miles. How many miles is the fare based on?",
+     "opts": [
+      "8",
+      "7",
+      "7.5",
+      "7.3"
+     ],
+     "ans": 1,
+     "hint": "Which whole number is 7.3 closer to?",
+     "steps": [
+      "Rounding place: the ones seat.",
+      "One right: 3, less than 5.",
+      "The 7 stays; drop the rest: 7."
+     ],
+     "ex": {
+      "main": "**7 miles.** Three tenths is short of halfway, so the meter rounds down.",
+      "tip": "Real systems round constantly — knowing WHICH way protects your wallet."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.762 rounded to the nearest hundredth?",
+     "opts": [
+      "0.7",
+      "0.77",
+      "0.76",
+      "0.762"
+     ],
+     "ans": 2,
+     "hint": "The thousandths digit is the voter.",
+     "steps": [
+      "Rounding place: hundredths — the 6.",
+      "One right: 2, less than 5.",
+      "The 6 stays; the 2 is dropped: 0.76."
+     ],
+     "ex": {
+      "main": "**0.76.** A 2 in the deciding seat means nothing moves.",
+      "tip": "Rounding never adds precision — it always shortens."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which numbers round to 12.7 when rounded to the nearest tenth?",
+     "opts": [
+      "12.60 and 12.76",
+      "12.75 and 12.66",
+      "12.64 and 12.74",
+      "12.66 and 12.74"
+     ],
+     "ans": 3,
+     "hint": "The winners live from 12.65 up to (but not including) 12.75.",
+     "steps": [
+      "To land on 12.7, a number must be at least 12.65 and below 12.75.",
+      "12.66 ✓ and 12.74 ✓ both sit inside that band.",
+      "12.75 rounds up to 12.8; 12.64 rounds down to 12.6; 12.60 rounds to 12.6."
+     ],
+     "ex": {
+      "main": "**12.66 and 12.74.** Both live inside the 12.65–12.749… band that rounds to 12.7.",
+      "tip": "Every rounding target owns a band of numbers, half a seat wide on each side."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A grocery scale shows 2.09 kg on one bag of rice and 2.36 kg on another. Nadia needs the bag closer to 2 kg. Rounding both to the nearest whole number says each is \"about 2\". How should she actually choose?",
+     "opts": [
+      "Compare the leftover parts: 0.09 < 0.36, so the 2.09 kg bag is closer",
+      "Round to the nearest whole number again to double-check",
+      "Pick the heavier bag, since rounding dropped more from it",
+      "The bags are the same distance from 2 kg"
+     ],
+     "ans": 0,
+     "hint": "Rounding threw away exactly the information she needs.",
+     "steps": [
+      "Both bags round to 2 — rounding cannot break the tie.",
+      "Look at the parts rounding discarded: 0.09 and 0.36.",
+      "0.09 < 0.36, so 2.09 kg sits closer to 2 kg."
+     ],
+     "ex": {
+      "main": "**Compare what rounding dropped.** 2.09 is only 0.09 away; 2.36 is 0.36 away.",
+      "tip": "Rounding is for communicating, not for deciding — the dropped digits still exist."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 84.735 rounded to the nearest hundredth?",
+     "opts": [
+      "84.73",
+      "84.74",
+      "84.7",
+      "84.8"
+     ],
+     "ans": 1,
+     "hint": "The dropped digit is exactly 5.",
+     "steps": [
+      "Rounding place: hundredths — the 3.",
+      "One right: 5 — the agreed rule says up.",
+      "84.735 → 84.74."
+     ],
+     "ex": {
+      "main": "**84.74.** Exactly halfway rounds up, every time, by agreement.",
+      "tip": "The halfway rule is a convention — but it is THE convention, so use it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Priya says 448 rounds to 500, because 448 rounds to 450 and 450 rounds to 500. What should you tell her?",
+     "opts": [
+      "448 is exactly halfway, so either answer works",
+      "She is right — rounding in stages is more accurate",
+      "Round once from 448: the tens digit is 4, so it rounds to 400",
+      "It rounds to 500 only when the ones digit is 8"
+     ],
+     "ans": 2,
+     "hint": "Who is allowed to vote when rounding to the nearest hundred?",
+     "steps": [
+      "Rounding 448 to the nearest hundred: the decider is the TENS digit.",
+      "That digit is 4 — less than 5 — so 448 → 400.",
+      "Chaining through 450 lets the ones digit influence a decision it has no vote in.",
+      "On the number line: 448 is 48 from 400 but 52 from 500."
+     ],
+     "ex": {
+      "main": "**Round once: 400.** Chain rounding lets the wrong digit vote; 448 is genuinely closer to 400.",
+      "tip": "One original number, one look, one decision. Rounding a rounding answers a different question."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "To the nearest hundred, what is the GREATEST whole number that rounds to 6,200?",
+     "opts": [
+      "6,299",
+      "6,250",
+      "6,199",
+      "6,249"
+     ],
+     "ans": 3,
+     "hint": "Where does the round-to-6,200 band end?",
+     "steps": [
+      "Numbers round to 6,200 from 6,150 up to 6,249.",
+      "6,250 tips up to 6,300 by the halfway rule.",
+      "So the greatest is 6,249."
+     ],
+     "ex": {
+      "main": "**6,249.** One more and the halfway rule hands it to 6,300.",
+      "tip": "Asking for the band's edges is rounding run backwards — same rule, reversed."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A rain gauge reads 3.472 inches. Marcus rounds it to the nearest tenth and writes 3.4. What went wrong?",
+     "opts": [
+      "The hundredths digit is 7, so the tenths should have gone up to 3.5",
+      "Nothing — 3.472 does round to 3.4",
+      "He should have kept three decimal places",
+      "He rounded to the nearest hundredth by mistake"
+     ],
+     "ans": 0,
+     "hint": "Find the voter and count its vote.",
+     "steps": [
+      "Rounding place: tenths — the 4.",
+      "One right: 7, which is 5 or more.",
+      "The 4 must go up: 3.472 → 3.5."
+     ],
+     "ex": {
+      "main": "**The 7 votes up — it is 3.5.** He looked at the right seat but ignored its vote.",
+      "tip": "The commonest rounding slip is doing every step except the actual increase."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number, rounded to the nearest tenth, gives a DIFFERENT result than rounded to the nearest hundredth first and then to the nearest tenth?",
+     "opts": [
+      "0.32",
+      "0.348",
+      "0.36",
+      "0.371"
+     ],
+     "ans": 1,
+     "hint": "Hunt for a number where chaining flips the tenths decision.",
+     "steps": [
+      "0.348 direct to tenths: hundredths digit 4 → stays 0.3.",
+      "0.348 to hundredths first: 0.35. Then to tenths: 5 votes up → 0.4.",
+      "Direct and chained disagree: 0.3 vs 0.4.",
+      "The other options give the same answer both ways."
+     ],
+     "ex": {
+      "main": "**0.348.** Direct rounding says 0.3; chaining through 0.35 says 0.4 — proof the chain is a different calculation.",
+      "tip": "This is Priya's error from earlier, caught in the act with decimals."
+     }
+    }
+   ]
+  }
+ }
+}

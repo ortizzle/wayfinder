@@ -1,0 +1,329 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m32": {
+   "id": "unit-m32",
+   "type": "unit",
+   "updatedAt": 1787091843432,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Topic 3 · 3-2 Place Value Through Millions",
+   "round": 10,
+   "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
+   "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
+   "summary": {
+    "text": "Lesson 3-2 extends the place-value chart through the millions: reading and writing numbers in standard form, expanded form and number names, and the rule that a digit one place left is worth 10 times as much — with the factors stacking when places are further apart.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Every skill in this topic — decimals, comparing, rounding — is the same chart read further right. Getting the ×10-per-seat rule solid on whole numbers now makes the decimal version feel like the same fact instead of a new one.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Read and write numbers through the millions in standard form, expanded form and words.",
+     "from": "source"
+    },
+    {
+     "text": "State the value of any digit from its place.",
+     "from": "source"
+    },
+    {
+     "text": "Compare two identical digits in different places and give the exact factor between them.",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "The trap in this lesson is the ×10 rule applied without counting seats — two 6s that sit two places apart differ by 100 times, not 10. One question makes her verify a CORRECT expanded form, because confirming right answers is rarer practice than catching wrong ones.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards, then the quiz. If the 10-times questions feel slippery, the fifth card is the one to re-read.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Place value",
+     "def": "**The value of a digit depends on WHERE it sits in the number.**\n• In 5,283 the 5 is worth 5,000 — not 5.\n• The chart runs ones, tens, hundreds, thousands… up through millions.",
+     "hint": "Same digit, different seat, different value.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Periods",
+     "def": "**Groups of three places separated by commas: ones, thousands, millions.**\n• 22,000,000 reads by periods: twenty-two million.\n• Commas are there to let your eyes find the periods fast.",
+     "hint": "Read big numbers in threes, comma to comma.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Expanded form",
+     "def": "**The number written as a sum of each digit times its place value.**\n• 3,514 = 3,000 + 500 + 10 + 4.\n• With exponents: (3 × 10³) + (5 × 10²) + (1 × 10¹) + (4 × 1).",
+     "hint": "Pull the number apart seat by seat.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Number name",
+     "def": "**The number written in words, period by period.**\n• 4,070,000 is \"four million, seventy thousand\".\n• A zero in a place means that place is silent — you never say it.",
+     "hint": "Say each period, then its name: million, thousand.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The 10-times relationship",
+     "def": "**A digit one place to the LEFT is worth 10 times as much.**\n• In 7,700 the left 7 (thousands) is worth 10 times the right 7 (hundreds).\n• Two places apart means 10 × 10 = 100 times — the places multiply.",
+     "hint": "Every step left is one ×10. Steps stack.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A stadium sold 3,000,000 tickets over its lifetime. What is the number name for 3,000,000?",
+     "opts": [
+      "Three million",
+      "Three hundred thousand",
+      "Thirty million",
+      "Three thousand"
+     ],
+     "ans": 0,
+     "hint": "Count off the periods from the right: ones, thousands, millions.",
+     "steps": [
+      "Group by commas: 3 | 000 | 000.",
+      "The 3 sits in the millions period.",
+      "So the name is three million."
+     ],
+     "ex": {
+      "main": "**Three million.** Two full periods of zeros after the 3 puts it in the millions.",
+      "tip": "Commas are not decoration — they name the periods for you."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the value of the 8 in 4,829,157?",
+     "opts": [
+      "80,000",
+      "800,000",
+      "8,000",
+      "8"
+     ],
+     "ans": 1,
+     "hint": "Find the 8's seat first, then its value.",
+     "steps": [
+      "Count places from the right: 7 ones, 5 tens, 1 hundreds, 9 thousands, 2 ten-thousands, 8 hundred-thousands.",
+      "The 8 sits in the hundred-thousands place.",
+      "So it is worth 8 × 100,000 = 800,000."
+     ],
+     "ex": {
+      "main": "**800,000.** The digit is 8, but the seat makes it eight hundred thousand.",
+      "tip": "Digit and value are different questions — the seat does the multiplying."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number has a 6 in the ten-thousands place?",
+     "opts": [
+      "156,204",
+      "615,204",
+      "165,204",
+      "105,264"
+     ],
+     "ans": 2,
+     "hint": "Ten-thousands is the fifth seat from the right.",
+     "steps": [
+      "Count five places from the right in each number.",
+      "In 165,204 the fifth digit from the right is 6.",
+      "The others put the 6 in a different seat or not at all in that one."
+     ],
+     "ex": {
+      "main": "**165,204.** Fifth place from the right — count seats, do not eyeball.",
+      "tip": "Counting from the right never lies; guessing from the left often does."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the standard form of (7 × 10⁶) + (2 × 10⁴) + (5 × 10²)?",
+     "opts": [
+      "720,500",
+      "7,200,500",
+      "7,020,050",
+      "7,020,500"
+     ],
+     "ans": 3,
+     "hint": "Give every silent place its zero.",
+     "steps": [
+      "7 × 10⁶ = 7,000,000.",
+      "2 × 10⁴ = 20,000 and 5 × 10² = 500.",
+      "Add them, keeping zeros in the empty seats: 7,020,500."
+     ],
+     "ex": {
+      "main": "**7,020,500.** The places with no term still need their zeros.",
+      "tip": "Expanded form only lists the seats that are filled — standard form shows every seat."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "An ant colony can hold about twenty-two million ants. How is that written in standard form?",
+     "opts": [
+      "22,000,000",
+      "2,200,000",
+      "220,000,000",
+      "22,000"
+     ],
+     "ans": 0,
+     "hint": "Millions is a whole period — three zeros twice.",
+     "steps": [
+      "Twenty-two goes in the millions period: 22.",
+      "The thousands and ones periods are empty: 000 and 000.",
+      "So: 22,000,000."
+     ],
+     "ex": {
+      "main": "**22,000,000.** Two full periods of zeros carry the 22 up to millions.",
+      "tip": "Standard form is just the name translated seat by seat."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the number 5,500, how does the value of the left 5 compare to the right 5?",
+     "opts": [
+      "It is 100 times as great",
+      "It is 10 times as great",
+      "It is 5 times as great",
+      "The two are equal"
+     ],
+     "ans": 1,
+     "hint": "How many seats apart are the two 5s?",
+     "steps": [
+      "The left 5 is in the thousands place: 5,000.",
+      "The right 5 is in the hundreds place: 500.",
+      "5,000 ÷ 500 = 10 — one seat apart, one ×10."
+     ],
+     "ex": {
+      "main": "**10 times as great.** Adjacent places always differ by a factor of 10.",
+      "tip": "This ×10-per-seat rule is the whole reason the decimal system works."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Mara says that in 6,367, one 6 is 10 times as great as the other. What should you tell her?",
+     "opts": [
+      "The two 6s are equal because they are the same digit",
+      "She is right — neighbouring 6s always differ by 10 times",
+      "The 6s are two places apart, so the left one is 100 times as great",
+      "The left 6 is 1,000 times as great"
+     ],
+     "ans": 2,
+     "hint": "Find each 6's seat before comparing.",
+     "steps": [
+      "The left 6 is in the thousands place: 6,000.",
+      "The right 6 is in the tens place: 60.",
+      "They are two seats apart, so the factor is 10 × 10 = 100.",
+      "6,000 ÷ 60 = 100 — not 10."
+     ],
+     "ex": {
+      "main": "**100 times, not 10.** The ×10 rule is per seat, and these 6s are two seats apart.",
+      "tip": "The rule she remembered is right — she skipped counting the seats between."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A 4-digit number has all four digits the same, and the digit in the hundreds place is worth 200. What is the number?",
+     "opts": [
+      "4,444",
+      "2,022",
+      "2,220",
+      "2,222"
+     ],
+     "ans": 3,
+     "hint": "What digit makes the hundreds place worth 200?",
+     "steps": [
+      "Hundreds worth 200 means the digit is 2.",
+      "All four digits are the same, so every digit is 2.",
+      "The number is 2,222."
+     ],
+     "ex": {
+      "main": "**2,222.** One clue about one seat, plus \"all the same\", pins every digit.",
+      "tip": "Each 2 in 2,222 is worth 10 times its right-hand neighbour: 2,000, 200, 20, 2."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ben writes the expanded form of two million, forty thousand, six as (2 × 10⁶) + (4 × 10⁴) + 6. Did he get it right?",
+     "opts": [
+      "Yes — each part lands in the correct place",
+      "No — forty thousand needs 4 × 10⁵",
+      "No — the 6 should be 6 × 10¹",
+      "No — two million needs 2 × 10⁷"
+     ],
+     "ans": 0,
+     "hint": "Check each part against its place value.",
+     "steps": [
+      "Two million = 2,000,000 = 2 × 10⁶. ✓",
+      "Forty thousand = 40,000 = 4 × 10⁴. ✓",
+      "Six ones = 6. ✓",
+      "Standard form: 2,040,006."
+     ],
+     "ex": {
+      "main": "**Yes.** Every term matches its seat — the number is 2,040,006.",
+      "tip": "Verifying someone right is the same skill as catching them wrong: check seat by seat."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number is 100 times as great as 3,070?",
+     "opts": [
+      "30,700",
+      "307,000",
+      "3,070,000",
+      "30,070"
+     ],
+     "ans": 1,
+     "hint": "Two ×10 steps — every digit moves two seats left.",
+     "steps": [
+      "100 times = two place-value steps left.",
+      "3,070 × 10 = 30,700.",
+      "30,700 × 10 = 307,000."
+     ],
+     "ex": {
+      "main": "**307,000.** Multiplying by 100 slides the whole number two seats left.",
+      "tip": "The digits never change — only their seats do."
+     }
+    }
+   ]
+  }
+ }
+}
