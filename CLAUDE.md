@@ -478,3 +478,18 @@ loop too: two stalled single-utterance attempts still hand off to typing
 restart sneaks in afterward, confirmed by checking the session count is
 unchanged even after a delay.
 
+**A moment to see it spelled (v101).** River again, same session: "I can't
+see how the correct word is spelled after the correct spelling. It goes
+straight to celebration and next word." `lightIt()` used to advance `i` and
+reset the word's state in the same call that marked it correct, so the win
+was only ever visible as a flash inside `celebrate()` — never as text she
+could actually read. It now holds the round open on a `beeState.won` panel
+(mirrors Star Sky's `skywon` card exactly: green eyebrow, the word itself in
+`.skyword`, the `sp` respelling, a "Hear it" replay) until she taps "Next
+word →" — or "See how it went" on the last one. `resetWord()` clears `won`
+alongside everything else, so the next word always opens fresh. Verified
+live: the confirmation panel shows the correct word and phonetic spelling
+immediately after a correct attempt, "Next word" advances and resets state
+correctly, and the last word's button correctly reads "See how it went" and
+reaches the finish screen with the right tally.
+

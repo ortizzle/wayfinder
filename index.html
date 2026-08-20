@@ -1316,7 +1316,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v100 · the mic that keeps listening';
+const APP_VERSION = 'v101 · a moment to see it spelled';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -5888,7 +5888,7 @@ SCREENS.beeround = function(root){
     beeState = { unitId:u.id, order:shuffle(words.map((_,i)=>i)), i:0, correct:0, results:[],
       start:Date.now(), logId:null, heard:'', typed:'', listening:false, verdict:null,
       tries:0, spell:false, srDead:false, revealedWord:false, showDef:false, showEx:false,
-      reveal:false, spellTries:0, _rec:null };
+      reveal:false, spellTries:0, _rec:null, won:false };
   const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   const voiceOK = !!SR && !beeState.srDead;
   const done = beeState.i >= beeState.order.length;
@@ -5935,18 +5935,41 @@ SCREENS.beeround = function(root){
     beeState.heard=''; beeState.typed=''; beeState.verdict=null; beeState.tries=0;
     beeState.spell=false; beeState.revealedWord=false; beeState.showDef=false;
     beeState.showEx=false; beeState.reveal=false; beeState.spellTries=0; beeState._rec=null;
+    beeState.won=false;
   };
+  /* Getting it right used to advance straight into celebrate() and the next
+     word — she asked to actually see the spelling before it moved on. Now
+     lightIt only marks the win; resetWord/i++ wait for her own tap on
+     "Next word", same held-open shape as Star Sky's skywon panel. */
   const lightIt = () => {
-    beeState.results[beeState.i] = 'lit'; beeState.correct++;
+    beeState.results[beeState.i] = 'lit'; beeState.correct++; beeState.won = true;
     if(navigator.vibrate) navigator.vibrate([18,40,18]);
-    const isLast = beeState.i === beeState.order.length-1;
-    celebrate(isLast ? {big:true} : undefined);
-    beeState.i++; resetWord(); render();
+    celebrate(beeState.i === beeState.order.length-1 ? {big:true} : undefined);
+    render();
   };
   const skipWord = () => {
     beeState.results[beeState.i] = 'dim';
     beeState.i++; resetWord(); render();
   };
+
+  if(beeState.won){
+    const w = el('div','card ac skywon');
+    w.appendChild(el('div','eyebrow','✓ Spelled it'));
+    w.appendChild(el('p','skyword', word));
+    if(c.sp) w.appendChild(el('div','saidas', c.sp));
+    const hear2 = el('button','btn btn-ghost','🔊 Hear it');
+    hear2.addEventListener('click',()=>say(word));
+    w.appendChild(hear2);
+    const next = el('button','btn btn-primary',
+      beeState.i === beeState.order.length-1 ? 'See how it went' : 'Next word →');
+    next.addEventListener('click',()=>{ beeState.i++; resetWord(); render(); });
+    w.appendChild(next);
+    root.appendChild(w);
+    const leave2 = el('button','btn btn-ghost','Leave the round');
+    leave2.addEventListener('click', () => { beeLog(u); beeState=null; go('unit', {classId: ctx.classId}); });
+    root.appendChild(leave2);
+    return;
+  }
 
   const p = el('div','card ac');
   p.appendChild(el('div','eyebrow','Listen, then spell it'));
