@@ -675,3 +675,35 @@ Chris's session with the girls, all on the brief and the results modal.
 > Now `.card p.brief-prose` (the `.card.pnote p` precedent) at 18.5px,
 > full-text colour, verified 18.5px computed in BOTH apps. The lesson
 > repeats: measure the computed style, not the stylesheet.
+
+**Said once, and quieter by Tuesday (v108 / Ad Astra v125).** The measured
+review of Today after the brief landed — six changes, all approved together.
+
+- **"Where to actually study" folds after Monday.** It was 361px of the
+  1,005px brief and identical every day — banner blindness in the making. Full
+  on Sunday and Monday when the week gets planned; one tappable line
+  ("CJ first → Schoology, notes, study guides → then here ›") the rest of the
+  week, expanding via `ctx._studyPath`. Nothing removed, only deferred — the
+  Settings-pickers move. Folded, the brief drops to ~650px.
+- **Coming up skips tests the ledger already lists.** `weekBrief` returns
+  `ledgerTestIds`; `upcomingAssessments` filters against it. The ledger says
+  this week day by day; Coming up keeps what it cannot — events, and anything
+  beyond Friday. The last same-fact-twice on the tab.
+- **The after-school day card names tomorrow's first class** instead of
+  repeating a study nudge that is now the brief's whole job. "Tomorrow starts
+  with Accelerated Math at 7:40 AM" — on the rotating timetable that is
+  genuinely news daily. Falls to the weekday name across weekends and breaks;
+  says "Nothing on the timetable ahead" past the last day.
+- **Ledger study rows wear their subject** (`.ledger-row.subj`, added to BOTH
+  `--pc-fg` declaration lists — the resolve-where-declared trap). Today's row
+  keeps the accent: `.now` sits later in the block, and today is a different
+  axis from topic. Verified: a plain WED science row computes the lifted
+  green, today stays accent.
+- **The load bars dropped their minutes** — the same number printed twice
+  inside one card (bar and ledger row). The bar's job is composition; the
+  ledger says when, and keeps the `~min`.
+- **The generic thread hero is retired.** Once the brief named up to four
+  subjects, the dupe rules meant it almost never fired. The parked-round
+  resume door stays; Study keeps its own Pick-up-the-thread; the `#thread`
+  shortcut still resolves through `threadTarget()`. `dueNow2`/`plan2` died
+  with it.
