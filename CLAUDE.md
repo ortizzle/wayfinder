@@ -639,3 +639,39 @@ keeps its live count badge in the nav, the reading log keeps its Study card,
 and Stars is one tap away in the nav either way — so nothing became
 unreachable. `countedDue` and `mRead` died with it; `dueNow2` and `plan2`
 stay, because the hero's duplicate-check still reads them.
+
+**Tonight belongs to tomorrow (v106 / Ad Astra v123).** Five items from
+Chris's session with the girls, all on the brief and the results modal.
+
+- **After 3pm the brief promotes the NEXT day.** 900 minutes is the same
+  after-school line the rest of the app draws. Three things follow: a test
+  sat this morning drops out of the prose ("The week's tests are behind you"
+  when nothing is left), a test-day evening turns back into a study row for
+  the next test instead of showing the test that already happened, and the
+  queue sorts soonest-test-first before weight/neediness — a quiz tomorrow
+  wins tonight over a bigger test on Friday, because tonight's slot belongs
+  to whatever she meets next.
+- **The minutes are that evening's practice at her measured pace** — Chris
+  asked what they meant, which meant they didn't say. They wear `~` now and
+  the footnote says it outright.
+- **The load-bar rows are doors** (buttons to the subject, `›` affordance) —
+  the same stats-as-navigation rule the strip lived by; Chris caught them
+  inert on River's phone. And the CTA **falls forward**: when today's row
+  isn't pressable (closed day, test morning), the button offers the first
+  workable day as "Get ahead: X" instead of vanishing. It still disappears
+  when the whole week genuinely asks nothing — a CTA with nothing behind it
+  would be a nag.
+- **The results modal shows the percentage again** — River reported the
+  science quizzes "did not provide grades", including Beat the clock. Both
+  were tested live and NOT broken: the v91 tally said "4 of 5", which is the
+  grade — but not in the language school has taught her grades come in. This
+  amends v91's "the percentage is not printed at all": it is now one chip
+  ("80%") in the tally, said once; the completion-first headline is
+  unchanged.
+
+> ⚠️ **`.card p` beats a bare `.brief-prose` on specificity** — the prose had
+> been rendering at `.card p`'s 14px muted style since the day it shipped;
+> the styled 17px never applied. This is why Chris asked for a bigger font.
+> Now `.card p.brief-prose` (the `.card.pnote p` precedent) at 18.5px,
+> full-text colour, verified 18.5px computed in BOTH apps. The lesson
+> repeats: measure the computed style, not the stylesheet.
