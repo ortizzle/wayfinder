@@ -544,3 +544,84 @@ within the library's existing accepted range) after — fixed by shortening
 "complains a lot" to "complains" against its distractors. Answer positions
 balance 5/5/5/4 across the 19 questions.
 
+### Your week — the brief (v104 / Ad Astra v121, both apps)
+
+Chris asked for "a brief section to highlight more about the week and
+expectations for how the girls can spend their day and align for the week
+ahead," prototyped three ways in `prototype-brief.html`. He chose **C (prose
++ ledger) with B's load bars**, and — the second half of the call — retiring
+the week-ahead card: *"we can probably move the week ahead since that
+information will be in Your week anyway."*
+
+`weekAhead()` is gone; `weekBrief(date)` replaces it, and the five-cell day
+strip with it. The brief is: two written sentences, a load bar per subject, a
+ledger of the week day by day, and the "where to actually study" block.
+
+**The ordering in that last block is the point, and it is Chris's:** CJ
+first, then Schoology / class notes / worksheets / study guides, and only
+then this app. It is the app saying out loud that it is not the source. That
+copy is FIXED and must stay fixed — the app cannot know whether her CJ is up
+to date, and a checkbox that pretended to track it would be surveillance of
+the one habit she is meant to own herself.
+
+- **One evening's work per subject, never the whole pile.** A load is the
+  review that is due plus the ONE next lesson — the same "name one lesson,
+  never a pile" rule the runway established. `q` counts *unattempted*
+  questions, so a half-finished lesson reports what is left, not its size.
+- **Minutes come from her real pace.** `quizLimit()` already measured
+  seconds-per-question; `cardLimit()` is its flashcard twin. Card logs never
+  stored a count (`total:0`), but `xp` is `min(seen*5,150)`, so `seen` is
+  recoverable exactly while the cap is unhit — logs *at* the cap are skipped
+  rather than guessed at. Both clamp so one strange session cannot make an
+  estimate absurd.
+- **Bars are scaled against the biggest subject**, not each against its own
+  total — self-scaled bars would make every subject look equally heavy, which
+  is the one thing the bar is there to disprove. The legend earns its place
+  because "mostly review" is readable off the bar and nowhere else.
+- **The last free day before a multi-test day goes to mixed practice** — the
+  exam-ramp rule, already documented: in test week the right work changes
+  *shape*, not just minutes.
+- **Test days ask for nothing new.** A plan that scheduled cramming on the
+  morning of the test would be the app working against her.
+- **The three yield rules survived the swap** and now read off the brief:
+  `wk.namesDue` replaces the old `lines.some(kind==='due')` for the Growth
+  tile, `wk.namedCids` replaces the `lines` scan for the hero, and `covers()`
+  still hides the runway when its test is inside the week. Verified live: the
+  due count appears exactly once on the screen.
+
+**The prose is the risky half of this design and got tested hardest.** Seven
+week shapes were exercised before shipping — no tests, one test, three on one
+day, two spread across days, a test today, opened Thursday with one evening
+left, and opened on the test day itself. Four real bugs came out of that pass
+and are worth remembering, because every one of them is the kind of thing
+that makes generated writing sound generated:
+
+> ⚠️ **"a English quiz"** — the article has to be chosen from the *assembled*
+> phrase, since the subject short-name leads it, not from the kind word.
+>
+> ⚠️ **"one evening, and roughly 9 minutes each"** — "each" needs a plural to
+> attach to.
+>
+> ⚠️ **"roughly 5 minutes each" under a ledger reading 7, 9, 7, 7, 9.** The
+> average was taken over the subject list, but the ledger cycles subjects when
+> the week is longer than the queue. Average the DAYS AS PLANNED.
+>
+> ⚠️ **"That gives you 4 evenings"** printed under a test that was *today*.
+> That sentence promises preparation time; it is only true while a test is
+> still ahead. With the week's tests already sat it becomes "the rest of the
+> week is yours."
+>
+> ⚠️ **"a Theatre test and an Alg/Geo quiz, all on the same day"** — "both"
+> for two, "all" for three or more. Caught on Ad Astra, whose seeded week had
+> exactly two.
+
+Also fixed on the way: `.ledger-row.now` used a negative margin to bleed its
+tint to the card edge, which gave the whole page a horizontal scroll — the
+row is padded on both sides instead, and the bottom border still spans the
+full width because padding sits inside the border box. And the comet-glass
+rule (`.card.ac.daycard, .card.ac.week`) was left pointing at a class nothing
+carries any more; it names `.card.ac.brief` now, so the two top cards still
+let the sky through. ~2.5KB of dead week-card CSS removed with it.
+
+Contrast measured across all 26 new reading tokens, both themes, composited
+over the *glass* card rather than an opaque one: worst case 5.01:1.
