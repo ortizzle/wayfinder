@@ -493,3 +493,54 @@ immediately after a correct attempt, "Next word" advances and resets state
 correctly, and the last word's button correctly reads "See how it went" and
 reaches the finish screen with the right tally.
 
+### Wordly Wise Lesson 1 · Synonyms & Antonyms (v102)
+
+A second unit for the same 15 Lesson 1 words, built from "Lesson 1 synonyms
+and antonyms.pdf" — the class's own study sheet, which says outright "The
+UNIT TEST will include synonyms and antonyms from this list!" `unit-ww501`
+already tests definitions, part of speech and usage; this tests the one fact
+it doesn't cover. Shelves as "Wordly Wise · Lesson 1 Synonyms & Antonyms",
+right after "Lesson 1" — pure title sort, no `order` field (see the trap
+below).
+
+**The source is an OCR-flattened 3-column table, and two words came out with
+no antonym at all.** Re-extracted twice, identical result both times, so
+this reads as the sheet genuinely leaving `jostle` and `pedestrian` blank
+rather than a misread — nothing is invented for the gap, only their
+synonyms are tested. `patient` carries synonyms for BOTH of its senses
+(tolerant/composed as an adjective; victim/sufferer as the noun for a
+person under a doctor's care) with an antonym given only for the adjective
+sense, so that is the only one tested. Flagged in `parentNote` rather than
+silently smoothed over.
+
+**Direct MC, not `kind:'analogy'`, on purpose.** The engine already supports
+analogy questions and CLAUDE.md documents them as built "at Chris's request
+for Wordly Wise" — but a clean analogy question needs wrong options that
+each hold a genuinely different, nameable relationship, and none of the
+OTHER antonym pairs on this same sheet can be used as a distractor without
+creating a second valid answer (Concept:Fact is itself a real antonym pair
+from three rows down the same table). Getting that wrong once already cost
+a shipped Ad Astra item a rewrite. Direct "which word means the
+opposite/same as X" questions map 1:1 onto what the sheet and the unit test
+actually ask, with no such ambiguity risk — the safer choice for content
+that feeds a real grade.
+
+> ⚠️ **`order` is a WHOLE-SHELF sort key, not a per-lesson one.** Every
+> lesson in a series defaults to `order:0` and sorts among the others by
+> title; giving one supplementary unit `order:1` (mirroring Ad Astra's
+> `Topic N · Test N Study Guide` convention) does not slot it in after the
+> ONE lesson it responds to — it buckets it after every order-0 lesson in
+> the whole series. Built this way first, it landed at position 6, after
+> Lesson 5, not position 2. Ad Astra's convention works there because the
+> Study Guide is meant to trail the WHOLE topic; here the sheet answers to
+> one lesson specifically. Fixed by dropping `order` entirely: titled
+> "Lesson 1 Synonyms & Antonyms" with no order field, plain numeric-aware
+> title sort already lands it exactly right — verified directly,
+> `['Lesson 1', 'Lesson 1 Synonyms & Antonyms', 'Lesson 2', 'Lesson 3', …]`.
+
+`check_content.py` flagged one real length-bias outlier (88% longer, the
+`patient` antonym option) before the fix and three minor ones (12–25%,
+within the library's existing accepted range) after — fixed by shortening
+"complains a lot" to "complains" against its distractors. Answer positions
+balance 5/5/5/4 across the 19 questions.
+

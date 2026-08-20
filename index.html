@@ -1316,7 +1316,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v101 · a moment to see it spelled';
+const APP_VERSION = 'v102 · the word, and its opposite';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -2505,7 +2505,8 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/math-t3-31.json', 'content/math-t3-32.json', 'content/math-t3-33.json', 'content/math-t3-34.json',
   'content/math-t3-35.json', 'content/math-t3-36.json', 'content/math-t3-37.json', 'content/math-t3-review.json',
   'content/science-measurement.json',
-  'content/spelling-bee-1.json', 'content/spelling-bee-2.json', 'content/spelling-bee-3.json', 'content/spelling-bee-4.json'];
+  'content/spelling-bee-1.json', 'content/spelling-bee-2.json', 'content/spelling-bee-3.json', 'content/spelling-bee-4.json',
+  'content/wordly-wise-5-01-syn.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
