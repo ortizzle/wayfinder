@@ -625,3 +625,17 @@ let the sky through. ~2.5KB of dead week-card CSS removed with it.
 
 Contrast measured across all 26 new reading tokens, both themes, composited
 over the *glass* card rather than an opaque one: worst case 5.01:1.
+
+**The strip goes too (v105 / Ad Astra v122).** Chris circled the three-tile
+strip and asked for it to go, and the brief is why every tile had stopped
+earning its place: tile one printed "40m suggested · Math" directly under the
+brief's own "Tonight: Accelerated Math" button, and its Growth variant was
+already yielding to the brief's review counts. Reading has a whole card on
+Study. Level went to Stars — a nav tab — and a level with nowhere new to go is
+scorekeeping, which the strip's own founding rule (v51) named as
+disqualifying: *"if a tile is ever added that only displays a number, it
+belongs on Stars instead."* Checked before removing rather than after: Growth
+keeps its live count badge in the nav, the reading log keeps its Study card,
+and Stars is one tap away in the nav either way — so nothing became
+unreachable. `countedDue` and `mRead` died with it; `dueNow2` and `plan2`
+stay, because the hero's duplicate-check still reads them.
