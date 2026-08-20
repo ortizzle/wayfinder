@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The week brief — three directions</title>
+<style>
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:100 900;
+  font-display:swap;src:url(fonts/fraunces.woff2) format('woff2-variations')}
+@font-face{font-family:'Fraunces';font-style:italic;font-weight:100 900;
+  font-display:swap;src:url(fonts/fraunces-italic.woff2) format('woff2-variations')}
+@font-face{font-family:'Plus Jakarta Sans';font-style:normal;font-weight:200 800;
+  font-display:swap;src:url(fonts/jakarta.woff2) format('woff2-variations')}
+@font-face{font-family:'Caveat';src:url('fonts/caveat.woff2') format('woff2');
+  font-weight:600;font-display:swap}
+
+/* Wayfinder's real tokens, copied verbatim so this is a fair preview. */
+:root{
+  --ac:#f2b44c; --r:20px; --tap:48px;
+  --gap:14px; --gap-row:10px; --gap-sec:26px;
+  --ink:#120a20; --deep:#1b1030; --surface:#22163b; --raised:#2e1d4d;
+  --line:#452a68; --line-soft:#352050;
+  --text:#f4ecfa; --muted:#b9a6d0; --faint:#9683ac;
+  --warm:#9fd8ff; --bad:#ff8fa8; --good:#6fe0b8;
+  --ac-fg:var(--ac);
+  --ac-8:color-mix(in srgb,var(--ac) 8%,transparent);
+  --ac-14:color-mix(in srgb,var(--ac) 14%,transparent);
+  --ac-25:color-mix(in srgb,var(--ac) 25%,transparent);
+  --shadow:0 7px 20px rgba(0,0,0,.5);
+  /* subject palette (SUBJECT_PALETTE g1 values) */
+  --math:#5aa6ec; --sci:#45cfa0; --eng:#ef7fa8; --hist:#e8bd50;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--ink);color:var(--text);
+  font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:15px;line-height:1.5;
+  padding:0 0 60px}
+.wrap{max-width:430px;margin:0 auto;padding:0 16px}
+
+/* ---- prototype chrome (not part of the app) ---- */
+.pbar{position:sticky;top:0;z-index:20;background:rgba(18,10,32,.94);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line-soft);padding:12px 16px}
+.pbar h1{font-family:'Fraunces',Georgia,serif;font-size:16px;font-weight:600;margin-bottom:9px}
+.pbar h1 small{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-size:11.5px;
+  font-weight:400;color:var(--faint);letter-spacing:0;margin-top:2px}
+.switch{display:flex;gap:7px}
+.switch button{flex:1;min-height:42px;border-radius:11px;border:1px solid var(--line);
+  background:var(--deep);color:var(--muted);font:inherit;font-size:13px;font-weight:600;cursor:pointer}
+.switch button.on{background:var(--ac-14);border-color:var(--ac);color:var(--text)}
+.pnote-lab{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+  font-weight:700;margin:var(--gap-sec) 0 8px;text-align:center}
+
+/* ---- app primitives ---- */
+.card{background:var(--surface);border:1px solid var(--line-soft);border-radius:var(--r);
+  padding:20px;margin-bottom:var(--gap)}
+.card.ac{border-color:var(--ac-25);background-color:var(--surface);
+  background-image:linear-gradient(165deg,var(--ac-8),var(--surface) 60%)}
+.eyebrow{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;
+  color:var(--ac-fg);margin-bottom:7px}
+.card h2{font-family:'Fraunces',Georgia,serif;font-size:23px;font-weight:600;margin-bottom:6px}
+.card h3{font-family:'Fraunces',Georgia,serif;font-size:18px;font-weight:600;margin-bottom:6px}
+.card p{color:var(--muted);font-size:14px;margin-bottom:10px}
+.card p:last-child{margin-bottom:0}
+.divider{display:flex;align-items:center;gap:13px;margin:var(--gap-sec) 0 var(--gap);
+  color:var(--ac-fg);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;font-weight:800}
+.divider::before,.divider::after{content:'';height:1px;background:var(--line-soft);flex:1}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:13px 0;border-bottom:1px solid var(--line-soft)}
+.row:last-child{border-bottom:none}
+.row .k{font-size:14px}
+.row .k small{display:block;font-size:11.5px;color:var(--faint);font-weight:400}
+.row .v{font-weight:700;color:var(--ac-fg);font-variant-numeric:tabular-nums;white-space:nowrap}
+.btn{width:100%;min-height:var(--tap);border-radius:14px;border:1px solid var(--line);
+  background:var(--deep);color:var(--text);font:inherit;font-size:15px;font-weight:600;
+  cursor:pointer;margin-top:var(--gap-row);display:block}
+.btn-primary{background:var(--ac);border-color:var(--ac);color:#2a1a05}
+.pill{display:inline-block;font-size:11.5px;padding:3px 9px;border-radius:999px;
+  background:var(--deep);border:1px solid var(--line);color:var(--muted);margin:0 5px 5px 0}
+
+/* week strip (as it exists today) */
+.wkgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:12px}
+.wkday{display:flex;flex-direction:column;align-items:center;gap:5px;padding:9px 2px;
+  border-radius:12px;border:1px solid var(--line);background:var(--deep)}
+.wkday .wl{font-size:10.5px;letter-spacing:.1em;font-weight:700;color:var(--muted)}
+.wkday .wm{font-size:15px;line-height:1;min-height:17px;display:flex;align-items:center}
+.wkday.now{background:var(--ac-8);border-color:var(--ac-fg)}
+.wkday.now .wl{color:var(--ac-fg)}
+.wkday.hot{border-color:var(--bad)}
+.wkday.hot .wl{color:var(--bad)}
+.wksum{margin-top:11px;font-size:12.5px;line-height:1.45;color:var(--muted)}
+
+/* the post-it, in its new home */
+.card.pnote{background:linear-gradient(170deg,#fdf3b8,#f7e58c);border:none;border-radius:3px;
+  transform:rotate(-1.4deg);margin:var(--gap) 6px var(--gap) 10px;
+  box-shadow:0 10px 22px rgba(0,0,0,.42);position:relative}
+.card.pnote .eyebrow{color:#6b5310}
+.card.pnote p{font-family:'Caveat','Bradley Hand',cursive;font-size:30px;line-height:1.22;
+  color:#2c2410;margin:0}
+.card.pnote::before{content:'';position:absolute;top:-9px;left:50%;width:64px;height:19px;
+  transform:translateX(-50%) rotate(1.2deg);background:rgba(255,255,255,.42);
+  border-radius:2px;box-shadow:0 2px 5px rgba(0,0,0,.18)}
+
+/* ============ SHARED: the "start in class" block ============ */
+.first{background:var(--deep);border:1px dashed var(--line);border-radius:16px;
+  padding:16px;margin-top:var(--gap)}
+.first .fh{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:800;
+  color:var(--warm);margin-bottom:10px}
+.step{display:flex;gap:11px;align-items:flex-start;padding:8px 0}
+.step .n{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--raised);
+  border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+  font-size:11.5px;font-weight:800;color:var(--warm);font-variant-numeric:tabular-nums}
+.step .t{font-size:13.5px;line-height:1.45}
+.step .t b{color:var(--text);font-weight:700}
+.step .t span{color:var(--faint)}
+.first .tail{font-size:12.5px;color:var(--faint);margin-top:9px;line-height:1.45;
+  padding-top:10px;border-top:1px solid var(--line-soft)}
+
+/* ============ A · THE PLAN — day-by-day spine ============ */
+.plan-day{display:flex;gap:13px;align-items:stretch;padding:0}
+.plan-day .rail{flex:0 0 34px;display:flex;flex-direction:column;align-items:center}
+.plan-day .dchip{width:34px;height:34px;border-radius:11px;background:var(--deep);
+  border:1px solid var(--line);display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;letter-spacing:.06em;color:var(--muted)}
+.plan-day .line{flex:1;width:2px;background:var(--line-soft);margin:4px 0}
+.plan-day:last-child .line{display:none}
+.plan-day .body{flex:1;padding-bottom:16px}
+.plan-day.today .dchip{background:var(--ac);border-color:var(--ac);color:#2a1a05}
+.plan-day.test .dchip{background:color-mix(in srgb,var(--bad) 20%,var(--deep));border-color:var(--bad);color:var(--bad)}
+.pd-title{font-size:14.5px;font-weight:700;margin-bottom:3px;display:flex;
+  align-items:center;gap:8px;flex-wrap:wrap}
+.pd-sub{font-size:12.5px;color:var(--faint);line-height:1.45}
+.pd-mins{font-size:11.5px;font-weight:700;color:var(--ac-fg);font-variant-numeric:tabular-nums;
+  background:var(--ac-8);border:1px solid var(--ac-25);border-radius:999px;padding:2px 8px}
+.subjdot{width:9px;height:9px;border-radius:3px;flex:0 0 auto;background:var(--pc,var(--ac))}
+.pd-rest{font-size:12.5px;color:var(--faint);font-style:italic}
+
+/* ============ B · THE COUNTDOWN ============ */
+.cd-hero{display:flex;align-items:baseline;gap:10px;margin-bottom:4px}
+.cd-hero .big{font-family:'Fraunces',Georgia,serif;font-size:52px;font-weight:700;
+  line-height:.95;color:var(--bad)}
+.cd-hero .lab{font-size:14px;line-height:1.25}
+.cd-hero .lab b{display:block;font-size:17px;color:var(--text);font-weight:700}
+.cd-hero .lab span{color:var(--faint);font-size:12.5px}
+.cd-days{font-size:13px;color:var(--muted);margin:12px 0 4px}
+.load{margin-top:13px}
+.load-row{margin-bottom:12px}
+.load-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:5px}
+.load-nm{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:7px}
+.load-mins{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar{height:9px;border-radius:999px;background:var(--deep);border:1px solid var(--line-soft);
+  overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .q{background:var(--pc,var(--ac))}
+.bar .c{background:color-mix(in srgb,var(--pc,var(--ac)) 42%,transparent)}
+.bar .r{background:color-mix(in srgb,var(--pc,var(--ac)) 18%,transparent)}
+.legend{display:flex;gap:14px;font-size:11.5px;color:var(--faint);margin-top:9px;flex-wrap:wrap}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;
+  vertical-align:-1px;background:var(--muted)}
+.cd-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-top:14px}
+.cd-cell{border-radius:11px;border:1px solid var(--line);background:var(--deep);
+  padding:9px 4px;text-align:center}
+.cd-cell .d{font-size:10px;letter-spacing:.08em;font-weight:800;color:var(--faint)}
+.cd-cell .s{font-size:11.5px;font-weight:700;margin-top:4px;line-height:1.2}
+.cd-cell.now{border-color:var(--ac);background:var(--ac-8)}
+.cd-cell.now .d{color:var(--ac-fg)}
+.cd-cell.test{border-color:var(--bad)}
+.cd-cell.test .d,.cd-cell.test .s{color:var(--bad)}
+
+/* ============ C · THE BRIEF — prose ============ */
+.brief-prose{font-family:'Fraunces',Georgia,serif;font-size:17.5px;line-height:1.52;
+  color:var(--text);font-weight:400}
+.brief-prose em{font-style:italic;color:var(--ac-fg)}
+.brief-prose b{font-weight:700}
+.brief-prose + .brief-prose{margin-top:11px}
+.ledger{margin-top:16px;border-top:1px solid var(--line-soft)}
+.ledger-row{display:flex;align-items:center;gap:11px;padding:11px 0;
+  border-bottom:1px solid var(--line-soft)}
+.ledger-day{flex:0 0 38px;font-size:11px;letter-spacing:.08em;font-weight:800;color:var(--faint)}
+.ledger-what{flex:1;font-size:13.5px;line-height:1.4}
+.ledger-what small{display:block;color:var(--faint);font-size:11.5px}
+.ledger-min{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.ledger-row.test .ledger-day{color:var(--bad)}
+.ledger-row.now{background:var(--ac-8);border-radius:9px;padding-left:9px;padding-right:9px;
+  margin-left:-9px;margin-right:-9px}
+
+/* notes panel */
+.notes{background:var(--deep);border:1px solid var(--line-soft);border-radius:14px;
+  padding:15px;margin-top:var(--gap);font-size:12.5px;color:var(--muted);line-height:1.55}
+.notes b{color:var(--text)}
+.notes ul{margin:8px 0 0 17px}
+.notes li{margin-bottom:5px}
+.hide{display:none}
+</style>
+</head>
+<body>
+
+<div class="pbar">
+  <h1>The week brief — three directions
+    <small>Same data, same week. Monday morning, three tests Friday.</small></h1>
+  <div class="switch">
+    <button data-go="A" class="on">A · The Plan</button>
+    <button data-go="B">B · Countdown</button>
+    <button data-go="C">C · The Brief</button>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- shared context above the brief -->
+  <div class="card ac" style="--pc:var(--math)">
+    <div class="eyebrow">Monday, August 24</div>
+    <h2>Before the bell</h2>
+    <p>First up: Accelerated Math at 7:40 AM.</p>
+  </div>
+
+  <!-- The week card, reduced to the STRIP only. See the note at the bottom of
+       each direction: the brief now carries the doors, so the week card must
+       stop carrying them too or the same three counts print twice. -->
+  <div class="card ac week">
+    <div class="eyebrow">The week ahead</div>
+    <div class="wkgrid">
+      <div class="wkday now"><span class="wl">M</span><span class="wm">•</span></div>
+      <div class="wkday"><span class="wl">T</span><span class="wm">•</span></div>
+      <div class="wkday"><span class="wl">W</span><span class="wm">•</span></div>
+      <div class="wkday"><span class="wl">T</span><span class="wm">•</span></div>
+      <div class="wkday hot"><span class="wl">F</span><span class="wm">✍️</span></div>
+    </div>
+    <div class="wksum">Friday: Math test · Science quiz · English quiz</div>
+  </div>
+
+  <!-- ============================= A ============================= -->
+  <section id="A">
+    <div class="divider">Your week</div>
+    <div class="card">
+      <div class="eyebrow">Three tests Friday</div>
+      <h3>Four days to get ready. Here's a way to split it.</h3>
+      <p>You don't have to do it this way — but doing a little each day beats
+         one long Thursday.</p>
+
+      <div style="margin-top:18px">
+        <div class="plan-day today">
+          <div class="rail"><div class="dchip">MON</div><div class="line"></div></div>
+          <div class="body">
+            <div class="pd-title"><span class="subjdot" style="--pc:var(--math)"></span>
+              Accelerated Math <span class="pd-mins">18 min</span></div>
+            <div class="pd-sub">The heaviest one, and it has the most waiting for you:
+              2 lessons open (20 questions, 10 cards) plus 12 review questions due.</div>
+          </div>
+        </div>
+        <div class="plan-day">
+          <div class="rail"><div class="dchip">TUE</div><div class="line"></div></div>
+          <div class="body">
+            <div class="pd-title"><span class="subjdot" style="--pc:var(--eng)"></span>
+              English <span class="pd-mins">14 min</span></div>
+            <div class="pd-sub">Lesson 1 Synonyms &amp; Antonyms — 19 questions, 15 cards.
+              The sheet says the test comes straight off this list.</div>
+          </div>
+        </div>
+        <div class="plan-day">
+          <div class="rail"><div class="dchip">WED</div><div class="line"></div></div>
+          <div class="body">
+            <div class="pd-title"><span class="subjdot" style="--pc:var(--sci)"></span>
+              Science <span class="pd-mins">12 min</span></div>
+            <div class="pd-sub">Measurement — 16 questions, 10 cards, plus 4 review due.</div>
+          </div>
+        </div>
+        <div class="plan-day">
+          <div class="rail"><div class="dchip">THU</div><div class="line"></div></div>
+          <div class="body">
+            <div class="pd-title">🔀 All three, mixed <span class="pd-mins">15 min</span></div>
+            <div class="pd-sub">One round jumping between subjects. Working out which
+              kind of question you're looking at is itself part of what Friday tests.</div>
+          </div>
+        </div>
+        <div class="plan-day test">
+          <div class="rail"><div class="dchip">FRI</div><div class="line"></div></div>
+          <div class="body">
+            <div class="pd-title">Test day</div>
+            <div class="pd-rest">Flashcards on the way in, if you want them. No new
+              questions today — you already did the work.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="first">
+        <div class="fh">Start in class, not here</div>
+        <div class="step"><span class="n">1</span><span class="t">
+          <b>Check your CJ is up to date</b> <span>— every assignment written down, nothing missing.</span></span></div>
+        <div class="step"><span class="n">2</span><span class="t">
+          <b>Then Schoology, your notes, worksheets and any study guide</b>
+          <span>— that's what the test actually comes from.</span></span></div>
+        <div class="step"><span class="n">3</span><span class="t">
+          <b>Then come back here to practise</b> <span>— this is the extra rep, not the source.</span></span></div>
+        <div class="tail">Times below are from how fast you actually answer — about
+          22 seconds a question, 12 seconds a card.</div>
+      </div>
+
+      <button class="btn btn-primary">Start Monday · Accelerated Math</button>
+    </div>
+
+    <div class="notes">
+      <b>A · The Plan.</b> A spine down the week, one stop per day, the same shape as the
+      topic map she already knows.
+      <ul>
+        <li><b>Answers the ask most directly</b> — "starting with Monday, and so on" is
+          literally the layout.</li>
+        <li><b>Each day names one subject.</b> Naming two would be a list of debts; the
+          runway already refuses to do that.</li>
+        <li><b>Thursday is deliberately mixed</b> — that's the app's existing exam-ramp
+          rule, which says test week changes the <i>shape</i> of practice, not just minutes.</li>
+        <li><b>Friday asks for nothing.</b> A plan that schedules cramming on test day
+          would be the app working against her.</li>
+        <li>Costs the most vertical space of the three.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================= B ============================= -->
+  <section id="B" class="hide">
+    <div class="divider">Your week</div>
+    <div class="card">
+      <div class="eyebrow">Friday</div>
+      <div class="cd-hero">
+        <div class="big">3</div>
+        <div class="lab"><b>tests, one day</b>
+          <span>Math · Science · English</span></div>
+      </div>
+      <div class="cd-days">Four study days between now and then — about
+        <b style="color:var(--text)">44 minutes</b> of practice waiting, all in.</div>
+
+      <div class="load">
+        <div class="load-row" style="--pc:var(--math)">
+          <div class="load-top">
+            <div class="load-nm"><span class="subjdot" style="--pc:var(--math)"></span>Accelerated Math</div>
+            <div class="load-mins">18 min</div>
+          </div>
+          <div class="bar"><i class="q" style="width:41%"></i><i class="c" style="width:11%"></i><i class="r" style="width:27%"></i></div>
+        </div>
+        <div class="load-row" style="--pc:var(--eng)">
+          <div class="load-top">
+            <div class="load-nm"><span class="subjdot" style="--pc:var(--eng)"></span>English</div>
+            <div class="load-mins">14 min</div>
+          </div>
+          <div class="bar"><i class="q" style="width:39%"></i><i class="c" style="width:17%"></i><i class="r" style="width:14%"></i></div>
+        </div>
+        <div class="load-row" style="--pc:var(--sci)">
+          <div class="load-top">
+            <div class="load-nm"><span class="subjdot" style="--pc:var(--sci)"></span>Science</div>
+            <div class="load-mins">12 min</div>
+          </div>
+          <div class="bar"><i class="q" style="width:33%"></i><i class="c" style="width:11%"></i><i class="r" style="width:9%"></i></div>
+        </div>
+        <div class="legend">
+          <span><i style="background:var(--math)"></i>new questions</span>
+          <span><i style="background:color-mix(in srgb,var(--math) 42%,transparent)"></i>flashcards</span>
+          <span><i style="background:color-mix(in srgb,var(--math) 18%,transparent)"></i>review due</span>
+        </div>
+      </div>
+
+      <div class="cd-strip">
+        <div class="cd-cell now"><div class="d">MON</div><div class="s">Math</div></div>
+        <div class="cd-cell"><div class="d">TUE</div><div class="s">English</div></div>
+        <div class="cd-cell"><div class="d">WED</div><div class="s">Science</div></div>
+        <div class="cd-cell"><div class="d">THU</div><div class="s">Mixed</div></div>
+        <div class="cd-cell test"><div class="d">FRI</div><div class="s">Tests</div></div>
+      </div>
+
+      <div class="first">
+        <div class="fh">Start in class, not here</div>
+        <div class="step"><span class="n">1</span><span class="t">
+          <b>Check your CJ is up to date</b> <span>— every assignment written down.</span></span></div>
+        <div class="step"><span class="n">2</span><span class="t">
+          <b>Then Schoology, notes, worksheets, study guides</b>
+          <span>— the test comes from those, not from here.</span></span></div>
+        <div class="step"><span class="n">3</span><span class="t">
+          <b>Then practise here</b> <span>— extra reps on what you already met in class.</span></span></div>
+      </div>
+
+      <button class="btn btn-primary">Start with Math · 18 min</button>
+      <button class="btn">See the whole week</button>
+    </div>
+
+    <div class="notes">
+      <b>B · The Countdown.</b> Leads with the fact that changes the week, then shows
+      where the time actually sits.
+      <ul>
+        <li><b>The bars are the honest part</b> — she can see at a glance that Math is
+          heavy on <i>review</i>, not new work, which changes how it will feel.</li>
+        <li><b>One number up front.</b> "3 tests, one day" is the thing she'd tell a
+          friend; everything else is detail under it.</li>
+        <li><b>Compact</b> — about half the height of A.</li>
+        <li>⚠️ <b>The risk:</b> a big red 3 and a total-minutes figure is the closest
+          any screen in this app comes to pressure. It would need the number to stay
+          descriptive and never become a countdown that <i>ticks</i>.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============================= C ============================= -->
+  <section id="C" class="hide">
+    <div class="divider">Your week</div>
+    <div class="card">
+      <div class="eyebrow">Monday · the week in short</div>
+      <p class="brief-prose">Friday is the busy one — <b>a math test, a science quiz and an
+        English quiz</b>, all on the same day. Nothing else this week needs you.</p>
+      <p class="brief-prose">That gives you <em>four evenings</em>, and roughly
+        <b>15 minutes each</b>. Take one subject a night while it's quiet, then let
+        Thursday mix all three together.</p>
+
+      <div class="ledger">
+        <div class="ledger-row now">
+          <div class="ledger-day">MON</div>
+          <div class="ledger-what">Accelerated Math
+            <small>2 lessons open · 12 review due</small></div>
+          <div class="ledger-min">18 min</div>
+        </div>
+        <div class="ledger-row">
+          <div class="ledger-day">TUE</div>
+          <div class="ledger-what">English
+            <small>Synonyms &amp; Antonyms · 19 questions</small></div>
+          <div class="ledger-min">14 min</div>
+        </div>
+        <div class="ledger-row">
+          <div class="ledger-day">WED</div>
+          <div class="ledger-what">Science
+            <small>Measurement · 16 questions</small></div>
+          <div class="ledger-min">12 min</div>
+        </div>
+        <div class="ledger-row">
+          <div class="ledger-day">THU</div>
+          <div class="ledger-what">All three, shuffled
+            <small>Deciding which kind of question it is, is the skill</small></div>
+          <div class="ledger-min">15 min</div>
+        </div>
+        <div class="ledger-row test">
+          <div class="ledger-day">FRI</div>
+          <div class="ledger-what">Test day
+            <small>Cards on the way in, nothing new</small></div>
+          <div class="ledger-min">—</div>
+        </div>
+      </div>
+
+      <div class="first">
+        <div class="fh">Where to actually study</div>
+        <div class="step"><span class="n">1</span><span class="t">
+          <b>Your CJ first</b> <span>— make sure every assignment is written down and right.</span></span></div>
+        <div class="step"><span class="n">2</span><span class="t">
+          <b>Then Schoology, class notes, worksheets, study guides</b>
+          <span>— that's where the test comes from.</span></span></div>
+        <div class="step"><span class="n">3</span><span class="t">
+          <b>Then here</b> <span>— for the extra practice once you've read it through.</span></span></div>
+        <div class="tail">Minutes are worked out from your own pace, not a guess.</div>
+      </div>
+
+      <button class="btn btn-primary">Tonight: Accelerated Math</button>
+    </div>
+
+    <div class="notes">
+      <b>C · The Brief.</b> Two sentences of plain writing, then a quiet ledger.
+      <ul>
+        <li><b>Sounds like a person, not a system.</b> Closest to the app's existing voice —
+          dry, direct, second person.</li>
+        <li><b>The prose can say things a grid can't</b> — "nothing else this week needs you"
+          is reassurance a table has no room for.</li>
+        <li><b>Shortest of the three</b> and the least gamified.</li>
+        <li>⚠️ <b>The risk:</b> prose has to be generated from real data every week and stay
+          readable at every shape — one test, no tests, four subjects, a short week.
+          The sentence templates are the actual work here, and a bad one reads worse than
+          any grid.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- shared: everything below the brief -->
+  <div class="divider">Coming up</div>
+  <div class="card">
+    <div class="row"><span class="k">✍️ Topic 3 Test<small>Accelerated Math · Aug 28</small></span>
+      <span class="v">4 days ›</span></div>
+    <div class="row"><span class="k">📝 Measurement Quiz<small>Science · Aug 28</small></span>
+      <span class="v">4 days ›</span></div>
+    <div class="row"><span class="k">📝 Lesson 1 Quiz<small>English · Aug 28</small></span>
+      <span class="v">4 days ›</span></div>
+  </div>
+
+  <div class="pnote-lab">↓ and the post-it now lives down here ↓</div>
+  <div class="card pnote">
+    <div class="eyebrow">A note from home</div>
+    <p>Big Friday coming — but you've got all week. One thing a night. We're proud of you. 💛</p>
+  </div>
+
+  <div class="notes" style="margin-top:26px">
+    <b>Two decisions this prototype is making, both worth arguing with.</b>
+    <ul>
+      <li><b>The week card gave up its action rows.</b> It used to carry up to three doors
+        ("12 review questions due in Accelerated Math ›"). The brief now says the same
+        thing with more context, so the card above is reduced to the five-day strip and
+        its summary line. Leaving both would print the same three counts twice, one
+        screen apart — the exact redundancy the runway and the Growth tile already
+        yield to each other over.</li>
+      <li><b>The brief sits above Coming up, not below.</b> It's the thing that asks
+        something of her; Coming up is reference. And the post-it stays at the very
+        bottom, so the scroll passes everything that matters on the way to it.</li>
+    </ul>
+  </div>
+
+  <div class="notes">
+    <b>Where every number comes from — nothing here is invented.</b>
+    <ul>
+      <li><b>Tests and days:</b> <code>weekAhead(date)</code>, already shipped.</li>
+      <li><b>Questions and cards:</b> open units per subject — <code>units(cid)</code>
+        filtered by <code>unitDone()</code>, the same coverage rule the shelf uses.</li>
+      <li><b>Review due:</b> <code>dueMisses()</code> filtered by subject.</li>
+      <li><b>Minutes:</b> <code>quizLimit()</code> — her real measured seconds-per-question
+        (clamped 8–40s, 20s until she's answered enough to measure). Cards derived the
+        same way from flashcard sessions.</li>
+      <li><b>Which subject lands on which day:</b> heaviest and neediest first, using the
+        same <code>KIND_WEIGHT</code> + accuracy tie-break <code>weekAhead</code> already
+        uses to pick the week's focus subject.</li>
+      <li><b>CJ / Schoology / notes:</b> fixed copy. The app doesn't know whether her CJ is
+        up to date and must never pretend to — it's a reminder, not a checkbox that
+        tracks her.</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+  const secs = document.querySelectorAll('section');
+  document.querySelectorAll('.switch button').forEach(b=>{
+    b.addEventListener('click',()=>{
+      document.querySelectorAll('.switch button').forEach(x=>x.classList.remove('on'));
+      b.classList.add('on');
+      secs.forEach(s=>s.classList.toggle('hide', s.id !== b.dataset.go));
+      window.scrollTo({top:0,behavior:'smooth'});
+    });
+  });
+</script>
+</body>
+</html>
