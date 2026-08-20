@@ -615,6 +615,17 @@ that makes generated writing sound generated:
 > for two, "all" for three or more. Caught on Ad Astra, whose seeded week had
 > exactly two.
 
+> ⚠️ **"The studying days are behind you now — the work is done."** Chris
+> caught both halves overreaching: "the work is done" is a claim the app
+> cannot verify, and studying time always exists — the plan running out must
+> never read as the door closing. Now: before a test still ahead, "No study
+> evenings left before it — nothing new now. A flip through the cards on the
+> way in is plenty." After the week's last test, "Studying never closes,
+> though — your shelves and the Growth Zone are open whenever you want a
+> round." The rule this adds to the prose list: the brief may say what is
+> scheduled, never what is finished — completion is hers to declare, not
+> the app's.
+
 Also fixed on the way: `.ledger-row.now` used a negative margin to bleed its
 tint to the card edge, which gave the whole page a horizontal scroll — the
 row is padded on both sides instead, and the bottom border still spans the
