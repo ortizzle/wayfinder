@@ -718,3 +718,38 @@ review of Today after the brief landed — six changes, all approved together.
   resume door stays; Study keeps its own Pick-up-the-thread; the `#thread`
   shortcut still resolves through `threadTarget()`. `dueNow2`/`plan2` died
   with it.
+
+### Cards of her own (v110 / Ad Astra v127, both apps)
+
+Chris asked for a way for each girl to make her own flashcards per subject.
+One deck per subject (`unit-own-<classId>`, deterministic id so two devices
+can never mint duplicates), created lazily on her first card, edited in
+`SCREENS.owncards` (add / edit / delete with a real confirm), reviewed
+through the ordinary flashcard player. The subject screen shows a "Your own
+cards" card once the deck has cards, and a quiet "Make your own flashcards"
+tool button until then.
+
+Rules that are the point:
+
+- **Her own words skip the review queue.** The draft gate exists to catch
+  what the MODEL got wrong before it reaches her; these are her words, like
+  the weekly aim, the motto and the teach-backs — gating them behind a
+  grown-up would turn making flashcards into being checked on. The deck is
+  born `status:'approved'`.
+- **Making a card earns nothing.** Writing a card IS studying — deciding
+  what matters and saying it in your own words is generation practice, the
+  strongest encoding there is — and pricing it would cheapen it, the same
+  rule teach-backs follow. REVIEWING the deck earns ordinary flashcard XP.
+- **`own:true` keeps the deck out of every door that needs questions** —
+  quiz, clock, shuffle, star sky, the brief, threadTarget — all of which
+  already guard on `questions.length`, verified one by one. The one
+  render-site trap: the deck has no ` · ` in its title so `shelvesFor` puts
+  it in the LOOSE list, where `unitCard` would offer a quiz it cannot hold —
+  the loose render now filters `!u.own`, and the deck's own card is the only
+  door.
+- **`finishCards` forks on `questions.length`:** a normal deck still offers
+  "Take the quiz"; hers says "You wrote these and now you have studied them —
+  that is the whole loop" with no quiz to dangle.
+- It is a real unit record, so sync, the day view ("Flashcards · My Science
+  cards") and minutes all work for free. Content, not progress: Fresh start
+  leaves her deck alone.
