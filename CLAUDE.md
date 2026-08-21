@@ -753,3 +753,34 @@ Rules that are the point:
 - It is a real unit record, so sync, the day view ("Flashcards · My Science
   cards") and minutes all work for free. Content, not progress: Fresh start
   leaves her deck alone.
+
+**Filed in the back of the book (v111 / Ad Astra v128).** Chris asked whether
+her deck could join an existing book. It can now: the editor offers "Keep
+these cards — on their own / in <book>", writing `series` on the deck, which
+`seriesOf()` already honours over the title convention, so nothing is
+renamed. Filing can also be changed without adding a card.
+
+**A deck can BELONG to a book without being COUNTED as one.** That is the
+whole design, and it is what stops five things breaking:
+
+- `unitDone()` needs questions, so her deck can never be done. Counted as a
+  lesson it would freeze any book she filed cards in at N-1 forever and
+  silently cost the gilt spine. `shelvesFor` now returns `lessons`
+  (`units.filter(!own)`) and the spine, the shelf header and the gilt test
+  all read that instead of `units`. **Verified by stamping full coverage on
+  a book with her deck filed in: still goes 6/6 and gilt.**
+- The bookmark is drawn from `lessons` only — it answers "where was I
+  reading", and a deck of flashcards is never the answer.
+- Her deck sorts to the BACK of the book regardless of title (`a.own` leads
+  the comparator) — it is not lesson N, it is her notes tucked in behind
+  them.
+- `topicMap` gives it its own stop: ✍️ mark, "Your cards", the card count,
+  no coverage bar, and it does not consume a lesson number (the numbering
+  counter skips it).
+- `SCREENS.shelf` opens her stop with `ownCardsCard()` rather than
+  `unitCard()` — the same offer-a-quiz-it-cannot-hold trap the loose list
+  already hit.
+
+The subject screen shows the deck loosely **only while it is unfiled**; once
+it lives in a book, the book is where it lives. The editor door stays on the
+subject screen either way, so a filed deck is never stranded.
