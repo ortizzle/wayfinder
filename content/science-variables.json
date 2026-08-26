@@ -1,0 +1,310 @@
+{
+ "v": 4,
+ "records": {
+  "unit-sci-vars": {
+   "id": "unit-sci-vars",
+   "type": "unit",
+   "updatedAt": 1787702568822,
+   "classId": "science",
+   "quarter": 1,
+   "status": "draft",
+   "order": 2,
+   "round": 8,
+   "title": "Science · Quiz 1 Part 3: Variables",
+   "srcName": "Variables — Check for Understanding, Quiz 1 folder (Drive)",
+   "source": "Science 4, Quiz 1 material — the Variables check for understanding (Drive)",
+   "summary": {
+    "text": "The Variables check covers the three kinds of variable in a science experiment: independent (the one thing you choose to change), dependent (the one thing you measure to see if it changed), and control (everything else you keep exactly the same, so the test stays fair). It also covers the one rule that makes a test fair: only the independent variable is allowed to change.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Every experiment this year — and every lab report — asks you to name these three things before you can even start. Mixing up independent and dependent is the single most common mistake on a lab write-up, so getting it automatic now saves rewrites later.",
+    "from": "added"
+   },
+   "objectives": [
+    {"text": "Name the independent variable in a described experiment.", "from": "source"},
+    {"text": "Name the dependent variable in a described experiment.", "from": "source"},
+    {"text": "Name one or more control variables in a described experiment.", "from": "source"},
+    {"text": "Explain why a fair test changes only one variable at a time.", "from": "source"},
+    {"text": "Tell the difference between a variable that is measured and one that is just described.", "from": "added"}
+   ],
+   "parentNote": {
+    "text": "Built from the Variables Check for Understanding (10 points) in the Quiz 1 Drive folder. Every scenario below is fresh — none reuse the sheet's own snake-venom, magnet, hot-air-balloon, ice-cube, salmon or tree examples, so she can't answer from memory of the worksheet. The one place this check gets genuinely tricky is question 6 and 9 style items: 'choose 2' control variables. Two of the fresh questions below drill exactly that — picking control variables from a list where some options are actually the independent or dependent variable in disguise.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Cards first — the three definitions need to be automatic before the scenario questions get quick.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Independent variable",
+     "from": "source",
+     "def": "**The one thing YOU choose to change on purpose.**\n• It's the variable the experimenter controls directly.\n• There should be only one, so you know exactly what caused any change you see.",
+     "hint": "INdependent = I decide."
+    },
+    {
+     "id": "c1",
+     "term": "Dependent variable",
+     "from": "source",
+     "def": "**The one thing you measure, because it DEPENDS on the independent variable.**\n• It's your data — the result you record.\n• If it changes, it's changing BECAUSE OF the independent variable (that's what you're testing).",
+     "hint": "DEpends on what you changed."
+    },
+    {
+     "id": "c2",
+     "term": "Control variable",
+     "from": "source",
+     "def": "**Anything you deliberately keep exactly the same, every single trial.**\n• There are usually several control variables in one experiment, not just one.\n• They keep the test fair — without them, you couldn't tell what actually caused a result.",
+     "hint": "Controlled = held still, on purpose."
+    },
+    {
+     "id": "c3",
+     "term": "Fair test",
+     "from": "source",
+     "def": "**An experiment where only the independent variable is allowed to change.**\n• Everything else stays constant (the control variables).\n• If two things change at once, you can't tell which one caused the result.",
+     "hint": "Fair = only ONE thing is different."
+    },
+    {
+     "id": "c4",
+     "term": "Control group",
+     "from": "added",
+     "def": "**A group that gets NO treatment at all, used as a baseline to compare against.**\n• Not the same thing as a control variable — a control GROUP is a whole set of subjects; a control VARIABLE is one factor held constant.\n• Every other group is compared back to this baseline.",
+     "hint": "The group with none of the thing being tested."
+    },
+    {
+     "id": "c5",
+     "term": "Manipulated variable",
+     "from": "added",
+     "def": "**Another name for the independent variable — some textbooks use this word instead.**\n• \"Manipulated\" because the experimenter manipulates, or changes, it on purpose.\n• Same idea, different label — don't let the vocabulary trip you up.",
+     "hint": "Manipulated = changed on purpose = independent."
+    },
+    {
+     "id": "c6",
+     "term": "Responding variable",
+     "from": "added",
+     "def": "**Another name for the dependent variable — the one that responds to the change.**\n• Same idea as \"dependent,\" just a different word some teachers use.\n• It responds to whatever the independent variable did.",
+     "hint": "Responding = reacts = dependent."
+    },
+    {
+     "id": "c7",
+     "term": "How to spot the independent variable in a question",
+     "from": "added",
+     "def": "**Find the word \"affect\" — what comes right before it is usually the independent variable.**\n• \"How does X affect Y?\" → X is independent, Y is dependent.\n• This pattern holds for almost every science-question you'll see phrased this way.",
+     "hint": "\"Does ___ affect...\" — that blank is independent."
+    }
+   ],
+   "questions": [
+    {
+     "id": "q1", "lv": 1, "from": "source", "kind": "mc",
+     "q": "A student wants to know: does the amount of sunlight a plant gets affect how tall it grows? What is the independent variable?",
+     "opts": ["The amount of sunlight", "How tall the plant grows", "The type of soil used", "The size of the pot"],
+     "ans": 0,
+     "hint": "Look for the word \"affect\" — what's right before it?",
+     "steps": [
+      "The question is phrased \"does X affect Y?\"",
+      "X — the thing right before \"affect\" — is the independent variable.",
+      "Here, X is \"the amount of sunlight,\" so that's what the student chooses to change."
+     ],
+     "ex": {"main": "**The amount of sunlight.** That's the one thing the student deliberately changes between plants.", "tip": "\"Does ___ affect\" always points at the independent variable."}
+    },
+    {
+     "id": "q2", "lv": 1, "from": "source", "kind": "mc",
+     "q": "Same question: does the amount of sunlight a plant gets affect how tall it grows? What is the dependent variable?",
+     "opts": ["The amount of sunlight", "How tall the plant grows", "The type of soil used", "The size of the pot"],
+     "ans": 1,
+     "hint": "What does the student actually measure at the end?",
+     "steps": [
+      "The dependent variable is what gets MEASURED as the result.",
+      "The student is measuring plant height, not sunlight.",
+      "\"How tall the plant grows\" is the data the student records."
+     ],
+     "ex": {"main": "**How tall the plant grows.** That's the measurement — it depends on the sunlight.", "tip": "Dependent variable = the number you write down at the end."}
+    },
+    {
+     "id": "q3", "lv": 2, "from": "source", "kind": "mc",
+     "q": "A student is testing whether the amount of sunlight affects plant height. Which of these should be a control variable, kept the same for every plant?",
+     "opts": ["The final height of each plant", "The amount of water each plant gets", "The amount of sunlight each plant gets", "Whether the plant grew taller or not"],
+     "ans": 1,
+     "hint": "A control variable is something the student is NOT trying to test.",
+     "steps": [
+      "Sunlight is the independent variable (it's what's being changed on purpose).",
+      "Height is the dependent variable (it's what's being measured).",
+      "Water amount isn't being tested at all — to keep the test fair, it must be kept exactly the same for every plant, making it a control variable."
+     ],
+     "ex": {"main": "**The amount of water each plant gets.** Anything not being tested has to be held constant, or the test stops being fair.", "tip": "A control variable is always something OTHER than what's being changed or measured."}
+    },
+    {
+     "id": "q4", "lv": 1, "from": "source", "kind": "mc",
+     "q": "A baker wants to know: does the amount of yeast in bread dough affect how much the dough rises? What is the independent variable?",
+     "opts": ["How much the dough rises", "The amount of yeast", "The oven temperature", "The type of flour"],
+     "ans": 1,
+     "hint": "What is the baker deliberately changing?",
+     "steps": [
+      "The baker is choosing to change one thing on purpose: the amount of yeast.",
+      "\"How much the dough rises\" is measured afterward, so that's dependent, not independent.",
+      "The independent variable is the amount of yeast."
+     ],
+     "ex": {"main": "**The amount of yeast.** That's the one factor the baker changes between batches.", "tip": "Independent = what the experimenter picks and changes."}
+    },
+    {
+     "id": "q5", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Same yeast experiment: the baker uses the same oven, same temperature, same flour, and same rise time for every batch of dough, changing only the yeast amount. What are these matched conditions called?",
+     "opts": ["Independent variables", "Dependent variables", "Control variables", "Hypotheses"],
+     "ans": 2,
+     "hint": "These are things the baker deliberately did NOT change.",
+     "steps": [
+      "The oven, temperature, flour and rise time are all held the same on purpose.",
+      "Anything held constant on purpose, so the test stays fair, is a control variable.",
+      "There can be several control variables in one experiment — that's normal."
+     ],
+     "ex": {"main": "**Control variables.** Every one of those was kept identical across batches on purpose.", "tip": "A fair test almost always has MORE control variables than independent ones — usually just the one."}
+    },
+    {
+     "id": "q6", "lv": 2, "from": "source", "kind": "mc",
+     "q": "A coach wants to know: does the brand of running shoe affect a runner's 100-meter sprint time? Which TWO of these should be control variables? (Choose the pair that BOTH belong.)",
+     "opts": ["The same runner and the same track surface for every trial", "The brand of shoe and the sprint time", "The sprint time and the same track surface", "The same runner and the brand of shoe"],
+     "ans": 0,
+     "hint": "Control variables are things NOT being tested and NOT being measured.",
+     "steps": [
+      "The brand of shoe is the independent variable (what's changed) — it can't also be a control variable.",
+      "The sprint time is the dependent variable (what's measured) — it can't be a control variable either.",
+      "That leaves the runner and the track surface: both are held the same on purpose, so both are genuine control variables."
+     ],
+     "ex": {"main": "**The same runner and the same track surface.** The other three options each smuggle in the independent or dependent variable, which can never double as a control variable.", "tip": "A control variable is never the thing being changed OR the thing being measured — it's everything else, held still."}
+    },
+    {
+     "id": "q7", "lv": 1, "from": "source", "kind": "mc",
+     "q": "A scientist tests whether the color of light affects how fast mold grows on bread. What is the dependent variable?",
+     "opts": ["The color of light", "How fast the mold grows", "The type of bread", "The temperature of the room"],
+     "ans": 1,
+     "hint": "What does the scientist actually measure?",
+     "steps": [
+      "\"Does light color affect mold growth?\" — light color comes right before \"affect,\" so it's independent.",
+      "Mold growth speed is what's being measured as a result.",
+      "That makes mold growth speed the dependent variable."
+     ],
+     "ex": {"main": "**How fast the mold grows.** That's the measured outcome — it depends on the light color.", "tip": "The dependent variable is always the RESULT, never the thing chosen to change."}
+    },
+    {
+     "id": "q8", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Two students test the SAME question — does fertilizer amount affect tomato plant growth — but one uses tomato seedlings from a garden store and the other grows seeds from scratch, with everything else identical. Why does this make their combined results less trustworthy?",
+     "opts": ["Because fertilizer amount was not kept the same", "Because seedling source was not controlled — it's an extra variable that could also explain the growth difference", "Because tomato growth cannot be measured accurately", "Because two students should never work on the same question"],
+     "ans": 1,
+     "hint": "What changed between the two students besides fertilizer?",
+     "steps": [
+      "Fertilizer amount is the independent variable, and it's fine for that to be tested at different levels — that's the point.",
+      "But seedling source (store-bought vs. grown from seed) was allowed to differ too, and it wasn't supposed to.",
+      "Now if the two setups get different results, no one can tell whether it was the fertilizer OR the seedling source that caused it — the test isn't fair anymore."
+     ],
+     "ex": {"main": "**Seedling source wasn't controlled.** A second uncontrolled variable ruins the fair test, because it becomes impossible to tell which factor actually caused a difference.", "tip": "A fair test can have only ONE thing that's allowed to vary — everything else has to match."}
+    },
+    {
+     "id": "q9", "lv": 3, "from": "added", "kind": "mc",
+     "q": "A student says, \"I tested three different brands of paper towel, and I also used different amounts of water for each brand, to see which one soaked up the most.\" What is wrong with this experiment?",
+     "opts": ["Nothing — using different amounts of water makes the results more realistic", "Two things are changing at once (brand AND water amount), so it's not a fair test", "Paper towel absorption cannot be tested scientifically", "The student needed a hypothesis before starting"],
+     "ans": 1,
+     "hint": "How many things is the student changing on purpose?",
+     "steps": [
+      "The student is changing the brand of paper towel — that's meant to be the independent variable.",
+      "But the student is ALSO changing the amount of water for each brand — a second thing is varying too.",
+      "With two things changing at once, there's no way to know whether brand or water amount caused any difference in soak-up — the test isn't fair."
+     ],
+     "ex": {"main": "**Two things are changing at once.** Water amount should have been a control variable — the SAME for every brand — not something that changed too.", "tip": "Count how many things are allowed to change. A fair test allows exactly one."}
+    },
+    {
+     "id": "q10", "lv": 2, "from": "source", "kind": "mc",
+     "q": "A scientist wants to know: does the size of a dog's water bowl affect how much water the dog drinks per day? Which of these is the BEST control variable to hold constant?",
+     "opts": ["The breed and size of the dog", "The amount of water the dog drinks", "The size of the water bowl", "Whether the dog drank more or less water"],
+     "ans": 0,
+     "hint": "The bowl size is independent, the amount drunk is dependent — what's left?",
+     "steps": [
+      "Bowl size is the independent variable — it's what's being changed.",
+      "Amount of water drunk is the dependent variable — it's what's being measured.",
+      "The dog itself (its breed and size) needs to stay the same across trials, or a bigger dog might just drink more regardless of bowl size — that makes it the control variable."
+     ],
+     "ex": {"main": "**The breed and size of the dog.** Using the same dog (or matched dogs) for every trial keeps anything about the dog itself from explaining the result instead of the bowl size.", "tip": "Ask: what ELSE, besides what's changed and what's measured, could mess up the result if it weren't held steady?"}
+    },
+    {
+     "id": "q11", "lv": 1, "from": "source", "kind": "mc",
+     "q": "Which statement correctly describes a fair scientific test?",
+     "opts": ["Every variable in the experiment is allowed to change", "Only one variable is allowed to change; everything else is held constant", "No variables are allowed to change at all", "The experimenter changes a different variable each trial"],
+     "ans": 1,
+     "hint": "Think about how many things can be different between trials.",
+     "steps": [
+      "If every variable changes, you can't tell which one caused a result.",
+      "If nothing changes, there's nothing to test.",
+      "A fair test changes exactly one thing (the independent variable) and holds everything else constant."
+     ],
+     "ex": {"main": "**Only one variable is allowed to change.** That's the entire definition of a fair, or controlled, test.", "tip": "One change, many constants — that ratio is what \"fair\" means in science."}
+    },
+    {
+     "id": "q12", "lv": 2, "from": "added", "kind": "mc",
+     "q": "A student is asked: \"How does the type of music playing affect how quickly people solve a puzzle?\" Later, the student says their hypothesis was \"People who like music generally solve puzzles faster.\" What's the problem?",
+     "opts": ["The hypothesis doesn't mention the actual independent variable being tested (type of music), so it doesn't match the question", "Hypotheses are never allowed to mention people", "The hypothesis is too short", "There is no problem — it's a perfectly good hypothesis"],
+     "ans": 0,
+     "hint": "Compare the hypothesis to the actual independent variable in the question.",
+     "steps": [
+      "The question's independent variable is the TYPE of music playing.",
+      "The student's hypothesis is actually about whether someone LIKES music in general — a completely different variable.",
+      "A good hypothesis has to predict the outcome of the SAME independent variable named in the question."
+     ],
+     "ex": {"main": "**It doesn't mention the actual variable being tested.** \"Liking music\" and \"type of music\" are two different variables — the hypothesis drifted off the actual question.", "tip": "Before trusting a hypothesis, check that it's still talking about the same independent variable as the question."}
+    },
+    {
+     "id": "q13", "lv": 1, "from": "source", "kind": "mc",
+     "q": "A teacher says, \"The number of hours a student sleeps affects their test score.\" In this statement, which word tells you which variable is independent?",
+     "opts": ["Score", "Test", "Affects", "Teacher"],
+     "ans": 2,
+     "hint": "What word usually connects the independent and dependent variable in a sentence like this?",
+     "steps": [
+      "The sentence follows the \"X affects Y\" pattern.",
+      "The word \"affects\" is the connector — whatever comes right before it is independent.",
+      "Here, that's \"the number of hours a student sleeps.\""
+     ],
+     "ex": {"main": "**Affects.** It marks the spot: independent variable comes right before it, dependent variable comes right after.", "tip": "Circle the word \"affect(s)\" first — it tells you exactly where to look for each variable."}
+    },
+    {
+     "id": "q14", "lv": 2, "from": "added", "kind": "mc",
+     "q": "A student's teacher uses the word \"manipulated variable\" instead of \"independent variable,\" and \"responding variable\" instead of \"dependent variable.\" What should the student do?",
+     "opts": ["Assume the teacher made a mistake", "Recognize these are just different names for the same two ideas", "Learn a completely new, different concept", "Ask for a different textbook"],
+     "ans": 1,
+     "hint": "Different textbooks sometimes use different words for the same idea.",
+     "steps": [
+      "\"Manipulated\" means changed on purpose — that's exactly what independent variable means.",
+      "\"Responding\" means reacting to the change — that's exactly what dependent variable means.",
+      "These are just alternate vocabulary, not new concepts."
+     ],
+     "ex": {"main": "**They're just different names for the same two ideas.** Manipulated = independent, responding = dependent.", "tip": "Different textbooks, same three concepts: what you change, what you measure, what you hold steady."}
+    },
+    {
+     "id": "q15", "lv": 3, "from": "added", "kind": "mc",
+     "q": "A scientist tests 5 different fertilizer amounts on 5 identical tomato plants, all grown in the same greenhouse with the same water, soil, and sunlight. One plant gets NO fertilizer at all. Why is that plant important?",
+     "opts": ["It's a mistake — every plant should get some fertilizer", "It's the control group, giving a baseline to compare the fertilized plants against", "It represents the dependent variable", "It's there to be the control variable"],
+     "ans": 1,
+     "hint": "What does a \"baseline with nothing added\" usually represent in an experiment?",
+     "steps": [
+      "A plant that gets none of the thing being tested is the control GROUP, not a control variable.",
+      "It shows what growth looks like with zero fertilizer, so every other result can be compared against it.",
+      "Without it, there'd be no way to know how much of the growth difference the fertilizer actually caused."
+     ],
+     "ex": {"main": "**It's the control group.** A group with none of the tested treatment gives every other group something honest to compare against.", "tip": "Control GROUP (no treatment) and control VARIABLE (something held constant) sound alike but mean different things."}
+    },
+    {
+     "id": "q16", "lv": 2, "from": "source", "kind": "mc",
+     "q": "A question asks: \"How does the type of ball (rubber vs. foam) affect how high it bounces when dropped from the same height?\" What is being kept the same on purpose — a control variable?",
+     "opts": ["The type of ball", "How high the ball bounces", "The height the ball is dropped from", "Whether the ball is bouncy or not"],
+     "ans": 2,
+     "hint": "Ball type is independent, bounce height is dependent — what's left constant?",
+     "steps": [
+      "Ball type is what's being changed — independent variable.",
+      "Bounce height is what's being measured — dependent variable.",
+      "The drop height is explicitly stated as \"the same,\" which makes it the control variable."
+     ],
+     "ex": {"main": "**The height the ball is dropped from.** The question tells you directly it stays the same for every trial.", "tip": "Watch for phrases like \"from the same height\" — that's the question handing you a control variable directly."}
+    }
+   ]
+  }
+ }
+}

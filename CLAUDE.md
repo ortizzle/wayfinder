@@ -784,3 +784,64 @@ whole design, and it is what stops five things breaking:
 The subject screen shows the deck loosely **only while it is unfiled**; once
 it lives in a book, the book is where it lives. The editor door stays on the
 subject screen either way, so a filed deck is never stranded.
+
+### Science Quiz 1 Part 3: Variables (v112)
+
+Chris uploaded a new Quiz 1 handout to River's folder — "Variables (Check for
+Understanding)," 10 points, covering independent/dependent/control variables
+and what makes a test fair. `content/science-variables.json` (`unit-sci-vars`)
+shelves as "Science · Quiz 1 Part 3: Variables," `order:2`, right after the
+existing Part 1 (Thinking Like a Scientist) and Part 2 (Measurement). 16
+fresh questions across 8 cards — every scenario is new (a baker's yeast, a
+runner's shoe brand, a dog's water bowl…), none reuse the sheet's own
+snake-venom, magnet, hot-air-balloon, ice-cube, salmon or tree examples, so
+she can't answer from memory of the worksheet. Two "choose the pair that
+both belong" control-variable questions mirror the sheet's own "select 2"
+items in a format the engine's single-answer MC actually supports — the
+correct pair is the ONE option combining two genuine control variables,
+with the other three options each smuggling in the independent or dependent
+variable as a decoy.
+
+### Flag this question (v136 / Ad Astra v136, both apps)
+
+Chris asked for a way for the girls to flag a question they think might be
+wrong, so he can remove it from the material or explain it to them. Every
+answered question (right or wrong, in an ordinary round, a Growth Zone
+review, or a shuffle round) gets a quiet "🚩 Something wrong with this
+question?" ghost button under its explanation. Tapping it opens a modal with
+an optional textarea — say what seems off, or just flag it — and writes one
+`flag` record (`{unitId, classId, qid, q, note, date}`). The button then
+relabels itself "🚩 Flagged for a grown-up" and disables, so she can't
+double-flag the same question, and gets no other feedback: no XP, no
+Growth Zone entry, nothing gamified.
+
+- **This is not the Growth Zone.** The Growth Zone is about what SHE knows;
+  a flag is about whether the QUESTION ITSELF is right — a typo'd answer key,
+  a confusing scenario, a graph that doesn't match its own text. The two
+  systems don't touch: flagging changes nothing about her tally, her ladder,
+  or her XP.
+- **Nothing happens automatically.** A flag only ever surfaces to a
+  grown-up; it never edits, hides, or skips the question by itself. The
+  parent view gets an accent card ("N questions were flagged") in the
+  Topics section, leading to `SCREENS.flagged` — subject-grouped, the
+  question, her optional note in quotes, and two actions: **Remove the
+  question** (filters it out of the live unit's `questions[]` for good, and
+  tombstones any existing `miss` record for that unit/qid too, so a question
+  pulled for being wrong can't keep resurfacing in the Growth Zone from an
+  old snapshotted miss) or **Dismiss — it checked out** (softDeletes the
+  flag, question untouched, for when it turns out fine on a second look).
+- **`_srcUnit`/`_srcClass`/`_srcQid` are used exactly like the "not sure it
+  will stick" 🌱 button already does**, so a flag raised mid-review-round or
+  mid-shuffle-round correctly attributes to the real unit and question, not
+  a synthetic round id.
+- **Excluded on a rescue-round variant** (`q._rescue`) — a variant is a
+  sub-field of another question, not a top-level array entry, so there's no
+  clean "remove this" target.
+- **Not in `PROGRESS_TYPES`.** A flag is a content-correctness signal, not
+  her activity — Fresh start leaves it alone, same as units, assessments,
+  prefs and roster.
+- `tools/test_flag.js` covers the whole loop both ways: flagging a right
+  answer and a wrong one, the note saving, the no-double-flag guard, the
+  parent card appearing, removing (unit shrinks by exactly one question, the
+  matching miss is tombstoned, the flag clears) and dismissing (flag clears,
+  question and unit untouched). This is engine, ported to both apps in step.
