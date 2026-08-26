@@ -845,3 +845,15 @@ Growth Zone entry, nothing gamified.
   parent card appearing, removing (unit shrinks by exactly one question, the
   matching miss is tombstoned, the flag clears) and dismissing (flag clears,
   question and unit untouched). This is engine, ported to both apps in step.
+
+### Grades, tabulated by subject (v113 / Ad Astra v135, both apps)
+
+Shipped Ad Astra-only at first, then ported here once Chris pointed out the
+gap — grades-by-subject is engine, not identity, and had no reason to stay
+one-sided. Same everything as documented in ad-astra/CLAUDE.md:
+`gradesBySubject(date)` derives per-subject averages from `assess` records
+at render time (nothing stored), scoped to the current quarter, with a "By
+subject" card at the top of Tests & quizzes. Every `STUDY_CLASSES` subject
+renders even at zero — "No grades entered yet" stays visible rather than the
+subject silently dropping off the list, which was the entire point of the
+feature. `tools/test_gradesbysubj.js` is the same test file, unchanged.
