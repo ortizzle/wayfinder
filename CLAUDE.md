@@ -857,3 +857,57 @@ subject" card at the top of Tests & quizzes. Every `STUDY_CLASSES` subject
 renders even at zero — "No grades entered yet" stays visible rather than the
 subject silently dropping off the list, which was the entire point of the
 feature. `tools/test_gradesbysubj.js` is the same test file, unchanged.
+
+### Fall clubs (v114, THIS APP ONLY)
+
+Chris asked for River's app to get the same club picker Sedona's has —
+options she's eligible for in 4th grade, cost, a summary, and a way to star
+or register. Ported the whole engine from ad-astra/CLAUDE.md's "Signed up,
+and the club on the day" (v99): `CLUBS`/`CLUBS_CLOSED`, `clubPicks`/
+`clubState`/`setClubState` (the same want/reg/null three-state map),
+`clubMeetsOn`'s day+time+cadence placement rule, `clubDetails()`,
+`SCREENS.clubs`, and the registered-club-joins-the-day `.evt.club` row on
+Today. Same rules apply here as there — a star is a wish, registering is a
+fact, only genuinely-derivable clubs land on the schedule, nothing is placed
+on a guess.
+
+- **Built from the real BCPS Fall 2026 Extracurricular Catalog** (ParentSquare,
+  uploaded 2026-08-29). 11 clubs list 4th grade in their range; the other 5 —
+  Code Ninjas' K-2 Scratch club, Snapology, Jr. Ballers (2nd only), Spanish
+  Club, and the Friday Chess Emporium session — go in `CLUBS_CLOSED` so the
+  screen and the real catalog reconcile row for row, same as Sedona's does.
+- **Registration window (8/31–9/4/26) and the club start/end range
+  (9/14–9/18 through 11/16–11/20) come straight from the catalog**, but the
+  catalog never states a cadence in words the way ASL Club's teacher email
+  did for Sedona. Every club here is marked `freq:'weekly'` on the reasoning
+  that a ~9-week span between a stated start range and end range is exactly
+  what a once-a-week club produces — flagged in case that assumption is
+  wrong and a real per-club cadence surfaces later.
+- **All 11 clubs run 3:30–4:30 pm**, stated outright in the catalog, so the
+  screen's hintline says it once instead of repeating the same time on every
+  row (same audit finding Sedona's screen already fixed).
+- **The `screen:'clubs'` CAL.events door** ("Fall club registration",
+  8/31–9/4) is the only way in, same as Ad Astra — no persistent Settings
+  link either, matching parity rather than improving on it unasked.
+
+> ⚠️ **`SCREENS.clubs = function(...)` was first written above `const
+> STUDENT_HOURS`, which sits well before `const SCREENS = {}` is declared
+> further down the file.** Assigning a property onto `SCREENS` before that
+> `const` executes throws a temporal-dead-zone `ReferenceError` at BOOT —
+> which aborts the whole top-level script before `loadLocal()` ever runs,
+> so `DATA` itself never gets assigned. Every test failed with `DATA is not
+> defined`, which reads like a totally unrelated data-loading bug and cost
+> real time chasing before the actual cause (a misplaced `SCREENS.clubs`
+> assignment 1,300 lines above `SCREENS`'s own declaration) turned up. Fixed
+> by moving only the `SCREENS.clubs = ...` assignment down next to the other
+> `SCREENS.*` definitions (right after `SCREENS.flagged`); `CLUBS`/
+> `CLUBS_CLOSED`/`clubDetails()` and the rest of the plain data/helpers stay
+> up with `STUDENT_HOURS`, since they never reference `SCREENS` and have no
+> ordering constraint. **Any new top-level `SCREENS.xxx = function(){}`
+> assignment must physically sit after `const SCREENS = {}`.**
+- `tools/test_clubs.js` covers the three-state map, `clubMeetsOn`'s weekly
+  placement (using Challenge Island's Monday cadence in place of Sedona's
+  ASL Club, which has a real per-date schedule this catalog doesn't provide),
+  a registered club joining Today and a starred one not, the clubs screen
+  separating signed-up from starred, and the registration event appearing
+  in its window.

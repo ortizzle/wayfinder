@@ -879,6 +879,10 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
   background-color:var(--surface);margin-bottom:var(--gap-row);text-align:left;font-size:14px}
 .tocrow .st{width:22px;text-align:center;flex-shrink:0;color:var(--muted)}
 .tocrow .st.done{color:var(--good);font-weight:800}
+/* Signed up is a fact (green tick); starred is a wish (accent star). The glyph
+   already tells them apart — the colour only reinforces it. */
+.tocrow .st.reg{color:var(--good);font-weight:800}
+.tocrow .st.want{color:var(--ac-fg);font-weight:800}
 .tocrow .tl{flex:1;line-height:1.35}
 .tocrow .mt{font-size:11.5px;color:var(--faint);flex-shrink:0}
 /* A finished book's spine title turns gilt — measured ≥4.5:1 on every
@@ -1134,6 +1138,11 @@ input:focus,textarea:focus,select:focus{outline:none;border-color:var(--ac)}
   flex-shrink:0;text-align:right}
 .evt.quiet{background:var(--surface);border-color:var(--line);border-left-color:var(--muted)}
 .evt.quiet .tm{color:var(--muted)}
+/* A registered club joins the day it meets, at the quiet plate with an
+   accent left rule — so it never competes with a pinned school event, but
+   still reads as one of hers among the school's. */
+.evt.club{background:var(--surface);border-color:var(--line);border-left-color:var(--ac-fg)}
+.evt.club .tm{color:var(--muted)}
 .prov{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:800;letter-spacing:.05em;
   text-transform:uppercase;padding:2px 7px;border-radius:7px;vertical-align:middle;white-space:nowrap}
 /* Opaque fills, not tints over whatever happens to be behind: a badge lands on
@@ -1356,7 +1365,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v113 · grades by subject';
+const APP_VERSION = 'v114 · fall clubs';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1516,6 +1525,8 @@ const CAL = {
     {start:'2026-08-17', name:'Student Hours begin', icon:'🕐', kind:'note'},
     {start:'2026-08-17', end:'2026-08-19', name:'Fast Bridge Testing', icon:'📊', kind:'benchmark',
      note:'This one measures where you are right now. There is nothing to revise for.'},
+    {start:'2026-08-31', end:'2026-09-04', name:'Fall club registration', icon:'📝', kind:'note', screen:'clubs',
+     note:'Tap to browse every club open to your grade and star the ones you want. Sign-ups close in Blackbaud Friday.'},
     {start:'2026-09-03', name:'Early release — Professional Development', icon:'🕑', kind:'early', early:true},
     {start:'2026-10-02', name:'Early release — Parent/teacher conferences', icon:'🕑', kind:'early', early:true},
     {start:'2026-10-23', name:'Boo Bash', icon:'🎃', kind:'community', note:'6:00–7:30 PM.'},
@@ -2499,6 +2510,142 @@ function applyTheme(){
 window.matchMedia('(prefers-color-scheme: light)')
   .addEventListener('change',()=>{ if((prefs().theme||'auto')==='auto'){ applyTheme(); render(); } });
 
+/* ---------- Fall extracurricular clubs ----------
+   From the BCPS Fall 2026 Extracurricular Catalog (ParentSquare, 2026-08).
+   Only clubs whose grade range includes 4th are listed here — CLUBS_CLOSED
+   holds the rest, so the app and the real catalog reconcile at a glance
+   rather than silently dropping anything. Registration: 8/31–9/4/26 in
+   Blackbaud. All clubs run 3:30–4:30 pm. The catalog does not state a
+   cadence explicitly; every club below is marked weekly, which matches the
+   ~9-week span between the printed start range (9/14–9/18) and end range
+   (11/16–11/20) for a once-a-week club — flag it if that turns out wrong. */
+const CLUBS = [
+  {id:'challisland', day:'Monday', nm:'Challenge Island — Sharktooth Island', gr:'K–4th', cost:220, time:'3:30–4:30', freq:'weekly', first:'Sept 14',
+   desc:'Dive into hands-on adventures, deep sea discoveries, and jaw-some shark-filled fun. Collaborate, design, build and play — budding engineers strengthen critical thinking, teamwork and problem-solving skills.'},
+  {id:'sportopia',    day:'Monday', nm:'Sportopia', gr:'2nd–4th', cost:160, time:'3:30–4:30', freq:'weekly', first:'Sept 14',
+   desc:'Play all different sports and activities — everyone gets a turn to choose. Hoop, jump, bounce or dribble, you will definitely have a ball.'},
+  {id:'auditionprep', day:'Monday', nm:'Audition Prep', gr:'3rd–4th', cost:160, time:'3:30–4:30', freq:'weekly', first:'Sept 14',
+   desc:'One-on-one coaching with new monologues and scenes each week, aimed at the Spring Musical auditions. Improve emotional expression, memorization, comedic timing and vocal projection.'},
+  {id:'madscience',   day:'Tuesday', nm:'Mad Science', gr:'K–4th', cost:220, time:'3:30–4:30', freq:'weekly', first:'Sept 15',
+   desc:'Weekly science lessons with hands-on experiments and exciting demonstrations, run by Mad Science of Phoenix. Each week ends with a take-home project.'},
+  {id:'codespark',    day:'Tuesday', nm:'Code Ninjas — Code Spark Club', gr:'3rd–4th', cost:275, time:'3:30–4:30', freq:'weekly', first:'Sept 15',
+   desc:'Core coding concepts for 3rd and 4th graders, using Chromebooks and Microsoft MakeCode block-based coding, progressing toward other coding languages.'},
+  {id:'youngyogis',   day:'Tuesday', nm:'Young Yogis', gr:'3rd–4th', cost:180, time:'3:30–4:30', freq:'weekly', first:'Sept 15',
+   desc:'Explore the physical and mental benefits of yoga — individual and partner poses, standard flows, and meditation. Build self-awareness and coping skills for stress.'},
+  {id:'chess',        day:'Thursday', nm:'The Chess Emporium', gr:'3rd–4th', cost:225, time:'3:30–4:30', freq:'weekly', first:'Sept 17',
+   desc:'Chess taught to engage, teach and coach kids’ chess — chess can build math, verbal, and critical-thinking skills alongside the game itself.'},
+  {id:'pingpong',     day:'Thursday', nm:'Ping Pong', gr:'3rd–4th', cost:200, time:'3:30–4:30', freq:'weekly', first:'Sept 17',
+   desc:'A social sport that builds communication and teamwork — a great way to play with friends or make new ones.'},
+  {id:'speaksquad',   day:'Thursday', nm:'Speak Squad', gr:'2nd–4th', cost:220, time:'3:30–4:30', freq:'weekly', first:'Sept 17',
+   desc:'Hands-on practice becoming a confident speaker — interactive games, storytelling and speech practice in a safe, supportive environment.'},
+  {id:'rembrandts',   day:'Thursday', nm:'Young Rembrandts', gr:'1st–4th', cost:180, time:'3:30–4:30', freq:'weekly', first:'Sept 17',
+   desc:'A new drawing project each week, building art skills alongside creativity, focus and confidence.'},
+  {id:'medschool',    day:'Friday', nm:'Little Medical School', gr:'K–4th', cost:225, time:'3:30–4:30', freq:'weekly', first:'Sept 18',
+   desc:'Play doctor for real — learn how the body works, use medical instruments, administer first aid, and tie knots like a real surgeon.'}
+];
+/* The rest of the catalog — clubs whose grade range does not include 4th.
+   Listed so the app and the catalog PDF reconcile at a glance: if a club is
+   not in CLUBS above, it is here with the range that excludes it, never
+   silently dropped. Same source: the catalog PDF's grade table. */
+const CLUBS_CLOSED = [
+  {day:'Monday',  nm:'Code Ninjas (Scratch Coding Club)', gr:'K–2nd'},
+  {day:'Monday',  nm:'Snapology — Robopets', gr:'1st–3rd'},
+  {day:'Tuesday', nm:'BASIS Jr. Ballers', gr:'2nd only'},
+  {day:'Thursday',nm:'Spanish Club', gr:'K–2nd'},
+  {day:'Friday',  nm:'The Chess Emporium (Friday session)', gr:'K–2nd'}
+];
+const clubPicks = () => (DATA.records['clubpicks']||{}).picks || {};
+/* Three states, stored in the one map that already existed. A value of `true`
+   predates registration and means "want" — exactly what it meant when it was
+   written, so nothing needs migrating. */
+const clubState = id => { const v = clubPicks()[id]; return v === 'reg' ? 'reg' : v ? 'want' : null; };
+function setClubState(id, st){
+  const p2 = {...clubPicks()};
+  if(st) p2[id] = st; else delete p2[id];
+  put({ id:'clubpicks', type:'clubpicks', picks:p2 });
+  syncSoon();
+}
+/* ---- Registered clubs on the calendar ----
+   A club joins the day it meets only when the day, the time AND the cadence
+   are all genuinely derivable — see ad-astra/CLAUDE.md's "Real dates beat
+   inferred cadence" for the fuller reasoning. Same engine, ported here. */
+const CLUB_DAYS = {sunday:0, monday:1, tuesday:2, wednesday:3, thursday:4, friday:5, saturday:6};
+const CLUB_MONTHS = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,sept:8,oct:9,nov:10,dec:11};
+function clubFirstDate(c){
+  const m = String(c.first||'').match(/([A-Za-z]+)\s+(\d{1,2})/);
+  if(!m) return null;                                  // "Aug" with no date
+  const mo = CLUB_MONTHS[m[1].toLowerCase().slice(0,4)] ?? CLUB_MONTHS[m[1].toLowerCase().slice(0,3)];
+  if(mo == null) return null;
+  /* The school year straddles a new year: months before August belong to the
+     spring half of it. */
+  const y = mo >= 7 ? +CAL.firstDay.slice(0,4) : +CAL.lastDay.slice(0,4);
+  return `${y}-${String(mo+1).padStart(2,'0')}-${m[2].padStart(2,'0')}`;
+}
+const clubWeekdays = c => String(c.day||'').split(/\s*&\s*/)
+  .map(d => CLUB_DAYS[d.trim().toLowerCase()]).filter(d => d != null);
+function clubMeetsOn(c, date){
+  if(!c.time) return false;
+  if(c.dates) return c.dates.includes(date);
+  const freq = String(c.freq||'').toLowerCase();
+  const weekly = freq.startsWith('weekly'), fort = freq.startsWith('bi-weekly');
+  if(!weekly && !fort) return false;
+  const first = clubFirstDate(c);
+  if(!first || date < first) return false;
+  if(!clubWeekdays(c).includes(AZ.weekday(date))) return false;
+  if(weekly) return true;
+  /* Fortnightly: count from the club's OWN first matching weekday, not from
+     `first` itself, which may fall on a different day than the club meets. */
+  let start = first;
+  for(let i = 0; i < 7 && !clubWeekdays(c).includes(AZ.weekday(start)); i++) start = AZ.shift(first, i+1);
+  return AZ.daysBetween(start, date) % 14 === 0;
+}
+const clubsOn = date => CLUBS.filter(c => clubState(c.id) === 'reg' && clubMeetsOn(c, date));
+function clubDetails(c){
+  const st0 = clubState(c.id);
+  showModal({
+    title: c.nm,
+    confirmText: st0 === 'want' ? 'Remove my star' : st0 === 'reg' ? 'Close' : '★  Star this one',
+    cancelText: st0 === 'reg' ? null : 'Close',
+    build:(box)=>{
+      const rows = [
+        ['When', c.day + (c.time ? ' · '+c.time : '')],
+        ['Grades', c.gr || 'See the catalog'],
+        ['How often', c.freq || '—'],
+        ['First meeting', c.first || 'See the catalog'],
+        ['Cost', c.cost ? '$'+c.cost : 'Free']
+      ];
+      if(c.flag) rows.push(['To join', c.flag]);
+      rows.forEach(([k,v])=>{
+        const r = el('div','row');
+        r.appendChild(el('span','k',k)); r.appendChild(el('span','v',v));
+        box.appendChild(r);
+      });
+      box.appendChild(el('p',null, c.desc ||
+        'The catalog lists this one without a description — ask about it in ParentSquare.'));
+      box.appendChild(el('div','hintline', st0 === 'reg'
+        ? 'Signed up. This one is on your schedule on the days it meets.'
+        : st0 === 'want'
+          ? 'Starred. Mom and Dad can see this one on their side.'
+          : 'Starring is not signing up — it tells Mom and Dad you are interested.'));
+      const reg = el('button','btn btn-secondary',
+        st0 === 'reg' ? 'Not signed up after all' : '✓  I am signed up for this');
+      reg.addEventListener('click',()=>{
+        setClubState(c.id, st0 === 'reg' ? null : 'reg');
+        document.querySelectorAll('.modal-overlay').forEach(o=>o.remove());
+        toast(st0 === 'reg' ? 'Taken off your schedule' : 'Added to your schedule');
+        render();
+      });
+      box.appendChild(reg);
+    },
+    onConfirm:()=>{
+      const rec = DATA.records['clubpicks'] || {id:'clubpicks', type:'clubpicks', picks:{}};
+      const p2 = {...(rec.picks||{})};
+      if(p2[c.id]) delete p2[c.id]; else p2[c.id] = true;
+      put({ id:'clubpicks', type:'clubpicks', picks:p2 });
+      syncSoon(); toast(p2[c.id] ? 'Starred' : 'Star removed'); render();
+    }
+  });
+}
 /* ---------- Student hours ----------
    From the four course syllabi (Aug 2026). Times only — teacher names live
    in the roster record, never in this public file. Both core teachers pair
@@ -4107,6 +4254,24 @@ SCREENS.today = function(root){
     else p.appendChild(el('div','tm',fmtTime(c.start)));
     if(!c.break) p.addEventListener('click',()=>go('unit',{classId:c.id}));
     root.appendChild(p);
+  });
+
+  /* Clubs she is SIGNED UP for that meet on the day being shown — after the
+     last bell, which is where they actually sit in her day. Only registered
+     ones: a star is a wish and does not belong on a schedule. Folded away
+     with the timetable on a day off, because a club does not meet when
+     there is no school. */
+  const dayClubs = foldTT ? [] : clubsOn(shownDate);
+  dayClubs.forEach(c=>{
+    const row = el('div','evt club');
+    row.appendChild(el('div','pchip','🎟️'));
+    const m2 = el('div','meta');
+    m2.appendChild(el('div','nm',c.nm));
+    m2.appendChild(el('div','dt', 'After school' + (c.freq ? ' · '+c.freq : '')));
+    row.appendChild(m2);
+    row.appendChild(el('div','tm', c.time || 'After school'));
+    row.addEventListener('click',()=>clubDetails(c));
+    root.appendChild(row);
   });
 
   /* Student hours for the day being shown — the rotation decides her classes;
@@ -7712,6 +7877,87 @@ SCREENS.flagged = function(root){
   }
   const back = el('button','btn btn-ghost','← Grown-ups');
   back.addEventListener('click',()=>go('parent'));
+  root.appendChild(back);
+};
+
+SCREENS.clubs = function(root){
+  root.appendChild(headline('Fall clubs','Every club open to your grade. Tap one to read what it actually is. Star the ones you want in — your picks show up for Mom and Dad, who register you in Blackbaud by the registration deadline. Once you are actually signed up, mark it, and it joins your schedule on the days it meets.'));
+  root.appendChild(el('div','hintline','Every club runs 3:30–4:30, right after school.'));
+  const joined = CLUBS.filter(c=>clubState(c.id)==='reg');
+  if(joined.length){
+    const jc = el('div','card ac');
+    jc.appendChild(el('div','eyebrow','You are signed up for'));
+    joined.forEach(c=>{
+      const r = el('div','row');
+      const kk = el('span','k',c.nm);
+      kk.appendChild(el('small',null, c.day + (c.time ? ' · '+c.time : '')
+        + (c.freq ? ' · '+c.freq : '')));
+      r.appendChild(kk);
+      r.appendChild(el('span','v', c.cost ? '$'+c.cost : 'free'));
+      jc.appendChild(r);
+    });
+    const placed = joined.filter(c=>c.time && /^(weekly|bi-weekly)/i.test(c.freq||'') && clubFirstDate(c));
+    jc.appendChild(el('div','hintline', placed.length
+      ? (placed.length===joined.length ? 'These show up on your schedule on the days they meet.'
+         : `${placed.length} of these show up on your schedule; the rest do not list a day, time or how often.`)
+      : 'These do not list a day, time and cadence, so they stay off your schedule.'));
+    root.appendChild(jc);
+  }
+  const chosen = CLUBS.filter(c=>clubState(c.id)==='want');
+  if(chosen.length){
+    const sc = el('div','card ac');
+    sc.appendChild(el('div','eyebrow','Starred — hoping to join'));
+    chosen.forEach(c=>{
+      const r = el('div','row');
+      const kk = el('span','k',c.nm);
+      kk.appendChild(el('small',null, c.day + (c.time ? ' · '+c.time : '')));
+      r.appendChild(kk);
+      r.appendChild(el('span','v', c.cost ? '$'+c.cost : 'free'));
+      sc.appendChild(r);
+    });
+    const tot = chosen.reduce((n,c)=>n+c.cost,0);
+    const r2 = el('div','row');
+    r2.appendChild(el('span','k','If you got all of these'));
+    r2.appendChild(el('span','v','$'+tot+' + $50/yr family fee'));
+    sc.appendChild(r2);
+    root.appendChild(sc);
+  }
+  ['Monday','Tuesday','Wednesday','Thursday','Friday'].forEach(day=>{
+    const list = CLUBS.filter(c=>c.day===day);
+    if(!list.length) return;
+    root.appendChild(divider(day));
+    list.forEach(c=>{
+      const b = el('button','tocrow');
+      const cst = clubState(c.id);
+      const st = el('span','st'+(cst?' '+cst:''),
+        cst==='reg' ? '✓' : cst==='want' ? '★' : '☆');
+      b.appendChild(st);
+      const tl = el('span','tl');
+      tl.appendChild(el('div',null,c.nm));
+      const meta = [/am/.test(c.time||'') ? c.time+' (morning)' : null, c.freq, c.flag].filter(Boolean).join(' · ');
+      if(meta) tl.appendChild(el('div','mt',meta));
+      b.appendChild(tl);
+      b.appendChild(el('span','mt', c.cost ? '$'+c.cost : 'free'));
+      b.addEventListener('click',()=>clubDetails(c));
+      root.appendChild(b);
+    });
+  });
+  /* The reconciliation list: every other club in the catalog, with the grade
+     range that rules it out. Nothing tappable — it exists so the catalog and
+     this screen can be held side by side and every row accounted for. */
+  root.appendChild(divider('In the catalog, not open to 4th grade'));
+  const cc = el('div','card');
+  CLUBS_CLOSED.forEach(c=>{
+    const r = el('div','row');
+    const kk = el('span','k',c.nm);
+    kk.appendChild(el('small',null,c.day));
+    r.appendChild(kk);
+    r.appendChild(el('span','v',c.gr));
+    cc.appendChild(r);
+  });
+  root.appendChild(cc);
+  const back = el('button','btn btn-ghost','← Today');
+  back.addEventListener('click',()=>go('today'));
   root.appendChild(back);
 };
 
