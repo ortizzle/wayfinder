@@ -858,6 +858,15 @@ renders even at zero — "No grades entered yet" stays visible rather than the
 subject silently dropping off the list, which was the entire point of the
 feature. `tools/test_gradesbysubj.js` is the same test file, unchanged.
 
+### The lesson you meant (v115 / Ad Astra v138, both apps)
+
+The lesson-picking fixes from the UX review — a tapped map stop now
+visibly selects (full-row wash, accent title), the opened card scrolls into
+view instead of hiding below the map, and the check-in screen names the
+unit about to be quizzed. Engine, identical in both apps; see
+ad-astra/CLAUDE.md's section of the same name for the full reasoning and
+the contrast measurements. `tools/test_shelfpick.js` is the same test file.
+
 ### Fall clubs (v114, THIS APP ONLY)
 
 Chris asked for River's app to get the same club picker Sedona's has —
