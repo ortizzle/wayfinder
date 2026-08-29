@@ -1,0 +1,350 @@
+{
+ "v": 4,
+ "records": {
+  "unit-sci-scales": {
+   "id": "unit-sci-scales",
+   "type": "unit",
+   "updatedAt": 1788028100000,
+   "libv": 1,
+   "classId": "science",
+   "quarter": 1,
+   "status": "draft",
+   "prep": true,
+   "order": 3,
+   "round": 8,
+   "title": "Science · Reading Scales Practice",
+   "srcName": "Measuring practice + answer key — Quiz 1 folder (Drive)",
+   "source": "Science 4, the measuring-practice sheets: rulers, graduated cylinders and thermometers",
+   "summary": {
+    "text": "The measuring-practice sheets are about reading real instruments: rulers to the nearest 0.1 cm (and converting to millimeters), graduated cylinders where you first have to work out what each unmarked line is worth, and thermometers — including reading between marks and below zero. The paper does the eye-training; this practices the REASONING behind every reading: figuring out the scale's interval, and placing a reading between two marks.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The Nature of Science test is Thursday 9/3, and scale-reading questions are free points once you have the one habit: before reading ANY instrument, work out what each line is worth. Every question here builds exactly that habit.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Work out what each unmarked line on a scale is worth, from the printed numbers and the line count.",
+     "from": "source"
+    },
+    {
+     "text": "Read a ruler to the nearest 0.1 cm, and convert between centimeters and millimeters.",
+     "from": "source"
+    },
+    {
+     "text": "Read a value that lands between two marked lines.",
+     "from": "source"
+    },
+    {
+     "text": "Read a thermometer below zero without flipping the direction.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the measuring-practice sheets and their answer key in the Quiz 1 Drive folder. Honest scope note: the sheets' actual pictures — where a bar ends, where a meniscus sits — can't be reproduced in the app without inventing them, so the paper stays the eye-practice and this unit drills the reasoning every reading depends on: the each-line-is-worth-what step, unit conversion, and between-the-marks readings, all with fresh numbers. Doing the paper sheets AND a round or two here covers both halves of the skill before the 9/3 test. The answer key checked out clean against the sheet — no misprints spotted.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Do the paper sheets for the eye-practice, then a round here for the reasoning. The each-line-worth question is the whole game.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The first question for ANY scale",
+     "from": "source",
+     "def": "**Before reading anything: what is each line worth?**\n• Take two printed numbers, subtract them, and divide by the number of spaces between them.\n• Marks at 40 and 50 with 5 spaces between → each line is worth 2.",
+     "hint": "Gap between printed numbers ÷ number of spaces.",
+     "eq": "line value = (number gap) ÷ (spaces between)"
+    },
+    {
+     "id": "c1",
+     "term": "Reading a ruler to 0.1 cm",
+     "from": "source",
+     "def": "**Each little millimeter line on a centimeter ruler is 0.1 cm.**\n• A bar ending 3 small lines past the 7 reads 7.3 cm.\n• \"To the nearest 0.1 cm\" just means: count the small lines.",
+     "hint": "Small lines = tenths of a centimeter."
+    },
+    {
+     "id": "c2",
+     "term": "Centimeters ↔ millimeters",
+     "from": "source",
+     "def": "**1 cm = 10 mm — slide the decimal one place.**\n• 3.6 cm = 36 mm. 108 mm = 10.8 cm.\n• The sheets ask for the SAME kind of length in both units, so the conversion is part of the reading.",
+     "hint": "cm to mm: number gets bigger ×10.",
+     "eq": "1 cm = 10 mm"
+    },
+    {
+     "id": "c3",
+     "term": "Reading a graduated cylinder",
+     "from": "source",
+     "def": "**Read the level against the nearest line — at eye level, at the BOTTOM of the curve.**\n• Water in a cylinder curves up at the edges; the curve is called the meniscus, and you read its low point.\n• First work out each line's worth; then count lines from the nearest printed number.",
+     "hint": "Eye level, bottom of the curve, nearest line."
+    },
+    {
+     "id": "c4",
+     "term": "Between two marked lines",
+     "from": "source",
+     "def": "**A level halfway between two lines reads as halfway between their values.**\n• Between the 60 line and the 70 line, halfway up → 65.\n• The sheets' small cylinders do this with tenths: halfway between 4.0 and 4.4 marks reads 4.2.",
+     "hint": "Split the difference between the two nearest lines."
+    },
+    {
+     "id": "c5",
+     "term": "Thermometers below zero",
+     "from": "source",
+     "def": "**Below the 0 mark, numbers count UP as you go DOWN — but each line is still worth the same amount.**\n• Two lines below zero on a 2-per-line scale is −4°C, not 4°C.\n• Work out the line value the same way; only the sign changes.",
+     "hint": "Same line value, minus sign below zero."
+    },
+    {
+     "id": "c6",
+     "term": "Different scales, same instrument",
+     "from": "source",
+     "def": "**Two cylinders can both say 'mL' and be worth wildly different amounts per line.**\n• The sheets jump from cylinders where a line is 0.2 mL to ones where a line is 25 mL.\n• That's why the line-value step can never be skipped — the instrument doesn't announce it.",
+     "hint": "Never assume the line value carries over from the last one."
+    }
+   ],
+   "questions": [
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A graduated cylinder has printed numbers at 20, 30 and 40 mL, with 5 spaces between each pair of printed numbers. What is each small line worth?",
+     "opts": [
+      "2 mL",
+      "5 mL",
+      "1 mL",
+      "10 mL"
+     ],
+     "ans": 0,
+     "hint": "Gap between printed numbers, divided by the spaces between them.",
+     "steps": [
+      "The gap between printed numbers is 30 − 20 = 10 mL.",
+      "That gap is cut into 5 spaces.",
+      "10 ÷ 5 = 2 mL per line."
+     ],
+     "ex": {
+      "main": "**2 mL.** Gap ÷ spaces, every time, before reading anything.",
+      "tip": "Count SPACES between the lines, not the lines themselves — off-by-one is the classic slip."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A graduated cylinder's small lines are worth 2 mL each. The water level sits exactly 3 lines above the 30 mL mark. What is the volume?",
+     "opts": [
+      "36 mL",
+      "33 mL",
+      "60 mL",
+      "24 mL"
+     ],
+     "ans": 0,
+     "hint": "Start at the printed number and add per line.",
+     "steps": [
+      "Each line is worth 2 mL.",
+      "3 lines above 30 adds 3 × 2 = 6 mL.",
+      "30 + 6 = 36 mL."
+     ],
+     "ex": {
+      "main": "**36 mL.** Printed number + (lines × line value).",
+      "tip": "33 mL is the trap answer — that's counting each line as 1. The line value question always comes first."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bar on a centimeter ruler ends 7 small lines past the 4 cm mark. What is its length to the nearest 0.1 cm?",
+     "opts": [
+      "4.7 cm",
+      "4.07 cm",
+      "7.4 cm",
+      "11 cm"
+     ],
+     "ans": 0,
+     "hint": "Each small line on a cm ruler is 0.1 cm.",
+     "steps": [
+      "Small lines on a centimeter ruler mark tenths: 0.1 cm each.",
+      "7 small lines past the 4 is 4 + 0.7.",
+      "Length: 4.7 cm."
+     ],
+     "ex": {
+      "main": "**4.7 cm.** Whole centimeters from the big number, tenths from the small lines.",
+      "tip": "Always check the bar starts at 0 — a bar running from 2 to 6.7 is 4.7 cm too, but you'd have to subtract."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bar measures exactly 4.7 cm. What is its length in millimeters?",
+     "opts": [
+      "47 mm",
+      "4.7 mm",
+      "470 mm",
+      "0.47 mm"
+     ],
+     "ans": 0,
+     "hint": "1 cm = 10 mm.",
+     "steps": [
+      "1 cm = 10 mm, so multiply centimeters by 10.",
+      "4.7 × 10 = 47.",
+      "4.7 cm = 47 mm."
+     ],
+     "ex": {
+      "main": "**47 mm.** Same length, smaller unit, bigger number — the decimal slides one place right.",
+      "tip": "The sheets ask some bars in cm and some in mm on purpose — the conversion is part of the tested skill."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A small graduated cylinder is printed every 1 mL, with 5 spaces between printed numbers. The water's meniscus bottoms out 1 line above the 6 mL mark. What is the volume?",
+     "opts": [
+      "6.2 mL",
+      "6.5 mL",
+      "7 mL",
+      "6.1 mL"
+     ],
+     "ans": 0,
+     "hint": "First: what's each line worth on a 1-mL-per-number scale with 5 spaces?",
+     "steps": [
+      "The gap between printed numbers is 1 mL, cut into 5 spaces: each line is 1 ÷ 5 = 0.2 mL.",
+      "1 line above 6 adds 0.2 mL.",
+      "Reading: 6.2 mL — taken at the bottom of the meniscus curve."
+     ],
+     "ex": {
+      "main": "**6.2 mL.** Small cylinders make the line value a fraction — exactly like the sheet's 4.2 and 7.6 mL cylinders.",
+      "tip": "6.1 assumes tenths per line; 6.5 assumes halves. The 5-space count is what settles it: 0.2 each."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why is a graduated cylinder read at the BOTTOM of the water's curve, at eye level?",
+     "opts": [
+      "Water climbs the walls a little, so the low point is the true level",
+      "The bottom of the curve is easier to see from above",
+      "Reading the top of the curve is also correct",
+      "Cylinders are only accurate when half full"
+     ],
+     "ans": 0,
+     "hint": "The curve is called the meniscus — why does it exist?",
+     "steps": [
+      "Water sticks to the cylinder's walls (adhesion), so its surface curves upward at the edges.",
+      "That curve — the meniscus — makes the edges read falsely high.",
+      "The low point in the middle is the actual water level, and eye level keeps the angle from distorting it."
+     ],
+     "ex": {
+      "main": "**The curve's low point is the true level.** The edges are water climbing the walls, not extra volume.",
+      "tip": "Eye level matters as much as the meniscus — reading from above tilts the whole scale."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A thermometer is printed every 10°C with 5 spaces between printed numbers. The liquid tops out 2 lines above the 30°C mark. What is the temperature?",
+     "opts": [
+      "34°C",
+      "32°C",
+      "40°C",
+      "35°C"
+     ],
+     "ans": 0,
+     "hint": "Work out the line value before counting.",
+     "steps": [
+      "Gap of 10°C over 5 spaces → each line is 2°C.",
+      "2 lines above 30 adds 2 × 2 = 4°C.",
+      "Temperature: 34°C."
+     ],
+     "ex": {
+      "main": "**34°C.** Same two-step as every scale: line value first, then count from the nearest printed number.",
+      "tip": "32°C is the count-lines-as-ones trap again — it follows you from instrument to instrument."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A thermometer's lines are worth 2°C each. The liquid sits 3 lines BELOW the 0°C mark. What is the temperature?",
+     "opts": [
+      "−6°C",
+      "6°C",
+      "−3°C",
+      "−2°C"
+     ],
+     "ans": 0,
+     "hint": "Below zero, the lines are still worth 2°C each — only the sign changes.",
+     "steps": [
+      "Each line is still worth 2°C below zero.",
+      "3 lines below 0 is 3 × 2 = 6 degrees below.",
+      "Below zero means negative: −6°C."
+     ],
+     "ex": {
+      "main": "**−6°C.** The scale keeps its line value across zero; the direction of counting is what flips.",
+      "tip": "Cold-weather readings are where a rushed reading drops the minus sign — say 'below zero' out loud as you write it."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A big cylinder is printed at 400, 500, 600 and 700 mL with 4 spaces between printed numbers. The level sits 1 line above 600. A tiny cylinder is printed every 1 mL with 5 spaces. Which statement is right?",
+     "opts": [
+      "It reads 625 mL — each line is worth 25 mL, far more than the tiny one's",
+      "Both cylinders' lines are worth the same, since both measure mL",
+      "The big cylinder reads 601 mL",
+      "The big cylinder reads 650 mL"
+     ],
+     "ans": 0,
+     "hint": "Work out BOTH line values — 100 ÷ 4 and 1 ÷ 5.",
+     "steps": [
+      "Big cylinder: gap 100 mL over 4 spaces → 25 mL per line. 1 line above 600 = 625 mL.",
+      "Tiny cylinder: gap 1 mL over 5 spaces → 0.2 mL per line.",
+      "Same unit printed on both, but each line is worth over 100 times more on the big one — which is why the line-value step can never be skipped."
+     ],
+     "ex": {
+      "main": "**625 mL — and the two instruments' lines differ by over 100×.** The sheet jumps between exactly these kinds of cylinders back to back.",
+      "tip": "The unit label (mL) tells you WHAT is measured, never HOW MUCH each line is worth."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "A student reads a cylinder by counting 4 lines up from the 50 mL mark and writes \"54 mL.\" The scale is printed every 25 mL with 5 spaces between numbers. What went wrong?",
+     "opts": [
+      "Each line is worth 5 mL, not 1 — the reading is 70 mL",
+      "Nothing — 54 mL is correct",
+      "She should have read the top of the meniscus",
+      "She counted from the wrong end — it's 46 mL"
+     ],
+     "ans": 0,
+     "hint": "25 mL split into 5 spaces makes each line worth how much?",
+     "steps": [
+      "The gap between printed numbers is 25 mL, over 5 spaces → each line is 5 mL.",
+      "4 lines above 50 adds 4 × 5 = 20 mL.",
+      "The right reading is 70 mL — she skipped the line-value step and defaulted to 1 per line."
+     ],
+     "ex": {
+      "main": "**Each line was worth 5 mL, so the reading is 70 mL.** Spotting the skipped step in someone else's work is the surest sign you own the skill.",
+      "tip": "If a reading was this easy to get wrong silently, that's the test question they'll ask — expect a find-the-mistake item."
+     }
+    }
+   ]
+  }
+ }
+}

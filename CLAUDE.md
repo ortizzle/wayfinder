@@ -858,6 +858,40 @@ renders even at zero — "No grades entered yet" stays visible rather than the
 subject silently dropping off the list, which was the entire point of the
 feature. `tools/test_gradesbysubj.js` is the same test file, unchanged.
 
+### Extra reps before the tests (v117)
+
+Two new prep-flagged units from Chris's fresh Drive uploads, plus the
+week-of-8/28 newsletter's tests added to `SUGGESTED_ASSESS` (Plot Diagram
+Quiz 9/2, Cursive Quiz 9/2, Nature of Science Test 9/3, Unit 1 math test
+9/10).
+
+- **`math-t3-extra.json`** (`unit-m3x`) — "Topic 3 · Decimals Extra
+  Practice", from the "extra practice" sheets in the Topic 3 Drive folder:
+  expanded form WITH FRACTIONS (the class's convention — 2 × (1/10), not
+  exponents), word form to numerals, and place-value vs. digit-value
+  tables. All numbers fresh; the two classic traps (interior zeros in
+  expanded form, the digit value of 0) each get a dedicated card and
+  question. No `order` field — "Decimals Extra Practice" title-sorts
+  between 3-7 and Topic Review, verified. The class calls this unit
+  "unit 1" (test 9/10) but the folder says Topic 3 — folder names are
+  authoritative, per the math-program rule, and the shelf's own 3-1..3-7
+  lessons confirm the content matches.
+- **`science-scales.json`** (`unit-sci-scales`) — "Science · Reading Scales
+  Practice" (`order:3`, after Variables), from the measuring-practice
+  sheets + answer key. **Honest-scope call:** the sheets' pictures (where
+  a bar ends, where a meniscus sits) can't be reproduced without inventing
+  them, so the unit drills the REASONING every reading depends on — the
+  what-is-each-line-worth step (gap ÷ spaces), cm↔mm conversion, meniscus,
+  between-the-marks readings, below-zero thermometers — and the parentNote
+  says outright that the paper sheets stay the eye-practice half. The
+  answer key was checked against the sheet; clean.
+- Both ship `prep:true`, so they wear the new gold treatment. The checker
+  caught three real standalone violations in the scales unit's first draft
+  ("That same cylinder…" stems) — rewritten to restate their facts inline;
+  the back-reference rule bites even when you know it's there.
+- `tools/test_extraprep.js` covers shelving positions, the gold stops and
+  band, and a full quiz round on each.
+
 ### Test prep, in gold (v116 / Ad Astra v139, both apps)
 
 The test-prep standout treatment, ported in step: a unit flagged

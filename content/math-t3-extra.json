@@ -1,0 +1,243 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3x": {
+   "id": "unit-m3x",
+   "type": "unit",
+   "updatedAt": 1788028000000,
+   "libv": 1,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "prep": true,
+   "round": 12,
+   "title": "Topic 3 · Decimals Extra Practice",
+   "srcName": "extra practice.pdf — Topic 3 folder (Drive)",
+   "source": "Accelerated Math, the teacher's extra-practice sheets on decimals in expanded form and place value",
+   "summary": {
+    "text": "Two extra-practice sheets for the decimals unit: writing decimals in expanded form using fractions (like 0.35 = 3 × (1/10) + 5 × (1/100)), writing decimals from their word names, and telling apart a digit's PLACE value (the name of its position) from its DIGIT value (what the digit is actually worth there).",
+    "from": "source"
+   },
+   "why": {
+    "text": "The unit 1 math test is Thursday 9/10, and expanded form is where a small slip costs the whole answer — one skipped zero or one wrong fraction and the number changes. Practicing with fresh numbers here means you're doing the thinking, not remembering the sheet.",
+    "from": "added"
+   },
+   "objectives": [
+    {"text": "Write any decimal through thousandths in expanded form with fractions, skipping zero digits.", "from": "source"},
+    {"text": "Turn a decimal's word name into numerals, using 'and' as the decimal point.", "from": "source"},
+    {"text": "Name the place value AND the digit value of any digit in a decimal.", "from": "source"},
+    {"text": "Handle the zero cases — a zero inside a number, and a digit whose value is 0.", "from": "added"}
+   ],
+   "parentNote": {
+    "text": "Built from the 'extra practice' sheets in the Topic 3 Drive folder — decimals in expanded form (the class writes it with fractions: 2 × (1/10), not exponents), word form to numerals, and place-value vs. digit-value tables. Every number here is fresh, so the sheets stay her homework and this stays extra reps of the same skills. The class's unit 1 test is 9/10 per the newsletter, which is why this ships flagged as test prep. Two spots on the sheet are where kids typically slip and get extra attention here: numbers with an interior zero (like 23.020 — the zero gets skipped in expanded form, and knowing WHICH zeros to skip is the skill), and the underlined-zero row where the digit value is just 0.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "One round, then check the Growth Zone before the 9/10 test.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0", "term": "Expanded form with fractions", "from": "source",
+     "def": "**Each digit times its place, written as a sum — decimal places as fractions.**\n• 0.35 = 3 × (1/10) + 5 × (1/100).\n• 47.208 = 4 × 10 + 7 × 1 + 2 × (1/10) + 8 × (1/1000).",
+     "hint": "Digit × place, plus digit × place, all the way across.",
+     "eq": "0.35 = 3 × (1/10) + 5 × (1/100)"
+    },
+    {
+     "id": "c1", "term": "The places after the point", "from": "source",
+     "def": "**Tenths (1/10), then hundredths (1/100), then thousandths (1/1000).**\n• Each step right is ten times smaller.\n• The -ths ending is the giveaway that you're right of the decimal point.",
+     "hint": "One letter apart, a hundred times different: tens vs. tenths."
+    },
+    {
+     "id": "c2", "term": "Skip the zeros in expanded form", "from": "source",
+     "def": "**A digit of 0 contributes nothing, so it's left out of the expanded sum.**\n• 8.06 = 8 × 1 + 6 × (1/100) — no tenths term at all.\n• The zero still matters in the NUMBER (it holds the 6 in the hundredths place); it just doesn't get a term.",
+     "hint": "Zero holds the seat but doesn't get written in the sum."
+    },
+    {
+     "id": "c3", "term": "Word form: 'and' is the decimal point", "from": "source",
+     "def": "**The word 'and' marks exactly where the decimal point goes.**\n• \"Six and four tenths\" = 6.4.\n• The last word names the final place: \"...thousandths\" means the number ends in the thousandths place.",
+     "hint": "Hear 'and', write the point."
+    },
+    {
+     "id": "c4", "term": "Padding word form with zeros", "from": "source",
+     "def": "**If the words say thousandths, the decimal part needs exactly three digits — pad with zeros to get there.**\n• \"Five and twelve thousandths\" = 5.012, not 5.12.\n• Twelve only fills two digits, so a zero slides in front to push it to the thousandths place.",
+     "hint": "Count the digits the last word demands, then pad."
+    },
+    {
+     "id": "c5", "term": "Place value vs. digit value", "from": "source",
+     "def": "**Place value is the NAME of the position; digit value is what the digit is WORTH there.**\n• In 6.38, the 3's place value is tenths; its digit value is 0.3.\n• Two different questions — the table on the sheet asks for both, side by side.",
+     "hint": "Place = the seat's name. Digit value = the money in the seat."
+    },
+    {
+     "id": "c6", "term": "The digit value of a zero", "from": "source",
+     "def": "**A zero's digit value is just 0 — whatever seat it sits in.**\n• In 67.901, the underlined 0 sits in the hundredths place, and its digit value is 0.\n• The place still has a name; the worth is still nothing. Both halves of the answer matter.",
+     "hint": "Zero anywhere is worth zero — but its seat still has a name."
+    },
+    {
+     "id": "c7", "term": "Reading an expanded form backwards", "from": "added",
+     "def": "**To rebuild the number, drop each digit into the place its fraction names.**\n• 5 × 1 + 3 × (1/100) → ones digit 5, hundredths digit 3, and a zero holding the empty tenths seat: 5.03.\n• Any place with no term gets a zero.",
+     "hint": "Missing term = zero in that seat."
+    }
+   ],
+   "questions": [
+    {
+     "id": "q1", "lv": 1, "from": "source", "kind": "mc",
+     "q": "Which is 0.58 written in expanded form?",
+     "opts": ["5 × (1/10) + 8 × (1/100)", "5 × 10 + 8 × 1", "5 × (1/100) + 8 × (1/10)", "58 × (1/10)"],
+     "ans": 0,
+     "hint": "The first digit after the point is tenths.",
+     "steps": [
+      "The 5 sits in the tenths place: 5 × (1/10).",
+      "The 8 sits in the hundredths place: 8 × (1/100).",
+      "Add the terms: 5 × (1/10) + 8 × (1/100)."
+     ],
+     "ex": {"main": "**5 × (1/10) + 8 × (1/100).** Each digit times the fraction for its place.", "tip": "5 × 10 + 8 × 1 would be 58 — watch for the whole-number impostor in the options."}
+    },
+    {
+     "id": "q2", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Which is 0.273 written in expanded form?",
+     "opts": ["2 × (1/10) + 7 × (1/100) + 3 × (1/1000)", "2 × (1/100) + 7 × (1/10) + 3 × (1/1000)", "2 × (1/10) + 7 × (1/1000) + 3 × (1/100)", "273 × (1/100)"],
+     "ans": 0,
+     "hint": "Tenths, then hundredths, then thousandths — in order.",
+     "steps": [
+      "2 is in the tenths place: 2 × (1/10).",
+      "7 is in the hundredths place: 7 × (1/100).",
+      "3 is in the thousandths place: 3 × (1/1000)."
+     ],
+     "ex": {"main": "**2 × (1/10) + 7 × (1/100) + 3 × (1/1000).** The wrong options shuffle the same digits into the wrong seats — order is everything.", "tip": "Read left to right and the fractions grow by one zero each step."}
+    },
+    {
+     "id": "q3", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Which is 7.049 written in expanded form?",
+     "opts": ["7 × 1 + 4 × (1/100) + 9 × (1/1000)", "7 × 1 + 4 × (1/10) + 9 × (1/100)", "7 × 1 + 0 × (1/10) + 4 × (1/100) + 9 × (1/1000) is the only correct way", "7 × 10 + 4 × (1/100) + 9 × (1/1000)"],
+     "ans": 0,
+     "hint": "What happens to the zero in the tenths place?",
+     "steps": [
+      "7 is in the ones place: 7 × 1.",
+      "The 0 in the tenths place contributes nothing, so it gets NO term.",
+      "4 × (1/100) and 9 × (1/1000) finish it: 7 × 1 + 4 × (1/100) + 9 × (1/1000)."
+     ],
+     "ex": {"main": "**7 × 1 + 4 × (1/100) + 9 × (1/1000).** Zeros are skipped — writing the 0 × (1/10) term isn't wrong math, but the class convention (and the sheet's examples) leave it out.", "tip": "The zero still does its job inside 7.049 — it pushes the 4 to hundredths. It just doesn't appear in the sum."}
+    },
+    {
+     "id": "q4", "lv": 2, "from": "source", "kind": "mc",
+     "q": "A hummingbird egg has a mass of 34.061 grams... okay, a very well-fed hummingbird. Which is 34.061 in expanded form?",
+     "opts": ["3 × 10 + 4 × 1 + 6 × (1/100) + 1 × (1/1000)", "3 × 10 + 4 × 1 + 6 × (1/10) + 1 × (1/100)", "34 × 1 + 61 × (1/1000)", "3 × 10 + 4 × 1 + 0 × 6 + 1 × (1/1000)"],
+     "ans": 0,
+     "hint": "Two whole-number places, a zero to skip, then hundredths and thousandths.",
+     "steps": [
+      "3 × 10 and 4 × 1 cover the whole-number part, 34.",
+      "The 0 in the tenths place is skipped.",
+      "6 × (1/100) + 1 × (1/1000) covers .061."
+     ],
+     "ex": {"main": "**3 × 10 + 4 × 1 + 6 × (1/100) + 1 × (1/1000).** Same shape as the sheet's robin's-egg problem, fresh number.", "tip": "Whole-number places multiply by 10s going LEFT; decimal places divide by 10s going RIGHT — the ones place is the hinge."}
+    },
+    {
+     "id": "q5", "lv": 1, "from": "source", "kind": "mc",
+     "q": "Write \"nine and thirty-four hundredths\" in numerals.",
+     "opts": ["9.34", "9.034", "934", "0.934"],
+     "ans": 0,
+     "hint": "'And' is the decimal point; hundredths means two decimal digits.",
+     "steps": [
+      "\"Nine\" before the 'and' is the whole part: 9.",
+      "'And' places the decimal point.",
+      "\"Thirty-four hundredths\" needs exactly two decimal digits: .34 — so 9.34."
+     ],
+     "ex": {"main": "**9.34.** The last word (hundredths) tells you how many decimal digits there must be.", "tip": "Say it back to check: 9.34 reads 'nine and thirty-four hundredths.' If your answer reads differently, it's wrong."}
+    },
+    {
+     "id": "q6", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Write \"fifty-one and eight thousandths\" in numerals.",
+     "opts": ["51.008", "51.8", "51.080", "518.000"],
+     "ans": 0,
+     "hint": "Thousandths means THREE decimal digits — how many does 'eight' fill?",
+     "steps": [
+      "\"Fifty-one\" is the whole part: 51.",
+      "\"Eight thousandths\" needs three decimal digits, but 8 only fills one.",
+      "Pad with two zeros in front: .008 — so 51.008."
+     ],
+     "ex": {"main": "**51.008.** 51.8 says eight TENTHS — a hundred times bigger than eight thousandths. The padding zeros are the whole question.", "tip": "This is the single most-missed word-form pattern — small number, big place word."}
+    },
+    {
+     "id": "q7", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Write \"four hundred sixteen and two hundred seven thousandths\" in numerals.",
+     "opts": ["416.207", "416.27", "400.16207", "416.0207"],
+     "ans": 0,
+     "hint": "Everything before 'and' is whole; 'two hundred seven' must fill three digits.",
+     "steps": [
+      "\"Four hundred sixteen\" is the whole part: 416.",
+      "\"Two hundred seven thousandths\" is 207 filling exactly three decimal digits: .207.",
+      "Together: 416.207."
+     ],
+     "ex": {"main": "**416.207.** The 'and' splits it cleanly — everything after must land in exactly three digits because the last word is thousandths.", "tip": "207 already has three digits, so no padding needed this time — but count every time anyway."}
+    },
+    {
+     "id": "q8", "lv": 1, "from": "source", "kind": "mc",
+     "q": "In the number 45.7, what is the PLACE VALUE of the underlined digit: 45.7̲?",
+     "opts": ["Tenths", "Tens", "Ones", "Sevenths"],
+     "ans": 0,
+     "hint": "First seat to the right of the decimal point.",
+     "steps": [
+      "The 7 sits one place to the right of the decimal point.",
+      "That position is the tenths place.",
+      "Place value asks for the position's NAME — not what the digit is worth."
+     ],
+     "ex": {"main": "**Tenths.** Place value is the seat's name; the digit's worth (0.7) is the next question's job.", "tip": "'Sevenths' isn't a place at all — places are named for powers of ten, never for the digit sitting there."}
+    },
+    {
+     "id": "q9", "lv": 2, "from": "source", "kind": "mc",
+     "q": "Same number, other half of the table: in 45.7, what is the DIGIT VALUE of the 7?",
+     "opts": ["0.7", "7", "70", "1/7"],
+     "ans": 0,
+     "hint": "A 7 in the tenths place is worth 7 of what?",
+     "steps": [
+      "The 7 is in the tenths place.",
+      "Digit value = the digit × its place: 7 × (1/10).",
+      "7 × (1/10) = 0.7."
+     ],
+     "ex": {"main": "**0.7.** Digit value is what the digit is actually worth in that seat — the place's name (tenths) turned into a number.", "tip": "The sheet's table asks for BOTH columns on every row: name the seat, then price it."}
+    },
+    {
+     "id": "q10", "lv": 2, "from": "source", "kind": "mc",
+     "q": "In 82.365, the 6 is underlined: 82.36̲5. What are its place value and digit value?",
+     "opts": ["Hundredths · 0.06", "Tenths · 0.6", "Hundredths · 6", "Thousandths · 0.006"],
+     "ans": 0,
+     "hint": "Count the seats right of the point: tenths, then...",
+     "steps": [
+      "Right of the point: 3 is tenths, 6 is hundredths, 5 is thousandths.",
+      "So the 6's place value is hundredths.",
+      "Its digit value is 6 × (1/100) = 0.06."
+     ],
+     "ex": {"main": "**Hundredths, worth 0.06.** Both answers come from the same count — find the seat, then multiply.", "tip": "The wrong options each get exactly one half right — the sheet's table format punishes half-answers, so practice producing the pair."}
+    },
+    {
+     "id": "q11", "lv": 3, "from": "source", "kind": "mc",
+     "q": "In 59.408, the 0 is underlined: 59.40̲8. What are its place value and digit value?",
+     "opts": ["Hundredths · 0", "Hundredths · 0.04", "Nothing — a zero has no place value", "Thousandths · 0"],
+     "ans": 0,
+     "hint": "The seat has a name even when the digit is worth nothing.",
+     "steps": [
+      "Right of the point: 4 tenths, 0 hundredths, 8 thousandths — the 0 sits in the hundredths seat.",
+      "Its place value is hundredths, exactly like any other digit there.",
+      "Its digit value is 0 × (1/100) = 0."
+     ],
+     "ex": {"main": "**Hundredths, worth 0.** A zero keeps its seat's name but is worth nothing — and it still matters, because it pushes the 8 into the thousandths place.", "tip": "The sheet has a row exactly like this (67.90̲1) — the zero rows are where the table gets tricky."}
+    },
+    {
+     "id": "q12", "lv": 3, "from": "added", "kind": "mc",
+     "q": "A number's expanded form is 6 × 10 + 2 × 1 + 5 × (1/1000). What is the number?",
+     "opts": ["62.005", "62.5", "62.055", "625.000"],
+     "ans": 0,
+     "hint": "Which seats got NO term — and what fills an empty seat?",
+     "steps": [
+      "6 × 10 + 2 × 1 gives the whole part: 62.",
+      "There's no tenths term and no hundredths term — those seats get zeros.",
+      "5 × (1/1000) puts a 5 in the thousandths seat: 62.005."
+     ],
+     "ex": {"main": "**62.005.** Going backwards is the real test of expanded form — every missing term becomes a zero holding its seat.", "tip": "62.5 is the trap: it drops the 5 into the first empty seat it finds. Name each seat before placing anything."}
+    }
+   ]
+  }
+ }
+}
