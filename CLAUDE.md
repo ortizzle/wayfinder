@@ -858,6 +858,17 @@ renders even at zero — "No grades entered yet" stays visible rather than the
 subject silently dropping off the list, which was the entire point of the
 feature. `tools/test_gradesbysubj.js` is the same test file, unchanged.
 
+### Test prep, in gold (v116 / Ad Astra v139, both apps)
+
+The test-prep standout treatment, ported in step: a unit flagged
+`prep:true` — or any `guide:true` unit — wears the opaque gold
+"✍️ TEST PREP" band and gold card edge, and a gold pip ring on the topic
+map. See ad-astra/CLAUDE.md's section of the same name for the full rules
+(explicit flag, never inferred; the measured gold pair; done outranks
+prep). This app ships the engine with no prep-flagged content yet — the
+first study guide River's classes issue picks it up by adding `prep:true`
+(or `guide:true`) to the unit.
+
 ### The lesson you meant (v115 / Ad Astra v138, both apps)
 
 The lesson-picking fixes from the UX review — a tapped map stop now
