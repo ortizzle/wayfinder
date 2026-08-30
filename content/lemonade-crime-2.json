@@ -1,0 +1,621 @@
+{
+ "v": 4,
+ "records": {
+  "unit-lc2": {
+   "id": "unit-lc2",
+   "type": "unit",
+   "updatedAt": 1788118504409,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "book": true,
+   "title": "The Lemonade Crime · Ch. 6–9: Building the Case",
+   "srcName": "The Lemonade Crime, chapters 6–9 (full text in Drive)",
+   "source": "The Lemonade Crime (Jacqueline Davies), reading companion 2 of 3",
+   "summary": {
+    "text": "Chapters 6–9 of The Lemonade Crime: Jessie hands out the trial roles at recess — Evan as plaintiff, Scott as defendant, David Kirkorian as judge because he is friends with neither of them — and Scott refuses a lawyer and says he will defend himself. Jessie and Megan spend an afternoon preparing, until Megan notices the trial is not actually fair to Scott. Evan practises a left-handed shot in the driveway and watches his friends drift to Scott's house to play the Xbox 20/20. On Friday, Scott announces his mother — a real lawyer — will defend him, and Jessie builds a courtroom on the playground out of milk crates, basketballs and jump ropes.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the stretch where the book stops being about missing money and starts being about fairness. Four legal words arrive — impartial, due diligence, defense, bona fide — and each one is tested by something that actually happens: a judge picked for having no friends in the fight, a girl working until she is frightened she has not worked enough, a defense that is really just a games console, and a courtroom made of playground junk that somehow becomes the real thing. Reading these chapters closely makes the trial itself far easier to follow.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Define the four legal terms these chapters are named for — impartial, due diligence, defense, bona fide — using the book's own definitions.",
+     "from": "source"
+    },
+    {
+     "text": "Say who holds each role at the trial, and why David Kirkorian was chosen as judge.",
+     "from": "source"
+    },
+    {
+     "text": "Explain Megan's objection: why a trial where only one side has a lawyer is not fair.",
+     "from": "source"
+    },
+    {
+     "text": "Track why Evan's friends drift to Scott's house, and what that does to his case.",
+     "from": "added"
+    },
+    {
+     "text": "Tell the difference between a defense built on evidence and one built on goodwill.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Second of three reading-companion units, covering only chapters 6–9 — nothing here spoils past the moment the courtroom is set up on Friday afternoon, before the trial begins. Built from the full text of those chapters in Drive, so the four quoted definitions are the book's own wording, exactly as printed. The chapters are quietly doing two things at once, and both are worth a conversation: Megan's objection that a trial with a lawyer on only one side is not fair (Jessie's first answer is that it is Scott's own fault, which is the interesting bit), and the fact that Evan's friends go to Scott's house without ever saying they think he is innocent — they simply decide the quarrel is not theirs. Neither is presented with an obvious right answer, so the two ungraded ponder cards ask her rather than tell her. One content note: the trial only works because the grownups do not know about it, which the book states as a playground rule. It is presented here as something the story depends on, not as advice.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Read through chapter 9 first — stop before the trial starts. Then cards once, and a couple of quiz rounds.",
+    "minutes": 20,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "impartial",
+     "def": "**Treating everyone the same; not taking sides in an argument; fair and just.**\n• The book's own definition, at the top of chapter 6.\n• It is the reason David Kirkorian gets to be judge — he is not friends with Evan OR Scott.",
+     "hint": "An impartial person has no favourite in the fight.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "due diligence",
+     "def": "**Taking the time and making the effort to do a reasonably good job at something; the opposite of negligence.**\n• The book's own definition, at the top of chapter 7.\n• Jessie's version: \"Doing your job so that later, no one can blame you and say you didn't work hard enough.\"",
+     "hint": "Diligence is effort. Due diligence is enough effort that nobody can fault you.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "defense",
+     "def": "**The argument presented in a court of law to prove the innocence of the accused; (in sports) the act of protecting your goal against the opposing team.**\n• The book's own definition, at the top of chapter 8 — and it deliberately carries both meanings.\n• Chapter 8 puts them side by side: Evan works on a basketball move while he worries about Scott's case.",
+     "hint": "One word, two arenas: a courtroom and a court.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "bona fide",
+     "def": "**From the Latin, meaning \"good faith,\" genuine, signifying \"the real thing.\"**\n• The book's own definition, at the top of chapter 9.\n• Jessie uses it when the playground finally looks like an actual courtroom: \"It was a bona fide court. The real deal.\"",
+     "hint": "Say it BOH-na FIDE. It means no fake about it.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Who plays what at the trial",
+     "def": "**Evan is the plaintiff, Jessie is his lawyer, Scott is the defendant, and David Kirkorian is the judge.**\n• Plaintiff = the victim of the crime, the one bringing the case.\n• Defendant = the one on trial.\n• Jessie hands the roles out at recess as colour-coded index cards.",
+     "hint": "Plaintiff complains; defendant defends.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "The colour-coded cards",
+     "def": "**Green = plaintiff, purple = lawyer and jury, yellow = defendant, orange = witness, red = judge, white = audience.**\n• Jessie pulls them out of a big envelope one at a time, like a deck she has already stacked.\n• The red card comes out last, with one word on it, and she draws the moment out on purpose.",
+     "hint": "The red one is the one everybody wants.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Why David Kirkorian is the judge",
+     "def": "**Because he is the only one in the class who is impartial — he is not friends with Evan or with Scott.**\n• The class is horrified. Ryan protests that David collects human bones.\n• David puts a hand over his heart: \"I solemnly swear that I'll be a fair judge.\"\n• Jessie's rule: a judge has to treat everyone the same.",
+     "hint": "He was picked for the one thing nobody likes about him — he belongs to neither side.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Who the witnesses are",
+     "def": "**Everyone who was at Jack's house on the day of the crime: Paul, Ryan, Kevin, Malik and Jack.**\n• Five orange cards, which is why Scott cannot have Ryan or Paul as his lawyer.\n• A witness testifies; a lawyer argues. You cannot be both.",
+     "hint": "Being at the pool party is what makes you a witness.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "The jury, and why the audience is all girls",
+     "def": "**Twelve jurors, and Jessie insists the jury be fifty-fifty.**\n• All five witnesses were boys, so once the jury is split evenly, the six audience cards all land with girls.\n• Megan is offered a jury card, hands it back because she may be away, and takes an audience card instead.",
+     "hint": "The jury split is the reason the audience ends up looking the way it does.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Scott turns down a lawyer",
+     "def": "**Jessie offers him anyone from the audience; he refuses because they are all girls, and says he will defend himself.**\n• Jessie warns him: \"don't come back and complain you weren't offered legal counsel.\"\n• Megan later points out he only said it because there was nobody left he wanted to pick.",
+     "hint": "He turns down help to save face — and it costs him.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "The duty teacher rule",
+     "def": "**When the class gets loud, the duty teacher comes over — and everyone goes quiet, because of an unspoken playground rule: never tell the duty teacher what's really going on.**\n• The trial only works because the grownups do not know about it.\n• Keep this in mind — it is the reason the whole thing has to run on the kids' own sense of fairness.",
+     "hint": "The rule that keeps the grownups out.",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "Adam and the Day of Atonement",
+     "def": "**Adam apologises for ditching Evan in the woods over the summer, because it is Yom Kippur — the Day of Atonement, when you ask people to forgive your sins.**\n• Evan laughs it off; the wrong was months old and already over for him.\n• Hold on to the word atonement. The book keeps coming back to the difference between winning and making things right.",
+     "hint": "Someone apologises for an old wrong, unprompted. That is not an accident in this book.",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "Evan loses his friends to the 20/20",
+     "def": "**Paul and Ryan skip going to Evan's and head to Scott's instead, because Scott said they could try the Xbox 20/20.**\n• Paul's defence of it: \"He didn't do anything to us.\"\n• Evan calls them traitors, and rides off. Even Adam is going over later.\n• Nobody has decided Scott is innocent. They have decided the 20/20 is worth more than taking a side.",
+     "hint": "The money was one loss. The friends are the second one.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "Jessie's preparation",
+     "def": "**She interviews all five witnesses, writes David's lines on index cards, colours a map of the courtroom, and still has her closing argument to write.**\n• For the first time in her life she feels like she is about to take a test she has not studied enough for.\n• That feeling is the whole point of the chapter's word: due diligence.",
+     "hint": "She is not being fussy. She is being thorough, and she is still scared.",
+     "from": "source"
+    },
+    {
+     "id": "c14",
+     "term": "The judge's script",
+     "def": "**Jessie writes out exactly what David must say: \"All rise! Court is in session,\" \"Order in the court!\" and the oath asking a witness to tell the truth.**\n• She does not trust the trial to go right on its own, so she scripts it.\n• Notice who is really running this courtroom, even though someone else holds the gavel.",
+     "hint": "The judge has the robe. Jessie wrote his lines.",
+     "from": "source"
+    },
+    {
+     "id": "c15",
+     "term": "\"Trial by Jury\"",
+     "def": "**The booklet Jessie's mother wrote — where Jessie looks up \"due diligence,\" and later the rule about legal counsel.**\n• It is Jessie's rulebook for the whole trial.\n• It is also how she gets beaten: the same booklet says everybody has the right to a lawyer.",
+     "hint": "Her own source of authority ends up arguing against her.",
+     "from": "source"
+    },
+    {
+     "id": "c16",
+     "term": "Megan spots the unfairness",
+     "def": "**Looking at the map, Megan sees it is not symmetrical: Evan has a lawyer and Scott does not, so the trial is not actually fair.**\n• Jessie's first answer is that it is Scott's own fault.\n• Megan presses anyway: everyone gets a lawyer, even if they are poor, even if nobody likes them, even if everyone thinks they are guilty.",
+     "hint": "The person with no stake in it is the one who sees the flaw.",
+     "from": "source"
+    },
+    {
+     "id": "c17",
+     "term": "\"Obsessie Jessie\" and \"the Queen of Fair\"",
+     "def": "**Two nicknames land on Jessie in one afternoon, and she hates nicknames.**\n• \"Obsessie Jessie\" is Evan's, and it stings that he told Megan.\n• \"Queen of Fair\" she cannot read at all — she cannot tell whether Megan means it kindly or as sarcasm.\n• Sarcasm goes past Jessie \"like a pitch thrown too fast, leaving her swinging at nothing but air.\"",
+     "hint": "The same girl who can quote the law cannot tell if she is being teased.",
+     "from": "source"
+    },
+    {
+     "id": "c18",
+     "term": "Evan's weak-hand shot",
+     "def": "**A turnaround jumper from the top of the key, about fifteen feet out, shot left-handed — his weak hand.**\n• He makes it roughly one try in ten, and wants to flip that around.\n• His dad's advice: \"Work from your weak side, and no one will be able to defend against you.\"",
+     "hint": "He is deliberately practising the thing he is worst at.",
+     "from": "source"
+    },
+    {
+     "id": "c19",
+     "term": "Scott's real defense",
+     "def": "**Evan realises Scott does not need a lawyer, because the Xbox 20/20 is the best defense in town.**\n• Nobody will call Scott guilty if saying so costs them the chance to play it.\n• This is the chapter's word turned inside out: a defense that has nothing to do with evidence.",
+     "hint": "You do not need an argument if you can buy the jury's goodwill.",
+     "from": "source"
+    },
+    {
+     "id": "c20",
+     "term": "Megan can play",
+     "def": "**Megan plays basketball and soccer, is the best shooter on her team, and sinks a three-pointer on Evan's driveway.**\n• Evan is the better ball handler — he figures he would be a point guard.\n• Then she leaves to try the 20/20 at Scott's, and Evan throws the ball at the garage door.\n• Her goodbye: \"See you in school.\" His: \"See you in court!\"",
+     "hint": "She surprises him twice in five minutes — once with the shot, once with where she is going.",
+     "from": "source"
+    },
+    {
+     "id": "c21",
+     "term": "Scott gets a real lawyer",
+     "def": "**Scott announces his mother will defend him — a big-time downtown lawyer whose name has been in the newspaper.**\n• Jessie protests that it is kids only, no grownups allowed.\n• Then she remembers page two of \"Trial by Jury\": everybody has the right to legal counsel. She has to allow it.\n• All she can manage is: \"But she'd better not be late.\"",
+     "hint": "Jessie loses this one to her own rulebook.",
+     "from": "source"
+    },
+    {
+     "id": "c22",
+     "term": "A courtroom made of playground equipment",
+     "def": "**A milk crate stood on end is the podium, two basketballs are seats for Evan and Scott, a dodge ball is Jessie's chair, jump ropes mark the jury box, and Frisbees mark the audience.**\n• The courtroom is the grassy part of the playground, shaded by elm trees, as far from the building as you can get.\n• David brings a real wooden gavel — a gag gift of his dad's — and his brother's graduation robe.",
+     "hint": "Everything in this courtroom is borrowed from a games cupboard.",
+     "from": "source"
+    },
+    {
+     "id": "c23",
+     "term": "Evan is still Equipment Manager",
+     "def": "**Mrs. Overton lets them use the equipment, and it is Evan's job to bring every piece back — he is Equipment Manager until Monday morning.**\n• Earlier that week a jump rope went missing from the 4-O milk crate, and that was his fault too.\n• The boy suing for his lost property is responsible for not losing the school's.",
+     "hint": "Watch this job. The book gave it to him for a reason.",
+     "from": "source"
+    },
+    {
+     "id": "c24",
+     "term": "Ponder: is this trial fair now?",
+     "def": "**Scott has a grownup lawyer. Evan has his little sister.**\n• Megan wanted the sides even. Are they even now, or just uneven the other way?\n• What would you need to change to make it genuinely fair?",
+     "hint": "No wrong answers. Notice whether 'fair' means equal sides or a true verdict.",
+     "from": "added"
+    },
+    {
+     "id": "c25",
+     "term": "Ponder: are Paul and Ryan bad friends?",
+     "def": "**They go to Scott's house. They also never said Evan was wrong.**\n• Paul's reason: \"He didn't do anything to us.\" Is that fair enough, or is it a dodge?\n• Would you have gone?",
+     "hint": "Try answering it once as Evan and once as Paul.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The book defines impartial as treating everyone the same and not taking sides. Why does that word decide who becomes judge?",
+     "opts": [
+      "David Kirkorian is friends with neither Evan nor Scott",
+      "David Kirkorian is the tallest person in the class",
+      "David Kirkorian asked for the job before anyone else did",
+      "David Kirkorian is the only one who has watched a real trial"
+     ],
+     "ans": 0,
+     "hint": "Ask what a judge must NOT have.",
+     "steps": [
+      "Impartial means having no favourite in the argument.",
+      "A judge who is friends with one side would want that side to win.",
+      "David is not friends with Evan or with Scott, so he has nothing to gain either way.",
+      "That is exactly why Jessie hands him the red card."
+     ],
+     "ex": {
+      "main": "**He is friends with neither of them.** Being liked is not the qualification — having no stake is. It is the one thing that lets a judge treat both sides the same.",
+      "tip": "Impartial is about connections, not knowledge. You can know nothing about a case and still judge it fairly."
+     },
+     "passage": "impartial (im-pärʼshǝl), adj. Treating everyone the same; not taking sides in an argument; fair and just."
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Scott is offered a lawyer and turns it down. What reason does he give at the time?",
+     "opts": [
+      "He does not think he needs one because he is innocent",
+      "He does not want a girl lawyer",
+      "He wants to save the money it would cost",
+      "He believes his mother has already agreed to do it"
+     ],
+     "ans": 1,
+     "hint": "Everyone left to choose from was in the audience.",
+     "steps": [
+      "All five witnesses were boys, so the six audience cards had gone to girls.",
+      "Scott could pick any of them as his lawyer.",
+      "He refuses on the spot, saying he does not want a girl lawyer, and declares he will defend himself.",
+      "His mother only enters the story later, in chapter 9."
+     ],
+     "ex": {
+      "main": "**He refuses because the only people left to pick were girls.** He turns down real help to avoid looking bad — and Megan later points out that is the whole reason he said it.",
+      "tip": "Watch how often in this book somebody chooses their pride over their own case."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jessie looks up a phrase to describe how hard she is working, and finds it in a booklet her mother wrote. What does she find?",
+     "opts": [
+      "Impartial — treating both sides of a fight the same",
+      "Bona fide — the proof that something is truly genuine",
+      "Due diligence — enough effort that nobody can blame you later",
+      "Defense — the argument that the accused is innocent"
+     ],
+     "ans": 2,
+     "hint": "She is arguing that she is not obsessed, just thorough.",
+     "steps": [
+      "Megan calls her obsessed, using Evan's nickname for her.",
+      "Jessie objects that she is not obsessed, she just works hard.",
+      "She hunts through \"Trial by Jury\" for the proper name for it.",
+      "The phrase is due diligence: doing the job so that afterwards nobody can say you did not work hard enough."
+     ],
+     "ex": {
+      "main": "**Due diligence.** It is her defence against being called obsessed — there is a real word for taking the work seriously, and she wants it.",
+      "tip": "The opposite of due diligence is negligence: not bothering to do the job properly."
+     },
+     "passage": "due diligence (doo dilʼǝ-jǝns), n. Taking the time and making the effort to do a reasonably good job at something; the opposite of negligence."
+    },
+    {
+     "id": "q3",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Megan looks at the map of the courtroom and says it is not symmetrical. What is she actually pointing out?",
+     "opts": [
+      "The witnesses are standing where the audience should sit",
+      "The judge's podium is too far from the jury box",
+      "There are more jurors on one side of the grass than the other",
+      "Evan has a lawyer and Scott does not, so the sides are not even"
+     ],
+     "ans": 3,
+     "hint": "She is talking about fairness, not about drawing.",
+     "steps": [
+      "Megan draws a dotted line down the middle of Jessie's map.",
+      "On one side: Jessie as lawyer, with Evan. On the other: Scott, alone.",
+      "The imbalance on the paper is an imbalance in the trial itself.",
+      "Her point is that it is not fair to Scott, whatever he said about defending himself."
+     ],
+     "ex": {
+      "main": "**Scott has no lawyer, so the two sides are not even.** Megan uses the drawing to make a fairness argument — and she is right, which is why it stings.",
+      "tip": "She adds the part that matters most: you get a lawyer even if you are poor, even if nobody likes you, even if everyone thinks you are guilty."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Evan spends the afternoon shooting left-handed from fifteen feet, a shot he makes about one try in ten. Why is he practising the shot he is worst at?",
+     "opts": [
+      "His dad said a strong weak side makes you impossible to defend",
+      "His coach has told him to stop shooting with his right hand",
+      "He hurt his right hand and cannot shoot the other way",
+      "It is the one shot Megan has not already beaten him at"
+     ],
+     "ans": 0,
+     "hint": "The reason is a line from his father.",
+     "steps": [
+      "The shot is a turnaround jumper from the top of the key, taken with his left — his weak hand.",
+      "He makes it about one time in ten, and wants to flip that around.",
+      "His dad used to tell him: work from your weak side, and no one will be able to defend against you.",
+      "So the point is not that it is hard. The point is that mastering it removes an opponent's advantage."
+     ],
+     "ex": {
+      "main": "**Because his dad taught him that your weak side is worth strengthening.** A player with no weak side cannot be defended — that is why he keeps missing on purpose, so to speak.",
+      "tip": "The chapter is called Defense, and it is quietly making the same point about the trial: your weakest spot is the one worth working on."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Evan works out that Scott does not really need a lawyer at all. What does he decide Scott's best defense is?",
+     "opts": [
+      "His mother, because she is a well-known lawyer",
+      "The Xbox 20/20, because nobody wants to lose their turn on it",
+      "The missing jump rope, because it muddles the evidence",
+      "The duty teacher, because she will shut the trial down"
+     ],
+     "ans": 1,
+     "hint": "Think about what everyone in the class suddenly wants.",
+     "steps": [
+      "Every day that week, more of Evan's friends go to Scott's house after school.",
+      "They go because Scott lets them try the Xbox 20/20.",
+      "Evan realises nobody will vote Scott guilty if that costs them the chance to play it.",
+      "So the game console is doing the job a defence lawyer would do — without a single argument."
+     ],
+     "ex": {
+      "main": "**The 20/20.** It is a defense with no evidence in it at all, which is what makes it so hard to beat. Scott is buying goodwill, and goodwill is what a jury runs on.",
+      "tip": "His mother does become his lawyer, but that comes later — this realisation is about the console."
+     },
+     "passage": "defense (di-fensʼ), n. The argument presented in a court of law to prove the innocence of the accused; (in sports) the act of protecting your goal against the opposing team."
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jessie says the trial is for kids only, then has to let Scott's mother be his lawyer anyway. What changes her mind?",
+     "opts": [
+      "Evan asks her to allow it so the trial looks fair",
+      "Mrs. Overton tells her a grownup has to be present",
+      "Her own booklet says everybody has the right to legal counsel",
+      "David Kirkorian rules against her as judge"
+     ],
+     "ans": 2,
+     "hint": "She is beaten by something she had already read.",
+     "steps": [
+      "Jessie first tells Scott that no grownups are allowed.",
+      "Scott asks whether she is saying he cannot have a lawyer.",
+      "Jessie remembers page two of \"Trial by Jury\" — everybody has the right to legal counsel.",
+      "It is her mother's own booklet, so she cannot argue with it. She gives in, and only says his mother had better not be late."
+     ],
+     "ex": {
+      "main": "**Her own rulebook.** The booklet she has been using to run the trial contains the rule that costs her the advantage — and being fair means following it even when it hurts her side.",
+      "tip": "This is the same rule Megan was arguing for in chapter 7. Jessie brushed it off then; now it arrives with a real lawyer attached."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "The courtroom is built out of playground equipment. Which set-up matches the book?",
+     "opts": [
+      "A picnic table bench, with backpacks marking the jury box",
+      "Desks dragged outside, with chalk lines marking the jury box",
+      "The basketball court, with the free-throw line as the bar",
+      "A milk crate podium, basketballs to sit on, jump ropes for the jury"
+     ],
+     "ans": 3,
+     "hint": "Everything comes out of the class equipment crate.",
+     "steps": [
+      "Jessie sets a milk crate on its end so it looks like a podium, and puts David's index cards on top.",
+      "Evan and Scott each get a basketball to sit on; Jessie's chair is a dodge ball.",
+      "Jump ropes are stretched out to mark the box where the jurors sit.",
+      "Frisbees mark where the audience sits on the grass."
+     ],
+     "ex": {
+      "main": "**Milk crate, basketballs, jump ropes.** The whole courtroom is borrowed sports equipment, which is why Jessie calls it bona fide only once it is standing — she had to see it to believe it.",
+      "tip": "It happens on the grassy part of the playground, shaded by elms, as far from the school building as they can get."
+     },
+     "passage": "bona fide (bōʼna fid), adj. From the Latin, meaning \"good faith,\" genuine, signifying \"the real thing.\""
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "David Kirkorian turns up to be judge with two props. What are they?",
+     "opts": [
+      "A real wooden gavel and his brother's graduation robe",
+      "A plastic toy gavel and a black raincoat from home",
+      "A wooden gavel and a powdered wig from a costume box",
+      "A judge's robe hired from a real costume shop"
+     ],
+     "ans": 0,
+     "hint": "One was a joke present; one was a hand-me-down.",
+     "steps": [
+      "David borrows a real wooden gavel from his dad — it had been a gag gift.",
+      "He pulls a bunched-up ball of black cloth out of a paper bag: his brother's graduation robe.",
+      "The robe is far too big and puddles at his feet.",
+      "He stands behind the milk crate so it hides the extra fabric, and it works."
+     ],
+     "ex": {
+      "main": "**A real gavel and his brother's graduation robe.** Both are borrowed and neither quite fits, and yet Jessie admits he looks like a real judge — which is the chapter's point about what makes something genuine.",
+      "tip": "He also brings his own block of wood to bang the gavel on. He is taking it seriously."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Adam apologises to Evan for ditching him in the woods months earlier. What prompts the apology?",
+     "opts": [
+      "Evan brought it up and demanded an apology from him",
+      "It is Yom Kippur, when you ask people to forgive your sins",
+      "Paul told Adam that Evan was still upset about it",
+      "Adam wants Evan to take his side at the coming trial"
+     ],
+     "ans": 1,
+     "hint": "It is tied to a holiday Adam is helping his mother prepare for.",
+     "steps": [
+      "Adam cannot come over because he is helping get the house ready for Yom Kippur.",
+      "Then he raises something from the summer, unprompted.",
+      "He explains it himself: it is the Day of Atonement, and you go around asking people to forgive your sins.",
+      "Evan laughs, shoves him, and lets it go — for him it was over already."
+     ],
+     "ex": {
+      "main": "**Yom Kippur.** Nobody made him do it; the day did. Keep the idea of atonement in mind — this book is heading somewhere with the difference between winning an argument and making things right.",
+      "tip": "A break-fast party follows at sunset, once the day's fasting is over."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "order",
+     "q": "The Lemonade Crime, ch. 6-9. Put these events in the order they happen.",
+     "opts": [
+      "Jessie hands out the role cards at recess and names David judge",
+      "Jessie and Megan spend the afternoon making the map and the nametags",
+      "Megan sinks a three-pointer on Evan's driveway, then leaves for Scott's",
+      "Jessie sets up the courtroom on the grass before the trial"
+     ],
+     "ans": 0,
+     "hint": "Roles, then preparation, then the last afternoon, then Friday itself.",
+     "steps": [
+      "Chapter 6 is at recess: the index cards come out and David gets the red one.",
+      "Chapter 7 is the afternoon of preparation — the map, the nametags, the judge's script.",
+      "Chapter 8 is later that same afternoon, out on the driveway, when Megan stops by on her way to Scott's.",
+      "Chapter 9 is Friday, when Jessie finally builds the courtroom out of milk crates and jump ropes."
+     ],
+     "ex": {
+      "main": "**Cards, preparation, driveway, courtroom.** Four chapters, four steps closer to the trial — the book is counting down, and each chapter's legal word marks a stage of getting ready.",
+      "tip": "Getting the timeline straight makes the trial itself much easier to follow."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which statement about the trial's set-up is NOT true?",
+     "opts": [
+      "The five witnesses are the boys who were at Jack's house that day",
+      "There are twelve jurors, and Jessie insists the jury be fifty-fifty",
+      "Megan sits on the jury after talking her mother into leaving later",
+      "The judge is chosen because he is friends with neither Evan nor Scott"
+     ],
+     "ans": 2,
+     "hint": "Three of these match the book exactly. One swaps a detail.",
+     "steps": [
+      "Megan is offered a jury card, but hands it back because she might be away that weekend.",
+      "She takes a white audience card instead, and that does not change even once she can come.",
+      "The twelve-juror fifty-fifty split, the five boy witnesses, and David's impartiality are all as written.",
+      "So the false one is the claim that Megan ends up on the jury."
+     ],
+     "ex": {
+      "main": "**Megan does not sit on the jury.** She gives the card back and takes an audience card — and it matters, because Evan had counted her as one vote he could rely on.",
+      "tip": "With a NOT-true question, check every option against the text rather than picking the first one that feels odd."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jessie cannot tell whether Megan means \"the Queen of Fair\" kindly or as an insult. What does the book say about her and sarcasm?",
+     "opts": [
+      "She only misses it when she is tired from working too long",
+      "She always assumes the worst and gets angry about it",
+      "She has taught herself to spot it by watching people's faces",
+      "It goes past her like a pitch thrown too fast, leaving her swinging at nothing"
+     ],
+     "ans": 3,
+     "hint": "The comparison is a sporting one.",
+     "steps": [
+      "Sarcasm is saying something one way and meaning the opposite.",
+      "Jessie knows what it is — she can define it.",
+      "But the book says she always misses it, comparing it to a pitch thrown too fast.",
+      "She is left swinging at nothing but air."
+     ],
+     "ex": {
+      "main": "**Like a pitch thrown too fast — she swings and misses.** The girl who can quote her mother's law booklet from memory cannot read a friendly tease, and the book is gentle about it rather than making it a joke.",
+      "tip": "That gap is worth watching: Jessie is brilliant at rules and shaky at people."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What job does Evan still hold on the day of the trial, and what does it mean for him?",
+     "opts": [
+      "Equipment Manager — he has to get every borrowed item back",
+      "Line Leader — he has to bring the class in from the playground",
+      "Class Treasurer — he has to count the money the class raised",
+      "Milk Monitor — he has to return the crate to the cafeteria"
+     ],
+     "ans": 0,
+     "hint": "It is why the playground equipment can be used at all.",
+     "steps": [
+      "Mrs. Overton lets them use the equipment without asking questions.",
+      "She makes clear it is Evan's responsibility to bring everything back afterwards.",
+      "He is Equipment Manager until Monday morning, even though it is Friday afternoon.",
+      "Earlier that week a jump rope went missing from the crate, and that was counted as his fault too."
+     ],
+     "ex": {
+      "main": "**Equipment Manager, so every ball and rope is his responsibility.** There is a quiet joke in it: the boy holding a trial about his own lost property is on the hook for the school's.",
+      "tip": "Keep an eye on this. A responsibility the book repeats twice is rarely just background."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Paul and Ryan go to Scott's house after school instead of Evan's. What reason does Paul give?",
+     "opts": [
+      "They had already promised Scott earlier in the week",
+      "Scott had not done anything to THEM",
+      "They believe Scott is innocent of taking the money",
+      "Evan had been too angry to be around lately"
+     ],
+     "ans": 1,
+     "hint": "His reason is about who was wronged.",
+     "steps": [
+      "Evan invites them over and they say they are going to Scott's.",
+      "Evan calls them traitors for it.",
+      "Paul's answer is that Scott did not do anything to them.",
+      "He also says Evan does not know for sure that Scott took the money — but the reason he gives for going is that it was not their quarrel."
+     ],
+     "ex": {
+      "main": "**That Scott had not wronged them.** Notice it is not a claim that Scott is innocent — it is a claim that the argument is not theirs. Evan hears it as betrayal, and the book lets both readings stand.",
+      "tip": "This is the first crack in Evan's certainty that his side is obviously everyone's side."
+     }
+    }
+   ]
+  }
+ }
+}

@@ -903,6 +903,50 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The Lemonade Crime · Ch. 6–9 (v119)
+
+Second of three reading companions (`unit-lc2`, `content/lemonade-crime-2.json`),
+built from "Lemonade Crime Chapters 6-9.pdf" that Chris uploaded 2026-08-30.
+26 cards, 15 questions, spoiler-bounded at the end of chapter 9 — the
+courtroom is built but the trial has not started. Shelves behind Ch. 1–5 on
+the existing "The Lemonade Crime" spine by plain title sort; no `order` field
+needed (`Ch. 1–5` before `Ch. 6–9`, verified).
+
+- **The four chapter-title words carry the book's own definitions, quoted
+  verbatim as `passage` plates** — impartial, due diligence, defense, bona
+  fide — matching how unit 1 handled *fraud*. They were transcribed from the
+  source text including the pronunciation respellings, not reworded.
+- **`tools/builders/build_lemonade_2.py` is the first builder for a book
+  unit.** `unit_common.build()` does not know about `book:true`, so the
+  script assembles the unit dict itself and only borrows `card()`, `q()` and
+  `_balance()`. Passages are attached AFTER `_balance()` by question id —
+  `_balance` swaps options inside a question but never reorders questions, so
+  ids stay stable.
+- The two ungraded ponder cards ask the questions the chapters actually
+  raise and refuse to answer: whether the trial is fair now that Scott has a
+  grownup lawyer and Evan has his little sister, and whether Paul and Ryan
+  are bad friends for going to Scott's house without ever saying Scott is
+  innocent.
+- `parentNote` flags one thing worth a grown-up's eye: the trial only works
+  because the grownups do not know about it, which the book states outright
+  as a playground rule. It is presented as something the plot depends on,
+  never as advice.
+
+> ⚠️ **Chapters 10–14 could not be built.** "Lemonade Crime Chapters
+> 10-14.pdf" is a pure scan with no text layer (`read_file_content` returns
+> 66 empty page tables) AND is 18 MB, over `download_file_content`'s 10 MB
+> cap — so it can be neither extracted nor rendered locally, and
+> `copy_file` cannot convert a PDF to a Doc to force Drive's OCR. The
+> chapters 6–9 file was 13 MB but *had* a text layer, which is why it
+> worked. To ship unit 3, the file needs splitting or re-saving smaller.
+
+`tools/test_lemonade2.js` covers shelving order, the book-unit rules (no
+Beat the clock), a full quiz round, the passage plate actually rendering,
+and the 26-card deck. The passage check walks whole ROUNDS rather than
+single questions — a 5-question round drawn from 15 need not contain one of
+the four, and the first version of the test failed for exactly that reason
+rather than for a real bug.
+
 ### Tutoring on Today (v118 / Ad Astra v140, both apps)
 
 Ported in step — same engine as Ad Astra's section of the same name.
