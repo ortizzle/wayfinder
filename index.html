@@ -1388,7 +1388,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v117 · extra reps before the tests';
+const APP_VERSION = 'v118 · tutoring on Today';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -2685,6 +2685,18 @@ const STUDENT_HOURS = [
    earlier would send her to a door that isn't open yet. */
 const HOURS_START = '2026-08-17';
 const hoursFor = id => AZ.today() >= HOURS_START ? STUDENT_HOURS.find(h=>h.ids.includes(id)) : null;
+
+/* Tutoring — a standing weekly commitment, read once from her calendar at
+   Chris's request (2026-08-30) so Today can say when it lands. Times only;
+   the tutor's name stays private, never in this public file. d uses AZ
+   weekday numbers (0 = Sunday). Not tied to school being in session — it is
+   an outside appointment, not a teacher's office hours — so it is not gated
+   on a school day the way STUDENT_HOURS is. When the schedule changes on the
+   calendar, edit here and redeploy; this does not read the calendar live. */
+const TUTORING = [
+  {d:1, times:'3:00–5:00 pm'},
+  {d:2, times:'3:00–5:00 pm'}
+];
 
 /* Tests the newsletter announces, offered in the parent view as one-tap adds.
    Accepting writes an ordinary assess record; dismissing tombstones the same
@@ -4320,6 +4332,24 @@ SCREENS.today = function(root){
     });
     hc.appendChild(el('div','hintline','Extra time with your teacher. Anyone can go — it is help, not trouble.'));
     root.appendChild(hc);
+  }
+
+  /* Tutoring today — a standing weekly appointment, not the school's. Keyed
+     on the real weekday (wd), never shownDate, since it is not tied to a
+     school day the way Student hours is — River's tutoring runs on a plain
+     Monday/Tuesday, school day or not. */
+  const tut = TUTORING.filter(t=>t.d===wd);
+  if(tut.length){
+    const tc = el('div','card quiet');
+    tc.appendChild(el('div','eyebrow','Tutoring today'));
+    tut.forEach(t=>{
+      const r = el('div','row');
+      const kk = el('span','k','🧑‍🏫 Tutoring');
+      kk.appendChild(el('small',null, t.times));
+      r.appendChild(kk);
+      tc.appendChild(r);
+    });
+    root.appendChild(tc);
   }
 
   const ms = nextMilestone(date);

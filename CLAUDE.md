@@ -903,6 +903,20 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Tutoring on Today (v118 / Ad Astra v140, both apps)
+
+Ported in step — same engine as Ad Astra's section of the same name.
+`TUTORING` here holds River's real slots as read from the calendar (one-time
+read granted 2026-08-30, at Chris's request that it "show up in the daily
+briefing"): **Mondays and Tuesdays, 3:00–5:00 pm**, weekly. Keyed on the real
+weekday, not `shownDate` — River's rotating-schedule Today can show a future
+school day's line-up when today is not one, but tutoring is her own
+appointment and runs regardless (verified against Labor Day, a Monday with
+no school, in `tools/test_tutoring.js`). See ad-astra/CLAUDE.md's section of
+the same name for the full reasoning: read-once not live-synced, times only
+and no tutor name (same privacy rule as `STUDENT_HOURS`), and why it is a
+separate card from Student hours rather than folded into it.
+
 ### The lesson you meant (v115 / Ad Astra v138, both apps)
 
 The lesson-picking fixes from the UX review — a tapped map stop now
