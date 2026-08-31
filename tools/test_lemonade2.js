@@ -1,5 +1,5 @@
-/* The Lemonade Crime · Ch. 6–9 (v119) — shelves behind Ch. 1–5, plays as a
-   book unit (no Beat the clock), and the quoted definitions render. */
+/* The Lemonade Crime, all four parts (v120) — the shelf reads in chapter
+   order, each part plays as a book unit, and the quoted definitions render. */
 const { chromium } = require('playwright');
 const PORT = process.argv[2] || 8119;
 (async () => {
@@ -11,7 +11,7 @@ const PORT = process.argv[2] || 8119;
   const out = []; const ck = (n, ok, got) => out.push({n, ok: !!ok, got});
 
   const seed = await p.evaluate(async () => {
-    for (const f of ['lemonade-crime-1', 'lemonade-crime-2']) {
+    for (const f of ['lemonade-crime-1','lemonade-crime-2','lemonade-crime-3','lemonade-crime-4']) {
       const j = await (await fetch(`./content/${f}.json`, {cache:'no-store'})).json();
       const u = Object.values(j.records)[0];
       u.status = 'approved'; u.updatedAt = Date.now() - 1000;
@@ -37,8 +37,9 @@ const PORT = process.argv[2] || 8119;
     return {titles, opened: oc ? oc.textContent.slice(0, 120) : null,
             clock: oc ? /Beat the clock/.test(oc.textContent) : null};
   });
-  ck('both parts are on one Lemonade Crime shelf, in reading order',
-     shelf.titles.length === 2 && /1–5/.test(shelf.titles[0]) && /6–9/.test(shelf.titles[1]), shelf.titles);
+  ck('all four parts are on one shelf, in reading order',
+     shelf.titles.length === 4 && /1–5/.test(shelf.titles[0]) && /6–9/.test(shelf.titles[1])
+     && /10–13/.test(shelf.titles[2]) && /14–16/.test(shelf.titles[3]), shelf.titles);
   ck('the opened card is Ch. 6–9', /6–9/.test(shelf.opened||''), shelf.opened);
   ck('no Beat the clock on a book unit', shelf.clock === false, shelf.clock);
 
@@ -95,6 +96,35 @@ const PORT = process.argv[2] || 8119;
     return seen;
   });
   ck('the 26-card deck steps through cleanly', cards >= 20, cards);
+
+  /* Units 3 and 4 (the trial and the ending) play end to end too, and only
+     the last one carries capstone:true — the book has a real finish. */
+  const rest = await p.evaluate(async () => {
+    const run = async id => {
+      quizState = null;
+      go('quiz', {unitId:id, classId:'english'});
+      let guard = 0;
+      while (view === 'quiz' && guard++ < 30) {
+        const opts = [...document.querySelectorAll('#screen .opt:not([disabled])')];
+        if (opts.length) for (const o of opts) { o.click(); await new Promise(r=>setTimeout(r,4)); }
+        await new Promise(r=>setTimeout(r,8));
+        const next = document.querySelector('#screen .btn-primary, #screen .explain.go-on');
+        if (next) { next.click(); await new Promise(r=>setTimeout(r,8)); continue; }
+        if (!opts.length) break;
+      }
+      return all('log').some(l => l.unitId === id);
+    };
+    return {
+      lc3: await run('unit-lc3'), lc4: await run('unit-lc4'),
+      caps: ['unit-lc1','unit-lc2','unit-lc3','unit-lc4'].filter(i => DATA.records[i].capstone),
+      lc4Cards: DATA.records['unit-lc4'].cards.length,
+      lc3Cards: DATA.records['unit-lc3'].cards.length
+    };
+  });
+  ck('a full round on Ch. 10–13 completes and logs', rest.lc3, rest);
+  ck('a full round on Ch. 14–16 completes and logs', rest.lc4, rest);
+  ck('only the final part is the capstone',
+     rest.caps.length === 1 && rest.caps[0] === 'unit-lc4', rest.caps);
 
   out.forEach(r => console.log((r.ok ? ' ok ' : 'FAIL ') + r.n + (r.ok ? '' : ' -> ' + JSON.stringify(r.got).slice(0,300))));
   console.log(out.every(r=>r.ok) ? 'ALL PASS' : 'FAILURES');

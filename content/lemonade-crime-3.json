@@ -1,0 +1,586 @@
+{
+ "v": 4,
+ "records": {
+  "unit-lc3": {
+   "id": "unit-lc3",
+   "type": "unit",
+   "updatedAt": 1788119823281,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "book": true,
+   "title": "The Lemonade Crime · Ch. 10–13: The Trial",
+   "srcName": "The Lemonade Crime, chapters 10–13 (full text in Drive)",
+   "source": "The Lemonade Crime (Jacqueline Davies), reading companion 3 of 4",
+   "summary": {
+    "text": "Chapters 10–13 of The Lemonade Crime: the trial itself. David opens court and Jessie calls her witnesses, who all tell the same story — Scott went into Jack's house alone and left in a hurry. Then Jessie puts Evan on the stand, the court demands to know where he got the money, and he admits he took it from Jessie's lock box. Jessie lies under oath to protect him. Scott's mother drives up and leaves without getting out of the car, so Megan stands up and defends Scott instead — asking one question at a time about what anyone actually saw, and getting Scott to admit under oath that his parents bought the Xbox 20/20. The jury returns a verdict of not guilty, and almost nobody believes it.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the heart of the book, and it does something braver than most stories for your age: the good guys run a fair trial and get an answer they hate. Four legal words carry it — trial by jury, perjury, Sixth Amendment, circumstantial evidence — and each one turns out to matter in a way nobody planned. Reading these chapters closely is what makes the ending land, because the last three chapters are the book's answer to the question this trial leaves open.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Define trial by jury, perjury, Sixth Amendment and circumstantial evidence using the book's own definitions.",
+     "from": "source"
+    },
+    {
+     "text": "Explain why five witnesses telling the same story is not the same as five pieces of evidence.",
+     "from": "source"
+    },
+    {
+     "text": "Say what Jessie's lie was, and why the book calls it perjury rather than a mistake.",
+     "from": "source"
+    },
+    {
+     "text": "Explain why Jessie allows Megan to defend Scott even though it costs her the case.",
+     "from": "added"
+    },
+    {
+     "text": "Tell the difference between 'not guilty' and 'innocent'.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Third of four reading-companion units, covering chapters 10–13 — the trial from opening gavel to verdict. It stops before the basketball game that follows, so nothing spoils the ending. Built from the full text of those chapters; the four quoted definitions are the book's own wording. Two things in here are worth a conversation. First, Evan admits under oath that he took the $208 from Jessie in the first place (that is the plot of the previous book, The Lemonade War), and Jessie then lies in court to protect him — the unit names it as perjury and does not soften it, but also does not moralise, because chapter 15 has the grandmother handle it better than we could. Second, the trial is scrupulously fair and returns a verdict almost nobody believes, which the book states outright. The two ungraded ponder cards ask her about both rather than telling her what to think. Worth knowing that 'not guilty' means 'not proven' — that distinction is the point of the whole section, and it comes up again in the last chapter.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Read through chapter 13 first — stop at the verdict. Then cards once, and a couple of quiz rounds.",
+    "minutes": 20,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "trial by jury",
+     "def": "**A legal proceeding in which the guilt or innocence of a person accused of a crime is decided by a group of his or her peers, rather than by a judge or panel of judges.**\n• The book's own definition, at the top of chapter 10.\n• Peers means equals — here, the other fourth-graders. Not the judge, and not a grownup.",
+     "hint": "A jury of your peers means people like you decide, not an expert.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "perjury",
+     "def": "**Purposely telling a lie in a court of law after taking an oath to tell the truth and only the truth.**\n• The book's own definition, at the top of chapter 11.\n• The word 'purposely' is doing a lot of work: being wrong is not perjury. Lying on purpose is.",
+     "hint": "An honest mistake under oath is not perjury. A deliberate lie is.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Sixth Amendment",
+     "def": "**The part of the U.S. Constitution that explains the rights of anyone who is accused of a crime and brought to trial, including the right to legal counsel.**\n• The book's own definition, at the top of chapter 12.\n• Legal counsel means a lawyer. It is the rule Megan has been arguing for since she saw Jessie's map.",
+     "hint": "It is the rule that says even someone everybody thinks is guilty gets a lawyer.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "circumstantial evidence",
+     "def": "**Indirect evidence that makes a person seem guilty. For example, if a suspect is seen running away from the scene of a crime, a jury might assume that he's guilty of the crime, even though no one saw him commit it.**\n• The book's own definition, at the top of chapter 13.\n• Everything against Scott is this kind: he went inside alone, came down dressed, and left in a hurry. Nobody saw him take anything.",
+     "hint": "It points at someone without ever showing them doing it.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The jury stops being just kids",
+     "def": "**Evan knows every face in the jury box, but seeing them together as a jury makes them look unfamiliar — even Adam, his best friend.**\n• One at a time they are the kids he has known most of his life.\n• Together, in the box Jessie made of jump ropes, they have turned into something much bigger: the people who decide.",
+     "hint": "A group can be something different from the people in it.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Everyone agreed to the rules",
+     "def": "**Every fourth-grader turned up after school and put on a nametag — as if a whole new set of rules had appeared and everyone agreed to follow them.**\n• Even Malik, who taped his nametag to his backside, is standing in the witness box ready to testify.\n• That agreement is the only thing holding the court together. There is no grownup making anyone do this.",
+     "hint": "The court is real only because everybody decided to treat it as real.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Scott always spins it his way",
+     "def": "**Evan remembers playing pick-up sticks for pennies in first grade: the moment he got ahead, Scott fetched his dad, who stopped the game and made Evan give back everything he had won.**\n• Scott's rule was never spoken out loud — but Evan noticed. Betting wasn't allowed. Losing was.\n• It is why Evan cannot let this go: it is not really about $208, it is about Scott always coming out on top.",
+     "hint": "Watch how Scott changes the rules once he starts losing.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Jack's testimony",
+     "def": "**Both boys changed into borrowed swimsuits and left their clothes in Jack's room, and Scott went into the house alone, came down dressed, and left in a hurry.**\n• Jessie makes the jury hear one fact twice: Evan's shorts and Scott's shorts were in the SAME room.\n• Jack never saw anything taken. He only saw Scott go in and rush out.",
+     "hint": "Every fact Jack gives is about opportunity, not about the act itself.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "Five witnesses, one story",
+     "def": "**Each boy says the same thing, and the book notes that hearing it five times made it seem like it was the absolute truth.**\n• That line is a warning, not a compliment.\n• Repeating a story does not add evidence to it. Five people describing the same door is still nobody seeing the money.",
+     "hint": "Repetition feels like proof. It isn't.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Jessie calls Evan — and it backfires",
+     "def": "**She puts Evan on the stand because everyone likes him, without planning a single question — and the court immediately demands the one question she was avoiding.**\n• Jurors and audience start chanting for it: where did Evan get all that money?\n• Jessie insists a lawyer picks her own questions, but David tells her he will end up answering it anyway. And he is right.",
+     "hint": "She controlled everything about this trial except what people wanted to know.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "Evan's answer",
+     "def": "**\"I took it from your lock box\" — Evan admits he took the $208 from Jessie in the first place.**\n• Jessie already knew and had forgiven him; the class did not know.\n• Then Megan asks whether half of it was hers from the lemonade stand. It was.\n• None of the background matters to the courtroom. In everyone's eyes, Evan looks like a thief.",
+     "hint": "The trial dug up a truth nobody was hunting for.",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "Jessie's lie",
+     "def": "**\"He didn't steal it. I told him to take the money. I gave it to him for safekeeping.\" — said under oath, and untrue.**\n• She says it to protect Evan, in front of everyone.\n• She knows instantly what she has done, and so does everyone else. That is the chapter's word: perjury.",
+     "hint": "She broke the rule she cared about most, for the person she cared about most.",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "Scott's mother never gets out of the car",
+     "def": "**The SUV pulls up, Scott runs over, and it drives away — she has a big meeting. \"Real stuff, not kids' stuff.\"**\n• Scott shrugs it off twice and stares straight ahead, avoiding everyone's eyes.\n• He spent the whole week promising she would bury Jessie in court.",
+     "hint": "He is not shrugging because he doesn't care.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "Megan defends Scott",
+     "def": "**She stands up from the audience and says \"That would be me\" when the judge calls for the defense lawyer.**\n• Evan is furious — he nearly shouts that she is supposed to be on his side.\n• Asked whether it is allowed, Jessie says: \"Yes. It's... fair.\" She rules against her own case.\n• Scott's answer to being offered a girl lawyer this time: \"You're all I got. I guess it's okay.\"",
+     "hint": "Two people do the right thing here at their own expense.",
+     "from": "source"
+    },
+    {
+     "id": "c14",
+     "term": "Winning by forfeit",
+     "def": "**Evan usually hates forfeit wins — he would rather play and lose — but he decides he will take this one any way he can get it.**\n• He is already picturing the 20/20 at his house with all his friends around.\n• Jessie, who should be delighted, is glum. She can already tell a win like this proves nothing.",
+     "hint": "Notice which sibling is thinking about winning and which about the truth.",
+     "from": "source"
+    },
+    {
+     "id": "c15",
+     "term": "Megan's method",
+     "def": "**She asks short yes-or-no questions aimed at one thing: did anyone actually SEE the money?**\n• Her first question to Jack — \"did you ever see the money in Evan's shorts pocket?\" — gets a plain no.\n• She is not arguing that Scott is innocent. She is showing that nobody knows.",
+     "hint": "She never claims Scott didn't do it. That is the whole trick.",
+     "from": "source"
+    },
+    {
+     "id": "c16",
+     "term": "Megan calls Scott to the stand",
+     "def": "**Her last witness is the defendant himself, and she asks one question: did you really pay for the Xbox 20/20 with your own money?**\n• Scott refuses, David threatens contempt, and Megan says quietly: \"Remember. You're under oath.\"\n• Scott: \"No. I didn't. You happy? My parents bought it for me.\"\n• So the boast that started the whole case was a lie — but it is not proof he took anything.",
+     "hint": "His own lawyer catches him lying, and it still doesn't decide the case.",
+     "from": "source"
+    },
+    {
+     "id": "c17",
+     "term": "The two closing arguments",
+     "def": "**Jessie asks the jury who they believe. Megan says nobody can know, because nobody saw anything and the money never turned up.**\n• Jessie never gets to use the closing argument she practised twenty times — there is no time left.\n• One argument asks for trust. The other asks for proof. The jury goes with proof.",
+     "hint": "Two ways to end a case: who do you trust, or what can you show.",
+     "from": "source"
+    },
+    {
+     "id": "c18",
+     "term": "The verdict",
+     "def": "**Not guilty — and nobody cheers except Scott.**\n• The book's own line: the kids followed all the rules and somehow came out with the wrong answer.\n• Jessie feels it, and she is sure everyone else does too.\n• Then Evan calls out: \"This is not over.\" And challenges Scott to the basketball court.",
+     "hint": "A fair process can still land somewhere that feels wrong. Sit with that.",
+     "from": "source"
+    },
+    {
+     "id": "c19",
+     "term": "Ponder: was the verdict wrong?",
+     "def": "**The jury followed every rule and reached a verdict almost nobody believed.**\n• Was the verdict wrong, or was it right that they could not prove it?\n• Those are two different questions. See if you can say which one you are answering.",
+     "hint": "No wrong answers. But notice: 'not guilty' and 'innocent' are not the same words.",
+     "from": "added"
+    },
+    {
+     "id": "c20",
+     "term": "Ponder: Jessie's lie",
+     "def": "**Jessie lied under oath to protect her brother, and she knew it was wrong while she was doing it.**\n• Would you have said it? Should she tell anyone?\n• Does it matter that it was for someone else and not for herself?",
+     "hint": "Try answering once as Jessie and once as somebody in the jury box.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The book defines a trial by jury as one where guilt is decided by a group of the accused person's peers. Who are the peers in this trial?",
+     "opts": [
+      "Twelve of the fourth-graders from his own class",
+      "The judge, David Kirkorian, deciding on his own",
+      "The five witnesses who were at Jack's house",
+      "Mrs. Overton and the other teachers on duty"
+     ],
+     "ans": 0,
+     "hint": "Peers means equals — people like the person on trial.",
+     "steps": [
+      "A jury of peers means ordinary people like the accused, not experts and not a judge.",
+      "Scott is a fourth-grader, so his peers are the other fourth-graders.",
+      "Jessie hands out twelve jury cards and insists the jury be split evenly.",
+      "The judge runs the trial but does not decide the verdict."
+     ],
+     "ex": {
+      "main": "**The twelve classmates in the jury box.** That is what makes it a trial by jury rather than a trial by judge — the deciding is done by equals, which is exactly why the verdict lands so hard on everyone.",
+      "tip": "Evan notices they stop looking like his friends the moment they become a jury."
+     },
+     "passage": "trial by jury (triʼǝl bi joorʼē), n. A legal proceeding in which the guilt or innocence of a person accused of a crime is decided by a group of his or her peers, rather than by a judge or panel of judges."
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jessie puts Evan on the stand without planning any questions. Why does she pick him, and what goes wrong?",
+     "opts": [
+      "He saw Scott take the money, but he refuses to say so out loud",
+      "Everyone likes him, but the court demands the question she was avoiding",
+      "He is the plaintiff, but the judge rules he cannot testify",
+      "He had rehearsed with her, but he forgets the answers"
+     ],
+     "ans": 1,
+     "hint": "Her reason is about how the jury feels, not about what he knows.",
+     "steps": [
+      "Jessie is feeling confident, and reckons a likable witness is good strategy.",
+      "She has not written a single question for him.",
+      "The jurors and audience immediately start shouting for the one thing she does not want asked: where Evan got the money.",
+      "David tells her Evan will end up answering it anyway — and she knows he is right."
+     ],
+     "ex": {
+      "main": "**She picks him because he is well liked, and then loses control of the questions.** Her strategy worked on the wrong thing: she managed how the jury felt about her witness, not what they wanted to know.",
+      "tip": "A lawyer chooses her questions, but she cannot choose what a room is curious about."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "The book says that hearing the same story from five witnesses \"made it seem like it was the absolute truth.\" Why is that a warning rather than a compliment?",
+     "opts": [
+      "Five witnesses is fewer than a real court would require",
+      "The five witnesses had agreed on their story before the trial",
+      "All five described the same door, and none of them saw the money taken",
+      "The witnesses were all friends of Evan and wanted him to win"
+     ],
+     "ans": 2,
+     "hint": "Ask what each of the five actually saw with their own eyes.",
+     "steps": [
+      "Each boy says Scott went into the house alone, came down dressed and rushed off.",
+      "That is the same observation repeated, not five different pieces of evidence.",
+      "Not one of them saw money in Evan's pocket, or saw Scott take anything.",
+      "So repeating it five times makes it FEEL more certain without making it more proven."
+     ],
+     "ex": {
+      "main": "**They all saw the same thing, and none of it was the crime.** Repetition feels like proof and isn't — the same trap Megan warned Evan about with rumours earlier in the book.",
+      "tip": "This is why circumstantial evidence is so persuasive: it stacks up without ever showing the act."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does Evan admit on the stand, and why does it damage his case so badly?",
+     "opts": [
+      "That he asked Jessie to write the arrest warrant for him",
+      "That he never actually counted the money before the pool party",
+      "That he had already forgiven Scott earlier that week",
+      "That he took the $208 from Jessie's lock box, so he looks like a thief himself"
+     ],
+     "ans": 3,
+     "hint": "The question the court forced was about where the money came from.",
+     "steps": [
+      "Pressed for where he got the money, Evan says he took it from Jessie's lock box.",
+      "Jessie had already forgiven him, and half the money was Megan's without her knowing.",
+      "But none of that background comes across in the courtroom.",
+      "To everyone watching, the boy accusing someone of stealing turns out to have taken the money himself."
+     ],
+     "ex": {
+      "main": "**He took it from Jessie's lock box.** The context that would soften it — she forgave him, they earned Megan's share back — never reaches the jury. A courtroom flattens a complicated story into one bad-looking fact.",
+      "tip": "Megan's follow-up, asking whether half of it was hers, is what makes the moment truly awful."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jessie says under oath: \"He didn't steal it. I told him to take the money.\" Why is this perjury?",
+     "opts": [
+      "It is a deliberate lie told in court after taking an oath",
+      "It is hearsay, because she is quoting somebody who is absent",
+      "It is a guess she has no way of checking",
+      "It is evidence she failed to share with the defense first"
+     ],
+     "ans": 0,
+     "hint": "Check the definition's key word: purposely.",
+     "steps": [
+      "Perjury is purposely telling a lie in a court of law after swearing to tell the truth.",
+      "Jessie did not tell Evan to take the money — she knows that as she says it.",
+      "Being mistaken would not count; saying something she knows is false does.",
+      "The book is blunt about it: she had just told a lie in court, and everyone knew it."
+     ],
+     "ex": {
+      "main": "**Because she said something she knew was false, on purpose, under oath.** Her reason was love rather than gain, and the book does not treat that as nothing — but it is still the thing the chapter is named for.",
+      "tip": "Her grandmother's later verdict is worth waiting for: wrong, but done from a good place in her heart."
+     },
+     "passage": "perjury (pûrʼjǝ-rē), n. Purposely telling a lie in a court of law after taking an oath to tell the truth and only the truth."
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Scott's mother arrives at the playground. What actually happens?",
+     "opts": [
+      "She defends Scott and cross-examines Evan sharply",
+      "She never gets out of the car — she has a meeting and drives away",
+      "She refuses to take part because the trial is not real",
+      "She arrives too late, after the verdict has been read"
+     ],
+     "ans": 1,
+     "hint": "Watch what Scott does with his face afterwards.",
+     "steps": [
+      "A large grey SUV pulls up and Scott runs over, delighted.",
+      "He talks to her through the window; the engine keeps running.",
+      "The car drives away and Scott comes back and sits down on his basketball.",
+      "He shrugs and says she has a big meeting — \"Real stuff, not kids' stuff\" — then avoids everyone's eyes."
+     ],
+     "ex": {
+      "main": "**She drives off without leaving the car.** He had promised all week that she would demolish Jessie, and the shrug is an act — Evan can tell. It is the first moment Scott is easy to feel sorry for.",
+      "tip": "Notice it happens right after the chapter about the right to a lawyer."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Megan stands up to defend Scott. Jessie could have objected — why doesn't she?",
+     "opts": [
+      "Because she was still ashamed of having lied a moment earlier",
+      "Because the judge had already ruled that she could not object",
+      "Because a trial where only one side has a lawyer would not be fair",
+      "Because she wanted the trial over before the jury had to leave"
+     ],
+     "ans": 2,
+     "hint": "It is the rule Megan had already argued for over the map.",
+     "steps": [
+      "The Sixth Amendment gives anyone accused of a crime the right to legal counsel.",
+      "Megan had already told Jessie the trial was not fair with a lawyer on only one side.",
+      "David asks Jessie directly whether it is allowed.",
+      "She nods and says: \"Yes. It's... fair\" — even though it costs her the easy win."
+     ],
+     "ex": {
+      "main": "**Because fairness required it, and she said so out loud.** It is the best thing Jessie does in the whole trial: she applies the rule against herself when nobody would have made her.",
+      "tip": "That hesitation in \"It's... fair\" is the sound of someone choosing the rule over the win."
+     },
+     "passage": "Sixth Amendment (siksth ǝ-měndʼmǝnt), n. The part of the U.S. Constitution that explains the rights of anyone who is accused of a crime and brought to trial, including the right to legal counsel."
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Megan's questions to the witnesses aim at one point. What is she trying to establish?",
+     "opts": [
+      "That the witnesses had rehearsed their story together",
+      "That Scott was never alone inside Jack's house",
+      "That Evan made up the amount of money he lost",
+      "That nobody actually saw the money or saw it taken"
+     ],
+     "ans": 3,
+     "hint": "She asks for one-word answers on purpose.",
+     "steps": [
+      "She starts with Jack and asks for yes or no answers only.",
+      "Her first question is whether he ever saw the money in Evan's shorts pocket. No.",
+      "She is not trying to prove Scott innocent, or to catch anyone lying.",
+      "She is showing the jury that the whole case rests on what people assumed rather than saw."
+     ],
+     "ex": {
+      "main": "**That nobody saw anything.** She never argues Scott didn't do it — she argues nobody can know. That is a defense built exactly on the chapter's word: all the evidence is circumstantial.",
+      "tip": "It is a much harder argument to beat than claiming innocence would have been."
+     },
+     "passage": "circumstantial evidence (sûrʼkǝm-stǎnʼshǝl evʼi-dǝns), n. Indirect evidence that makes a person seem guilty."
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Megan calls Scott himself as her last witness and asks whether he paid for the 20/20 with his own money. What happens, and why doesn't it settle the case?",
+     "opts": [
+      "He admits his parents bought it — but that still is not proof he took the money",
+      "He admits taking the money, and the judge stops the trial",
+      "He refuses to answer, so the jury has to assume he is guilty",
+      "He proves he paid for it, which clears him completely"
+     ],
+     "ans": 0,
+     "hint": "Separate the boast from the crime.",
+     "steps": [
+      "Scott does not want to answer; David threatens to hold him in contempt.",
+      "Megan reminds him quietly that he is under oath.",
+      "Scott admits it: his parents bought the 20/20 for him.",
+      "So the boast that started the case was false — but a lie about who paid is not evidence that he stole $208."
+     ],
+     "ex": {
+      "main": "**He admits his parents bought it, and it still proves nothing about the theft.** The whole case began with Jessie's note asking where he got the money for it — and the answer turns out to be unrelated to the crime.",
+      "tip": "His own lawyer got him to admit a lie. It is the most surprising move in the trial."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How do the two closing arguments differ?",
+     "opts": [
+      "Jessie lists the evidence; Megan attacks the witnesses' honesty",
+      "Jessie asks the jury who they believe; Megan says nobody can know",
+      "Jessie appeals to the judge; Megan appeals to the jury",
+      "Jessie asks for mercy; Megan asks for a harsher punishment"
+     ],
+     "ans": 1,
+     "hint": "One is about trust and the other is about proof.",
+     "steps": [
+      "Jessie runs out of time and never reads the argument she practised twenty times.",
+      "She tells the jury the facts are the facts, and asks who they believe: Evan or Scott.",
+      "Megan says there is no proof, nobody saw anything, and the money never turned up.",
+      "So one closing asks the jury to trust a person, the other asks what can actually be shown."
+     ],
+     "ex": {
+      "main": "**Trust versus proof.** The jury goes with proof. Jessie's argument is the more emotionally satisfying one, and it loses — which is much of what this book is about.",
+      "tip": "Jessie's index cards stay in her pocket. She never gets to use them."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "After the not-guilty verdict, the book says the kids \"followed all the rules—but somehow come out with the wrong answer.\" What does that mean?",
+     "opts": [
+      "David read the verdict wrongly because he was in a hurry",
+      "The jury broke a rule while huddled, which spoiled the verdict",
+      "The process was fair, but the outcome still felt untrue to everyone there",
+      "The trial was never real, so the verdict could not mean anything"
+     ],
+     "ans": 2,
+     "hint": "Two different things can be judged here: how it was done, and where it landed.",
+     "steps": [
+      "The kids built a real court and ran it properly, start to finish.",
+      "The verdict follows from the evidence: nothing was proven, so not guilty.",
+      "Yet nobody cheers except Scott, and Jessie is sure everyone feels it.",
+      "So a fair process produced an answer almost nobody believes is true."
+     ],
+     "ex": {
+      "main": "**A fair process can still land somewhere that feels wrong.** That is the uncomfortable idea the whole trial has been building to — and notice that 'not guilty' means not proven, which is not the same as innocent.",
+      "tip": "Hold on to this feeling. The last chapters are the book's answer to it."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does Evan remember the game of pick-up sticks from first grade?",
+     "opts": [
+      "Because Evan won eleven cents and Scott never paid him",
+      "Because it was the first time Scott ever cheated him openly",
+      "Because Scott's dad taught them both how to play it fairly",
+      "Because Scott fetched his dad and had the game stopped once Evan got ahead"
+     ],
+     "ans": 3,
+     "hint": "Think about when in the game Scott went to get his father.",
+     "steps": [
+      "They were betting pennies, and at first Scott was winning.",
+      "Then Evan caught up and got ahead by eleven cents.",
+      "At that point Scott went and asked his dad to bring them a snack — and his dad stopped the game.",
+      "Evan had to hand back everything he had won. Betting wasn't allowed; losing, he noticed, was."
+     ],
+     "ex": {
+      "main": "**Because Scott changed the game the moment he started losing.** It is why this is not really about $208 for Evan — it is about someone who always comes out on top, and never by accident.",
+      "tip": "The memory arrives while Evan is sitting on a basketball waiting for his own trial to start. He is looking for a pattern."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "order",
+     "q": "The Lemonade Crime, ch. 10-13. Put these events in the order they happen.",
+     "opts": [
+      "David opens the court and Jessie calls Jack as her first witness",
+      "Evan admits on the stand that he took the money from Jessie's lock box",
+      "Scott's mother drives away and Megan volunteers to defend him",
+      "Scott admits under oath that his parents bought the 20/20"
+     ],
+     "ans": 0,
+     "hint": "Prosecution first, then the defense — and each side has one bad surprise.",
+     "steps": [
+      "Chapter 10 ends with David banging the gavel and opening court; Jessie calls Jack first.",
+      "Chapter 11 is the prosecution's case, which collapses when Evan is forced to say where the money came from.",
+      "Chapter 12 is the handover: Scott's mother leaves and Megan takes the defense.",
+      "Chapter 13 is Megan's case, ending with Scott admitting under oath that his parents paid for the console."
+     ],
+     "ex": {
+      "main": "**Court opens, Evan's admission, Megan takes over, Scott's admission.** Each side has its case wrecked by its own witness — which is why the verdict satisfies nobody.",
+      "tip": "Getting this order straight makes the last chapters much easier to follow."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which statement about the trial is NOT true?",
+     "opts": [
+      "Scott's mother cross-examines Evan before the verdict is read",
+      "Megan asks Scott whether he paid for the 20/20 with his own money",
+      "Jessie says it is fair for Megan to defend Scott",
+      "David threatens to hold people in contempt to keep order"
+     ],
+     "ans": 0,
+     "hint": "Three of these happen exactly as written. One never happens at all.",
+     "steps": [
+      "Scott's mother pulls up in the SUV but never leaves the car, and drives away.",
+      "Megan does question Scott under oath about who paid for the console.",
+      "Jessie does agree that Megan defending him is fair.",
+      "David does threaten contempt more than once, and explains it means being sent home."
+     ],
+     "ex": {
+      "main": "**Scott's mother never questions anyone.** She never gets out of the car — which is exactly why Megan ends up defending him, and why the Sixth Amendment chapter matters.",
+      "tip": "With a NOT-true question, test every option against the text instead of picking the first one that sounds off."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Evan usually hates winning by forfeit, but decides he will take this one. What does that tell you about him here?",
+     "opts": [
+      "He has stopped caring about the trial altogether",
+      "He wants to beat Scott more than he wants a fair contest",
+      "He believes Scott deserves a second chance",
+      "He is worried the jury will not reach a verdict in time"
+     ],
+     "ans": 1,
+     "hint": "Compare it with how he normally feels about forfeits.",
+     "steps": [
+      "Normally Evan would rather play and lose than win by forfeit.",
+      "Here, with no defense lawyer for Scott, he decides he will take the win any way he can get it.",
+      "He starts picturing the 20/20 at his house with all his friends around.",
+      "So the thing he usually values — a real contest — he is willing to give up to beat Scott."
+     ],
+     "ex": {
+      "main": "**Winning has started to matter more to him than winning fairly.** The book plants this quietly, just before he challenges Scott to a basketball game. Keep it in mind for what happens on that court.",
+      "tip": "Jessie, meanwhile, is glum about the same news. The two of them want different things now."
+     }
+    }
+   ]
+  }
+ }
+}

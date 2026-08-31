@@ -932,13 +932,45 @@ needed (`Ch. 1–5` before `Ch. 6–9`, verified).
   as a playground rule. It is presented as something the plot depends on,
   never as advice.
 
-> ⚠️ **Chapters 10–14 could not be built.** "Lemonade Crime Chapters
-> 10-14.pdf" is a pure scan with no text layer (`read_file_content` returns
-> 66 empty page tables) AND is 18 MB, over `download_file_content`'s 10 MB
-> cap — so it can be neither extracted nor rendered locally, and
-> `copy_file` cannot convert a PDF to a Doc to force Drive's OCR. The
-> chapters 6–9 file was 13 MB but *had* a text layer, which is why it
-> worked. To ship unit 3, the file needs splitting or re-saving smaller.
+### The rest of the book — Ch. 10–13 and Ch. 14–16 (v120)
+
+`unit-lc3` ("The Trial", 21 cards / 15 questions) and `unit-lc4` ("Amends",
+22 cards / 15 questions) finish the book at four parts. lc3 stops at the
+verdict; lc4 covers chapters 14–16 and carries **`capstone:true`** — the
+series has a real, defined end, so the crest can be earned and never
+un-earned. All four shelve in chapter order on plain title sort.
+
+**Getting the source out of Drive is the story here, and the fix is worth
+remembering.** "Lemonade Crime Chapters 10-14.pdf" was unreadable two ways
+at once: a pure image scan (`read_file_content` returned 66 empty page
+tables) AND 18 MB, over `download_file_content`'s 10 MB cap — so it could
+be neither text-extracted nor pulled down and rendered with `pypdfium2`.
+Either problem alone is survivable; together they leave no path. `copy_file`
+takes no target mimeType, so Claude cannot force a Docs conversion itself.
+
+> **The unblock: ask Chris to right-click the PDF in Drive → Open with →
+> Google Docs.** Drive runs its own OCR server-side and produces a Doc that
+> `read_file_content` reads perfectly. Ten seconds of his time, no splitting
+> and no re-export. Use this for ANY scanned source over the download cap
+> rather than asking him to cut the file up.
+>
+> The OCR'd Doc also turned out to contain chapters 10 through **16** —
+> the whole rest of the book, not the 10–14 the filename claimed — which is
+> why both remaining units shipped at once. Check what a converted file
+> actually contains rather than trusting its name.
+
+- One OCR gap is real and was handled honestly: around p. 110, two of
+  Megan's three yes/no questions to Jack are lost. Only her legible first
+  question ("did you ever see the money in Evan's shorts pocket?") is used;
+  nothing was invented to fill the hole.
+- lc4's `parentNote` flags three things rather than smoothing them: chapter
+  14 is genuinely rough (Evan hurts Scott knowingly and the unit does not
+  excuse him), the grandmother's two-part answer about Jessie's lie is the
+  best moral guidance in the book and is worth reading aloud, and Scott's
+  "'Cause you had it, I guess" is left unexplained because the book itself
+  refuses to explain it.
+- **lc4 should only be approved once she has finished the book** — it covers
+  the ending, including who returns the money.
 
 `tools/test_lemonade2.js` covers shelving order, the book-unit rules (no
 Beat the clock), a full quiz round, the passage plate actually rendering,
