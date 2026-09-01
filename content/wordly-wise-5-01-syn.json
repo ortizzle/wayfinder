@@ -4,7 +4,7 @@
   "unit-ww501-syn": {
    "id": "unit-ww501-syn",
    "type": "unit",
-   "updatedAt": 1787183696316,
+   "updatedAt": 1788215950894,
    "classId": "english",
    "quarter": 1,
    "status": "draft",
@@ -151,23 +151,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of accustom (to get used to something)?",
+     "q": "Which word means the OPPOSITE of accustom?",
      "opts": [
       "ignore",
-      "burly",
-      "pedestrian",
-      "companion"
+      "adapt",
+      "oppose",
+      "reject"
      ],
      "ans": 0,
-     "hint": "Think about what \"accustom\" means, then find its match.",
+     "hint": "Accustom is built on custom — a habit, something you do so often you stop thinking about it.",
      "steps": [
-      "Accustom means to get used to something — you stop noticing it.",
-      "The opposite of getting used to something is failing to notice or care about it at all.",
-      "That is \"ignore.\""
+      "Accustom means to get used to something until you stop noticing it.",
+      "Its opposite is refusing to give it any attention at all.",
+      "Adapt means the same as accustom, so it cannot be the opposite.",
+      "The answer is ignore."
      ],
      "ex": {
-      "main": "**Ignore.**",
-      "tip": "You can also say \"neglect\" — both mean never paying it any attention."
+      "main": "**Ignore.** Accustom is about getting so used to something that you stop noticing it. To ignore is to give it no attention in the first place — the sheet pairs them as opposites.",
+      "tip": "Adapt is a SYNONYM of accustom, put there to catch a fast read. Neglect works as an antonym too."
      }
     },
     {
@@ -175,23 +176,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of alert (attentive, watchful)?",
+     "q": "Which word means the OPPOSITE of alert?",
      "opts": [
-      "obedient",
+      "watchful",
       "inattentive",
-      "compatible",
-      "retire"
+      "disagreeable",
+      "slight"
      ],
      "ans": 1,
-     "hint": "Think about what \"alert\" means, then find its match.",
+     "hint": "One of these means the SAME as the word, not the opposite. Read the question again before you pick.",
      "steps": [
-      "Alert means watchful and paying close attention.",
-      "The opposite of paying attention is not paying attention.",
-      "That is \"inattentive.\""
+      "Alert means paying close attention to what is going on around you.",
+      "Watchful means the same thing, so it is not the opposite.",
+      "Disagreeable and slight describe other things entirely — temper and build.",
+      "The answer is inattentive."
      ],
      "ex": {
-      "main": "**Inattentive.**",
-      "tip": "The prefix \"in-\" flips a word to its opposite — attentive becomes inattentive."
+      "main": "**Inattentive.** Alert is about attention being switched on; inattentive is that same attention switched off. The other two are about temper and body build, not noticing.",
+      "tip": "Alert comes from the Italian all’erta — “on the lookout.”"
      }
     },
     {
@@ -199,23 +201,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of assign (to give someone a job or task)?",
+     "q": "Which word means the OPPOSITE of assign?",
      "opts": [
-      "budge",
-      "alert",
+      "give",
+      "oppose",
       "reject",
-      "concept"
+      "ignore"
      ],
      "ans": 2,
-     "hint": "Think about what \"assign\" means, then find its match.",
+     "hint": "Assign shares its root with signature — it is about marking something as someone’s to do.",
      "steps": [
-      "Assign means to hand someone a task or job.",
-      "The opposite of handing something to someone is refusing to accept it.",
-      "That is \"reject.\""
+      "To assign is to hand a job to someone.",
+      "Give means the same thing, so it is not the opposite.",
+      "The opposite is refusing to take the job on.",
+      "The answer is reject."
      ],
      "ex": {
-      "main": "**Reject.**",
-      "tip": "A teacher assigns homework; a student cannot reject it, but the WORD reject is still its opposite."
+      "main": "**Reject.** Assigning hands a task over; rejecting is turning that handover down. Oppose is fighting an idea, which is a different move.",
+      "tip": "Give is a SYNONYM of assign. Watch for those."
      }
     },
     {
@@ -223,23 +226,24 @@
      "lv": 2,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of budge (to move or shift slightly)?",
+     "q": "Which word means the OPPOSITE of budge?",
      "opts": [
-      "distract",
-      "assign",
-      "burly",
+      "shift",
+      "reject",
+      "focus",
       "oppose"
      ],
      "ans": 3,
-     "hint": "Think about what \"budge\" means, then find its match.",
+     "hint": "One of these means the SAME as the word, not the opposite. Read the question again before you pick.",
      "steps": [
-      "Budge means to move or give way, even a little.",
-      "The opposite of giving way is standing firmly against something.",
-      "That is \"oppose.\""
+      "To budge is to move even a little.",
+      "Shift means the same, so it is not the opposite.",
+      "Someone who will not budge is standing against the whole idea.",
+      "The answer is oppose."
      ],
      "ex": {
-      "main": "**Oppose.**",
-      "tip": "A stuck jar lid \"won't budge\"; someone who opposes a plan won't give an inch either."
+      "main": "**Oppose.** Budging is giving a little ground; opposing is standing against it entirely. Reject turns down an offer, which is narrower than opposing an idea.",
+      "tip": "Budge comes from the French bouger, to stir."
      }
     },
     {
@@ -247,23 +251,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of burly (big and strongly built)?",
+     "q": "Which word means the OPPOSITE of burly?",
      "opts": [
       "slight",
-      "companion",
-      "obstacle",
-      "patient"
+      "sturdy",
+      "defiant",
+      "disagreeable"
      ],
      "ans": 0,
-     "hint": "Think about what \"burly\" means, then find its match.",
+     "hint": "One of these means the SAME as the word, not the opposite. Read the question again before you pick.",
      "steps": [
-      "Burly describes someone big and strongly built.",
-      "The opposite build is small and thin.",
-      "That is \"slight.\""
+      "Burly describes a big, heavily built body.",
+      "Sturdy means much the same, so it is not the opposite.",
+      "Defiant and disagreeable are about behaviour, not build.",
+      "The answer is slight."
      ],
      "ex": {
-      "main": "**Slight.**",
-      "tip": "A \"slight\" person has a light, narrow frame — the opposite of burly."
+      "main": "**Slight.** Both words describe a build, which is why slight is the true opposite — narrow and light where burly is broad and heavy. The other two describe how someone acts.",
+      "tip": "A slight frame, a burly frame — same category, opposite ends."
      }
     },
     {
@@ -271,23 +276,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of companion (a friend who spends time with you)?",
+     "q": "Which word means the OPPOSITE of companion?",
      "opts": [
-      "compatible",
+      "partner",
       "foe",
-      "concept",
-      "retire"
+      "walker",
+      "barrier"
      ],
      "ans": 1,
-     "hint": "Think about what \"companion\" means, then find its match.",
+     "hint": "Com- means with, and -pan is bread. A companion is someone you share a meal with.",
      "steps": [
-      "A companion is a friend who is on your side.",
-      "The opposite of a friend is an enemy.",
-      "That is \"foe.\""
+      "A companion is someone who is on your side.",
+      "Partner means the same, so it is not the opposite.",
+      "The opposite is someone working against you.",
+      "The answer is foe."
      ],
      "ex": {
-      "main": "**Foe.**",
-      "tip": "\"Foe\" is an old, short word for enemy — still used in stories about rivals and battles."
+      "main": "**Foe.** A companion goes along with you; a foe works against you. Walker and barrier name a person and a thing, but neither is about being for or against you.",
+      "tip": "All four are nouns on purpose — you cannot rule any out by its form."
      }
     },
     {
@@ -295,23 +301,24 @@
      "lv": 2,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of compatible (getting along well)?",
+     "q": "Which word means the OPPOSITE of compatible?",
      "opts": [
-      "alert",
-      "obedient",
+      "cooperative",
+      "inattentive",
       "disagreeable",
-      "pedestrian"
+      "slight"
      ],
      "ans": 2,
-     "hint": "Think about what \"compatible\" means, then find its match.",
+     "hint": "Com- means together. Compatible is about how well two things go together.",
      "steps": [
-      "Compatible things or people get along smoothly together.",
-      "The opposite is not getting along — arguing or clashing.",
-      "That is \"disagreeable.\""
+      "Compatible people get along without friction.",
+      "Cooperative means much the same, so it is not the opposite.",
+      "The opposite is someone who makes getting along hard.",
+      "The answer is disagreeable."
      ],
      "ex": {
-      "main": "**Disagreeable.**",
-      "tip": "Disagreeable roommates fight about everything compatible ones would settle easily."
+      "main": "**Disagreeable.** Compatible is about two people fitting together easily; disagreeable is about one who argues with everything. Inattentive is about attention, not agreement.",
+      "tip": "Compatible and patient share a root that means to bear or put up with."
      }
     },
     {
@@ -319,23 +326,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of concept (a general idea)?",
+     "q": "Which word means the OPPOSITE of concept?",
      "opts": [
-      "distract",
-      "budge",
-      "companion",
+      "notion",
+      "foe",
+      "barrier",
       "fact"
      ],
      "ans": 3,
-     "hint": "Think about what \"concept\" means, then find its match.",
+     "hint": "Con- means together and -cept means taken. A concept is an idea still taking shape in your head.",
      "steps": [
-      "A concept is an idea still being worked out — it might be true or it might not.",
-      "The opposite of an unproven idea is something already known to be true.",
-      "That is \"fact.\""
+      "A concept is an idea somebody is still working out.",
+      "Notion means the same, so it is not the opposite.",
+      "The opposite is something already settled and proven.",
+      "The answer is fact."
      ],
      "ex": {
-      "main": "**Fact.**",
-      "tip": "Scientists start with a concept and test it until it becomes an established fact."
+      "main": "**Fact.** A concept is still being thought through; a fact has already been checked and proven. That gap between thought-about and proven is what makes them opposites.",
+      "tip": "Notion is a SYNONYM of concept, sitting there to catch a fast read."
      }
     },
     {
@@ -343,23 +351,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of distract (to pull attention away)?",
+     "q": "Which word means the OPPOSITE of distract?",
      "opts": [
       "focus",
-      "obstacle",
-      "retire",
-      "burly"
+      "oppose",
+      "divert",
+      "reject"
      ],
      "ans": 0,
-     "hint": "Think about what \"distract\" means, then find its match.",
+     "hint": "Dis- means away and -tract means pull, as in tractor. Distract pulls you away.",
      "steps": [
-      "Distract means to pull someone's attention away from what they are doing.",
-      "The opposite of pulling attention away is keeping it locked on one thing.",
-      "That is \"focus.\""
+      "To distract is to pull attention away from what someone is doing.",
+      "Divert means the same, so it is not the opposite.",
+      "The opposite is pulling attention back to one place.",
+      "The answer is focus."
      ],
      "ex": {
-      "main": "**Focus.**",
-      "tip": "Closing your door to focus is the direct opposite of letting noise distract you."
+      "main": "**Focus.** Distract scatters attention outward; focus gathers it onto one thing. They are opposite directions for the same thing — where your attention goes.",
+      "tip": "Divert is a SYNONYM of distract."
      }
     },
     {
@@ -367,23 +376,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of obedient (doing what you are asked)?",
+     "q": "Which word means the OPPOSITE of obedient?",
      "opts": [
-      "compatible",
+      "dutiful",
       "defiant",
-      "concept",
-      "assign"
+      "inattentive",
+      "slight"
      ],
      "ans": 1,
-     "hint": "Think about what \"obedient\" means, then find its match.",
+     "hint": "Ob- means to and the rest comes from the Latin for hear — the same root as audio.",
      "steps": [
-      "Obedient means doing what you are asked or told to do.",
-      "The opposite is refusing to do what you are told.",
-      "That is \"defiant.\""
+      "Obedient means doing what you are told.",
+      "Dutiful means much the same, so it is not the opposite.",
+      "The opposite is refusing outright.",
+      "The answer is defiant."
      ],
      "ex": {
-      "main": "**Defiant.**",
-      "tip": "A defiant dog plants its paws and will not budge — the exact opposite of an obedient one."
+      "main": "**Defiant.** Obedient does what it is asked; defiant refuses on purpose. Inattentive is not refusing — it just never heard the instruction, which is a different failure.",
+      "tip": "That inattentive-versus-defiant difference is worth knowing: one is not listening, the other is saying no."
      }
     },
     {
@@ -391,23 +401,24 @@
      "lv": 2,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means the OPPOSITE of obstacle (something blocking your way)?",
+     "q": "Which word means the OPPOSITE of obstacle?",
      "opts": [
-      "patient",
-      "distract",
+      "hurdle",
+      "foe",
       "advantage",
-      "alert"
+      "companion"
      ],
      "ans": 2,
-     "hint": "Think about what \"obstacle\" means, then find its match.",
+     "hint": "Ob- means against and -stacle means stand. Something standing in your way.",
      "steps": [
-      "An obstacle is something in your way that makes progress harder.",
-      "The opposite of something that slows you down is something that helps you along.",
-      "That is \"advantage.\""
+      "An obstacle is something in your way that slows you down.",
+      "A hurdle is the same idea, so it is not the opposite.",
+      "The opposite is something that helps you along instead.",
+      "The answer is advantage."
      ],
      "ex": {
-      "main": "**Advantage.**",
-      "tip": "A locked gate is an obstacle; a spare key someone hands you is an advantage."
+      "main": "**Advantage.** An obstacle costs you ground; an advantage gains you some. A foe is a person who opposes you, which is not the same as a thing in your path.",
+      "tip": "Hurdle is a SYNONYM of obstacle — both are things to get over."
      }
     },
     {
@@ -415,23 +426,24 @@
      "lv": 2,
      "from": "added",
      "kind": "mc",
-     "q": "As an ADJECTIVE, which word means the OPPOSITE of patient (tolerant, willing to wait)?",
+     "q": "As an ADJECTIVE, which word means the OPPOSITE of patient?",
      "opts": [
-      "burly",
-      "alert",
-      "obedient",
+      "waits",
+      "agrees",
+      "hesitates",
       "complains"
      ],
      "ans": 3,
-     "hint": "Think about what \"patient\" means, then find its match.",
+     "hint": "The trap here does exactly what a patient person does. The answer does the opposite.",
      "steps": [
-      "As an adjective, patient means calm and willing to wait without a fuss.",
-      "The opposite of waiting calmly is not waiting calmly at all.",
-      "That describes someone who complains."
+      "As an adjective, patient means willing to wait calmly without fuss.",
+      "Someone who waits is being patient, so that is not the opposite.",
+      "The opposite is the person who will not wait quietly and says so.",
+      "The answer is complains."
      ],
      "ex": {
-      "main": "**Complains.**",
-      "tip": "Someone stuck in a slow line either waits patiently, or complains the whole time — opposite responses to the same wait."
+      "main": "**Complains.** Patient means waiting calmly; the impatient person is the one grumbling about the wait. Waits is what a patient person actually does, which is why it is the trap.",
+      "tip": "Your sheet gives this antonym as a verb form rather than an adjective — unusual, but that is what it says, so that is what the test will want."
      }
     },
     {
@@ -439,23 +451,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which words mean the OPPOSITE of retire (to go to bed / stop for the day)?",
+     "q": "Grandma retired at nine and slept soundly. Which words mean the OPPOSITE of retire?",
      "opts": [
       "rise, wake",
-      "budge",
-      "assign",
-      "obstacle"
+      "quit, stop",
+      "bump, knock",
+      "adapt, adjust"
      ],
      "ans": 0,
-     "hint": "Think about what \"retire\" means, then find its match.",
+     "hint": "The sentence tells you which meaning of retire is in play. Think about what happens the next morning.",
      "steps": [
-      "Retire can mean to go to bed or stop working for the day.",
-      "The opposite of going to sleep is coming out of sleep.",
-      "That is \"rise\" or \"wake.\""
+      "In this sentence retire means going to bed for the night.",
+      "Quit and stop are synonyms for that, so they are not the opposite.",
+      "The opposite of going to bed is getting up again.",
+      "The answer is rise, wake."
      ],
      "ex": {
-      "main": "**Rise, wake.**",
-      "tip": "You retire tired at night and rise or wake once you are done sleeping — a clean before-and-after pair."
+      "main": "**Rise, wake.** Retire has more than one meaning, so the sentence does the deciding: here it is turning in for the night, and its opposite is getting up. Quit and stop mean the same as retire, not the opposite.",
+      "tip": "Retire comes from re- (back) plus the French tirer, to draw — to draw yourself back."
      }
     },
     {
@@ -463,23 +476,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means almost the same as jostle (to push or shove)?",
+     "q": "Which word means almost the same as jostle?",
      "opts": [
-      "assign",
+      "budge",
       "shove",
-      "alert",
-      "concept"
+      "oppose",
+      "focus"
      ],
      "ans": 1,
-     "hint": "Think about what \"jostle\" means, then find its match.",
+     "hint": "Jostle is a cousin of joust — picture knights knocking into each other.",
      "steps": [
-      "Jostle means to bump or push against someone, often in a crowd.",
-      "A close match for \"bump against someone\" is \"shove.\"",
-      "So the synonym is \"shove.\""
+      "To jostle is to push and knock against people around you.",
+      "Budge is only moving a little, and it is not about pushing others.",
+      "Oppose and focus are not about physical contact at all.",
+      "The answer is shove."
      ],
      "ex": {
-      "main": "**Shove.**",
-      "tip": "\"Bump,\" \"knock\" and \"shove\" all describe the same kind of crowded jostling."
+      "main": "**Shove.** Jostling is bumping and pushing against other people, which is what a shove is. Budge is the near-miss: it means to move slightly, with no pushing of anyone else.",
+      "tip": "Your sheet gives no antonym for jostle, so this one is only ever asked as a match."
      }
     },
     {
@@ -487,23 +501,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means almost the same as pedestrian (a person traveling on foot)?",
+     "q": "Which word means almost the same as pedestrian?",
      "opts": [
-      "obstacle",
       "companion",
+      "foe",
       "walker",
-      "retire"
+      "partner"
      ],
      "ans": 2,
-     "hint": "Think about what \"pedestrian\" means, then find its match.",
+     "hint": "Ped- means foot — the same root as pedal and pedicure.",
      "steps": [
-      "A pedestrian is someone traveling on foot, not by car or bike.",
-      "Someone traveling on foot is simply called a walker.",
-      "So the synonym is \"walker.\""
+      "All four of these name a person, so the form does not help.",
+      "Companion, foe and partner describe how someone relates to you.",
+      "Pedestrian describes how someone is travelling — on foot.",
+      "The answer is walker."
      ],
      "ex": {
-      "main": "**Walker.**",
-      "tip": "A hiker is also a synonym — both describe covering ground on foot."
+      "main": "**Walker.** All four name a person, so you have to know the word itself: pedestrian is about HOW someone is getting around, on foot, while the other three are about who they are to you.",
+      "tip": "Hiker works too. Your sheet gives no antonym for pedestrian."
      }
     },
     {
@@ -511,23 +526,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means almost the same as companion (a friend who spends time with you)?",
+     "q": "Which word means almost the same as companion?",
      "opts": [
-      "burly",
-      "obstacle",
-      "jostle",
+      "foe",
+      "barrier",
+      "walker",
       "partner"
      ],
      "ans": 3,
-     "hint": "Think about what \"companion\" means, then find its match.",
+     "hint": "One of these is the word’s OPPOSITE, not a match for it. Read the question again before you pick.",
      "steps": [
-      "A companion is someone who spends time with you or does things with you.",
-      "Another word for someone you team up with is \"partner.\"",
-      "So the synonym is \"partner.\""
+      "A companion is someone who goes along with you.",
+      "Foe is the opposite of that, so it is not a match.",
+      "Walker and barrier are about travel and blocking, not company.",
+      "The answer is partner."
      ],
      "ex": {
-      "main": "**Partner.**",
-      "tip": "A travel companion and a travel partner mean essentially the same thing."
+      "main": "**Partner.** A companion and a partner are both someone alongside you. Foe is there because it is companion’s OPPOSITE — easy to grab if you read the question too fast.",
+      "tip": "Friend works as well."
      }
     },
     {
@@ -535,23 +551,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means almost the same as obstacle (something blocking your way)?",
+     "q": "Which word means almost the same as obstacle?",
      "opts": [
       "barrier",
-      "companion",
-      "patient",
-      "assign"
+      "advantage",
+      "foe",
+      "walker"
      ],
      "ans": 0,
-     "hint": "Think about what \"obstacle\" means, then find its match.",
+     "hint": "One of these is the word’s OPPOSITE, not a match for it. Read the question again before you pick.",
      "steps": [
-      "An obstacle is something that blocks your path or progress.",
-      "A word that means the same kind of blocking thing is \"barrier.\"",
-      "So the synonym is \"barrier.\""
+      "An obstacle is something standing in your way.",
+      "Advantage is the opposite of that, so it is not a match.",
+      "A foe is a person, not a thing in your path.",
+      "The answer is barrier."
      ],
      "ex": {
-      "main": "**Barrier.**",
-      "tip": "A fallen tree on a trail is both an obstacle and a barrier — same idea, two words."
+      "main": "**Barrier.** Both are things blocking the way forward. Advantage is obstacle’s opposite, sitting there to catch a fast read, and a foe is a person rather than a thing in your path.",
+      "tip": "Hurdle is another good match."
      }
     },
     {
@@ -559,23 +576,24 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means almost the same as concept (a general idea)?",
+     "q": "Which word means almost the same as concept?",
      "opts": [
-      "burly",
+      "fact",
       "idea",
-      "retire",
-      "obedient"
+      "barrier",
+      "advantage"
      ],
      "ans": 1,
-     "hint": "Think about what \"concept\" means, then find its match.",
+     "hint": "One of these is the word’s OPPOSITE, not a match for it. Read the question again before you pick.",
      "steps": [
-      "A concept is a general idea or thought about something.",
-      "The plainest match for \"a general idea\" is simply \"idea.\"",
-      "So the synonym is \"idea.\""
+      "A concept is something you are still thinking through.",
+      "A fact is already proven, which makes it the opposite.",
+      "Barrier and advantage are about your path, not your thinking.",
+      "The answer is idea."
      ],
      "ex": {
-      "main": "**Idea.**",
-      "tip": "\"Notion\" is another synonym — all three describe a thought still taking shape."
+      "main": "**Idea.** A concept is a thought being worked out, which is exactly what an idea is. Fact is the trap — it is concept’s opposite, because a fact is settled and a concept is not.",
+      "tip": "Notion is another good match."
      }
     },
     {
@@ -583,27 +601,29 @@
      "lv": 1,
      "from": "added",
      "kind": "mc",
-     "q": "Which word means almost the same as retire (to stop for the day)?",
+     "q": "Grandpa yawned and said he was ready to retire. Which word means almost the same as retire?",
      "opts": [
-      "companion",
-      "alert",
+      "rise",
+      "wake",
       "quit",
       "budge"
      ],
      "ans": 2,
-     "hint": "Think about what \"retire\" means, then find its match.",
+     "hint": "The sentence sets the meaning. Two of these are what he would do the NEXT morning.",
      "steps": [
-      "Retire can mean to stop working or stop for the day.",
-      "A plain word for stopping something is \"quit.\"",
-      "So the synonym is \"quit.\""
+      "In this sentence retire means stopping for the day.",
+      "Rise and wake are what you do after that, so they are opposites.",
+      "Budge means to move slightly, which is unrelated.",
+      "The answer is quit."
      ],
      "ex": {
-      "main": "**Quit.**",
-      "tip": "\"Turn in\" and \"call it a day\" are two more ways people say the same thing."
+      "main": "**Quit.** Here retire means calling it a day and stopping. Rise and wake are the trap: they are retire’s opposites, so they belong to the other kind of question.",
+      "tip": "Stop, turn in and call it a day all work too."
      }
     }
    ],
-   "round": 8
+   "round": 8,
+   "libv": 1
   }
  }
 }

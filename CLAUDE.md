@@ -903,6 +903,59 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The question that answered itself (v121)
+
+Chris: *"for the wordly wise quizzes, sometimes the questions give the
+answer. it tells what the word means, even if the question asks for the
+opposite it should not explain what the word means."*
+
+He is right, and it was worse than one or two items: **all 19 questions** in
+`wordly-wise-5-01-syn.json` glossed the word in their own stem — "Which word
+means the OPPOSITE of accustom (to get used to something)?" Two of them
+printed the answer outright, because for a synonym question the gloss *is*
+the answer: "concept (a general idea)?" → `idea`, "jostle (to push or
+shove)?" → `shove`. The unit tested nothing.
+
+Scoped before fixing: **Sedona's seven Book 9 lessons are clean** (they use
+context sentences, usage discrimination and analogies), and so are River's
+other five Wordly Wise lessons. This was one unit — the one built in v102,
+where the questions were generated off the syn/ant table mechanically.
+
+Four leaks, not one, and the second is the half that would have been missed:
+
+- **The gloss.** Gone from every stem. Where a word has two senses in play,
+  the sense now comes from a part-of-speech tag (`As an ADJECTIVE, which word
+  means the OPPOSITE of patient?`) or a usage sentence (`Grandma retired at
+  nine and slept soundly.`) — **context, never a definition**. `retire` needed
+  this in both directions: q12 asks the go-to-bed sense, q18 the stop-for-the-
+  day sense.
+- **The distractors were filler.** `accustom` offered *ignore, burly,
+  pedestrian, companion* — three of them not even the right part of speech, so
+  stripping the gloss alone would have left an item still answerable without
+  knowing the word. Every option is now the same part of speech as the answer,
+  and each holds a different real relationship: the word's own **synonym** sits
+  in every antonym question (and its antonym in every synonym question), so
+  she has to read which was actually asked. Each was checked for not
+  accidentally also being correct.
+- **All 19 hints were the same sentence** — "Think about what X means, then
+  find its match" — priced at −5 XP for saying nothing. They are now etymology
+  hooks where a real one exists (`ped-` = foot, as in pedal; `com-` + `panis` =
+  someone you share bread with; `ob-` + *stare* = standing in your way) and a
+  named warning about the trap where one does not.
+- **Every `ex.main` was the bare answer word** ("**Ignore.**"), against the
+  standing rule that it explains *why* the answer is right. All rewritten.
+
+`tools/test_ww_syn.js` asserts the stems are bare, that no option appears
+inside its own stem, that the boilerplate hint is gone and that explanations
+say why — then plays a full round and re-checks the shelf position.
+**Verified by running it against the pre-fix file**, where it fails on all
+four counts including q13/q17 printing their own answers; a guard that passes
+on the bug it was written for is not a guard.
+
+Shipped with `libv:1` and `updatedAt` three hours back, so the fix wins the
+merge whether or not the unit had been approved. The general rule went into
+ad-astra/CLAUDE.md's shared **Content rules**, since it binds both apps.
+
 ### The Lemonade Crime · Ch. 6–9 (v119)
 
 Second of three reading companions (`unit-lc2`, `content/lemonade-crime-2.json`),
