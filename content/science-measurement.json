@@ -4,7 +4,7 @@
   "unit-sci-meas": {
    "id": "unit-sci-meas",
    "type": "unit",
-   "updatedAt": 1787092433112,
+   "updatedAt": 1788318621335,
    "classId": "science",
    "quarter": 1,
    "status": "draft",
@@ -510,7 +510,78 @@
     }
    ],
    "round": 8,
-   "order": 1
+   "order": 1,
+   "sorts": [
+    {
+     "id": "s-qq",
+     "title": "Quantitative or qualitative?",
+     "a": "Quantitative",
+     "b": "Qualitative",
+     "items": [
+      {
+       "t": "The seedling is 26 mm tall",
+       "k": "a",
+       "why": "There is a number in it. Numbers make it measurable data."
+      },
+      {
+       "t": "The beaker holds 250 mL",
+       "k": "a",
+       "why": "A measured amount — a number with a unit."
+      },
+      {
+       "t": "Fourteen petals on the flower",
+       "k": "a",
+       "why": "Somebody counted. A count is a number."
+      },
+      {
+       "t": "The rock has a mass of 340 g",
+       "k": "a",
+       "why": "Weighed on a balance: a number with a unit."
+      },
+      {
+       "t": "The ice took 9 minutes to melt",
+       "k": "a",
+       "why": "Timed — that is a measurement."
+      },
+      {
+       "t": "The room is at 21 °C",
+       "k": "a",
+       "why": "Read off a thermometer. A number."
+      },
+      {
+       "t": "The petals are bright yellow",
+       "k": "b",
+       "why": "A colour word describes; nothing was counted or measured."
+      },
+      {
+       "t": "The soil smells damp and earthy",
+       "k": "b",
+       "why": "A smell is a quality you describe, not a quantity you measure."
+      },
+      {
+       "t": "The ice cube looks glassy and wet",
+       "k": "b",
+       "why": "Describing how it looks. No number anywhere in it."
+      },
+      {
+       "t": "The leaf edges are wavy",
+       "k": "b",
+       "why": "A shape described in words — a quality."
+      },
+      {
+       "t": "The liquid is thick and sticky",
+       "k": "b",
+       "why": "Texture is described, not measured."
+      },
+      {
+       "t": "The stem feels fuzzy",
+       "k": "b",
+       "why": "Touch described in a word. If you had measured the hairs, it would be a number."
+      }
+     ]
+    }
+   ],
+   "libv": 1
   }
  }
 }

@@ -903,6 +903,16 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Swipe sort (v125 / Ad Astra v146, both apps)
+
+Two buckets, one card, swipe or tap. Sets ride on units (`u.sorts`), draft
+and review with them, and never touch the ladder. Three shipped here:
+observation/inference on Quiz 1, quantitative/qualitative on Measurement,
+changed-vs-measured on Variables — every item names its experiment so a
+returned card stands alone. See ad-astra/CLAUDE.md's section of the same
+name for the rules and the checker's own-bucket rule. `tools/test_sort.js`
+is the same file in both repos.
+
 ### Match, and the daily three (v124 / Ad Astra v145, both apps)
 
 Two zero-content games, engine, identical in both apps: memory Match on any
