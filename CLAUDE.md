@@ -903,6 +903,16 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Match, and the daily three (v124 / Ad Astra v145, both apps)
+
+Two zero-content games, engine, identical in both apps: memory Match on any
+deck with 4+ matchable cards, and the daily three on Today — three
+questions by date served as an ordinary round, misses to the Growth Zone,
+done becoming three squares and a share line that carries no score. See
+ad-astra/CLAUDE.md's section of the same name for the rules, the
+`mixHash`-not-`hashStr` trap, and the scaled completion bonus.
+`tools/test_games.js` is the same file in both repos.
+
 ### The Growth Zone, focused (v123 / Ad Astra v144, both apps)
 
 Chips now scope the whole ladder (subject, then unit ranked most recently
