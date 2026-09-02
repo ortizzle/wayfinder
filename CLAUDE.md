@@ -903,6 +903,16 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The Growth Zone, focused (v123 / Ad Astra v144, both apps)
+
+Chips now scope the whole ladder (subject, then unit ranked most recently
+missed), a second door reviews everything in the filter ahead of a test,
+and rows fold to the question and its ladder bar. Engine, identical in both
+apps — see ad-astra/CLAUDE.md's section of the same name for the rules,
+the `on`-not-`updatedAt` trap, and the contrast measurements (worst
+selected chip here 13.4:1). `tools/test_gzfilter.js` and
+`tools/contrast_gzchip.js` are the same files in both repos.
+
 ### The practice test, twice (v122)
 
 Chris: River has new Unit 1 science test material — make a replica of the
