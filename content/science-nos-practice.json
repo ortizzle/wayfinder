@@ -1,0 +1,1016 @@
+{
+ "v": 1,
+ "records": {
+  "unit-sci-nos-practice": {
+   "id": "unit-sci-nos-practice",
+   "type": "unit",
+   "classId": "science",
+   "title": "Science · Nature of Science Practice Test",
+   "status": "draft",
+   "guide": true,
+   "prep": true,
+   "order": 4,
+   "quarter": 1,
+   "libv": 1,
+   "srcName": "Practice for Nature of Science Unit Test + answer key (Drive)",
+   "source": "source",
+   "summary": {
+    "from": "source",
+    "text": "Your teacher's \"Practice for Nature of Science Unit Test\", all 19 questions, exactly as they appear on the paper and in the same A/B/C/D order. It walks through one experiment from start to finish — how does the volume of water given daily affect the growth height of sunflower plants — and asks a different Nature of Science skill at each step."
+   },
+   "why": {
+    "from": "added",
+    "text": "This is the shape of the real unit test, so the useful thing is not just getting the answers right but noticing which skill each question is testing. Nineteen questions, nineteen different moves: asking a testable question, naming variables, staying safe, reading instruments, telling observation from inference, reading a graph, and writing a claim that actually uses evidence."
+   },
+   "objectives": [
+    {
+     "from": "source",
+     "text": "Tell a scientific question from an opinion or a made-up one."
+    },
+    {
+     "from": "source",
+     "text": "Name the independent and dependent variables in a question."
+    },
+    {
+     "from": "source",
+     "text": "Read a thermometer, a graduated cylinder and a ruler, and answer in the unit asked for."
+    },
+    {
+     "from": "source",
+     "text": "Tell observation from inference, and quantitative from qualitative."
+    },
+    {
+     "from": "source",
+     "text": "Read a double line graph and predict from its trend."
+    },
+    {
+     "from": "added",
+     "text": "Write a conclusion that answers the question and cites the data."
+    }
+   ],
+   "parentNote": {
+    "from": "added",
+    "text": "This is the teacher's practice test copied out word for word, with the options in the same order as the paper, so the \"I did it on paper\" door works: she does the 19 questions on the printout and taps in the letters she wrote. Every answer was re-derived independently before this was built and all 19 matched the teacher's circled key exactly — no misprints this time. One thing to know: eight of the questions rely on a picture she has on paper (a prism, a thermometer, a graduated cylinder, a ruler, three graphs and four diagrams). Those pictures are not reproduced in the app, so the paper needs to be beside her; the walkthrough after grading describes what each picture showed. The teacher's own margin notes were the most useful thing in the key and are on the flashcards as written — \"no opinions, natural world\", \"independent comes after How does\", \"should do multiple trials\", \"know bar graphs too\", \"numbers!\", \"descriptive!\", \"answer question and give evidence\". Those read like a list of what the real test will ask."
+   },
+   "nextUp": {
+    "from": "added",
+    "minutes": 25,
+    "text": "Do the paper first with the printout in front of you, then tap in your 19 letters. Anything you miss, the rescue round asks again with fresh numbers."
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "A scientific question",
+     "def": "**It has to be testable, about the natural world, and free of opinion.**\n• \"How does the amount of sunlight per day affect how high plants grow?\" works — you can measure it.\n• \"Which baseball team is best?\" is an opinion, and magic spells are not the natural world.",
+     "hint": "Your teacher wrote it in the margin: no opinions, and it needs to be about the natural world.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The Scientific Method",
+     "def": "**The process scientists use to answer a question.**\n• Ask a question → make a hypothesis → test it → collect data → draw a conclusion.\n• The Engineering Design Process is for building a solution, not answering a question.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Hypothesis (prediction)",
+     "def": "**Your best guess at what the results will be, made BEFORE you test.**\n• It is a statement about the outcome, not a description of the setup.\n• Analysing data and writing down careful details are different steps that come later.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Independent vs dependent variable",
+     "def": "**The independent variable is what YOU change. The dependent variable is what you MEASURE.**\n• Your teacher's trick: the independent variable comes right after \"How does…\"\n• In \"How does the volume of water given daily affect the growth height of sunflower plants?\" — volume of water is independent, growth height is dependent.",
+     "hint": "Dependent DEPENDS on what you changed, so it is the thing you measure at the end.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Controlled variables",
+     "def": "**Everything else you deliberately keep the same.**\n• Only ONE thing should change in an experiment — that is what makes it a fair test.\n• Same pot size, same soil, same spot in the yard, same time of day.",
+     "hint": "Your teacher's note: only 1 thing changing, everything else kept the same.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "PPE — personal protective equipment",
+     "def": "**When a step has more than one hazard, wear all of the gear that fits it.**\n• Mixing fertiliser can splash (eyes), touch your skin (hands) and spill (feet).\n• Safety glasses, gloves and closed-toed shoes each answer a different hazard.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Volume of a rectangular prism",
+     "def": "**V = length × width × height, and the answer is in cubic units (cm³).**\n• A pot 5 cm × 5 cm × 10 cm holds 5 × 5 × 10 = 250 cm³.\n• cm measures length, cm² measures area, cm³ measures volume — the unit tells you which.",
+     "eq": "V = l × w × h",
+     "hint": "Three measurements multiplied means three little marks: cm³.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "cm and mm",
+     "def": "**1 cm = 10 mm, so to go from cm to mm you multiply by 10.**\n• 23 cm × 10 = 230 mm.\n• Going the other way (mm to cm) you divide by 10.",
+     "hint": "The smaller the unit, the BIGGER the number — mm are small, so the number grows.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "The metric system",
+     "def": "**Scientists measure in metric: metres, grams, litres and degrees Celsius.**\n• It is the same everywhere, so any scientist can repeat your experiment.",
+     "hint": "Your teacher underlined this one: scientists use the metric system when doing experiments.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Reading a scale",
+     "def": "**Work out what ONE space is worth first, then count spaces from the last labelled number.**\n• Gap between labels ÷ number of spaces = the value of one space.\n• Then answer in the unit the question asked for — 26 mm and 2.6 cm are the same length, but only one of them answers \"to the nearest millimetre\".",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "Repeated trials",
+     "def": "**One trial is never enough — you run several and compare.**\n• A single plant might just be unlucky; ten plants show what is really happening.\n• More trials make your results more trustworthy, not just more work.",
+     "hint": "Your teacher's margin note: should do multiple!",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "Observation vs inference",
+     "def": "**An observation is what you notice. An inference is your explanation for WHY.**\n• Observation: \"light green leaves\", \"25.4 cm tall\", \"thick, hairy stem\".\n• Inference: \"the shiny leaves reflect light to help the plant stay cool\" — nobody measured that, it is a reason someone worked out.",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "Quantitative vs qualitative",
+     "def": "**Quantitative data has numbers. Qualitative data describes.**\n• Quantitative: 38.7 cm tall, 34 petals, 11 leaves.\n• Qualitative: wavy edges on leaves, dark green bud, large flower with many yellow petals.",
+     "hint": "QUANTity = a number you can count. QUALity = what it is like.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "Picking a graph",
+     "def": "**A double line graph shows a trend over time for two groups at once.**\n• A pie chart shows parts of a whole.\n• A bar graph compares amounts between categories.\n• Line graphs need quantitative data — you cannot plot \"wavy leaves\" on one.",
+     "hint": "Your teacher wrote \"know bar graphs too\" — expect the same question about those.",
+     "from": "source"
+    },
+    {
+     "id": "c14",
+     "term": "What every graph needs",
+     "def": "**A title, labels on both axes, and units on those labels.**\n• Numbers running up the side mean nothing until something says \"Growth Height (cm)\".\n• Check each one separately: a graph can have a title and still be missing its axis labels.",
+     "from": "source"
+    },
+    {
+     "id": "c15",
+     "term": "A scientific diagram",
+     "def": "**A realistic drawing, with a title and every part labelled.**\n• A cartoon with a smiling face is art, not a diagram.\n• Labels with no title, or a drawing with no labels, each fail on their own.",
+     "from": "source"
+    },
+    {
+     "id": "c16",
+     "term": "An evidence-based claim",
+     "def": "**Answer the question that was asked, then back it with data from your graph.**\n• \"The more water, the bigger they grew\" answers it but gives no evidence.\n• Describing the trends without saying what they mean gives evidence but no answer.\n• No \"I saw…\" or \"I think…\" — a claim is written about the plants, not about you.",
+     "hint": "Your teacher's note: answer the question AND give evidence.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of the following questions might a scientist ask?",
+     "opts": [
+      "What is the best baseball team New York: Yankees or Mets?",
+      "What percentage of people like to eat sushi?",
+      "How does the amount of sunlight per day affect how high plants will grow?",
+      "How does the temperature of the air affect how well magic spells work?"
+     ],
+     "ans": 2,
+     "hint": "Two of these are about opinions or people's tastes, and one is not about the real world at all.",
+     "steps": [
+      "A scientific question has to be testable by measuring something.",
+      "It also has to be about the natural world.",
+      "\"Best team\" is an opinion, and magic spells are not part of the natural world.",
+      "Sunlight and plant height can both be measured, so that is the scientific question."
+     ],
+     "ex": {
+      "main": "**How does the amount of sunlight per day affect how high plants will grow?** You can change the sunlight, measure the height, and anyone could repeat it.",
+      "tip": "Your teacher's margin note says it in five words: no opinions, natural world."
+     },
+     "variant": {
+      "q": "Which of these is a scientific question?",
+      "opts": [
+       "Which flavour of ice cream out of all of them tastes the very best?",
+       "How does the amount of salt in water affect how fast an ice cube melts?",
+       "Are the unicorns in stories faster runners than the dragons are?",
+       "Should our school start an hour later than it does at the moment?"
+      ],
+      "ans": 1,
+      "steps": [
+       "Ask whether you could measure the answer.",
+       "\"Tastes the best\" and \"should we\" are opinions.",
+       "Unicorns and dragons are not part of the natural world.",
+       "Salt and melting time are both measurable, so that one is scientific."
+      ],
+      "ex": {
+       "main": "**How does the amount of salt in water affect how fast an ice cube melts?** Salt can be measured out and melting time can be timed. The others are opinions or not real."
+      }
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What process do scientists use to help answer questions?",
+     "opts": [
+      "The Engineering Design Process",
+      "The Scientific Method",
+      "Trial and Error",
+      "String Theory"
+     ],
+     "ans": 1,
+     "hint": "One of these is for building a solution, not for answering a question.",
+     "steps": [
+      "Scientists start with a question and work towards an answer.",
+      "The Engineering Design Process is for designing and building something.",
+      "Trial and error has no plan, and string theory is an idea in physics, not a method.",
+      "The Scientific Method is the process."
+     ],
+     "ex": {
+      "main": "**The Scientific Method.** Ask a question, make a hypothesis, test it, collect data, conclude.",
+      "tip": "Engineers use the Engineering Design Process — same care, different goal."
+     },
+     "variant": {
+      "q": "A scientist wants to find out why a pond has fewer frogs this year. Which process should she follow?",
+      "opts": [
+       "The Scientific Method",
+       "The Engineering Design Process",
+       "Guess and check",
+       "The water cycle"
+      ],
+      "ans": 0,
+      "steps": [
+       "Decide whether she is answering a question or building something.",
+       "She wants to know WHY, so she is answering a question.",
+       "The Engineering Design Process would be for building a frog habitat.",
+       "The Scientific Method is the right process."
+      ],
+      "ex": {
+       "main": "**The Scientific Method.** She has a question about the natural world and wants an answer, which is exactly what the Scientific Method is for."
+      }
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When we make a prediction or state a hypothesis, what are we doing?",
+     "opts": [
+      "We are stating our best guess as to what we think the results will be in the experiment.",
+      "Carefully examining all the things that could change in an experiment",
+      "Analyzing the data we collected.",
+      "Carefully observing the experiment and writing down accurate details."
+     ],
+     "ans": 0,
+     "hint": "A hypothesis happens BEFORE you test. Which of these could you only do afterwards?",
+     "steps": [
+      "A hypothesis is made before the experiment starts.",
+      "Analysing data and recording observations both need results, so they come later.",
+      "Examining what could change is identifying variables, which is a different step.",
+      "Stating your best guess at the results is the hypothesis."
+     ],
+     "ex": {
+      "main": "**We are stating our best guess as to what we think the results will be.** It is a prediction about the outcome, written before you have any data.",
+      "tip": "A hypothesis is allowed to turn out wrong — that is not a failed experiment."
+     },
+     "variant": {
+      "q": "A student writes: \"I think the ice in salt water will melt faster than the ice in plain water.\" What has she written?",
+      "opts": [
+       "An observation",
+       "A hypothesis",
+       "A conclusion",
+       "A controlled variable"
+      ],
+      "ans": 1,
+      "steps": [
+       "Check when she wrote it — before any data existed.",
+       "An observation needs something to have happened already.",
+       "A conclusion comes after the data is analysed.",
+       "A prediction made in advance is a hypothesis."
+      ],
+      "ex": {
+       "main": "**A hypothesis.** She has predicted the result before testing, which is exactly what a hypothesis is."
+      }
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the DEPENDENT Variable for this scientific question: How does the volume of water given daily affect the growth height of sunflower plants?",
+     "opts": [
+      "Amount of sunlight",
+      "Volume of water",
+      "Growth height",
+      "Type of fertilizer in the soil"
+     ],
+     "ans": 2,
+     "hint": "Your teacher's trick: the INDEPENDENT variable comes right after \"How does…\"",
+     "steps": [
+      "The independent variable is what you change on purpose.",
+      "\"How does the volume of water…\" — so volume of water is the independent variable.",
+      "The dependent variable is what you measure to see the effect.",
+      "You measure how tall the plants get, so growth height is the dependent variable."
+     ],
+     "ex": {
+      "main": "**Growth height.** It is what you measure at the end. Volume of water is the independent variable — the one you changed — and sunlight and fertiliser are kept the same for every plant.",
+      "tip": "Dependent DEPENDS on what you changed, so it is always the thing you measure."
+     },
+     "variant": {
+      "q": "In the question \"How does the amount of salt in water affect how fast an ice cube melts?\", what is the DEPENDENT variable?",
+      "opts": [
+       "Amount of salt in the water",
+       "How fast the ice melts",
+       "Size of the container",
+       "Room temperature"
+      ],
+      "ans": 1,
+      "steps": [
+       "Find what comes right after \"How does\" — that is the independent variable.",
+       "The amount of salt is what you change.",
+       "The dependent variable is what you measure.",
+       "You time the melting, so melting speed is dependent."
+      ],
+      "ex": {
+       "main": "**How fast the ice melts.** That is what gets measured. The amount of salt is what was changed, and container size and room temperature are kept the same."
+      }
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In order to do our experiment to answer our scientific question, we need to add fertilizer to the soil we plan to use and mix it vigorously to make sure it is well distributed in the soil. What Personal Protective Equipment (PPE) should we be using during this step if we want to be as safe as possible?",
+     "opts": [
+      "Safety Glasses",
+      "Gloves",
+      "Closed-toed shoes",
+      "All of the above"
+     ],
+     "ans": 3,
+     "hint": "Mixing something vigorously can go in more than one direction. Count the hazards.",
+     "steps": [
+      "Vigorous mixing can flick fertiliser upward, towards your eyes.",
+      "Your hands are in contact with it the whole time.",
+      "Anything spilled lands on your feet.",
+      "Each piece of gear answers a different hazard, so you want all of them."
+     ],
+     "ex": {
+      "main": "**All of the above.** The question asks how to be as safe as possible, and each item covers a hazard the others do not — eyes, skin, feet.",
+      "tip": "When a question says \"as safe as possible\", check whether the options are covering different hazards."
+     },
+     "variant": {
+      "q": "A student is pouring salt into a beaker of water and stirring it hard. Which piece of PPE protects her from a splash reaching her eyes?",
+      "opts": [
+       "Closed-toed shoes",
+       "Gloves",
+       "Safety goggles",
+       "A lab apron"
+      ],
+      "ans": 2,
+      "steps": [
+       "Name the hazard first: liquid flicking upward.",
+       "Shoes protect feet and gloves protect hands.",
+       "An apron protects clothes.",
+       "Goggles are what guard the eyes."
+      ],
+      "ex": {
+       "main": "**Safety goggles.** They are the only item on the list that covers the eyes. Each piece of PPE answers one particular hazard."
+      }
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "We will use separate pots for each seed that we plant. All the pots are the same size and have the same volume as the rectangular prism shown, with length 5 cm, width 5 cm and height 10 cm. What volume of soil will we need to use to completely fill each pot?",
+     "opts": [
+      "20 cm",
+      "250 cm³",
+      "25 cm²",
+      "55 cm³"
+     ],
+     "ans": 1,
+     "hint": "Check the units as well as the number — volume is always in cubic units.",
+     "steps": [
+      "Volume of a rectangular prism is length × width × height.",
+      "5 × 5 × 10 = 250.",
+      "Three measurements were multiplied together, so the unit is cm³.",
+      "That gives 250 cm³."
+     ],
+     "ex": {
+      "main": "**250 cm³.** 5 × 5 × 10 = 250, and multiplying three lengths gives cubic centimetres. 20 cm is what you get by adding, and 25 cm² is only the area of the base.",
+      "tip": "The wrong options are each a real calculation done wrongly — check the unit and you catch them."
+     },
+     "variant": {
+      "q": "A box measures 4 cm long, 6 cm wide and 5 cm high. What is its volume?",
+      "opts": [
+       "15 cm",
+       "24 cm²",
+       "120 cm³",
+       "120 cm²"
+      ],
+      "ans": 2,
+      "steps": [
+       "Volume is length × width × height.",
+       "4 × 6 = 24, and 24 × 5 = 120.",
+       "Three measurements multiplied means cubic units.",
+       "The answer is 120 cm³."
+      ],
+      "ex": {
+       "main": "**120 cm³.** 4 × 6 × 5 = 120, and three lengths multiplied give cm³. 24 cm² is just the area of one face."
+      }
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "We measured the size of the pots the plant will be going in. We calculate that they are 23 cm. How many mm is this?",
+     "opts": [
+      "23 mm",
+      "2.3 mm",
+      "230 mm",
+      "10 mm"
+     ],
+     "ans": 2,
+     "hint": "Millimetres are smaller than centimetres, so the number has to get bigger.",
+     "steps": [
+      "There are 10 mm in 1 cm.",
+      "Going from cm to mm means multiplying by 10.",
+      "23 × 10 = 230.",
+      "So 23 cm is 230 mm."
+     ],
+     "ex": {
+      "main": "**230 mm.** 1 cm = 10 mm, so 23 × 10 = 230. Dividing instead would give 2.3, which is the trap.",
+      "tip": "A smaller unit always needs a bigger number to measure the same length."
+     },
+     "variant": {
+      "q": "A leaf is 9 cm long. How many millimetres is that?",
+      "opts": [
+       "0.9 mm",
+       "90 mm",
+       "9 mm",
+       "900 mm"
+      ],
+      "ans": 1,
+      "steps": [
+       "1 cm = 10 mm.",
+       "Centimetres to millimetres means multiply by 10.",
+       "9 × 10 = 90.",
+       "The leaf is 90 mm long."
+      ],
+      "ex": {
+       "main": "**90 mm.** There are 10 mm in every centimetre, so 9 × 10 = 90."
+      }
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Outside air temperature where the plants are growing needs to be measured every day. The thermometer looks like this on day 1. What temperature is indicated on the thermometer? Round to the nearest °C.",
+     "opts": [
+      "30°C",
+      "27°C",
+      "25°C",
+      "33°C"
+     ],
+     "ans": 1,
+     "hint": "Find the labelled number below the liquid first, then count the small marks up from it.",
+     "steps": [
+      "The thermometer is labelled every 10 °C, and ten small marks divide each 10 into single degrees.",
+      "The red column stops between the 20 and the 30.",
+      "Counting up from 20, the top of the column sits on the seventh mark.",
+      "20 + 7 = 27 °C."
+     ],
+     "ex": {
+      "main": "**27°C.** Work out what one mark is worth before you read anything: 10 °C split into 10 spaces means each mark is 1 °C.",
+      "tip": "Guessing \"about 30\" because it looks close is the mistake this question is built to catch."
+     },
+     "variant": {
+      "q": "A thermometer is labelled every 10 °C, and the marks divide each 10 °C into 10 equal spaces. The liquid stops 4 spaces above the 30 °C label. What is the temperature?",
+      "opts": [
+       "30.4 °C",
+       "34 °C",
+       "40 °C",
+       "3.4 °C"
+      ],
+      "ans": 1,
+      "steps": [
+       "Work out one space: 10 °C ÷ 10 spaces = 1 °C each.",
+       "Start at the labelled number, 30 °C.",
+       "Count up 4 spaces, which is 4 °C.",
+       "30 + 4 = 34 °C."
+      ],
+      "ex": {
+       "main": "**34 °C.** Each space is 10 ÷ 10 = 1 °C, so four spaces above 30 is 34 °C."
+      }
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Twenty sunflower seeds are each planted in a separate pot. They are all placed outside in the same place in the yard. They are watered once per day. Ten plants receive 50 mL per day and the other ten plants receive 100 mL per day. While measuring water for one of the plants that should get 50 mL, we overfill the graduated cylinder. What is the volume of water indicated on this graduated cylinder? Measure to the nearest milliliter (mL).",
+     "opts": [
+      "80 mL",
+      "99 mL",
+      "81 mL",
+      "83 mL"
+     ],
+     "ans": 2,
+     "hint": "Read the bottom of the curved surface, and check which labelled line it is just past.",
+     "steps": [
+      "The cylinder is labelled every 10 mL, with ten marks dividing each 10 into single millilitres.",
+      "The water surface sits just above the line labelled 80.",
+      "It is one mark above it, and one mark is 1 mL.",
+      "80 + 1 = 81 mL."
+     ],
+     "ex": {
+      "main": "**81 mL.** Reading exactly 80 ignores that the surface is above the line; 99 comes from counting down from 100 instead of up from 80.",
+      "tip": "Always read a liquid at the bottom of its curve — that dip is called the meniscus."
+     },
+     "variant": {
+      "q": "A graduated cylinder is labelled every 10 mL, and the marks divide each 10 mL into 5 equal spaces. The bottom of the meniscus sits 2 spaces above the 40 mL line. What volume is in the cylinder?",
+      "opts": [
+       "42 mL",
+       "50 mL",
+       "44 mL",
+       "46 mL"
+      ],
+      "ans": 2,
+      "steps": [
+       "Find the value of one space: 10 mL ÷ 5 spaces = 2 mL.",
+       "Start at the labelled line, 40 mL.",
+       "Two spaces is 2 × 2 = 4 mL.",
+       "40 + 4 = 44 mL."
+      ],
+      "ex": {
+       "main": "**44 mL.** Each space is 10 ÷ 5 = 2 mL, so two spaces above 40 mL is 40 + 4 = 44 mL."
+      }
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "After one week, the tiny seedlings are not very tall, but each one is measured from the top of the soil to the top of the stem. Measure this seedling to the nearest millimeter (mm).",
+     "opts": [
+      "26 mm",
+      "2.6 mm",
+      "2.6 cm",
+      "34 mm"
+     ],
+     "ans": 0,
+     "hint": "Two of these are the same length written differently. Which unit did the question ask for?",
+     "steps": [
+      "The ruler is marked in centimetres with 10 small marks in each one, so each mark is 1 mm.",
+      "The top of the stem reaches just past the 2 cm line, on the sixth small mark.",
+      "That is 2 cm and 6 mm, which is 26 mm.",
+      "The question asked for millimetres, so the answer is 26 mm."
+     ],
+     "ex": {
+      "main": "**26 mm.** 2.6 cm is the same length and your teacher wrote \"know cm too\" beside it — but the question asked for millimetres, and only one option is in millimetres and correct.",
+      "tip": "When two options are the same length in different units, the question's own unit decides it."
+     },
+     "variant": {
+      "q": "A ruler is marked in centimetres with 10 small marks inside each centimetre. A worm reaches from 0 to 4 small marks past the 7 cm line. How long is the worm in millimetres?",
+      "opts": [
+       "11 mm",
+       "7.4 mm",
+       "74 mm",
+       "7.4 cm"
+      ],
+      "ans": 2,
+      "steps": [
+       "Each small mark inside a centimetre is 1 mm.",
+       "7 cm is 70 mm.",
+       "Four more marks adds 4 mm.",
+       "70 + 4 = 74 mm."
+      ],
+      "ex": {
+       "main": "**74 mm.** Each small mark is 1 mm, so 7 cm and 4 mm is 70 + 4 = 74 mm. 7.4 cm is the same length, but the question asked for millimetres."
+      }
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "True or False: We should only do one trial during any experiment.",
+     "opts": [
+      "True",
+      "False"
+     ],
+     "ans": 1,
+     "hint": "Think about what happens if the single plant you picked happened to be a weak seed.",
+     "steps": [
+      "One trial gives you one result, with nothing to compare it against.",
+      "Anything unusual about that one plant would look like a real finding.",
+      "Running many trials shows what is actually happening rather than a one-off.",
+      "So the statement is false."
+     ],
+     "ex": {
+      "main": "**False.** Repeated trials are what make a result trustworthy — that is why the experiment uses ten plants at each watering level rather than one.",
+      "tip": "Your teacher's margin note: should do multiple!"
+     },
+     "variant": {
+      "q": "Why does an experiment testing melting ice use ten ice cubes in each group instead of one?",
+      "opts": [
+       "Because a single cube on its own would take far too long to finish melting",
+       "Because a single odd result cannot then be mistaken for a real finding",
+       "Because ten is the number of trials that scientists always have to use",
+       "Because a graph drawn from ten cubes looks a good deal better than one"
+      ],
+      "ans": 1,
+      "steps": [
+       "Imagine the one cube you picked was slightly bigger than the rest.",
+       "With a single trial you would have no way of knowing.",
+       "Several trials let you see the pattern across all of them.",
+       "That is why repeated trials matter."
+      ],
+      "ex": {
+       "main": "**Because a single odd result cannot then be mistaken for a real finding.** Repeated trials show what is really happening rather than one cube's bad luck."
+      }
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three weeks into the experiment, we make the following observations for one of the plants. Which of these observations is actually an INFERENCE?",
+     "opts": [
+      "Light green leaves",
+      "25.4 cm tall",
+      "The wide, shiny leaves reflect light as a way to help the plant stay cool on hot days.",
+      "Thick, hairy stem"
+     ],
+     "ans": 2,
+     "hint": "Three of these you could write down just by looking. One of them explains WHY.",
+     "steps": [
+      "An observation is something you notice directly with your senses or a measuring tool.",
+      "Light green, 25.4 cm and thick and hairy are all noticed directly.",
+      "Nobody measured that the leaves are cooling the plant — that is a reason someone worked out.",
+      "So the shiny-leaves statement is the inference."
+     ],
+     "ex": {
+      "main": "**The wide, shiny leaves reflect light as a way to help the plant stay cool on hot days.** The shine can be observed; the PURPOSE behind it is an explanation, and explanations are inferences.",
+      "tip": "The words \"as a way to\" and \"because\" are usually a sign an inference has crept in."
+     },
+     "variant": {
+      "q": "A student writes four notes about a melting ice cube. Which one is an INFERENCE?",
+      "opts": [
+       "The cube measures 3 cm across at its very widest point",
+       "A puddle has spread out all the way around the base of the cube",
+       "The cube melted faster because the salt lowered the freezing point",
+       "The water sitting in the cup looks cloudy rather than clear"
+      ],
+      "ans": 2,
+      "steps": [
+       "Ask which ones you could write down just by looking or measuring.",
+       "Size, puddle and cloudiness are all directly noticed.",
+       "The word \"because\" introduces an explanation.",
+       "An explanation of why is an inference."
+      ],
+      "ex": {
+       "main": "**The cube melted faster because the salt lowered the freezing point.** The other three were noticed directly. This one gives a reason, which nobody observed."
+      }
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Four weeks into the experiment, we decide to graph our data that we have collected so far. For the plants that are receiving 100 mL water per day, predict what the average plant height will be at 5 weeks based on the current trend.",
+     "opts": [
+      "26 cm",
+      "34 cm",
+      "45 cm",
+      "28 cm"
+     ],
+     "ans": 1,
+     "hint": "Work out how much the line climbs each week, then add one more week of that climb.",
+     "steps": [
+      "On the graph the 100 mL line reaches about 25 cm at week 4.",
+      "Looking back, it has been climbing by roughly 8 to 9 cm each week.",
+      "Adding one more week of that climb gives about 34 cm.",
+      "45 cm would need the line to suddenly jump, and 26 or 28 cm would mean it almost stopped."
+     ],
+     "ex": {
+      "main": "**34 cm.** Predicting from a trend means continuing the pattern the line is already making, not just reading the last point you can see.",
+      "tip": "Extending a trend like this is called extrapolation — you are reading past the end of your data."
+     },
+     "variant": {
+      "q": "An ice cube in plain water loses about 6 g every 2 minutes. At 10 minutes it has 30 g left. Based on that trend, what will its mass be at 12 minutes?",
+      "opts": [
+       "30 g",
+       "18 g",
+       "24 g",
+       "36 g"
+      ],
+      "ans": 2,
+      "steps": [
+       "Find the pattern: 6 g lost every 2 minutes.",
+       "Going from 10 minutes to 12 minutes is one more 2-minute step.",
+       "So it loses 6 g more.",
+       "30 − 6 = 24 g."
+      ],
+      "ex": {
+       "main": "**24 g.** The cube loses 6 g every 2 minutes, so from 30 g at 10 minutes it drops to 24 g at 12."
+      }
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why did we decide to use a double line graph to plot our data?",
+     "opts": [
+      "Because it shows parts of a whole",
+      "Because it allows us to graph only qualitative data",
+      "Because we can see trends over time for both sets of plants",
+      "Because it would look prettier"
+     ],
+     "ans": 2,
+     "hint": "Each wrong option describes a different graph, or no reason at all.",
+     "steps": [
+      "A pie chart is what shows parts of a whole.",
+      "Line graphs need numbers, so they cannot plot qualitative data.",
+      "\"Prettier\" is not a scientific reason for anything.",
+      "A double line graph shows how both groups changed over time, side by side."
+     ],
+     "ex": {
+      "main": "**Because we can see trends over time for both sets of plants.** Two lines on one pair of axes let you compare the 50 mL group and the 100 mL group directly.",
+      "tip": "Your teacher wrote \"know bar graphs too\" beside this — a bar graph compares amounts between categories, where a line graph shows change over time."
+     },
+     "variant": {
+      "q": "A student measures the mass of two ice cubes every 2 minutes for 10 minutes. Which graph should she use?",
+      "opts": [
+       "A pie chart showing each cube as a slice",
+       "A double line graph",
+       "A single bar for the whole experiment",
+       "A labelled diagram of the two cups"
+      ],
+      "ans": 1,
+      "steps": [
+       "She has measurements at many points in time.",
+       "She also has two groups to compare.",
+       "A pie chart shows parts of a whole, not change.",
+       "Two lines over time is a double line graph."
+      ],
+      "ex": {
+       "main": "**A double line graph.** She has two groups measured repeatedly over time, and a line graph is what shows change over time for both at once."
+      }
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Six weeks into the experiment, we make the following observations for one of the plants. Which of these observations is QUANTITATIVE?",
+     "opts": [
+      "Wavy edges on leaves",
+      "38.7 cm tall",
+      "Dark green bud forming at top of stem",
+      "Thick, hairy stem"
+     ],
+     "ans": 1,
+     "hint": "Quantitative starts with the same letters as QUANTity.",
+     "steps": [
+      "Quantitative data is data with numbers in it.",
+      "Wavy edges, dark green and thick and hairy are all descriptions.",
+      "Only one option carries a measurement.",
+      "38.7 cm tall is the quantitative observation."
+     ],
+     "ex": {
+      "main": "**38.7 cm tall.** It is a measured number. The other three describe what the plant is like, which makes them qualitative.",
+      "tip": "Your teacher's note here was a single word: numbers!"
+     },
+     "variant": {
+      "q": "Which of these is QUANTITATIVE data about a melting ice cube?",
+      "opts": [
+       "It feels slippery",
+       "The water is cloudy",
+       "It took 14 minutes to melt",
+       "The edges look rounded"
+      ],
+      "ans": 2,
+      "steps": [
+       "Quantitative data has numbers in it.",
+       "Slippery, cloudy and rounded are all descriptions.",
+       "Only one option gives a measurement.",
+       "14 minutes is the quantitative one."
+      ],
+      "ex": {
+       "main": "**It took 14 minutes to melt.** It is a measured number. The other three describe what the cube was like, which is qualitative."
+      }
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "At 8 weeks we also decide to graph all of our data collected so far. We make this graph, but we forget to add some of the necessary parts of the graph. What is missing from this graph?",
+     "opts": [
+      "Title and axis labels",
+      "Lines connecting data and units",
+      "Axis labels and units",
+      "Trend lines and title"
+     ],
+     "ans": 2,
+     "hint": "Check each part separately. Does the graph have a title? Are the points joined up?",
+     "steps": [
+      "The graph does have a title across the top, so anything naming the title is out.",
+      "The points are joined by lines, so nothing is missing there either.",
+      "Numbers run up the side and across the bottom with nothing saying what they measure.",
+      "What is missing is the axis labels and their units."
+     ],
+     "ex": {
+      "main": "**Axis labels and units.** Numbers alone do not say whether the side is centimetres, grams or weeks — the label and its unit are what make a graph readable.",
+      "tip": "Rule out the options one part at a time. Three of the four name something the graph already has."
+     },
+     "variant": {
+      "q": "A student's graph has a title, a legend, and both sets of points joined with lines. The numbers up the side and along the bottom have nothing written beside them saying what they measure. What is missing?",
+      "opts": [
+       "A title",
+       "Axis labels and units",
+       "Lines connecting the data",
+       "A legend"
+      ],
+      "ans": 1,
+      "steps": [
+       "Go through the list and cross off what the graph already has.",
+       "It has a title, a legend and joined-up lines.",
+       "The only thing described as absent is what the numbers mean.",
+       "That is the axis labels and their units."
+      ],
+      "ex": {
+       "main": "**Axis labels and units.** Everything else in the list is described as already present. Numbers with no label do not tell you what is being measured."
+      }
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "At 9 weeks, one of the plants that received 100 mL of water per day blooms. Which of these images is the best scientific diagram of the sunflower plant?",
+     "opts": [
+      "Diagram A",
+      "Diagram B",
+      "Diagram C",
+      "Diagram D"
+     ],
+     "ans": 3,
+     "hint": "A scientific diagram needs three things at once. Check each picture for all three.",
+     "steps": [
+      "A scientific diagram needs a title, labelled parts, and a realistic drawing.",
+      "Diagram A is a cartoon with a face — that is art, not science.",
+      "Diagram B has no labels at all, and Diagram C has labels but no title.",
+      "Diagram D has the title, the labels and a realistic drawing, so it is the best one."
+     ],
+     "ex": {
+      "main": "**Diagram D.** Your teacher marked exactly why each of the others fails: A is a cartoon, B has no labels, C has no title. Only D does all three jobs.",
+      "tip": "When a question asks for the BEST, look for the one option that fails on nothing."
+     },
+     "variant": {
+      "q": "Which of these describes the best scientific diagram of a plant?",
+      "opts": [
+       "A colourful cartoon drawing with a smiling face and no labels",
+       "A realistic drawing with every part labelled and a title at the top",
+       "A realistic drawing with no labels and no title",
+       "A neat drawing with labelled parts but no title"
+      ],
+      "ans": 1,
+      "steps": [
+       "List what a scientific diagram needs: realistic, labelled, titled.",
+       "A cartoon fails on realistic and on labels.",
+       "The other two each drop one of the three.",
+       "Only one option has all three."
+      ],
+      "ex": {
+       "main": "**A realistic drawing with every part labelled and a title at the top.** A scientific diagram needs all three: realistic, labelled, and titled. The others each miss one."
+      }
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "After 10 weeks, our experiment is complete. We make the following observations for one of the plants that received 100 mL of water per day. Which of these is QUALITATIVE data?",
+     "opts": [
+      "Large flower with many yellow petals",
+      "Flower has 34 petals",
+      "Flower measures 23.5 cm across",
+      "11 leaves on stem"
+     ],
+     "ans": 0,
+     "hint": "This one is the opposite of the earlier question. Which option has no number in it?",
+     "steps": [
+      "Qualitative data describes rather than counts.",
+      "34 petals, 23.5 cm and 11 leaves are all measurements.",
+      "\"Large\" and \"many\" describe without giving a number.",
+      "So the large flower with many yellow petals is the qualitative observation."
+     ],
+     "ex": {
+      "main": "**Large flower with many yellow petals.** \"Large\" and \"many\" are descriptions, not counts. Notice how close it is to \"34 petals\" — the difference is whether anyone actually counted.",
+      "tip": "Your teacher's note: descriptive!"
+     },
+     "variant": {
+      "q": "Which of these is QUALITATIVE data about a puddle?",
+      "opts": [
+       "It is 12 cm wide",
+       "The water looks murky and green",
+       "It is 3 mm deep",
+       "It covers 40 square centimetres"
+      ],
+      "ans": 1,
+      "steps": [
+       "Qualitative data describes; quantitative data counts.",
+       "12 cm, 3 mm and 40 square centimetres are measurements.",
+       "Murky and green describe how it looks.",
+       "That is the qualitative one."
+      ],
+      "ex": {
+       "main": "**The water looks murky and green.** It describes the puddle without measuring it. The other three are all numbers."
+      }
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Now it is time to write our conclusion. Using the following graph as evidence, which of these written answers is the best evidence-based claim for the original question we asked in our experiment? [How does the volume of water given daily affect the growth height of sunflower plants?]",
+     "opts": [
+      "I saw that the plants with only 50 mL of water per day did well at the beginning, but then they kind of stopped growing, so I think 100 mL of water is the right amount.",
+      "The more water the plants got, the bigger they grew.",
+      "The plants that received 100 mL had an increasing trend in growth height, and the plants that only got 50 mL had no change after 5 weeks.",
+      "A larger volume of water given daily resulted in larger growth heights for sunflower plants. Plants that received 100 mL of water per day showed a steadily increasing trend over time, while plants that only received 50 mL per day showed no change in growth height after 5 weeks."
+     ],
+     "ans": 3,
+     "hint": "A good claim does TWO jobs. Check each option for both of them.",
+     "steps": [
+      "A claim has to answer the question that was asked.",
+      "It also has to back that answer with evidence from the data.",
+      "One option is written as \"I saw\" and \"I think\", which is personal rather than scientific.",
+      "One answers with no evidence, and one gives evidence without ever answering.",
+      "Only the last option answers the question AND supplies the trends as evidence."
+     ],
+     "ex": {
+      "main": "**A larger volume of water given daily resulted in larger growth heights for sunflower plants…** Your teacher marked the other three: no pronouns, no evidence, no answer. This one does both jobs and keeps itself out of the sentence.",
+      "tip": "Write a claim about the plants, never about yourself — \"I saw\" and \"I think\" do not belong in one."
+     },
+     "variant": {
+      "q": "A student tests whether salt makes ice melt faster. The salted cube was fully melted at 10 minutes; the plain cube still had half its mass left. Which is the best evidence-based claim?",
+      "opts": [
+       "I think that salt probably melts ice quicker than plain water does, from what I saw.",
+       "Salt made the ice melt faster than it would have done in ordinary plain water.",
+       "Adding salt to the water made the ice melt faster. The salted cube had fully melted by 10 minutes, while the cube in plain water still had half its mass left.",
+       "The salted cube had melted away by 10 minutes and the plain cube still had half its mass sitting there at exactly the same moment."
+      ],
+      "ans": 2,
+      "steps": [
+       "A claim must answer the question and give evidence.",
+       "\"I think\" makes it personal rather than scientific.",
+       "\"Salt made the ice melt faster\" answers but proves nothing.",
+       "Listing the results alone never says what they show.",
+       "The one that names the effect AND quotes the 10-minute results does both jobs."
+      ],
+      "ex": {
+       "main": "**Adding salt to the water made the ice melt faster, with the 10-minute results as evidence.** It answers the question and backs it with data. The first uses \"I think\", the second gives no evidence, and the last gives evidence but never states what it means."
+      }
+     }
+    }
+   ],
+   "updatedAt": 1788313564326
+  }
+ }
+}

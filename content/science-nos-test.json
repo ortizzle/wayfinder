@@ -1,0 +1,784 @@
+{
+ "v": 1,
+ "records": {
+  "unit-sci-nos-test": {
+   "id": "unit-sci-nos-test",
+   "type": "unit",
+   "classId": "science",
+   "title": "Science · Nature of Science Study Test",
+   "status": "draft",
+   "prep": true,
+   "order": 5,
+   "quarter": 1,
+   "round": 20,
+   "libv": 1,
+   "srcName": "Built to match the Nature of Science practice test (Drive)",
+   "source": "added",
+   "summary": {
+    "from": "added",
+    "text": "A second test over the same 20 Nature of Science skills, built around a completely different experiment: how does the amount of salt in water affect how fast an ice cube melts. Nothing here is copied from the practice test, so getting these right means you know the skill rather than the paper."
+   },
+   "why": {
+    "from": "added",
+    "text": "Doing the same test twice mostly tests whether you remember the answers. Doing a different test on the same skills tests whether you can actually do them — which is the thing the real unit test will find out."
+   },
+   "objectives": [
+    {
+     "from": "source",
+     "text": "Pick out a testable scientific question."
+    },
+    {
+     "from": "source",
+     "text": "Name independent, dependent and controlled variables in a fresh experiment."
+    },
+    {
+     "from": "source",
+     "text": "Work out what one space on a scale is worth, then read it."
+    },
+    {
+     "from": "source",
+     "text": "Sort observations into inference or observation, quantitative or qualitative."
+    },
+    {
+     "from": "source",
+     "text": "Read a double line graph and predict from its trend."
+    },
+    {
+     "from": "added",
+     "text": "Write a claim that answers the question and cites the evidence."
+    }
+   ],
+   "parentNote": {
+    "from": "added",
+    "text": "This is the parallel test — same 20 skills as the teacher's practice paper, entirely new scenario (salt water and melting ice), so she cannot answer from memory of the first one. It runs as an ordinary quiz with all 20 questions in one sitting, options shuffled, and anything she misses lands in the Growth Zone. Two questions carry a real graph the app draws itself, so the plotted data and the correct answer agree by construction — unlike the paper, nothing here depends on a picture she has to be holding. The three instrument-reading questions state the scale in words (\"labelled every 10 mL, five spaces between\") rather than showing a photo, which tests the same divide-the-gap reasoning without inventing a picture. Worth knowing: the practice paper's graduated cylinder had 1 mL spaces and this one has 2 mL spaces on purpose — reading a scale without checking what one space is worth is the commonest way to lose these marks."
+   },
+   "nextUp": {
+    "from": "added",
+    "minutes": 20,
+    "text": "Twenty questions in one sitting, the same shape as the real test. Take it after you have done the paper one, and see which skills still wobble."
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The four steps of a fair test",
+     "def": "**Change ONE thing, measure ONE thing, keep everything else the same, and repeat it.**\n• The one you change is the independent variable.\n• The one you measure is the dependent variable.\n• Everything else is a controlled variable.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Finding the variables fast",
+     "def": "**The independent variable comes right after \"How does\". The dependent variable comes after \"affect\".**\n• \"How does the amount of salt in water affect how fast an ice cube melts?\"\n• Independent: amount of salt. Dependent: how fast it melts.",
+     "hint": "Your teacher's own trick, written in the margin of the answer key.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Reading any scale",
+     "def": "**Gap between two labelled numbers ÷ number of spaces between them = what one space is worth.**\n• Then count spaces up from the labelled number below.\n• Finish by answering in the unit the question asked for.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Observation or inference?",
+     "def": "**If you noticed it, it is an observation. If you explained it, it is an inference.**\n• \"The puddle is 12 cm wide\" — observation.\n• \"The puddle formed because the ice melted\" — inference.\n• Watch for \"because\", \"so that\" and \"as a way to\".",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Quantitative or qualitative?",
+     "def": "**Quantitative has numbers. Qualitative describes.**\n• \"34 petals\" is quantitative; \"many petals\" is qualitative.\n• The same thing can be recorded either way — what matters is whether anyone counted.",
+     "hint": "QUANTity = count. QUALity = what it is like.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Which graph, and why",
+     "def": "**Line graph for change over time. Bar graph to compare categories. Pie chart for parts of a whole.**\n• Two groups measured over the same time period means a DOUBLE line graph.\n• Every one of them needs quantitative data — you cannot plot a description.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "What a finished graph has",
+     "def": "**A title, both axes labelled, units on those labels, and a legend when there is more than one line.**\n• Check them one at a time — a graph can have a title and still be missing its units.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "A claim that would earn full marks",
+     "def": "**Answer the question in a sentence, then give the numbers that prove it.**\n• No \"I saw\" or \"I think\" — write about the experiment, not about yourself.\n• An answer with no evidence, or evidence with no answer, only gets half the job done.",
+     "hint": "Your teacher underlined \"evidence-based\" on the key.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these could a scientist investigate?",
+     "opts": [
+      "How does the amount of salt in water affect how fast an ice cube melts?",
+      "Which season of the whole year is the most beautiful one to look at?",
+      "Are the fairies at the bottom of the garden real or completely imaginary?",
+      "Should every family in the country be made to recycle their rubbish?"
+     ],
+     "ans": 0,
+     "hint": "Two of these ask for an opinion, and one is not about the real world.",
+     "steps": [
+      "A scientific question must be testable by measuring something.",
+      "It must also be about the natural world.",
+      "\"Most beautiful\" and \"should everyone\" ask for opinions.",
+      "Fairies are not part of the natural world.",
+      "Salt and melting time can both be measured, so that is the investigable question."
+     ],
+     "ex": {
+      "main": "**How does the amount of salt in water affect how fast an ice cube melts?** You can measure out the salt, time the melting, and anyone could repeat it and check.",
+      "tip": "Opinion words — best, most beautiful, should — are the quickest way to spot a question science cannot answer."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A scientist wants to know why fewer bees are visiting a garden this summer. Which process should she follow?",
+     "opts": [
+      "The Engineering Design Process",
+      "The Scientific Method",
+      "Trial and error",
+      "The rock cycle"
+     ],
+     "ans": 1,
+     "hint": "One of these is for building something rather than finding something out.",
+     "steps": [
+      "She has a question about the natural world and wants an answer.",
+      "The Engineering Design Process is for designing and building a solution.",
+      "Trial and error has no plan behind it.",
+      "The Scientific Method is the process for answering a question."
+     ],
+     "ex": {
+      "main": "**The Scientific Method.** Ask, hypothesise, test, collect data, conclude. She would use the Engineering Design Process if she were building the bees a new habitat.",
+      "tip": "Both processes are careful and both are science — they just answer different kinds of question."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Before starting, a student writes: \"I predict that the ice in salt water will melt faster than the ice in plain water.\" What has she written?",
+     "opts": [
+      "A conclusion",
+      "An observation",
+      "A hypothesis",
+      "A controlled variable"
+     ],
+     "ans": 2,
+     "hint": "Look at WHEN she wrote it — before there was any data at all.",
+     "steps": [
+      "A hypothesis is written before the experiment, predicting the outcome.",
+      "A conclusion needs results, so it comes at the end.",
+      "An observation needs something to have happened for her to notice.",
+      "A prediction of the result, written in advance, is a hypothesis."
+     ],
+     "ex": {
+      "main": "**A hypothesis.** It is a prediction of what will happen, made before any testing. It is allowed to turn out wrong — a wrong hypothesis is not a failed experiment.",
+      "tip": "A hypothesis is a statement about the RESULT, not a description of the setup."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In an experiment asking \"How does the amount of salt in water affect how fast an ice cube melts?\", what is the INDEPENDENT variable?",
+     "opts": [
+      "How long the cube takes to melt",
+      "The temperature of the room",
+      "The size of the container",
+      "The amount of salt added to the water"
+     ],
+     "ans": 3,
+     "hint": "Your teacher's trick: the independent variable comes right after \"How does\".",
+     "steps": [
+      "The independent variable is the one you change on purpose.",
+      "Reading the question: \"How does the amount of salt…\" — that is what is being changed.",
+      "Melting time is what gets measured, so that is dependent.",
+      "Container size and room temperature are kept the same for every cube."
+     ],
+     "ex": {
+      "main": "**The amount of salt added to the water.** It is the one thing being deliberately changed, which is what makes it independent.",
+      "tip": "Independent comes after \"How does\"; dependent comes after \"affect\"."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student tests how the amount of salt in water affects how fast an ice cube melts. Which of these is a CONTROLLED variable?",
+     "opts": [
+      "The starting mass of every ice cube",
+      "How long each cube takes to melt",
+      "The amount of salt in each cup",
+      "Whether salt makes ice melt faster"
+     ],
+     "ans": 0,
+     "hint": "A controlled variable is one you deliberately keep identical for every trial.",
+     "steps": [
+      "The amount of salt is what is being changed, so it is independent.",
+      "Melting time is what is measured, so it is dependent.",
+      "If some cubes started bigger, you could not tell whether salt or size caused the difference.",
+      "Keeping every cube the same starting mass is a controlled variable."
+     ],
+     "ex": {
+      "main": "**The starting mass of every ice cube.** Only one thing should change in a fair test, so everything else — cube size, water volume, room temperature — is deliberately held the same.",
+      "tip": "A controlled variable is not \"the control group\". It is a condition you keep identical."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student is stirring salt into hot water hard enough to splash. Which piece of PPE guards the hazard of liquid reaching her eyes?",
+     "opts": [
+      "Closed-toed shoes",
+      "Safety goggles",
+      "Gloves",
+      "A lab apron"
+     ],
+     "ans": 1,
+     "hint": "Name the hazard first, then find the one piece of gear that covers that part of her.",
+     "steps": [
+      "The hazard is hot liquid flicking upward.",
+      "Shoes protect her feet and an apron protects her clothes.",
+      "Gloves protect her hands.",
+      "Only goggles cover the eyes."
+     ],
+     "ex": {
+      "main": "**Safety goggles.** Each piece of PPE answers one particular hazard — the trick is to name the hazard before choosing the gear.",
+      "tip": "When a question instead asks how to be \"as safe as possible\", check whether several hazards are in play at once."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Each ice cube is frozen in a mould shaped like a rectangular prism, 4 cm long, 3 cm wide and 2 cm high. What volume of water fills one mould?",
+     "opts": [
+      "9 cm",
+      "12 cm²",
+      "24 cm³",
+      "24 cm²"
+     ],
+     "ans": 2,
+     "hint": "Multiply all three, then think about how many little marks the unit needs.",
+     "steps": [
+      "Volume of a rectangular prism is length × width × height.",
+      "4 × 3 = 12, and 12 × 2 = 24.",
+      "Three lengths multiplied together give cubic units.",
+      "So the volume is 24 cm³."
+     ],
+     "ex": {
+      "main": "**24 cm³.** 4 × 3 × 2 = 24, and multiplying three measurements gives cm³. 12 cm² is only the area of one face, and 9 cm comes from adding instead of multiplying.",
+      "tip": "The unit is half the answer: cm is a length, cm² an area, cm³ a volume."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A container is 8 cm tall. How many millimetres is that?",
+     "opts": [
+      "0.8 mm",
+      "18 mm",
+      "800 mm",
+      "80 mm"
+     ],
+     "ans": 3,
+     "hint": "Millimetres are smaller than centimetres, so the number must get bigger — but only by ten times.",
+     "steps": [
+      "There are 10 mm in every centimetre.",
+      "Going from cm to mm means multiplying by 10.",
+      "8 × 10 = 80.",
+      "So 8 cm is 80 mm."
+     ],
+     "ex": {
+      "main": "**80 mm.** 1 cm = 10 mm, so 8 × 10 = 80. Dividing gives 0.8, and multiplying twice gives 800 — both are the same mistake in different directions.",
+      "tip": "A smaller unit always needs a bigger number for the same length."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A thermometer is labelled every 10 °C, and the small marks divide each 10 °C into 10 equal spaces. The liquid stops 3 spaces above the 20 °C label. What temperature is it showing?",
+     "opts": [
+      "23 °C",
+      "20.3 °C",
+      "26 °C",
+      "50 °C"
+     ],
+     "ans": 0,
+     "hint": "Work out what one space is worth before you read anything off the scale.",
+     "steps": [
+      "The gap between labels is 10 °C, split into 10 spaces.",
+      "10 ÷ 10 = 1, so each space is worth 1 °C.",
+      "Start at the labelled number below the liquid, which is 20 °C.",
+      "Three spaces up is 3 °C more, so 20 + 3 = 23 °C."
+     ],
+     "ex": {
+      "main": "**23 °C.** Finding the value of one space first is the whole method — after that it is just counting up from the nearest labelled number.",
+      "tip": "Never assume a small mark is worth 1. On a scale split into 5 spaces it would be worth 2."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A graduated cylinder is labelled every 10 mL, and the marks divide each 10 mL into 5 equal spaces. The bottom of the meniscus sits 3 spaces above the 60 mL line. What volume of water is in the cylinder?",
+     "opts": [
+      "63 mL",
+      "66 mL",
+      "70 mL",
+      "65 mL"
+     ],
+     "ans": 1,
+     "hint": "Five spaces to a 10 mL gap means each space is worth more than one millilitre.",
+     "steps": [
+      "The gap between labels is 10 mL, split into 5 spaces.",
+      "10 ÷ 5 = 2, so each space is worth 2 mL.",
+      "Three spaces above 60 mL is 3 × 2 = 6 mL.",
+      "60 + 6 = 66 mL."
+     ],
+     "ex": {
+      "main": "**66 mL.** Counting the spaces as 1 mL each would give 63 mL, which is exactly the trap. Always divide the gap by the number of spaces first.",
+      "tip": "Read the liquid at the bottom of its curve — that dip is the meniscus."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A ruler is marked in centimetres, with 10 small marks inside each centimetre. An ice cube measures from 0 to 4 small marks past the 3 cm line. How wide is it in millimetres?",
+     "opts": [
+      "3.4 mm",
+      "7 mm",
+      "34 mm",
+      "3.4 cm"
+     ],
+     "ans": 2,
+     "hint": "Two of these are the same width written differently. Check which unit was asked for.",
+     "steps": [
+      "Ten marks inside each centimetre means each mark is 1 mm.",
+      "3 cm is 30 mm.",
+      "Four more marks adds 4 mm.",
+      "30 + 4 = 34 mm."
+     ],
+     "ex": {
+      "main": "**34 mm.** 3.4 cm is the very same width, but the question asked for millimetres, and only one option is both correct and in millimetres.",
+      "tip": "When two options are the same length in different units, the question's own unit decides it."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why does the melting-ice experiment use ten cubes in each group instead of one?",
+     "opts": [
+      "Because ten is the number scientists always use",
+      "Because one cube would melt too slowly to measure",
+      "Because it makes the graph look fuller",
+      "So that one unusual cube cannot be mistaken for a real result"
+     ],
+     "ans": 3,
+     "hint": "Imagine the single cube you picked happened to be slightly bigger than the rest.",
+     "steps": [
+      "One trial gives one result with nothing to compare it against.",
+      "Anything odd about that cube would look like a real finding.",
+      "Ten cubes let you see the pattern across all of them.",
+      "Repeated trials are what make a result trustworthy."
+     ],
+     "ex": {
+      "main": "**So that one unusual cube cannot be mistaken for a real result.** Repeated trials are how you tell a real effect from bad luck.",
+      "tip": "There is no magic number of trials — more is better, and one is never enough."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student writes four notes while watching an ice cube melt. Which one is an INFERENCE?",
+     "opts": [
+      "The cube melted faster because the salt lowered the freezing point of the water",
+      "A puddle of water has spread all the way around the base of the cube",
+      "The cube measures 3 cm across at its widest point",
+      "The water in the cup looks cloudy rather than clear"
+     ],
+     "ans": 0,
+     "hint": "Three of these you could write down just by looking. One of them explains why.",
+     "steps": [
+      "An observation is something you notice directly.",
+      "A puddle, a width and cloudy water are all noticed directly.",
+      "Nobody saw the freezing point change — that is a reason someone worked out.",
+      "An explanation of why is an inference."
+     ],
+     "ex": {
+      "main": "**The cube melted faster because the salt lowered the freezing point of the water.** The faster melting was observed; the reason behind it was reasoned out, which makes it an inference.",
+      "tip": "The words \"because\", \"so that\" and \"as a way to\" almost always introduce an inference."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "The graph shown gives the mass of two ice cubes over 10 minutes, one in plain water and one in salt water. Based on the trend of the plain-water cube, what will its mass be at 12 minutes?",
+     "opts": [
+      "30 g",
+      "24 g",
+      "18 g",
+      "36 g"
+     ],
+     "ans": 1,
+     "hint": "Work out how much that line drops in every 2-minute step, then take one more step.",
+     "steps": [
+      "Read the plain-water line: 60, 54, 48, 42, 36, 30 grams.",
+      "It loses 6 g in every 2-minute step.",
+      "Twelve minutes is one more step past ten minutes.",
+      "30 − 6 = 24 g."
+     ],
+     "ex": {
+      "main": "**24 g.** Predicting from a trend means continuing the pattern, not repeating the last value you can actually see on the graph.",
+      "tip": "Reading past the end of your data like this is called extrapolation."
+     },
+     "graph": {
+      "w": [
+       0,
+       12,
+       0,
+       70
+      ],
+      "xl": "Time (minutes)",
+      "yl": "Mass of ice (g)",
+      "series": [
+       {
+        "type": "pts",
+        "pts": [
+         [
+          0,
+          60
+         ],
+         [
+          2,
+          54
+         ],
+         [
+          4,
+          48
+         ],
+         [
+          6,
+          42
+         ],
+         [
+          8,
+          36
+         ],
+         [
+          10,
+          30
+         ]
+        ]
+       },
+       {
+        "type": "pts",
+        "pts": [
+         [
+          0,
+          60
+         ],
+         [
+          2,
+          48
+         ],
+         [
+          4,
+          36
+         ],
+         [
+          6,
+          24
+         ],
+         [
+          8,
+          12
+         ],
+         [
+          10,
+          2
+         ]
+        ]
+       }
+      ],
+      "pts": [
+       {
+        "x": 10,
+        "y": 30,
+        "label": "plain water"
+       },
+       {
+        "x": 10,
+        "y": 2,
+        "label": "salt water"
+       }
+      ]
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student measures the mass of two groups of ice cubes every 2 minutes for 10 minutes. Which kind of graph should she use?",
+     "opts": [
+      "A pie chart",
+      "A single bar",
+      "A double line graph",
+      "A scientific diagram"
+     ],
+     "ans": 2,
+     "hint": "She has two things going on at once: two groups, and many points in time.",
+     "steps": [
+      "She measured repeatedly over time, which means change over time.",
+      "A line graph is what shows change over time.",
+      "She has two groups to compare, so she needs two lines.",
+      "That is a double line graph. A pie chart would show parts of a whole instead."
+     ],
+     "ex": {
+      "main": "**A double line graph.** Two lines on one pair of axes let you compare both groups over the same stretch of time.",
+      "tip": "A bar graph compares amounts between categories; a line graph shows change over time."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is QUANTITATIVE data about a melting ice cube?",
+     "opts": [
+      "The edges of the cube look smooth and rounded over",
+      "The puddle underneath looks cloudy and grey",
+      "The water around the cube feels very cold",
+      "It took 14 minutes to melt completely"
+     ],
+     "ans": 3,
+     "hint": "Quantitative starts the same way as QUANTity.",
+     "steps": [
+      "Quantitative data has numbers in it.",
+      "Rounded, cold and cloudy are all descriptions.",
+      "Only one option carries a measurement.",
+      "14 minutes is the quantitative observation."
+     ],
+     "ex": {
+      "main": "**It took 14 minutes to melt completely.** It is a measured number. The other three describe what the cube or water was like, which makes them qualitative.",
+      "tip": "The same thing can be recorded either way — what decides it is whether anyone measured."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is QUALITATIVE data about a melting ice cube?",
+     "opts": [
+      "The surface looks wet and glassy",
+      "The puddle is 12 cm across",
+      "It lost 18 grams in 6 minutes",
+      "It melted in 14 minutes"
+     ],
+     "ans": 0,
+     "hint": "This is the opposite of the last one. Which option has no number in it at all?",
+     "steps": [
+      "Qualitative data describes rather than counts.",
+      "18 grams, 12 cm and 14 minutes are all measurements.",
+      "Wet and glassy describe how it looks.",
+      "So that is the qualitative observation."
+     ],
+     "ex": {
+      "main": "**The surface looks wet and glassy.** It describes the cube without measuring anything.",
+      "tip": "Descriptions are qualitative even when they sound precise — \"glassy\" is still not a number."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student's graph has a title, a legend, and both sets of points joined with lines. The numbers running up the side and along the bottom have nothing beside them saying what they measure. What is missing from her graph?",
+     "opts": [
+      "A title",
+      "Axis labels and units",
+      "A legend",
+      "Lines connecting the data"
+     ],
+     "ans": 1,
+     "hint": "Go through the list and cross off everything the question says she already has.",
+     "steps": [
+      "The question says the graph has a title, so that is not missing.",
+      "It says the points are joined with lines, and that there is a legend.",
+      "The only thing described as absent is what the numbers along each axis mean.",
+      "That is the axis labels and their units."
+     ],
+     "ex": {
+      "main": "**Axis labels and units.** Numbers alone do not say whether the side is grams, centimetres or minutes — the label and its unit are what make a graph readable.",
+      "tip": "Check the parts of a graph one at a time. A graph can have a title and still be unreadable."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these describes the best scientific diagram of an ice cube experiment?",
+     "opts": [
+      "A neat drawing with labelled parts but no title",
+      "A colourful cartoon with a smiling ice cube and no labels",
+      "A realistic drawing with a title at the top and every part labelled",
+      "A realistic drawing with no title and no labels"
+     ],
+     "ans": 2,
+     "hint": "A scientific diagram has to do three jobs at once. Check each option against all three.",
+     "steps": [
+      "A scientific diagram needs a realistic drawing, labelled parts, and a title.",
+      "The cartoon fails on realistic and on labels.",
+      "One option has labels but no title, and another has neither.",
+      "Only one option does all three."
+     ],
+     "ex": {
+      "main": "**A realistic drawing with a title at the top and every part labelled.** Miss any one of the three and it stops being a scientific diagram — a cartoon is art, and labels with no title leave the reader guessing what they are looking at.",
+      "tip": "When a question asks for the BEST, look for the option that fails on nothing."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "The graph shown gives the mass of two ice cubes over 10 minutes, one in plain water and one in salt water. Which is the best evidence-based claim for the question \"How does the amount of salt in water affect how fast an ice cube melts?\"",
+     "opts": [
+      "I could really tell the salty one was going faster than the other one, so I think that salt must help ice melt more quickly than plain water does.",
+      "Salt made the ice melt faster than it would have done in ordinary plain water.",
+      "The cube sitting in the salt water dropped from 60 g all the way down to 2 g, while the cube in the plain water only came down as far as 30 g in the same ten minutes.",
+      "Adding salt to the water made the ice melt faster. The cube in salt water lost about 58 g in 10 minutes, while the cube in plain water lost only about 30 g in the same time."
+     ],
+     "ans": 3,
+     "hint": "A claim has two jobs: answer the question, and back it with data. Check each option for both.",
+     "steps": [
+      "A claim must answer the question that was asked.",
+      "It must also give evidence from the data.",
+      "One option uses \"I could tell\" and \"I think\", which is personal rather than scientific.",
+      "One answers with no evidence, and one lists evidence without ever saying what it means.",
+      "The claim that states what the salt did AND quotes the two mass losses is the one that does both jobs."
+     ],
+     "ex": {
+      "main": "**Adding salt to the water made the ice melt faster, backed by the 58 g and 30 g losses.** It states what the salt did AND cites the numbers that show it, and it keeps the writer out of the sentence.",
+      "tip": "Write a claim about the experiment, never about yourself — \"I saw\" and \"I think\" do not belong."
+     },
+     "graph": {
+      "w": [
+       0,
+       12,
+       0,
+       70
+      ],
+      "xl": "Time (minutes)",
+      "yl": "Mass of ice (g)",
+      "series": [
+       {
+        "type": "pts",
+        "pts": [
+         [
+          0,
+          60
+         ],
+         [
+          2,
+          54
+         ],
+         [
+          4,
+          48
+         ],
+         [
+          6,
+          42
+         ],
+         [
+          8,
+          36
+         ],
+         [
+          10,
+          30
+         ]
+        ]
+       },
+       {
+        "type": "pts",
+        "pts": [
+         [
+          0,
+          60
+         ],
+         [
+          2,
+          48
+         ],
+         [
+          4,
+          36
+         ],
+         [
+          6,
+          24
+         ],
+         [
+          8,
+          12
+         ],
+         [
+          10,
+          2
+         ]
+        ]
+       }
+      ],
+      "pts": [
+       {
+        "x": 10,
+        "y": 30,
+        "label": "plain water"
+       },
+       {
+        "x": 10,
+        "y": 2,
+        "label": "salt water"
+       }
+      ]
+     }
+    }
+   ],
+   "updatedAt": 1788313564326
+  }
+ }
+}

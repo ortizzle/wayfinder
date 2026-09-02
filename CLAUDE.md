@@ -903,6 +903,91 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The practice test, twice (v122)
+
+Chris: River has new Unit 1 science test material — make a replica of the
+test she can submit answers to, with an answer key, and a generic test she
+can take to study. Two PDFs in the Science "Quiz 1 - Material" folder:
+"Unit 1 Review Test" (the teacher's *Practice for Nature of Science Unit
+Test*, 19 points, explicitly labelled practice — not a live test) and its
+answer key. The real test is the 9/3 Nature of Science Test already in
+`SUGGESTED_ASSESS`.
+
+**Two units, one builder** (`tools/builders/build_sci_nos.py`):
+
+- **`unit-sci-nos-practice`** — the paper transcribed VERBATIM as a
+  `guide:true` unit (which is `prep` for free), `order:4`, shelving right
+  after Reading Scales. The builder asserts the answer string
+  `CBACDBCBCABCBCBCDAD` against the key before it will write the file, and
+  never calls `_balance()` — option order is the paper's, letter for letter.
+  Every one of the 19 carries a hand-verified `variant` for the rescue
+  round, built on a different experiment (salt water and melting ice).
+- **`unit-sci-nos-test`** — the parallel: same skills, entirely fresh
+  scenario, ordinary shuffled quiz, `prep:true`, `order:5`, `round:20` so
+  it sits like a test. Two questions carry a real `graph` (the double line
+  graph of ice mass over time), so the plotted data and the answer agree by
+  construction; a labelled point at the end of each line names it, because
+  `renderGraph` has no legend.
+
+**Reading the material.** The student copy has a clean text layer, but
+Drive's `read_file_content` returned it with classic multi-column reflow —
+Q4's stem followed by Q5's and Q6's options. `pypdfium2`'s own
+`get_textpage()` gave the same PDF in true reading order, which is how the
+option order was confirmed. The key is a pure scan with the answers circled
+in pink marker and has no text layer at all; it was rendered page by page
+and read as images. **All 19 answers were independently re-derived first
+and matched the circled key with zero discrepancies.**
+
+**The teacher's margin notes are the best content in the folder** and are
+on the flashcards as written: "no opinions, natural world", "independent
+comes after *How does*", "dependent = what we measure", "should do
+multiple!", "scientists use the metric system", "know cm too", "know bar
+graphs too", "numbers!", "descriptive!", "answer question and give
+evidence". They read as a list of exactly what the real test will ask.
+
+**Honest-scope calls, same as `science-scales.json`:** eight of the paper's
+questions hang on a picture (a prism, a thermometer, a graduated cylinder,
+a ruler, three graphs, four diagrams). The guide unit does not reproduce
+them — the paper is beside her, that is what "I did it on paper" means, and
+a redrawn graph that read 33 where the paper read 34 would make a right
+answer wrong. The walkthrough describes what each picture showed. The study
+test asks the same skills without pictures: the instrument questions state
+the scale in words ("labelled every 10 mL, five spaces between") and test
+the divide-the-gap step, and the diagram question asks what MAKES a diagram
+scientific. The study test's cylinder has 2 mL spaces where the paper's had
+1 mL, on purpose.
+
+**Three checker rules learned to recognise a guide unit**, each for the
+same reason — a guide transcribes a real paper and its options never
+shuffle — and each scoped to the MAIN question only, since variants are
+ours and run in the shuffled rescue round:
+
+- `POSITIONAL` no longer fires on a guide's main question. Q5's real answer
+  is "All of the above", and it stays.
+- A guide's main question may carry **2 options**: Q11 is True/False on the
+  paper, and `SCREENS.guideentry` draws its letters from `opts.length`, so
+  it renders A/B correctly. Inventing two extra options would change what
+  she is entering.
+- The length-bias warning skips a guide's main options: they are the
+  teacher's words and editing them to even up lengths breaks the
+  letter-for-letter contract. This retired 10 permanently-unfixable
+  warnings on Ad Astra's three guides too; the checker file is identical in
+  both repos and was copied across.
+
+The checker still caught three real bugs of mine on the first build — a
+study-test stem opening "In the same melting-ice experiment" (the
+back-reference rule), and "Only the last option does both jobs" in a
+walkthrough step (positional, in BOTH the study test and a variant). Fixed
+by restating, not by exempting.
+
+`tools/test_sci_nos.js` (17 checks): the key letter-for-letter, options
+rendering unshuffled on the guide, the entry grid with A/B on row 11 and
+A/B/C/D on the other 18, a realistic 14-of-19 paper pass grading to one
+`paper:true` log with five misses on the ladder, the rescue round asking
+exactly five fresh variants, the study test's 20-question round playing
+with a graph actually rendered mid-round, and both stops gold-ringed in
+order after Reading Scales.
+
 ### The question that answered itself (v121)
 
 Chris: *"for the wordly wise quizzes, sometimes the questions give the
