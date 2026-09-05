@@ -63,11 +63,11 @@ const PORT = process.argv[2] || 8110;
   const day = await p.evaluate(()=>{
     const real=AZ.today; AZ.today=()=>'2026-09-14'; AZ.nowMinutes=()=>9*60;
     setClubState('challisland','reg');
-    go('today');
-    ctx._showTT = true; render();   // go() resets ctx — the flag has to be set after, then re-rendered.
+    /* v150: the timetable — and a registered club with it — lives on Study. */
+    go('study');
     const reg = [...document.querySelectorAll('#screen .evt.club')].map(n=>n.textContent.replace(/\s+/g,' ').trim());
     setClubState('challisland','want');
-    go('today');
+    go('study');
     const want = document.querySelectorAll('#screen .evt.club').length;
     setClubState('challisland','reg');
     AZ.today=real;

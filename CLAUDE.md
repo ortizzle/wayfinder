@@ -903,6 +903,30 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Practice, then the test (v131 / Ad Astra v150, both apps)
+
+Kat's nine-point review, shipped in step — engine, identical here. See
+ad-astra/CLAUDE.md's section of the same name for every rule and
+measurement: status on the doors (`cardsProgress`, `quizProgress` in
+rounds, `qstat.plain` so only the quiz moves the map), the Practice /
+Test yourself sections with the quiz as the last, wide door, the details
+folded behind the title and "What this covers" removed from her side, the
+lesson opening under its own map stop, `lessonHome()` after a round, test
+prompts opening the Growth Zone for their subject, and Today streamlined
+with the timetable moved onto Study as the subject list.
+
+Two things are this app's own. **Study's line-up rotates**: it is
+`dayClasses()` for today, or for the next school day on a day off (the
+divider says which — "Your subjects · Thursday's order"), and every
+`STUDY_CLASSES` subject not on that day follows the line-up with its
+`daysFor()` in place of a time, so Writing on a Wednesday still has its
+row. And the Bee stays on the practice side with the other games; a bee
+unit never gets the clock tile, as before.
+
+`tools/test_ux2.js`, `tools/contrast_ux2.js`, `tools/test_horizon.js`,
+`tools/test_tutoring.js` and `tools/test_clubs.js` are the same files as
+Ad Astra's (worst measured contrast here 4.93:1, the door's status line).
+
 ### The number line (v130 / Ad Astra v149, both apps)
 
 `kind:'slider'` — she drags a marker to where a number belongs. Engine and
