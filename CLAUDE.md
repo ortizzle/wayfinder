@@ -903,6 +903,20 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The Trivia Ladder (v137 / Ad Astra v156, both apps)
+
+A phone-native, solo Jeopardy-style game — Chris's follow-up after mocking
+one up as a standalone Artifact to decide whether it was worth building.
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same
+name for the full design: up to ten of a unit's own MC/analogy questions
+dealt onto point tiles she opens in any order, answered through the real
+unmodified quiz screen (so hints, steps, the calculator, sheet and every
+existing tool travel for free, and `answer()` needed zero changes), two
+entry doors (a lesson's own bank, or a subject-wide mix via the same
+`buildShuffleUnit()` the Shuffle round already uses), and points that are
+pure flavor for the choosing — real XP still follows the ordinary
+10-per-correct rule. `tools/test_ladder.js` is the same file as Ad Astra's.
+
 ### A fuller sky, and "Do now" (v136 / Ad Astra v155, both apps)
 
 The living-sky starfield gained a 4th twinkle layer (112 points across four
