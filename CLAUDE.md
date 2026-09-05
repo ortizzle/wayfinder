@@ -903,6 +903,16 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### A fuller sky, and "Do now" (v136 / Ad Astra v155, both apps)
+
+The living-sky starfield gained a 4th twinkle layer (112 points across four
+layers, up from 42) and a minority of its points now carry real star color
+— blue-white, gold, rose, mint, lavender — instead of plain white. Engine,
+identical here (Wayfinder's `.skyfx` never had the aurora shimmer, only the
+shooting stars — that stays as-is). "The daily three" on Today gained a
+small "DO NOW" eyebrow, same size as a date header. See ad-astra/CLAUDE.md's
+section of the same name.
+
 ### After the quiz, and Match removed (v135 / Ad Astra v154, both apps)
 
 Two changes from living with the app, both Chris, both engine and
