@@ -903,6 +903,33 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The week of 9/9 (v129)
+
+The 4th-grade newsletter of 9/3 (text layer, clean) adds two quizzes to
+`SUGGESTED_ASSESS` for Wednesday 9/9 — Wordly Wise Unit 2 (the class calls
+lessons "units"; `unit-ww502` is the shelf part) and History Unit 5,
+latitude & longitude — the day before the Unit 1 math test already listed
+for 9/10. Student hours confirmed unchanged. Science starts a Chemistry
+unit (matter and its phases) the week of 9/7; nothing to build yet.
+
+- **A content gap, flagged rather than filled:** there is no history unit
+  for latitude & longitude and no source for one in Drive (the only Drive
+  hits for "latitude" are the newsletter itself and an Ad Astra content
+  backup). Her class has its own vocabulary for map components, so a unit
+  from general knowledge would be guessing what Unit 5 covers.
+- The 8/21 newsletter's four assessments (8/26–8/28) were never in
+  `SUGGESTED_ASSESS`; they are past now, and the parent card filters to
+  `sg.date >= today`, so adding them would render nothing. Chris can enter
+  those grades by hand if he wants them tabulated.
+- **The real Q1 progress report is in Drive now** (the earlier 62-byte file
+  was a link). It is a course-level snapshot, not an assessment, so nothing
+  in the app changes for it — the numbers are for Chris's eyes and were
+  relayed to him, never written into this public repo.
+- **Sedona's Paw Prints are unreadable from here**: image-only scans of
+  78–221 MB each (9/4, 8/28, 8/21, 8/14, 8/7). `read_file_content` returns
+  empty and the download cap is 10 MB. The Google Docs OCR route or a
+  screenshot of the dates page, as with the Cub Hub slide, is the way in.
+
 ### Dress days, and the Cub Hub of 9/4 (v127 / Ad Astra v148 for the engine half)
 
 Chris uploaded the 9/4 Cub Hub and asked for its special dress days in the
