@@ -903,6 +903,19 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The plan of attack (v132 / Ad Astra v151, both apps)
+
+Study opens on the companion's perch, whose line is the thread itself
+(due reviews → a close test → the open lesson → the plan) and which is
+the door; the affirmation card and the "Pick up the thread" hero are
+gone, and roughly one day in three with nothing pressing the companion
+says the day's affirmation instead. Engine, identical here — see
+ad-astra/CLAUDE.md's section of the same name for the rules (never a
+swap over a due review or a close test; the star stands in when no
+companion is chosen; the weekly aim stays). River's due line keeps its
+own wording ("came back around… stay caught"). `tools/test_plan.js` is
+the same file as Ad Astra's.
+
 ### Practice, then the test (v131 / Ad Astra v150, both apps)
 
 Kat's nine-point review, shipped in step — engine, identical here. See
