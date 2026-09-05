@@ -903,6 +903,28 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### After the quiz, and Match removed (v135 / Ad Astra v154, both apps)
+
+Two changes from living with the app, both Chris, both engine and
+identical here — see ad-astra/CLAUDE.md's sections of the same names.
+
+Finishing a quiz (or a flashcard deck) now lands on the **subject page**,
+not the specific lesson — "in case there is more quizzes or stuff to
+study." This reverses v150's "return to the lesson" rule; review rounds
+still go to the Growth Zone and the daily three to Today. `lessonHome()`
+is gone; every call site is a plain `go('unit',{classId})`.
+
+**Memory Match is removed** ("it isn't very helpful") — the door, the
+screen, and its state and functions are gone outright. `mixHash` (defined
+inside Match's old block but load-bearing for swipe sort, `pickRound()`
+and the plan-of-attack swap) moved to its own standalone definition.
+`modeLabel()` keeps its `match` case so historical sessions in a synced
+gist still display correctly; nothing writes a new one. The daily three,
+Match's neighbor from the same original batch, is untouched.
+
+`tools/test_ux2.js` and `tools/test_games.js` are the same files as
+Ad Astra's, updated the same way.
+
 ### Bunch the plan (v134 / Ad Astra v153, both apps)
 
 Caught on River's own app — a real test week stacked three subjects into
