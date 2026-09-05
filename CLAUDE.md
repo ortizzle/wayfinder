@@ -925,11 +925,12 @@ clubs begin 9/14 (a door to the clubs screen), **Fall Picture Day 9/16
 newsletter)**, Sandra Day O'Connor Day 9/25, SHINE lunch 9/30, Pledge
 Signing Day 10/1. Nothing on the image pages was guessed at.
 
-> **Still open:** the per-day Spirit Week themes. The unblock is the one
-> the Lemonade Crime scan established — Chris right-clicks the PDF in Drive
-> → Open with → Google Docs, and Drive OCRs the slides server-side. Then
-> the five-day event is replaced by five one-day `dress` events, one theme
-> each.
+> **Resolved in v128:** Chris sent the Fall Week of Giving slide as a
+> screenshot, which was faster than the OCR route. The five-day block is
+> now five one-day `dress` events — Hat Day, Sport Day, Green & Seen,
+> Disney Day, Bobcat Cub Pride — each with the slide's own instruction as
+> its note, so every morning of that week names its theme. The slide is the
+> Annual Teacher Fund's; the themes are what the app carries.
 
 Also in the folders: **"Q1 Progress Report.pdf" is a 62-byte text file
 holding a ParentSquare link**, not the report — nothing to read. And the

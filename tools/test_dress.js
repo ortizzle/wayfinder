@@ -18,7 +18,7 @@ const PORT = process.argv[2] || 8202;
   });
   ck('Picture Day and Spirit Week are dress days; the rest of the list is in as notes',
      ev.pic.some(e=>/Picture Day/.test(e.name) && e.kind==='dress') && ev.spirit.some(e=>/Spirit Week/.test(e.name) && e.kind==='dress')
-     && ev.clubs.some(e=>/clubs begin/i.test(e.name)) && ev.pledge.some(e=>/Pledge/.test(e.name)) && ev.dressCount===2, ev);
+     && ev.clubs.some(e=>/clubs begin/i.test(e.name)) && ev.pledge.some(e=>/Pledge/.test(e.name)) && ev.dressCount===6, ev);
 
   // Render Today AS 9/16 by pointing the clock there.
   const pinned = await p.evaluate(() => {
@@ -38,11 +38,11 @@ const PORT = process.argv[2] || 8202;
     try {
       go('today');
       const rows = [...document.querySelectorAll('#screen .evt')].map(r => r.textContent);
-      const sw = rows.find(t => /Spirit Week/.test(t));
-      return {found: !!sw, day: sw && /Day 3 of 5/.test(sw)};
+      const sw = rows.find(t => /Spirit Week · Green & Seen/.test(t));
+      return {found: !!sw, day: sw && /green shirt/.test(sw) && !/Day \d of/.test(sw)};
     } finally { AZ.today = real; }
   });
-  ck('mid Spirit Week the pinned row says Day 3 of 5', week.found && week.day, week);
+  ck('Wednesday of Spirit Week pins Green & Seen with its own theme, as a one-day event', week.found && week.day, week);
 
   const coming = await p.evaluate(() => {
     const real = AZ.today; AZ.today = () => '2026-09-10';

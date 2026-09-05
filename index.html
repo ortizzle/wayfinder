@@ -1440,7 +1440,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v127 · dress days';
+const APP_VERSION = 'v128 · hat day';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1611,8 +1611,14 @@ const CAL = {
      note:'Your signed-up clubs join the day they meet from here on.'},
     {start:'2026-09-16', name:'Fall Picture Day', icon:'📸', kind:'dress', note:'School pictures today — look sharp.'},
     {start:'2026-09-17', name:'Hearing & vision screening · Constitution & Citizenship Day', icon:'👁️', kind:'note'},
-    {start:'2026-09-21', end:'2026-09-25', name:'Spirit Week · Week of Giving · Start With Hello Week', icon:'👕', kind:'dress',
-     note:'A dress-up theme each day — the day-by-day list is in the newsletter.'},
+    /* Spirit Week's daily themes, from the Fall Week of Giving slide Chris
+       sent as a screenshot (the newsletter's image page). One event per day so
+       each morning names its own theme. */
+    {start:'2026-09-21', name:'Spirit Week · Hat Day', icon:'🧢', kind:'dress', note:'Wear your favorite, silliest hat.'},
+    {start:'2026-09-22', name:'Spirit Week · Sport Day', icon:'⚽', kind:'dress', note:'Represent your favorite sports team.'},
+    {start:'2026-09-23', name:'Spirit Week · Green & Seen', icon:'💚', kind:'dress', note:'Wear a green shirt to show support for inclusivity.'},
+    {start:'2026-09-24', name:'Spirit Week · Disney Day', icon:'🐭', kind:'dress', note:'Dress up as your favorite Disney character.'},
+    {start:'2026-09-25', name:'Spirit Week · Bobcat Cub Pride', icon:'🐾', kind:'dress', note:'Wear your BCPS gear to show how much you love your school.'},
     {start:'2026-09-25', name:"Sandra Day O'Connor Day", icon:'⚖️', kind:'note'},
     {start:'2026-09-30', name:'SHINE lunch', icon:'🍱', kind:'community'},
     {start:'2026-10-01', name:'Pledge Signing Day', icon:'✍️', kind:'note',
