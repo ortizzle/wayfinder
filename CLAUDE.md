@@ -903,6 +903,16 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Bunch the plan (v134 / Ad Astra v153, both apps)
+
+Caught on River's own app — a real test week stacked three subjects into
+six pieces (a card, then a separate full-width Mixed round button,
+repeated). The button now nests inside its subject's card instead of
+following it, so a ramped subject is one block. Engine, identical here —
+see ad-astra/CLAUDE.md's section of the same name, including the
+`stopPropagation` that keeps the tap from also re-firing the card's own
+navigation.
+
 ### Font and spacing on the plan (v133 / Ad Astra v152, both apps)
 
 The companion's bubble on the plan perch is 17px in both its states (was
