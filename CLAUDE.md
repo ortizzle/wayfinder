@@ -903,6 +903,19 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The number line (v130 / Ad Astra v149, both apps)
+
+`kind:'slider'` — she drags a marker to where a number belongs. Engine and
+rules in ad-astra/CLAUDE.md's section of the same name. Content here:
+**`Topic 3 · Decimals on the Number Line`** (`unit-m3nl`, `prep:true`, twelve
+sliders, `tools/builders/build_numberline.py`), built for the Unit 1 math
+test on 9/10: tenths on 0–1, hundredths on zoomed-in lines (0.3–0.4,
+5.1–5.2), two lines whose marks are halves rather than tenths (the
+what-is-one-space-worth trap, the same as reading a cylinder), a halfway-
+between question and a round-then-place question. Title-sorts after
+"Decimals Extra Practice" and before "Topic Review" with no `order` field.
+`tools/test_numberline.js` is the same file as Ad Astra's.
+
 ### The week of 9/9 (v129)
 
 The 4th-grade newsletter of 9/3 (text layer, clean) adds two quizzes to
