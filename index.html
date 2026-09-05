@@ -1440,7 +1440,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v126 · read the second tile';
+const APP_VERSION = 'v127 · dress days';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1603,6 +1603,20 @@ const CAL = {
     {start:'2026-08-31', end:'2026-09-04', name:'Fall club registration', icon:'📝', kind:'note', screen:'clubs',
      note:'Tap to browse every club open to your grade and star the ones you want. Sign-ups close in Blackbaud Friday.'},
     {start:'2026-09-03', name:'Early release — Professional Development', icon:'🕑', kind:'early', early:true},
+    /* Cub Hub, 9/4: the "Important Upcoming Dates" list. `dress` is a day she
+       dresses differently for — Picture Day, and Spirit Week's daily themes
+       (those live on the newsletter's image pages and land once read). */
+    {start:'2026-09-04', name:'Quarter 1 progress reports', icon:'📄', kind:'note'},
+    {start:'2026-09-14', name:'Fall clubs begin', icon:'🎨', kind:'note', screen:'clubs',
+     note:'Your signed-up clubs join the day they meet from here on.'},
+    {start:'2026-09-16', name:'Fall Picture Day', icon:'📸', kind:'dress', note:'School pictures today — look sharp.'},
+    {start:'2026-09-17', name:'Hearing & vision screening · Constitution & Citizenship Day', icon:'👁️', kind:'note'},
+    {start:'2026-09-21', end:'2026-09-25', name:'Spirit Week · Week of Giving · Start With Hello Week', icon:'👕', kind:'dress',
+     note:'A dress-up theme each day — the day-by-day list is in the newsletter.'},
+    {start:'2026-09-25', name:"Sandra Day O'Connor Day", icon:'⚖️', kind:'note'},
+    {start:'2026-09-30', name:'SHINE lunch', icon:'🍱', kind:'community'},
+    {start:'2026-10-01', name:'Pledge Signing Day', icon:'✍️', kind:'note',
+     note:'October is National Bullying Prevention Month.'},
     {start:'2026-10-02', name:'Early release — Parent/teacher conferences', icon:'🕑', kind:'early', early:true},
     {start:'2026-10-23', name:'Boo Bash', icon:'🎃', kind:'community', note:'6:00–7:30 PM.'},
     {start:'2026-12-18', name:'Early release — last day before Winter Break', icon:'🕑', kind:'early', early:true,
@@ -2959,7 +2973,8 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/spelling-bee-1.json', 'content/spelling-bee-2.json', 'content/spelling-bee-3.json', 'content/spelling-bee-4.json',
   'content/wordly-wise-5-01-syn.json', 'content/science-variables.json',
   'content/math-t3-extra.json', 'content/science-scales.json',
-  'content/science-nos-practice.json', 'content/science-nos-test.json'];
+  'content/science-nos-practice.json', 'content/science-nos-test.json',
+  'content/english-plot-diagram.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
@@ -4343,7 +4358,7 @@ SCREENS.today = function(root){
     if(e.note) bits.push(e.note);
     if(bits.length) m.appendChild(el('div','dt', bits.join(' · ')));
     row.appendChild(m);
-    row.appendChild(el('div','tm', e.kind==='early' ? 'Early' : e.kind==='exam' ? 'Exam' : 'Today'));
+    row.appendChild(el('div','tm', e.kind==='early' ? 'Early' : e.kind==='exam' ? 'Exam' : e.kind==='dress' ? 'Dress' : 'Today'));
     root.appendChild(row);
   });
 

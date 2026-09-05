@@ -903,6 +903,65 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Dress days, and the Cub Hub of 9/4 (v127 / Ad Astra v148 for the engine half)
+
+Chris uploaded the 9/4 Cub Hub and asked for its special dress days in the
+app. Two halves, one of which is still waiting on him.
+
+**The engine half (both apps): `kind:'dress'`.** A day she dresses
+differently for — Picture Day, a Spirit Week theme — pins on Today with its
+own `Dress` label, never quiet, and lists in Coming up like any event. It
+is a tone, exactly as `exam` and `benchmark` are: the row's copy is the
+event's own `note`. Ad Astra carries the kind with no content yet.
+
+**The content half (this app): the newsletter's dated list.** Its text
+layer is only the "Important Upcoming Dates" list; pages 3–16 are image
+slides, which is where the day-by-day Spirit Week themes live. The PDF is
+12 MB — over `download_file_content`'s 10 MB cap — so it could be neither
+rendered nor OCR'd from here. What the list gave: progress reports 9/4,
+clubs begin 9/14 (a door to the clubs screen), **Fall Picture Day 9/16
+(`dress`)**, hearing & vision screening 9/17, **Spirit Week 9/21–25
+(`dress`, five days, with a note saying the daily list is in the
+newsletter)**, Sandra Day O'Connor Day 9/25, SHINE lunch 9/30, Pledge
+Signing Day 10/1. Nothing on the image pages was guessed at.
+
+> **Still open:** the per-day Spirit Week themes. The unblock is the one
+> the Lemonade Crime scan established — Chris right-clicks the PDF in Drive
+> → Open with → Google Docs, and Drive OCRs the slides server-side. Then
+> the five-day event is replaced by five one-day `dress` events, one theme
+> each.
+
+Also in the folders: **"Q1 Progress Report.pdf" is a 62-byte text file
+holding a ParentSquare link**, not the report — nothing to read. And the
+English folder gained the Plot Diagram quiz study guide, with answers.
+
+**Plot Diagram: Pixar Shorts** (`unit-plot`, `content/english-plot-diagram.json`,
+builder `tools/builders/build_plot_diagram.py`). The five stages applied
+to the four shorts the guide covers — Geri's Game, Partly Cloudy, Lifted,
+Piper. Ten cards (the five stages, a card on telling the climax from the
+rising action, and one diagram card per short), 20 questions (18 "which
+stage is this moment", two put-in-order), and a sort set — **before the
+climax, or after it?** — which is the quickest drill for the one idea that
+costs marks: many beats build the problem, only one turns it. Every event
+is the guide's own beat. The quiz it was written for was dated 9/2, so the
+`parentNote` says plainly this is for the skill going forward, not that
+quiz. Titled without ` · ` on purpose: one part is not a shelf.
+
+- The checker's own-bucket rule caught "takes piece after piece" in the
+  sort set — the word *after* is bucket B's label. Reworded, not exempted.
+- `tools/test_dress.js`: both dress days on the calendar and the rest as
+  notes, the Picture Day row pinned with `Dress` and not quiet, Spirit Week
+  reading Day 3 of 5, Coming up from a week out, and the plot unit shelving
+  loose with its sort door and playing a round.
+- `tools/test_clubs.js` had a time-bomb: it asked Today to show 9/1 via a
+  ctx date the screen never reads, so it passed only while the real date
+  sat inside the registration window. Now it points the clock, the way
+  `test_dress.js` does.
+
+> Stale tests, all failing on HEAD before this work and left for a cleanup
+> pass: `test_polish.js` (the retired hero), `test_newsletter.js` and
+> `test_runway.js` (both crash reading a field the brief rework removed).
+
 ### Swipe sort (v125 / Ad Astra v146, both apps)
 
 Two buckets, one card, swipe or tap. Sets ride on units (`u.sorts`), draft

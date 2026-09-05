@@ -1,0 +1,670 @@
+{
+ "v": 1,
+ "records": {
+  "unit-plot": {
+   "id": "unit-plot",
+   "type": "unit",
+   "classId": "english",
+   "title": "Plot Diagram: Pixar Shorts",
+   "status": "draft",
+   "quarter": 1,
+   "libv": 1,
+   "srcName": "Plot Diagram Quiz Study Guide — Pixar Shorts, with answers (Drive)",
+   "source": "source",
+   "summary": {
+    "from": "source",
+    "text": "The five stages of a plot diagram — exposition, rising action, climax, falling action, conclusion — applied to the four Pixar shorts from class: Geri's Game, Partly Cloudy, Lifted and Piper. Every event is one the study guide itself names."
+   },
+   "why": {
+    "from": "added",
+    "text": "Plot diagrams come back all year, for every story and novel. The skill is telling the climax from the rising action around it: many beats build the problem, but only one moment turns it."
+   },
+   "objectives": [
+    {
+     "from": "source",
+     "text": "Name the five stages of a plot diagram in order."
+    },
+    {
+     "from": "source",
+     "text": "Place a moment from a story on the right stage."
+    },
+    {
+     "from": "added",
+     "text": "Tell the single climax from the rising-action beats around it."
+    }
+   ],
+   "parentNote": {
+    "from": "added",
+    "text": "Built from the class study guide with answers for the Plot Diagram quiz, which was dated 9/2 — so this is for the skill going forward (unit tests and every novel to come), not for that quiz. Every question is a beat the guide itself lists, placed on its stage the way the guide places it. The one idea worth a word: the guide marks the CLIMAX of Partly Cloudy as the stork leaving and the cloud turning sad, which is a quiet moment — she may expect the climax to be the loudest one. The sort set asks \"before the climax or after?\" for twelve moments, which is the quickest way to practise that."
+   },
+   "nextUp": {
+    "from": "added",
+    "minutes": 12,
+    "text": "Cards first for the five stages, then the quiz. Try the sort — before the climax or after it — when the quiz is done."
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Exposition",
+     "def": "**The beginning: who is in the story, where they are, and what is normal before anything changes.**\n• Geri's Game opens with two Geris at a park about to play chess.\n• Piper opens with a mother bird showing her chick how to find food by the ocean.",
+     "hint": "Ex-position: the position everything starts in.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Rising action",
+     "def": "**The events that build the problem up, one after another, toward the biggest moment.**\n• Usually several beats, not one.\n• In Lifted, every fumbled attempt to beam the sleeping man up is rising action.",
+     "hint": "The tension rises — it is a climb.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Climax",
+     "def": "**The turning point: the single most tense moment, where the problem comes to a head.**\n• Shy Geri faking a health scare is the climax of Geri's Game.\n• Piper copying the crab and burying herself as the wave comes is the climax of Piper.",
+     "hint": "The peak of the mountain. Only one point is the top.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Falling action",
+     "def": "**What happens right after the climax, as the problem starts to settle.**\n• The stork comes back to the storm cloud wearing football gear.\n• The supervisor alien sets the bedroom back the way it was.",
+     "hint": "Coming down the other side of the mountain.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Conclusion (resolution)",
+     "def": "**How it ends: the new normal, with the problem solved or settled.**\n• Shy Geri wins the game and the dentures.\n• The chick sleeps, well fed.",
+     "hint": "Con-clusion: everything closes up.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Telling the climax from the rising action",
+     "def": "**Rising action has many beats; the climax is one beat, and it is the one the whole story turns on.**\n• Ask: after this moment, does the problem start to resolve? If yes, that was the climax.\n• A big moment that only makes things worse is still rising action.",
+     "hint": "If the story could still go either way afterwards, you are not at the top yet.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Geri's Game — the diagram",
+     "def": "**One old man plays chess against himself; the shy side wins by trickery.**\n• Rising: Aggressive Geri keeps winning and takes pieces; Shy Geri is losing; then Aggressive Geri has checkmate.\n• Climax: Shy Geri fakes a health injury and Aggressive Geri is worried.\n• Falling: Shy Geri spins the board. Conclusion: Shy Geri wins and gets the dentures.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Partly Cloudy — the diagram",
+     "def": "**A storm cloud makes dangerous babies; its stork keeps getting hurt.**\n• Rising: sunny clouds make nice babies; the storm cloud makes dangerous ones; the stork keeps getting hurt.\n• Climax: the stork leaves, and the storm cloud goes from angry to sad.\n• Falling: the stork returns with football gear. Conclusion: deliveries carry on, padded.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "Lifted — the diagram",
+     "def": "**A trainee alien tries to abduct a sleeping man and cannot manage the controls.**\n• Rising: the trainee keeps fumbling; the man bangs off the walls; at last he floats up toward the ship.\n• Climax: the beam pulls him in, the trainee lets go, and the man falls with the door still open.\n• Falling: the supervisor puts everything back. Conclusion: the trainee is let fly the ship, crashes, and leaves with no human.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Piper — the diagram",
+     "def": "**A sandpiper chick learns to feed herself after a wave scares her.**\n• Rising: she tries alone, gets too close, a wave crashes over her, and she is afraid; she watches a crab burrow into the sand.\n• Climax: she copies the crab, buries herself, and stops being afraid of the water.\n• Falling: she can feed herself and shows the others. Conclusion: she sleeps, well fed.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Geri's Game, which stage of the plot diagram is this moment: the two Geris are at a park, about to play chess.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 0,
+     "hint": "Nothing has gone wrong yet.",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "It is the setup — who, where, and the normal before the problem starts.",
+      "So this moment is the exposition."
+     ],
+     "ex": {
+      "main": "**Exposition.** It is the setup — who, where, and the normal before the problem starts.",
+      "tip": "Exposition is always before the first move of the problem."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Geri's Game, which stage of the plot diagram is this moment: Aggressive Geri keeps winning and Shy Geri is losing pieces.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 1,
+     "hint": "Is this the single biggest moment, or one of several that build up?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The problem is getting worse beat by beat, which is what rising action does.",
+      "So this moment is the rising action."
+     ],
+     "ex": {
+      "main": "**Rising action.** The problem is getting worse beat by beat, which is what rising action does.",
+      "tip": "A story can have many rising-action beats and only one climax."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Geri's Game, which stage of the plot diagram is this moment: Shy Geri fakes a health injury and Aggressive Geri is worried.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 2,
+     "hint": "After this moment, does the problem start to resolve?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "It is the turning point — everything after it goes Shy Geri's way.",
+      "So this moment is the climax."
+     ],
+     "ex": {
+      "main": "**Climax.** It is the turning point — everything after it goes Shy Geri's way.",
+      "tip": "The climax is the one moment the story turns on."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Geri's Game, which stage of the plot diagram is this moment: Shy Geri spins the board round.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 3,
+     "hint": "The trick has already been played. What is this?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The tables have turned and the game is settling toward its end.",
+      "So this moment is the falling action."
+     ],
+     "ex": {
+      "main": "**Falling action.** The tables have turned and the game is settling toward its end.",
+      "tip": "Falling action is the slide from the peak to the ending."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Geri's Game, which stage of the plot diagram is this moment: Shy Geri wins the game and gets the dentures.",
+     "opts": [
+      "Conclusion",
+      "Climax",
+      "Falling action",
+      "Rising action"
+     ],
+     "ans": 0,
+     "hint": "Is there anything left to solve?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The problem is over and the new normal is set — that is the conclusion.",
+      "So this moment is the conclusion."
+     ],
+     "ex": {
+      "main": "**Conclusion.** The problem is over and the new normal is set — that is the conclusion.",
+      "tip": "Conclusion and resolution mean the same stage."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Partly Cloudy, which stage of the plot diagram is this moment: the stork keeps getting hurt delivering dangerous animal babies.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 1,
+     "hint": "This happens more than once.",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "Each injury builds the problem up; it is not yet the moment things turn.",
+      "So this moment is the rising action."
+     ],
+     "ex": {
+      "main": "**Rising action.** Each injury builds the problem up; it is not yet the moment things turn.",
+      "tip": "Repeated beats that build tension are rising action."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Partly Cloudy, which stage of the plot diagram is this moment: the stork leaves, and the storm cloud goes from angry to sad.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 2,
+     "hint": "What is the one moment the whole story turns on?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The stork leaving is the peak of the problem; after it, the story heads toward making up.",
+      "So this moment is the climax."
+     ],
+     "ex": {
+      "main": "**Climax.** The stork leaving is the peak of the problem; after it, the story heads toward making up.",
+      "tip": "The climax can be quiet — it is the turning point, not the loudest moment."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Partly Cloudy, which stage of the plot diagram is this moment: the stork comes back wearing football equipment.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 3,
+     "hint": "The big moment has already happened. Is this settling things?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "It is the problem being solved after the turning point.",
+      "So this moment is the falling action."
+     ],
+     "ex": {
+      "main": "**Falling action.** It is the problem being solved after the turning point.",
+      "tip": "Falling action answers the climax."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Partly Cloudy, which stage of the plot diagram is this moment: sunny clouds and a storm cloud float in the sky with their storks.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 0,
+     "hint": "Has any problem started yet?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "This is the world of the story before anything goes wrong.",
+      "So this moment is the exposition."
+     ],
+     "ex": {
+      "main": "**Exposition.** This is the world of the story before anything goes wrong.",
+      "tip": "Exposition sets the scene."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Lifted, which stage of the plot diagram is this moment: the trainee alien keeps hitting the sleeping man against the walls.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 1,
+     "hint": "Is the story turning here, or getting worse?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The mistakes pile up — tension building is rising action.",
+      "So this moment is the rising action."
+     ],
+     "ex": {
+      "main": "**Rising action.** The mistakes pile up — tension building is rising action.",
+      "tip": "Piling-up mistakes are a classic rising action."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Lifted, which stage of the plot diagram is this moment: the trainee lets go of the switch and the man falls with the door still open.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 2,
+     "hint": "Which moment is the peak of the disaster?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "This is the top of the mountain: the worst moment, after which the supervisor takes over.",
+      "So this moment is the climax."
+     ],
+     "ex": {
+      "main": "**Climax.** This is the top of the mountain: the worst moment, after which the supervisor takes over.",
+      "tip": "Ask what comes right after — if it is cleanup, this was the climax."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Lifted, which stage of the plot diagram is this moment: the supervisor alien puts the bedroom back the way it was.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 3,
+     "hint": "The disaster has happened. What is this?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The mess is being settled — that is what comes after the peak.",
+      "So this moment is the falling action."
+     ],
+     "ex": {
+      "main": "**Falling action.** The mess is being settled — that is what comes after the peak.",
+      "tip": "Cleanup after the peak is falling action."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Lifted, which stage of the plot diagram is this moment: the trainee is allowed to fly the ship, crashes it, and flies away with no human.",
+     "opts": [
+      "Conclusion",
+      "Climax",
+      "Falling action",
+      "Rising action"
+     ],
+     "ans": 0,
+     "hint": "Is the story finished after this?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "It is how things end up — the abduction failed and the aliens leave.",
+      "So this moment is the conclusion."
+     ],
+     "ex": {
+      "main": "**Conclusion.** It is how things end up — the abduction failed and the aliens leave.",
+      "tip": "An ending does not have to be happy to be the conclusion."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Piper, which stage of the plot diagram is this moment: a mother sandpiper shows her chick how to find food by the ocean.",
+     "opts": [
+      "Rising action",
+      "Exposition",
+      "Climax",
+      "Falling action"
+     ],
+     "ans": 1,
+     "hint": "Nothing has gone wrong yet.",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "This is the normal life the chick starts with.",
+      "So this moment is the exposition."
+     ],
+     "ex": {
+      "main": "**Exposition.** This is the normal life the chick starts with.",
+      "tip": "Exposition comes before the first problem."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Piper, which stage of the plot diagram is this moment: a big wave crashes over the chick and she is scared to go near the water.",
+     "opts": [
+      "Exposition",
+      "Climax",
+      "Rising action",
+      "Falling action"
+     ],
+     "ans": 2,
+     "hint": "Is the problem solved here, or made?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The wave creates the problem; the story still has to turn.",
+      "So this moment is the rising action."
+     ],
+     "ex": {
+      "main": "**Rising action.** The wave creates the problem; the story still has to turn.",
+      "tip": "The event that CAUSES the problem is rising action, not the climax."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Piper, which stage of the plot diagram is this moment: the chick copies the crab, buries herself in the sand, and stops being afraid.",
+     "opts": [
+      "Exposition",
+      "Rising action",
+      "Falling action",
+      "Climax"
+     ],
+     "ans": 3,
+     "hint": "Where does the fear turn into courage?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "This is the turning point — after it, she can feed herself.",
+      "So this moment is the climax."
+     ],
+     "ex": {
+      "main": "**Climax.** This is the turning point — after it, she can feed herself.",
+      "tip": "The moment the character changes is usually the climax."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Piper, which stage of the plot diagram is this moment: the chick shows the other sandpipers how to find food.",
+     "opts": [
+      "Falling action",
+      "Rising action",
+      "Climax",
+      "Exposition"
+     ],
+     "ans": 0,
+     "hint": "Her fear is already gone. What is this?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "It follows the turning point and settles the story down.",
+      "So this moment is the falling action."
+     ],
+     "ex": {
+      "main": "**Falling action.** It follows the turning point and settles the story down.",
+      "tip": "Sharing what she learned is the story settling."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In Piper, which stage of the plot diagram is this moment: the chick sleeps, well fed.",
+     "opts": [
+      "Rising action",
+      "Conclusion",
+      "Falling action",
+      "Climax"
+     ],
+     "ans": 1,
+     "hint": "Is there anything left to solve?",
+     "steps": [
+      "Place the moment on the story's mountain: is the problem still building, at its peak, or settling?",
+      "The problem is solved and the story closes.",
+      "So this moment is the conclusion."
+     ],
+     "ex": {
+      "main": "**Conclusion.** The problem is solved and the story closes.",
+      "tip": "A quiet ending is still the conclusion."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "order",
+     "q": "Put these moments from Geri's Game in the order they happen.",
+     "opts": [
+      "Aggressive Geri keeps winning and taking pieces",
+      "Shy Geri fakes a health injury",
+      "Shy Geri spins the board round",
+      "Shy Geri wins the dentures"
+     ],
+     "ans": 0,
+     "hint": "Rising action, then climax, then falling action, then conclusion.",
+     "steps": [
+      "Start with the rising action: the pieces being lost.",
+      "Then the turning point: the fake injury.",
+      "Then the falling action: the board is spun.",
+      "Then the ending: the dentures."
+     ],
+     "ex": {
+      "main": "**Losing pieces → the fake injury → spinning the board → winning the dentures.** That is rising action, climax, falling action, conclusion, in order.",
+      "tip": "A plot diagram IS an order: if you know the stages, you know the sequence."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "order",
+     "q": "Put these moments from Piper in the order they happen.",
+     "opts": [
+      "A wave crashes over the chick",
+      "The chick watches a crab burrow into the sand",
+      "The chick buries herself and stops being afraid",
+      "The chick shows the other birds how to find food"
+     ],
+     "ans": 0,
+     "hint": "Problem, then the clue, then the turning point, then the settling.",
+     "steps": [
+      "The wave makes the problem.",
+      "Watching the crab is the clue she needs.",
+      "Copying it is the turning point.",
+      "Teaching the others comes after she has changed."
+     ],
+     "ex": {
+      "main": "**Wave → crab → burying herself → teaching the others.** The wave is rising action, the crab is still rising action, burying herself is the climax, teaching is falling action.",
+      "tip": "Two rising-action beats in a row is normal — the climax is still only one moment."
+     }
+    }
+   ],
+   "sorts": [
+    {
+     "id": "s-plot",
+     "title": "Before the climax, or after it?",
+     "a": "Before",
+     "b": "After",
+     "items": [
+      {
+       "t": "Geri's Game: Aggressive Geri takes one piece, then another",
+       "k": "a",
+       "why": "The problem is still building — rising action comes first."
+      },
+      {
+       "t": "Geri's Game: Shy Geri spins the board",
+       "k": "b",
+       "why": "The trick has already been played; this is the slide to the ending."
+      },
+      {
+       "t": "Geri's Game: Shy Geri gets the dentures",
+       "k": "b",
+       "why": "The ending is the last thing on the diagram."
+      },
+      {
+       "t": "Partly Cloudy: the stork is bitten by a baby crocodile",
+       "k": "a",
+       "why": "One of the injuries that build the problem up."
+      },
+      {
+       "t": "Partly Cloudy: the stork returns wearing football gear",
+       "k": "b",
+       "why": "This settles the problem — it follows the turning point."
+      },
+      {
+       "t": "Partly Cloudy: the sunny clouds hand out puppies and kittens",
+       "k": "a",
+       "why": "Part of the setup and early build-up."
+      },
+      {
+       "t": "Lifted: the trainee bangs the sleeping man into the wall",
+       "k": "a",
+       "why": "A fumble that builds tension — the story has not turned yet."
+      },
+      {
+       "t": "Lifted: the supervisor sets the bedroom back",
+       "k": "b",
+       "why": "Cleanup comes after the peak."
+      },
+      {
+       "t": "Lifted: the trainee crashes the ship and flies off",
+       "k": "b",
+       "why": "The ending."
+      },
+      {
+       "t": "Piper: a wave crashes over the chick",
+       "k": "a",
+       "why": "This causes the problem; the turning point is still to come."
+      },
+      {
+       "t": "Piper: the chick watches a crab dig into the sand",
+       "k": "a",
+       "why": "The clue arrives before the turn — she has not copied it yet."
+      },
+      {
+       "t": "Piper: the chick teaches the other birds",
+       "k": "b",
+       "why": "She has already changed; this is the settling."
+      }
+     ]
+    }
+   ],
+   "updatedAt": 1788611589497
+  }
+ }
+}

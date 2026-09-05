@@ -91,10 +91,12 @@ const PORT = process.argv[2] || 8110;
   ck('the reconciliation list is titled for 4th grade', screen.notOpen, screen);
 
   /* ---- the registration event routes to the clubs screen ---- */
+  /* Today reads AZ.today(), not a ctx date — point the clock into the window
+     so this keeps passing after the window has closed. */
   const evt = await p.evaluate(()=>{
-    go('today', {date:'2026-09-01'});
-    const t = document.getElementById('screen').innerText;
-    return {hasRow: /Fall club registration/.test(t)};
+    const real = AZ.today; AZ.today = () => '2026-09-01';
+    try { go('today'); const t = document.getElementById('screen').innerText; return {hasRow: /Fall club registration/.test(t)}; }
+    finally { AZ.today = real; }
   });
   ck('the registration event appears during its window', evt.hasRow, evt);
 
