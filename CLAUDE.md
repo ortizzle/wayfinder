@@ -903,6 +903,15 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Font and spacing on the plan (v133 / Ad Astra v152, both apps)
+
+The companion's bubble on the plan perch is 17px in both its states (was
+15px for the plan line, 17px only in the affirmation swap), and the
+mixed-round button carries `.rampbtn` for the same 10px bottom margin
+every `.plan` card gives itself, so a ramp subject's card is no longer
+flush against the next one. Engine, identical here — see
+ad-astra/CLAUDE.md's section of the same name.
+
 ### The plan of attack (v132 / Ad Astra v151, both apps)
 
 Study opens on the companion's perch, whose line is the thread itself
