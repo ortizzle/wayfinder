@@ -903,6 +903,18 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Breathing room under "Start review" (v140 / Ad Astra v159, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+The Growth Zone's due card stacked its caption ("Get one right and it goes
+quiet for longer...") flush against the "Start review" button with a
+measured 0px gap, because `.btn` carries no margin and `.card p` zeroes its
+own margin-top — the one card in either app that puts its button BEFORE its
+caption rather than after. Fixed with one shared rule,
+`.card .btn+p,.card .btn-row+p{margin-top:var(--gap-row)}`, the same 10px
+two stacked buttons already get. `tools/test_gzfilter.js` is the same file
+as Ad Astra's, with the same added gap assertion.
+
 ### Where to start (v139 / Ad Astra v158, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name
