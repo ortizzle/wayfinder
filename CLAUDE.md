@@ -903,6 +903,22 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The grown-up door, and the ladder in gold (v138 / Ad Astra v157, both apps)
+
+Two small polish requests from the same conversation, engine, identical
+here — see ad-astra/CLAUDE.md's section of the same name for the full
+reasoning. The Grown-ups door on Settings is now the first thing on the
+screen, a `.hero` card carrying a live "🧪 Sandbox is on/off" eyebrow (Chris
+and Kat check sandbox status often; the girls rarely open this screen at
+all) — status only, never a toggle, so the ungated side of Settings still
+cannot flip sandbox without the parent passcode. And the Trivia Ladder's
+points wear the app's own existing gold (the done-pip/prep-band pair,
+already measured) in exactly two places — the in-question "🎯 700" badge
+and the finish screen's score — answering "make it feel like a game show,"
+while the board's tiles keep the subject's own accent color.
+`tools/test_settings_door.js` and the updated `tools/test_ladder.js` are
+the same files as Ad Astra's.
+
 ### The Trivia Ladder (v137 / Ad Astra v156, both apps)
 
 A phone-native, solo Jeopardy-style game — Chris's follow-up after mocking
