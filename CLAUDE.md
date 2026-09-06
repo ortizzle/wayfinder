@@ -903,6 +903,22 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Where to start (v139 / Ad Astra v158, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name
+for the full reasoning. Chris noticed the companion's due-review line on
+Study was quoting a bare cross-subject total ("7 questions are back") with
+nowhere to look; `threadTarget()`'s `due` case now ranks subjects the same
+nearest-unscored-test-then-count way the Growth Zone screen's own chips do
+and names the one leading the queue ("7 questions came back around — 4 in
+English. That is where to start"), and the tap lands already filtered to it.
+The perch's plan-line font dropped its inherited italic — now upright, 600
+weight, 19px, `--ac-fg` — while the affirmation swap keeps its deliberate
+Fraunces italic. And the daily three's not-yet-done door now wears the same
+hero gradient/accent treatment as the resume-round and Grown-ups doors.
+`tools/test_plan.js` and `tools/test_games.js` are the same files as Ad
+Astra's, updated the same way.
+
 ### The grown-up door, and the ladder in gold (v138 / Ad Astra v157, both apps)
 
 Two small polish requests from the same conversation, engine, identical
