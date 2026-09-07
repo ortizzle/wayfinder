@@ -903,7 +903,71 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
-### The Arizona map (v143, THIS APP ONLY, engine also in Ad Astra)
+### Reading the map, not memorizing it (v144, THIS APP ONLY)
+
+Two corrections from Chris after v143 shipped. First: *"are we able to use
+the USA map that they studied in school and drive examples from that?"* —
+her Drive folder had "US map -Longitude and Latitude.pdf", the Arizona
+Geographic Alliance's "US Bingo" sheet, the actual map her class used for
+latitude/longitude bingo (28 real US cities, a 5-degree grid from
+130°W-70°W and 25°N-45°N). Second, and the bigger one: *"flashcards should
+not quiz on exact longitude or latitude for a place. the focus is on how to
+read a map."*
+
+**Every card and question that reduced to "recall this place's exact
+coordinate" is gone.** That was Phoenix/Tucson/Flagstaff/Yuma flashcards
+each stating "roughly 33°N, 112°W" as a fact to learn, plus three questions
+built the same way ("what is Phoenix's coordinate," "which city is at this
+coordinate" — twice). All are memorization dressed as map-reading: the
+correct answer is a specific number tied to a specific place, learnable as
+a lookup table with enough repetition, which teaches recall instead of the
+transferable skill. What survives and what replaced them is built around
+two skills instead: **comparison** (furthest north/south/east/west among
+cities actually shown on the map; two north-to-south and west-to-east
+`kind:'order'` rankings) and **estimation** (reading a value between two
+gridlines; judging which of several cities sits closest to a drawn
+reference line). Every one of those is answerable only by looking at the
+map in front of her that moment — there is nothing to have memorized in
+advance, and repetition can't turn either skill into a lookup table the way
+a fixed city-coordinate pair can.
+
+**The real US map replaced the invented Arizona one, cities and grid taken
+straight from her class sheet** (read via `download_file_content` +
+`pypdfium2`, the same render-the-actual-PDF discipline every scanned source
+gets — Drive's OCR snippet mangled the multi-column city/gridline layout
+badly enough that trusting it would have misplaced several cities). The
+bounding box and 5° gridlines match the class sheet exactly (widened a
+couple of degrees at the edges so cities near 70°W/130°W aren't clipped).
+**The country's outline is deliberately not drawn.** Arizona's near-rectangle
+was simple enough to approximate honestly with about ten points; the
+continental US coastline is a much bigger, more detailed shape, and a rough
+attempt at it risked looking wrong rather than helpful. The grid and the
+labeled cities carry the whole lesson without it — confirmed by building it
+without an outline and finding nothing was lost.
+
+**A real rendering bug turned up building this, caught by measuring, not by
+eyeballing:** `renderGraph()`'s marked-point labels always render up-and-
+right of their dot with no collision avoidance, so two cities close together
+on the map can print on top of each other. It happened twice while choosing
+which cities to pair per question — San Francisco's label ran into Denver's
+on the overview card, and a "which of these two close cities is further
+north" question (deliberately hard, Chicago vs. Detroit) picked a pair
+whose labels physically overlapped into unreadable text, even though the
+DOTS were exactly where they should be. Both were fixed by choosing a
+different city or a different close pair (Chicago vs. Boston keeps the
+same "closer than the others" difficulty with labels far enough apart in
+longitude not to collide) — not by changing the engine, since real
+collision-avoidance layout is a bigger job than this content needs.
+`tools/test_az_latlong.js` now renders every graph in the unit and checks
+every pair of city-label bounding boxes for overlap, so a future edit that
+reintroduces this can't ship quietly.
+
+`tools/test_az_latlong.js` also gained a content-safety sweep — parallel to
+the one built for Ad Astra's TKAM re-chunk — that fails if any card states
+a city's coordinate as a memorizable fact, or any question's stem asks to
+state or match one.
+
+### The Arizona map (v143, THIS APP ONLY, engine also in Ad Astra) — superseded by v144 above; kept for history, not accurate to what shipped
 
 Chris added his own map for direct lat/long instruction and asked for a
 further-practice quiz with a map, for Arizona specifically. `renderGraph()`

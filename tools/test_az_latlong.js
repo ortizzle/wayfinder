@@ -1,9 +1,13 @@
-/* Arizona latitude/longitude practice map (v143): further practice for
-   Unit 5, built on renderGraph()'s existing pts-series + marked-points
-   mechanism — a simplified Arizona outline plus real cities, rounded to
-   the nearest degree. renderGraph() gained optional g.xabs/g.yabs +
-   g.xsuf/g.ysuf so a signed-degree map can still show "112°W" on its
-   axis instead of "-112". */
+/* Latitude/longitude practice map (v144): built from the real US map used
+   in class (Arizona Geographic Alliance "US Bingo" sheet, in her Drive
+   folder) rather than an invented Arizona-only outline. Chris also asked
+   that flashcards not quiz exact coordinates for a place — every card and
+   question that asked "what is City X's coordinate" or "which city is at
+   this coordinate" is gone; what's left is comparison (furthest N/S/E/W,
+   ranking) and estimation (reading between gridlines), all answerable only
+   from the map shown. renderGraph() gained optional g.xabs/g.yabs +
+   g.xsuf/g.ysuf so a signed-degree map can still show "112°W" on its axis
+   instead of "-112". */
 const { chromium } = require('playwright');
 const PORT = process.argv[2] || 8302;
 (async () => {
@@ -23,13 +27,30 @@ const PORT = process.argv[2] || 8302;
               graphed: u.questions.filter(q=>q.graph).length,
               order: u.questions.filter(q=>q.kind==='order').length };
   });
-  ck('unit-az-latlong seeds: 11 cards, 17 questions, classId history',
-     seed.cards===11 && seed.questions===17 && seed.classId==='history', seed);
-  ck('10 of the questions carry their own map graph, and 2 are put-in-order',
-     seed.graphed===10 && seed.order===2, seed);
+  ck('unit-az-latlong seeds: 9 cards, 18 questions, classId history',
+     seed.cards===9 && seed.questions===18 && seed.classId==='history', seed);
+  ck('11 of the questions carry their own map graph, and 2 are put-in-order',
+     seed.graphed===11 && seed.order===2, seed);
+
+  // Content safety: no card states a city's exact coordinate as a fact to
+  // memorize (the thing Chris asked to remove), and no question's whole
+  // point is "what is/which city is at this exact coordinate" — every
+  // surviving question is comparison, ranking, or grid-arithmetic instead.
+  const safety = await p.evaluate(() => {
+    const u = DATA.records['unit-az-latlong'];
+    const cityCoordCard = u.cards.find(c => /roughly\s*\d+°[NS],\s*\d+°[EW]/i.test(c.def||''));
+    const lookupQ = u.questions.filter(q =>
+      /what (is|are) .*coordinate/i.test(q.q||'') || /which city is (at|closest to) \d/i.test(q.q||''));
+    return { cityCoordCard: cityCoordCard ? cityCoordCard.id : null, lookupQIds: lookupQ.map(q=>q.id) };
+  });
+  ck('no card states a specific city\'s exact coordinate as a fact to memorize',
+     !safety.cityCoordCard, safety);
+  ck('no question asks to state or match a specific city\'s exact coordinate',
+     safety.lookupQIds.length===0, safety);
 
   // renderGraph itself: the axis suffix/abs formatting is correct, and the
-  // outline + marked cities all render as real SVG elements.
+  // marked cities render as real SVG elements (no outline is drawn — the
+  // continental US coastline was deliberately not attempted).
   const rendered = await p.evaluate(() => {
     const u = DATA.records['unit-az-latlong'];
     const g = u.cards.find(c=>c.graph).graph;
@@ -39,14 +60,40 @@ const PORT = process.argv[2] || 8302;
       hasW: texts.some(t=>/°W$/.test(t)), hasN: texts.some(t=>/°N$/.test(t)),
       noNegative: !texts.some(t=>t.includes('-')),
       dots: svg.querySelectorAll('circle').length,
-      outlinePoints: svg.querySelectorAll('polyline').length,
-      cityLabel: texts.includes('Phoenix')
+      cityLabel: texts.includes('Seattle')
     };
   });
   ck('axis ticks read like "112°W"/"33°N", never a bare negative number',
      rendered.hasW && rendered.hasN && rendered.noNegative, rendered);
-  ck('the outline draws as a polyline and every city is a marked dot with its name',
-     rendered.outlinePoints>=1 && rendered.dots===4 && rendered.cityLabel, rendered);
+  ck('every marked city on the overview card renders as a dot with its name',
+     rendered.dots===8 && rendered.cityLabel, rendered);
+
+  // No two city labels overlap on ANY graph in the unit — real bug, caught
+  // live: San Francisco's label ran into Denver's on the overview card, and
+  // a deliberately-close comparison pair (Chicago/Detroit) had labels that
+  // physically overlapped into unreadable text.
+  const overlaps = await p.evaluate(() => {
+    const u = DATA.records['unit-az-latlong'];
+    const bad = [];
+    const check = (graph, tag) => {
+      const svg = renderGraph(graph);
+      const holder = document.createElement('div'); holder.style.cssText='position:fixed;left:-9999px';
+      holder.appendChild(svg); document.body.appendChild(holder);
+      const labelTexts = [...svg.querySelectorAll('text')].filter(t => t.getAttribute('font-weight')==='700');
+      const boxes = labelTexts.map(t => ({ label: t.textContent, box: t.getBBox() }));
+      for(let i=0;i<boxes.length;i++) for(let j=i+1;j<boxes.length;j++){
+        const A=boxes[i].box, B=boxes[j].box;
+        const ox = Math.max(0, Math.min(A.x+A.width,B.x+B.width) - Math.max(A.x,B.x));
+        const oy = Math.max(0, Math.min(A.y+A.height,B.y+B.height) - Math.max(A.y,B.y));
+        if(ox>2 && oy>2) bad.push(`${tag}: ${boxes[i].label} × ${boxes[j].label}`);
+      }
+      holder.remove();
+    };
+    u.cards.forEach(c => { if(c.graph) check(c.graph, 'card:'+c.id); });
+    u.questions.forEach(q => { if(q.graph) check(q.graph, 'q:'+q.id); });
+    return bad;
+  });
+  ck('no two city labels overlap on any graph in the unit', overlaps.length===0, overlaps);
 
   // A full quiz round completes, including the map questions and the two
   // order questions, with no console errors from the new graph fields.
@@ -113,7 +160,7 @@ const PORT = process.argv[2] || 8302;
     }
     return { seen, sawGraph };
   });
-  ck('the 11-card deck steps through cleanly and the map card renders', cards.seen>=9 && cards.sawGraph, cards);
+  ck('the 9-card deck steps through cleanly and the map card renders', cards.seen>=7 && cards.sawGraph, cards);
 
   out.forEach(r => console.log((r.ok ? '  ok ' : 'FAIL ') + r.n + (r.ok ? '' : ' → ' + JSON.stringify(r.got).slice(0,300))));
   console.log(out.every(r=>r.ok) ? 'ALL PASS' : 'FAILURES');
