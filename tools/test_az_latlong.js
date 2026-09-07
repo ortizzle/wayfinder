@@ -68,6 +68,21 @@ const PORT = process.argv[2] || 8302;
   ck('every marked city on the overview card renders as a dot with its name',
      rendered.dots===8 && rendered.cityLabel, rendered);
 
+  // Atlas treatment (Chris, 2026-09: "make the map have its own white
+  // background so it looks like it was ripped out of an Atlas"). Every
+  // graph in this unit carries atlas:true; graphNode() should turn that
+  // into the .graph-wrap.atlas class every one of them renders through.
+  const atlas = await p.evaluate(() => {
+    const u = DATA.records['unit-az-latlong'];
+    const allAtlas = u.cards.filter(c=>c.graph).every(c=>c.graph.atlas===true)
+      && u.questions.filter(q=>q.graph).every(q=>q.graph.atlas===true)
+      && u.mapRef.atlas===true;
+    const wrap = graphNode(u.mapRef);
+    return { allAtlas, hasClass: wrap.classList.contains('atlas') };
+  });
+  ck('every graph in the unit (cards, questions, mapRef) is flagged atlas:true, and graphNode renders the class',
+     atlas.allAtlas && atlas.hasClass, atlas);
+
   // No two text elements overlap on ANY graph in the unit — city labels
   // (real bug: San Francisco's label ran into Denver's on the overview
   // card, and a deliberately-close comparison pair, Chicago/Detroit, had

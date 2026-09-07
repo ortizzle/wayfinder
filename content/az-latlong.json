@@ -4,8 +4,8 @@
     "unit-az-latlong": {
       "id": "unit-az-latlong",
       "type": "unit",
-      "updatedAt": 1788802878000,
-      "libv": 3,
+      "updatedAt": 1788804422000,
+      "libv": 4,
       "classId": "history",
       "quarter": 1,
       "status": "draft",
@@ -38,7 +38,7 @@
       "mapLabel": "Map — see every city at once",
       "mapNote": "The same 5-degree grid from class, with every city this unit asks about marked at once. Each question already shows its own slice of cities — open this any time you want to check one against the fuller picture instead.",
       "mapRef": {
-        "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+        "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
         "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
         "xl": "Longitude (°W)", "yl": "Latitude (°N)",
         "pts": [
@@ -98,7 +98,7 @@
           "hint": "The lines are 5 degrees apart on this map — count gridlines, don't guess.",
           "from": "source",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -261,7 +261,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -289,7 +289,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -317,7 +317,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -345,7 +345,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -373,7 +373,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -402,7 +402,7 @@
           "kind": "order",
           "ans": 0,
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -430,7 +430,7 @@
           "kind": "order",
           "ans": 0,
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -457,7 +457,7 @@
           "from": "added",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -484,7 +484,7 @@
           "lv": 3,
           "from": "added",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -513,7 +513,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [
@@ -541,7 +541,7 @@
           "from": "source",
           "kind": "mc",
           "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
             "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
             "xl": "Longitude (°W)", "yl": "Latitude (°N)",
             "pts": [

@@ -922,6 +922,21 @@ in both apps omits `lx`/`ly`, so `lx` defaults to `gx` (label every line,
 exactly as before) — zero behavior change anywhere else. Carried into Ad
 Astra's copy too, unused there for now, keeping the shared block identical.
 
+- **Thinning labels, not gridlines, was the deliberate choice.** The fine
+  5° grid is what makes the map genuinely usable for estimating a position
+  between labeled lines (the whole point of the "estimating between
+  gridlines" card) — coarsening the grid itself to 10° would have fixed the
+  crowding by removing exactly the precision the unit is built to teach.
+- Only the LONGITUDE axis needed thinning on this map — the 6 latitude
+  ticks were never crowded (confirmed by measuring, not assumed), so `g.ly`
+  is left unset and latitude labels every line as before.
+
+`tools/test_az_latlong.js`'s existing label-overlap check (built for the
+city-label collision two versions ago) now checks EVERY text element on
+every graph in the unit, not just the bold city labels — so this same
+measurement would have caught the axis-crowding bug too, and catches it as
+a permanent regression check going forward.
+
 ### The map, on tap (v146 / Ad Astra v164, engine in both apps)
 
 Chris, right after the readability fix: "can we make the actual map, a
@@ -979,20 +994,90 @@ is one tap inside the spine — same as any other shelved lesson), the
 quiz's tool row offers a Map button that opens the graph in a real modal,
 and the no-overlap sweep now covers `mapRef` too.
 
-- **Thinning labels, not gridlines, was the deliberate choice.** The fine
-  5° grid is what makes the map genuinely usable for estimating a position
-  between labeled lines (the whole point of the "estimating between
-  gridlines" card) — coarsening the grid itself to 10° would have fixed the
-  crowding by removing exactly the precision the unit is built to teach.
-- Only the LONGITUDE axis needed thinning on this map — the 6 latitude
-  ticks were never crowded (confirmed by measuring, not assumed), so `g.ly`
-  is left unset and latitude labels every line as before.
+### Atlas paper (v147 / Ad Astra v165, engine in both apps)
 
-`tools/test_az_latlong.js`'s existing label-overlap check (built for the
-city-label collision two versions ago) now checks EVERY text element on
-every graph in the unit, not just the bold city labels — so this same
-measurement would have caught the axis-crowding bug too, and catches it as
-a permanent regression check going forward.
+Chris, looking at the new map tool: "can we make the map have its own
+white background so it looks like it was ripped out of an Atlas."
+
+**A graph spec may carry `atlas:true`** — content-shaped like `xabs`/`xsuf`
+and every other per-graph flag, never inferred, so an ordinary math or
+physics graph (graph paper's own metaphor) is completely untouched.
+`graphNode()` adds an `atlas` class to its `.graph-wrap` when the flag is
+set; `.graph-wrap.atlas` paints an explicit white/cream page background
+(`#fefcf5`), a soft border, a lifted-page box-shadow, a slight rotation,
+and the SAME `feTurbulence` grain the flashcards' Cardstock treatment
+(v142) already uses, at a slightly stronger opacity tuned for a much
+larger flat area than a card face.
+
+- **Deliberately theme-independent**, the same call Cardstock made: a
+  physical page does not change color with dark mode, so the atlas
+  background is a fixed light color regardless of `data-theme`. Verified
+  by screenshotting both themes — the map itself is byte-identical either
+  way, which is the point.
+- **Every graph in `unit-az-latlong` carries it** — the overview card, all
+  11 question graphs, and the new `mapRef` tool — because they are all the
+  same real-world map at different zoom levels; giving only the `mapRef`
+  tool the treatment while its sibling question graphs kept the plain
+  graph-paper look would have read as two different maps.
+- **Reuses the exact grain data-URI from Cardstock rather than inventing a
+  new texture**, so the app's "this is a physical object" visual language
+  (the note-from-home post-it, cardstock flashcards, now atlas pages) stays
+  one consistent idiom rather than three.
+
+`tools/test_az_latlong.js` gained an assertion that every graph in the
+unit (cards, questions, `mapRef`) carries `atlas:true` and that
+`graphNode()` renders the `atlas` class.
+
+### The Trivia Ladder gets a memory (v147 / Ad Astra v165, engine in both apps)
+
+Two related asks in one message: "can we have the girls see when they
+finish the trivia" and "can we store game points in the stars tab or
+other tab so the girls can see how they've done — we'll figure out a use
+at a later time." Both are visibility, not a new mechanic, and both are
+built on the same one-field addition.
+
+**A finished board now stamps its log with `done:true` and `points`.**
+`ladderLog()` already wrote a `mode:'ladder'` log on every tile answered;
+it now also writes whether that write was the LAST tile (`done`, needed
+because the same log record is updated in place tile by tile, so `total`
+alone can't tell a finished 6-question board from a still-in-progress
+10-question one) and the flavor score itself (`points`, the same number
+`ladderPoints()` already computed for the results screen — extracted into
+its own function so the finish screen and the log write share one
+formula). This is a deliberate, narrow reversal of the v156 rule that
+"the in-session points total... resets every play" — Chris asked for the
+opposite, on purpose, so it changes.
+
+- **"When they finish" — the door remembers.** Both Trivia Ladder buttons
+  (`unitCard()`'s lesson door and the subject screen's "mix of everything"
+  door) gain a quiet second line, `ladderLast(unitId, classId)`, reading
+  "Last played Sep 7 · 5,500 pts" once she's finished that board at least
+  once — the same "status on the door" rule Kat's v150 review established
+  for the quiz door (`quizProgress()`) and the flashcard tile
+  (`cardsProgress()`), now extended to the one door that had none.
+  `.btnstack` is a small new class (a column-flex wrapper inside the
+  existing `.btn.btn-secondary`) so the icon+title line and the status
+  line stack rather than running together — the button's own centering is
+  untouched.
+- **"Store the points... we'll figure out a use later" — the Stars tab, not
+  a new tab.** A "🎯 Trivia Ladder" card, right after Trophies, reads
+  "N boards finished" and the all-time best score in the game's own gold
+  pill (`.ladderworth`, the same `#f2ca63` reveal the finish screen and the
+  in-question badge already use), plus which unit and when. `ladderGames()`
+  (`logs().filter(done)`) and this card are deliberately the ONLY new
+  surface — no leaderboard, no per-unit breakdown, no ranking against a
+  sibling's device. Chris said the use is still open, so the summary stays
+  a plain fact rather than guessing at a mechanic he didn't ask for.
+- **Real XP is completely unaffected.** `ladderLog()`'s `xp` field, the
+  qstat/miss crediting in `answer()`, and the badge/celebration triggers
+  are all untouched — `points`/`done` are two new fields on a record that
+  already existed, not a second ledger.
+
+`tools/test_ladder.js` (same file, both apps) gained three assertions: the
+finished log carries `done:true` and the same points the results screen
+showed, the lesson's own door names when it was last played with the
+score, and the Stars tab renders the "N boards finished" / best-score
+summary.
 
 ### Reading the map, not memorizing it (v144, THIS APP ONLY)
 
