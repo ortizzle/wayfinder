@@ -1079,6 +1079,43 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### A shorter, slower clock (v148 / Ad Astra v166, both apps)
+
+Chris: "Rivers beat the clock seems long — what is the timer set at now
+and can it be extended?" The honest answer had two parts, and they pulled
+in different directions once looked at together. The PER-QUESTION
+countdown (`quizLimit()`) was never fixed — it already calibrates to her
+own measured pace from real untimed quizzes, clamped to 8–40s (20s until
+there is data). But Beat the clock's ROUND SIZE was quietly borrowed from
+the ordinary quiz's own sitting size (`u.round||QUIZ_ROUND`) — 10 on a
+lesson-a-day math unit, 12 on a Topic Review — so a math Beat the clock
+could mean up to 12 questions at up to 40 seconds each. Asked which one to
+fix, Chris chose both: more time per question, fewer questions per round.
+
+**The countdown is 1.5x more generous across the board**: 8–40s → 12–60s,
+20s default → 30s. Straight scaling of the existing clamp, nothing new
+invented — the calibration-to-her-pace mechanic is untouched, just given
+more headroom at both ends.
+
+**Beat the clock now deals its own fixed round, `BEAT_CLOCK_ROUND` (5),
+regardless of `u.round`.** `pickRound(u, timed)` used the SAME sizing
+formula whether or not the round was timed; it now branches on `timed` —
+the ordinary quiz still serves the unit's full sitting exactly as before
+(a lesson-a-day math quiz still clears all ~10 in one go), and only Beat
+the clock is capped at 5. This is a genuine, deliberate split: **`u.round`
+is content-side and means "how much of the lesson in one sitting"; racing
+a countdown through the same 10–12 questions is a different, longer
+activity than clearing the lesson, and gets its own engine constant
+instead of inheriting the content knob.**
+
+`tools/test_beatclock.js` (same file, both apps): `quizLimit()`'s new cold
+default (30s) and both new clamp edges (a synthetic 90s/answer average
+clamps to 60s, a synthetic 4s/answer average clamps to 12s), `pickRound`
+on a `round:10` unit still deals 10 untimed but exactly `BEAT_CLOCK_ROUND`
+(5) timed, and an end-to-end launch of Beat the clock on that same unit
+serving a real 5-question round with its countdown inside the new range —
+while the ordinary quiz on the identical unit is completely unaffected.
+
 ### Reading the map, not memorizing it (v144, THIS APP ONLY)
 
 Two corrections from Chris after v143 shipped. First: *"are we able to use
