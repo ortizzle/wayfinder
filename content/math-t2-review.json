@@ -4,7 +4,7 @@
   "unit-m2r": {
    "id": "unit-m2r",
    "type": "unit",
-   "updatedAt": 1786629245320,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -124,12 +124,12 @@
      "kind": "mc",
      "q": "Estimate 7,218 + 4,913 to the nearest thousand.",
      "opts": [
-      "12,000",
       "11,000",
+      "12,000",
       "13,000",
       "12,100"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Round each number on its own digit.",
      "steps": [
       "7,218 rounds to 7,000.",
@@ -148,12 +148,12 @@
      "kind": "mc",
      "q": "Add 437 + 386.",
      "opts": [
-      "823",
-      "813",
       "723",
+      "813",
+      "823",
       "833"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Two carries coming.",
      "steps": [
       "Ones: 7 + 6 = 13. Write 3, carry 1.",
@@ -172,12 +172,12 @@
      "kind": "mc",
      "q": "Add 35,472 + 28,619.",
      "opts": [
-      "64,091",
+      "64,081",
       "64,191",
       "63,091",
-      "64,081"
+      "64,091"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Five columns, same trades.",
      "steps": [
       "Ones: 2 + 9 = 11. Write 1, carry 1. Tens: 7 + 1 + 1 = 9.",
@@ -220,12 +220,12 @@
      "kind": "mc",
      "q": "Subtract 82,405 − 47,138.",
      "opts": [
-      "35,267",
       "35,277",
+      "35,267",
       "34,267",
       "35,367"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Scout the columns first: which will borrow?",
      "steps": [
       "Ones: 5 − 8 — trade: 15 − 8 = 7. Tens: 0 − 3 after lending — the 0 borrows: 9 − 3 = 6.",
@@ -244,12 +244,12 @@
      "kind": "mc",
      "q": "Subtract 4,000 − 1,762.",
      "opts": [
-      "2,238",
-      "2,248",
       "3,238",
+      "2,248",
+      "2,238",
       "2,338"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Slide both down 1 and the zeros disappear.",
      "steps": [
       "3,999 − 1,761 has the same gap.",
@@ -268,12 +268,12 @@
      "kind": "mc",
      "q": "Find 6,012 − 5,994 mentally.",
      "opts": [
-      "18",
+      "12",
       "22",
       "28",
-      "12"
+      "18"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "The numbers are close — walk between them.",
      "steps": [
       "5,994 → 6,000 is 6.",
@@ -316,12 +316,12 @@
      "kind": "mc",
      "q": "Adding 529 + 346 by partial sums, which pieces appear?",
      "opts": [
-      "800, 60, and 15",
       "800, 70, and 15",
+      "800, 60, and 15",
       "900, 60, and 15",
       "800, 60, and 5"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Hundreds alone, tens alone, ones alone.",
      "steps": [
       "Hundreds: 500 + 300 = 800.",
@@ -340,12 +340,12 @@
      "kind": "mc",
      "q": "Add 14,250 + 9,750 + 31,000 the smart way.",
      "opts": [
-      "Pair 14,250 + 9,750 = 24,000 first, then + 31,000 = 55,000",
-      "Left to right only: the order is fixed",
       "Round them all and add the rounds for the exact answer",
+      "Left to right only: the order is fixed",
+      "Pair 14,250 + 9,750 = 24,000 first, then + 31,000 = 55,000",
       "Add 31,000 + 14,250 first because big numbers go first"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Two of these tails were made for each other.",
      "steps": [
       "Tails: 250 + 750 = 1,000 — pair those addends.",
@@ -364,12 +364,12 @@
      "kind": "mc",
      "q": "Which addition proves 5,231 − 2,876 = 2,355?",
      "opts": [
-      "2,355 + 2,876 = 5,231",
+      "2,355 + 2,867 = 5,222",
       "2,355 + 5,231 = 7,586",
       "2,876 − 2,355 = 521",
-      "2,355 + 2,867 = 5,222"
+      "2,355 + 2,876 = 5,231"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Difference + subtracted amount = start.",
      "steps": [
       "The subtraction claims 5,231 splits into 2,876 and 2,355.",
@@ -413,12 +413,12 @@
      "kind": "mc",
      "q": "Subtract 9,000 − 5,468 using the slide trick.",
      "opts": [
-      "8,999 − 5,467 = 3,532",
       "8,999 − 5,468 = 3,531",
+      "8,999 − 5,467 = 3,532",
       "9,001 − 5,467 = 3,534",
       "8,000 − 5,468 = 2,532"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Both numbers move down 1 together.",
      "steps": [
       "Slide both down 1: 8,999 − 5,467.",
@@ -437,12 +437,12 @@
      "kind": "mc",
      "q": "Subtracting 812 − 357, Kip writes 545. Diagnose and correct it.",
      "opts": [
-      "He flipped the short columns — done properly the difference is 455",
-      "He forgot the hundreds — the answer is 545 plus 100",
       "Nothing is wrong",
+      "He forgot the hundreds — the answer is 545 plus 100",
+      "He flipped the short columns — done properly the difference is 455",
       "He subtracted the tens twice"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Check his ones digit: where would a 5 come from?",
      "steps": [
       "His ones digit 5 could be honest — 12 − 7 = 5 — but his tens digit 4 is 5 − 1, digits flipped instead of borrowed.",
@@ -462,12 +462,12 @@
      "kind": "mc",
      "q": "Ana estimates 4,621 + 3,738 by rounding both DOWN to 4,600 + 3,700 = 8,300. What must be true of the exact sum?",
      "opts": [
-      "It is greater than 8,300 — both trades threw a little away",
+      "Its direction cannot be known",
       "It is less than 8,300",
       "It equals 8,300",
-      "Its direction cannot be known"
+      "It is greater than 8,300 — both trades threw a little away"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Track what each rounding discarded.",
      "steps": [
       "4,621 → 4,600 dropped 21.",
@@ -511,12 +511,12 @@
      "kind": "mc",
      "q": "Which strategy fits 5,001 − 4,997 best, and what is the answer?",
      "opts": [
-      "Count up — the gap is 4",
       "The full algorithm — the answer is 4",
+      "Count up — the gap is 4",
       "Round both and subtract — the answer is 0",
       "Slide both up 3 — the answer is 14"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Look at how far apart the numbers are before choosing anything.",
      "steps": [
       "4,997 → 5,000 is 3; 5,000 → 5,001 is 1 more.",
@@ -535,12 +535,12 @@
      "kind": "mc",
      "q": "Round 274,381 to the nearest ten thousand.",
      "opts": [
-      "270,000",
-      "280,000",
       "274,000",
+      "280,000",
+      "270,000",
       "300,000"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The thousands digit makes the call.",
      "steps": [
       "Rounding place: the ten thousands — the 7.",
@@ -559,12 +559,12 @@
      "kind": "mc",
      "q": "How does the value of the 4 in 42,600 compare to the value of the 4 in 4,260?",
      "opts": [
-      "Ten times as much — 40,000 against 4,000",
+      "Four times as much",
       "The same — both are 4s",
       "One hundred times as much",
-      "Four times as much"
+      "Ten times as much — 40,000 against 4,000"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Find each 4's place first.",
      "steps": [
       "In 42,600 the 4 is in the ten thousands: 40,000.",
@@ -607,12 +607,12 @@
      "kind": "mc",
      "q": "Write \"seven hundred thousand, ninety\" as a number.",
      "opts": [
-      "700,090",
       "700,900",
+      "700,090",
       "70,090",
       "790,000"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Two periods, lots of zeros holding seats.",
      "steps": [
       "\"Seven hundred thousand\" fills the thousands period: 700,—.",
@@ -631,12 +631,12 @@
      "kind": "mc",
      "q": "What is the SMALLEST number that rounds to 400,000 at the nearest hundred thousand?",
      "opts": [
-      "350,000",
-      "399,999",
       "349,999",
+      "399,999",
+      "350,000",
       "400,001"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The bottom edge of the neighbourhood is the halfway point below.",
      "steps": [
       "The benchmark below is 300,000; halfway up is 350,000.",
@@ -655,12 +655,12 @@
      "kind": "mc",
      "q": "Theo claims: \"Rounding always changes a number.\" Find the counterexample.",
      "opts": [
-      "300 rounded to the nearest hundred is 300 — unchanged",
+      "No counterexample exists",
       "256 rounds to 300, which supports the claim",
       "450 rounds to 500, which supports the claim",
-      "No counterexample exists"
+      "300 rounded to the nearest hundred is 300 — unchanged"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "What happens when a number is already sitting on a benchmark?",
      "steps": [
       "Round 300 to the nearest hundred.",
@@ -674,7 +674,7 @@
     }
    ],
    "capstone": true,
-   "libv": 1
+   "libv": 2
   }
  }
 }

@@ -4,7 +4,7 @@
   "unit-ww504": {
    "id": "unit-ww504",
    "type": "unit",
-   "updatedAt": 1786284278283,
+   "updatedAt": 1788819326982,
    "classId": "english",
    "quarter": 1,
    "status": "draft",
@@ -203,12 +203,12 @@
      "kind": "mc",
      "q": "What is a gale?",
      "opts": [
-      "A very strong wind",
       "A light rain",
+      "A very strong wind",
       "A long sea journey",
       "A deep crack in rock"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Strong enough to tear tiles off a roof.",
      "steps": [
       "A gale is weather, and it is wind rather than rain.",
@@ -227,12 +227,12 @@
      "kind": "mc",
      "q": "What does depart mean?",
      "opts": [
-      "To leave a place",
-      "To arrive somewhere",
       "To repair something",
+      "To arrive somewhere",
+      "To leave a place",
       "To choose a route"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Think about an airport sign that says Departures.",
      "steps": [
       "At an airport, the Departures board lists flights that are going away.",
@@ -251,12 +251,12 @@
      "kind": "mc",
      "q": "What does it mean to revive something?",
      "opts": [
-      "To make or become strong again",
+      "To leave it behind",
       "To cut it in two",
       "To make it worse over time",
-      "To leave it behind"
+      "To make or become strong again"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Break the word up: \"re-\" plus \"-vive\".",
      "steps": [
       "\"Re-\" at the start of a word usually means again.",
@@ -299,12 +299,12 @@
      "kind": "mc",
      "q": "Which word means a longing for a certain time in the past?",
      "opts": [
-      "nostalgia",
       "despair",
+      "nostalgia",
       "jubilation",
       "destination"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "It is the feeling old photographs give you.",
      "steps": [
       "Despair is a total lack of hope, which is about now, not the past.",
@@ -345,12 +345,12 @@
      "kind": "mc",
      "q": "A weather forecast says \"the approximate rainfall will be two inches.\" What is the forecaster telling you?",
      "opts": [
-      "Around two inches, but not measured exactly",
-      "Exactly two inches, measured precisely",
       "At least two inches, possibly far more",
+      "Exactly two inches, measured precisely",
+      "Around two inches, but not measured exactly",
       "Less than two inches for certain"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Approximate is the opposite of accurate. What does that rule out?",
      "steps": [
       "Approximate means close enough to be about right, not exact.",
@@ -369,12 +369,12 @@
      "kind": "mc",
      "q": "A bridge is inspected each year and the reports show its condition getting steadily worse. Which word fits?",
      "opts": [
-      "deteriorating",
+      "navigating",
       "reviving",
       "departing",
-      "navigating"
+      "deteriorating"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Which of these words means becoming worse over time?",
      "steps": [
       "Reviving would mean getting stronger, which is the opposite of what is described.",
@@ -419,12 +419,12 @@
      "kind": "mc",
      "q": "Which sentence uses \"sever\" correctly?",
      "opts": [
-      "The falling branch severed the power line",
       "She severed the room with fresh paint",
+      "The falling branch severed the power line",
       "They severed toward the summit all morning",
       "The crowd severed with joy"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Sever means to cut in two or break off completely. Try each sentence against that.",
      "steps": [
       "Painting a room does not cut it in two, so that one is wrong.",
@@ -444,12 +444,12 @@
      "kind": "mc",
      "q": "After a long hike, a cold drink and twenty minutes in the shade make you feel strong again. Which word describes the drink and the rest?",
      "opts": [
-      "They revived you",
-      "They severed you",
       "They deteriorated you",
+      "They severed you",
+      "They revived you",
       "They departed you"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Which word means to make strong again?",
      "steps": [
       "Sever means cut, deteriorate means become worse, and depart means leave — none of those fit.",
@@ -468,12 +468,12 @@
      "kind": "mc",
      "q": "A train leaves Chicago at nine in the morning and arrives in Denver that night. Which word names Denver, and which names the nine o'clock leaving?",
      "opts": [
-      "Denver is the destination; nine o'clock is the departure",
+      "Denver is the voyage; nine o'clock is the destination",
       "Denver is the departure; nine o'clock is the destination",
       "Both are the destination",
-      "Denver is the voyage; nine o'clock is the destination"
+      "Denver is the destination; nine o'clock is the departure"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "One of these words is about arriving and the other is about leaving.",
      "steps": [
       "A destination is the place someone or something is going.",
@@ -540,12 +540,12 @@
      "kind": "mc",
      "q": "Why do \"despair\" and \"jubilation\" belong together in a vocabulary list, even though they mean opposite things?",
      "opts": [
-      "They are both strong feelings, and opposites are easier to learn as a pair",
       "They both describe travel",
+      "They are both strong feelings, and opposites are easier to learn as a pair",
       "They both come from the same root word",
       "They are used only in poetry"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "What do the two words have in common besides being opposites?",
      "steps": [
       "Despair is a total lack of hope; jubilation is great joy.",
@@ -565,12 +565,12 @@
      "kind": "mc",
      "q": "A hiker writes: \"We reached the ridge at dusk. Below us the valley had already gone dark, but the sun still sat on the horizon.\" What does this tell you about where the hikers were standing?",
      "opts": [
-      "High up, since they could still see the sun that the valley could not",
-      "In the valley, looking upward",
       "On flat ground beside the sea",
+      "In the valley, looking upward",
+      "High up, since they could still see the sun that the valley could not",
       "Underground"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The horizon is where the sky seems to meet the land. Who can see further — someone high up or someone low down?",
      "steps": [
       "The horizon is the distant line where sky meets land or sea.",
@@ -590,12 +590,12 @@
      "kind": "mc",
      "q": "Which sentence uses \"course\" in the same sense as \"The spaceship is now on a course for Mars\"?",
      "opts": [
-      "The river changed its course after the flood",
+      "The main course was chicken",
       "She signed up for a pottery course",
       "Of course we will be there",
-      "The main course was chicken"
+      "The river changed its course after the flood"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "In the spaceship sentence, course means the path something moves along. Find the option that matches that meaning.",
      "steps": [
       "The spaceship sentence uses course to mean the path it travels.",
@@ -640,12 +640,12 @@
      "kind": "mc",
      "q": "Which pair of this lesson's words could describe the same journey from two different points of view?",
      "opts": [
-      "departure and destination — one is the leaving, the other is the arriving place",
       "accurate and approximate",
+      "departure and destination — one is the leaving, the other is the arriving place",
       "gale and blizzard",
       "sever and revive"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Look for two words that describe different ends of one journey rather than opposite ideas.",
      "steps": [
       "Accurate and approximate are opposites about precision, not a journey.",
@@ -658,7 +658,8 @@
       "tip": "Opposite, related, and two-ends-of-one-thing are three different links. Naming which one you have makes words stick."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

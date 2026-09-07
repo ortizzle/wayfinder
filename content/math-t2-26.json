@@ -4,7 +4,7 @@
   "unit-m26": {
    "id": "unit-m26",
    "type": "unit",
-   "updatedAt": 1786292498244,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -107,12 +107,12 @@
      "kind": "mc",
      "q": "Subtract 76,450 − 32,180.",
      "opts": [
-      "44,270",
       "44,370",
+      "44,270",
       "44,260",
       "43,270"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Only one column needs a trade.",
      "steps": [
       "Ones: 0 − 0 = 0. Tens: 5 − 8 cannot go — trade: 15 − 8 = 7.",
@@ -131,12 +131,12 @@
      "kind": "mc",
      "q": "Which estimate belongs beside the exact work for 34,287 − 21,893?",
      "opts": [
-      "34,000 − 22,000 = 12,000",
-      "34,000 − 21,000 = 13,000",
       "40,000 − 20,000 = 20,000",
+      "34,000 − 21,000 = 13,000",
+      "34,000 − 22,000 = 12,000",
       "35,000 − 22,000 = 13,000"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Round each number to the nearest thousand on its own digit.",
      "steps": [
       "34,287: the 2 in the hundreds keeps it at 34,000.",
@@ -155,12 +155,12 @@
      "kind": "mc",
      "q": "Subtract 52,306 − 28,417.",
      "opts": [
-      "23,889",
+      "23,879",
       "23,989",
       "24,889",
-      "23,879"
+      "23,889"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Almost every column borrows — take them one at a time.",
      "steps": [
       "Ones: 6 − 7 needs a borrow, but the tens hold 0 — the ripple runs left to the 3 hundreds.",
@@ -204,12 +204,12 @@
      "kind": "mc",
      "q": "A concert sells 61,500 tickets and 45,987 people have arrived. How many are still to come?",
      "opts": [
-      "15,513",
       "15,613",
+      "15,513",
       "16,513",
       "15,503"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Estimate: about 61,500 − 46,000.",
      "steps": [
       "Ones: 0 − 7 — trade: 10 − 7 = 3. Tens: after lending, the 0 borrows too: 9 − 8 = 1.",
@@ -229,12 +229,12 @@
      "kind": "mc",
      "q": "Subtracting 82,354 − 47,182, in which place does the FIRST regroup happen?",
      "opts": [
-      "The tens — 5 tens cannot give up 8 tens",
-      "The ones",
       "The hundreds",
+      "The ones",
+      "The tens — 5 tens cannot give up 8 tens",
       "No regroup is needed anywhere"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Scan right to left for the first top digit that is too small.",
      "steps": [
       "Ones: 4 − 2 works, no trade.",
@@ -253,12 +253,12 @@
      "kind": "mc",
      "q": "Dev computes 43,512 − 19,268 and gets 36,356. His check: 36,356 + 19,268 = 55,624, which is not 43,512. What should Dev do with that information?",
      "opts": [
-      "Trust the check — the answer is wrong; he flipped every short column, and the true difference is 24,244",
+      "Split the difference between the two numbers",
       "Trust his first answer — checks sometimes fail",
       "Round the check until it matches",
-      "Split the difference between the two numbers"
+      "Trust the check — the answer is wrong; he flipped every short column, and the true difference is 24,244"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "The check cannot lie. What kind of error makes an answer too BIG?",
      "steps": [
       "The check failed by a lot, so the subtraction is wrong — that part is settled.",
@@ -303,12 +303,12 @@
      "kind": "mc",
      "q": "Estimating 61,234 − 29,876 as 61,000 − 30,000 = 31,000: is the exact answer above or below 31,000?",
      "opts": [
-      "Above — rounding pushed the start down AND the amount subtracted up, so the estimate dug too deep both ways",
       "Below — estimates always land high",
+      "Above — rounding pushed the start down AND the amount subtracted up, so the estimate dug too deep both ways",
       "Exactly 31,000",
       "No direction can be known"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Track each rounding separately: which way did each one push?",
      "steps": [
       "61,234 → 61,000: the start shrank by 234, pushing the result down.",
@@ -321,7 +321,8 @@
       "tip": "This is 2-2's over/under reasoning applied to subtraction — the logic transfers, with the directions flipped for the subtrahend."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

@@ -4,7 +4,7 @@
   "unit-m14": {
    "id": "unit-m14",
    "type": "unit",
-   "updatedAt": 1786291745750,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -113,12 +113,12 @@
      "kind": "mc",
      "q": "Round 249,731 to the nearest hundred thousand.",
      "opts": [
-      "200,000",
       "300,000",
+      "200,000",
       "250,000",
       "249,000"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "The ten thousands digit decides.",
      "steps": [
       "The rounding place is the hundred thousands: the 2.",
@@ -137,12 +137,12 @@
      "kind": "mc",
      "q": "What is the halfway point between 56,000 and 57,000?",
      "opts": [
-      "56,500",
-      "56,050",
       "56,555",
+      "56,050",
+      "56,500",
       "55,500"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Halfway between two neighbouring thousands.",
      "steps": [
       "The two benchmarks are 56,000 and 57,000, a gap of 1,000.",
@@ -161,12 +161,12 @@
      "kind": "mc",
      "q": "Round 46,512 to the nearest thousand AND to the nearest hundred. Which pair is right?",
      "opts": [
-      "47,000 and 46,500",
+      "46,000 and 46,510",
       "46,000 and 46,500",
       "47,000 and 46,600",
-      "46,000 and 46,510"
+      "47,000 and 46,500"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Two separate roundings of the same number. Do them one at a time.",
      "steps": [
       "Nearest thousand: rounding digit 6, next digit 5 — round up. 47,000.",
@@ -209,12 +209,12 @@
      "kind": "mc",
      "q": "Three parks report visitors: Elm 218,943, Oak 224,500, Cedar 214,067. Rounded to the nearest ten thousand, which parks show the SAME number?",
      "opts": [
-      "Elm and Oak — both 220,000",
       "Elm and Cedar — both 220,000",
+      "Elm and Oak — both 220,000",
       "Oak and Cedar — both 210,000",
       "All three round to different numbers"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Round each one separately, then compare the results.",
      "steps": [
       "Elm 218,943: thousands digit 8 rounds the ten thousands up — 220,000.",
@@ -234,12 +234,12 @@
      "kind": "mc",
      "q": "A number rounds to 85,000 at the nearest thousand. What is the SMALLEST it could be?",
      "opts": [
-      "84,500",
-      "84,000",
       "84,999",
+      "84,000",
+      "84,500",
       "85,001"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The bottom of the neighbourhood is the halfway point below.",
      "steps": [
       "Numbers round to 85,000 from both sides.",
@@ -259,12 +259,12 @@
      "kind": "mc",
      "q": "Kenji says 296,480 rounded to the nearest thousand is 300,000. What went wrong?",
      "opts": [
-      "He rounded to the nearest hundred thousand instead — nearest thousand gives 296,000",
+      "He rounded down when he should have rounded up",
       "Nothing, he is correct",
       "He should have gotten 297,000",
-      "He rounded down when he should have rounded up"
+      "He rounded to the nearest hundred thousand instead — nearest thousand gives 296,000"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Check which place his answer is actually rounded to.",
      "steps": [
       "Nearest thousand: rounding digit is the 6, next digit is 4, so it stays — 296,000.",
@@ -309,12 +309,12 @@
      "kind": "mc",
      "q": "If a number rounds UP when rounded to the nearest ten, does it always round up to the nearest hundred too?",
      "opts": [
-      "No — 146 rounds up to 150 at the nearest ten but down to 100 at the nearest hundred",
       "Yes — rounding direction is a property of the number",
+      "No — 146 rounds up to 150 at the nearest ten but down to 100 at the nearest hundred",
       "Yes — bigger places always follow smaller ones",
       "No — it always rounds down instead"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Find one number that goes up at tens and down at hundreds. One example settles it.",
      "steps": [
       "Take 146. Nearest ten: ones digit 6, round up — 150.",
@@ -327,7 +327,8 @@
       "tip": "To break any \"always\" statement, hunt for one counterexample. That is a full proof."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

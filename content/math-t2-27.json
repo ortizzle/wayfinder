@@ -4,7 +4,7 @@
   "unit-m27": {
    "id": "unit-m27",
    "type": "unit",
-   "updatedAt": 1786292498247,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -106,12 +106,12 @@
      "kind": "mc",
      "q": "Subtract 500 − 236.",
      "opts": [
-      "264",
       "274",
+      "264",
       "336",
       "254"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "The zeros will pass the borrow along — or slide both down 1.",
      "steps": [
       "Slide: 499 − 235 has the same gap.",
@@ -130,12 +130,12 @@
      "kind": "mc",
      "q": "To subtract anything from 6,000 by regrouping, what does the top number become?",
      "opts": [
-      "5 thousands, 9 hundreds, 9 tens, 10 ones",
-      "6 thousands, 0 hundreds, 0 tens, 10 ones",
       "5 thousands, 10 hundreds, 10 tens, 10 ones",
+      "6 thousands, 0 hundreds, 0 tens, 10 ones",
+      "5 thousands, 9 hundreds, 9 tens, 10 ones",
       "5 thousands, 9 hundreds, 10 tens, 0 ones"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Follow the borrow as it ripples right from the 6.",
      "steps": [
       "The ones need 10, but the tens have nothing — nor do the hundreds.",
@@ -155,12 +155,12 @@
      "kind": "mc",
      "q": "Why does 6,000 − 4,678 give the same answer as 5,999 − 4,677?",
      "opts": [
-      "Both numbers slid down by 1, so the gap between them did not move",
+      "Because subtraction ignores the ones place",
       "Because 5,999 rounds up to 6,000",
       "It does not — the answers differ by 1",
-      "Because subtraction ignores the ones place"
+      "Both numbers slid down by 1, so the gap between them did not move"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Picture the two numbers on a number line, both stepping left once.",
      "steps": [
       "A difference measures the gap between two points on the number line.",
@@ -204,12 +204,12 @@
      "kind": "mc",
      "q": "A warehouse holds 40,500 boxes and ships 26,384. How many remain?",
      "opts": [
-      "14,116",
       "14,216",
+      "14,116",
       "13,116",
       "14,126"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Only some columns touch a zero — scout first.",
      "steps": [
       "Ones: 0 − 4 needs a borrow, and the tens are 0 too — the ripple runs left to the 5 hundreds.",
@@ -229,12 +229,12 @@
      "kind": "mc",
      "q": "Subtract 7,003 − 2,675.",
      "opts": [
-      "4,328",
-      "4,338",
       "4,428",
+      "4,338",
+      "4,328",
       "5,328"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The two middle zeros will both turn into 9s.",
      "steps": [
       "Ones: 3 − 5 — the borrow ripples through the two zeros to the 7.",
@@ -254,12 +254,12 @@
      "kind": "mc",
      "q": "For 5,000 − 2,368, Amara answers 3,368. What did she actually compute?",
      "opts": [
-      "5,000 − 2,000 + 368 — she subtracted the thousands but ADDED the rest back instead of subtracting it",
+      "2,368 − 5,000, reversed",
       "5,000 − 2,368, correctly",
       "5,000 rounded to 5,368",
-      "2,368 − 5,000, reversed"
+      "5,000 − 2,000 + 368 — she subtracted the thousands but ADDED the rest back instead of subtracting it"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Compare her answer to the true one and measure the miss.",
      "steps": [
       "The true difference: 5,000 − 2,368 = 2,632.",
@@ -304,12 +304,12 @@
      "kind": "mc",
      "q": "Which subtraction has EXACTLY the same answer as 70,000 − 23,456?",
      "opts": [
-      "69,999 − 23,455",
       "69,999 − 23,456",
+      "69,999 − 23,455",
       "70,001 − 23,455",
       "69,000 − 23,000"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Only a slide that moves BOTH numbers the same amount keeps the gap.",
      "steps": [
       "70,000 − 23,456 = 46,544 — that is the gap to preserve.",
@@ -322,7 +322,8 @@
       "tip": "The test for any rewrite: did both numbers move by the same amount in the same direction? If not, the answer moved too."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

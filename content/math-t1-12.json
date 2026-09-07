@@ -4,7 +4,7 @@
   "unit-m12": {
    "id": "unit-m12",
    "type": "unit",
-   "updatedAt": 1786291368184,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -115,12 +115,12 @@
      "kind": "mc",
      "q": "1,000 is how many times as much as 100?",
      "opts": [
-      "10 times",
       "100 times",
+      "10 times",
       "2 times",
       "1,000 times"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "How many hundreds fit inside a thousand?",
      "steps": [
       "Count up: 100, 200, 300 … 1,000 takes ten steps.",
@@ -139,12 +139,12 @@
      "kind": "mc",
      "q": "Which number is one-tenth of 40,000?",
      "opts": [
-      "4,000",
-      "400",
       "4",
+      "400",
+      "4,000",
       "400,000"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "One-tenth means one place to the right.",
      "steps": [
       "One-tenth of a number is that number divided by 10.",
@@ -163,12 +163,12 @@
      "kind": "mc",
      "q": "A charity collects 6,000 cans and shares them equally among 10 food banks. How many cans does each food bank get?",
      "opts": [
-      "600",
+      "5,990",
       "60",
       "6,000",
-      "5,990"
+      "600"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Sharing equally among 10 is dividing by 10.",
      "steps": [
       "Equal shares among 10 means 6,000 ÷ 10.",
@@ -211,12 +211,12 @@
      "kind": "mc",
      "q": "In 77,215, how does the value of the first 7 compare to the value of the second 7?",
      "opts": [
-      "It is ten times as great",
       "It is one hundred times as great",
+      "It is ten times as great",
       "They are equal",
       "It is one-tenth as great"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "The two 7s sit in neighbouring places.",
      "steps": [
       "The first 7 is in the ten thousands place: value 70,000.",
@@ -235,12 +235,12 @@
      "kind": "mc",
      "q": "Write a number where the 6 is worth ten times as much as the 6 in 236,894. Which works?",
      "opts": [
-      "261,000",
-      "236,900",
       "2,600",
+      "236,900",
+      "261,000",
       "620"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Find the value of the 6 first, then find a number where a 6 is worth ten times that.",
      "steps": [
       "In 236,894 the 6 sits in the thousands place, so it is worth 6,000.",
@@ -260,12 +260,12 @@
      "kind": "mc",
      "q": "A student says that in 3,533, the two 3s have the same value because they are the same digit. What is the best correction?",
      "opts": [
-      "The digits match but the places differ — one 3 is worth 3,000 and the other is worth 3",
+      "Only the 5 has a value in this number",
       "The student is right, digits always keep their value",
       "The 3s are worth 300 each",
-      "Only the 5 has a value in this number"
+      "The digits match but the places differ — one 3 is worth 3,000 and the other is worth 3"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Digit and value are different things. Where does each 3 sit?",
      "steps": [
       "The first 3 is in the thousands place: value 3,000.",
@@ -310,12 +310,12 @@
      "kind": "mc",
      "q": "A game doubles your points every level, starting at 2,000. A different game multiplies points by ten each level, starting at 2,000. After one level, how do the two scores compare?",
      "opts": [
-      "4,000 versus 20,000 — the ten-times game gives five times as much",
       "Both give 20,000",
+      "4,000 versus 20,000 — the ten-times game gives five times as much",
       "4,000 versus 40,000",
       "Both give 4,000"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Work each game out separately, then compare.",
      "steps": [
       "Doubling 2,000 gives 4,000.",
@@ -327,7 +327,8 @@
       "tip": "A place-value slide beats a double every time. That gap only grows with more levels."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

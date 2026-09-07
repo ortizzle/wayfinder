@@ -1079,6 +1079,52 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### Fifty units, all answer A (v149 / Ad Astra v167, both apps)
+
+Chris, after the first Junior Jeopardy board: "the first set of questions
+I tried the answers were all A." Measured first: across 63 screens on
+real content in both apps the on-screen position of the correct answer
+spread over every letter — the render-time shuffle (v64) is working, on
+the board and everywhere else. What the scan found underneath is the
+thing: **fifty shipped units — 19 here, 31 in Ad Astra — were authored
+with the correct answer in slot A on every question.** Nearly every math
+lesson and Topic Review, every Wordly Wise lesson, History, Latin,
+Biology, Physics. `_balance()` exists in `unit_common` for exactly this
+and these files predate it or skipped it. The shuffle was the only thing
+between the girls and a giveaway, and the grown-up review queue reads a
+file as written.
+
+Three things shipped, in that order:
+
+- **`check_content.py` warns** when 70%+ of a unit's MC/analogy answers
+  sit in one slot (guides exempt — their order is the paper's). 50
+  warnings before the fix, 0 after; it stays as the guard.
+- **`fetchLibrary()` carries an ORDER-ONLY update without re-drafting.**
+  `orderOnly(old, new)`: every question keeps the same four options and
+  the same correct answer text, only the order moved, and cards/meta/
+  question text are identical — then the merged record keeps her
+  approval and never enters the queue. Anything else is a real change
+  and takes the ordinary re-draft path (`test_orderonly.js` checks both:
+  a rotated unit stays approved with no `chg`; one reworded option
+  re-drafts and is tagged as an update). Without this, the rebalance
+  would have queued fifty "updates" for Chris to re-read for a change
+  that is invisible on every screen she uses — "nothing reaches her
+  unread" is satisfied precisely because nothing new reaches her.
+- **The fifty files were rotated** (the `_balance()` rule: slots cycle
+  A,B,C,D in question order), `libv` bumped, `updatedAt` stamped a minute
+  back. `kind:'order'`/`spell`/`slider` untouched (their option order is
+  semantic), guides untouched, variants untouched. Verified against HEAD
+  file by file: identical after normalising options to a sorted set and
+  `ans` to its text — nothing but the order moved. The diffs look larger
+  than that because the writer re-serialised compact inline arrays one
+  item per line; the content is byte-for-byte the same tokens.
+
+Why the report could not be reproduced on the board itself is still
+open — most likely a small first board on a lesson where the shuffle
+happened to land the answer under A a few times running, which the
+all-A authoring would have made no more or less likely. The authored
+skew was real either way and is gone.
+
 ### Junior Jeopardy (v149 / Ad Astra v167, both apps)
 
 Chris, one message, nine asks: rename the Trivia Ladder "Junior Jeopardy",

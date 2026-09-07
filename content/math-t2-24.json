@@ -4,7 +4,7 @@
   "unit-m24": {
    "id": "unit-m24",
    "type": "unit",
-   "updatedAt": 1786292300890,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -107,12 +107,12 @@
      "kind": "mc",
      "q": "Add 41,306 + 22,589.",
      "opts": [
-      "63,895",
       "63,885",
+      "63,895",
       "64,895",
       "63,795"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Work right to left, column by column.",
      "steps": [
       "Ones: 6 + 9 = 15. Write 5, carry 1.",
@@ -132,12 +132,12 @@
      "kind": "mc",
      "q": "Before adding 24,595 + 19,255 exactly, you estimate by rounding each to the nearest thousand. Which estimate is right?",
      "opts": [
-      "25,000 + 19,000 = 44,000",
-      "24,000 + 19,000 = 43,000",
       "25,000 + 20,000 = 45,000",
+      "24,000 + 19,000 = 43,000",
+      "25,000 + 19,000 = 44,000",
       "20,000 + 20,000 = 40,000"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Round each number at the thousands place on its own merits.",
      "steps": [
       "24,595: the 5 in the hundreds rounds it UP to 25,000.",
@@ -156,12 +156,12 @@
      "kind": "mc",
      "q": "A city collects 30,283 pounds of paper, 63,423 pounds of glass, and 6,538 pounds of metal. What is the total?",
      "opts": [
-      "100,244",
+      "93,706",
       "99,244",
       "100,144",
-      "93,706"
+      "100,244"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Add two, then add the third to the running total.",
      "steps": [
       "30,283 + 63,423 = 93,706.",
@@ -206,12 +206,12 @@
      "kind": "mc",
      "q": "Adding 5,306 + 473, Marco lines the 4 of 473 under the 5 of 5,306 and gets 10,036. What went wrong?",
      "opts": [
-      "He lined up left edges instead of place values — 473 has no thousands, so its 4 belongs under the hundreds",
       "He forgot to regroup",
+      "He lined up left edges instead of place values — 473 has no thousands, so its 4 belongs under the hundreds",
       "His addition facts were off",
       "Nothing — 10,036 is correct"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "What did the 4 of 473 get added to?",
      "steps": [
       "Lined up by left edges, the 4 hundreds sat in the thousands column.",
@@ -231,12 +231,12 @@
      "kind": "mc",
      "q": "One stadium seats 68,745 people and another seats 25,899. How many seats do they hold together?",
      "opts": [
-      "94,644",
-      "94,544",
       "93,644",
+      "94,544",
+      "94,644",
       "94,654"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Estimate first: about 69,000 + 26,000 = 95,000.",
      "steps": [
       "Ones: 5 + 9 = 14. Write 4, carry 1.",
@@ -256,12 +256,12 @@
      "kind": "mc",
      "q": "What is 49,999 + 50,001, and what is the FASTEST honest way to see it?",
      "opts": [
-      "100,000 — move 1 from 50,001 to 49,999 and the problem becomes 50,000 + 50,000",
+      "100,001 — the extra 1 survives",
       "100,000 — but only the full algorithm can be trusted",
       "99,999 — the numbers nearly cancel",
-      "100,001 — the extra 1 survives"
+      "100,000 — move 1 from 50,001 to 49,999 and the problem becomes 50,000 + 50,000"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "One addend is 1 short of round; the other is 1 over.",
      "steps": [
       "49,999 is 1 below 50,000; 50,001 is 1 above.",
@@ -306,12 +306,12 @@
      "kind": "mc",
      "q": "Jon claims 24,595 + 19,255 = 63,850. His estimate was 44,000. What should he conclude?",
      "opts": [
-      "The claim is about 20,000 past the estimate — recheck; the true sum is near 44,000",
       "The estimate must be the wrong one",
+      "The claim is about 20,000 past the estimate — recheck; the true sum is near 44,000",
       "A bigger answer is safer, so keep 63,850",
       "Estimates cannot judge five-digit sums"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Measure the gap between claim and estimate first.",
      "steps": [
       "Estimate: 44,000. Claim: 63,850. Gap: nearly 20,000.",
@@ -324,7 +324,8 @@
       "tip": "Trust the estimate exactly this far: it cannot find the error, but it can refuse to let a wrong answer through."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

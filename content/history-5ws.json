@@ -4,7 +4,7 @@
   "unit-hist-5ws": {
    "id": "unit-hist-5ws",
    "type": "unit",
-   "updatedAt": 1786530144734,
+   "updatedAt": 1788819326982,
    "classId": "history",
    "quarter": 1,
    "status": "draft",
@@ -148,12 +148,12 @@
      "kind": "mc",
      "q": "\"A brand-new playground opened this Saturday at Lincoln Park.\" Which W does \"at Lincoln Park\" answer?",
      "opts": [
-      "Where",
       "When",
+      "Where",
       "What",
       "Who"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "It names a place.",
      "steps": [
       "Where asks for the place something happened.",
@@ -172,12 +172,12 @@
      "kind": "mc",
      "q": "Which of these makes a news report MORE reliable?",
      "opts": [
-      "It names the author and gives a date",
-      "It has an exciting headline",
       "It is very short",
+      "It has an exciting headline",
+      "It names the author and gives a date",
       "It appears on a colourful website"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Which one can you actually check?",
      "steps": [
       "A reliable report gives you things you can check.",
@@ -196,12 +196,12 @@
      "kind": "mc",
      "q": "Which of the 5 Ws asks you to think rather than just find the answer in the article?",
      "opts": [
-      "Why it matters",
+      "Where",
       "Who",
       "When",
-      "Where"
+      "Why it matters"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Four are hiding in the text. One is not.",
      "steps": [
       "Who, What, When and Where are all stated somewhere in a good article.",
@@ -245,12 +245,12 @@
      "kind": "mc",
      "q": "Article A: \"Aliens Land on School Roof and Eat Lunch in Cafeteria!\" — Anonymous, no date, from www.spacefunnews.biz. Is it reliable?",
      "opts": [
-      "No — no author, no date, a joke website, and an unbelievable claim",
       "Yes — it gives a specific location, so it can be checked",
+      "No — no author, no date, a joke website, and an unbelievable claim",
       "Yes — the headline is very detailed",
       "It cannot be judged without reading the whole article"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Count the warning signs.",
      "steps": [
       "No author is named, so nobody can be checked.",
@@ -270,12 +270,12 @@
      "kind": "mc",
      "q": "Article B: \"Local Firefighters Rescue Kitten From Tree\" — Jane Martin, August 4 2025, City News Daily. Is it reliable?",
      "opts": [
-      "Yes — a named author, a date, a real news source, and an ordinary claim",
-      "No — a kitten in a tree is too small to be real news",
       "No — one newspaper is not enough to prove anything",
+      "No — a kitten in a tree is too small to be real news",
+      "Yes — a named author, a date, a real news source, and an ordinary claim",
       "Only if another newspaper reports the same thing"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Check the same four things you used on the alien story.",
      "steps": [
       "The author is named: Jane Martin, someone who can be looked up.",
@@ -295,12 +295,12 @@
      "kind": "mc",
      "q": "A report answers Who, What, Where and Why, but never says when it happened. What should you do?",
      "opts": [
-      "Notice the gap and treat the report as incomplete until you find the date",
+      "Ignore it — four out of five is close enough",
       "Assume it happened today",
       "Decide the whole report is false",
-      "Ignore it — four out of five is close enough"
+      "Notice the gap and treat the report as incomplete until you find the date"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "A missing W is information too.",
      "steps": [
       "A complete report answers all five questions.",
@@ -345,12 +345,12 @@
      "kind": "mc",
      "q": "Why does a reliable news report name its author instead of publishing anonymously?",
      "opts": [
-      "So readers can check who wrote it and hold them responsible for getting it right",
       "So the article looks longer",
+      "So readers can check who wrote it and hold them responsible for getting it right",
       "Because it is a legal requirement everywhere",
       "So the newspaper can charge more for it"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "What can you do with a name that you cannot do without one?",
      "steps": [
       "A named author can be looked up — what else they have written, and whether it held up.",
@@ -370,12 +370,12 @@
      "kind": "mc",
      "q": "What does the \"What\" question ask for?",
      "opts": [
-      "The thing that happened",
-      "The people involved",
       "The reason it matters",
+      "The people involved",
+      "The thing that happened",
       "The place it happened"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Say the event plainly, in one sentence.",
      "steps": [
       "What asks for the event itself.",
@@ -394,12 +394,12 @@
      "kind": "mc",
      "q": "A website address ends in \".biz\" and includes the word \"fun\". Why is that worth noticing?",
      "opts": [
-      "The name is a clue about what the site is for",
+      "It means the site is new",
       "Only .com websites are ever real",
       "Long addresses are always false",
-      "It means the site is new"
+      "The name is a clue about what the site is for"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Read the address like a headline.",
      "steps": [
       "A web address often says something about the publisher.",
@@ -444,12 +444,12 @@
      "kind": "mc",
      "q": "An article about the playground never explains why the story matters. How would you answer that W?",
      "opts": [
-      "Work it out: children in the area now have a safe place to play",
       "Write \"the article does not say\" and stop",
+      "Work it out: children in the area now have a safe place to play",
       "Copy the headline as the answer",
       "Say the story does not matter at all"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Why-it-matters is the one you work out rather than find.",
      "steps": [
       "Four of the five Ws are found in the text; Why it matters usually is not.",
@@ -469,12 +469,12 @@
      "kind": "mc",
      "q": "Both a reliable and an unreliable article can have an exciting headline. What does that tell you about using headlines to judge a source?",
      "opts": [
-      "Headlines are written to attract readers, so they say little about reliability",
-      "Exciting headlines always mean a story is false",
       "Dull headlines are always more reliable",
+      "Exciting headlines always mean a story is false",
+      "Headlines are written to attract readers, so they say little about reliability",
       "Headlines are the best single test of a source"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "What is a headline actually FOR?",
      "steps": [
       "A headline exists to make you want to read the article.",
@@ -487,7 +487,8 @@
       "tip": "When a signal appears equally in true and false reports, it cannot tell them apart. Find a signal that can."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

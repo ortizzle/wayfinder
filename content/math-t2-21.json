@@ -4,7 +4,7 @@
   "unit-m21": {
    "id": "unit-m21",
    "type": "unit",
-   "updatedAt": 1786292300885,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -113,12 +113,12 @@
      "kind": "mc",
      "q": "To add 47 + 38 + 53 in your head, which first move makes it easiest?",
      "opts": [
-      "Pair 47 and 53 to make 100, then add 38",
       "Add 47 and 38 first because they come first",
+      "Pair 47 and 53 to make 100, then add 38",
       "Round every number to the nearest ten and add the rounds",
       "Add all the ones digits, then start over with the tens"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Look for two ones digits that make ten.",
      "steps": [
       "Scan for a friendly pair: 47 + 53 = 100.",
@@ -137,12 +137,12 @@
      "kind": "mc",
      "q": "Subtract 700 − 398 in your head.",
      "opts": [
-      "302",
-      "298",
       "312",
+      "298",
+      "302",
       "308"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Trade 398 for a rounder number, then settle up.",
      "steps": [
       "Trade 398 for 400: 700 − 400 = 300.",
@@ -161,12 +161,12 @@
      "kind": "mc",
      "q": "Compute 6,000 − 1,998 mentally. What is the difference?",
      "opts": [
-      "4,002",
+      "4,008",
       "3,998",
       "4,000",
-      "4,008"
+      "4,002"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Which way does the fix-up go after trading 1,998 for 2,000?",
      "steps": [
       "Trade 1,998 for 2,000: 6,000 − 2,000 = 4,000.",
@@ -209,12 +209,12 @@
      "kind": "mc",
      "q": "A library adds 3,450 books one year and 2,380 the next. Break 2,380 apart by place value to find the total mentally.",
      "opts": [
-      "5,830",
       "5,730",
+      "5,830",
       "5,820",
       "6,830"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Add the thousands, then the hundreds, then the tens.",
      "steps": [
       "Start at 3,450. Add the thousands: 3,450 + 2,000 = 5,450.",
@@ -233,12 +233,12 @@
      "kind": "mc",
      "q": "Find 8,003 − 7,985 mentally.",
      "opts": [
-      "18",
-      "22",
       "15",
+      "22",
+      "18",
       "28"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The numbers are close together — walk between them.",
      "steps": [
       "Count up from 7,985.",
@@ -257,12 +257,12 @@
      "kind": "mc",
      "q": "To add 1,985 + 2,595, Elena trades 1,985 for 2,000, gets 2,000 + 2,595 = 4,595, then ADDS 15 more for a final answer of 4,610. Judge her work.",
      "opts": [
-      "Her trade was fine, but the fix-up runs the other way — the sum is 4,580",
+      "Compensation cannot be used on four-digit numbers",
       "Her answer 4,610 is correct",
       "She should have traded 2,595 for 2,600 so no fix-up is needed",
-      "Compensation cannot be used on four-digit numbers"
+      "Her trade was fine, but the fix-up runs the other way — the sum is 4,580"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Did her trade make the running total too big or too small?",
      "steps": [
       "Trading 1,985 up to 2,000 slipped an extra 15 INTO the sum.",
@@ -307,12 +307,12 @@
      "kind": "mc",
      "q": "Why does the trick 700 − 398 = 700 − 400 + 2 actually work?",
      "opts": [
-      "Subtracting 400 removes 2 more than asked, and adding 2 puts back exactly that overshoot",
       "Because 398 rounds to 400, and rounded answers always agree",
+      "Subtracting 400 removes 2 more than asked, and adding 2 puts back exactly that overshoot",
       "Because addition and subtraction are the same operation",
       "It only works when the answer ends in 2"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Compare what was asked with what was actually removed.",
      "steps": [
       "The problem asks you to remove 398.",
@@ -325,7 +325,8 @@
       "tip": "If you can say WHERE the fix-up number comes from, you own the strategy instead of memorizing it."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

@@ -4,7 +4,7 @@
   "unit-m15": {
    "id": "unit-m15",
    "type": "unit",
-   "updatedAt": 1786291745753,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -113,12 +113,12 @@
      "kind": "mc",
      "q": "Which of these is a real math argument that 5,280 > 5,190?",
      "opts": [
-      "The thousands match, and in the hundreds 2 > 1, so 5,280 is greater",
       "5,280 looks bigger",
+      "The thousands match, and in the hundreds 2 > 1, so 5,280 is greater",
       "80 is bigger than 90 backwards",
       "Both have four digits"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "A real argument names the deciding place.",
      "steps": [
       "March from the left: thousands are 5 and 5 — equal.",
@@ -137,12 +137,12 @@
      "kind": "mc",
      "q": "What is a counterexample?",
      "opts": [
-      "One example that shows a claim is false",
-      "An example that supports a claim",
       "A second way of writing a number",
+      "An example that supports a claim",
+      "One example that shows a claim is false",
       "An estimate used for checking"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "It is the single case that breaks the rule.",
      "steps": [
       "A claim like \"this always happens\" promises every case works.",
@@ -161,12 +161,12 @@
      "kind": "mc",
      "q": "Mara claims: \"$41,268 is more than $41,832 because 8 > 3.\" Construct the correct judgement of her argument.",
      "opts": [
-      "Her conclusion AND her method are wrong — the hundreds decide, and 2 < 8, so $41,268 is less",
+      "Her method is right but she compared the wrong numbers",
       "Her conclusion is right but her method is wrong",
       "Her conclusion and method are both right",
-      "Her method is right but she compared the wrong numbers"
+      "Her conclusion AND her method are wrong — the hundreds decide, and 2 < 8, so $41,268 is less"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Check the comparison honestly first, then check what her digits were.",
      "steps": [
       "March left: 4 = 4, 1 = 1. Hundreds: 2 versus 8.",
@@ -211,12 +211,12 @@
      "kind": "mc",
      "q": "Ravi conjectures a blue whale is about ten times as long as a school bus. The whale measures 98 feet; the bus measures 40 feet. Judge the conjecture.",
      "opts": [
-      "It fails — 98 is about 100, and ten times 40 is 400, which is way past 100",
       "It holds — both numbers are big",
+      "It fails — 98 is about 100, and ten times 40 is 400, which is way past 100",
       "It holds — 98 is close to 40 × 10",
       "It fails — whales are actually shorter than buses"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Estimate both, then test the ten-times claim against the estimates.",
      "steps": [
       "Estimate: the whale is about 100 feet, the bus about 40 feet.",
@@ -236,12 +236,12 @@
      "kind": "mc",
      "q": "To argue that 356,208 > 356,079, which sentence does the real work?",
      "opts": [
-      "The hundreds differ: 2 hundreds > 0 hundreds",
-      "Both numbers are in the three hundred thousands",
       "The ones differ: 8 > 9 is false, so check again",
+      "Both numbers are in the three hundred thousands",
+      "The hundreds differ: 2 hundreds > 0 hundreds",
       "356,208 has a 2 in it"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The deciding sentence names the first differing place and compares it.",
      "steps": [
       "Hundred thousands, ten thousands and thousands all match: 3, 5, 6.",
@@ -260,12 +260,12 @@
      "kind": "mc",
      "q": "Nia claims: \"If you round two different numbers to the same place, the bigger number always gives the bigger rounded answer.\" Find the counterexample.",
      "opts": [
-      "82 and 78 to the nearest ten: both give 80 — bigger did not give bigger",
+      "There is no counterexample; the claim is true",
       "91 and 89 to the nearest ten give 90 and 90",
       "146 and 150 give different answers",
-      "There is no counterexample; the claim is true"
+      "82 and 78 to the nearest ten: both give 80 — bigger did not give bigger"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Try two different numbers that live in the same rounding neighbourhood.",
      "steps": [
       "82 rounds to 80 at the nearest ten. 78 also rounds to 80.",
@@ -310,12 +310,12 @@
      "kind": "mc",
      "q": "Tomás argues: \"300,027 < 316,042 because my number has a zero in the ten thousands place and hers has a one, and 0 < 1.\" Is his argument complete?",
      "opts": [
-      "Almost — he must first note the hundred thousands MATCH, or the comparison is not anchored",
       "Yes — it is complete as stated",
+      "Almost — he must first note the hundred thousands MATCH, or the comparison is not anchored",
       "No — he should compare the ones place",
       "No — zeros cannot be compared"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "The march has to start at the left. What did he skip?",
      "steps": [
       "His deciding place is right: ten thousands, 0 versus 1.",
@@ -328,7 +328,8 @@
       "tip": "Complete arguments state the boring steps too. The boring steps are what make them checkable."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

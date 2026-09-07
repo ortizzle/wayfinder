@@ -4,7 +4,7 @@
   "unit-m23": {
    "id": "unit-m23",
    "type": "unit",
-   "updatedAt": 1786292300889,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -106,12 +106,12 @@
      "kind": "mc",
      "q": "Adding 446 + 293 by partial sums, which three partial sums appear?",
      "opts": [
-      "600, 130, and 9",
       "600, 120, and 9",
+      "600, 130, and 9",
       "700, 130, and 9",
       "600, 130, and 19"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Add the hundreds alone, the tens alone, the ones alone.",
      "steps": [
       "Hundreds: 400 + 200 = 600.",
@@ -130,12 +130,12 @@
      "kind": "mc",
      "q": "Add 507 + 385.",
      "opts": [
-      "892",
-      "882",
       "792",
+      "882",
+      "892",
       "891"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Watch the ones column first.",
      "steps": [
       "Ones: 7 + 5 = 12. Write 2, trade for 1 ten.",
@@ -154,12 +154,12 @@
      "kind": "mc",
      "q": "In the standard algorithm for 358 + 277, a small 1 is written above the tens column. What is that 1 really worth?",
      "opts": [
-      "One ten — the 15 ones were traded for 5 ones and 1 ten",
+      "Nothing; careful adders can skip it",
       "One — it is just a reminder mark",
       "One hundred",
-      "Nothing; careful adders can skip it"
+      "One ten — the 15 ones were traded for 5 ones and 1 ten"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Where did it come from? The ones column made 15.",
      "steps": [
       "The ones column made 15 — more than one place can hold.",
@@ -203,12 +203,12 @@
      "kind": "mc",
      "q": "Adding 356 + 488, Priya gets 734. What happened?",
      "opts": [
-      "She dropped both carries — the ten from 6 + 8 = 14 and the hundred from the tens column never got added",
       "She added an extra ten",
+      "She dropped both carries — the ten from 6 + 8 = 14 and the hundred from the tens column never got added",
       "She lined the numbers up wrong",
       "Nothing — 734 is correct"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Run the ones column and see what should have happened to the 14.",
      "steps": [
       "Ones: 6 + 8 = 14. Write 4 — and the 1 ten must move left. Dropping it loses 10.",
@@ -228,12 +228,12 @@
      "kind": "mc",
      "q": "Three classes recycle 189, 204, and 367 bottles. How many altogether?",
      "opts": [
-      "760",
-      "750",
       "770",
+      "750",
+      "760",
       "660"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Add two of them, then add the third.",
      "steps": [
       "189 + 204 = 393.",
@@ -253,12 +253,12 @@
      "kind": "mc",
      "q": "Partial sums and the standard algorithm give the same answer for every addition. Why?",
      "opts": [
-      "Both add the same place values — they only record the work in a different order",
+      "It is a coincidence that has held so far",
       "They only match when no regrouping happens",
       "The algorithm rounds and partial sums do not",
-      "It is a coincidence that has held so far"
+      "Both add the same place values — they only record the work in a different order"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "What is each method actually adding?",
      "steps": [
       "Partial sums adds hundreds, tens, and ones separately, out in the open.",
@@ -302,12 +302,12 @@
      "kind": "mc",
      "q": "Two addends each grow by exactly 100. What happens to their sum?",
      "opts": [
-      "It grows by 200 — each extra 100 lands in the total",
       "It grows by 100",
+      "It grows by 200 — each extra 100 lands in the total",
       "It stays the same",
       "It doubles"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Try it on a small example and watch the total.",
      "steps": [
       "Take 300 + 450 = 750.",
@@ -320,7 +320,8 @@
       "tip": "Compare with subtraction, where growing BOTH numbers changes nothing. The two operations treat change very differently."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

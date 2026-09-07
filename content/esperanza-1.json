@@ -4,7 +4,7 @@
     "unit-er1": {
       "id": "unit-er1",
       "type": "unit",
-      "updatedAt": 1786904582490,
+      "updatedAt": 1788819326982,
       "classId": "english",
       "quarter": 1,
       "status": "draft",
@@ -170,12 +170,12 @@
           "passage": "“We are like the phoenix,” said Abuelita. “Rising again, with a new life ahead of us.”",
           "q": "When does Abuelita say this, and what is she really telling the family?",
           "opts": [
-            "Before the harvest — a wish for a good grape crop",
             "After the fire — losing all is not being finished",
+            "Before the harvest — a wish for a good grape crop",
             "On the train — a story to pass the time",
             "At the border — a warning about what is ahead"
           ],
-          "ans": 1,
+          "ans": 0,
           "hint": "A phoenix needs ashes first. Where do the ashes come from?",
           "steps": [
             "Place the line: the house has just burned, and the family is deciding what is left to do.",
@@ -197,11 +197,11 @@
           "q": "Abuelita gives Esperanza this advice as everything falls apart. Why is starting over the exact thing Esperanza is afraid of?",
           "opts": [
             "She is afraid of trains and of travelling",
-            "She is worried about learning to speak English",
             "It means becoming an Esperanza without the ranch",
+            "She is worried about learning to speak English",
             "She thinks the family will return to the ranch"
           ],
-          "ans": 2,
+          "ans": 1,
           "hint": "What did Esperanza lose besides things?",
           "steps": [
             "List what the fire and the flight take: the house, the harvest parties, the dresses — but also her PLACE: being the ranch owner's daughter.",
@@ -247,11 +247,11 @@
           "q": "What do Tío Luis and Tío Marco use to pressure Mama after Papa dies?",
           "opts": [
             "A letter from the government in Mexico City",
-            "Their grip on the bank, the town, and custom",
             "A promise Abuelita made to them years ago",
+            "Their grip on the bank, the town, and custom",
             "A large debt Papa had left unpaid to them"
           ],
-          "ans": 1,
+          "ans": 2,
           "hint": "What jobs do the two uncles hold?",
           "steps": [
             "Note the uncles' positions: Luis runs the bank, Marco is the mayor — money and power in the same family.",
@@ -272,11 +272,11 @@
           "q": "Why does the family leave Mexico secretly, hidden in a wagon, instead of just buying train tickets in town?",
           "opts": [
             "The trains were all full at harvest time",
-            "Luis could stop them, or punish who helped",
+            "They could not find the railway station",
             "Mama wanted to surprise Abuelita on arrival",
-            "They could not find the railway station"
+            "Luis could stop them, or punish who helped"
           ],
-          "ans": 1,
+          "ans": 3,
           "hint": "Who would hear about it first if they bought tickets openly?",
           "steps": [
             "Remember what Luis wants: Mama, the ranch, and the appearance of respectability — a fleeing widow ruins all three.",
@@ -347,11 +347,11 @@
           "q": "Esperanza once told Miguel that a deep river ran between them. What did she mean — and why does that river suddenly look different on the train north?",
           "opts": [
             "A real river separated their two houses",
-            "The gap between rich and poor, uncrossable",
             "That Miguel was too old to be her friend",
+            "The gap between rich and poor, uncrossable",
             "She was moving to a town across the river"
           ],
-          "ans": 1,
+          "ans": 2,
           "hint": "Which bank of that river is she sitting on now?",
           "steps": [
             "Unpack the metaphor: the river was class — rancher's daughter on one bank, housekeeper's son on the other, no bridge.",
@@ -372,11 +372,11 @@
           "q": "After Esperanza snatches the doll away from the barefoot girl, Mama crochets the child a yarn doll. What does Mama's gift do that Esperanza's refusal did not?",
           "opts": [
             "It proves Mama is much better at crafts",
-            "It treats the girl as someone who matters",
+            "It teaches the girl to make her own toys",
             "It shows the doll was too fragile to share",
-            "It teaches the girl to make her own toys"
+            "It treats the girl as someone who matters"
           ],
-          "ans": 1,
+          "ans": 3,
           "hint": "Two problems existed in that moment. Mama solved both.",
           "steps": [
             "Name what actually hurt: not being refused the doll, but being refused like she was nothing.",
@@ -396,12 +396,12 @@
           "kind": "mc",
           "q": "Abuelita's blanket is crocheted in zigzag rows she calls mountains and valleys. What is the blanket teaching Esperanza to expect?",
           "opts": [
-            "That crochet takes a great deal of patience",
             "That a life goes up and down, and you keep going",
+            "That crochet takes a great deal of patience",
             "That the blanket must be finished before winter",
             "That valleys are safer places than mountains"
           ],
-          "ans": 1,
+          "ans": 0,
           "hint": "Where in the zigzag is Esperanza's family right now?",
           "steps": [
             "Look at the stitch itself: up to a peak, down to a valley, again and again — no row is flat.",
@@ -447,11 +447,11 @@
           "q": "It is 1924 and the Mexican Revolution is over. Why are wealthy ranchers like Papa still in danger?",
           "opts": [
             "The government taxes wealthy ranchers heavily",
-            "The anger behind it outlived the fighting",
             "Bandits target anyone travelling after dark",
+            "The anger behind it outlived the fighting",
             "The ranchers refuse to hire enough guards"
           ],
-          "ans": 1,
+          "ans": 2,
           "hint": "A war can end before the reasons for it do.",
           "steps": [
             "Recall what the Revolution was about: land and fairness — most people worked land they could never own.",
@@ -465,7 +465,7 @@
           }
         }
       ],
-      "libv": 1
+      "libv": 2
     }
   }
 }

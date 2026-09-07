@@ -4,8 +4,8 @@
   "unit-sci-scales": {
    "id": "unit-sci-scales",
    "type": "unit",
-   "updatedAt": 1788028100000,
-   "libv": 1,
+   "updatedAt": 1788819326982,
+   "libv": 2,
    "classId": "science",
    "quarter": 1,
    "status": "draft",
@@ -135,12 +135,12 @@
      "kind": "mc",
      "q": "A graduated cylinder's small lines are worth 2 mL each. The water level sits exactly 3 lines above the 30 mL mark. What is the volume?",
      "opts": [
-      "36 mL",
       "33 mL",
+      "36 mL",
       "60 mL",
       "24 mL"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Start at the printed number and add per line.",
      "steps": [
       "Each line is worth 2 mL.",
@@ -159,12 +159,12 @@
      "kind": "mc",
      "q": "A bar on a centimeter ruler ends 7 small lines past the 4 cm mark. What is its length to the nearest 0.1 cm?",
      "opts": [
-      "4.7 cm",
-      "4.07 cm",
       "7.4 cm",
+      "4.07 cm",
+      "4.7 cm",
       "11 cm"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Each small line on a cm ruler is 0.1 cm.",
      "steps": [
       "Small lines on a centimeter ruler mark tenths: 0.1 cm each.",
@@ -183,12 +183,12 @@
      "kind": "mc",
      "q": "A bar measures exactly 4.7 cm. What is its length in millimeters?",
      "opts": [
-      "47 mm",
+      "0.47 mm",
       "4.7 mm",
       "470 mm",
-      "0.47 mm"
+      "47 mm"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "1 cm = 10 mm.",
      "steps": [
       "1 cm = 10 mm, so multiply centimeters by 10.",
@@ -231,12 +231,12 @@
      "kind": "mc",
      "q": "Why is a graduated cylinder read at the BOTTOM of the water's curve, at eye level?",
      "opts": [
-      "Water climbs the walls a little, so the low point is the true level",
       "The bottom of the curve is easier to see from above",
+      "Water climbs the walls a little, so the low point is the true level",
       "Reading the top of the curve is also correct",
       "Cylinders are only accurate when half full"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "The curve is called the meniscus — why does it exist?",
      "steps": [
       "Water sticks to the cylinder's walls (adhesion), so its surface curves upward at the edges.",
@@ -255,12 +255,12 @@
      "kind": "mc",
      "q": "A thermometer is printed every 10°C with 5 spaces between printed numbers. The liquid tops out 2 lines above the 30°C mark. What is the temperature?",
      "opts": [
-      "34°C",
-      "32°C",
       "40°C",
+      "32°C",
+      "34°C",
       "35°C"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Work out the line value before counting.",
      "steps": [
       "Gap of 10°C over 5 spaces → each line is 2°C.",
@@ -279,12 +279,12 @@
      "kind": "mc",
      "q": "A thermometer's lines are worth 2°C each. The liquid sits 3 lines BELOW the 0°C mark. What is the temperature?",
      "opts": [
-      "−6°C",
+      "−2°C",
       "6°C",
       "−3°C",
-      "−2°C"
+      "−6°C"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Below zero, the lines are still worth 2°C each — only the sign changes.",
      "steps": [
       "Each line is still worth 2°C below zero.",
@@ -327,12 +327,12 @@
      "kind": "mc",
      "q": "A student reads a cylinder by counting 4 lines up from the 50 mL mark and writes \"54 mL.\" The scale is printed every 25 mL with 5 spaces between numbers. What went wrong?",
      "opts": [
-      "Each line is worth 5 mL, not 1 — the reading is 70 mL",
       "Nothing — 54 mL is correct",
+      "Each line is worth 5 mL, not 1 — the reading is 70 mL",
       "She should have read the top of the meniscus",
       "She counted from the wrong end — it's 46 mL"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "25 mL split into 5 spaces makes each line worth how much?",
      "steps": [
       "The gap between printed numbers is 25 mL, over 5 spaces → each line is 5 mL.",

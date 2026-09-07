@@ -4,7 +4,7 @@
   "unit-m22": {
    "id": "unit-m22",
    "type": "unit",
-   "updatedAt": 1786292300888,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -112,12 +112,12 @@
      "kind": "mc",
      "q": "Estimate 8,912 − 3,175 to the nearest thousand.",
      "opts": [
-      "6,000",
       "5,000",
+      "6,000",
       "7,000",
       "5,700"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Round both, then subtract the rounds.",
      "steps": [
       "8,912 rounds to 9,000.",
@@ -136,12 +136,12 @@
      "kind": "mc",
      "q": "About how many is 63,419 + 28,877? Round to the nearest ten thousand.",
      "opts": [
-      "90,000",
-      "80,000",
       "100,000",
+      "80,000",
+      "90,000",
       "92,000"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Both numbers round at the ten thousands place.",
      "steps": [
       "63,419 rounds to 60,000 — the 3 in the thousands keeps it down.",
@@ -160,12 +160,12 @@
      "kind": "mc",
      "q": "A class computes 1,982 + 2,123 = 4,105. Their estimate was 2,000 + 2,000 = 4,000. What does the estimate say about the exact answer?",
      "opts": [
-      "4,105 is close to 4,000, so the exact answer is reasonable",
+      "An estimate cannot check an addition",
       "4,105 must be wrong because it does not equal 4,000",
       "The estimate must be wrong because it is smaller",
-      "An estimate cannot check an addition"
+      "4,105 is close to 4,000, so the exact answer is reasonable"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "An estimate checks the neighbourhood, not the address.",
      "steps": [
       "The estimate predicts the answer lives near 4,000.",
@@ -209,12 +209,12 @@
      "kind": "mc",
      "q": "Estimating 3,270 + 1,940 — which rounding place gives the CLOSER estimate, and what is it?",
      "opts": [
-      "Nearest hundred: 3,300 + 1,900 = 5,200",
       "Nearest thousand: 3,000 + 2,000 = 5,000",
+      "Nearest hundred: 3,300 + 1,900 = 5,200",
       "Both places give the same estimate",
       "Nearest ten thousand: 10,000"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Work out both estimates, then compare each to the exact sum.",
      "steps": [
       "Nearest hundred: 3,300 + 1,900 = 5,200.",
@@ -233,12 +233,12 @@
      "kind": "mc",
      "q": "A city library has 12,875 books; the school library has 9,213. ABOUT how many more does the city library have?",
      "opts": [
-      "About 4,000",
-      "About 3,000",
       "About 22,000",
+      "About 3,000",
+      "About 4,000",
       "About 9,000"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Round both to the nearest thousand, then subtract.",
      "steps": [
       "12,875 rounds to 13,000.",
@@ -257,12 +257,12 @@
      "kind": "mc",
      "q": "Nia estimates 2,351 + 4,262 by rounding BOTH numbers up to 2,400 + 4,300 = 6,700. Without computing exactly, what do you know about the exact sum?",
      "opts": [
-      "It is less than 6,700, because both addends were rounded up",
+      "Nothing can be known without the exact sum",
       "It is greater than 6,700",
       "It is exactly 6,700",
-      "Nothing can be known without the exact sum"
+      "It is less than 6,700, because both addends were rounded up"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Both trades pushed in the same direction. What does that do to the estimate?",
      "steps": [
       "Rounding 2,351 up to 2,400 added a little.",
@@ -307,12 +307,12 @@
      "kind": "mc",
      "q": "Ravi estimates 5,489 + 3,610 as 5,000 + 4,000 = 9,000. The exact sum comes out to 9,099. He says the exact answer must be WRONG because it differs from his estimate. What is his misunderstanding?",
      "opts": [
-      "An estimate predicts the neighbourhood, not the exact value — landing near 9,000 means the check PASSED",
       "His rounding was done to the wrong place",
+      "An estimate predicts the neighbourhood, not the exact value — landing near 9,000 means the check PASSED",
       "The exact sum really is wrong",
       "Estimates only work for subtraction"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "What is an estimate actually promising?",
      "steps": [
       "An estimate is built from rounded numbers, so it is off by design.",
@@ -325,7 +325,8 @@
       "tip": "If an estimate and an exact answer ever match perfectly, shrug. If they disagree hugely, investigate. Anything near: carry on."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

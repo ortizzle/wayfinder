@@ -4,7 +4,7 @@
   "unit-m13": {
    "id": "unit-m13",
    "type": "unit",
-   "updatedAt": 1786291368186,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -113,12 +113,12 @@
      "kind": "mc",
      "q": "Which place would you use to compare 87,309 and 87,344?",
      "opts": [
-      "The tens place",
       "The hundreds place",
+      "The tens place",
       "The thousands place",
       "The ones place"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Walk left to right until the digits stop matching.",
      "steps": [
       "Ten thousands: 8 = 8. Thousands: 7 = 7. Hundreds: 3 = 3.",
@@ -137,12 +137,12 @@
      "kind": "mc",
      "q": "Which is true about 9,999 and 10,001?",
      "opts": [
-      "10,001 is greater because it has more digits",
-      "9,999 is greater because 9 beats 1",
       "They are equal",
+      "9,999 is greater because 9 beats 1",
+      "10,001 is greater because it has more digits",
       "9,999 is greater because it has more nines"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Count digits before comparing anything.",
      "steps": [
       "9,999 has four digits. 10,001 has five.",
@@ -161,12 +161,12 @@
      "kind": "mc",
      "q": "Two towns report their populations: Kestrel 530,240 and Marlow 503,240. Which town is larger, and which place decided it?",
      "opts": [
-      "Kestrel — the ten thousands place decided",
+      "Kestrel — the ones place decided",
       "Marlow — the thousands place decided",
       "They are equal",
-      "Kestrel — the ones place decided"
+      "Kestrel — the ten thousands place decided"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "The digits look similar. March left to right carefully.",
      "steps": [
       "Hundred thousands: 5 = 5.",
@@ -211,12 +211,12 @@
      "kind": "mc",
      "q": "A number is compared to 68,314 and the hundreds place decides it. Which number could it be?",
      "opts": [
-      "68,714",
       "58,314",
+      "68,714",
       "68,324",
       "68,315"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "The deciding place is the FIRST difference — so everything left of the hundreds must match.",
      "steps": [
       "For the hundreds to decide, the ten thousands and thousands must match 68,314: they must start 68,—.",
@@ -236,12 +236,12 @@
      "kind": "mc",
      "q": "A stadium sold 91,867 tickets on Saturday and 91,876 on Sunday. Which day sold more?",
      "opts": [
-      "Sunday — the tens place decides, 7 > 6",
-      "Saturday — the ones place decides",
       "They sold the same",
+      "Saturday — the ones place decides",
+      "Sunday — the tens place decides, 7 > 6",
       "Saturday — 8 beats 7 in the tens"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "The digits are nearly identical. Find the first difference.",
      "steps": [
       "Ten thousands, thousands and hundreds all match: 9, 1, 8.",
@@ -260,12 +260,12 @@
      "kind": "mc",
      "q": "A student claims: \"A whole number with 4 digits is always greater than a whole number with 3 digits.\" Is the claim true, and what is the strongest support?",
      "opts": [
-      "True — the smallest 4-digit number, 1,000, already beats the largest 3-digit number, 999",
+      "False — it depends on the digits",
       "True — because 4 is greater than 3",
       "False — 999 is greater than 1,000",
-      "False — it depends on the digits"
+      "True — the smallest 4-digit number, 1,000, already beats the largest 3-digit number, 999"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Test the claim at its weakest point: the smallest 4-digit versus the largest 3-digit.",
      "steps": [
       "The smallest whole number with 4 digits is 1,000.",
@@ -310,12 +310,12 @@
      "kind": "mc",
      "q": "Three friends measure reading minutes this month: Ana 12,408, Bo 12,480, Cami 12,048. Order them from most to least.",
      "opts": [
-      "Bo, Ana, Cami",
       "Ana, Bo, Cami",
+      "Bo, Ana, Cami",
       "Cami, Bo, Ana",
       "Bo, Cami, Ana"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Same first two digits everywhere. The hundreds and tens sort it out.",
      "steps": [
       "All three start 12,—, so compare the hundreds: Ana 4, Bo 4, Cami 0. Cami is last.",
@@ -327,7 +327,8 @@
       "tip": "Sort out the easy separations first (Cami), then settle the close pair."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }

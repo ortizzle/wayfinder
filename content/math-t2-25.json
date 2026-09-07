@@ -4,7 +4,7 @@
   "unit-m25": {
    "id": "unit-m25",
    "type": "unit",
-   "updatedAt": 1786292498239,
+   "updatedAt": 1788819326982,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -107,12 +107,12 @@
      "kind": "mc",
      "q": "Subtract 425 − 267.",
      "opts": [
-      "158",
       "168",
+      "158",
       "242",
       "148"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Both the ones and the tens need trades.",
      "steps": [
       "Ones: 5 − 7 cannot go. Trade a ten: 15 − 7 = 8.",
@@ -131,12 +131,12 @@
      "kind": "mc",
      "q": "To subtract 358 − 172, the 5 tens on top are too few to give up 7 tens. What trade fixes it?",
      "opts": [
-      "Trade 1 hundred for 10 tens — 3 hundreds 5 tens becomes 2 hundreds 15 tens",
-      "Trade 1 ten for 10 hundreds",
       "Swap the 5 and the 7 so the bigger digit is on top",
+      "Trade 1 ten for 10 hundreds",
+      "Trade 1 hundred for 10 tens — 3 hundreds 5 tens becomes 2 hundreds 15 tens",
       "Subtract the tens column in the other direction"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Help comes from the next place to the left.",
      "steps": [
       "The tens column is short: 5 on top, 7 to remove.",
@@ -156,12 +156,12 @@
      "kind": "mc",
      "q": "A theater has 743 seats and 458 are taken. How many seats are empty?",
      "opts": [
-      "285",
+      "275",
       "295",
       "315",
-      "275"
+      "285"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Two trades coming — narrate them.",
      "steps": [
       "Ones: 3 − 8 cannot go. Trade a ten: 13 − 8 = 5.",
@@ -204,12 +204,12 @@
      "kind": "mc",
      "q": "Subtracting 534 − 278, Leo writes 344. Diagnose it.",
      "opts": [
-      "He flipped short columns — doing 8 − 4 in the ones instead of regrouping to take 8 from 14",
       "He regrouped one time too many",
+      "He flipped short columns — doing 8 − 4 in the ones instead of regrouping to take 8 from 14",
       "He subtracted the hundreds column first",
       "Nothing is wrong — 344 is correct"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Check his ones digit: where could a 4 have come from?",
      "steps": [
       "The ones ask for 4 − 8, which needs a regroup: 14 − 8 = 6.",
@@ -229,12 +229,12 @@
      "kind": "mc",
      "q": "A bake sale starts with 850 cookies and sells 365. How many are left?",
      "opts": [
-      "485",
-      "495",
       "515",
+      "495",
+      "485",
       "585"
      ],
-     "ans": 0,
+     "ans": 2,
      "hint": "Estimate first: about 850 − 400 = 450-ish.",
      "steps": [
       "Ones: 0 − 5 cannot go. Trade a ten: 10 − 5 = 5.",
@@ -253,12 +253,12 @@
      "kind": "mc",
      "q": "In 9▢4 − 372 = 582, what digit is hiding under ▢?",
      "opts": [
-      "5",
+      "7",
       "4",
       "6",
-      "7"
+      "5"
      ],
-     "ans": 0,
+     "ans": 3,
      "hint": "Work column by column and ask what each one needed.",
      "steps": [
       "Ones: 4 − 2 = 2. Matches the 2 in 582 with no trade.",
@@ -303,12 +303,12 @@
      "kind": "mc",
      "q": "True or false, and why: if BOTH numbers in a subtraction grow by 50, the difference grows too.",
      "opts": [
-      "False — both numbers slide up together, so the gap between them stays exactly the same",
       "True — there is more being subtracted",
+      "False — both numbers slide up together, so the gap between them stays exactly the same",
       "True — the difference grows by 100",
       "False — the difference shrinks by 50"
      ],
-     "ans": 0,
+     "ans": 1,
      "hint": "Picture both numbers on a number line, sliding together.",
      "steps": [
       "Try it: 600 − 250 = 350.",
@@ -321,7 +321,8 @@
       "tip": "This same-slide idea becomes an actual technique in lesson 2-7. You are meeting it early, as a reason."
      }
     }
-   ]
+   ],
+   "libv": 1
   }
  }
 }
