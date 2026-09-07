@@ -1,0 +1,585 @@
+{
+  "v": 4,
+  "records": {
+    "unit-az-latlong": {
+      "id": "unit-az-latlong",
+      "type": "unit",
+      "updatedAt": 1788792595693,
+      "classId": "history",
+      "quarter": 1,
+      "status": "draft",
+      "title": "Arizona · Latitude and Longitude Practice",
+      "srcName": "Arizona latitude & longitude practice map",
+      "source": "Built for Unit 5 (latitude & longitude) — real Arizona city coordinates, rounded to the nearest degree",
+      "summary": {
+        "text": "Practice reading latitude and longitude using a real map of Arizona: the equator and Prime Meridian, why a coordinate needs both numbers, and finding or comparing real Arizona cities on a one-degree grid.",
+        "from": "added"
+      },
+      "why": {
+        "text": "Reading a grid on a real map is a different skill than defining the words — this is the hands-on half of the unit.",
+        "from": "added"
+      },
+      "objectives": [
+        {"text": "Explain what a line of latitude and a line of longitude each measure, and from where.", "from": "added"},
+        {"text": "Read a coordinate pair in the correct order and find the matching spot on a grid.", "from": "added"},
+        {"text": "Compare two or more Arizona cities by latitude or longitude and say which is further north, south, east, or west.", "from": "added"}
+      ],
+      "parentNote": {
+        "text": "Built to go with the map you put together for direct instruction — this is the further-practice half, using a real (simplified) outline of Arizona with nine real cities marked, rounded to the nearest whole degree. The outline is intentionally simplified for grid-reading practice, not survey-accurate — Arizona's true western border follows the Colorado River closely, which this map only approximates. Every coordinate was checked against public reference values before it shipped. The thing most likely to trip her up: reading the two numbers in the wrong order, or forgetting that every Arizona coordinate is °N and °W, never S or E — three questions test exactly that trap on purpose.",
+        "from": "added"
+      },
+      "nextUp": {
+        "text": "Run the cards once, then a quiz round with the map open.",
+        "minutes": 14,
+        "from": "added"
+      },
+      "cards": [
+        {
+          "id": "c0",
+          "term": "Latitude",
+          "def": "**Lines that run east–west and measure distance north or south of the equator.**\n• 0° at the equator, up to 90°N or 90°S at the poles.\n• Every point on the same line of latitude is the same distance from the equator.",
+          "hint": "LAT-itude is FLAT-itude — the lines are flat, running side to side.",
+          "from": "added"
+        },
+        {
+          "id": "c1",
+          "term": "Longitude",
+          "def": "**Lines that run pole to pole and measure distance east or west of the Prime Meridian.**\n• 0° at the Prime Meridian, up to 180°E or 180°W.\n• Every point on the same line of longitude is the same distance around the globe from that meridian.",
+          "hint": "LONG-itude lines are LONG, running all the way from pole to pole.",
+          "from": "added"
+        },
+        {
+          "id": "c2",
+          "term": "The equator",
+          "def": "**The 0° latitude line, halfway between the North and South Poles.**\n• Everything north of it is the Northern Hemisphere.\n• Arizona is entirely north of it — every latitude in this unit is a °N.",
+          "hint": "The equator is a latitude line, so it splits the globe north-south.",
+          "from": "added"
+        },
+        {
+          "id": "c3",
+          "term": "The Prime Meridian",
+          "def": "**The 0° longitude line, running through Greenwich, England.**\n• Everything west of it (up to the far side of the globe) is the Western Hemisphere.\n• Arizona is entirely west of it — every longitude in this unit is a °W.",
+          "hint": "The Prime Meridian is a longitude line, so it splits the globe east-west.",
+          "from": "added"
+        },
+        {
+          "id": "c4",
+          "term": "Reading a coordinate pair",
+          "def": "**Latitude is always given first, then longitude.**\n• 33°N, 112°W means: find the 33°N line, then slide along it to 112°W.\n• Swap the order and you would be looking for a completely different spot.",
+          "hint": "Alphabetical order helps: LAtitude before LOngitude.",
+          "from": "added"
+        },
+        {
+          "id": "c5",
+          "term": "Arizona on the grid",
+          "def": "**Arizona sits entirely in the Northern and Western Hemispheres.**\n• Roughly between 31°N and 37°N.\n• Roughly between 109°W and 115°W.",
+          "hint": "Every real Arizona coordinate you'll see is °N and °W — never S or E.",
+          "from": "added",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3],
+            "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"}
+            ]
+          }
+        },
+        {
+          "id": "c6",
+          "term": "Phoenix",
+          "def": "**Arizona's capital, roughly 33°N, 112°W.**\n• Close to the center of the state — a little south and west of the middle.",
+          "hint": "Phoenix is the one to measure every other city against, since it's near the middle.",
+          "from": "added"
+        },
+        {
+          "id": "c7",
+          "term": "Tucson",
+          "def": "**Roughly 32°N, 111°W.**\n• South and a little east of Phoenix.",
+          "hint": "Tucson is further south AND further east than Phoenix — both numbers move.",
+          "from": "added"
+        },
+        {
+          "id": "c8",
+          "term": "Flagstaff",
+          "def": "**Roughly 35°N, 112°W.**\n• North of Phoenix, up in the higher, cooler part of the state.",
+          "hint": "Flagstaff shares almost the same longitude as Phoenix — only the latitude really changes.",
+          "from": "added"
+        },
+        {
+          "id": "c9",
+          "term": "Yuma",
+          "def": "**Arizona's far-southwest corner city, roughly 33°N, 115°W.**\n• The closest major Arizona city to California.",
+          "hint": "Yuma and Phoenix share almost the same latitude — only the longitude really changes.",
+          "from": "added"
+        },
+        {
+          "id": "c10",
+          "term": "Why you need both numbers",
+          "def": "**One coordinate alone only narrows you down to an entire line circling the globe.**\n• Latitude alone: everywhere on that ring, the same distance from the equator — could be Arizona, could be Japan.\n• Longitude alone: everywhere on that line, pole to pole. Together, the two numbers pin down one exact spot.",
+          "hint": "Think of it like a spreadsheet: the row number alone, or the column letter alone, isn't one cell — you need both.",
+          "from": "added"
+        }
+      ],
+      "questions": [
+        {
+          "id": "q0",
+          "lv": 1,
+          "from": "added",
+          "kind": "mc",
+          "q": "Lines of latitude measure how far a place is north or south of which line?",
+          "opts": ["The Prime Meridian", "The equator", "The International Date Line", "The Arctic Circle"],
+          "ans": 1,
+          "hint": "LAT-itude is FLAT-itude — think of the lines running side to side.",
+          "steps": [
+            "Latitude lines run east-west, circling the globe like rings stacked from pole to pole.",
+            "Every ring is measured as a distance from ONE specific ring: the equator, at 0°.",
+            "So a latitude of 33°N means: 33 degrees north of that starting ring."
+          ],
+          "ex": {"main": "**The equator.** It's latitude's zero line — every other line of latitude is measured as a distance north or south of it.", "tip": "Latitude ↔ equator, longitude ↔ Prime Meridian. Keep the two pairs straight."}
+        },
+        {
+          "id": "q1",
+          "lv": 1,
+          "from": "added",
+          "kind": "mc",
+          "q": "Lines of longitude measure how far east or west a place is from which line?",
+          "opts": ["The equator", "The Prime Meridian", "The Tropic of Cancer", "The Arctic Circle"],
+          "ans": 1,
+          "hint": "LONG-itude lines run pole to pole, LONG ways around the globe.",
+          "steps": [
+            "Longitude lines run pole to pole, like the segments of an orange.",
+            "Every segment is measured as a distance from ONE specific segment: the Prime Meridian, at 0°.",
+            "So a longitude of 112°W means: 112 degrees west of that starting line."
+          ],
+          "ex": {"main": "**The Prime Meridian.** It's longitude's zero line, running through Greenwich, England — every other line of longitude is measured east or west of it.", "tip": "Latitude ↔ equator, longitude ↔ Prime Meridian. Keep the two pairs straight."}
+        },
+        {
+          "id": "q2",
+          "lv": 1,
+          "from": "added",
+          "kind": "mc",
+          "q": "Based on its latitude, which hemisphere is all of Arizona in?",
+          "opts": ["Southern Hemisphere", "Northern Hemisphere", "Eastern Hemisphere", "It straddles the equator"],
+          "ans": 1,
+          "hint": "Every Arizona latitude you'll see ends in N, not S.",
+          "steps": [
+            "Every real Arizona coordinate carries an N after its latitude number, never an S.",
+            "N means north of the equator.",
+            "North of the equator is, by definition, the Northern Hemisphere — and Arizona (roughly 31°N–37°N) sits well clear of the equator itself."
+          ],
+          "ex": {"main": "**Northern Hemisphere.** Every Arizona latitude is a °N — nowhere in the state crosses south of the equator.", "tip": "Hemisphere questions are usually just 'which letter does the number carry' in disguise."}
+        },
+        {
+          "id": "q3",
+          "lv": 1,
+          "from": "added",
+          "kind": "mc",
+          "q": "Based on its longitude, which hemisphere is all of Arizona in?",
+          "opts": ["Eastern Hemisphere", "Western Hemisphere", "Northern Hemisphere", "It straddles the Prime Meridian"],
+          "ans": 1,
+          "hint": "Every Arizona longitude you'll see ends in W, not E.",
+          "steps": [
+            "Every real Arizona coordinate carries a W after its longitude number, never an E.",
+            "W means west of the Prime Meridian.",
+            "West of the Prime Meridian is, by definition, the Western Hemisphere."
+          ],
+          "ex": {"main": "**Western Hemisphere.** Every Arizona longitude is a °W, and the whole United States sits in the Western Hemisphere along with it.", "tip": "Hemisphere questions are usually just 'which letter does the number carry' in disguise."}
+        },
+        {
+          "id": "q4",
+          "lv": 1,
+          "from": "added",
+          "kind": "mc",
+          "q": "A coordinate is written 33°N, 112°W. Which number is the latitude?",
+          "opts": ["112°W", "33°N", "Whichever number is bigger", "There's no way to tell"],
+          "ans": 1,
+          "hint": "One of the two labels is a hint about which kind of line it is.",
+          "steps": [
+            "Latitude is always written first in a coordinate pair, by convention.",
+            "It also carries an N or S, since latitude counts north or south of the equator.",
+            "So in 33°N, 112°W, the 33°N is the latitude and the 112°W is the longitude."
+          ],
+          "ex": {"main": "**33°N.** It comes first, and its N/S label is the giveaway — longitude always carries E or W instead.", "tip": "Alphabetical order is the trick: LAtitude before LOngitude, same as in the alphabet."}
+        },
+        {
+          "id": "q5",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"}
+            ]
+          },
+          "q": "Using the map shown, which coordinate pair is closest to Phoenix?",
+          "opts": ["37°N, 112°W", "33°N, 112°W", "33°N, 109°W", "33°S, 112°W"],
+          "ans": 1,
+          "hint": "Read straight up from Phoenix's dot to the latitude scale, then straight across to the longitude scale.",
+          "steps": [
+            "Find Phoenix's marked dot on the map.",
+            "Trace it down to the longitude scale along the bottom: it lands close to 112°W.",
+            "Trace it across to the latitude scale on the left: it lands close to 33°N.",
+            "Put latitude first: 33°N, 112°W — and check the other options aren't secretly the same spot with one number wrong or a flipped hemisphere."
+          ],
+          "ex": {"main": "**33°N, 112°W.** The other options each break one rule: wrong latitude (37°N is up near Page), wrong longitude (109°W is off the map's east edge), or the wrong hemisphere (33°S doesn't exist for Arizona).", "tip": "Check EVERY wrong option against a real reason it's wrong — a distractor that just 'looks close' usually fails one specific test."}
+        },
+        {
+          "id": "q6",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"}
+            ]
+          },
+          "q": "Using the map shown, which city sits closest to 32°N, 111°W?",
+          "opts": ["Phoenix", "Tucson", "Flagstaff", "Yuma"],
+          "ans": 1,
+          "hint": "Find where the 32°N line and the 111°W line cross, then look for the nearest dot.",
+          "steps": [
+            "Find the 32°N gridline and the 111°W gridline and follow them to where they cross.",
+            "Scan the marked dots for the one nearest that crossing point.",
+            "Tucson's dot sits right there — close to 32°N, 111°W.",
+            "The others are all a full degree or more away in at least one direction."
+          ],
+          "ex": {"main": "**Tucson.** Its real position (about 32°N, 111°W) is the closest match on the map to the given coordinate.", "tip": "When matching a coordinate to a city, check BOTH numbers — a city can be right on one and far off on the other."}
+        },
+        {
+          "id": "q7",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-112.47,"y":34.54,"label":"Prescott"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"}
+            ]
+          },
+          "q": "Using the map shown, which city sits closest to 35°N, 112°W?",
+          "opts": ["Yuma", "Phoenix", "Flagstaff", "Prescott"],
+          "ans": 2,
+          "hint": "35°N is well north of Phoenix. Which dot sits highest AND close to 112°W?",
+          "steps": [
+            "Find the 35°N gridline and the 112°W gridline and follow them to where they cross.",
+            "Prescott and Flagstaff are both north of Phoenix, so both are worth checking closely.",
+            "Flagstaff's real position (about 35°N, 112°W) lands right on that crossing point.",
+            "Prescott is close but sits noticeably further south, closer to 34°N — a real gap, not a rounding difference."
+          ],
+          "ex": {"main": "**Flagstaff.** Prescott is the tempting wrong answer since it's also in the north-central part of the state, but Flagstaff's latitude is the closer match.", "tip": "When two options are both 'in the right area,' the map's grid — not a guess — is what actually settles it."}
+        },
+        {
+          "id": "q8",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"}
+            ]
+          },
+          "q": "Using the map shown, which of these four cities is furthest NORTH?",
+          "opts": ["Phoenix", "Tucson", "Yuma", "Flagstaff"],
+          "ans": 3,
+          "hint": "Furthest north means the highest latitude number — look for the dot nearest the top.",
+          "steps": [
+            "Furthest north means the largest latitude number, so look for the highest dot on the map.",
+            "Phoenix sits around 33°N, Tucson around 32°N, Yuma around 33°N.",
+            "Flagstaff sits around 35°N — clearly higher on the grid than the other three.",
+            "Flagstaff is furthest north."
+          ],
+          "ex": {"main": "**Flagstaff.** At roughly 35°N, it's the highest latitude of the four — physically the highest dot on the map, too.", "tip": "'Furthest north' always means compare latitude numbers — longitude has nothing to do with north-south."}
+        },
+        {
+          "id": "q9",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-112.47,"y":34.54,"label":"Prescott"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-110.30,"y":31.55,"label":"Sierra Vista"}
+            ]
+          },
+          "q": "Using the map shown, which of these four cities is furthest SOUTH?",
+          "opts": ["Phoenix", "Prescott", "Tucson", "Sierra Vista"],
+          "ans": 3,
+          "hint": "Furthest south means the lowest latitude number — look for the dot nearest the bottom.",
+          "steps": [
+            "Furthest south means the smallest latitude number, so look for the lowest dot on the map.",
+            "Prescott sits around 35°N and Phoenix around 33°N — both well north of the other two.",
+            "Tucson sits around 32°N, and Sierra Vista sits around 32°N too, but even lower — close to the Mexican border.",
+            "Sierra Vista is furthest south."
+          ],
+          "ex": {"main": "**Sierra Vista.** At roughly 31–32°N, right near the bottom edge of the state, it has the lowest latitude of the four.", "tip": "'Furthest south' always means compare latitude numbers, and smaller wins."}
+        },
+        {
+          "id": "q10",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"}
+            ]
+          },
+          "q": "Using the map shown, which of these four cities is furthest WEST?",
+          "opts": ["Phoenix", "Tucson", "Flagstaff", "Yuma"],
+          "ans": 3,
+          "hint": "Furthest west on this map means the largest °W number — look for the dot nearest the left edge.",
+          "steps": [
+            "Furthest west means the largest degrees-West number, so look for the dot nearest the map's left edge.",
+            "Tucson sits around 111°W and Phoenix and Flagstaff both sit around 112°W.",
+            "Yuma sits around 115°W — noticeably further left than any of the other three.",
+            "Yuma is furthest west."
+          ],
+          "ex": {"main": "**Yuma.** At roughly 115°W, right against the state's western border, it's the largest degrees-West number of the four — and the leftmost dot on the map.", "tip": "'Furthest west' always means compare longitude numbers — latitude has nothing to do with east-west."}
+        },
+        {
+          "id": "q11",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-114.62,"y":32.69,"label":"Yuma"},
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-110.30,"y":31.55,"label":"Sierra Vista"}
+            ]
+          },
+          "q": "Using the map shown, which of these four cities is furthest EAST?",
+          "opts": ["Yuma", "Phoenix", "Tucson", "Sierra Vista"],
+          "ans": 3,
+          "hint": "Furthest east on this map means the smallest °W number — look for the dot nearest the right edge.",
+          "steps": [
+            "Furthest east means the smallest degrees-West number, so look for the dot nearest the map's right edge.",
+            "Yuma sits around 115°W and Phoenix around 112°W — both well to the west.",
+            "Tucson sits around 111°W, and Sierra Vista sits around 110°W — even further right.",
+            "Sierra Vista is furthest east."
+          ],
+          "ex": {"main": "**Sierra Vista.** At roughly 110°W, it's the smallest degrees-West number of the four — and the rightmost dot on the map.", "tip": "'Furthest east' always means compare longitude numbers, and smaller (closer to the Prime Meridian) wins."}
+        },
+        {
+          "id": "q12",
+          "lv": 3,
+          "from": "added",
+          "kind": "order",
+          "ans": 0,
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-111.46,"y":36.91,"label":"Page"},
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-110.30,"y":31.55,"label":"Sierra Vista"}
+            ]
+          },
+          "q": "Using the map shown, put these Arizona cities in order from FURTHEST NORTH to FURTHEST SOUTH.",
+          "opts": ["Page", "Phoenix", "Tucson", "Sierra Vista"],
+          "hint": "Read latitude straight down the map, highest number first.",
+          "steps": [
+            "Page sits up near the top of the state, close to 37°N — the highest latitude here.",
+            "Phoenix sits near the middle, close to 33°N.",
+            "Tucson sits further south still, close to 32°N.",
+            "Sierra Vista sits right near the bottom edge, close to 31°N — the lowest latitude here. Highest to lowest: Page, Phoenix, Tucson, Sierra Vista."
+          ],
+          "ex": {"main": "**Page → Phoenix → Tucson → Sierra Vista.** Reading straight down the map from the highest dot to the lowest gives the same order as ranking the four latitude numbers from largest to smallest.", "tip": "A north-to-south ranking is just a latitude ranking — ignore longitude completely."}
+        },
+        {
+          "id": "q13",
+          "lv": 3,
+          "from": "added",
+          "kind": "order",
+          "ans": 0,
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-114.62,"y":32.69,"label":"Yuma"},
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.70,"y":35.02,"label":"Winslow"},
+              {"x":-110.30,"y":31.55,"label":"Sierra Vista"}
+            ]
+          },
+          "q": "Using the map shown, put these Arizona cities in order from FURTHEST WEST to FURTHEST EAST.",
+          "opts": ["Yuma", "Phoenix", "Winslow", "Sierra Vista"],
+          "hint": "Read longitude straight across the map, largest °W number first.",
+          "steps": [
+            "Yuma sits close to the state's western border, close to 115°W — the largest degrees-West number here.",
+            "Phoenix sits closer to the middle, close to 112°W.",
+            "Winslow sits further right still, close to 111°W.",
+            "Sierra Vista sits closest to the state's eastern side of this group, close to 110°W — the smallest degrees-West number here. Largest to smallest °W: Yuma, Phoenix, Winslow, Sierra Vista."
+          ],
+          "ex": {"main": "**Yuma → Phoenix → Winslow → Sierra Vista.** Reading straight across the map from the leftmost dot to the rightmost gives the same order as ranking the four longitude numbers from largest °W to smallest.", "tip": "A west-to-east ranking is just a longitude ranking — ignore latitude completely."}
+        },
+        {
+          "id": "q14",
+          "lv": 3,
+          "from": "added",
+          "kind": "mc",
+          "graph": {
+            "w": [-115.2, -108.7, 30.9, 37.3], "gx": 1, "gy": 1,
+            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+            "series": [{"type": "pts", "pts": [
+              [-114.05,37.00],[-109.05,37.00],[-109.05,31.33],
+              [-111.0,31.33],[-114.72,31.33],[-114.72,32.72],
+              [-114.63,34.30],[-114.57,35.00],[-114.63,36.0],[-114.05,37.00]
+            ]}],
+            "pts": [
+              {"x":-112.07,"y":33.45,"label":"Phoenix"},
+              {"x":-110.93,"y":32.22,"label":"Tucson"},
+              {"x":-111.65,"y":35.20,"label":"Flagstaff"},
+              {"x":-114.62,"y":32.69,"label":"Yuma"}
+            ]
+          },
+          "q": "On the map shown, a spot sits exactly on the 34°N gridline. If you move to the very next gridline north, what latitude are you at?",
+          "opts": ["33°N", "35°N", "44°N", "34°W"],
+          "ans": 1,
+          "hint": "The gridlines on this map are one degree apart. North means the number goes up.",
+          "steps": [
+            "This map's gridlines are spaced one degree apart, since gy is set to 1.",
+            "Moving to the next line NORTH means moving toward higher latitude numbers, not lower.",
+            "One gridline north of 34°N is 34 + 1 = 35°N.",
+            "33°N would be one line SOUTH instead, and 34°W confuses latitude with longitude entirely."
+          ],
+          "ex": {"main": "**35°N.** Each gridline is one degree, and north always means the latitude number increases.", "tip": "Before answering a 'next gridline' question, check which direction the map's numbers actually increase."}
+        },
+        {
+          "id": "q15",
+          "lv": 1,
+          "from": "added",
+          "kind": "mc",
+          "q": "Which of these is a real Arizona coordinate, rounded to the nearest degree?",
+          "opts": ["33°N, 112°W", "112°N, 33°W", "33°S, 112°E", "112°S, 33°E"],
+          "ans": 0,
+          "hint": "Check the order of the two numbers, and check both letters.",
+          "steps": [
+            "Latitude comes first and never goes past 90° — so any option opening with 112° is already impossible for a latitude.",
+            "That rules out the option starting with 112°N.",
+            "Every real Arizona coordinate carries N and W, never S or E — that rules out both remaining wrong options.",
+            "33°N, 112°W is the one in the right order with the right letters."
+          ],
+          "ex": {"main": "**33°N, 112°W.** Order and hemisphere both have to be right — a coordinate that swaps either one points somewhere else on Earth entirely, or nowhere at all.", "tip": "A latitude can never exceed 90° — that alone eliminates some wrong answers instantly."}
+        },
+        {
+          "id": "q16",
+          "lv": 2,
+          "from": "added",
+          "kind": "mc",
+          "q": "Two Arizona cities share almost the same latitude, even though they're on opposite sides of the state. What does that tell you about them?",
+          "opts": [
+            "They are about the same distance from the equator",
+            "They are about the same distance from the Prime Meridian",
+            "They must actually be the same city",
+            "One of the two coordinates has to be a mistake"
+          ],
+          "ans": 0,
+          "hint": "Latitude measures distance from one specific line. Which line?",
+          "steps": [
+            "Latitude measures distance north or south of the equator — nothing about east-west position.",
+            "Two cities can share a latitude while sitting far apart in longitude, like Phoenix and Yuma.",
+            "Sharing a latitude just means: same distance from the equator, wherever that lands east-west.",
+            "So same latitude, different longitude, is completely normal — not a mistake and not the same city."
+          ],
+          "ex": {"main": "**They are about the same distance from the equator.** Latitude and longitude are independent — matching on one says nothing about the other.", "tip": "Whenever two coordinates agree on one number but not the other, that tells you exactly one thing, not two."}
+        }
+      ]
+    }
+  }
+}

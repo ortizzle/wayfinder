@@ -1549,7 +1549,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v142 · cardstock';
+const APP_VERSION = 'v143 · the Arizona map';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3161,7 +3161,7 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/wordly-wise-5-01-syn.json', 'content/science-variables.json',
   'content/math-t3-extra.json', 'content/science-scales.json',
   'content/science-nos-practice.json', 'content/science-nos-test.json',
-  'content/english-plot-diagram.json', 'content/math-t3-numberline.json'];
+  'content/english-plot-diagram.json', 'content/math-t3-numberline.json', 'content/az-latlong.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
@@ -3929,6 +3929,13 @@ function renderGraph(g){
         'font-family':'Inter,system-ui,sans-serif','font-weight':weight}); n.textContent=t; return n; };
     const gx=g.gx||niceStep(x1-x0), gy=g.gy||niceStep(y1-y0);
     const fmt=v=>{ const r=Math.round(v*100)/100; return Object.is(r,-0)?0:r; };
+    /* Optional per-axis abs()+suffix (v143/Ad Astra v162): a lat/long map
+       plots real signed degrees (west and south are negative, so the shape
+       lands in the right place on screen) but a 4th grader reads "112°W",
+       not "-112" — g.xabs/g.yabs strips the sign for display only, g.xsuf/
+       g.ysuf appends the letter. Every existing caller omits these, so
+       fmtAxis matches fmt exactly when they're unset. */
+    const fmtAxis=(v,abs,suf)=>fmt(abs?Math.abs(v):v)+(suf||'');
     /* grid */
     for(let x=Math.ceil(x0/gx-1e-9)*gx; x<=x1+1e-9; x+=gx)
       add('line',{x1:sx(x),y1:sy(y0),x2:sx(x),y2:sy(y1),stroke:GRAPH_GRID,'stroke-width':1});
@@ -3943,11 +3950,11 @@ function renderGraph(g){
     /* numbers along the axes (0 once, at the origin corner) */
     for(let x=Math.ceil(x0/gx-1e-9)*gx; x<=x1+1e-9; x+=gx){
       if(Math.abs(x)<gx/2&&x0<=0) continue;
-      txt(sx(x),ax+11,fmt(x));
+      txt(sx(x),ax+11,fmtAxis(x,g.xabs,g.xsuf));
     }
     for(let y=Math.ceil(y0/gy-1e-9)*gy; y<=y1+1e-9; y+=gy){
       if(Math.abs(y)<gy/2&&y0<=0) continue;
-      txt(ay-4,sy(y)+3,fmt(y),'end');
+      txt(ay-4,sy(y)+3,fmtAxis(y,g.yabs,g.ysuf),'end');
     }
     if(x0<=0&&y0<=0) txt(ay-4,ax+11,'0','end');
     /* series, clipped to the window (a segment breaks where it leaves it) */
@@ -5674,6 +5681,12 @@ SCREENS.cards = function(root){
   front.appendChild(el('div','tap','Tap to reveal'));
   const back = isBee ? el('div','face back bee') : paint(el('div','face back'), cls);
   back.appendChild(defEl(card.def));
+  /* Parity gap, caught by the Arizona lat/long map card (v143): Ad Astra's
+     SCREENS.cards has always rendered card.graph on the back face — several
+     shipped Algebra/Biology cards depend on it — but Wayfinder's copy never
+     did, so a card's own graph rendered only in the grown-up review queue
+     and never during her actual flashcard study. */
+  const bg = graphNode(card.graph); if(bg) back.appendChild(bg);
   if(card.eq) back.appendChild(el('div','eq',card.eq));
   if(card.hint) back.appendChild(el('div','hint','💡 '+card.hint));
   back.appendChild(el('div','tap','Tap to flip back'));

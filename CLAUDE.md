@@ -903,6 +903,73 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### The Arizona map (v143, THIS APP ONLY, engine also in Ad Astra)
+
+Chris added his own map for direct lat/long instruction and asked for a
+further-practice quiz with a map, for Arizona specifically. `renderGraph()`
+already drew math/physics graphs from a `{w, series, pts}` spec — a real
+lat/long map turns out to be exactly that spec with longitude as x and
+latitude as y, an equirectangular projection that introduces no meaningful
+distortion at Arizona's size. Nothing new to build for the outline or the
+city markers: a `series:[{type:'pts', pts:[...]}]` already draws an
+arbitrary closed polyline (the state outline, hand-built from its real
+bounding corners and a simplified path along the Colorado River), and the
+existing `pts:[{x,y,label}]` marked-point mechanism already places and
+labels cities.
+
+**One real engine gap, though: signed degrees read wrong to a 4th grader.**
+A map has to plot real signed longitude (west is negative, so the shape
+lands in the right place on screen) but she reads "112°W", not "-112".
+`renderGraph()` gained optional `g.xabs`/`g.yabs` (strip the sign for
+display) and `g.xsuf`/`g.ysuf` (append the letter) — applied only to the
+axis tick labels via a new `fmtAxis()`, so every existing math/physics graph
+(which sets none of these) renders byte-identical to before. Carried into
+Ad Astra's copy too, unused there for now, so the shared block stays
+identical between repos.
+
+**A second, unrelated gap turned up building this: this app's flashcard
+screen never rendered `card.graph` at all.** Ad Astra's `SCREENS.cards` has
+always appended a card's graph to the back face — several shipped Algebra
+and Biology cards depend on it — but that line was never ported here, so a
+card's own graph rendered only in the grown-up review queue and never
+during her actual study. Nothing here had ever attached a `graph` to a CARD
+before this unit, which is why no test had caught it. Fixed by porting Ad
+Astra's one line (not `signImgNode`, which is ASL-only and doesn't exist in
+this app).
+
+**The outline is deliberately a simplified practice shape, not a survey-
+accurate one** — said outright in `parentNote`. Arizona's real western
+border follows the Colorado River closely; this map approximates it with
+about ten vertices, which is honest for "read a one-degree grid over a
+recognizable Arizona," the actual skill being taught, and not honest as a
+cartographic reference. Every city coordinate was rounded to the nearest
+degree and cross-checked for the specific comparisons each question makes
+(furthest north/south/east/west, and two north-to-south / west-to-east
+`kind:'order'` rankings) — one pair of cities (Flagstaff/Kingman) came out
+within 0.01° of each other on latitude and was deliberately never used
+against each other in a comparison question, since that's a rounding-noise
+difference, not a teachable one.
+
+- **Three questions test the N/W trap on purpose**: every real Arizona
+  coordinate is °N and °W, never S or E, and a coordinate that swaps the
+  order or the hemisphere points somewhere else on Earth entirely (or
+  nowhere, since latitude can't exceed 90°). That's the mistake Chris's own
+  request flagged as most likely.
+- **Concept cards and questions (equator, Prime Meridian, hemispheres,
+  reading order) stand alongside the map-application ones** rather than
+  assuming his own instruction covered everything — a self-contained unit
+  outlasts any one conversation.
+- classId `history`, matching the real school unit (`SUGGESTED_ASSESS`
+  already lists "History quiz · Unit 5: latitude & longitude").
+
+`tools/test_az_latlong.js` covers the engine and the content together: the
+axis ticks render "112°W"/"33°N" and never a bare negative number, the
+outline and all four cities render as real SVG on a sampled card graph, a
+full quiz round completes, a map question and an order question both play
+with the map visible, and the flashcard deck steps through cleanly with the
+map card's graph actually rendering (the parity-gap regression, caught by
+checking `card.graph` appears live, not just that the deck completes).
+
 ### Cardstock (v142 / Ad Astra v161, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
