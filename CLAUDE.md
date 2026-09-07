@@ -1079,6 +1079,108 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### Junior Jeopardy (v149 / Ad Astra v167, both apps)
+
+Chris, one message, nine asks: rename the Trivia Ladder "Junior Jeopardy",
+make the boxes look like the show's screens, harder questions on higher
+values, a Double Jeopardy, category names, sounds for right and wrong,
+wrong answers that subtract, smaller amounts the first time and bigger
+amounts with harder questions the second, and — inside a lesson — a
+category from an older lesson, "just a few though". All nine shipped as
+one rebuild of the board; what did NOT move is the part that matters.
+
+**Answering still runs through the real quiz screen and `answer()`.** The
+board hands the quiz one question at a time through a synthetic
+`__ladder__` unit (`ladderUnit`, registered in `unitFor`) whose questions
+carry `_srcUnit/_srcClass/_srcQid` — the Shuffle round's own mechanism —
+so qstats, misses, hints, steps, flags and the map tool all land on the
+REAL lesson exactly as an ordinary untimed round's would. Playing a board
+still finishes the lesson. `answer()` needed one line (the sound); the
+ladder guards in `go()`, `saveRound` and `persistRound` are unchanged.
+
+**The board is categories × values, and the row picks the difficulty.**
+Three columns, three rows (`JJ_COLS`/`JJ_ROWS`; two columns on a 6–8
+question unit). Round 1 deals 100/200/300 down each column and wants a
+level-1 (recall) question at 100, level 2 at 200, level 3 at 300
+(`JJ_TIERS`); the Double deals 200/400/600 and shifts the tiers to 2/3/3.
+
+- **A column's three questions are the best MONOTONE fit to its tiers**,
+  not a row-by-row greedy pick. The first cut picked each row's nearest
+  level in turn and could hand a column holding levels 1,1,3,1 a 300 that
+  was easier than its 200 (row two took the 3, row three had only 1s
+  left). `buildLadder` now sorts a column's pool easy→hard and tries every
+  triple in that order, taking the one whose levels sit closest to the
+  tiers — so the 300 is never easier than the 200 by construction.
+  `test_ladder.js` asserts it on every column.
+- **Levels are dealt evenly across columns** (`jjSplit` sorts by level
+  before dealing round-robin) — otherwise one column could be all recall
+  and another all analysis, and the tiers would have nothing to fit.
+- **Category names, in order of preference:** a question's authored
+  `cat` when a unit carries them (content-shaped, like everything else
+  about a unit — no shipped unit does yet); a lesson's analogies as their
+  own "Analogies" column when it has three or more; the lesson itself,
+  split I / II / III, otherwise. The subject-screen board makes every
+  column a different lesson (`lessonLabel`), least-practised lessons
+  first. The category is the eyebrow on the question screen — it is what
+  the show reads out.
+
+**Round 1 vs Double Jeopardy is decided by `ladderLast()`** — the same
+finished-board log the door and the Stars card already read (v147). The
+first board on a lesson is Round 1; once she has finished one, every board
+after is the Double: bigger values, harder tiers, and on a lesson board
+the LAST column is an older lesson in the same subject — same shelf
+preferred, then the one she has worked most, three questions only. That
+is "the second time they play" and "just a few though" in one rule. In
+the Double, the lesson is dealt across only the columns it will keep;
+splitting three ways and discarding one starved the survivors of hard
+questions (caught by the test's "top row asks level 2+").
+
+**One Daily Double per board, never in the top row** (`ladderState.dd`),
+revealed only when she opens it — a modal, the show's little fanfare, then
+the real question at double stakes. The played screen keeps a ★.
+
+**A wrong answer costs the tile, and the score floors at zero AS SHE
+GOES.** Points were already flavor (real XP follows the ordinary quiz rule
+and is never subtracted; that is unchanged), and Chris asked for the
+show's rule, so a miss now costs the tile's value, double on the Daily
+Double. Two deliberate softenings: the score never shows below zero (a
+negative number on a nine-year-old's screen is a verdict, and nothing
+else in the app hands one out), and the floor is applied per answer in
+the order she played them (`ladderState.seq`), not to the total — the
+first cut floored the total, and a wrong Daily Double left her on "0 pts"
+AFTER a right 300, which swallowed the one thing the strip exists to
+show. Now a miss at zero simply costs nothing.
+
+**Sounds, synthesized.** `sfx('right'|'wrong'|'dd')` builds two- and
+four-note tones in WebAudio — no asset files, the app stays four files —
+gated on the same `fx:'quiet'` opt-down `celebrate()` honours, so opting
+down keeps costing nothing. The wrong sound is a soft low two-note, not a
+buzzer. **They play only on this board** (`answer()` checks
+`quizState.ladder`); everywhere else the phone still never scolds.
+
+**The board is a wall of TVs, theme-independent.** `.jj-board`/`.jj-cat`/
+`.jj-tile`: the show's blue, gold serif numbers with a drop shadow, faint
+scanlines, played screens going dark with ✓/✕. Same call as the atlas page
+and the cardstock — it is a set, not chrome, and it looks the same in the
+dark. This reverses v156's "the board stays in the subject's accent" at
+Chris's request; the gold `.ladderworth` pill is unchanged and still the
+score's colour everywhere.
+
+`mode:'ladder'` stays as the log's record key so boards played under the
+old name still read; the log gains `round`. `modeLabel` says Junior
+Jeopardy; both doors and the Stars card were renamed (the Stars eyebrow
+adds "Double Jeopardy unlocked" once a Double has been finished).
+`tools/test_ladder.js` (same file, both apps) was rewritten: the renamed
+door, a 3×3 Round 1 with the right values, named categories, monotone
+difficulty on every column, a Daily Double below the top row, gold-on-blue
+screens, the reveal and the double-stakes question, the running floor
+(a wrong DD at zero costs nothing → a right 300 → a wrong 100 leaves 200),
+the miss and qstat landing on the real lesson, sounds playing and going
+quiet, the finish and its log, the Double's values/tiers/older-lesson
+column, the mix board's lesson categories, and `modeLabel`. Run three
+times in each app before shipping — the Daily Double lands on a random
+screen, and the first version of the test had assumed which one.
+
 ### A shorter, slower clock (v148 / Ad Astra v166, both apps)
 
 Chris: "Rivers beat the clock seems long — what is the timer set at now
