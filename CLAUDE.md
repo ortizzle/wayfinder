@@ -1079,6 +1079,63 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### The board that followed her home (v149 fix / Ad Astra v167 fix, both apps)
+
+Chris: "I tested out a jeopardy question, left the game and tested a quiz
+question, but after the how do you feel questions, I was brought back to
+the jeopardy game." Reproduced and root-caused, not guessed at.
+
+**The bug had two parts, and only their combination reaches her.** Leaving
+a Junior Jeopardy question by anything OTHER than the board's own Leave
+button or answering all the way through — a bottom nav tab, the back chip,
+the brand logo — left `quizState` DANGLING with `ladder:true` and
+`unitId:'__ladder__'`. That is by design up to a point: `go()`'s own
+leave-hook explicitly skips settling a ladder round, because the board
+handles its own return-to-board and its own log (v156). What it did not
+do was clear `quizState` at all, on the reasoning that the board's own code
+would clean up after itself — true only when she leaves through the
+board's own paths. Any other exit left the wrong `quizState` sitting there
+indefinitely.
+
+The second half: `SCREENS.quiz`'s rebuild check —
+`if(!quizState || quizState.unitId!==u.id || quizState.timed !== !!ctx.timed)`
+— correctly recognises that the dangling ladder state doesn't belong to
+the NEW unit and enters its rebuild branch. But inside that branch, the
+fresh-build fallback only fires `if(!quizState)` — true when quizState was
+literally absent, false when it was merely WRONG. With no saved round for
+the new unit (the ordinary case), the branch fell all the way through
+having changed nothing, and the stale ladder `quizState` survived into
+the next quiz untouched.
+
+From there the rest follows mechanically: the next quiz's own "Next"
+button reads `quizState.ladder` (still true) and calls `ladderReturn()`
+instead of the ordinary `finishQuiz()` path — and `ladderReturn()`/
+`ladderLog()` route off the ORIGINAL, unrelated `ladderState` global
+(unitId and classId from the abandoned board), not the unit she is
+actually looking at. That is what sent her back to the old board.
+
+Fixed in both places, so the same class of bug can't recur from a
+different leave path:
+
+- **`go()`'s leave-hook now always resolves an abandoned quiz.** A ladder
+  round gets `quizState = null` (still no settle, no log — an abandoned
+  tile stays exactly as invisible as it always was); anything else keeps
+  the existing partial-save-and-finish behavior.
+- **`SCREENS.quiz`'s rebuild unconditionally discards the old `quizState`**
+  the moment the outer condition says a rebuild is needed, before trying
+  `loadRound()` or falling back to a fresh round — so a `quizState` that is
+  merely WRONG can never survive this branch untouched, from this bug or
+  any future one shaped like it.
+
+`tools/test_ladder.js` (same file, both apps) gained the reproduction as a
+permanent regression test: open a Jeopardy question, leave via a nav tab
+without answering, then take a completely ordinary quiz on a different
+lesson start to finish — check-in, every question, the results modal,
+"How did that feel?", Done — and land on the subject page, never back on
+the old board. Run against the pre-fix code, it does not fail cleanly; it
+throws, because the stale `quizState.order` indexes into the wrong unit's
+questions entirely.
+
 ### Fifty units, all answer A (v149 / Ad Astra v167, both apps)
 
 Chris, after the first Junior Jeopardy board: "the first set of questions
