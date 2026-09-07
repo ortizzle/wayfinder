@@ -4,8 +4,8 @@
     "unit-az-latlong": {
       "id": "unit-az-latlong",
       "type": "unit",
-      "updatedAt": 1788797376245,
-      "libv": 2,
+      "updatedAt": 1788802878000,
+      "libv": 3,
       "classId": "history",
       "quarter": 1,
       "status": "draft",
@@ -33,6 +33,27 @@
         "text": "Run the cards once, then a quiz round with the map open.",
         "minutes": 14,
         "from": "added"
+      },
+      "mapTitle": "The class map",
+      "mapLabel": "Map — see every city at once",
+      "mapNote": "The same 5-degree grid from class, with every city this unit asks about marked at once. Each question already shows its own slice of cities — open this any time you want to check one against the fuller picture instead.",
+      "mapRef": {
+        "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10,
+        "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
+        "xl": "Longitude (°W)", "yl": "Latitude (°N)",
+        "pts": [
+          {"x":-122.33,"y":47.61,"label":"Seattle"},
+          {"x":-122.42,"y":37.77,"label":"San Francisco"},
+          {"x":-117.16,"y":32.72,"label":"San Diego"},
+          {"x":-104.99,"y":39.74,"label":"Denver"},
+          {"x":-96.80,"y":32.78,"label":"Dallas"},
+          {"x":-95.37,"y":29.76,"label":"Houston"},
+          {"x":-90.05,"y":35.15,"label":"Memphis"},
+          {"x":-87.63,"y":41.88,"label":"Chicago"},
+          {"x":-84.39,"y":33.75,"label":"Atlanta"},
+          {"x":-80.19,"y":25.76,"label":"Miami"},
+          {"x":-71.06,"y":42.36,"label":"Boston"}
+        ]
       },
       "cards": [
         {

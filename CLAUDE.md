@@ -922,6 +922,63 @@ in both apps omits `lx`/`ly`, so `lx` defaults to `gx` (label every line,
 exactly as before) — zero behavior change anywhere else. Carried into Ad
 Astra's copy too, unused there for now, keeping the shared block identical.
 
+### The map, on tap (v146 / Ad Astra v164, engine in both apps)
+
+Chris, right after the readability fix: "can we make the actual map, a
+tool to reference when questions are asked?" Every lat/long question
+already carries its own narrow `graph` (four cities at a time), but there
+was no way to pull up the fuller picture mid-question the way Calculator
+and Sheet already let a math or science quiz reach a tool without leaving
+the question.
+
+**A unit may now carry `mapRef`** — an ordinary graph spec, opened via
+`openMapRef(u)` exactly like `openSheet()` opens a `SHEETS` entry: a plain
+modal, `graphNode(u.mapRef)` inside it, an optional `mapTitle` and
+`mapNote`. Two doors open the same graph:
+
+- **A door on the unit's own card** (`unitCard()`, next to the Sort doors),
+  labelled with `u.mapLabel` or a generic fallback — reachable any time she
+  is looking at the lesson, not only mid-quiz.
+- **A "🗺️ Map" button in the quiz's own tool row**, alongside Hint/
+  Calculator/Sheet, so it is live exactly where "reference it while
+  answering" actually means something.
+
+Rules that are the point:
+
+- **Content-shaped, like `sorts`/`bee`/`guide` — a unit opts in by carrying
+  the field, never inferred.** A generic "every unit with a graph gets a
+  map button" rule would have put a Map door on ordinary physics/algebra
+  graph questions that have nothing to do with a reference map.
+- **The tool row resolves the REAL source unit, not the synthetic wrapper.**
+  `mru = unitFor(q._srcUnit || u.id) || u` — the exact same `_srcUnit`
+  resolution `answer()` already uses for qstats and misses — so a laddered,
+  reviewed, or shuffled question from the lat/long unit still offers its
+  map even though `u` in that moment is `__ladder__`/`__review__`/
+  `__shuffle__`, none of which carry `mapRef` themselves.
+- **The reference map is a SUPERSET, not a duplicate of any one question's
+  graph.** `unit-az-latlong`'s `mapRef` plots all 11 cities the unit's
+  questions ever mark (the overview card's original 8, plus Dallas, Memphis
+  and San Francisco from individual questions) on the same 5°-grid window —
+  so opening it mid-question shows more context than that question's own
+  four dots, which is the entire reason to open it.
+- **Measured for label overlap before shipping, same discipline as the v145
+  fix**: `getBBox()` across every `<text>` element in the 11-point graph,
+  zero overlaps. The existing overlap-regression test in
+  `tools/test_az_latlong.js` was extended to also check `u.mapRef`, not
+  just `cards[].graph`/`questions[].graph`.
+
+Engine only in Ad Astra — no unit there carries `mapRef` yet, so
+`unitCard()`'s new block and the tool row's new button are both dead code
+until a unit opts in, same posture as `SHEETS` before a teacher issues a
+reference sheet.
+
+`tools/test_az_latlong.js` gained four assertions: the unit's `mapRef`
+carries all 11 cities, the shelved unit's own card offers the Map door
+(this unit shelves as a one-lesson book via its ` · ` title, so the door
+is one tap inside the spine — same as any other shelved lesson), the
+quiz's tool row offers a Map button that opens the graph in a real modal,
+and the no-overlap sweep now covers `mapRef` too.
+
 - **Thinning labels, not gridlines, was the deliberate choice.** The fine
   5° grid is what makes the map genuinely usable for estimating a position
   between labeled lines (the whole point of the "estimating between

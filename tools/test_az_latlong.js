@@ -93,9 +93,49 @@ const PORT = process.argv[2] || 8302;
     };
     u.cards.forEach(c => { if(c.graph) check(c.graph, 'card:'+c.id); });
     u.questions.forEach(q => { if(q.graph) check(q.graph, 'q:'+q.id); });
+    if(u.mapRef) check(u.mapRef, 'mapRef');
     return bad;
   });
-  ck('no two text elements (city labels or axis ticks) overlap on any graph in the unit', overlaps.length===0, overlaps);
+  ck('no two text elements (city labels or axis ticks) overlap on any graph in the unit, including the mapRef tool', overlaps.length===0, overlaps);
+
+  // The reference-map tool (Chris: "can we make the actual map, a tool to
+  // reference when questions are asked?"). A unit carrying `mapRef` gets a
+  // door on its own card AND a "Map" button inside the quiz tool row, both
+  // opening the same graph via openMapRef/showModal.
+  const mapDoor = await p.evaluate(() => {
+    const u = DATA.records['unit-az-latlong'];
+    return { hasMapRef: !!u.mapRef, points: (u.mapRef.pts||[]).length };
+  });
+  ck('the unit carries a mapRef with every city the unit asks about (11)',
+     mapDoor.hasMapRef && mapDoor.points===11, mapDoor);
+
+  const cardDoor = await p.evaluate(() => {
+    go('unit', {classId:'history'});
+    // The title's " · " shelves this as a one-lesson book (seriesOf()), so
+    // the unit's own card is one tap inside the shelf spine, not directly
+    // on the subject screen — same as any other shelved lesson.
+    const spine = [...document.querySelectorAll('#screen button')].find(b => /Latitude and Longitude/.test(b.textContent));
+    if(spine) spine.click();
+    const btn = [...document.querySelectorAll('#screen button')].find(b => /🗺️.*Map/.test(b.textContent));
+    return { found: !!btn };
+  });
+  ck('the shelved unit\'s own card offers a "Map" door', cardDoor.found, cardDoor);
+
+  const toolBtn = await p.evaluate(async () => {
+    quizState = null;
+    go('quiz', {unitId:'unit-az-latlong', classId:'history'});
+    const before = document.querySelectorAll('.modal-overlay').length;
+    const btn = [...document.querySelectorAll('#screen .tool')].find(b => /Map/.test(b.textContent));
+    if(!btn) return { found:false };
+    btn.click();
+    await new Promise(r=>setTimeout(r,20));
+    const modal = document.querySelector('.modal-overlay');
+    const hasGraph = !!(modal && modal.querySelector('svg'));
+    if(modal) modal.remove();
+    return { found:true, opened: !before && !!modal, hasGraph };
+  });
+  ck('the quiz tool row offers a "Map" button that opens the reference graph',
+     toolBtn.found && toolBtn.opened && toolBtn.hasGraph, toolBtn);
 
   // A full quiz round completes, including the map questions and the two
   // order questions, with no console errors from the new graph fields.
