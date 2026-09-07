@@ -903,6 +903,18 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Breathing room, take two (v141 / Ad Astra v160, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+Chris clarified v140's fix landed on the wrong 0px gap: the one he meant was
+the last row of filter chips sitting flush against the due card below it,
+not the button-to-caption gap inside the card (also real, also now fixed,
+but a different pair of elements). Same shape of bug — `.gz-chips` has no
+`margin-bottom`, `.card` has no `margin-top`, two block siblings collapse to
+0 — fixed the same way: `.gz-chips+.card{margin-top:var(--gap)}`.
+`tools/test_gzfilter.js` is the same file as Ad Astra's, with the same
+second gap assertion.
+
 ### Breathing room under "Start review" (v140 / Ad Astra v159, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
