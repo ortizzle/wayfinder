@@ -903,6 +903,24 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Cardstock (v142 / Ad Astra v161, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+Chris asked whether the flashcards could look more like paper; three grain
+strengths were mocked live against real cards before shipping, and he picked
+the middle one. Every face — subject-painted, plain, or her own handwritten
+deck — now carries a fine `feTurbulence` noise behind the fill,
+`soft-light`-blended at low opacity, strictly behind the legibility scrim
+and the text.
+
+**This app's copy needed a real fix the other didn't drive.** The Spelling
+Bee honeycomb card's `.face.bee::before` already owned that pseudo-element
+for its opaque striped top bar; the new grain rule's opacity and blend-mode
+leaked through and washed the bar to near-invisible before `.face:not(.bee)`
+was added — confirmed live, not just reasoned about. `tools/test_papertexture.js`
+is the same file as Ad Astra's, with one Wayfinder-only assertion that the
+bee bar stays fully opaque.
+
 ### Breathing room, take two (v141 / Ad Astra v160, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
