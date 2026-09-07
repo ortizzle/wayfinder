@@ -68,10 +68,13 @@ const PORT = process.argv[2] || 8302;
   ck('every marked city on the overview card renders as a dot with its name',
      rendered.dots===8 && rendered.cityLabel, rendered);
 
-  // No two city labels overlap on ANY graph in the unit — real bug, caught
-  // live: San Francisco's label ran into Denver's on the overview card, and
-  // a deliberately-close comparison pair (Chicago/Detroit) had labels that
-  // physically overlapped into unreadable text.
+  // No two text elements overlap on ANY graph in the unit — city labels
+  // (real bug: San Francisco's label ran into Denver's on the overview
+  // card, and a deliberately-close comparison pair, Chicago/Detroit, had
+  // labels that physically overlapped into unreadable text) AND axis tick
+  // labels (real bug: 12 longitude ticks in a 300-unit viewBox measured
+  // ~29px wide, ~21px apart — genuinely overlapping — fixed with g.lx
+  // labeling only every other gridline while every gridline still draws).
   const overlaps = await p.evaluate(() => {
     const u = DATA.records['unit-az-latlong'];
     const bad = [];
@@ -79,8 +82,7 @@ const PORT = process.argv[2] || 8302;
       const svg = renderGraph(graph);
       const holder = document.createElement('div'); holder.style.cssText='position:fixed;left:-9999px';
       holder.appendChild(svg); document.body.appendChild(holder);
-      const labelTexts = [...svg.querySelectorAll('text')].filter(t => t.getAttribute('font-weight')==='700');
-      const boxes = labelTexts.map(t => ({ label: t.textContent, box: t.getBBox() }));
+      const boxes = [...svg.querySelectorAll('text')].map(t => ({ label: t.textContent, box: t.getBBox() }));
       for(let i=0;i<boxes.length;i++) for(let j=i+1;j<boxes.length;j++){
         const A=boxes[i].box, B=boxes[j].box;
         const ox = Math.max(0, Math.min(A.x+A.width,B.x+B.width) - Math.max(A.x,B.x));
@@ -93,7 +95,7 @@ const PORT = process.argv[2] || 8302;
     u.questions.forEach(q => { if(q.graph) check(q.graph, 'q:'+q.id); });
     return bad;
   });
-  ck('no two city labels overlap on any graph in the unit', overlaps.length===0, overlaps);
+  ck('no two text elements (city labels or axis ticks) overlap on any graph in the unit', overlaps.length===0, overlaps);
 
   // A full quiz round completes, including the map questions and the two
   // order questions, with no console errors from the new graph fields.

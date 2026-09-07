@@ -903,6 +903,40 @@ prep). This app ships the engine with no prep-flagged content yet — the
 first study guide River's classes issue picks it up by adding `prep:true`
 (or `guide:true`) to the unit.
 
+### Fewer, clearer gridlines (v145, engine also in Ad Astra)
+
+Chris, immediately after v144 shipped: "better but the longitude lines are
+hard to read." Real, and measured before touching anything: the map's 12
+longitude ticks (5° apart across the 60°-wide window) sit only ~21px apart
+in `renderGraph()`'s 300-unit-wide SVG, and each label like "125°W" renders
+~29px wide — every adjacent pair was overlapping by several pixels, not
+just crowded.
+
+**`renderGraph()` gained optional `g.lx`/`g.ly`** — a label step, in the
+same units as `gx`/`gy`, that must be a whole multiple of it. The grid
+itself is unchanged: every gridline at the `gx`/`gy` spacing still draws.
+Only which lines get a printed NUMBER changes — `g.lx:10` on this map's
+`gx:5` grid labels every other line, halving the tick count from 12 to 6
+and roughly doubling the space each label gets. Every existing graph spec
+in both apps omits `lx`/`ly`, so `lx` defaults to `gx` (label every line,
+exactly as before) — zero behavior change anywhere else. Carried into Ad
+Astra's copy too, unused there for now, keeping the shared block identical.
+
+- **Thinning labels, not gridlines, was the deliberate choice.** The fine
+  5° grid is what makes the map genuinely usable for estimating a position
+  between labeled lines (the whole point of the "estimating between
+  gridlines" card) — coarsening the grid itself to 10° would have fixed the
+  crowding by removing exactly the precision the unit is built to teach.
+- Only the LONGITUDE axis needed thinning on this map — the 6 latitude
+  ticks were never crowded (confirmed by measuring, not assumed), so `g.ly`
+  is left unset and latitude labels every line as before.
+
+`tools/test_az_latlong.js`'s existing label-overlap check (built for the
+city-label collision two versions ago) now checks EVERY text element on
+every graph in the unit, not just the bold city labels — so this same
+measurement would have caught the axis-crowding bug too, and catches it as
+a permanent regression check going forward.
+
 ### Reading the map, not memorizing it (v144, THIS APP ONLY)
 
 Two corrections from Chris after v143 shipped. First: *"are we able to use
