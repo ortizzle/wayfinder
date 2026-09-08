@@ -362,6 +362,16 @@ scaled down. **A miss deliberately gets nothing: the phone never scolds.**
 direction A carried to the screen where she acts on it). Same grammar as a
 Coming up row: this colour = this subject, wherever she meets it.
 
+### A wrong answer, felt as well as heard (v154 / Ad Astra v173, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+In short: Junior Jeopardy's `sfx('wrong')` already played two tones, but the
+second started while the first was still decaying, so it read as one glide
+rather than two beeps. The second tone now starts after a real gap (.26s vs
+the old .19s), and a guarded `navigator.vibrate([60,80,60])` — buzz, pause,
+buzz — rides along, gated by the same `fx:'quiet'` check and scoped to the
+same `answer()` call site as the sound itself.
+
 ### The Spelling Bee (v99, THIS APP ONLY)
 
 Chris added the real 2026-27 Scripps "Two Bee" fourth-grade study list (50
