@@ -1079,6 +1079,103 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### A wager, and a report of the game (v151 / Ad Astra v169, both apps)
+
+Chris, after confirming the quizState-leak fix held across two full boards:
+*"let's make double jeopardy a wager they can make, I think this might show
+confidence in how well they know their material. It would nice to see a
+report of this game on the parent side too. And to a smaller degree in the
+kids Star tab."* Three pieces, and the third turned out to already exist.
+
+**The wager is scoped to Double Jeopardy's Daily Double only.** Round 1's
+Daily Double keeps the plain flat double it has always had — a fanfare
+modal, "Bring it on," worth double either way. Real stakes only apply the
+second time she plays a lesson, which mirrors the show itself (wagering is
+a Daily-Double thing, not a universal one) and gives a clean progression:
+simple the first time through a lesson, a real bet once she has finished it
+once. `jjWorth(k)` reads `ladderState.wager` when the tile IS the Double's
+Daily Double and a wager has been placed; every other tile is untouched.
+
+- **The range is `[the tile's own face value, her current running score]`.**
+  The floor means a wager can never pay LESS than the flat double would
+  have — she is never worse off for engaging with the mechanic. The
+  ceiling is her own score at that moment, so the biggest bet she can make
+  is everything she has actually earned on the board so far, never a number
+  invented for the occasion.
+- **When her score has not yet caught up to the tile's value** (typically
+  the very first tile she opens on a board, before anything else is
+  banked), `max <= min` and the range collapses to nothing — there is no
+  meaningful choice to offer. It degrades to the same flat-double modal
+  Round 1 uses, worded to say why ("Your score isn't ahead of this tile
+  yet, so it's worth N points either way"), rather than rendering a
+  zero-width slider that pretends to be a choice.
+- **A native range input, not a rebuild of `numberLine()`.** The math
+  question widget is a different skill (read where a value falls on a
+  fixed line); a wager is "pick a number within a range," so a lean
+  standalone `.wager` component was built instead — a styled `<input
+  type=range>`, a live gold readout above it, the two bounds printed at
+  either end. Step size is computed to give roughly 20 increments,
+  rounded to the nearest 10, so the slider feels continuous without
+  landing on ugly numbers.
+- **Winning pays the wager; losing costs exactly the wager**, not the
+  tile's flat value — `jjWorth()` is the single source both `answer()`'s
+  scoring and the on-screen "★ Daily Double · N" badge read, so the two
+  can never disagree. The running floor-at-zero rule from the original
+  Junior Jeopardy build (v149) is untouched: a wager that would take her
+  below zero simply costs whatever is left.
+- **The log carries `wager` and `wagerWon`** (`ladderLog()`), alongside the
+  `done`/`points`/`round` fields v147 already added — two new fields on the
+  existing record, not a second ledger. `wager` is null on a board where
+  the Daily Double never got a real bet (the degraded flat-double case
+  still stamps `wager` with the flat amount, since it WAS the amount risked
+  — the field means "what was risked," not "was a slider shown").
+
+**The parent-side report (`ladderParentReport()`).** A new "Junior
+Jeopardy" card in the parent view, right after "What she asked for help
+with" and before "Recent sessions" — boards finished (with a Double
+Jeopardy count folded in), the best score and which lesson it came from,
+accuracy across every board, and — only when at least one wager has been
+placed — how many of them she won. A "Recent boards" list under it names
+the last six by lesson, round, score and, where a wager was involved,
+whether it won or lost. Everything is derived from `ladderGames()` at
+render time, same discipline as the Stars-tab card: no new record type,
+nothing that could drift out of sync with the logs themselves.
+
+- **Deliberately fuller than the Stars-tab card**, per Chris's own framing
+  — "a report... to a smaller degree in the kids Star tab." The
+  boards-finished-and-best-score summary he asked for on her side already
+  shipped in v147 ("The Trivia Ladder gets a memory"); nothing was added
+  to it here. Wager detail — win rate, per-board outcomes — is grown-up
+  information about how she plays, not something her own screen needs to
+  editorialize on: the game already tells her in the moment whether she
+  won or lost the bet.
+- **"What she is using" gained one line**: "Junior Jeopardy boards
+  finished N," alongside the existing tutor/quiz/flashcard counts that
+  section already lists — the same treatment every other activity gets
+  there.
+
+**A real pre-existing bug turned up building the report, and got fixed
+alongside it.** "Recent sessions" built its label with a three-way
+ternary — focus, or `mode==='quiz'` said the bare word "Quiz," or
+everything else said "Flashcards" — so a Junior Jeopardy log (or a Sort,
+Star sky, Spelling Bee or reading session) rendered as "Flashcards"
+regardless of what it actually was, and a Beat the clock / Growth Zone
+review / Shuffle round / daily-three log — all `mode:'quiz'` under the
+hood — all rendered as the identical bare "Quiz," losing the distinction
+`modeLabel()` already knows how to draw everywhere else in the app. Fixed
+by routing "Recent sessions" through `modeLabel()`, the same function the
+day view, the Stars tab and everywhere else already use — one function,
+one truth, rather than a second copy of the same logic that could drift.
+
+`tools/test_ladder.js` (same file, both apps) gained: Round 1's Daily
+Double confirmed still flat (no slider, ever); the degraded flat-bet modal
+at zero score; the real slider's bounds, live readout, and that a loss
+costs exactly the wager rather than the tile's flat value; the log
+recording the wager and its outcome; the parent-view card's three
+numbers and its "Recent boards" list; and the Recent-sessions fix, both
+for a Junior Jeopardy log (never "Flashcards") and a Growth Zone review
+log (never the bare word "Quiz").
+
 ### The board that followed her home (v149 fix / Ad Astra v167 fix, both apps)
 
 Chris: "I tested out a jeopardy question, left the game and tested a quiz
