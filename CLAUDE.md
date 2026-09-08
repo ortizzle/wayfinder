@@ -1079,6 +1079,93 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### One question, and it moves (v152 / Ad Astra v170, both apps)
+
+Chris, three requests in one message, all about the emotion check: rethink
+the pre-quiz mood questions, drop back to one question before plus the one
+after (removing "teach it back"), and make the one remaining question much
+bigger with no Skip — answering it should walk straight into the quiz.
+Alongside that, a real bug: tapping the **+** to open a session's dropdown
+in the parent's day view threw her back to the top of the screen instead of
+opening the row in place.
+
+**The day-view bug.** `daySessionRow`'s expand toggle called `go('day', {...})`
+to update `ctx.openSes` — and `go()` always calls `window.scrollTo(0,0)` on
+every navigation, since that is the right default for an actual screen
+change. Toggling a row open is not a screen change; it now mutates
+`ctx.openSes` directly and calls `render()`, the exact pattern `unitCard()`'s
+own detail-fold already uses (`ctx._dtl = ...; render()`). One thing had to
+travel with the fix: the OLD `go()`-based rebuild replaced `ctx` wholesale,
+which had the side effect of always dropping `ctx.allQ` — the rule that
+opening a session (or a different one) starts misses-first, never carrying
+over a "show all" from whatever was open before. Mutating `ctx` in place
+would have silently kept `allQ` around instead, so the click handler clears
+it explicitly now. `tools/test_misses.js` caught this the moment it was
+missed — a real regression from the scroll fix, not a hypothetical one.
+
+**The check-in is one tap now, and it decides everything.** The pre-quiz
+`FEELING` scale (a second question, "How are you feeling right now?") and
+the "Skip and just quiz" button are both gone. `SCREENS.checkin` renders
+one large card (`.checkin-big`/`.scale-big`, 40px emoji, 100px-tall buttons)
+holding only the readiness `READY` scale, and tapping any option **is** the
+answer and the way in — no Start button to confirm it a second time. Every
+tap (re)sets the pick and restarts a 350ms beat before it commits and
+navigates into the quiz; tapping a *different* option within that window
+corrects a mis-tap, since there is no longer a separate confirm step to
+catch that at.
+
+- **A pool, not one fixed line** (`READY_PROMPTS`, `readinessPrompt(unitId)`)
+  — asked before every quiz, the single remaining question needed enough
+  variety not to go stale now that it is the whole screen. Deterministic per
+  unit per day (`mixHash`), so a re-render mid-decision never swaps the
+  question out from under her. Only the PROMPT WORDING rotates — the `READY`
+  rating scale itself is unchanged, so `calibrationPairs()` keeps comparing
+  the same 1–5 scale it always has.
+- **The low-mood care note moved, it didn't disappear.** The old pre-quiz
+  screen never auto-started on a feeling of 1–2, holding the "you can still
+  do this, and you can also stop" note until it had its moment — a real
+  wellbeing feature, not incidental copy. With the feeling question gone
+  from before the quiz, that note now surfaces on **postmood** instead,
+  reworded past tense ("well done for finishing it anyway") since the round
+  is already behind her by the time she says how it felt. A feeling above 2
+  still leaves immediately, same as always; the "tell someone you trust
+  today" line is unchanged and is the one clause of this that must never be
+  cut for brevity.
+- **"Teach it back" is gone outright** (Chris: "remove the 'teach' question
+  at the end") — the textarea, its 80%-round gate, and the save. `teach`
+  stays a real record type: old answers still read verbatim in the parent
+  view's "In her own words" and Fresh start still clears them, but nothing
+  writes a new one. Postmood is back to exactly what it was built to be —
+  one feeling tap, done.
+- **The pre-quiz `mood` record no longer writes `feeling`** — omitted, not
+  written `null`, so an old record with a real reading and a new one without
+  it are told apart by the field's presence rather than a value that could
+  read as "rough". Two downstream readers had to be checked for what an
+  absent `feeling` does to them: `daySignals()`'s "logged a low mood" signal
+  now reads `s.post.feeling` (which has always existed) instead of
+  `s.pre.feeling`, so it keeps firing for every session, old and new, rather
+  than only for history; and the parent view's "Average mood before
+  studying" filters `undefined` out before averaging — unfiltered, one
+  `undefined` in the array poisons `avg()`'s running sum to `NaN` the moment
+  a single new-style record joins the historical ones. Caught by actually
+  running the parent screen against seeded data, not by reading the diff.
+
+`tools/test_polish.js` was rewritten for the new shape (a single tap moves
+straight into the quiz; a low post-quiz feeling shows the care note and
+waits for a real Done) and, as a side effect of using a dedicated seeded
+unit instead of reusing one already mid-round from an earlier test in the
+same file, incidentally fixed a second real bug it had been silently eating:
+the OLD "check-in starts itself" check was quietly failing before this work
+too, because reusing a unit that already had a parked/resumed round meant
+the resume path's restored `quizState` won over the fresh `pre` the check-in
+had just set — a genuine resume-path gap, unrelated to this feature, now
+sidestepped in the test and left for a separate pass if it matters live.
+`tools/test_misses.js` (the `allQ`-drop regression above) and
+`tools/test_ux2.js` (a stale comment about teach-it-back) round out the
+changes; `tools/test_ladder.js`'s own quizState-contamination test used the
+old two-scale check-in to reach its ordinary quiz and now uses the one-tap
+version.
+
 ### A wager, and a report of the game (v151 / Ad Astra v169, both apps)
 
 Chris, after confirming the quizState-leak fix held across two full boards:
