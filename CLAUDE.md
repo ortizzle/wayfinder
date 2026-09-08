@@ -362,16 +362,23 @@ scaled down. **A miss deliberately gets nothing: the phone never scolds.**
 direction A carried to the screen where she acts on it). Same grammar as a
 Coming up row: this colour = this subject, wherever she meets it.
 
-### Growth and Flag share a row, and a real 0px gap fixed (v155 / Ad Astra v174, both apps)
+### Growth and Flag share a row, and a real 0px gap fixed (v155–v156 / Ad Astra v174–v175, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
 In short: the 🌱 "see it again tomorrow" and 🚩 flag buttons now share one
-`.btn-row` (whichever renders — either can appear alone), with shortened
-labels ("🌱 Add to Growth" / "🚩 Flag this question" / "🚩 Flagged") that fit
-two across, and a real measured 0px gap between the explanation card and
-whatever followed it is fixed with `.explain+.btn,.explain+.btn-row
-{margin-top:var(--gap)}`. `tools/test_flag.js` is the same file as Ad
-Astra's, updated the same way.
+`.btn-row` (built unconditionally, taking whichever of the two renders — a
+lone button still fills the row), with shortened labels ("🌱 Add to Growth" /
+"🚩 Flag this question" / "🚩 Flagged") that fit two across.
+
+The spacing fix was corrected one version later and the correction is the
+part worth knowing: a pairwise `.explain+.btn,.explain+.btn-row` rule fixed
+only two of the FOUR things that can follow the explanation card, leaving the
+rescue-round path (explain → steps card) still measured at 0px. `.explain` is
+card-shaped and now owns a `margin-bottom` like `.card`/`.opt`/`.perch`
+already do, which covers every adjacency including ones added later. The
+wrong-answer haptic also moved out of `sfx()`'s audio `try` block and onto
+the existing `tapBuzz()` helper, so a device with no WebAudio still buzzes.
+`tools/test_flag.js` is the same file as Ad Astra's, updated the same way.
 
 ### A wrong answer, felt as well as heard (v154 / Ad Astra v173, both apps)
 
