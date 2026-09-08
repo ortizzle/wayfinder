@@ -362,6 +362,17 @@ scaled down. **A miss deliberately gets nothing: the phone never scolds.**
 direction A carried to the screen where she acts on it). Same grammar as a
 Coming up row: this colour = this subject, wherever she meets it.
 
+### Growth and Flag share a row, and a real 0px gap fixed (v155 / Ad Astra v174, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+In short: the 🌱 "see it again tomorrow" and 🚩 flag buttons now share one
+`.btn-row` (whichever renders — either can appear alone), with shortened
+labels ("🌱 Add to Growth" / "🚩 Flag this question" / "🚩 Flagged") that fit
+two across, and a real measured 0px gap between the explanation card and
+whatever followed it is fixed with `.explain+.btn,.explain+.btn-row
+{margin-top:var(--gap)}`. `tools/test_flag.js` is the same file as Ad
+Astra's, updated the same way.
+
 ### A wrong answer, felt as well as heard (v154 / Ad Astra v173, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
