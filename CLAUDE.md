@@ -1079,6 +1079,86 @@ showed, the lesson's own door names when it was last played with the
 score, and the Stars tab renders the "N boards finished" / best-score
 summary.
 
+### The companion does more, and a clearer voice (v153 / Ad Astra v171, both apps)
+
+Chris, after agreeing with a scoped-down version of a bigger idea he'd
+floated: *"I'd like to also explore their companion doing more work.
+Specifically sharing words of encouragement during tests and games."* The
+recommendation on the table was to extend the companion to pause points
+that already exist in the app, rather than true mid-question interruption —
+he agreed, so that is what shipped. Alongside it, one real bug fix he
+reported separately: *"when the AI says the words, it rarely says them
+correctly."*
+
+**Two new companion moments, each firing exactly once.** The companion's
+hard rule has always been "never interrupts... never mid-question, never
+over the timer" — this does not relax that rule, it finds two places inside
+the existing flow that are ALREADY pauses, not interruptions:
+
+- **Mid-round, in the explanation card.** Right after she answers the
+  question at the round's midpoint (`Math.floor(quizState.order.length/2)`),
+  a companion bubble appears below the explanation, before the Next button —
+  the same visual slot the explanation and steps already occupy, so it reads
+  as part of the pause she is already in, not a popup. A new pool,
+  `COMPANION_MID`, carries process-only, no-verdict lines ("Halfway. Whatever
+  pace you are keeping, keep keeping it.") — it never says how the round is
+  going, since that would turn a messenger into a scoreboard.
+- **On a Junior Jeopardy Daily Double**, before she answers it — gone the
+  moment she does. A new pool, `COMPANION_DD`, offers calm confidence
+  specifically for the one tile in a board that raises the stakes ("Daily
+  Double. The value went up; the way you answer it did not.").
+
+**Both are deliberately narrow, and the exclusions are the point:**
+
+- Skipped on **Beat the clock** (`quizState.timed`) — nothing should slow a
+  countdown round down, and the whole point of that mode is speed.
+- Skipped on the **Growth Zone review** and the **daily three** — both are
+  built for low friction, a habit loop that runs most days; an extra beat
+  there is exactly the friction those two features were built to avoid.
+- Skipped on an ordinary Jeopardy tile, and the mid-round line is skipped
+  **entirely** on a Junior Jeopardy round — the Daily Double already gets its
+  own line, and two companion moments in one quiz screen would be one too
+  many.
+- Both pick their line **deterministically** (`mixHash`), so a re-render for
+  any reason never swaps the line out mid-read.
+- The existing end-of-activity lines (quiz results modal, Junior Jeopardy's
+  finish screen) are completely unchanged — these are two NEW moments, not a
+  replacement for the two that already existed.
+
+**Only the flagship species has its own voice for the new pools**, same as
+every other companion pool: the dragon (Ad Astra) and dolphin (Wayfinder)
+each gained `mid`/`dd` entries in `COMPANION_VOICES`; every other companion
+falls back to the shared `COMPANION_MID`/`COMPANION_DD` defaults, exactly
+like `cheer`/`steady`/`idle` already work. `companionPool()`'s fallback map
+gained the two new kinds.
+
+**The voice fix.** `say()` never set `lang` or picked a `voice` on its
+`SpeechSynthesisUtterance` — on Android Chrome that leaves the choice to
+whatever the phone's default TTS engine and voice happen to be, which varies
+by device and is often the lower-quality compact/network voice rather than
+the best one actually installed. `pickTTSVoice()` now asks
+`speechSynthesis.getVoices()` for the best real, on-device English voice
+(preferring a local Google US English voice, since that is consistently the
+highest quality on the Android/Chrome target), cached in `ttsVoice` and
+re-picked on `onvoiceschanged` (voices load asynchronously on first use).
+`say()` sets `u.lang = 'en-US'` unconditionally and `u.voice` when one was
+found — so even on a device where no matching voice exists, the utterance
+still carries the right language hint, which costs nothing and can only
+help. This could not be verified by ear from this environment (no audio
+output here, and the sandbox's own Chromium ships zero installed voices);
+it is the standard, well-documented fix for "TTS sounds wrong on Android
+Chrome" and degrades safely to the exact previous behavior when no voice is
+available.
+
+`tools/test_companion_mid.js` (same file, both apps) covers: an ordinary
+round shows the bubble at exactly the midpoint question and nowhere else; a
+timed round and a review round never show it; a Junior Jeopardy Daily Double
+shows its own line before answering and clears it after; and an ordinary
+(non-Daily-Double) tile never shows that line. Voice selection has no
+dedicated test — there is nothing to assert against in a headless browser
+with no TTS voices installed, and the fix is additive/inert in that
+environment by design.
+
 ### One question, and it moves (v152 / Ad Astra v170, both apps)
 
 Chris, three requests in one message, all about the emotion check: rethink
