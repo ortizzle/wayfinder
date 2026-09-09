@@ -362,6 +362,23 @@ scaled down. **A miss deliberately gets nothing: the phone never scolds.**
 direction A carried to the screen where she acts on it). Same grammar as a
 Coming up row: this colour = this subject, wherever she meets it.
 
+### The review pass (v158 / Ad Astra v178, both apps)
+
+Chris: "let's run a full debug and app review." Engine, identical here —
+see ad-astra/CLAUDE.md's section of the same name for the full account.
+Every test, contrast probe and the content checker in both repos, a static
+sweep, a runtime sweep of all 31 screens (zero errors), and a screenshot
+pass in both themes. Two real bugs, both engine, both fixed here in step:
+the week ledger's study rows were invisible in LIGHT mode since v108
+(the `subj` modifier collided with the painted-tile `.subj` rules — now
+`ofsubj`; `tools/test_ledger.js`), and `Sync.save()` could blind-overwrite
+the Gist when its pull failed (it now throws instead; `tools/test_syncsave.js`).
+`test_numberline.js`'s 0.425-vs-0.43 flake is fixed in the test. Still
+stale here, documented rather than re-diagnosed: `test_runway.js` and
+`test_newsletter.js` (query a `.runway` class the brief removed),
+`test_polish.js`, and the JSON-only probes `test_math_shelf.js`,
+`test_wf_math.js`, `test_redraw.js`.
+
 ### The board waits for you (v157 / Ad Astra v177, both apps)
 
 Chris, 2026-09: *"river lost her jeopardy progress. can we save progress in
