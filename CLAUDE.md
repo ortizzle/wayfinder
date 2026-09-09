@@ -362,6 +362,29 @@ scaled down. **A miss deliberately gets nothing: the phone never scolds.**
 direction A carried to the screen where she acts on it). Same grammar as a
 Coming up row: this colour = this subject, wherever she meets it.
 
+### The board waits for you (v157 / Ad Astra v177, both apps)
+
+Chris, 2026-09: *"river lost her jeopardy progress. can we save progress in
+case of hitting back by accident?"* Engine, identical here — see
+ad-astra/CLAUDE.md's section of the same name for the full account.
+
+In short, two bugs were losing a board and only the second is about
+reloading. Both Junior Jeopardy doors called `buildLadder()`, which MINTS a
+board rather than opening one — so leaving by a nav tab and tapping the door
+again re-dealt over a game `SCREENS.ladder` would itself have resumed;
+`openLadder()` is now the one way in and builds only when there is nothing to
+return to. And `ladderState` was memory-only, so it now saves to
+`LADDER_KEY`, shaped exactly like the parked round (`ROUND_KEY`):
+device-local, never a record, one slot, day-scoped, with the board's own
+questions stored rather than re-dealt (the deal is random inside a tie) and
+discarded if any of them no longer resolves to a live, approved question. A
+finished board clears the slot, and the door says "Still playing · 4 of 9
+screens" via `ladderPending()`, which peeks without restoring.
+
+`tools/test_ladderresume.js` is the same file as Ad Astra's — it re-enters
+through the real door, and was verified by reverting the door and watching
+the resumed board come back with different questions and no results.
+
 ### Growth and Flag share a row, and a real 0px gap fixed (v155–v156 / Ad Astra v174–v175, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
