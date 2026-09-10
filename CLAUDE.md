@@ -1973,6 +1973,54 @@ between question and a round-then-place question. Title-sorts after
 "Decimals Extra Practice" and before "Topic Review" with no `order` field.
 `tools/test_numberline.js` is the same file as Ad Astra's.
 
+### Two math dates, and whose Unit is whose (v159)
+
+Chris forwarded the teacher's own math update of 9/9 and asked for the test
+timing to be in the app — *"though, I think our Units are different."* He is
+right, and it is already a known mismatch rather than a new one.
+
+Two entries added to `SUGGESTED_ASSESS`:
+
+| Date | Entry |
+|---|---|
+| 2026-09-18 | `Math quiz · Unit 2, lessons 2-1 to 2-3` |
+| 2026-09-24 | `Math test · Unit 2` |
+
+The Unit 1 test the same update mentions ("tomorrow") was already there from
+the week-of-8/28 newsletter, dated 9/10 — checked before adding a duplicate.
+
+- **The titles keep the TEACHER's numbers, verbatim, and that is the rule
+  here.** Her "Unit 1" is this app's **Topic 3** (decimals) — the v117 note
+  already recorded that collision, and the math-program rule explains it: the
+  Drive folder names the shelves are built from and the numbers printed inside
+  the book disagree, because the course spans two volumes that each restart
+  numbering. So her "lessons 2-1 to 2-3" are almost certainly the first three
+  lessons of the shelf *after* Topic 3 — **not** Topic 2's own 2-1 to 2-3,
+  which she already tested on 8/21. Her words are what is on the paper going
+  home, so her words are what the row says; the mapping is a grown-up's to
+  reconcile.
+- **No content was built on that inference.** There is no Topic 4 on the shelf
+  yet and none was invented — a study unit built from a guessed mapping would
+  quiz the wrong material right before a real test, which is exactly the trap
+  the Ad Astra "ExamView Test 2" note already warns about. When the next
+  topic's material lands in Drive, the folder name settles it.
+- **The teacher's name is deliberately absent**, here and in the code, same
+  rule as `STUDENT_HOURS` and `TUTORING`. Only dates and titles.
+- Nothing else in the update needed a change: her "study notes, homework and
+  extra practice on Schoology for quizzes, the study guide for tests" is
+  already what the brief's fixed *where to actually study* block says, and
+  "review the questions they missed at home" is the Growth Zone's whole
+  premise.
+
+> `tools/test_suggest.js` (new) covers the suggestion path end to end — both
+> dates reaching the parent view, accepting into a real unscored `assess`,
+> dropping out of the suggestion card once taken, and driving the study plan.
+> It exists because **`tools/test_newsletter.js` has been stale since the brief
+> rework** removed the `.runway` class it queries: it crashes before its first
+> assertion, so this path had no working coverage at all. Its structural
+> checks (no duplicate ids, every suggestion pointing at a real subject) guard
+> every future addition too.
+
 ### The week of 9/9 (v129)
 
 The 4th-grade newsletter of 9/3 (text layer, clean) adds two quizzes to
