@@ -4,7 +4,7 @@
   "unit-m35": {
    "id": "unit-m35",
    "type": "unit",
-   "updatedAt": 1787091843458,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -324,7 +324,9 @@
       "tip": "A seat bounds how much it can matter. That is why early seats always outrank later ones."
      }
     }
-   ]
+   ],
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

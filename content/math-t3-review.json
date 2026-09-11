@@ -4,11 +4,11 @@
   "unit-m3r": {
    "id": "unit-m3r",
    "type": "unit",
-   "updatedAt": 1787091843459,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
-   "title": "Topic 3 · Topic Review",
+   "title": "Topic 3 · Topic 3 Review",
    "round": 12,
    "srcName": "Textbook Topic 3, Lessons 3-1 to 3-7 (Drive)",
    "source": "enVision Math, Topic 3 textbook scan — Lessons 3-1 to 3-7 (Drive)",
@@ -679,7 +679,9 @@
      }
     }
    ],
-   "capstone": true
+   "capstone": true,
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

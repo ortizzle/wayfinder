@@ -4,7 +4,7 @@
   "unit-m34": {
    "id": "unit-m34",
    "type": "unit",
-   "updatedAt": 1787091843433,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -323,7 +323,9 @@
       "tip": "Expanded form is the place-value chart written as arithmetic."
      }
     }
-   ]
+   ],
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

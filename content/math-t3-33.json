@@ -4,7 +4,7 @@
   "unit-m33": {
    "id": "unit-m33",
    "type": "unit",
-   "updatedAt": 1787091843432,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -321,7 +321,9 @@
       "tip": "A trailing zero changes nothing; a LEADING zero after the point changes everything."
      }
     }
-   ]
+   ],
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

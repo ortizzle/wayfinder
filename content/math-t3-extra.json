@@ -4,8 +4,8 @@
   "unit-m3x": {
    "id": "unit-m3x",
    "type": "unit",
-   "updatedAt": 1788819326982,
-   "libv": 2,
+   "updatedAt": 1789081298735,
+   "libv": 3,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -397,7 +397,8 @@
       "tip": "62.5 is the trap: it drops the 5 into the first empty seat it finds. Name each seat before placing anything."
      }
     }
-   ]
+   ],
+   "series": "Unit 1"
   }
  }
 }

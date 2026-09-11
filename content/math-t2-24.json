@@ -4,7 +4,7 @@
   "unit-m24": {
    "id": "unit-m24",
    "type": "unit",
-   "updatedAt": 1788819326982,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -325,7 +325,8 @@
      }
     }
    ],
-   "libv": 1
+   "libv": 2,
+   "series": "Unit 1"
   }
  }
 }

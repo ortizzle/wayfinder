@@ -1623,7 +1623,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v159 · two math dates';
+const APP_VERSION = 'v160 · one Unit 1 shelf';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3064,19 +3064,17 @@ const SUGGESTED_ASSESS = [
   {id:'sg-eng-2026-09-02',  classId:'english', kind:'quiz', title:'Plot Diagram Quiz', date:'2026-09-02'},
   {id:'sg-wri-2026-09-02',  classId:'writing', kind:'quiz', title:'Cursive Quiz', date:'2026-09-02'},
   {id:'sg-sci-2026-09-03',  classId:'science', kind:'test', title:'Nature of Science Test', date:'2026-09-03'},
-  {id:'sg-math-2026-09-10', classId:'math',    kind:'test', title:'Math test · Unit 1 (place value & decimals)', date:'2026-09-10'},
+  {id:'sg-math-2026-09-10', classId:'math',    kind:'test', title:'Math test · Unit 1 (Topics 1–3)', date:'2026-09-10'},
   /* Newsletter, 9/3: two quizzes the day before the math test. */
   {id:'sg-eng-2026-09-09',  classId:'english', kind:'quiz', title:'Vocabulary quiz · Wordly Wise Unit 2', date:'2026-09-09'},
   {id:'sg-hist-2026-09-09', classId:'history', kind:'quiz', title:'History quiz · Unit 5: latitude & longitude', date:'2026-09-09'},
   /* Math update, 9/9. Titles keep the TEACHER's unit and lesson numbers
-     verbatim, which are not the app's: her "Unit 1" is this app's Topic 3
-     (decimals), because the folder names the shelves are built from and the
-     numbers printed inside the book disagree — the course spans two volumes
-     that each restart numbering. So her "lessons 2-1 to 2-3" are almost
-     certainly the first three lessons of the shelf that follows Topic 3, not
-     Topic 2's 2-1 to 2-3, which she tested on 8/21. Her words are what is on
-     the paper going home, so her words are what the row says; the mapping is
-     for a grown-up to reconcile, and no content is built on the guess. */
+     verbatim. Chris settled what a Unit is on 9/11: her Unit 1 is Topics 1, 2
+     and 3 together — which is why the shelf is now one book called Unit 1 —
+     so the earlier guess here (that her Unit 1 meant Topic 3 alone) was wrong
+     and is gone. What Unit 2 covers, and what she numbers "2-1 to 2-3" inside
+     it, is NOT inferred a second time: it is asked. Her words stay on the row
+     until there is an answer, and no content is built on a guess. */
   {id:'sg-math-2026-09-18', classId:'math', kind:'quiz', title:'Math quiz · Unit 2, lessons 2-1 to 2-3', date:'2026-09-18'},
   {id:'sg-math-2026-09-24', classId:'math', kind:'test', title:'Math test · Unit 2', date:'2026-09-24'}
 ];

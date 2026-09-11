@@ -4,7 +4,7 @@
   "unit-m31": {
    "id": "unit-m31",
    "type": "unit",
-   "updatedAt": 1787091843431,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -321,7 +321,9 @@
       "tip": "90 × 10⁴ is a trick worth pausing on: it equals 900,000 — the zero inside 90 counts too."
      }
     }
-   ]
+   ],
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

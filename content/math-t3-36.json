@@ -4,7 +4,7 @@
   "unit-m36": {
    "id": "unit-m36",
    "type": "unit",
-   "updatedAt": 1787091843458,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -323,7 +323,9 @@
       "tip": "This is Priya's error from earlier, caught in the act with decimals."
      }
     }
-   ]
+   ],
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

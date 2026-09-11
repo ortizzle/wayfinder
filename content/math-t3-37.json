@@ -4,7 +4,7 @@
   "unit-m37": {
    "id": "unit-m37",
    "type": "unit",
-   "updatedAt": 1787091843459,
+   "updatedAt": 1789081298735,
    "classId": "math",
    "quarter": 1,
    "status": "draft",
@@ -315,7 +315,9 @@
       "tip": "The disagreement was the chart itself telling him to recheck — structure is self-auditing."
      }
     }
-   ]
+   ],
+   "series": "Unit 1",
+   "libv": 1
   }
  }
 }

@@ -1973,6 +1973,65 @@ between question and a round-then-place question. Title-sorts after
 "Decimals Extra Practice" and before "Topic Review" with no `order` field.
 `tools/test_numberline.js` is the same file as Ad Astra's.
 
+### Math is one shelf now: Unit 1 (v160)
+
+Chris: *"Let's update River's Math to be Unit 1 include the 3 topics. Going
+forward this should be more straightforward."* So the three Topic shelves are
+one book — **Unit 1** — holding all 24 parts, because that is the unit her
+class actually tests.
+
+**The mechanism is `series`, not a retitle, and that choice is the whole
+design.** `seriesOf()` honours an explicit `u.series` ahead of the ` · ` title
+convention, so every lesson keeps its real printed title (`Topic 2 · 2-4 Add
+Greater Numbers`) and only the shelf it hangs on moves. Because the shelf
+sorts on the full TITLE, the topic number is still doing the ordering:
+
+```
+1-1 … 1-5, Topic 1 Review, 2-1 … 2-7, Topic 2 Review,
+3-1 … 3-7, Decimals Extra Practice, Decimals on the Number Line, Topic 3 Review
+```
+
+- **Flattening the titles to `Unit 1 · 1-1 …` was tried first and rejected on
+  the measurement.** Sorted live, it bunches all three reviews at the END of
+  the book (digits sort before letters), so Topic 1's review would land 18
+  lessons away from Topic 1. Keeping the topic in the title is what puts each
+  review directly after its own topic's lessons.
+- **Re-shelved, never re-minted** — all 24 ids untouched, so her qstats, the
+  Growth Zone ladder and the bookmark all stay attached. Same rule as
+  `unit-m11`'s original move onto a shelf.
+- **The three Topic Reviews were the one real retitle**: three parts all
+  labelled "Topic Review" on one shelf is ambiguous, so they are `Topic N ·
+  Topic N Review` now and label as "Topic 1 Review" and so on.
+- **`order` is still unused here and should stay that way.** It is a
+  whole-shelf bucket (the Wayfinder v102 warning), so any use of it would pull
+  a part out of its topic and behind all 24 others. The title sort already
+  does the whole job.
+- **The cost is the re-approval**, and it is the biggest one yet: every one of
+  the 24 that Chris had already approved re-drafts once. `libv` bumped and
+  `updatedAt` stamped three hours back on all of them, per the approval-race
+  rule.
+
+**Going forward this is the shape**: one shelf per UNIT, each holding its
+topics' lessons in printed order, each Topic Review trailing its own topic.
+Unit 2's material shelves as `Unit 2` the same way — set `series`, leave the
+printed `Topic N · N-L Title` alone.
+
+> ⚠️ **What "lessons 2-1 to 2-3" means in her Unit 2 quiz is still open, and
+> is being asked rather than inferred.** Under the now-known structure it could
+> be Topic 2's own 2-1 to 2-3 (already built, already tested 8/21) or Unit 2's
+> first three lessons under a numbering that restarts. Guessing it once already
+> produced the wrong answer recorded in v159 above; the row keeps her wording
+> until Chris says which.
+
+> `tools/test_unit1_shelf.js` (new) pins the whole thing: one shelf named Unit
+> 1, nothing loose, all 24 parts with distinct labels, the exact topic-by-topic
+> order with each review after its own topic, every id preserved, and every
+> title still carrying its printed topic number. `tools/test_extraprep.js` was
+> updated for the new shelf name. `tools/test_suggest.js` had a **date-dependent
+> assertion that expired overnight** — it pinned the 9/10 math test as "still
+> listed" and broke on 9/11; it now asserts the RULE (nothing past its date is
+> ever offered), which cannot rot.
+
 ### Two math dates, and whose Unit is whose (v159)
 
 Chris forwarded the teacher's own math update of 9/9 and asked for the test
@@ -1990,15 +2049,16 @@ The Unit 1 test the same update mentions ("tomorrow") was already there from
 the week-of-8/28 newsletter, dated 9/10 — checked before adding a duplicate.
 
 - **The titles keep the TEACHER's numbers, verbatim, and that is the rule
-  here.** Her "Unit 1" is this app's **Topic 3** (decimals) — the v117 note
-  already recorded that collision, and the math-program rule explains it: the
-  Drive folder names the shelves are built from and the numbers printed inside
-  the book disagree, because the course spans two volumes that each restart
-  numbering. So her "lessons 2-1 to 2-3" are almost certainly the first three
-  lessons of the shelf *after* Topic 3 — **not** Topic 2's own 2-1 to 2-3,
-  which she already tested on 8/21. Her words are what is on the paper going
-  home, so her words are what the row says; the mapping is a grown-up's to
-  reconcile.
+  here.** Her words are what is on the paper going home, so her words are what
+  the row says.
+
+> ⚠️ **The mapping this section originally guessed at was WRONG, and v160
+> below is the correction.** It read her "Unit 1" as this app's Topic 3 alone,
+> reasoning from the v117 folder-vs-printed-number collision. Chris settled it
+> on 9/11: **her Unit 1 is Topics 1, 2 and 3 together.** The guess was wrong in
+> the one way that matters — it inferred rather than asked, on exactly the
+> question the same paragraph admitted was a grown-up's to reconcile. What
+> Unit 2 covers is now *asked*, not inferred a second time.
 - **No content was built on that inference.** There is no Topic 4 on the shelf
   yet and none was invented — a study unit built from a guessed mapping would
   quiz the wrong material right before a real test, which is exactly the trap

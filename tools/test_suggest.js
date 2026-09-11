@@ -32,7 +32,12 @@ const port = process.argv[2] || 8302;
     return {
       q18: txt.includes('Unit 2, lessons 2-1 to 2-3'),
       t24: txt.includes('Math test · Unit 2'),
-      old: txt.includes('Unit 1 (place value & decimals)')
+      /* Date-dependent assertions expire. This one asks the RULE instead:
+         SUGGESTED_ASSESS filters on sg.date >= today, so anything already
+         past must not be offered. (The first cut of this test pinned the
+         9/10 math test as "still listed" and broke overnight on 9/11.) */
+      past: SUGGESTED_ASSESS.filter(s => s.date < AZ.today())
+              .some(s => txt.includes(s.title))
     };
   });
 
@@ -70,7 +75,7 @@ const port = process.argv[2] || 8302;
   T('every suggestion points at a real subject', live.badClass.length === 0);
   T('the 9/18 quiz renders in the parent view', parent.q18);
   T('the 9/24 test renders in the parent view', parent.t24);
-  T('the 9/10 Unit 1 test is still listed today', parent.old);
+  T('a suggestion whose date has passed is no longer offered', !parent.past);
   T('accepting writes a real assess record, unscored', accepted && !accepted.err
       && accepted.date==='2026-09-18' && accepted.classId==='math'
       && accepted.kind==='quiz' && accepted.score==null);

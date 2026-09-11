@@ -1,4 +1,4 @@
-/* River's two new prep units (Decimals Extra Practice on the Topic 3 shelf,
+/* River's two new prep units (Decimals Extra Practice on the Unit 1 shelf,
    Reading Scales Practice on the Science shelf) + the gold prep treatment. */
 const { chromium } = require('playwright');
 const PORT = process.argv[2] || 8117;
@@ -26,16 +26,17 @@ const PORT = process.argv[2] || 8117;
   });
   ck('both units seeded', seed.mx && seed.sc, seed);
 
-  // Topic 3 shelf: extra practice lands between 3-7 and Topic Review, gold-ringed.
+  // The shelf is Unit 1 since v160 (Chris: Unit 1 is Topics 1-3). Extra practice
+  // still lands between 3-7 and Topic 3's own review, and is still gold-ringed.
   const t3 = await p.evaluate(() => {
-    go('shelf', {classId:'math', series:'Topic 3', open:'unit-m3x'});
+    go('shelf', {classId:'math', series:'Unit 1', open:'unit-m3x'});
     const titles = [...document.querySelectorAll('#screen .stop .t')].map(x=>x.textContent);
     const prep = [...document.querySelectorAll('#screen .stop.prep .t')].map(x=>x.textContent);
     const oc = document.getElementById('shelfopen');
     return {
       titles,
       extraIdx: titles.findIndex(t=>/Extra Practice/.test(t)),
-      reviewIdx: titles.findIndex(t=>/Topic Review/.test(t)),
+      reviewIdx: titles.findIndex(t=>/Topic 3 Review/.test(t)),
       l37Idx: titles.findIndex(t=>/3-7/.test(t)),
       prep,
       band: oc && oc.querySelector('.prepband') ? oc.querySelector('.prepband').textContent : null
@@ -43,7 +44,7 @@ const PORT = process.argv[2] || 8117;
   });
   ck('extra practice sorts after 3-7 and before Topic Review',
      t3.l37Idx < t3.extraIdx && t3.extraIdx < t3.reviewIdx, t3);
-  ck('it is the only gold prep stop on the Topic 3 map', t3.prep.length===1 && /Extra Practice/.test(t3.prep[0]), t3.prep);
+  ck('it is the only gold prep stop on the Unit 1 map', t3.prep.length===1 && /Extra Practice/.test(t3.prep[0]), t3.prep);
   ck('its opened card wears the Test prep band', /Test prep/i.test(t3.band||''), t3.band);
 
   // Science shelf: scales practice sits last (order:3) and gold-ringed.
