@@ -1973,6 +1973,37 @@ between question and a round-then-place question. Title-sorts after
 "Decimals Extra Practice" and before "Topic Review" with no `order` field.
 `tools/test_numberline.js` is the same file as Ad Astra's.
 
+### Approve in bulk, release on a schedule (v163 / Ad Astra v182, both apps)
+
+Chris, after being asked to approve 30 maths lessons one at a time: bulk
+approval, *"but I just don't want all of the lessons to go live too far ahead
+of the lessons."* Engine, identical here — see ad-astra/CLAUDE.md's section of
+the same name for the full reasoning.
+
+In short: bulk approval on its own would have made his second sentence worse,
+so **approving and releasing come apart**. An approved unit may carry
+`releaseOn`, and `liveUnit()` becomes the one definition of "she can see
+this" — `units()` plus the three places that tested `status` by hand. The
+review queue gains a checkbox per row (beside the card, so tapping the card
+still opens the full read) and a select-all; approving offers three paces —
+all today, one a school day, one a week — with the first always landing today.
+`SCREENS.scheduled` lists what is held, reached from the parent view's Study
+material card, with per-row and release-all escapes. The single-unit Approve
+button still means now and clears any hold. Absent `releaseOn` means live, so
+nothing already written needed migrating.
+
+This lands well here specifically: Unit 1 is **24 parts on one shelf** (v160),
+which is exactly the pile that produced the complaint — one sitting now
+approves the whole book at a lesson-a-school-day pace.
+
+Two bugs it turned up, both documented in full on the Ad Astra side and both
+fixed here in step: `drafts()` returned insertion order, which a paced release
+turns into a real bug (it scheduled lesson 1 last); and the passcode modal's
+trusted-device line has rendered in **bold capitals since v93** because
+`.trustrow` never reset the global `label{}` rule.
+
+`tools/test_bulkapprove.js` is the same file as Ad Astra's.
+
 ### The quiz covers phase changes too (v162)
 
 Chris forwarded the teacher's Science update of 9/10, which names the first
