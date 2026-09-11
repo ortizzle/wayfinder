@@ -1973,6 +1973,66 @@ between question and a round-then-place question. Title-sorts after
 "Decimals Extra Practice" and before "Topic Review" with no `order` field.
 `tools/test_numberline.js` is the same file as Ad Astra's.
 
+### The quiz covers phase changes too (v162)
+
+Chris forwarded the teacher's Science update of 9/10, which names the first
+chemistry quiz — **September 17** — as covering *"the phases of matter and the
+phase changes"*. v161 had shipped the first half a day earlier and nothing at
+all on the second, so the shelf would have been silent on a third of what the
+quiz asks, six days out. `content/science-phase-changes.json`
+(`unit-sci-phasechg`): 16 cards, 18 questions, and a 12-item sort
+("Does it take heat in, or give heat off?").
+
+**Both parts are numbered now, and the number is load-bearing.** `"Phase
+Changes"` title-sorts AHEAD of `"Phases of Matter"` — a space beats `s` — which
+is backwards for the order she meets them. So the Phases unit was retitled
+`Chemistry · 1 Phases of Matter` (id kept, `libv` 2) and the new one is
+`Chemistry · 2 Phase Changes`. This is the v180 Biology lesson applied to a
+two-part shelf *before* the inversion could ship rather than fifty versions
+after it; the retitle cost one re-approval on a unit one day old.
+
+- **The energy half is taught as ONE rule, not six facts.** Up the
+  solid–liquid–gas ladder always takes energy in; down always gives it off. So
+  every "does this absorb or release heat" question reduces to naming the
+  direction, and the card says outright that there is nothing else to
+  memorise. The sort set drills exactly that judgement twelve times.
+- **Two traps get deliberate airtime because they are reasoning errors, not
+  vocabulary gaps.** Frost is *deposition*, not freezing — freezing starts
+  from a liquid and there was never liquid water on that windscreen; dew is
+  the version that stops at liquid. And "keeping the cold in" is backwards:
+  cold is the absence of heat, so a towel round an ice cube slows heat moving
+  IN. Both are named in `parentNote` and asserted by their teaching in the
+  test.
+- **Evaporation vs condensation gets its own card and hook** (conDENSation
+  moves towards the DENSer phase) — it is the pair students swap most often,
+  and the two are exact reverses, so swapping them also inverts the energy
+  answer.
+- **No `prep` flag on either part**, even with a real quiz six days out. v139's
+  rule is that `prep:true` says what a unit IS, never when it matters — these
+  are the lessons themselves, and the runway and the brief already own the
+  urgency. Flagging every unit that happens to precede a test would spend the
+  gold band for nothing.
+
+**Three dates went into `SUGGESTED_ASSESS`** from the same update: the 9/17
+quiz, a second quiz on 10/2, and the unit test. The test is the teacher's own
+*"most likely the week of October 20th"* — genuinely not fixed — so it is
+dated to the **Monday** of that week (earliest possible, so the exam ramp
+starts early rather than late) and its title says the date needs confirming.
+Checked before adding rather than assumed: `editAssessment()` lets a parent
+change the date after accepting, so a provisional date is correctable rather
+than baked in. The teacher's name is deliberately absent, same rule as
+`STUDENT_HOURS` and `TUTORING`.
+
+The update also says the Chemistry unit runs to the end of October and
+Atmosphere follows — so Atmosphere gets its own shelf when its material
+arrives, per the one-shelf-per-unit rule. Nothing was built for it.
+
+`tools/test_phases.js` covers the whole shelf now: both parts numbered and
+in order, neither flagged prep, all six changes named, the direction rule and
+both traps asserted by their teaching, the heating-curve `kind:'order'`
+question (warm → melt → warm → boil), the sort never naming its own bucket,
+a full round on each unit, and all three new dates reaching the parent view.
+
 ### Chemistry starts its own shelf: Phases of Matter (v161)
 
 Chris: *"the folders are updated for sedona and river for new material to be
@@ -1980,6 +2040,10 @@ created."* River's Science folder had **"Phases of Matter.pdf"** — her complet
 20-point Science 4 practice sheet, the first work of the Chemistry unit the 9/3
 newsletter announced. `content/science-phases-matter.json` (`unit-sci-phases`):
 16 cards, 18 questions, and a 12-item swipe-sort set ("Is it matter?").
+
+> **Retitled `Chemistry · 1 Phases of Matter` in v162**, when Phase Changes
+> joined the shelf — see below for why the number is load-bearing. The
+> reasoning in this section is otherwise unchanged.
 
 **It shelves as `Chemistry`, not as a seventh part of `Science`.** That existing
 shelf is an explicit `order:0..5` run of Nature of Science (Unit 1) parts —

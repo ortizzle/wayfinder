@@ -16,23 +16,33 @@ const PORT = process.argv[2] || 8302;
 
   const seed = await p.evaluate(async () => {
     const files = ['science-quiz-1','science-measurement','science-variables','science-scales',
-                   'science-nos-practice','science-nos-test','science-phases-matter'];
+                   'science-nos-practice','science-nos-test',
+                   'science-phases-matter','science-phase-changes'];
     for (const f of files) {
       const j = await (await fetch('./content/'+f+'.json',{cache:'no-store'})).json();
       const u = Object.values(j.records).find(x=>x.type==='unit');
       u.status='approved'; u.updatedAt=Date.now()-1000; DATA.records[u.id]=u;
     }
     saveLocal();
-    const u = DATA.records['unit-sci-phases'];
-    return {classId:u.classId, title:u.title, libv:u.libv, order:u.order, round:u.round,
-            prep:u.prep, cards:u.cards, qs:u.questions, sorts:u.sorts,
-            blob: JSON.stringify(u)};
+    const pick = id => { const u = DATA.records[id];
+      return {classId:u.classId, title:u.title, libv:u.libv, order:u.order,
+              round:u.round, prep:u.prep, cards:u.cards, qs:u.questions,
+              sorts:u.sorts, blob: JSON.stringify(u)}; };
+    return Object.assign(pick('unit-sci-phases'), {chg: pick('unit-sci-phasechg')});
   });
 
   ck('it loads under the real science classId', seed.classId === 'science', seed.classId);
-  ck('titled onto its own Chemistry shelf, with a libv and no order bucket',
-     /^Chemistry · Phases of Matter$/.test(seed.title) && seed.libv >= 1 && seed.order == null,
-     [seed.title, seed.libv, seed.order]);
+  ck('both parts carry a libv and no order bucket',
+     seed.libv >= 1 && seed.chg.libv >= 1 && seed.order == null && seed.chg.order == null,
+     [seed.libv, seed.chg.libv, seed.order, seed.chg.order]);
+  // "Phase Changes" title-sorts AHEAD of "Phases of Matter" (a space beats
+  // 's'), so the lesson numbers are load-bearing, not decoration.
+  ck('both parts carry the NUMBERED form, so the shelf sorts structurally',
+     /^Chemistry · 1 Phases of Matter$/.test(seed.title) &&
+     /^Chemistry · 2 Phase Changes$/.test(seed.chg.title),
+     [seed.title, seed.chg.title]);
+  ck('neither part is flagged prep — they are the lessons, not test prep',
+     !seed.prep && !seed.chg.prep, [seed.prep, seed.chg.prep]);
   ck('16 cards, 18 questions, every MC with four unique options',
      seed.cards.length === 16 && seed.qs.length === 18 &&
      seed.qs.filter(q => (q.kind||'mc') === 'mc')
@@ -54,8 +64,9 @@ const PORT = process.argv[2] || 8302;
             chem: (s.shelves.find(x=>x.name==='Chemistry')||{units:[]}).units.map(u=>u.id),
             sci: (s.shelves.find(x=>x.name==='Science')||{units:[]}).units.map(u=>lessonLabel(u))};
   });
-  ck('Chemistry is its own shelf holding this unit, nothing loose',
-     shelf.names.includes('Chemistry') && shelf.chem.join() === 'unit-sci-phases' && shelf.loose === 0,
+  ck('Chemistry is its own shelf, Phases of Matter then Phase Changes, nothing loose',
+     shelf.names.includes('Chemistry') &&
+     shelf.chem.join() === 'unit-sci-phases,unit-sci-phasechg' && shelf.loose === 0,
      shelf);
   ck('the Nature of Science shelf still runs Quiz 1 → Study Test, unchanged',
      shelf.sci.length === 6 && /^Quiz 1: /.test(shelf.sci[0]) && /Study Test$/.test(shelf.sci[5]),
@@ -75,6 +86,47 @@ const PORT = process.argv[2] || 8302;
   ck('a gas is taught as resizing to its container, with the liquid answer named as the trap',
      /bigger container, bigger volume; smaller container, smaller volume/.test(gasCard) &&
      /"the volume stays the same" is the LIQUID answer/.test(gasCard), gasCard.slice(0,120));
+
+  // 2 Phase Changes: the one rule, the two traps, and all six named.
+  const chg = seed.chg.blob;
+  ck('all six phase changes are named',
+     ['Melting','Freezing','Evaporation','Condensation','Sublimation','Deposition']
+       .every(n => new RegExp(n, 'i').test(chg)), 'see cards');
+  ck('energy is taught as ONE direction rule, not six separate facts',
+     /Moving UP the ladder .* always takes energy IN/.test(chg.replace(/\\n/g,' ')) &&
+     /nothing else to memorise/.test(chg), 'card "Energy in, or energy out"');
+  ck('evaporation vs condensation gets its own hook',
+     /conDENSation/.test(chg) && /Evaporation makes a gas\. Condensation makes a liquid/.test(chg),
+     'card "Evaporation or condensation?"');
+  ck('frost is taught as deposition, with freezing named as the trap',
+     /Frost on a window forms this way/.test(chg) &&
+     /freezing starts from a liquid/i.test(chg), 'cards + q6');
+  ck('"keeping the cold in" is corrected outright',
+     /cold is the absence of heat/i.test(chg), 'q: the cook and the ice cube');
+  const chgOrd = seed.chg.qs.find(q => q.kind === 'order');
+  ck('the heating curve ships as a kind:order question, warm→melt→warm→boil',
+     chgOrd && chgOrd.ans === 0 && /warms up to 0/.test(chgOrd.opts[0]) &&
+     /boils into steam/.test(chgOrd.opts[3]), chgOrd && chgOrd.opts);
+  const chgSet = seed.chg.sorts[0];
+  ck('the heat-in/heat-out sort has 12 items and never names its own bucket',
+     chgSet.items.length === 12 &&
+     chgSet.items.every(i => !/\b(takes|gives)\b/i.test(i.t)) &&
+     chgSet.items.some(i=>i.k==='a') && chgSet.items.some(i=>i.k==='b'),
+     chgSet.items.filter(i=>/\b(takes|gives)\b/i.test(i.t)).map(i=>i.t));
+
+  // The quiz this was built for reaches the parent view.
+  const sug = await p.evaluate(() => {
+    const ids = SUGGESTED_ASSESS.filter(s => s.classId === 'science').map(s => s.id);
+    const q = SUGGESTED_ASSESS.find(s => s.id === 'sg-sci-2026-09-17');
+    return {ids, date: q && q.date, kind: q && q.kind, title: q && q.title,
+            past: SUGGESTED_ASSESS.filter(s => s.date < AZ.today()).length};
+  });
+  ck('the 9/17 chemistry quiz is offered, naming both halves',
+     sug.date === '2026-09-17' && sug.kind === 'quiz' &&
+     /[Pp]hases of matter and phase changes/.test(sug.title || ''), sug);
+  ck('all three science dates from the 9/10 update are listed',
+     ['sg-sci-2026-09-17','sg-sci-2026-10-02','sg-sci-2026-10-20']
+       .every(id => sug.ids.includes(id)), sug.ids);
 
   // A real ranking question, in the right order.
   const ord = seed.qs.find(q => q.kind === 'order');
@@ -131,6 +183,26 @@ const PORT = process.argv[2] || 8302;
     return {logged: !!l, total: l && l.total, sawOrder};
   });
   ck('a full quiz round completes and logs', quiz.logged && quiz.total === 9, quiz);
+
+  const quiz2 = await p.evaluate(async () => {
+    quizState = null;
+    go('quiz', {unitId:'unit-sci-phasechg', classId:'science'});
+    let guard = 0;
+    while (view === 'quiz' && guard++ < 80) {
+      const chips = [...document.querySelectorAll('#screen .ordchip:not([disabled])')];
+      if (chips.length) { chips[0].click(); await new Promise(r=>setTimeout(r,4)); continue; }
+      const opts = [...document.querySelectorAll('#screen .opt:not([disabled])')];
+      if (opts.length) for (const o of opts) { o.click(); await new Promise(r=>setTimeout(r,4)); }
+      await new Promise(r=>setTimeout(r,8));
+      const next = document.querySelector('#screen .btn-primary, #screen .explain.go-on');
+      if (next) { next.click(); await new Promise(r=>setTimeout(r,8)); continue; }
+      if (!opts.length) break;
+    }
+    const l = all('log').find(x => x.unitId === 'unit-sci-phasechg' && x.mode === 'quiz');
+    return {logged: !!l, total: l && l.total};
+  });
+  ck('a full Phase Changes round completes and logs',
+     quiz2.logged && quiz2.total === 9, quiz2);
 
   out.forEach(r => console.log((r.ok ? ' ok ' : 'FAIL ') + r.n + (r.ok ? '' : ' -> ' + JSON.stringify(r.got).slice(0,300))));
   console.log(out.every(r=>r.ok) ? 'ALL PASS' : 'FAILURES');

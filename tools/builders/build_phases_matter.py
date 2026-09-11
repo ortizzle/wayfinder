@@ -486,7 +486,7 @@ q(Q, 2, 'A puddle of water is left out and slowly disappears over a hot '
 
 # ---- assemble --------------------------------------------------------------
 build('wayfinder', C, Q, 'unit-sci-phases',
-      'Chemistry · Phases of Matter', 'science',
+      'Chemistry · 1 Phases of Matter', 'science',
       'The start of the Chemistry unit: what chemistry actually studies, the '
       'three measurements it leans on most (mass, volume and temperature), how '
       'to tell matter from things that are real but are not matter, and the '
@@ -543,7 +543,7 @@ p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-phases']
 u['sorts'] = [SORT]
-u['libv'] = 1
+u['libv'] = 2
 io.open(p, 'w', encoding='utf-8').write(
     json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 1' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 2' % (SORT['title'], len(SORT['items'])))
