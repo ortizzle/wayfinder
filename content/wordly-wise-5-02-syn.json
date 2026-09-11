@@ -1,0 +1,638 @@
+{
+ "v": 4,
+ "records": {
+  "unit-ww502-syn": {
+   "id": "unit-ww502-syn",
+   "type": "unit",
+   "updatedAt": 1789078908143,
+   "classId": "english",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Wordly Wise · Lesson 2 Synonyms & Antonyms",
+   "srcName": "Synonyms and Antonyms - Lesson 2.pdf (Drive)",
+   "source": "Vocabulary: Wordly Wise Unit 2 — Synonyms and Antonyms study sheet (Drive)",
+   "summary": {
+    "text": "The class study sheet for Lesson 2, giving a synonym and an antonym for each of the 15 vocabulary words — the same list unit-ww502 already covers, tested a different way. Every row on this sheet has both, so every word is asked in both directions.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Naming a word’s opposite is a small proof that you actually know what it means. You cannot pick the opposite of \"equivalent\" by guessing at the letters — you have to know the word, which is exactly what a unit test is checking.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "State a synonym and an antonym for each Lesson 2 word.",
+     "from": "source"
+    },
+    {
+     "text": "Tell a word’s synonym from its antonym when both are offered as choices.",
+     "from": "added"
+    },
+    {
+     "text": "Read \"extract\" and \"refuse\" in their noun senses, which is how this sheet uses them.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the class’s own Lesson 2 synonym/antonym sheet. Two things worth knowing. First, EXTRACT: the sheet gives \"excerpt, juice\" as its synonyms, both nouns, so it is using extract as a NOUN — the good part taken out of something — which is what makes its antonym \"refuse\" correct. That is REF-yooss, the noun meaning waste, not ri-FYOOZ meaning to say no. Read as the verb it looks like a misprint, and River may well read it that way, so the card says it outright and the question carries an \"As a NOUN\" tag. Second, every wrong option in this unit is another real word from the same sheet, and one of them is always the stem word’s own opposite number — the synonym inside an antonym question, and the reverse. That is deliberate: it means she has to read which was asked rather than eliminating on part of speech. If she is getting these wrong, it is usually the question she misread, not the word.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "The cards first — a synonym only means something once the base word is solid — then the questions.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "aroma",
+     "def": "**Synonyms: odor, scent. Antonyms: stench, stink.**\n• An aroma is a smell you are glad to meet; a stench is one you back away from. Odor sits in the middle — it can go either way.",
+     "from": "added",
+     "sp": "uh-ROH-muh"
+    },
+    {
+     "id": "c1",
+     "term": "beverage",
+     "def": "**Synonyms: drink. Antonym: food.**\n• A beverage is something you drink, so the sheet pairs it against food — the thing you chew instead.",
+     "from": "added",
+     "sp": "BEV-ur-ij"
+    },
+    {
+     "id": "c2",
+     "term": "bland",
+     "def": "**Synonyms: boring. Antonyms: exciting, interesting.**\n• Bland food has had nothing done to it; bland writing is the same idea applied to words.",
+     "from": "added",
+     "sp": "bland"
+    },
+    {
+     "id": "c3",
+     "term": "brittle",
+     "def": "**Synonyms: breakable, frail. Antonym: unbreakable.**\n• Brittle means it snaps rather than bends — dry pasta is brittle, a rubber band is not.",
+     "from": "added",
+     "sp": "BRIT-ul"
+    },
+    {
+     "id": "c4",
+     "term": "cluster",
+     "def": "**Synonyms: bundle, collection. Antonym: individual.**\n• A cluster is several things gathered tight together, so its opposite is one thing standing on its own.",
+     "from": "added",
+     "sp": "KLUS-tur"
+    },
+    {
+     "id": "c5",
+     "term": "combine",
+     "def": "**Synonyms: blend, merge. Antonyms: divide, separate.**\n• Combine puts things together into one; divide and separate pull one thing back into parts.",
+     "from": "added",
+     "sp": "kum-BYNE"
+    },
+    {
+     "id": "c6",
+     "term": "consume",
+     "def": "**Synonyms: deplete. Antonyms: save, fill.**\n• Consume is to use something up until it is gone — which is why saving it up is the opposite.",
+     "from": "added",
+     "sp": "kun-SOOM"
+    },
+    {
+     "id": "c7",
+     "term": "crave",
+     "def": "**Synonyms: covet. Antonym: dislike.**\n• To crave is to want something badly. Covet is the same wanting, usually for something that belongs to someone else.",
+     "from": "added",
+     "sp": "krayv"
+    },
+    {
+     "id": "c8",
+     "term": "cultivate",
+     "def": "**Synonyms: manage, prepare. Antonyms: destroy, ignore.**\n• Cultivate is tending something so it grows — a field, or a friendship. Ignoring it is the quiet opposite; destroying it is the loud one.",
+     "from": "added",
+     "sp": "KUL-tih-vayt"
+    },
+    {
+     "id": "c9",
+     "term": "equivalent",
+     "def": "**Synonyms: comparable, equal. Antonyms: opposite, unlike.**\n• Equivalent things are worth the same even when they are not identical — four quarters and a dollar.",
+     "from": "added",
+     "sp": "ih-KWIV-uh-lunt"
+    },
+    {
+     "id": "c10",
+     "term": "export",
+     "def": "**Synonyms: ship, transport. Antonyms: hold, keep.**\n• Export sends goods out of a country. Its true mirror word is import, but the sheet pairs it with holding onto them instead.",
+     "from": "added",
+     "sp": "ek-SPORT"
+    },
+    {
+     "id": "c11",
+     "term": "extract",
+     "def": "**Synonyms: excerpt, juice. Antonym: refuse.**\n• Careful — the sheet uses the NOUN. An extract is the good part taken out: a passage from a book, or vanilla extract. Its opposite is refuse (say REF-yooss), the waste left behind. That is not the verb ri-FYOOZ meaning \"to say no\".",
+     "from": "added",
+     "sp": "ek-STRAKT"
+    },
+    {
+     "id": "c12",
+     "term": "introduce",
+     "def": "**Synonyms: announce, offer. Antonyms: conceal, hide.**\n• To introduce is to bring something into view — a person, an idea, a new rule. To conceal is to keep it out of view.",
+     "from": "added",
+     "sp": "in-truh-DOOSS"
+    },
+    {
+     "id": "c13",
+     "term": "purchase",
+     "def": "**Synonyms: investment. Antonym: sale.**\n• Purchase and sale are the two sides of one deal: the buyer makes a purchase, the seller makes a sale.",
+     "from": "added",
+     "sp": "PUR-chuss"
+    },
+    {
+     "id": "c14",
+     "term": "tropical",
+     "def": "**Synonyms: lush, sweltering. Antonyms: cool, frigid.**\n• Tropical describes the hot, wet band of the Earth near the equator — sweltering is the heat, lush is what the heat and rain grow.",
+     "from": "added",
+     "sp": "TRAHP-ih-kul"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of aroma?",
+     "opts": [
+      "stench",
+      "scent",
+      "juice",
+      "investment"
+     ],
+     "ans": 0,
+     "hint": "Aroma comes from the Greek word for spice — it starts out meaning a GOOD smell.",
+     "steps": [
+      "Aroma is a smell you are pleased to notice.",
+      "Its opposite has to be a smell you are not pleased to notice.",
+      "That is \"stench.\""
+     ],
+     "ex": {
+      "main": "**Stench.** All four are nouns, and scent is the near-miss: it means the same as aroma, not the reverse of it.",
+      "tip": "Stink works too. Odor is the neutral one — it can describe either."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of beverage?",
+     "opts": [
+      "drink",
+      "food",
+      "aroma",
+      "purchase"
+     ],
+     "ans": 1,
+     "hint": "Beverage traces back to the Latin bibere, to drink — the same root hiding inside \"imbibe.\"",
+     "steps": [
+      "A beverage is something you drink.",
+      "The sheet pairs it against the other half of a meal.",
+      "That is \"food.\""
+     ],
+     "ex": {
+      "main": "**Food.** Drink is the trap: it is beverage’s synonym. Food is what you eat rather than drink.",
+      "tip": "This pair is about HOW it reaches you — swallowed as liquid, or chewed first."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of bland?",
+     "opts": [
+      "sweltering",
+      "boring",
+      "exciting",
+      "brittle"
+     ],
+     "ans": 2,
+     "hint": "Bland comes from Latin blandus, smooth — nothing sharp enough to notice.",
+     "steps": [
+      "Bland means there is nothing in it to grab your attention.",
+      "The opposite is something that does grab your attention.",
+      "That is \"exciting.\""
+     ],
+     "ex": {
+      "main": "**Exciting.** Boring is the near-miss — it means the same as bland. All four are adjectives, so part of speech will not narrow it for you.",
+      "tip": "Interesting works as well. Bland applies to food, colour, or writing alike."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of brittle?",
+     "opts": [
+      "comparable",
+      "breakable",
+      "individual",
+      "unbreakable"
+     ],
+     "ans": 3,
+     "hint": "Brittle shares a root with the old word brēotan, to break.",
+     "steps": [
+      "Brittle means it snaps instead of bending.",
+      "The opposite is something that will not snap at all.",
+      "That is \"unbreakable.\""
+     ],
+     "ex": {
+      "main": "**Unbreakable.** Breakable is the trap: it is brittle’s synonym, and the \"un-\" is the only thing separating the two options.",
+      "tip": "Frail is another synonym. Read the prefix carefully on this one."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of cluster?",
+     "opts": [
+      "individual",
+      "collection",
+      "investment",
+      "beverage"
+     ],
+     "ans": 0,
+     "hint": "Cluster is a cousin of \"clot\" — a lump of things stuck together.",
+     "steps": [
+      "A cluster is several things gathered close together.",
+      "The opposite is a single one, standing alone.",
+      "That is \"individual.\""
+     ],
+     "ex": {
+      "main": "**Individual.** Collection is the near-miss: a collection IS a cluster, not the reverse of one.",
+      "tip": "A cluster of grapes; one individual grape pulled off the stem. Bundle is cluster’s other synonym."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of combine?",
+     "opts": [
+      "merge",
+      "separate",
+      "announce",
+      "deplete"
+     ],
+     "ans": 1,
+     "hint": "Combine is com- (together) plus bini (two at a time) — literally \"two together.\"",
+     "steps": [
+      "Combine means to put things together into one.",
+      "The opposite is pulling that one thing back into parts.",
+      "That is \"separate.\""
+     ],
+     "ex": {
+      "main": "**Separate.** Merge is the trap — it means the same as combine. Divide is the other correct opposite the sheet gives.",
+      "tip": "All four are verbs here, so you cannot shortcut this by part of speech."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of consume?",
+     "opts": [
+      "conceal",
+      "deplete",
+      "save",
+      "cultivate"
+     ],
+     "ans": 2,
+     "hint": "Consume is con- (completely) plus sumere (to take up) — to take it all up.",
+     "steps": [
+      "Consume means to use something up until none is left.",
+      "The opposite is keeping it instead of using it.",
+      "That is \"save.\""
+     ],
+     "ex": {
+      "main": "**Save.** Deplete is the near-miss: to deplete a supply IS to consume it. \"Fill\" is the sheet’s other answer.",
+      "tip": "You consume a tank of petrol; you save the rest for the trip home."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of crave?",
+     "opts": [
+      "blend",
+      "covet",
+      "transport",
+      "dislike"
+     ],
+     "ans": 3,
+     "hint": "Crave comes from an old word meaning to demand or beg for something.",
+     "steps": [
+      "To crave something is to want it badly.",
+      "The opposite of wanting it badly is not wanting it at all.",
+      "That is \"dislike.\""
+     ],
+     "ex": {
+      "main": "**Dislike.** Covet is the trap: coveting is craving, aimed at something that belongs to someone else.",
+      "tip": "Crave is usually about food or comfort; covet is usually about possessions."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of cultivate?",
+     "opts": [
+      "destroy",
+      "prepare",
+      "merge",
+      "offer"
+     ],
+     "ans": 0,
+     "hint": "Cultivate comes from Latin colere, to tend or till — the same root as agriculture.",
+     "steps": [
+      "Cultivate means to tend something carefully so it grows.",
+      "The opposite is tearing down what was growing.",
+      "That is \"destroy.\""
+     ],
+     "ex": {
+      "main": "**Destroy.** Prepare is the near-miss — preparing ground IS part of cultivating it. \"Ignore\" is the sheet’s quieter opposite.",
+      "tip": "You can cultivate a garden or a friendship; both can be destroyed or simply ignored."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of equivalent?",
+     "opts": [
+      "comparable",
+      "unlike",
+      "brittle",
+      "tropical"
+     ],
+     "ans": 1,
+     "hint": "Equivalent is equi- (equal) plus valent (worth) — equal in worth.",
+     "steps": [
+      "Equivalent means worth the same, even if the two things are not identical.",
+      "The opposite is being not the same at all.",
+      "That is \"unlike.\""
+     ],
+     "ex": {
+      "main": "**Unlike.** Comparable is the trap: comparable things ARE equivalent. \"Opposite\" is the sheet’s other answer.",
+      "tip": "Four quarters are equivalent to a dollar — different objects, same worth."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of export?",
+     "opts": [
+      "divide",
+      "ship",
+      "keep",
+      "announce"
+     ],
+     "ans": 2,
+     "hint": "Export is ex- (out) plus portare (to carry) — to carry out. Import carries in.",
+     "steps": [
+      "Export means sending goods out to another country.",
+      "The opposite the sheet gives is not sending them anywhere.",
+      "That is \"keep.\""
+     ],
+     "ex": {
+      "main": "**Keep.** Ship is the near-miss — shipping goods out IS exporting them. \"Hold\" is the sheet’s other answer.",
+      "tip": "The truest mirror of export is import, but that word is not on this sheet."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "As a NOUN, which word means the OPPOSITE of extract?",
+     "opts": [
+      "scent",
+      "excerpt",
+      "bundle",
+      "refuse"
+     ],
+     "ans": 3,
+     "hint": "Say the answer REF-yooss, rhyming with \"goose\" — the noun for waste, not the verb meaning to say no.",
+     "steps": [
+      "An extract is the good part taken out of something — a passage, or a juice.",
+      "The opposite is the worthless part left behind once the good part is gone.",
+      "That is \"refuse,\" meaning waste."
+     ],
+     "ex": {
+      "main": "**Refuse.** Excerpt is the trap: an excerpt IS an extract. Refuse here is the noun REF-yooss (rubbish), not ri-FYOOZ (to decline) — same spelling, two different words.",
+      "tip": "Vanilla extract is the flavour pulled out of the bean; the spent bean is the refuse."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of introduce?",
+     "opts": [
+      "conceal",
+      "announce",
+      "consume",
+      "cultivate"
+     ],
+     "ans": 0,
+     "hint": "Introduce is intro- (inward) plus ducere (to lead) — to lead something in where it can be seen.",
+     "steps": [
+      "To introduce is to bring something or someone into view.",
+      "The opposite is keeping it out of view.",
+      "That is \"conceal.\""
+     ],
+     "ex": {
+      "main": "**Conceal.** Announce is the near-miss: announcing something introduces it. \"Hide\" is the sheet’s plainer answer.",
+      "tip": "You introduce a new rule to a class, or conceal it until the last minute."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of purchase?",
+     "opts": [
+      "investment",
+      "sale",
+      "cluster",
+      "stink"
+     ],
+     "ans": 1,
+     "hint": "Purchase came into English meaning to chase after something until you got it.",
+     "steps": [
+      "A purchase is something you buy.",
+      "The opposite side of that same deal belongs to the person selling.",
+      "That is \"sale.\""
+     ],
+     "ex": {
+      "main": "**Sale.** Investment is the trap: an investment is a kind of purchase. Purchase and sale are one transaction seen from two sides.",
+      "tip": "Every purchase is somebody else’s sale — the money just changes direction."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means the OPPOSITE of tropical?",
+     "opts": [
+      "unbreakable",
+      "sweltering",
+      "frigid",
+      "boring"
+     ],
+     "ans": 2,
+     "hint": "Tropical names the hot band of the Earth between the Tropic of Cancer and the Tropic of Capricorn.",
+     "steps": [
+      "Tropical describes the hot, wet part of the world near the equator.",
+      "The opposite is bitterly cold.",
+      "That is \"frigid.\""
+     ],
+     "ex": {
+      "main": "**Frigid.** Sweltering is the near-miss — it means the same kind of heat as tropical. \"Cool\" is the sheet’s milder answer.",
+      "tip": "The Frigid Zones are the real name for the polar caps, at the other end of the map."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means almost the same as cluster?",
+     "opts": [
+      "sale",
+      "individual",
+      "refuse",
+      "bundle"
+     ],
+     "ans": 3,
+     "hint": "One of these is the word’s OPPOSITE, not a match for it. Read the question again before you pick.",
+     "steps": [
+      "A cluster is a group of things packed close together.",
+      "A word for several things gathered into one lot is \"bundle.\"",
+      "So the synonym is \"bundle.\""
+     ],
+     "ex": {
+      "main": "**Bundle.** Collection works too. Individual is there because it is cluster’s OPPOSITE — easy to grab if you read the question too fast.",
+      "tip": "A cluster of stars, a bundle of sticks — same idea of things held together."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "As a NOUN, which word means almost the same as extract?",
+     "opts": [
+      "excerpt",
+      "refuse",
+      "aroma",
+      "beverage"
+     ],
+     "ans": 0,
+     "hint": "All four are nouns, so part of speech will not narrow this one — you need the word itself.",
+     "steps": [
+      "As a noun, an extract is a piece taken out of something larger.",
+      "A passage lifted out of a book is called an excerpt.",
+      "So the synonym is \"excerpt.\""
+     ],
+     "ex": {
+      "main": "**Excerpt.** Juice is the sheet’s other synonym, for the squeezed-out kind of extract. Refuse is the trap: it is extract’s OPPOSITE, the part thrown away.",
+      "tip": "A book review quotes an excerpt; a recipe calls for almond extract. Same idea, taken out."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means almost the same as cultivate?",
+     "opts": [
+      "destroy",
+      "manage",
+      "consume",
+      "export"
+     ],
+     "ans": 1,
+     "hint": "One of these is the word’s OPPOSITE, not a match for it. Read the question again before you pick.",
+     "steps": [
+      "To cultivate is to look after something so that it grows.",
+      "Looking after something carefully over time is to manage it.",
+      "So the synonym is \"manage.\""
+     ],
+     "ex": {
+      "main": "**Manage.** Prepare works as well. Destroy is there because it is cultivate’s OPPOSITE, and it is the easiest wrong answer to reach for.",
+      "tip": "A farmer cultivates a field by managing it season after season."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means almost the same as equivalent?",
+     "opts": [
+      "unbreakable",
+      "opposite",
+      "comparable",
+      "sweltering"
+     ],
+     "ans": 2,
+     "hint": "Equi- means equal, and -valent means worth — the answer should mean \"worth about the same.\"",
+     "steps": [
+      "Equivalent means two things are worth or count the same.",
+      "A word for things that can be measured against each other as the same is \"comparable.\"",
+      "So the synonym is \"comparable.\""
+     ],
+     "ex": {
+      "main": "**Comparable.** Equal is the sheet’s other synonym. Opposite is the trap — it is one of equivalent’s own ANTONYMS, sitting right there in the list.",
+      "tip": "Comparable does not mean identical: it means close enough to weigh against each other."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which word means almost the same as aroma?",
+     "opts": [
+      "drink",
+      "stench",
+      "food",
+      "scent"
+     ],
+     "ans": 3,
+     "hint": "One of these is the word’s OPPOSITE, not a match for it. Read the question again before you pick.",
+     "steps": [
+      "An aroma is a smell, and a pleasant one.",
+      "Another word for a pleasant smell is \"scent.\"",
+      "So the synonym is \"scent.\""
+     ],
+     "ex": {
+      "main": "**Scent.** Odor is the sheet’s other synonym, though odor can swing either way. Stench is the trap: it is aroma’s OPPOSITE.",
+      "tip": "Perfume makers talk about a scent; a kitchen has an aroma; a bin has a stench."
+     }
+    }
+   ],
+   "round": 8,
+   "libv": 1
+  }
+ }
+}

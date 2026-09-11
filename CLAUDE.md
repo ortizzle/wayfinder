@@ -1973,6 +1973,101 @@ between question and a round-then-place question. Title-sorts after
 "Decimals Extra Practice" and before "Topic Review" with no `order` field.
 `tools/test_numberline.js` is the same file as Ad Astra's.
 
+### Chemistry starts its own shelf: Phases of Matter (v161)
+
+Chris: *"the folders are updated for sedona and river for new material to be
+created."* River's Science folder had **"Phases of Matter.pdf"** — her completed
+20-point Science 4 practice sheet, the first work of the Chemistry unit the 9/3
+newsletter announced. `content/science-phases-matter.json` (`unit-sci-phases`):
+16 cards, 18 questions, and a 12-item swipe-sort set ("Is it matter?").
+
+**It shelves as `Chemistry`, not as a seventh part of `Science`.** That existing
+shelf is an explicit `order:0..5` run of Nature of Science (Unit 1) parts —
+Quiz 1 Parts 1-3, Reading Scales, the practice test, the study test. A chemistry
+lesson appended as `order:6` would read as part seven of a unit it has nothing
+to do with. **One shelf per unit of study**, which is the same call River's
+maths settled one version ago; `shelvesFor('science')` now returns two shelves
+and nothing loose, verified live rather than reasoned about. Going forward each
+new science unit gets its own shelf by name. The old shelf was deliberately NOT
+retitled to match — that would re-draft six units Chris has already approved,
+and he did not ask for it.
+
+**The pages are photographs of paper, so they were rendered with `pypdfium2` and
+read as images** — Drive's OCR cannot see circled answers at all. That is what
+made her own marks readable, and they are the most useful thing in the file.
+
+- **She got 16 of 20, and three of the four misses are one idea.** Q11 asked
+  which phase has "a defined volume and a defined shape" (she answered gas); Q18
+  showed a solid moved to a bigger container (she answered "volume stays the
+  same, shape changes"); Q19 showed a gas moved to a SMALLER container (she
+  answered the same phrase again). That phrase is the LIQUID rule, and it is
+  currently being applied to all three phases. The shape-and-volume table gets
+  its own card, and each of the three "moving it to a new container" cases gets
+  a card that states its own answer outright — including the one that is
+  genuinely "nothing happens", which is easy to skip past when every other
+  option sounds like something occurred.
+- **The fourth is the temperature/closeness mix-up** — she read temperature as
+  "how close particles are" rather than "how fast they move". It gets a card of
+  its own plus a squeezed-air question where closeness changes a great deal and
+  temperature does not at all, which is the cleanest proof the two are
+  different. Genuinely common, since heating something usually DOES spread it
+  out; the card says so rather than treating the intuition as simply wrong.
+- **These are her own answers on a practice sheet, not a teacher's key** — no
+  red pen, no score anywhere on the paper. So the unit teaches the correct
+  chemistry and the `parentNote` names all four, rather than treating any of
+  them as an alternative convention. The v141 rule the other way round (match
+  the key, note the real chemistry in the explanation) only applies when the
+  marks ARE the key, and it is worth checking which before editing anything.
+- **`prep` is deliberately NOT set.** This is the unit's first lesson, not test
+  prep, and no chemistry test is announced. `prep:true` says what a unit IS
+  (v139); setting it on every new unit would spend the gold band for nothing.
+- The sort set is the fastest drill for matter-vs-not, which the sheet itself
+  tests three times. `check_content.py`'s own-bucket rule is satisfied by
+  construction — no item contains the word "matter".
+
+`tools/test_phases.js`: the real `classId` (the v136 orphan trap), the numbered
+counts, the two-shelf split with the Nature of Science run unchanged, no
+worksheet back-reference anywhere, a clean pass through all 12 sort items
+logging 36 XP, a full quiz round, the `kind:'order'` energy ranking in the right
+order — and each of the four corrections asserted by its TEACHING rather than
+by merely being present.
+
+### Wordly Wise Lesson 2 Synonyms & Antonyms (v161)
+
+The companion to the Lesson 1 sheet, from "Synonyms and Antonyms - Lesson 2.pdf"
+in the same Drive folder. `unit-ww502-syn`, 15 cards and 20 questions, shelving
+directly after "Lesson 2" — **no `order` field**, per the v102 trap: `order` is a
+whole-shelf bucket and would exile a unit that answers to ONE lesson behind every
+other lesson in the book.
+
+- **Built to the v121 rules from the start**, not retrofitted: no stem glosses
+  the word it tests, every distractor is the same part of speech holding a
+  different real relationship, the strongest one being the word's own opposite
+  number so answering requires reading whether the question said SAME or
+  OPPOSITE.
+- **`extract` has two senses and gets a part-of-speech tag rather than a
+  definition** ("As a NOUN…"), because the sheet pairs it with `refuse` — an
+  extract is the good part taken out, refuse (REF-yooss) is the waste left
+  behind. That pairing reads as an OCR error until you notice both are being
+  used as nouns; it was confirmed by rendering the PDF rather than trusting the
+  column-flattened text.
+- Three length-bias warnings were fixed by choosing longer real words from the
+  same sheet that preserve the trap, not by padding.
+
+> ⚠️ **`tools/builders/build_ww1_synonyms.py` is STALE and now refuses to run.**
+> It predates v121 and still writes the glossed stems, filler distractors,
+> identical boilerplate hints and bare-answer explanations that v121 removed by
+> hand from the shipped `wordly-wise-5-01-syn.json`. Re-running it would have
+> silently reverted the whole fix. It now `sys.exit`s with an explanation, and
+> its provenance notes are kept because they are still accurate about the source
+> PDF and the shelving rule. **The shipped JSON is the source of truth for any
+> file whose builder predates a hand-edit** — and a builder that can quietly
+> undo a fix should say so in code, not only in a comment.
+
+`tools/test_ww2_syn.js` pins the shelf position directly after Lesson 2, bare
+stems, no option echoed in its own stem, both `extract` questions carrying the
+part-of-speech tag, `sp` on every card, and a full round.
+
 ### Math is one shelf now: Unit 1 (v160)
 
 Chris: *"Let's update River's Math to be Unit 1 include the 3 topics. Going
@@ -2016,12 +2111,14 @@ topics' lessons in printed order, each Topic Review trailing its own topic.
 Unit 2's material shelves as `Unit 2` the same way — set `series`, leave the
 printed `Topic N · N-L Title` alone.
 
-> ⚠️ **What "lessons 2-1 to 2-3" means in her Unit 2 quiz is still open, and
-> is being asked rather than inferred.** Under the now-known structure it could
-> be Topic 2's own 2-1 to 2-3 (already built, already tested 8/21) or Unit 2's
-> first three lessons under a numbering that restarts. Guessing it once already
-> produced the wrong answer recorded in v159 above; the row keeps her wording
-> until Chris says which.
+> **Answered, 2026-09-11.** Chris: *"Unit 2, might just be Unit 2. I'll have to
+> see when we get the material. It's okay to keep Unit 1 as it, with the
+> separate topics."* So Unit 1 stays exactly as shipped above — one shelf, three
+> topics, printed titles intact — and **what Unit 2 covers stays genuinely
+> unknown until the material lands in Drive.** Nothing was built on a guess: no
+> Unit 2 shelf exists, and the two suggested assessments keep the teacher's own
+> wording verbatim. When the folder appears, its name settles the mapping, the
+> same way it settled Topic 3's.
 
 > `tools/test_unit1_shelf.js` (new) pins the whole thing: one shelf named Unit
 > 1, nothing loose, all 24 parts with distinct labels, the exact topic-by-topic

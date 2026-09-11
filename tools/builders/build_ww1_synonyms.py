@@ -1,3 +1,21 @@
+# ⚠️  STALE — DO NOT RUN. This builder predates v121 and still writes the
+# bug v121 removed: every stem glosses the word it is testing ("the OPPOSITE
+# of accustom (to get used to something)?"), the distractors are filler drawn
+# off part of speech, all 19 hints are the same sentence, and every ex.main is
+# the bare answer word. The SHIPPED content/wordly-wise-5-01-syn.json was
+# hand-corrected and is the source of truth; re-running this would silently
+# overwrite the fix. tools/test_ww_syn.js would catch it, but only if someone
+# ran the test afterwards. Kept for its provenance notes below, which are
+# still accurate about the source PDF and the shelving rule.
+#
+# If Lesson 1 ever needs rebuilding, port it onto the pattern in
+# build_ww2_synonyms.py, which is written to the v121 rules.
+
+import sys
+sys.exit('build_ww1_synonyms.py is STALE and pre-v121 — see the header. '
+         'Edit content/wordly-wise-5-01-syn.json directly, or rebuild from '
+         'build_ww2_synonyms.py\'s pattern.')
+
 # Wordly Wise Lesson 1 · Synonyms & Antonyms study guide — built from
 # "Lesson 1 synonyms and antonyms.pdf" in the Drive English/Wordly Wise
 # folder. The sheet itself says "The UNIT TEST will include synonyms and
