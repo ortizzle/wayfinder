@@ -1,0 +1,343 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2u5": {
+   "id": "unit-m2u5",
+   "type": "unit",
+   "updatedAt": 1789308769274,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 2 · Lesson 5: Subtract Decimals",
+   "srcName": "Unit 2 textbook scan, Lesson 2-5 (Drive)",
+   "source": "enVision Topic 2 textbook scan — Add and Subtract Decimals (Drive)",
+   "summary": {
+    "text": "Lesson 2-5 of the Topic 2 textbook scan covers subtracting decimals in written columns: lining up the decimal points, annexing zeros so both numbers have the same decimal places, using partial differences, regrouping when the top digit is too small, and checking an answer by adding it back.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Subtraction is where decimal errors hide, because a wrong answer still looks like a sensible number. The add-back check turns every answer into one she can verify herself.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Subtract decimals by lining up the decimal points",
+     "from": "source"
+    },
+    {
+     "text": "Annex zeros so both numbers have the same number of decimal places",
+     "from": "source"
+    },
+    {
+     "text": "Regroup across places, including across zeros",
+     "from": "source"
+    },
+    {
+     "text": "Check a difference by adding it back to the number subtracted",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The hardest case in this lesson is subtracting from a whole number (20 − 13.42), because the regrouping has to travel through two empty places — it has its own question here. The most common wrong answer across the rest is dropping the SECOND regrouping when two are needed in a row, which is why 9.4 − 2.65 offers 6.85 as an option. Worth reinforcing at home: the add-back check. It costs one addition and catches essentially every regrouping slip, and she can do it without anyone telling her whether she was right. One question deliberately has several options that all evaluate to the same difference, to reward actually computing rather than pattern-matching.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "The trickiest of the six. The add-back check is worth doing every time.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Line up, then fill the gaps",
+     "def": "**Line up the decimal points and annex zeros so both numbers have the same number of decimal places.**\n• 32.5 − 7.84 becomes 32.50 − 7.84.\n• Without the zero there is nothing in the hundredths column to subtract from.",
+     "hint": "A missing digit is not a zero until you write one in.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Annexing a zero changes nothing",
+     "def": "**Writing 7.9 as 7.90 does not change its value — it only fills an empty seat.**\n• 7.9 is 7 wholes and 9 tenths; 7.90 adds zero hundredths, which is nothing.\n• That is what makes it safe to do whenever you need to line columns up.",
+     "hint": "The zero is a placeholder doing a job, not a digit adding value.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Partial differences",
+     "def": "**Subtract one place at a time instead of all at once.**\n• 5.92 − 4.37: take 4 to get 1.92, take 0.3 to get 1.62, take 0.07 to get 1.55.\n• Each step is small enough to do in your head.",
+     "hint": "Take the big pieces off first; the small ones are easier on a tidier number.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Regroup before you take away",
+     "def": "**If the top digit is smaller than the one below it, trade from the place to its left first.**\n• In 9.4 − 2.65, the hundredths are 0 and 5, so trade a tenth into ten hundredths.\n• Never just subtract the smaller digit from the larger one out of habit.",
+     "hint": "The top number decides what you have; the bottom decides what leaves.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Check by adding back",
+     "def": "**Add your answer to the number you subtracted — you should land back on the number you started with.**\n• 5.92 − 4.37 = 1.55, and 1.55 + 4.37 = 5.92. ✓\n• This catches a regrouping slip immediately.",
+     "hint": "Subtraction has a built-in check. Use it when the answer matters.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To subtract 32.5 − 7.84 in columns, how should 32.5 be written?",
+     "opts": [
+      "32.50",
+      "32.05",
+      "32.500",
+      "3.25"
+     ],
+     "ans": 0,
+     "hint": "Both numbers need the same number of decimal places.",
+     "steps": [
+      "7.84 has two decimal places; 32.5 has one.",
+      "Annex a zero on the right: 32.50.",
+      "That gives a hundredths digit to subtract the 4 from.",
+      "The value is unchanged — 32.5 and 32.50 are the same number."
+     ],
+     "ex": {
+      "main": "**32.50.** The zero fills the empty hundredths seat so the columns line up, without changing the number at all.",
+      "tip": "Writing 32.05 instead would move the 5 into the hundredths place — a different number, and a common slip when rushing."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 32.5 − 7.84?",
+     "opts": [
+      "24.74",
+      "24.66",
+      "25.66",
+      "24.56"
+     ],
+     "ans": 1,
+     "hint": "Write 32.5 as 32.50, then regroup before taking the hundredths.",
+     "steps": [
+      "Write it as 32.50 − 7.84.",
+      "Hundredths: 0 − 4 needs a trade, so borrow a tenth: 10 − 4 = 6.",
+      "Tenths: now 4 − 8 needs a trade too, so borrow a one: 14 − 8 = 6.",
+      "Ones and tens: 31 − 7 = 24. The difference is 24.66."
+     ],
+     "ex": {
+      "main": "**24.66.** Two regroupings in a row are needed here — first into the hundredths, then into the tenths.",
+      "tip": "Adding back is the fastest check: 24.66 + 7.84 = 32.50. ✓"
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student rewrites 45.59 − 7.9 as 45.59 − 7.90. Did that change the value of 7.9?",
+     "opts": [
+      "Yes — 7.90 now has hundredths that 7.9 did not have",
+      "Yes — 7.90 is ten times bigger than 7.9",
+      "No — the zero fills an empty place without adding any value",
+      "Only if the answer has hundredths in it"
+     ],
+     "ans": 2,
+     "hint": "How much is zero hundredths worth?",
+     "steps": [
+      "7.9 means 7 wholes and 9 tenths.",
+      "7.90 means 7 wholes, 9 tenths and 0 hundredths.",
+      "Zero hundredths adds nothing at all.",
+      "So the two are the same number."
+     ],
+     "ex": {
+      "main": "**No — the zero fills an empty place without adding any value.** It is written purely so the hundredths column has something in it to line up with.",
+      "tip": "This is the single permission that makes subtracting ragged decimals possible. Without it the columns cannot be aligned."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9.4 − 2.65?",
+     "opts": [
+      "6.65",
+      "6.85",
+      "7.75",
+      "6.75"
+     ],
+     "ans": 3,
+     "hint": "Give 9.4 a hundredths digit first, then look at whether you can subtract.",
+     "steps": [
+      "Write 9.4 as 9.40.",
+      "Hundredths: 0 − 5 needs a trade, so borrow a tenth: 10 − 5 = 5.",
+      "Tenths: now 3 − 6 needs a trade, so borrow a one: 13 − 6 = 7.",
+      "Ones: 8 − 2 = 6. The difference is 6.75."
+     ],
+     "ex": {
+      "main": "**6.75.** Both the hundredths and the tenths needed regrouping, and forgetting the second one is what produces 6.85.",
+      "tip": "Check it by adding back: 6.75 + 2.65 = 9.40. ✓"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using partial differences for 5.92 − 4.37, which sequence is correct?",
+     "opts": [
+      "Subtract 4, then 0.3, then 0.07",
+      "Subtract 4, then 0.7, then 0.03",
+      "Subtract 5, then 0.9, then 0.02",
+      "Subtract 4.3, then 0.7"
+     ],
+     "ans": 0,
+     "hint": "Break the number being SUBTRACTED into its places.",
+     "steps": [
+      "4.37 breaks into 4, 0.3 and 0.07.",
+      "5.92 − 4 = 1.92.",
+      "1.92 − 0.3 = 1.62.",
+      "1.62 − 0.07 = 1.55."
+     ],
+     "ex": {
+      "main": "**Subtract 4, then 0.3, then 0.07.** The number being taken away is split by place value, and each piece comes off in turn.",
+      "tip": "Breaking up the wrong number is the trap — it is the subtrahend that gets split, not the number you started with."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 20 − 13.42?",
+     "opts": [
+      "7.58",
+      "6.58",
+      "6.68",
+      "7.42"
+     ],
+     "ans": 1,
+     "hint": "A whole number needs decimal places written in before you can subtract.",
+     "steps": [
+      "Write 20 as 20.00.",
+      "Hundredths: 0 − 2 needs a trade; after regrouping, 10 − 2 = 8.",
+      "Tenths: 9 − 4 = 5 (the tenths became 9 after the trade passed through).",
+      "Ones and tens: 19 − 13 = 6. The difference is 6.58."
+     ],
+     "ex": {
+      "main": "**6.58.** Subtracting from a whole number means regrouping across two empty places, which is why writing 20.00 first matters so much.",
+      "tip": "Check by adding back: 6.58 + 13.42 = 20. ✓ Subtracting across zeros is the hardest case in the lesson."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student subtracts 2.9 from 20.9 and gets 1.8. Why is that answer unreasonable?",
+     "opts": [
+      "Subtracting a decimal from a decimal always gives a whole number",
+      "The answer should have two decimal places, not one",
+      "20.9 − 2.9 should be about 18, and 1.8 is ten times too small",
+      "The answer should be larger than 20.9"
+     ],
+     "ans": 2,
+     "hint": "Estimate first: about 21 take away about 3.",
+     "steps": [
+      "An estimate: 21 − 3 is about 18.",
+      "The answer given is 1.8, which is nowhere near 18.",
+      "The digits happen to be right, but the size is wrong by a factor of ten.",
+      "The real answer is 18."
+     ],
+     "ex": {
+      "main": "**20.9 − 2.9 should be about 18, and 1.8 is ten times too small.** Taking a small amount off 20.9 cannot possibly leave less than 2.",
+      "tip": "Sense-checking the SIZE of an answer catches errors that checking the digits never would."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bottle holds 1.5 litres and 0.8 litres are poured out. How much is left?",
+     "opts": [
+      "2.3 litres",
+      "0.8 litres",
+      "1.3 litres",
+      "0.7 litres"
+     ],
+     "ans": 3,
+     "hint": "This is a subtraction. Line the two numbers up and take one from the other.",
+     "steps": [
+      "Start with 1.5 and take away 0.8.",
+      "Tenths: 5 − 8 needs a trade, so borrow the whole: 15 − 8 = 7.",
+      "The whole is used up, leaving 0.",
+      "So 0.7 litres remain."
+     ],
+     "ex": {
+      "main": "**0.7 litres.** More than half the bottle was poured out, so less than half is left — which 0.7 against the original 1.5 confirms.",
+      "tip": "Notice the amount left (0.7) is smaller than the amount poured (0.8). Comparing the two is a fair sense-check."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 65.18 − 12.05?",
+     "opts": [
+      "53.13",
+      "53.23",
+      "52.13",
+      "53.03"
+     ],
+     "ans": 0,
+     "hint": "Check each column: is any regrouping needed at all?",
+     "steps": [
+      "Hundredths: 8 − 5 = 3, no trade needed.",
+      "Tenths: 1 − 0 = 1, no trade needed.",
+      "Ones: 5 − 2 = 3. Tens: 6 − 1 = 5.",
+      "The difference is 53.13."
+     ],
+     "ex": {
+      "main": "**53.13.** Every top digit was already large enough, so this one needs no regrouping at all.",
+      "tip": "Checking the columns before starting tells you whether trades are coming — and here, pleasantly, none are."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Three of these subtractions have a difference of 1.65. Which one does NOT?",
+     "opts": [
+      "27.30 − 25.65",
+      "12.68 − 2.03",
+      "11.23 − 9.58",
+      "21.74 − 20.09"
+     ],
+     "ans": 1,
+     "hint": "You have to work all four out. The odd one is not close to the others.",
+     "steps": [
+      "27.30 − 25.65 = 1.65.",
+      "11.23 − 9.58 = 1.65.",
+      "21.74 − 20.09 = 1.65.",
+      "12.68 − 2.03 = 10.65, which is the odd one out."
+     ],
+     "ex": {
+      "main": "**12.68 − 2.03.** It comes to 10.65, while the other three all give exactly 1.65.",
+      "tip": "Asking which one is different forces you to compute every option rather than stopping at the first that looks right."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 2",
+   "libv": 1
+  }
+ }
+}

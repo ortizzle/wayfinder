@@ -1,0 +1,340 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2u2": {
+   "id": "unit-m2u2",
+   "type": "unit",
+   "updatedAt": 1789308769270,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 2 · Lesson 2: Estimate Sums and Differences",
+   "srcName": "Unit 2 textbook scan, Lesson 2-2 (Drive)",
+   "source": "enVision Topic 2 textbook scan — Add and Subtract Decimals (Drive)",
+   "summary": {
+    "text": "Lesson 2-2 of the Topic 2 textbook scan covers estimating sums and differences of decimals two ways: rounding each number to the same place, and substituting compatible numbers that are easy to compute. It also asks whether a given estimate lands above or below the real answer.",
+    "from": "source"
+   },
+   "why": {
+    "text": "An estimate is the fastest way to catch a written answer that is wildly wrong — a misplaced decimal point shows up instantly against a good estimate. It is also often all a real question needs.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Estimate a sum or difference by rounding each number",
+     "from": "source"
+    },
+    {
+     "text": "Estimate by substituting compatible numbers",
+     "from": "source"
+    },
+    {
+     "text": "Decide whether an estimate is higher or lower than the exact answer",
+     "from": "source"
+    },
+    {
+     "text": "Choose the rounding direction to match what the question is for",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Two ideas here are worth more than the arithmetic. First, judging whether an estimate is HIGH or LOW without redoing the sum — the trick is to track which way each number moved rather than recompute. Second, and the one the textbook raises with its bus-seating question, is that the direction you round is a decision: when the question is \"do we have enough?\", rounding up is the safe error and rounding down is the one that leaves you short. Both get dedicated cards and questions. Worth knowing: the book treats rounding and compatible numbers as equally valid, so an answer that differs from hers is not automatically wrong — what matters is whether the estimate is close and whether she can say which way it leans.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Quick one. The skill here is deciding fast, not computing exactly.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Rounding to estimate",
+     "def": "**Round each number to the same place, then add or subtract the rounded numbers.**\n• 48.7 + 23.2 rounds to 50 + 20 = 70.\n• The real answer is 71.9, so the estimate is close.",
+     "hint": "Round both to the same place, or the estimate wobbles.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Substituting compatible numbers",
+     "def": "**Swap each number for a nearby number that is easy to compute, even if it is not the rounded one.**\n• For 237.5 + 345.1 you might use 250 + 350 = 600.\n• Rounding to hundreds instead gives 200 + 300 = 500.\n• Both are fair estimates; they just aim at different friendly numbers.",
+     "hint": "Compatible numbers are chosen to be easy, not to follow a rounding rule.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Is my estimate high or low?",
+     "def": "**If you rounded both numbers UP, the estimate is higher than the real answer. If you rounded both DOWN, it is lower.**\n• Round up + round up → too high.\n• Round down + round down → too low.\n• One of each → it could go either way.",
+     "hint": "Track which way each number moved and the answer follows.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "When you need to round UP on purpose",
+     "def": "**If the question is \"do I have enough?\", round up so you never come up short.**\n• Estimating what a basket of shopping costs: round up, and any surprise is a good one.\n• Estimating how many seats or buses you need: round up, or someone is left standing.",
+     "hint": "When being wrong is expensive, be wrong in the safe direction.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Estimating a difference",
+     "def": "**Round both numbers, then subtract — same idea as a sum.**\n• 61.4 − 28.8 rounds to 61 − 29, or to the friendlier 60 − 30 = 30.\n• The real answer is 32.6, so 30 is a reasonable estimate.",
+     "hint": "An estimate is meant to be quick. If it is not quick, pick friendlier numbers.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Estimate 48.7 + 23.2 by rounding each number to the nearest ten. Which estimate do you get?",
+     "opts": [
+      "70",
+      "72",
+      "60",
+      "80"
+     ],
+     "ans": 0,
+     "hint": "Round each number on its own first, then add the two rounded numbers.",
+     "steps": [
+      "48.7 rounds to 50.",
+      "23.2 rounds to 20.",
+      "50 + 20 = 70."
+     ],
+     "ex": {
+      "main": "**70.** Each number is rounded to the nearest ten first, and only then added — 50 + 20.",
+      "tip": "The real sum is 71.9, so 70 is a good estimate. An estimate is meant to be near, not exact."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Estimate 61.4 − 28.8 by rounding each number to the nearest ten. Which estimate do you get?",
+     "opts": [
+      "40",
+      "30",
+      "32",
+      "20"
+     ],
+     "ans": 1,
+     "hint": "Round both numbers before you subtract anything.",
+     "steps": [
+      "61.4 rounds to 60.",
+      "28.8 rounds to 30.",
+      "60 − 30 = 30."
+     ],
+     "ex": {
+      "main": "**30.** Both numbers are rounded to the nearest ten, then subtracted.",
+      "tip": "The real difference is 32.6. Rounding the second number UP pulled the estimate a little low, which is worth noticing."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A scientist has three samples with masses of 61.8 g, 8.4 g, and 29.7 g. She rounds each to the nearest whole number to estimate the total. Which numbers does she add?",
+     "opts": [
+      "62, 9, and 30",
+      "61, 8, and 29",
+      "62, 8, and 30",
+      "60, 10, and 30"
+     ],
+     "ans": 2,
+     "hint": "Nearest WHOLE number means look at the tenths digit of each one.",
+     "steps": [
+      "61.8 — the tenths digit is 8, so it rounds up to 62.",
+      "8.4 — the tenths digit is 4, so it rounds down to 8.",
+      "29.7 — the tenths digit is 7, so it rounds up to 30.",
+      "She adds 62, 8, and 30."
+     ],
+     "ex": {
+      "main": "**62, 8, and 30.** Each mass is rounded to the nearest whole number on its own, which means some go up and some go down.",
+      "tip": "Rounding to the nearest ten instead would give 60, 10 and 30 — also a fair estimate, but not what \"nearest whole number\" asked for."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A shopper estimates two items costing $17.98 and $8.29 as \"about $26.\" Is the estimate higher or lower than the real cost?",
+     "opts": [
+      "Exactly right, because the roundings cancel out",
+      "Higher, because both prices were rounded up",
+      "Lower, because only one price was rounded down",
+      "Lower, because both prices were rounded down"
+     ],
+     "ans": 3,
+     "hint": "Compare each rounded number with the real one. Did it move up or down?",
+     "steps": [
+      "$17.98 was treated as about $18 — but $26 − $8 = $18, so it went slightly UP.",
+      "Checking the other: $8.29 was treated as $8, which is DOWN by $0.29.",
+      "The total shift is 0.02 up and 0.29 down, so the estimate sits below the real cost.",
+      "The real cost is $26.27, above the $26 estimate."
+     ],
+     "ex": {
+      "main": "**Lower.** The $8.29 was rounded down by much more than the $17.98 was rounded up, so the estimate lands under the true total.",
+      "tip": "To judge an estimate, do not redo the sum — just track which way each number moved and by how much."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A class needs to be sure it has enough money for supplies costing $23.40, $16.75, and $9.20. Why should they round UP when they estimate?",
+     "opts": [
+      "So the estimate is never less than the real cost",
+      "So the estimate is easier to compute in their heads",
+      "Because prices always increase before you get to the shop",
+      "Because rounding up is the rule whenever money is involved"
+     ],
+     "ans": 0,
+     "hint": "What goes wrong if the estimate turns out to be lower than the real total?",
+     "steps": [
+      "The question is whether they have ENOUGH, not what the exact total is.",
+      "An estimate that is too low would tell them they can afford something they cannot.",
+      "Rounding every price up guarantees the estimate is at least the real cost.",
+      "Then if the estimate fits their budget, the real total certainly does."
+     ],
+     "ex": {
+      "main": "**So the estimate is never less than the real cost.** When the question is \"is this enough?\", an estimate that is too low is the one that actually causes a problem, so you deliberately aim high.",
+      "tip": "The direction you round is a decision, not a rule — it depends on what being wrong would cost you."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Estimate 8.12 + 3.79 + 7.94 by rounding each addend to the nearest whole number.",
+     "opts": [
+      "19",
+      "20",
+      "21",
+      "18"
+     ],
+     "ans": 1,
+     "hint": "Round each of the three on its own, then add.",
+     "steps": [
+      "8.12 rounds to 8.",
+      "3.79 rounds to 4.",
+      "7.94 rounds to 8.",
+      "8 + 4 + 8 = 20."
+     ],
+     "ex": {
+      "main": "**20.** Rounding each addend to the nearest whole number gives 8, 4 and 8.",
+      "tip": "The real sum is 19.85, so the estimate is close — and the fact it came out above tells you the roundings leaned up."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two numbers are both rounded UP to make an estimate of a sum. What must be true of the estimate?",
+     "opts": [
+      "It is equal to the real sum",
+      "It is less than the real sum",
+      "It is greater than the real sum",
+      "It could be greater or less, depending on the numbers"
+     ],
+     "ans": 2,
+     "hint": "If every part grew, what happened to the total?",
+     "steps": [
+      "Rounding a number up replaces it with something bigger.",
+      "Both addends were replaced with bigger numbers.",
+      "Adding two bigger numbers gives a bigger total.",
+      "So the estimate must sit above the real sum."
+     ],
+     "ex": {
+      "main": "**It is greater than the real sum.** Both parts grew, so the total has to grow with them — there is no way for it to land below.",
+      "tip": "The \"could go either way\" answer is only correct when one number rounds up and the other rounds down."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A hiker walks 12.8 km one day and 7.3 km the next. Estimate how much FARTHER she walked on the first day, rounding each distance to the nearest whole number.",
+     "opts": [
+      "About 4 km",
+      "About 5 km",
+      "About 20 km",
+      "About 6 km"
+     ],
+     "ans": 3,
+     "hint": "\"How much farther\" is a subtraction. Round both, then subtract.",
+     "steps": [
+      "12.8 rounds to 13.",
+      "7.3 rounds to 7.",
+      "13 − 7 = 6.",
+      "So she walked about 6 km farther."
+     ],
+     "ex": {
+      "main": "**About 6 km.** Rounding gives 13 and 7, and the gap between them is 6.",
+      "tip": "The real difference is 5.5 km. Notice the words \"how much farther\" — they signal subtraction even though no minus sign appears."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Estimating 494 + 312, one student uses 500 + 300 = 800 and another uses 490 + 310 = 800. Both get 800. What does that show?",
+     "opts": [
+      "Different reasonable roundings can lead to the same estimate",
+      "One of the two students must have made a mistake",
+      "Estimates are always the same no matter how you round",
+      "Rounding to hundreds is the only correct method here"
+     ],
+     "ans": 0,
+     "hint": "Were both roundings legitimate? Did they happen to agree?",
+     "steps": [
+      "Rounding to the nearest hundred gives 500 and 300.",
+      "Rounding to the nearest ten gives 490 and 310.",
+      "Both are honest roundings, and both totals come to 800.",
+      "The real sum is 806, so both estimates are reasonable."
+     ],
+     "ex": {
+      "main": "**Different reasonable roundings can lead to the same estimate.** There is no single \"right\" estimate — there are better and worse choices of friendly numbers, and here two different choices agreed.",
+      "tip": "If two sensible estimates disagree a lot, that is a signal the numbers are awkward and an exact answer may be needed."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A tank holds 45.6 litres and another holds 28.9 litres. Which is the best estimate of the total, using compatible numbers?",
+     "opts": [
+      "About 65 litres",
+      "About 75 litres",
+      "About 85 litres",
+      "About 17 litres"
+     ],
+     "ans": 1,
+     "hint": "Pick nearby numbers that are easy to add, then add them.",
+     "steps": [
+      "45.6 is close to 45, and 28.9 is close to 30.",
+      "45 + 30 = 75.",
+      "So the total is about 75 litres."
+     ],
+     "ex": {
+      "main": "**About 75 litres.** Choosing 45 and 30 keeps both numbers near the originals while making the addition a single easy step.",
+      "tip": "The real total is 74.5 litres. \"About 17\" would be the answer to a different question — subtracting instead of adding."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 2",
+   "libv": 1
+  }
+ }
+}

@@ -1,0 +1,342 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2u3": {
+   "id": "unit-m2u3",
+   "type": "unit",
+   "updatedAt": 1789308769271,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 2 · Lesson 3: Adding and Subtracting with Models",
+   "srcName": "Unit 2 textbook scan, Lesson 2-3 (Drive)",
+   "source": "enVision Topic 2 textbook scan — Add and Subtract Decimals (Drive)",
+   "summary": {
+    "text": "Lesson 2-3 of the Topic 2 textbook scan uses place-value blocks to add and subtract decimals: a flat is one whole, a rod one tenth, a small cube one hundredth. It covers trading ten of one block for one of the next size up, both when adding and when regrouping to subtract.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The blocks are the reason the written method makes sense rather than being a rule to memorise. When a carry or a borrow goes wrong later, this is the picture to come back to.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Represent a decimal with place-value blocks",
+     "from": "source"
+    },
+    {
+     "text": "Add decimals with models, trading ten of one place for one of the next",
+     "from": "source"
+    },
+    {
+     "text": "Subtract decimals with models, regrouping when there is not enough",
+     "from": "source"
+    },
+    {
+     "text": "Explain why trading blocks and carrying digits are the same move",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "This lesson is the \"why\" behind the next two, so it is worth not rushing even though the arithmetic is easy. The single most valuable question here is the one about 0.7 + 0.5 = \"0.12\" — writing a two-digit total into a one-digit place is the error that carrying exists to prevent, and seeing it with blocks makes it obvious in a way a rule never does. The subtraction question ending in 0.47 targets the other classic: subtracting the smaller digit from the larger one in each column out of habit, which gives a confident wrong answer. If she can say why a trade is needed, she is ready for the written method.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "The picture behind the rules. Worth doing before the written method.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "What each block is worth",
+     "def": "**A flat is one whole, a rod is one tenth, and a small cube is one hundredth.**\n• 1.24 is one flat, two rods and four small cubes.\n• The blocks are just place value you can pick up.",
+     "hint": "Ten of any block trades for one of the next size up.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Ten hundredths make one tenth",
+     "def": "**Whenever you collect ten small cubes, trade them for one rod.**\n• 0.45 + 0.68: the hundredths give 13, which is more than ten.\n• Trade ten of them for one tenth, leaving 3 hundredths.\n• The answer is 1.13.",
+     "hint": "Same trade as 10 ones making a ten — the seats just have new names.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Regrouping to subtract",
+     "def": "**If you do not have enough of a block, trade one of the next size up for ten of the size you need.**\n• To take 9 hundredths from 1.57, break a tenth into ten hundredths first.\n• Then you have 17 hundredths to work with.",
+     "hint": "Break a bigger block down before you take away, not after.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Estimate before you build",
+     "def": "**Estimate the answer first, so you can tell whether the model came out sensible.**\n• For 0.85 + 0.40, think \"about 0.80 + 0.40, so about 1.20\".\n• A model giving 0.125 or 12.5 would stand out instantly as wrong.",
+     "hint": "The estimate is what catches a decimal point in the wrong place.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The model and the written method agree",
+     "def": "**Trading blocks and carrying digits are the same move written two ways.**\n• Trading ten hundredths for a tenth IS carrying a 1 into the tenths column.\n• Once you trust the blocks, the written method is a shortcut for them.",
+     "hint": "If the two ever disagree, it is the written work that slipped.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using place-value blocks where a flat is one whole, a rod is one tenth and a small cube is one hundredth, which blocks show 1.24?",
+     "opts": [
+      "One flat, two rods and four small cubes",
+      "One flat, four rods and two small cubes",
+      "Two flats, one rod and four small cubes",
+      "One flat, twenty rods and four small cubes"
+     ],
+     "ans": 0,
+     "hint": "Read the digits in order: ones, tenths, hundredths.",
+     "steps": [
+      "The 1 is in the ones place — one flat.",
+      "The 2 is in the tenths place — two rods.",
+      "The 4 is in the hundredths place — four small cubes."
+     ],
+     "ex": {
+      "main": "**One flat, two rods and four small cubes.** Each digit names how many of that block you need, reading left to right.",
+      "tip": "Swapping the rods and cubes would build 1.42 instead — a different number entirely."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Adding 0.45 and 0.68 with place-value blocks, the hundredths come to 13. What should you do?",
+     "opts": [
+      "Write 13 in the hundredths place and carry on",
+      "Trade ten hundredths for one tenth, leaving three hundredths",
+      "Trade ten hundredths for one whole, leaving three hundredths",
+      "Trade three hundredths for one tenth, leaving ten hundredths"
+     ],
+     "ans": 1,
+     "hint": "Ten of a block trades for exactly one of the next size UP.",
+     "steps": [
+      "13 hundredths is more than ten, so a trade is needed.",
+      "Ten hundredths make one tenth.",
+      "Trading leaves 1 tenth carried over and 3 hundredths behind.",
+      "The final answer is 1.13."
+     ],
+     "ex": {
+      "main": "**Trade ten hundredths for one tenth, leaving three hundredths.** Ten of any block is worth exactly one of the next size up, never one of the size two steps up.",
+      "tip": "This trade is the same thing as carrying a 1 into the tenths column in written addition."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "To subtract 9 hundredths from 1.57 using blocks, what has to happen first?",
+     "opts": [
+      "Trade one hundredth for ten tenths",
+      "Trade one whole for ten tenths",
+      "Trade one tenth for ten hundredths",
+      "Nothing — there are already enough hundredths"
+     ],
+     "ans": 2,
+     "hint": "You need 9 hundredths but only have 7. Where can more come from?",
+     "steps": [
+      "1.57 has only 7 hundredths, and 9 are needed.",
+      "The next size up is the tenths.",
+      "Trading one tenth gives ten more hundredths, making 17.",
+      "Now 9 can be taken away, leaving 8 hundredths."
+     ],
+     "ex": {
+      "main": "**Trade one tenth for ten hundredths.** Regrouping always borrows from the next place up, which turns 7 hundredths into 17.",
+      "tip": "Doing the trade before you subtract is what stops the classic error of taking the smaller digit from the larger one out of habit."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Before modelling 0.85 + 0.40 with blocks, a student estimates the answer as \"about 1.20.\" Why is estimating first useful?",
+     "opts": [
+      "It makes the blocks quicker to count out and sort",
+      "It means the model does not have to be built carefully",
+      "It replaces the need to add the numbers at all",
+      "It gives something to check the model against"
+     ],
+     "ans": 3,
+     "hint": "What would you notice if the model gave 0.125?",
+     "steps": [
+      "The estimate says the answer should be near 1.20.",
+      "If the blocks gave 0.125, that is nowhere near 1.20.",
+      "The gap tells you something went wrong before you move on.",
+      "The real answer is 1.25, which does sit near the estimate."
+     ],
+     "ex": {
+      "main": "**It gives something to check the model against.** An estimate is a safety net — it catches an answer that is out by a factor of ten, which is the commonest decimal error there is.",
+      "tip": "Estimating first is a habit worth keeping for written work too, not just models."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A model shows 1 whole, 1 tenth and 3 hundredths. What number is it?",
+     "opts": [
+      "1.13",
+      "1.31",
+      "1.03",
+      "11.3"
+     ],
+     "ans": 0,
+     "hint": "Take the blocks in order: wholes, then tenths, then hundredths.",
+     "steps": [
+      "1 whole gives the digit 1 in the ones place.",
+      "1 tenth gives the digit 1 in the tenths place.",
+      "3 hundredths give the digit 3 in the hundredths place.",
+      "Reading across: 1.13."
+     ],
+     "ex": {
+      "main": "**1.13.** Each block count becomes the digit in its own place, in order from largest block to smallest.",
+      "tip": "Reading the tenths and hundredths the wrong way round gives 1.31 — a common slip when the blocks are jumbled on the desk."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student models 0.7 + 0.5 and says the answer is 0.12, because 7 + 5 = 12. What is the mistake?",
+     "opts": [
+      "They should have added 7 and 5 to get 13 instead of 12",
+      "Twelve tenths is more than one whole, so ten of them trade up to make 1.2",
+      "Tenths cannot be added to tenths without changing them to hundredths",
+      "The answer should be 0.012 rather than 0.12"
+     ],
+     "ans": 1,
+     "hint": "Twelve tenths — is that less than one whole, or more?",
+     "steps": [
+      "7 tenths plus 5 tenths is 12 tenths.",
+      "Ten tenths make one whole, so 12 tenths is more than a whole.",
+      "Trade ten of them for 1 whole, leaving 2 tenths.",
+      "The answer is 1.2, not 0.12."
+     ],
+     "ex": {
+      "main": "**Twelve tenths is more than one whole, so ten of them trade up to make 1.2.** Writing \"12\" into the tenths place skips the trade, and no place can hold a digit of 12.",
+      "tip": "Any time a column total reaches ten or more, a trade is owed. A place value only ever holds a single digit."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which addition needs a trade from hundredths into tenths?",
+     "opts": [
+      "0.42 + 0.15",
+      "0.31 + 0.24",
+      "0.36 + 0.27",
+      "0.53 + 0.16"
+     ],
+     "ans": 2,
+     "hint": "Add just the hundredths digits of each pair and see which total reaches ten.",
+     "steps": [
+      "0.36 + 0.27: the hundredths are 6 and 7, which make 13 — over ten.",
+      "0.31 + 0.24: 1 and 4 make 5, no trade.",
+      "0.42 + 0.15: 2 and 5 make 7, no trade.",
+      "0.53 + 0.16: 3 and 6 make 9, which is still under ten."
+     ],
+     "ex": {
+      "main": "**0.36 + 0.27.** Its hundredths add to 13, and any column total of ten or more owes a trade into the next place.",
+      "tip": "Checking just the smallest column first is a fast way to predict whether regrouping is coming."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using blocks to find 1.24 + 0.35, what is the total?",
+     "opts": [
+      "4.74",
+      "1.69",
+      "1.49",
+      "1.59"
+     ],
+     "ans": 3,
+     "hint": "Add each size of block separately — wholes with wholes, tenths with tenths.",
+     "steps": [
+      "Wholes: 1 + 0 = 1.",
+      "Tenths: 2 + 3 = 5.",
+      "Hundredths: 4 + 5 = 9.",
+      "No column reaches ten, so no trading is needed: 1.59."
+     ],
+     "ex": {
+      "main": "**1.59.** Each size of block is combined with its own kind, and since no column reached ten there was nothing to trade.",
+      "tip": "Not every decimal addition needs regrouping — checking first tells you how much work is actually ahead."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why is trading ten hundredths for one tenth the same move as \"carrying\" in written addition?",
+     "opts": [
+      "Both replace ten of one place with one of the next place up",
+      "Both add an extra one to the answer at the end",
+      "Both only happen when the answer is a whole number",
+      "Both are shortcuts that give a slightly different answer"
+     ],
+     "ans": 0,
+     "hint": "What is physically happening to the blocks when you carry a 1?",
+     "steps": [
+      "Carrying writes a small 1 above the next column left.",
+      "That 1 stands for one of the larger unit.",
+      "It appeared because ten of the smaller unit were collected.",
+      "Trading blocks does exactly that, just where you can see it."
+     ],
+     "ex": {
+      "main": "**Both replace ten of one place with one of the next place up.** The written carry is shorthand for the trade — same action, one done with blocks and one with a pencil.",
+      "tip": "This is why the blocks are worth trusting: they are not a different method, they are the same method made visible."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using blocks to find 0.92 − 0.45, what is the difference?",
+     "opts": [
+      "0.57",
+      "0.47",
+      "0.53",
+      "0.43"
+     ],
+     "ans": 1,
+     "hint": "You need 5 hundredths but have only 2. Trade first.",
+     "steps": [
+      "There are 2 hundredths but 5 are needed, so trade one tenth for ten hundredths.",
+      "That leaves 8 tenths and 12 hundredths.",
+      "Hundredths: 12 − 5 = 7.",
+      "Tenths: 8 − 4 = 4. The difference is 0.47."
+     ],
+     "ex": {
+      "main": "**0.47.** Trading one tenth into ten hundredths first gives enough to subtract from, leaving 4 tenths and 7 hundredths.",
+      "tip": "Subtracting the smaller digit from the larger one in each column without trading gives 0.53 — a wrong answer that feels right, which is what makes it dangerous."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 2",
+   "libv": 1
+  }
+ }
+}

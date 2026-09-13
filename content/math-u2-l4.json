@@ -1,0 +1,342 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2u4": {
+   "id": "unit-m2u4",
+   "type": "unit",
+   "updatedAt": 1789308769273,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 2 · Lesson 4: Add Decimals",
+   "srcName": "Unit 2 textbook scan, Lesson 2-4 (Drive)",
+   "source": "enVision Topic 2 textbook scan — Add and Subtract Decimals (Drive)",
+   "summary": {
+    "text": "Lesson 2-4 of the Topic 2 textbook scan covers adding decimals in written columns: lining up the decimal points so each place value meets its own kind, annexing zeros so ragged decimals line up, using partial sums, and adding a whole number to a decimal.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the written method she will use for the rest of the year, and it is only three ideas: line up the points, fill the gaps with zeros, then add exactly as she already does with whole numbers.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Add decimals by lining up the decimal points",
+     "from": "source"
+    },
+    {
+     "text": "Annex zeros so numbers with different decimal lengths line up",
+     "from": "source"
+    },
+    {
+     "text": "Use partial sums to add decimals place by place",
+     "from": "source"
+    },
+    {
+     "text": "Use an estimate to check the decimal point landed in the right place",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Two errors account for nearly every wrong answer in this lesson and both are targeted directly. The first is right-aligning the numbers instead of aligning the decimal points, which quietly adds tenths to hundredths — the 5.6 + 3.75 question offers 9.31 as a real option for exactly that reason. The second is the textbook's own André example: adding the digits with no regard for the decimal point at all, getting 3,938 instead of 42.98. The digits are RIGHT in that error, which is what makes it so convincing and why the estimate habit matters more than any rule. Also worth knowing: she needs to be comfortable that 5.6 and 5.60 are the same number, which has its own card and question here.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "The written method. Line up the points and the rest is ordinary addition.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Line up the decimal points",
+     "def": "**Write the numbers so the decimal points sit in a vertical line — that lines up every place value at once.**\n• Tenths land under tenths, hundredths under hundredths.\n• Lining up the right-hand ends instead is the commonest way to get a wrong answer.",
+     "hint": "The decimal points are the anchor, not the last digits.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Annex zeros to fill the gaps",
+     "def": "**You can write extra zeros on the right of a decimal without changing its value.**\n• 5.6 can be written 5.60, so it lines up with 3.75.\n• 5.6 and 5.60 are the same number — the zero just holds the seat.",
+     "hint": "A zero on the RIGHT of a decimal is free. One on the left is not.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Partial sums",
+     "def": "**Add one place at a time and then combine the pieces.**\n• 21.39 + 21.59: hundredths give 0.18, tenths 0.8, ones 2, tens 40.\n• 40 + 2 + 0.8 + 0.18 = 42.98.",
+     "hint": "Adding place by place makes each step small enough to check.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Adding a whole number to a decimal",
+     "def": "**A whole number has a decimal point hiding at its right-hand end.**\n• 14 is 14.00, so 14 + 6.28 lines up as 14.00 + 6.28 = 20.28.\n• The whole number never changes the digits after the point on its own.",
+     "hint": "Write the invisible point in and the line-up solves itself.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Estimate to check the point",
+     "def": "**A quick estimate catches a decimal point in the wrong place instantly.**\n• 21.39 + 21.59 is about 21 + 22 = 43, so 42.98 is believable.\n• An answer of 4.298 or 429.8 would fail that check on sight.",
+     "hint": "Wrong digits are rare; a wrong decimal point is common.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When adding 5.6 and 3.75 in columns, what should you line up?",
+     "opts": [
+      "The decimal points",
+      "The right-hand ends of the numbers",
+      "The first digits of each number",
+      "The largest digits in each number"
+     ],
+     "ans": 0,
+     "hint": "Which alignment puts tenths under tenths?",
+     "steps": [
+      "Each column in a written sum has to hold one place value.",
+      "Lining up the decimal points puts ones under ones and tenths under tenths.",
+      "Lining up the right-hand ends would put 6 tenths under 5 hundredths, which are not the same size."
+     ],
+     "ex": {
+      "main": "**The decimal points.** Aligning them lines up every place value at once, which is the whole reason the method works.",
+      "tip": "Right-aligning is the habit carried over from whole numbers, and it is exactly what breaks here."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5.6 + 3.75?",
+     "opts": [
+      "9.31",
+      "9.35",
+      "4.31",
+      "8.35"
+     ],
+     "ans": 1,
+     "hint": "Write 5.6 as 5.60 first so both numbers have hundredths.",
+     "steps": [
+      "Write 5.6 as 5.60 so the columns line up.",
+      "Hundredths: 0 + 5 = 5.",
+      "Tenths: 6 + 7 = 13, so write 3 and carry one to the ones.",
+      "Ones: 5 + 3 + 1 = 9. The sum is 9.35."
+     ],
+     "ex": {
+      "main": "**9.35.** Annexing the zero to make 5.60 lines the columns up, and the tenths then carry one into the ones place.",
+      "tip": "Getting 9.31 means the numbers were right-aligned — 6 tenths added to 5 hundredths instead of to 7 tenths."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 14 + 6.28?",
+     "opts": [
+      "6.42",
+      "20.42",
+      "20.28",
+      "14.28"
+     ],
+     "ans": 2,
+     "hint": "Where is the decimal point in a whole number?",
+     "steps": [
+      "14 is the same as 14.00.",
+      "Line up: 14.00 + 6.28.",
+      "Hundredths 0 + 8 = 8, tenths 0 + 2 = 2, ones 4 + 6 = 10.",
+      "Carry the ten: the sum is 20.28."
+     ],
+     "ex": {
+      "main": "**20.28.** Writing 14 as 14.00 makes the line-up obvious, and the decimal part comes through unchanged because the whole number has nothing after its point.",
+      "tip": "A whole number always has an invisible decimal point at its right-hand end. Writing it in costs nothing and prevents the mess."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student adds 21.39 + 21.59 and writes 3,938. What mistake did they make?",
+     "opts": [
+      "They lined up the decimal points but added wrongly",
+      "They added the tenths and hundredths in the wrong order",
+      "They forgot to carry from the hundredths into the tenths",
+      "They ignored the decimal points and added the digits as whole numbers"
+     ],
+     "ans": 3,
+     "hint": "How big should the answer be? Estimate 21 + 22 first.",
+     "steps": [
+      "An estimate says the answer should be near 43.",
+      "3,938 is nowhere near 43 — it is nearly a hundred times too big.",
+      "2139 + 2159 = 4298, so the digits came from adding without the points.",
+      "The real answer is 42.98."
+     ],
+     "ex": {
+      "main": "**They ignored the decimal points and added the digits as whole numbers.** The digits 4298 are even correct — only the decimal point is missing, which is what makes the answer so far out.",
+      "tip": "This is the exact error a ten-second estimate catches. The digits being right is what makes it feel convincing."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.45 + 0.68?",
+     "opts": [
+      "1.13",
+      "1.03",
+      "0.13",
+      "1.23"
+     ],
+     "ans": 0,
+     "hint": "The hundredths add to more than ten. What happens then?",
+     "steps": [
+      "Hundredths: 5 + 8 = 13, so write 3 and carry one tenth.",
+      "Tenths: 4 + 6 + 1 = 11, so write 1 and carry one whole.",
+      "Ones: 0 + 0 + 1 = 1.",
+      "The sum is 1.13."
+     ],
+     "ex": {
+      "main": "**1.13.** Both columns carried — the hundredths into the tenths, and then the tenths into the ones.",
+      "tip": "Two carries in a row is common with decimals. Getting 0.13 means the second carry was dropped."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Using partial sums for 32.4 + 15.3, which set of pieces is correct?",
+     "opts": [
+      "40 + 7 + 0.07",
+      "40 + 7 + 0.7",
+      "4 + 7 + 0.7",
+      "47 + 7 + 0.7"
+     ],
+     "ans": 1,
+     "hint": "Break each number by place, then add matching places.",
+     "steps": [
+      "Tens: 30 + 10 = 40.",
+      "Ones: 2 + 5 = 7.",
+      "Tenths: 0.4 + 0.3 = 0.7.",
+      "Combining: 40 + 7 + 0.7 = 47.7."
+     ],
+     "ex": {
+      "main": "**40 + 7 + 0.7.** Each place is added to its own kind, and the pieces recombine to 47.7.",
+      "tip": "Partial sums are slower to write but much easier to check, because every piece is a single small addition."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Is 5.6 the same number as 5.60?",
+     "opts": [
+      "No — 5.60 counts hundredths that 5.6 does not have",
+      "No — the extra place makes 5.60 ten times larger",
+      "Yes — a zero on the right of a decimal adds no value",
+      "Only while they are lined up in a column to be added"
+     ],
+     "ans": 2,
+     "hint": "Think about the blocks: does 5.6 have any hundredths at all?",
+     "steps": [
+      "5.6 means 5 wholes and 6 tenths.",
+      "5.60 means 5 wholes, 6 tenths and 0 hundredths.",
+      "Zero hundredths is nothing at all, so no value was added.",
+      "The two are the same number."
+     ],
+     "ex": {
+      "main": "**Yes — a zero on the right of a decimal does not change its value.** It fills an empty seat so the columns line up, and an empty seat holds nothing.",
+      "tip": "This is why annexing zeros is allowed. A zero on the LEFT of the whole-number part would be different — 05.6 is just untidy, but 0.56 is a different number entirely."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A swimmer's two legs of a relay take 23.48 seconds and 19.7 seconds. What is the combined time?",
+     "opts": [
+      "23.67 seconds",
+      "43.55 seconds",
+      "42.18 seconds",
+      "43.18 seconds"
+     ],
+     "ans": 3,
+     "hint": "Give 19.7 a hundredths digit before you line the columns up.",
+     "steps": [
+      "Write 19.7 as 19.70.",
+      "Hundredths: 8 + 0 = 8.",
+      "Tenths: 4 + 7 = 11, write 1 and carry one.",
+      "Ones and tens: 23 + 19 + 1 = 43. The total is 43.18 seconds."
+     ],
+     "ex": {
+      "main": "**43.18 seconds.** Annexing the zero onto 19.70 keeps the hundredths column honest, and the tenths then carry into the ones.",
+      "tip": "An estimate of 23 + 20 = 43 confirms the answer sits where it should."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which expression has a sum of exactly 12.9?",
+     "opts": [
+      "0.02 + 12 + 0.88",
+      "0.06 + 12.03",
+      "6.2 + 3.4 + 2.3",
+      "3.01 + 2.01 + 7.7"
+     ],
+     "ans": 0,
+     "hint": "Add each one carefully — the near misses are close on purpose.",
+     "steps": [
+      "0.02 + 12 + 0.88: the decimals make 0.90, so the total is 12.90.",
+      "Checking another: 0.06 + 12.03 = 12.09, not 12.9.",
+      "6.2 + 3.4 + 2.3 = 11.9, and 3.01 + 2.01 + 7.7 = 12.72.",
+      "Only the first comes to exactly 12.9."
+     ],
+     "ex": {
+      "main": "**0.02 + 12 + 0.88.** Its two decimal parts combine to 0.90, which with the 12 gives exactly 12.90 — the same number as 12.9.",
+      "tip": "Notice 12.09 and 12.90 are different numbers even though they use the same digits. Place, not digits, is what decides value."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7.05 + 0.9 + 2.4?",
+     "opts": [
+      "10.25",
+      "10.35",
+      "9.45",
+      "10.44"
+     ],
+     "ans": 1,
+     "hint": "Write every number with two decimal places, then add straight down.",
+     "steps": [
+      "Write them as 7.05, 0.90 and 2.40.",
+      "Hundredths: 5 + 0 + 0 = 5.",
+      "Tenths: 0 + 9 + 4 = 13, write 3 and carry one.",
+      "Ones: 7 + 0 + 2 + 1 = 10. The sum is 10.35."
+     ],
+     "ex": {
+      "main": "**10.35.** Writing all three with two decimal places makes a three-number column add no harder than a two-number one.",
+      "tip": "With three or more addends the line-up matters even more, because one misplaced row throws every column after it."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 2",
+   "libv": 1
+  }
+ }
+}

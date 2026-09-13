@@ -1640,7 +1640,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v163 · approve in bulk';
+const APP_VERSION = 'v164 · unit 2, by lesson';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3351,7 +3351,13 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/math-t3-extra.json', 'content/science-scales.json',
   'content/science-nos-practice.json', 'content/science-nos-test.json',
   'content/english-plot-diagram.json', 'content/math-t3-numberline.json', 'content/az-latlong.json',
-  'content/science-phases-matter.json', 'content/science-phase-changes.json'];
+  'content/science-phases-matter.json', 'content/science-phase-changes.json',
+  /* Unit 2 — Add and Subtract Decimals, one file per LESSON (Chris, 2026-09:
+     "she usually does a lesson per day at school").  Its own shelf, not more
+     parts of Unit 1: this is the grade-5 book, whose Topic 2 is decimals,
+     while the `Topic 2 · 2-x` run on Unit 1 is the grade-4 book, whole numbers. */
+  'content/math-u2-l1.json', 'content/math-u2-l2.json', 'content/math-u2-l3.json',
+  'content/math-u2-l4.json', 'content/math-u2-l5.json', 'content/math-u2-l6.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same

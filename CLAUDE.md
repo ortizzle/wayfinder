@@ -2004,6 +2004,97 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Unit 2 is a book of LESSONS, not topics (v164)
+
+Chris: *"I added a unit 2 for river. She usually does a lesson per day at
+school. Can we break up practice in that way within the unit? I know it doesn't
+match unit 1 with topics, but lessons make more sense now that we're in the
+thick of it."*  So Unit 2 ships as its own shelf holding **six lessons, one per
+unit record**, each `round:10` — one sitting, one school day.
+
+`Unit 2.pdf` (Accelerated Math folder, 2026-09-13) is enVision **Topic 2, Add
+and Subtract Decimals**, lessons 2-1 to 2-6.  Clean text layer, read straight
+through.
+
+> ⚠️ **This is NOT the `Topic 2 · 2-x` run already on the Unit 1 shelf, and
+> checking that first is the whole reason this shipped correctly.** Unit 1's
+> Topic 2 is the **grade-4** book — 2-3 is *Add Whole Numbers*. This PDF is the
+> **grade-5** book (every page footer reads "Savvas … 5"), whose Topic 2 is
+> decimals. Unit 1's "Topic 3" is likewise the grade-5 book's Topic 1, exactly
+> as the math-program note predicts: *the folder names are authoritative over
+> the book's printed topic numbers.* Titling these `2-1 … 2-6` would have put
+> two visible "2-1"s on one subject screen pointing at different maths.
+
+**The titles say `Unit 2 · Lesson N: Title`, and the reason is a render-site
+fact, not a preference.** Both shelves draw on the Math subject screen at the
+same time, so the lesson-numbered form is what keeps them distinguishable. The
+book's own label (`Lesson 2-1`) rides in `srcName`/`source` so she can still
+find the pages. If Chris would rather see the book's numbering, it is a retitle
+of six files keeping their ids — the `unit-m11` rule.
+
+| id | title |
+|---|---|
+| `unit-m2u1` | `Unit 2 · Lesson 1: Mental Math with Decimals` |
+| `unit-m2u2` | `Unit 2 · Lesson 2: Estimate Sums and Differences` |
+| `unit-m2u3` | `Unit 2 · Lesson 3: Adding and Subtracting with Models` |
+| `unit-m2u4` | `Unit 2 · Lesson 4: Add Decimals` |
+| `unit-m2u5` | `Unit 2 · Lesson 5: Subtract Decimals` |
+| `unit-m2u6` | `Unit 2 · Lesson 6: Model with Math: Bar Diagrams` |
+
+- **Shelved with `series`, not by retitling** — `seriesOf()` honours it ahead of
+  the ` · ` convention, the same mechanism v160 used to gather Unit 1.
+- **No `order` field anywhere**, per the v102 whole-shelf-bucket warning. Plain
+  numeric-aware title sort already lands Lesson 1 … Lesson 6 correctly.
+- **Every number is computed with `Decimal` in the builder and asserted before
+  it can be written into a question.** Floats are not safe for money
+  (0.1 + 0.2 ≠ 0.3) and this entire unit is decimal arithmetic.
+- The traps that actually cost marks each get a card and a question: the
+  **direction of the compensation adjustment** (it flips between adding and
+  subtracting — the commonest slip in 2-1); **right-aligning instead of
+  decimal-aligning**; the textbook's own André error (adding the digits with no
+  decimal point at all — the digits come out RIGHT, which is what makes it
+  convincing); **dropping the second regrouping** when two are needed in a row;
+  and choosing the rounding direction to match what the estimate is FOR.
+
+> ⚠️ **The first build shipped a question with three correct answers.** The
+> textbook's own item is *"Circle all of the subtraction problems with a
+> difference of 1.65"* — a **multi-select**, which does not survive being dropped
+> into single-answer MC unchanged. Three of the four options really do come to
+> 1.65. Caught by re-reading my own output, not by any checker: `check_content`
+> validates structure (4 unique options, `ans` in range) and cannot know that
+> two options are both true. Rewritten as *"which one does NOT?"*, which has
+> exactly one answer and still forces every option to be computed — and the
+> builder now **asserts** that exactly one of the four differs, so the rewrite
+> is pinned. **Any item lifted from a "circle all that apply" original needs
+> this check by hand.**
+
+`check_content.py` reports zero errors. Nine length-bias warnings on the first
+pass (worst 68%) were fixed by **giving the distractors real substance and
+trimming the answer's trailing clause**, never by padding — four remain, worst
+23%, inside the library's accepted band.
+
+> `tools/test_unit1_shelf.js` failed on this change, correctly: it asserted
+> *"math has exactly ONE shelf"*, true until today and deliberately false now.
+> It also reached its book through `sh.shelves[0]`. Both are fixed to pin the
+> **rule** — Unit 1 exists by NAME and still holds all 24 parts in order — since
+> a count assertion fails on every future book and an index silently starts
+> testing a different one. Same lesson as the `test_suggest.js` date and the
+> `test_bulkapprove.js` weekend: pin what must stay true, not what happens to
+> be true today.
+
+`tools/test_unit2_shelf.js` covers it: two shelves with nothing loose, the six
+in teaching order, Unit 1's grade-4 Topic 2 run untouched beside them, no Unit 2
+title reusing a `2-N` label, the `classId` orphan trap, `series`/`libv`/`round`
+on every lesson, all three levels and all four answer slots used, no duplicated
+option anywhere, a full ten-question round that logs, and a deck that renders.
+
+> **Still owed:** the PDF is her own workbook with her handwriting in it, and
+> Drive's session expired before it could be rendered with `pypdfium2` to read
+> her answers. The OCR shows fragments (`373.4-153 220.4 +0.1`) too mangled to
+> grade, and nothing here was inferred from them. Worth a pass when Drive is
+> back — her actual mistakes are the most useful content in the file, the way
+> they were for Phases of Matter.
+
 ### The quiz covers phase changes too (v162)
 
 Chris forwarded the teacher's Science update of 9/10, which names the first

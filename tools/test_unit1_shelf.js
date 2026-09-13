@@ -27,18 +27,25 @@ const fs = require('fs'), glob = require('path');
     });
     saveLocal();
     const sh = shelvesFor('math');
+    // Find Unit 1 BY NAME, never by index. Maths is no longer a one-book
+    // subject (Unit 2 shipped as its own shelf in v164), and indexing [0]
+    // would silently start testing a different book the day the sort moved.
+    const u1 = sh.shelves.find(s => s.name === 'Unit 1');
     return {
       shelfNames: sh.shelves.map(s=>s.name),
       loose: sh.loose.map(u=>u.title),
-      parts: sh.shelves[0] ? sh.shelves[0].lessons.map(u=>lessonLabel(u)) : [],
-      titles: sh.shelves[0] ? sh.shelves[0].lessons.map(u=>u.title) : [],
-      ids: sh.shelves[0] ? sh.shelves[0].lessons.map(u=>u.id) : []
+      parts: u1 ? u1.lessons.map(u=>lessonLabel(u)) : [],
+      titles: u1 ? u1.lessons.map(u=>u.title) : [],
+      ids: u1 ? u1.lessons.map(u=>u.id) : []
     };
   }, data);
 
   const out=[]; const T=(n,c)=>out.push((c?'ok   ':'FAIL ')+n);
-  T('math has exactly one shelf, named Unit 1',
-    res.shelfNames.length===1 && res.shelfNames[0]==='Unit 1');
+  // Pin the RULE (Unit 1 exists and is whole), not the shelf count — Unit 2
+  // joined it on purpose, and a count assertion would fail on every future book.
+  T('Unit 1 is a shelf on maths', res.shelfNames.includes('Unit 1'));
+  T('every maths shelf is a real named book',
+    res.shelfNames.length>=1 && res.shelfNames.every(n=>/^Unit \d+$/.test(n)));
   T('nothing left loose outside it', res.loose.length===0);
   T('all 24 parts are on it', res.parts.length===24);
   T('every part label is distinct', new Set(res.parts).size===res.parts.length);

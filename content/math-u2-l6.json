@@ -1,0 +1,342 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2u6": {
+   "id": "unit-m2u6",
+   "type": "unit",
+   "updatedAt": 1789308769276,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 2 · Lesson 6: Model with Math: Bar Diagrams",
+   "srcName": "Unit 2 textbook scan, Lesson 2-6 (Drive)",
+   "source": "enVision Topic 2 textbook scan — Add and Subtract Decimals (Drive)",
+   "summary": {
+    "text": "Lesson 2-6 of the Topic 2 textbook scan is about modelling with math: finding the hidden question inside a multi-step problem, drawing bar diagrams to show how the amounts relate, and writing equations from those diagrams.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the lesson that turns decimal arithmetic into something she can actually use. The arithmetic is the easy part by now; deciding what to compute is the skill.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Find the hidden question inside a two-step problem",
+     "from": "source"
+    },
+    {
+     "text": "Draw a bar diagram to represent a total or a remaining amount",
+     "from": "source"
+    },
+    {
+     "text": "Write and solve equations from a bar diagram",
+     "from": "source"
+    },
+    {
+     "text": "Check that an answer makes sense in the story, not just in the arithmetic",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The transferable idea here is \"where does the ? sit?\" — on the whole bar it means add, on a part it means subtract. That one question decides the operation far more reliably than hunting for keywords, and it has its own card and question. The second idea worth reinforcing is checking the answer against the STORY: one question here gives arithmetic that is perfectly correct ($28.50 − $20 = $8.50) attached to a situation that is impossible, because you cannot get change from handing over less than the price. Both of the two-step questions are broken into their separate steps as their own questions too, so if she stumbles it is clear whether the problem was the plan or the arithmetic.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "The last one. Find the hidden question first, then the numbers are easy.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The hidden question",
+     "def": "**Some problems ask one thing but need another answered first.**\n• \"How much change?\" first needs \"what did it all cost?\".\n• Finding the hidden question is usually the whole difficulty.",
+     "hint": "If you cannot answer the question directly, something has to come first.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "A bar diagram for a total",
+     "def": "**Draw one long bar for the total, split into a part for each amount, with a ? on the whole bar.**\n• Three prices become three sections; the ? sits above the whole thing.\n• A bar split into parts means ADD.",
+     "hint": "The ? on the whole bar means you are hunting the total.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "A bar diagram for what is left",
+     "def": "**Draw the total as the whole bar, mark the part you know, and put the ? on the rest.**\n• The known part and the ? together make the whole.\n• A ? on a PART means subtract.",
+     "hint": "Where the ? sits tells you which operation you need.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Two steps, two diagrams",
+     "def": "**A two-step problem usually needs two diagrams: one for the hidden question, one for the real one.**\n• First diagram: add the costs to find the total.\n• Second diagram: take the total off what you had.",
+     "hint": "Answer the hidden question, then use that answer in the next diagram.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Does the answer make sense?",
+     "def": "**Check the answer against the story, not just the arithmetic.**\n• Change from a purchase must be less than what you handed over.\n• Money left over cannot be more than you started with.",
+     "hint": "An answer that is arithmetically right can still be impossible.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A shopper buys three items and wants to know her change from $50. What hidden question has to be answered first?",
+     "opts": [
+      "What the three items cost altogether",
+      "How much change she got from each item",
+      "Which of the three items was most expensive",
+      "How much she had before she started shopping"
+     ],
+     "ans": 0,
+     "hint": "You cannot subtract from $50 until you know what to subtract.",
+     "steps": [
+      "Change means $50 minus what she spent.",
+      "The amount she spent is not given directly — only the three separate prices.",
+      "So the total cost must be found first.",
+      "That total is the hidden question."
+     ],
+     "ex": {
+      "main": "**What the three items cost altogether.** The change cannot be worked out until there is a single total to subtract from $50.",
+      "tip": "Naming the hidden question out loud before touching any numbers is the habit this whole lesson is built to teach."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A shopper buys items costing $18.75, $9.40 and $6.25. What is the total cost?",
+     "opts": [
+      "$34.30",
+      "$34.40",
+      "$33.40",
+      "$35.40"
+     ],
+     "ans": 1,
+     "hint": "Two of the three prices pair into a whole number.",
+     "steps": [
+      "$18.75 and $6.25 are compatible — their decimals make 1.00.",
+      "$18.75 + $6.25 = $25.",
+      "$25 + $9.40 = $34.40."
+     ],
+     "ex": {
+      "main": "**$34.40.** Pairing the $18.75 with the $6.25 gives a clean $25 first, which makes the last step easy.",
+      "tip": "A bar diagram of this would be one bar split into three sections with a ? above the whole thing — the picture for a total."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A shopper spends $34.40 and pays with $50. How much change should she get?",
+     "opts": [
+      "$16.60",
+      "$15.70",
+      "$15.60",
+      "$24.40"
+     ],
+     "ans": 2,
+     "hint": "The change and the amount spent together make $50.",
+     "steps": [
+      "Write $50 as $50.00.",
+      "Hundredths and tenths: regroup to take 40 from 00, giving 60.",
+      "Ones and tens: 49 − 34 = 15.",
+      "The change is $15.60."
+     ],
+     "ex": {
+      "main": "**$15.60.** In a bar diagram the $50 is the whole bar, the $34.40 is the known part, and the ? sits on what is left.",
+      "tip": "Check it makes sense: the change is less than the $50 handed over, as it must be."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student has $40, buys a book for $7.85 and a game for $12.30, and wants to know how much is left. Which pair of steps is right?",
+     "opts": [
+      "Subtract $12.30 from $7.85, then add on the $40",
+      "Subtract $7.85 from $40, then add $12.30 back on",
+      "Add $7.85, $12.30 and $40 all together",
+      "Add the two prices, then subtract that total from $40"
+     ],
+     "ans": 3,
+     "hint": "Both purchases come out of the same $40.",
+     "steps": [
+      "The two purchases together are what leaves the $40.",
+      "First find the total spent: $7.85 + $12.30 = $20.15.",
+      "Then take it off what was there: $40 − $20.15 = $19.85.",
+      "Two steps, in that order."
+     ],
+     "ex": {
+      "main": "**Add $7.85 and $12.30, then subtract that total from $40.** The hidden question is what was spent altogether; only then can it come off the $40.",
+      "tip": "Adding the $12.30 back on in step two would mean spending money and ending up richer, which the story rules out."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student has $40 and spends $20.15 altogether. How much is left?",
+     "opts": [
+      "$19.85",
+      "$19.95",
+      "$20.85",
+      "$60.15"
+     ],
+     "ans": 0,
+     "hint": "Write $40 with two decimal places before subtracting.",
+     "steps": [
+      "Write $40 as $40.00.",
+      "Regroup to subtract the hundredths and tenths: 00 − 15 becomes 100 − 15 = 85.",
+      "Ones and tens: 39 − 20 = 19.",
+      "So $19.85 is left."
+     ],
+     "ex": {
+      "main": "**$19.85.** Subtracting from a whole amount of money means regrouping across the zeros, which is why writing $40.00 first matters.",
+      "tip": "Sense-check: she spent about half her money, so having a bit under half left is exactly right."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In a bar diagram, the whole bar is labelled with a ? and it is split into four sections that each have a known amount. What operation does the diagram show?",
+     "opts": [
+      "Subtraction, because one section is missing",
+      "Addition, because the parts are known and the whole is not",
+      "Addition, because there are four sections rather than two",
+      "Subtraction, because the ? is on the bar"
+     ],
+     "ans": 1,
+     "hint": "Which is unknown here — the whole, or one of the parts?",
+     "steps": [
+      "Every section has a known amount.",
+      "The ? is on the whole bar.",
+      "Finding a whole from its parts means adding.",
+      "So the diagram shows addition."
+     ],
+     "ex": {
+      "main": "**Addition, because the parts are known and the whole is not.** Where the ? sits decides the operation — on the whole bar it means add, on a part it means subtract.",
+      "tip": "The number of sections is irrelevant. Four known parts and an unknown whole is still just addition."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student works out that a $28.50 purchase paid for with $20 leaves $8.50 in change. What is wrong?",
+     "opts": [
+      "The answer should be $48.50 instead",
+      "The subtraction was done in the wrong order but the answer is still right",
+      "The purchase cost more than was handed over, so there is no change at all",
+      "Nothing is wrong — $8.50 is correct"
+     ],
+     "ans": 2,
+     "hint": "Can you pay for something costing $28.50 using $20?",
+     "steps": [
+      "The item costs $28.50 and only $20 was handed over.",
+      "$20 is not enough to pay for it.",
+      "The student subtracted the smaller amount from the larger out of habit.",
+      "The real situation is that $8.50 more is still owed, not received."
+     ],
+     "ex": {
+      "main": "**The purchase cost more than was handed over, so there is no change at all.** The arithmetic $28.50 − $20 = $8.50 is fine; it is the meaning that is backwards.",
+      "tip": "This is why checking the answer against the story matters. Arithmetic alone cannot tell you that a situation is impossible."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A runner covers 7.85 km and 12.30 km on two days. How far did she run altogether?",
+     "opts": [
+      "4.45 km",
+      "20.05 km",
+      "19.15 km",
+      "20.15 km"
+     ],
+     "ans": 3,
+     "hint": "Line up the decimal points and add.",
+     "steps": [
+      "Line them up: 7.85 + 12.30.",
+      "Hundredths: 5 + 0 = 5. Tenths: 8 + 3 = 11, write 1 and carry.",
+      "Ones: 7 + 2 + 1 = 10, write 0 and carry. Tens: 1 + 1 = 2.",
+      "The total is 20.15 km."
+     ],
+     "ex": {
+      "main": "**20.15 km.** The tenths carried into the ones and the ones carried into the tens, so two carries ran through this one.",
+      "tip": "The 4.45 option is what you get by subtracting instead of adding — worth noticing that \"altogether\" always signals a total."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why is drawing a bar diagram useful even when you already know which operation to use?",
+     "opts": [
+      "It shows how the amounts relate to each other",
+      "It replaces the need to do any of the arithmetic",
+      "It is required before any answer counts as correct",
+      "It makes the numbers smaller and easier to work with"
+     ],
+     "ans": 0,
+     "hint": "What does the picture tell you that the numbers alone do not?",
+     "steps": [
+      "A diagram shows which amounts are parts and which is the whole.",
+      "That relationship is what decides whether to add or subtract.",
+      "If a step contradicts the picture, the error shows up straight away.",
+      "The arithmetic still has to be done either way."
+     ],
+     "ex": {
+      "main": "**It shows how the amounts relate, which makes a wrong step easier to spot.** The picture carries the structure of the problem, which is exactly the part that is easy to get wrong in a two-step question.",
+      "tip": "Diagrams earn their keep most on multi-step problems, where it is the plan rather than the arithmetic that usually fails."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A club needs $180 for buses, $215 for a hotel and $80 for meals. What is the total cost?",
+     "opts": [
+      "$465",
+      "$475",
+      "$395",
+      "$485"
+     ],
+     "ans": 1,
+     "hint": "Add the three amounts. Two of them pair neatly.",
+     "steps": [
+      "$180 + $215 = $395.",
+      "Alternatively pair $180 and $80 to make $260 first.",
+      "$260 + $215 = $475.",
+      "Either route gives the same total."
+     ],
+     "ex": {
+      "main": "**$475.** Pairing the $180 and the $80 gives a clean $260, which makes the last addition straightforward.",
+      "tip": "In a bar diagram this is one bar in three sections with a ? on the whole — and it is usually the hidden question inside a bigger \"how much more do they need?\" problem."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 2",
+   "libv": 1
+  }
+ }
+}

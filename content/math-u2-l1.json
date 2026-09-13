@@ -1,0 +1,339 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m2u1": {
+   "id": "unit-m2u1",
+   "type": "unit",
+   "updatedAt": 1789308769268,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 2 · Lesson 1: Mental Math with Decimals",
+   "srcName": "Unit 2 textbook scan, Lesson 2-1 (Drive)",
+   "source": "enVision Topic 2 textbook scan — Add and Subtract Decimals (Drive)",
+   "summary": {
+    "text": "Lesson 2-1 of the Topic 2 textbook scan covers adding and subtracting decimals in your head: the Commutative and Associative Properties, spotting compatible numbers that make a whole, and using compensation to round a number to something friendly and then adjust back.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Mental math is not a party trick here — it is the check on every written answer she produces later in the unit. Knowing that 6.25 and 4.75 make 11 is what tells her in one second whether a written sum is even close.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Use the Commutative and Associative Properties to reorder and regroup addends",
+     "from": "source"
+    },
+    {
+     "text": "Spot compatible numbers that add to a whole",
+     "from": "source"
+    },
+    {
+     "text": "Use compensation to add and subtract decimals mentally",
+     "from": "source"
+    },
+    {
+     "text": "Say which direction to adjust — and why it flips between adding and subtracting",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The one thing most likely to trip her up is the DIRECTION of the compensation adjustment, which is opposite for addition and subtraction. Rounding an addend up makes the sum too big (take the extra back off); rounding a subtrahend up takes away too much and makes the difference too small (add the extra back on). Two cards and three questions target exactly this. The other worthwhile idea is that the properties she is using are ADDITION properties — the lesson deliberately asks why they do not carry over to subtraction, which is the textbook's own closing question.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Start here — the whole unit leans on spotting the friendly pair.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The Commutative Property",
+     "def": "**You can add numbers in any order and the total does not change.**\n• 3.39 + 11.45 is the same total as 11.45 + 3.39.\n• It lets you move an addend next to the one it pairs well with.\n• It works for adding only — never for subtracting.",
+     "hint": "Commutative = commute = the numbers travel to new seats.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The Associative Property",
+     "def": "**You can regroup which addends you do first and the total does not change.**\n• (2.5 + 7.5) + 4.8 is the same total as 2.5 + (7.5 + 4.8).\n• Only the parentheses move; the order stays put.",
+     "hint": "Associate = who you group up with. The brackets move, not the numbers.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Compatible numbers",
+     "def": "**Numbers that are easy to compute in your head, usually because they make a whole.**\n• 6.25 and 4.75 are compatible: they make 11 exactly.\n• Hunt for hundredths that add to 100, or tenths that add to 10.",
+     "hint": "Look for the pair that lands on a whole number, then mop up the leftover.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Compensation when you ADD",
+     "def": "**Round an addend up to something friendly, then take the extra back off at the end.**\n• 3.98 + 5.45: add 4.00 + 5.45 = 9.45, then take back the 0.02 you added.\n• The answer is 9.43.",
+     "hint": "You borrowed to make it easy, so you have to pay it back.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Compensation when you SUBTRACT — the direction flips",
+     "def": "**If you subtract too much, you have to add the extra back on.**\n• 7.62 − 1.97: do 7.62 − 2.00 = 5.62, then add back the 0.03 you over-subtracted.\n• The answer is 5.65.\n• Taking away too much leaves you too low, so you climb back up.",
+     "hint": "Subtracting too much leaves you short — so add it back, do not take more.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which property lets you swap two addends into each other's places without changing the total?",
+     "opts": [
+      "The Commutative Property",
+      "The Associative Property",
+      "The Distributive Property",
+      "The Identity Property"
+     ],
+     "ans": 0,
+     "hint": "Which one is about ORDER rather than grouping?",
+     "steps": [
+      "The question is about moving numbers into different seats.",
+      "Changing the order of addends is the Commutative Property.",
+      "Changing the grouping would be the Associative Property instead."
+     ],
+     "ex": {
+      "main": "**The Commutative Property.** It is the one about order — the addends change seats and the total stays put.",
+      "tip": "Order is Commutative; grouping is Associative. Neither one works for subtraction."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which pair of numbers adds to a whole number, making them easy to compute mentally?",
+     "opts": [
+      "6.25 and 4.25",
+      "6.25 and 4.75",
+      "6.30 and 4.80",
+      "6.15 and 4.65"
+     ],
+     "ans": 1,
+     "hint": "Add just the hundredths of each pair and look for 100.",
+     "steps": [
+      "Compatible numbers are ones that make a whole.",
+      "Check the decimal parts: 0.25 and 0.75 add to 1.00 exactly.",
+      "6.25 + 4.75 = 11, a whole number."
+     ],
+     "ex": {
+      "main": "**6.25 and 4.75.** Their decimal parts make exactly 1.00, so the pair lands on 11 with nothing left over.",
+      "tip": "Hundredths that add to 100, or tenths that add to 10, are the pairs worth hunting for."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A scarf costs $12.60, a hat costs $8.40, and a pair of gloves costs $5.15. Using mental math, what is the total?",
+     "opts": [
+      "$26.05",
+      "$25.15",
+      "$26.15",
+      "$16.15"
+     ],
+     "ans": 2,
+     "hint": "Two of these three prices pair into a whole number.",
+     "steps": [
+      "$12.60 and $8.40 are compatible — their decimals make 1.00.",
+      "$12.60 + $8.40 = $21.",
+      "Then $21 + $5.15 = $26.15."
+     ],
+     "ex": {
+      "main": "**$26.15.** Pairing the $12.60 with the $8.40 gives a clean $21 first, which leaves an easy final step.",
+      "tip": "Scan all the addends before you start — the easy pair is rarely side by side."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Use compensation to find 3.98 + 5.45 mentally. What is the sum?",
+     "opts": [
+      "8.43",
+      "9.45",
+      "9.47",
+      "9.43"
+     ],
+     "ans": 3,
+     "hint": "Round 3.98 up to 4, then remember what you owe back.",
+     "steps": [
+      "3.98 is 0.02 below 4, so use 4.00 instead.",
+      "4.00 + 5.45 = 9.45.",
+      "You added 0.02 that was not there, so take it back off.",
+      "9.45 − 0.02 = 9.43."
+     ],
+     "ex": {
+      "main": "**9.43.** Rounding 3.98 up to 4 added 0.02 that did not belong, so the same 0.02 comes back off at the end.",
+      "tip": "Compensation always has two halves. Doing the easy sum and stopping is the whole trap."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Use compensation to find 7.62 − 1.97 mentally. What is the difference?",
+     "opts": [
+      "5.65",
+      "5.62",
+      "5.59",
+      "6.65"
+     ],
+     "ans": 0,
+     "hint": "You took away more than you were asked to. Does that leave you too high or too low?",
+     "steps": [
+      "1.97 is 0.03 below 2, so subtract 2.00 instead.",
+      "7.62 − 2.00 = 5.62.",
+      "You took away 0.03 too much, which left the answer too low.",
+      "Add the 0.03 back: 5.62 + 0.03 = 5.65."
+     ],
+     "ex": {
+      "main": "**5.65.** Subtracting 2.00 took away 0.03 more than the question asked, and taking too much leaves you short — so it is added back.",
+      "tip": "When you ADD, compensation takes back. When you SUBTRACT, it gives back. Getting the direction wrong is the commonest slip in the lesson."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student says \"addition can be done in any order, so subtraction can too.\" Why is that wrong?",
+     "opts": [
+      "Subtraction can be done in any order, but only with whole numbers",
+      "The number being taken away has to stay second, or the answer changes",
+      "Subtraction can be done in any order, but only when both numbers are decimals",
+      "Changing the order of a subtraction is fine as long as you round first"
+     ],
+     "ans": 1,
+     "hint": "Try it on small numbers: is 9 − 4 the same as 4 − 9?",
+     "steps": [
+      "Test the claim: 9 − 4 = 5.",
+      "Now flip it: 4 − 9 is not 5 at all.",
+      "The roles are different — one number is the amount you start with, the other is what you remove.",
+      "So the order of a subtraction is fixed."
+     ],
+     "ex": {
+      "main": "**The number being taken away has to stay second.** In addition both numbers do the same job, so they can swap; in subtraction they do different jobs.",
+      "tip": "The properties that let numbers move are addition properties. Check what job each number is doing before you move it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which regrouping makes 4.30 + 6.85 + 9.70 easiest to add in your head?",
+     "opts": [
+      "Add 6.85 and 9.70 first, then add 4.30",
+      "Add 4.30 and 6.85 first, then add 9.70",
+      "Add 4.30 and 9.70 first, then add 6.85",
+      "Add them strictly left to right without regrouping"
+     ],
+     "ans": 2,
+     "hint": "Which two of the three land on a whole number together?",
+     "steps": [
+      "Look for the pair whose decimals make 1.00.",
+      "0.30 and 0.70 make exactly 1.00.",
+      "4.30 + 9.70 = 14, a clean whole number.",
+      "Then 14 + 6.85 = 20.85, which is easy from there."
+     ],
+     "ex": {
+      "main": "**Add 4.30 and 9.70 first.** They make exactly 14, and adding 6.85 to a whole number is far easier than adding two ragged decimals.",
+      "tip": "The Associative Property is what makes this legal — you are only changing which pair goes first."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A shopper buys items costing $7.55, $2.45, and $6.30. What is the total?",
+     "opts": [
+      "$17.30",
+      "$16.20",
+      "$15.30",
+      "$16.30"
+     ],
+     "ans": 3,
+     "hint": "Two of the three prices make a whole number together.",
+     "steps": [
+      "$7.55 and $2.45 are compatible — 0.55 and 0.45 make 1.00.",
+      "$7.55 + $2.45 = $10.",
+      "$10 + $6.30 = $16.30."
+     ],
+     "ex": {
+      "main": "**$16.30.** The first two prices make a clean $10, which turns the last step into simple addition.",
+      "tip": "Money problems are full of compatible pairs on purpose — prices ending in 5 often pair up."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student computes 8.97 + 3.40 by doing 9.00 + 3.40 = 12.40, then writes 12.43 as the final answer. What went wrong?",
+     "opts": [
+      "They added the 0.03 back instead of taking it off",
+      "They should have rounded 3.40 instead of 8.97",
+      "They should not have used compensation on this problem at all",
+      "They rounded 8.97 to the wrong whole number"
+     ],
+     "ans": 0,
+     "hint": "They rounded an addend UP. Does the easy sum end up too big or too small?",
+     "steps": [
+      "8.97 was rounded up to 9.00, which is 0.03 more than the real number.",
+      "So 12.40 is 0.03 TOO BIG.",
+      "Fixing it means subtracting 0.03, not adding it.",
+      "The correct answer is 12.40 − 0.03 = 12.37."
+     ],
+     "ex": {
+      "main": "**They added the 0.03 back instead of taking it off.** Rounding an addend up makes the easy sum too big, so the adjustment has to come back down.",
+      "tip": "Ask yourself one question before adjusting: is my easy answer too big or too small? That decides the sign."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Find 15.08 − 4.99 using compensation. What is the difference?",
+     "opts": [
+      "10.08",
+      "10.09",
+      "10.07",
+      "11.09"
+     ],
+     "ans": 1,
+     "hint": "Round 4.99 up to 5, then decide which way to adjust.",
+     "steps": [
+      "4.99 is 0.01 below 5, so subtract 5.00 instead.",
+      "15.08 − 5.00 = 10.08.",
+      "That took away 0.01 too much, leaving the answer low.",
+      "Add it back: 10.08 + 0.01 = 10.09."
+     ],
+     "ex": {
+      "main": "**10.09.** Subtracting the friendly 5.00 removed one hundredth too many, so that hundredth is added back at the end.",
+      "tip": "Numbers ending in .99 are almost always worth rounding up — just remember the adjustment goes the other way for subtraction."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 2",
+   "libv": 1
+  }
+ }
+}
