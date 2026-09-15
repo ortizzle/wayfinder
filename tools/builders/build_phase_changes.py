@@ -475,6 +475,33 @@ q(Q, 2, 'Which of these is NOT one of the six phase changes?',
   'evaporating the water away.',
   'One substance changing, or two substances mixing? Different questions.')
 
+q(Q, 1, 'Which change is the exact reverse of evaporation?',
+  ['Condensation', 'Deposition', 'Sublimation', 'Freezing'],
+  0,
+  'Evaporation turns a liquid into a gas. Which change runs that backwards?',
+  ['Evaporation goes liquid \u2192 gas.',
+   'The reverse has to go gas \u2192 liquid.',
+   'Gas to liquid is condensation.',
+   'Freezing is liquid \u2192 solid, so it is the reverse of melting, not of evaporation.'],
+  '**Condensation.** Evaporation is liquid to gas, so its exact reverse is gas '
+  'back to liquid \u2014 and the two also run opposite ways on energy: evaporation '
+  'takes heat in, condensation gives it off.',
+  'Every change has exactly one reverse: find the phases it runs between and flip them.')
+
+q(Q, 1, 'Which change is the exact reverse of sublimation?',
+  ['Deposition', 'Condensation', 'Melting', 'Freezing'],
+  0,
+  'Sublimation skips the liquid stage entirely. Which other change does that?',
+  ['Sublimation goes solid \u2192 gas, skipping liquid.',
+   'The reverse must go gas \u2192 solid, also skipping liquid.',
+   'Gas straight to solid is deposition.',
+   'Condensation stops at liquid, so it is not the reverse of sublimation.'],
+  '**Deposition.** Sublimation and deposition are the pair that skip the liquid '
+  'stage \u2014 solid straight to gas, and gas straight back to solid. Frost forming '
+  'on a cold window is deposition.',
+  'The two changes that skip liquid are reverses of each other, the same way '
+  'melting and freezing are.')
+
 # ---- assemble --------------------------------------------------------------
 build('wayfinder', C, Q, 'unit-sci-phasechg',
       'Chemistry · 2 Phase Changes', 'science',
@@ -530,6 +557,6 @@ p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-phasechg']
 u['sorts'] = [SORT]
-u['libv'] = 1
+u['libv'] = 2
 io.open(p, 'w', encoding='utf-8').write(json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 1' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 2' % (SORT['title'], len(SORT['items'])))

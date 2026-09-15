@@ -48,9 +48,11 @@ card(C, 'Volume',
      '• Two objects can have the same volume and very different masses.')
 card(C, 'Temperature',
      '**Temperature measures how FAST the particles in something are moving — not '
-     'how close together they are.**\n'
+     'how close together they are, and not how many of them there are.**\n'
      '• Hotter means the particles are moving faster.\n'
-     '• Colder means they are moving slower. They never stop completely.',
+     '• Colder means they are moving slower. They never stop completely.\n'
+     '• A whole bathtub and one cup can sit at the same temperature. The bath has '
+     'far more particles; they are simply moving at the same speed.',
      hint='Fast = hot. Picture particles jiggling harder as the temperature climbs.')
 card(C, 'Fast, not close — the easy mix-up',
      '**Heating something usually spreads its particles out, but spreading out is '
@@ -484,6 +486,41 @@ q(Q, 2, 'A puddle of water is left out and slowly disappears over a hot '
   'is still somewhere.',
   'Disappearing from sight is not disappearing from existence.')
 
+q(Q, 2, 'A full bathtub of water and a single cup of water both read 40 \u00b0C on a '
+        'thermometer. What does that tell you?',
+  ['The particles in both are moving at the same average speed',
+   'The bath and the cup contain the same number of particles',
+   'The bath holds more heat energy, so it must read a higher temperature',
+   'The particles in the cup are packed closer together than in the bath'],
+  0,
+  'Temperature is about SPEED. Is it about amount at all?',
+  ['Temperature measures how fast particles move, nothing else.',
+   'Both read 40 \u00b0C, so the particles in both are moving at the same average speed.',
+   'The bath obviously holds far more particles than the cup.',
+   'So a reading tells you speed, never how much there is.'],
+  '**The particles in both are moving at the same average speed.** Temperature '
+  'is not a count and not a total \u2014 a bathtub and a cup can sit at the same '
+  'temperature while holding wildly different amounts of water.',
+  'Amount and temperature are separate questions. A thermometer answers only one of them.')
+
+q(Q, 2, 'A glass holds nothing but cola, poured a moment ago and fizzing. Which '
+        'phases of matter are in the glass, not counting the glass itself?',
+  ['Liquid and gas',
+   'Solid, liquid and gas',
+   'Liquid only',
+   'Solid and liquid'],
+  0,
+  'Go through them one at a time. Is there anything in there that holds its own shape?',
+  ['The cola itself is a liquid.',
+   'The fizz is carbon dioxide gas, and there is air above the cola too.',
+   'Nothing in the glass holds its own shape, so there is no solid.',
+   'That leaves liquid and gas.'],
+  '**Liquid and gas.** The cola is the liquid and the bubbles and the air above '
+  'it are the gas \u2014 but nothing in the glass holds a shape of its own, so there '
+  'is no solid. Drop an ice cube in and the answer would change.',
+  'Check each phase on its own rather than assuming a full glass has all three. '
+  'The answer is often two of them, not three.')
+
 # ---- assemble --------------------------------------------------------------
 build('wayfinder', C, Q, 'unit-sci-phases',
       'Chemistry · 1 Phases of Matter', 'science',
@@ -543,7 +580,7 @@ p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-phases']
 u['sorts'] = [SORT]
-u['libv'] = 2
+u['libv'] = 3
 io.open(p, 'w', encoding='utf-8').write(
     json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 2' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 3' % (SORT['title'], len(SORT['items'])))

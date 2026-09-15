@@ -2004,6 +2004,70 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### What her lesson check actually showed (v165)
+
+Chris uploaded **"Matter Phase Changes.pdf"** — River's own Science 4 lesson
+check, 21 points — two days before the 9/17 chemistry quiz, and asked to update
+the study material. Read the documented way: `download_file_content`, decode,
+render with `pypdfium2`, read the pages as images. Drive's OCR cannot see a
+circled answer, and here it also silently dropped a whole page.
+
+**It is not a completed sheet, and that is the headline.** She answered
+Q1–Q7 and Q11–Q14 and left **Q15–Q21 entirely blank** — no marks at all on the
+last two pages. Sheet page 4 (Q8–Q10) is missing from the scan, so those are
+simply unknown. Of the eleven she attempted, **ten are right**, including all
+four of the energy-direction questions the unit teaches hardest.
+
+**Her one wrong answer is Q3**: a glass of nothing but cola, and she circled
+Solid, Liquid AND Gas. Confirmed by cropping and zooming that region rather
+than trusting the first read — three clean circles, no strikethrough. She had
+just answered the ice-water glass correctly as all three, and carried "all
+three" across to a glass with no ice in it. No teacher's key and no red pen on
+the paper, so per the v161 rule the unit teaches the correct chemistry and the
+`parentNote` names it, rather than treating it as an alternative convention.
+
+**The blanks are what drove the edits, because they are the material she has
+not practised.** Checked against both shipped units before writing anything:
+
+| Her blank | Already covered? | Action |
+|---|---|---|
+| Q15 opposite of evaporation | only melting had a reverse question | **added** |
+| Q17 opposite of sublimation | same | **added** |
+| Q18 temperature = how many particles | `c4` ruled out how CLOSE, never how MANY | **card extended + question added** |
+| Q20/Q21 melting point = freezing point | yes — `c8` and `q8` | none needed |
+| Q19 condensation on a cold glass | yes | none needed |
+
+- **`c4` is the interesting one.** v161 built it to kill the speed-vs-closeness
+  mix-up, which it does. Her sheet asks a THIRD wrong idea — temperature as a
+  particle *count* — which the card never ruled out. It now names both, and a
+  new question puts a bathtub and a cup at the same reading so amount and
+  temperature come apart.
+- **The cola question deliberately answers with a SUBSET.** Every
+  "which phases are present" item she has met resolves to all three; that is
+  exactly what makes the habit form. The new one is liquid + gas, and its `ex`
+  says a single ice cube would change the answer.
+
+`libv` bumped on both (3 and 2), `updatedAt` three hours back per the
+approval-race rule, so both re-draft once and the queue labels them updates.
+`check_content.py` reports zero errors.
+
+> `tools/test_phases.js` asserted **exactly** 18 questions and failed the moment
+> a unit honestly gained one. An exact count is not a property worth preserving
+> — a unit SHOULD grow when her work shows a gap — while the four-unique-options
+> invariant is. It now asserts a minimum plus the invariant. Same family as the
+> three date-bombs fixed in v163–v164: pin what must stay true, not what happens
+> to be true today.
+
+Six new assertions cover the additions by their teaching: the card ruling out
+count, the bathtub question separating amount from temperature, the cola
+question answering with a subset and NOT containing "solid", all three reverse
+pairs present, melting-point-equals-freezing-point still taught, and both
+`libv`s bumped.
+
+> **Still owed, and now twice deferred:** the handwriting pass on River's
+> `Unit 2.pdf` (maths). Drive was down when that unit shipped and this session
+> went to the science sheet, which was the live one with a quiz two days out.
+
 ### Unit 2 is a book of LESSONS, not topics (v164)
 
 Chris: *"I added a unit 2 for river. She usually does a lesson per day at

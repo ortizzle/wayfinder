@@ -4,7 +4,7 @@
   "unit-sci-phasechg": {
    "id": "unit-sci-phasechg",
    "type": "unit",
-   "updatedAt": 1789084567369,
+   "updatedAt": 1789427825281,
    "classId": "science",
    "quarter": 1,
    "status": "draft",
@@ -604,6 +604,56 @@
       "main": "**Dissolving mixes two substances together; a phase change moves one substance between solid, liquid and gas.** Dissolved sugar has not melted — it is still sugar, spread through the water, and it can be recovered by evaporating the water away.",
       "tip": "One substance changing, or two substances mixing? Different questions."
      }
+    },
+    {
+     "id": "q18",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which change is the exact reverse of evaporation?",
+     "opts": [
+      "Deposition",
+      "Condensation",
+      "Sublimation",
+      "Freezing"
+     ],
+     "ans": 1,
+     "hint": "Evaporation turns a liquid into a gas. Which change runs that backwards?",
+     "steps": [
+      "Evaporation goes liquid → gas.",
+      "The reverse has to go gas → liquid.",
+      "Gas to liquid is condensation.",
+      "Freezing is liquid → solid, so it is the reverse of melting, not of evaporation."
+     ],
+     "ex": {
+      "main": "**Condensation.** Evaporation is liquid to gas, so its exact reverse is gas back to liquid — and the two also run opposite ways on energy: evaporation takes heat in, condensation gives it off.",
+      "tip": "Every change has exactly one reverse: find the phases it runs between and flip them."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which change is the exact reverse of sublimation?",
+     "opts": [
+      "Melting",
+      "Condensation",
+      "Deposition",
+      "Freezing"
+     ],
+     "ans": 2,
+     "hint": "Sublimation skips the liquid stage entirely. Which other change does that?",
+     "steps": [
+      "Sublimation goes solid → gas, skipping liquid.",
+      "The reverse must go gas → solid, also skipping liquid.",
+      "Gas straight to solid is deposition.",
+      "Condensation stops at liquid, so it is not the reverse of sublimation."
+     ],
+     "ex": {
+      "main": "**Deposition.** Sublimation and deposition are the pair that skip the liquid stage — solid straight to gas, and gas straight back to solid. Frost forming on a cold window is deposition.",
+      "tip": "The two changes that skip liquid are reverses of each other, the same way melting and freezing are."
+     }
     }
    ],
    "round": 9,
@@ -677,7 +727,7 @@
      ]
     }
    ],
-   "libv": 1
+   "libv": 2
   }
  }
 }

@@ -4,7 +4,7 @@
   "unit-sci-phases": {
    "id": "unit-sci-phases",
    "type": "unit",
-   "updatedAt": 1789084546634,
+   "updatedAt": 1789427811220,
    "classId": "science",
    "quarter": 1,
    "status": "draft",
@@ -83,7 +83,7 @@
     {
      "id": "c4",
      "term": "Temperature",
-     "def": "**Temperature measures how FAST the particles in something are moving — not how close together they are.**\n• Hotter means the particles are moving faster.\n• Colder means they are moving slower. They never stop completely.",
+     "def": "**Temperature measures how FAST the particles in something are moving — not how close together they are, and not how many of them there are.**\n• Hotter means the particles are moving faster.\n• Colder means they are moving slower. They never stop completely.\n• A whole bathtub and one cup can sit at the same temperature. The bath has far more particles; they are simply moving at the same speed.",
      "hint": "Fast = hot. Picture particles jiggling harder as the temperature climbs.",
      "from": "source"
     },
@@ -604,6 +604,56 @@
       "main": "**Heat gave the water’s particles enough energy to break away and become a gas, which then spread through the air.** The water was not destroyed and it did not lose energy — it gained some. Every particle that was in the puddle is still somewhere.",
       "tip": "Disappearing from sight is not disappearing from existence."
      }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A full bathtub of water and a single cup of water both read 40 °C on a thermometer. What does that tell you?",
+     "opts": [
+      "The bath and the cup contain the same number of particles",
+      "The particles in both are moving at the same average speed",
+      "The bath holds more heat energy, so it must read a higher temperature",
+      "The particles in the cup are packed closer together than in the bath"
+     ],
+     "ans": 1,
+     "hint": "Temperature is about SPEED. Is it about amount at all?",
+     "steps": [
+      "Temperature measures how fast particles move, nothing else.",
+      "Both read 40 °C, so the particles in both are moving at the same average speed.",
+      "The bath obviously holds far more particles than the cup.",
+      "So a reading tells you speed, never how much there is."
+     ],
+     "ex": {
+      "main": "**The particles in both are moving at the same average speed.** Temperature is not a count and not a total — a bathtub and a cup can sit at the same temperature while holding wildly different amounts of water.",
+      "tip": "Amount and temperature are separate questions. A thermometer answers only one of them."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A glass holds nothing but cola, poured a moment ago and fizzing. Which phases of matter are in the glass, not counting the glass itself?",
+     "opts": [
+      "Liquid only",
+      "Solid, liquid and gas",
+      "Liquid and gas",
+      "Solid and liquid"
+     ],
+     "ans": 2,
+     "hint": "Go through them one at a time. Is there anything in there that holds its own shape?",
+     "steps": [
+      "The cola itself is a liquid.",
+      "The fizz is carbon dioxide gas, and there is air above the cola too.",
+      "Nothing in the glass holds its own shape, so there is no solid.",
+      "That leaves liquid and gas."
+     ],
+     "ex": {
+      "main": "**Liquid and gas.** The cola is the liquid and the bubbles and the air above it are the gas — but nothing in the glass holds a shape of its own, so there is no solid. Drop an ice cube in and the answer would change.",
+      "tip": "Check each phase on its own rather than assuming a full glass has all three. The answer is often two of them, not three."
+     }
     }
    ],
    "round": 9,
@@ -677,7 +727,7 @@
      ]
     }
    ],
-   "libv": 2
+   "libv": 3
   }
  }
 }

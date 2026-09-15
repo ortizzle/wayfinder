@@ -43,8 +43,12 @@ const PORT = process.argv[2] || 8302;
      [seed.title, seed.chg.title]);
   ck('neither part is flagged prep — they are the lessons, not test prep',
      !seed.prep && !seed.chg.prep, [seed.prep, seed.chg.prep]);
-  ck('16 cards, 18 questions, every MC with four unique options',
-     seed.cards.length === 16 && seed.qs.length === 18 &&
+  /* A minimum, not an exact count — a unit gains questions when her sheets show
+     a gap (v165 added three), and an exact number turns every honest addition
+     into a failure. The four-unique-options invariant is the part that must
+     hold however many there are. */
+  ck('at least 16 cards and 18 questions, every MC with four unique options',
+     seed.cards.length >= 16 && seed.qs.length >= 18 &&
      seed.qs.filter(q => (q.kind||'mc') === 'mc')
             .every(q => q.opts.length === 4 && new Set(q.opts).size === 4),
      [seed.cards.length, seed.qs.length]);
@@ -203,6 +207,37 @@ const PORT = process.argv[2] || 8302;
   });
   ck('a full Phase Changes round completes and logs',
      quiz2.logged && quiz2.total === 9, quiz2);
+
+  /* v165 — built from her own partly-finished "Matter Phase Changes" lesson
+     check. These target the three things that sheet actually exposed. */
+  const v165 = await p.evaluate(() => {
+    const ph = DATA.records['unit-sci-phases'], pc = DATA.records['unit-sci-phasechg'];
+    const blob = u => JSON.stringify(u).toLowerCase();
+    const tempCard = ph.cards.find(c => /^temperature$/i.test(c.term));
+    const cola = ph.questions.find(q => /cola/i.test(q.q));
+    const bath = ph.questions.find(q => /bathtub/i.test(q.q));
+    const rev = t => pc.questions.find(q => /revers|opposite/i.test(q.q) && new RegExp(t,'i').test(q.q));
+    return {
+      countRuledOut: !!tempCard && /how many/i.test(tempCard.def),
+      bath: !!bath && /same average speed/i.test(bath.opts[bath.ans]),
+      cola: !!cola && cola.opts[cola.ans],
+      colaHasSolid: !!cola && /solid/i.test(cola.opts[cola.ans]),
+      revEvap: !!rev('evaporation'), revSub: !!rev('sublimation'), revMelt: !!rev('melting'),
+      meltFreezeSame: /same number|same temperature/i.test(blob(pc)),
+      libv: [ph.libv, pc.libv]
+    };
+  });
+  /* Q18 on her sheet: "temperature is how many particles" — the card ruled out
+     "how close" but never "how many", which is the trap she left blank. */
+  ck('the Temperature card rules out particle COUNT, not just closeness', v165.countRuledOut, v165);
+  ck('a question separates temperature from amount', v165.bath, v165);
+  /* Q3 was her one wrong answer: she marked Solid for a glass of soda. */
+  ck('the which-phases question answers with a SUBSET, not all three',
+     v165.cola === 'Liquid and gas' && !v165.colaHasSolid, v165);
+  /* Q15 and Q17 were blank; only melting had a reverse question before. */
+  ck('all three reverse pairs have a question', v165.revEvap && v165.revSub && v165.revMelt, v165);
+  ck('melting point = freezing point is still taught (Q20/Q21 on her sheet)', v165.meltFreezeSame, v165);
+  ck('both edited units bumped libv', v165.libv[0] >= 3 && v165.libv[1] >= 2, v165.libv);
 
   out.forEach(r => console.log((r.ok ? ' ok ' : 'FAIL ') + r.n + (r.ok ? '' : ' -> ' + JSON.stringify(r.got).slice(0,300))));
   console.log(out.every(r=>r.ok) ? 'ALL PASS' : 'FAILURES');
