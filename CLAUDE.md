@@ -2004,6 +2004,32 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Pair up — matching that counts (v166 / Ad Astra v186, both apps)
+
+Chris: *"Can we create a sorting game for the girls where it counts? Basically
+a fun way to do matching."* Engine, identical here — see ad-astra/CLAUDE.md's
+section of the same name for the full reasoning, both contrast traps and the
+test's shape.
+
+In short: the reason matching could not count before is structural — a swipe
+sort item is `{t, k, why}` with **no id**, so it can carry no tally and can
+never become a miss, and Match (removed in v154) paired off the CARDS, which
+have no tally either. A QUESTION has an id, so Pair Up deals the lesson's own
+questions — prompt on the left, its correct option on the right — and pairing
+one correctly is simply answering it. The two writes that turn an answer into
+progress came out of `answer()` into a shared `creditAnswer()`, so the game
+and the quiz cannot drift. Five prompts, seven answer tiles (two decoys, or
+the last pair is free), always `plain:true` since it is untimed, one miss per
+prompt per board, and one `mode:'pair'` log updated in place.
+
+**It shipped the night before River's chemistry test**, and it needed no
+content to do so: both `Chemistry · 1 Phases of Matter` and `Chemistry · 2
+Phase Changes` had boards the moment the engine existed, and every question
+she pairs first time genuinely finishes the lesson.
+
+`tools/test_pairup.js` and `tools/contrast_pairup.js` are the same files as
+Ad Astra's.
+
 ### What her lesson check actually showed (v165)
 
 Chris uploaded **"Matter Phase Changes.pdf"** — River's own Science 4 lesson
