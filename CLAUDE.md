@@ -2004,6 +2004,26 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### The rivals have to be the question's own (v167 / Ad Astra v187, both apps)
+
+Chris, relaying a played session: *"the pair session was great but the answers
+still seemed clear. One question had objects in order where there was only one
+obvious match."* Engine, identical here — see ad-astra/CLAUDE.md's section of
+the same name for the full account, the screenshot's own example and both
+traps.
+
+In short: v166 drew decoys from OTHER questions' right answers, so River's
+lowest-to-highest-energy question ("a steel nail, milk in a glass, the air in
+the room") was the only comma-list among seven sentences and could be matched
+on SHAPE. Each prompt now brings one of its OWN wrong options instead — five
+prompts, ten tiles — which are authored to be the same shape, register and
+length as the answer, so that question's rival is the same three objects
+reversed. A sticky `.pairsel` bar carries the selected question at the top of
+the viewport, since the taller board would otherwise scroll it out of sight.
+
+`tools/test_pairup.js` and `tools/contrast_pairup.js` are the same files as
+Ad Astra's.
+
 ### Pair up — matching that counts (v166 / Ad Astra v186, both apps)
 
 Chris: *"Can we create a sorting game for the girls where it counts? Basically
