@@ -245,6 +245,19 @@ header{padding:22px 0 14px;display:flex;align-items:center;justify-content:space
   animation:miclive 1s ease-in-out infinite}
 @keyframes miclive{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.72)}}
 
+/* The note-idea picker (v188). The line previews in the SAME handwriting
+   face the note itself uses, so what he is choosing is what he will see —
+   at a readable 19px rather than the note's own 30px, since this is a list
+   to scan rather than a note to read. Ordinary theme tokens: this is the
+   parent's workbench, not the note. */
+.ideas{margin-top:10px;display:flex;flex-direction:column;gap:8px}
+.idearow{width:100%;text-align:left;min-height:var(--tap);padding:10px 13px;border-radius:12px;
+  background:var(--surface);border:1px solid var(--line);display:flex;flex-direction:column;gap:3px}
+.idearow .ik{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--faint)}
+.idearow .it{font-family:'Caveat','Bradley Hand',cursive;font-size:19px;line-height:1.25;
+  color:var(--text);overflow-wrap:anywhere}
+.ideas .btn{margin-top:2px}
 /* A note from home, as a note. Chris asked for bigger, and for it to look
    placed on the screen by a person rather than drawn by the app — so it is
    warm paper, tilted a degree and a half, sitting slightly off the column
@@ -1681,7 +1694,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v167 · real rivals';
+const APP_VERSION = 'v168 · words for the note';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1932,6 +1945,43 @@ function fmtTime(m){ const h=Math.floor(m/60),mm=m%60,ap=h>=12?'PM':'AM',hh=h%12
      sustains motivation better than pressure language.
    So: no trait praise, no "you'll ace it", no toxic positivity.
 ------------------------------------------------------------------------- */
+/* Words for the note from home (v169 / Ad Astra v188). See ad-astra/CLAUDE.md
+   for the full reasoning — suggestions only, they fill the BOX and never
+   post, because the note's whole premise is that it did not come from the
+   app and his hand has to be the last one on it. Written in HIS voice, not
+   the app's, so contractions are fine here; the one rule that carries over
+   is process over trait, which matters more from a parent than from
+   software.
+
+   The pool is IDENTITY, like the companion rosters — River's is warmer and
+   plainer where Sedona's is drier. Do not sync them. Pitched the way this
+   whole app is pitched: plain words, never baby talk. */
+const NOTE_IDEAS = [
+  { k:'Before a test', lines:[
+    'You\u2019ve practiced this. Just go show what you know.',
+    'Read it twice before you answer. That\u2019s my whole trick.',
+    'However today goes, we\u2019re proud of you.' ] },
+  { k:'A hard day', lines:[
+    'Some days are just hard. Tomorrow gets a fresh start.',
+    'You can tell me about it, or not. Either is fine.',
+    'Rough days happen to everyone. Even me.' ] },
+  { k:'No reason at all', lines:[
+    'No reason for this note. Just love you.',
+    'Have a good day. We\u2019ll be here when you get home.',
+    'Thinking about you. That\u2019s the whole note.' ] },
+  { k:'Proud of the work', lines:[
+    'I saw how hard you worked on that. That\u2019s the part I\u2019m proud of.',
+    'You didn\u2019t give up when it got tricky. That\u2019s the whole thing.',
+    'You tried it three times. That\u2019s the bit that matters.' ] },
+  { k:'A heavy week', lines:[
+    'Busy week. One thing at a time.',
+    'You don\u2019t have to do it all today.' ] },
+  { k:'Just silly', lines:[
+    'The dog fell asleep on your bed again.',
+    'Have a great day. Eat the snack. Love you.',
+    'I hid a good snack in your bag. You\u2019re welcome.' ] },
+];
+
 const AFFIRMATIONS = [
   {t:"Hard means your brain is building something new. It is supposed to feel like that.",g:'general'},
   {t:"You don't have to feel ready to start. Starting is what makes you ready.",g:'general'},
@@ -10524,12 +10574,45 @@ SCREENS.parent = function(root){
   pnc.appendChild(el('p',null,'A few words on her Today screen, in handwriting. Post it to put it up; clear it and post to take it down.'));
   const pnta = el('textarea'); pnta.rows = 2;
   const pnRec = DATA.records['pnote'];
-  pnta.value = (pnRec && !pnRec.deleted && pnRec.text) || '';
+  /* The draft survives a re-render. It has to: tapping a suggestion re-renders
+     this screen, and reading the value back off the RECORD would throw the
+     suggestion away the moment it was chosen — which is exactly what the first
+     build did. Typing his own words is kept for the same reason. */
+  pnta.value = ctx._noteDraft != null ? ctx._noteDraft
+             : ((pnRec && !pnRec.deleted && pnRec.text) || '');
+  pnta.addEventListener('input',()=>{ ctx._noteDraft = pnta.value; });
   pnta.placeholder = 'Good luck on the quiz today — we love you.';
   pnc.appendChild(pnta);
+  /* Suggestions, opened on request and never on their own. Tapping one fills
+     the BOX — it does not post — so the words only become the note once he
+     has read them, changed whatever he wants, and pressed Post himself. */
+  const ideaBtn = el('button','btn btn-ghost btn-sm', ctx._ideas ? 'Hide the ideas' : 'Need words?');
+  ideaBtn.addEventListener('click',()=>{ ctx._ideas = !ctx._ideas; render(); });
+  pnc.appendChild(ideaBtn);
+  if(ctx._ideas){
+    const wrap = el('div','ideas');
+    /* One line per occasion, picked deterministically so the list does not
+       reshuffle under his thumb while he is reading it. */
+    const salt = ctx._ideaSalt || 0;
+    NOTE_IDEAS.forEach((g,gi)=>{
+      const line = g.lines[ mixHash('note:'+AZ.today()+':'+salt+':'+gi) % g.lines.length ];
+      const b = el('button','idearow');
+      b.type = 'button';
+      b.appendChild(el('span','ik', g.k));
+      b.appendChild(el('span','it', line));
+      b.addEventListener('click',()=>{ ctx._noteDraft = line; ctx._ideas = false; render();
+        toast('In the box — change it however you like, then Post it'); });
+      wrap.appendChild(b);
+    });
+    const more = el('button','btn btn-ghost btn-sm','Show me different ones');
+    more.addEventListener('click',()=>{ ctx._ideaSalt = (ctx._ideaSalt||0)+1; render(); });
+    wrap.appendChild(more);
+    pnc.appendChild(wrap);
+  }
   const pnb = el('button','btn btn-secondary','Post it');
   pnb.addEventListener('click',()=>{
     put({ id:'pnote', type:'pnote', text: pnta.value.trim() });
+    delete ctx._noteDraft;   /* posted — the record is the truth again */
     syncSoon(); toast(pnta.value.trim() ? 'Posted to her Today screen' : 'Note taken down');
     /* Posting is a finished errand — go and look at it. */
     go('today');

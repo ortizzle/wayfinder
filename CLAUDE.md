@@ -2004,6 +2004,23 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Words for the note from home (v168 / Ad Astra v188, both apps)
+
+Chris: *"can you generate messages for the post-it notes?"* Engine identical
+here — see ad-astra/CLAUDE.md's section of the same name for the full
+reasoning and both traps (a four-row note caught by measuring, and a
+suggestion that vanished on the re-render that chose it).
+
+In short: the note's premise is that it did not come from the app, so the
+suggestions are suggestions — a "Need words?" door, one line per occasion,
+landing in the TEXTAREA where he edits them and presses Post himself. The app
+never posts one and never fills the box unasked.
+
+**`NOTE_IDEAS` is IDENTITY, like the companion roster** — River's pool is
+warmer and plainer than Sedona's drier one, pitched the way this whole app is
+pitched: plain words, never baby talk. Do not sync the pools; the picker, the
+CSS and `tools/test_notewords.js` are engine and are identical.
+
 ### The rivals have to be the question's own (v167 / Ad Astra v187, both apps)
 
 Chris, relaying a played session: *"the pair session was great but the answers
