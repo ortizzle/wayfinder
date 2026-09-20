@@ -2004,6 +2004,32 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### The word list (v171 / Ad Astra v191, both apps)
+
+Chris: *"for the different wordly wise units, can we figure out a way to
+include the complete word list?"* Engine, identical here — see
+ad-astra/CLAUDE.md's section of the same name for the full reasoning and the
+three traps.
+
+In short: the complete list was already in the app — all seven Wordly Wise
+lessons here ship 15 cards, one per word — so nothing needed authoring, only
+a place to see all fifteen at once, which a shuffled one-at-a-time deck
+cannot be. `openWordList(u)` is a modal off the unit card, derived from the
+cards so it can never drift from them, with the meanings hidden until she
+taps a word. It must never reach the quiz's tool row, where it would be the
+answer key.
+
+**This app is where the gate got narrowed.** A first cut gating on "six or
+more single-word cards" put a word-list door on Chemistry, History and all
+four Spelling Bee lists. The Bee case is the pointed one: its whole design is
+that the word is ANNOUNCED and never shown until she has spelled it, so a
+screen printing all thirteen hands over exactly what that unit withholds.
+`hasWordList()` requires every card to be a single word and excludes `u.bee`,
+which leaves the seven vocabulary lessons and nothing else.
+
+`tools/test_wordlist.js` and `tools/contrast_wordlist.js` are the same files
+as Ad Astra's; both discover their own unit rather than taking an id in argv.
+
 ### Ungraded first, graded tucked away (v170 / Ad Astra v190, both apps)
 
 Chris: *"For grading quizzes, once graded can they get tucked away or ordered
