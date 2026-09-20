@@ -8,6 +8,19 @@ difference between right and wrong."""
 import json, io, time, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from unit_common import card, q, slider
+
+# ⚠️ STALE — do not re-run. This builder predates v160, which re-shelved the
+# unit onto "Unit 1" by adding a `series` field, and predates its libv bump.
+# Re-running silently STRIPS both: it rewrites the file from this script's own
+# idea of the unit, so the shelving quietly reverts and the lesson drops off
+# the Unit 1 shelf. Caught by `git diff` after an exploratory re-run, not by
+# any test. The shipped JSON is the source of truth for any file whose builder
+# predates a hand-edit — the same rule build_ww1_synonyms.py already carries.
+import sys as _sys
+_sys.exit('build_numberline.py is stale: re-running would strip series="Unit 1" '
+          'and reset libv. Edit content/math-t3-numberline.json directly, or '
+          'update this builder to reproduce the shipped record exactly first.')
+
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 C, Q = [], []

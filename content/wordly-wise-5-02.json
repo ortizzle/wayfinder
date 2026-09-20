@@ -4,7 +4,7 @@
   "unit-ww502": {
    "id": "unit-ww502",
    "type": "unit",
-   "updatedAt": 1786299404508,
+   "updatedAt": 1789914337223,
    "classId": "english",
    "quarter": 1,
    "status": "draft",
@@ -38,8 +38,8 @@
     }
    ],
    "parentNote": {
-    "text": "Built from the Lesson 2 PDF you uploaded to Drive (English → Wordly Wise). Definitions match the workbook; every quiz sentence is fresh, so the workbook's own exercises stay her homework. The high-value pattern this lesson is part-of-speech switching — five of the fifteen words work as both noun and verb, and two of them (export, extract) move their stress when they switch, which is exactly the kind of thing that shows up on quizzes. Food words dominate the list (aroma, beverage, bland, consume, crave), so dinner is a natural place to work them in casually.",
-    "from": "added"
+    "from": "added",
+    "text": "Six questions were added after her real Unit 2 Vocabulary Test came back at 20 out of 25. The five she missed are two ideas rather than five. Three of them touched \"cultivate\": she chose \"merge\" as its synonym, she missed its figurative sense in a sentence completion, and she then chose \"cultivate\" again for the juice-oil-syrup association that wanted \"extract\". The other two were parts of speech — \"export\" in \"an important export\" and \"craving\" in \"had a craving\", both nouns, marked as adjective and verb. Worth knowing: this lesson already taught cultivate's figurative sense and extract as a noun, so the material was not the gap. The form was. The existing questions ask \"in which sentence is this word a verb?\", which means hunting across four sentences; the paper asks \"what part of speech is this word in THIS sentence?\", which means parsing one slot. The three new parts-of-speech questions use the paper's form. Nothing was renumbered, so anything already attached to the older questions stays attached."
    },
    "nextUp": {
     "text": "Cards first, once through. Then a quiz round a day beats one long session.",
@@ -200,10 +200,10 @@
      "kind": "mc",
      "q": "The nurse kept her voice bland while explaining the shot, and the nervous kindergartner calmed down. Which meaning of 'bland' is that?",
      "opts": [
-      "Easily broken",
-      "Lacking a strong flavor",
-      "Not irritating, exciting, or disturbing — deliberately calm",
-      "Hot and moist"
+      "Easily broken or snapped in two",
+      "Lacking a strong flavor or seasoning",
+      "Not irritating or exciting; deliberately calm",
+      "Hot and moist, the way tropical air is"
      ],
      "ans": 2,
      "hint": "Nobody is tasting the nurse's voice.",
@@ -347,10 +347,10 @@
      "kind": "mc",
      "q": "'The coach cultivated patience in her youngest players, praising every calm restart.' What does 'cultivated' mean here?",
      "opts": [
-      "Prepared land for planting",
-      "Encouraged something to develop by attention",
-      "Harvested a crop",
-      "Removed with great effort"
+      "Prepared land ready for planting crops",
+      "Helped something grow by steady attention",
+      "Harvested a crop at the end of the season",
+      "Removed something with a great deal of effort"
      ],
      "ans": 1,
      "hint": "No dirt in this sentence — but something is still being grown.",
@@ -534,8 +534,157 @@
       "main": "**Combination.** Both blanks want things-working-together: skills joined for a win, numbers joined to open a lock. One meaning, two costumes.",
       "tip": "Both-blanks questions are testing whether you know the word's CORE idea, not one memorized sentence. Find the idea that survives both contexts."
      }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Coffee is Ethiopia's largest export.\n\nWhat part of speech is \"export\" in this sentence?",
+     "opts": [
+      "noun",
+      "adjective",
+      "verb"
+     ],
+     "ans": 0,
+     "hint": "The word has \"Ethiopia's largest\" in front of it. What does that settle?",
+     "steps": [
+      "\"Export\" really can be a verb — a country exports coffee.",
+      "Here it sits after \"Ethiopia's\" and after \"largest\", which describes it.",
+      "A word being owned and described like that is a thing, not an action.",
+      "So in THIS sentence \"export\" is a noun."
+     ],
+     "ex": {
+      "main": "**Noun.** It names the thing Ethiopia sends abroad. The very same word is a verb in other sentences — Ethiopia exports coffee — which is exactly why the sentence decides and not the word.",
+      "tip": "A possessive (\"Ethiopia's\") and an adjective (\"largest\") in front of a word both point the same way: it is doing a noun's job here."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "After the long walk she had a craving for something salty.\n\nWhat part of speech is \"craving\" in this sentence?",
+     "opts": [
+      "adjective",
+      "noun",
+      "verb"
+     ],
+     "ans": 1,
+     "hint": "Ask what she HAD. The thing you had is a noun.",
+     "steps": [
+      "The verb in this sentence is \"had\" — that is the action.",
+      "What she had was \"a craving\", with \"a\" in front of it.",
+      "A word cannot be the action when another word is already doing that job.",
+      "So \"craving\" is a noun here."
+     ],
+     "ex": {
+      "main": "**Noun.** The action in the sentence is \"had\", and what she had was a craving. Once a sentence already has its verb, the word after \"a\" is a thing, not a second action.",
+      "tip": "Find the verb FIRST. If the sentence already has one, the word you are asked about is very unlikely to be another."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "They cultivate rice on the terraces above the village.\n\nWhat part of speech is \"cultivate\" in this sentence?",
+     "opts": [
+      "noun",
+      "adjective",
+      "verb"
+     ],
+     "ans": 2,
+     "hint": "Ask what \"they\" DO.",
+     "steps": [
+      "The sentence is about something people do.",
+      "\"They\" are doing it, and the rice is what it is done to.",
+      "A word that takes an object like that is a verb.",
+      "So \"cultivate\" is a verb here."
+     ],
+     "ex": {
+      "main": "**Verb.** It is the action the villagers perform, and \"rice\" is what they perform it on.",
+      "tip": "Swap the subject for \"she\" and see whether the word has to change — \"she cultivates\" — that change only happens to verbs."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which word means the SAME as cultivate?",
+     "opts": [
+      "abandon",
+      "merge",
+      "harvest",
+      "tend"
+     ],
+     "ans": 3,
+     "hint": "Think about the months BEFORE anything is picked.",
+     "steps": [
+      "To cultivate is to prepare and work land so that things grow on it.",
+      "Merge means to combine two things into one — a different idea entirely.",
+      "Harvest is gathering the crop, which is what happens at the END of it.",
+      "Abandon is leaving land to itself, the opposite of working it.",
+      "Tend is the match: looking after something as it grows."
+     ],
+     "ex": {
+      "main": "**Tend.** Cultivating is the long work of preparing ground and looking after what grows in it. \"Harvest\" is the closest wrong answer because it belongs to the same farm — but it is the last step, not the work itself.",
+      "tip": "\"Merge\" is in this list on purpose. It shares no meaning with cultivate at all; the two only look alike as options if you are matching on feel rather than on meaning."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Over three seasons the coach cultivated...",
+     "opts": [
+      "a habit of turning up early, until nobody needed reminding any more.",
+      "the muddiest corner of the pitch with a roller and a bag of seed.",
+      "her whistle twice to bring the players back in from the far goal.",
+      "every match that season except the two that were rained off."
+     ],
+     "ans": 0,
+     "hint": "Cultivate works on things that grow — and not all of them are plants.",
+     "steps": [
+      "Cultivating is growing something slowly, with steady care.",
+      "It is used about plants, and also about things like habits and skills.",
+      "\"Over three seasons\" tells you this is the slow, figurative sense.",
+      "A habit that builds until nobody needs reminding is exactly that."
+     ],
+     "ex": {
+      "main": "**A habit of turning up early, until nobody needed reminding any more.** Cultivating a habit is the figurative sense — growing something in people rather than in soil, slowly and on purpose.",
+      "tip": "The pitch-and-seed ending is the literal sense and it is genuinely tempting. \"Over three seasons\" is the clue: that is too long for one afternoon with a roller."
+     }
+    },
+    {
+     "id": "q20",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "olive oil, apple juice, vanilla essence\n\nWhich word connects to all three?",
+     "opts": [
+      "cultivate",
+      "extract",
+      "consume",
+      "combine"
+     ],
+     "ans": 1,
+     "hint": "Ask how each of the three was GOT, not what it is.",
+     "steps": [
+      "Oil is pressed out of olives.",
+      "Juice is squeezed out of apples.",
+      "Vanilla essence is drawn out of vanilla pods.",
+      "Every one of them is something taken out of something else — extracted."
+     ],
+     "ex": {
+      "main": "**Extract.** Each of the three is a liquid that had to be taken out of a plant. That is what extracting is: removing something from what it was part of.",
+      "tip": "\"Cultivate\" is the closest wrong answer, because olives, apples and vanilla are all grown. But growing them is a different step from getting the liquid out — the three things listed are the LIQUIDS."
+     }
     }
-   ]
+   ],
+   "libv": 2
   }
  }
 }

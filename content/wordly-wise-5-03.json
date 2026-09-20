@@ -4,7 +4,7 @@
   "unit-ww503": {
    "id": "unit-ww503",
    "type": "unit",
-   "updatedAt": 1786299404508,
+   "updatedAt": 1789914337131,
    "classId": "english",
    "quarter": 1,
    "status": "draft",
@@ -38,11 +38,11 @@
     }
    ],
    "parentNote": {
-    "text": "Built from the Lesson 3 scan in Drive. Definitions match the workbook; quiz sentences are fresh, so the workbook exercises stay her homework. This is the first unit with type-the-word spelling questions (five of them, on the hardest spellings: ferocious, gigantic, comprehend, obscure, premature) — they're excluded from Beat-the-clock automatically, and a misspelling goes to the Growth Zone like any other miss. The multi-meaning words to listen for at dinner: extinct (species AND volcanoes), obscure (hidden AND confusing), prey (noun AND verb).",
+    "text": "Rebuilt to the five sections of her real vocabulary test — context clues from a passage, synonyms and antonyms, sentence completion, parts of speech, and word association — four questions each. See the Lesson 4 note for why each context question carries its own short passage rather than five sharing one long one. Two words here are worth a grown-up's eye because they are the ones a paper will catch her on: \"prey\" is a noun in \"its prey\" and a verb in \"preys on mice\", and \"obscure\" means to cover up rather than merely to be unclear. One judgement call to flag: this lesson's five spelling questions are KEPT and sit after the twenty, even though no section of her real paper tests spelling. They are useful and they already shipped, so removing them was not something to decide quietly — say the word and they can go, which would bring this lesson into line with Lessons 4 and 5 at twenty questions. The cards are unchanged.",
     "from": "added"
    },
    "nextUp": {
-    "text": "Cards once, then a quiz round a day. The spelling questions want a real keyboard moment — no autocorrect rescue on the real quiz.",
+    "text": "Five shapes, four questions each, then the five spellings. The parts-of-speech ones repay going slowly: \"prey\" changes its job depending on the sentence it is in.",
     "minutes": 18,
     "from": "added"
    },
@@ -171,123 +171,131 @@
    "questions": [
     {
      "id": "q0",
-     "lv": 1,
+     "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "The woolly mammoth has been ___ for about ten thousand years.",
+     "q": "How is the word \"extinct\" used in this passage?",
      "opts": [
-      "ferocious",
-      "premature",
-      "extinct",
-      "obscure"
+      "To say that no members of the species are left alive anywhere",
+      "To say that the species is rare but can still be found on the island",
+      "To explain that the bird was hunted but later recovered in number",
+      "To explain that the bird was never properly recorded by scientists"
      ],
-     "ans": 2,
-     "hint": "There are no woolly mammoths anywhere. Which word says that?",
+     "ans": 0,
+     "hint": "Look at what the passage says is left of the bird.",
      "steps": [
-      "Find the clue: mammoths no longer exist at all.",
-      "Match: extinct means no longer existing or living.",
-      "Check the impostors: ferocious is fierce, premature is too early, obscure is hidden — none mean gone forever."
+      "The last of them were taken from the island in the 1680s.",
+      "What remains is bones, drawings and written accounts — no living birds.",
+      "That rules out rare-but-still-there, and it rules out recovering.",
+      "Nothing left alive anywhere is what extinct means."
      ],
      "ex": {
-      "main": "**Extinct.** Gone as a species — the word for 'none left, anywhere, ever.'",
-      "tip": "Extinct is permanent and total. One surviving pair means a species is endangered, not extinct."
-     }
+      "main": "**To say that no members of the species are left alive anywhere.** The list of what survives is the clue: bones, drawings and accounts, but no birds.",
+      "tip": "\"Rare\" is the tempting answer because rare things are also hard to find. Extinct is stronger than rare — it means none at all."
+     },
+     "passage": "No one has seen a dodo since the 1680s. Sailors took the last of them from the island, and the bird is now extinct — there is nothing left of it but bones, drawings and a few written accounts."
     },
     {
      "id": "q1",
      "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "Scientists call the dog-sized mesohippus an ___ of the modern horse. Which meaning of the word is that?",
+     "q": "What do the context clues tell you \"premature\" means?",
      "opts": [
-      "ancestor — the animal-forerunner meaning, not the family-tree-of-people meaning",
-      "ancestor — a person you are descended from",
-      "survivor — one who stays alive",
-      "carnivore — a flesh-eater"
+      "Happening later than everyone had expected",
+      "Happening earlier than it should have done",
+      "Happening exactly on the day that was predicted",
+      "Happening more slowly than is usual for the species"
      ],
-     "ans": 0,
-     "hint": "Nobody is related to a mesohippus — but a species can be.",
+     "ans": 1,
+     "hint": "Three details describe the chicks. Are they ready or not ready?",
      "steps": [
-      "Ancestor has two meanings: a person in your family line, and an early animal form that later ones developed from.",
-      "A mesohippus is an animal, not a person — so it is the forerunner meaning.",
-      "The book's own example is exactly this horse."
+      "The chicks hatch three weeks before they were due.",
+      "Sealed eyes and almost no down are signs of not being ready yet.",
+      "Needing a warm box straight away confirms it.",
+      "Arriving before the proper time is what premature means."
      ],
      "ex": {
-      "main": "**Ancestor, the forerunner sense.** Species have family trees too — the second meaning covers evolution, not genealogy.",
-      "tip": "When a person-word gets used for animals or things, check the entry for a second meaning. Wordly Wise loves testing those."
-     }
+      "main": "**Happening earlier than it should have done.** Every detail after the word — sealed eyes, no down, straight into a warm box — is a sign of something that arrived before it was ready.",
+      "tip": "The number in the sentence does a lot of work here. \"Three weeks\" plus the state of the chicks tells you which direction in time to go."
+     },
+     "passage": "The chicks hatched a full three weeks premature. Their eyes were still sealed, they had almost no down on them, and the keepers had to move every one of them straight into a warm box."
     },
     {
      "id": "q2",
-     "lv": 1,
-     "from": "source",
-     "kind": "mc",
-     "q": "Sharp, pointed teeth for tearing meat tell you an animal is a ___.",
-     "opts": [
-      "prey",
-      "carnivore",
-      "survivor",
-      "puny"
-     ],
-     "ans": 1,
-     "hint": "Meat-eater.",
-     "steps": [
-      "The clue is the toolkit: tearing teeth exist for eating flesh.",
-      "A flesh-eating animal is a carnivore.",
-      "Prey is the hunted, not the hunter — the tempting wrong answer flips the roles."
-     ],
-     "ex": {
-      "main": "**Carnivore.** The teeth are the tell — the book's own example.",
-      "tip": "Carnivore/prey questions are role questions: who is eating whom?"
-     }
-    },
-    {
-     "id": "q3",
      "lv": 3,
      "from": "source",
      "kind": "mc",
-     "q": "Which sentence uses 'carnivorous' correctly?",
+     "q": "How is the word \"obscured\" used here?",
      "opts": [
-      "The carnivorous placed meat in the cage.",
-      "A salad is a carnivorous meal.",
-      "Bears eat berries too, so they are carnivorous only part of the time.",
-      "Though bears eat berries and fish alike, their sharp teeth mark them as carnivorous."
+      "To say the fog had drifted away from the river",
+      "To say the fog made the far bank easier to pick out",
+      "To say the fog hid the far bank from view",
+      "To say the far bank had been washed away by the water"
      ],
-     "ans": 3,
-     "hint": "Carnivorous is an ADJECTIVE — it has to describe something.",
+     "ans": 2,
+     "hint": "The passage tells you what they could still do, and what they could not.",
      "steps": [
-      "Carnivorous is the adjective form: it must describe a noun (a carnivorous animal, a carnivorous diet).",
-      "'The carnivorous placed meat in the cage' uses it as a noun; the salad sentence calls a salad flesh-eating — backwards.",
-      "'Carnivorous only part of the time' misuses the meaning — it is about diet type, not a schedule.",
-      "The sharp-teeth sentence describes bears with it correctly — the book itself notes carnivorous animals often eat other foods too."
+      "The watchers can hear the herd, so the herd is still there.",
+      "There is \"nothing at all to see\", so the problem is seeing, not the herd.",
+      "The fog is what came between them and the bank.",
+      "Covering something up so it cannot be seen is what obscured means."
      ],
      "ex": {
-      "main": "**The bears sentence.** Adjective doing adjective work, and the meaning survives — the book's dog example makes the same point.",
-      "tip": "For related-form questions, check the JOB first (noun? adjective?), then the meaning."
-     }
+      "main": "**To say the fog hid the far bank from view.** The passage separates the two senses on purpose: they can still HEAR the herd, so what changed is only what can be seen.",
+      "tip": "When a passage tells you one sense still works and another does not, it is usually pointing straight at the word it wants you to work out."
+     },
+     "passage": "By four o'clock the fog had obscured the far bank completely. The watchers knew the herd was still out there, because they could hear it, but there was nothing at all to see."
     },
     {
-     "id": "q4",
+     "id": "q3",
      "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "We stayed inside for the ___ of the thunderstorm — all forty-five minutes of it.",
+     "q": "How is the word \"duration\" used in this passage?",
      "opts": [
-      "duration",
-      "option",
-      "ferocity",
-      "comprehension"
+      "To mean the damage the eruption left behind afterwards",
+      "To mean the loudness the eruption reached at its peak",
+      "To mean the distance the shaking could be felt across",
+      "To mean the length of time the eruption went on for"
      ],
-     "ans": 0,
-     "hint": "The whole time it lasted.",
+     "ans": 3,
+     "hint": "Look at what the sentence before it measures.",
      "steps": [
-      "The clue: the entire time the storm went on.",
-      "Duration is the time during which something lasts.",
-      "Ferocity is tempting because storms are fierce — but the sentence measures TIME, not fierceness."
+      "The first sentence measures the eruption in time: under a minute.",
+      "\"For the whole duration of it\" then covers that same stretch of time.",
+      "The passage says nothing about loudness, distance or damage.",
+      "So duration means the length of time something lasts."
      ],
      "ex": {
-      "main": "**Duration.** 'For the duration of' is practically a set phrase — the whole stretch of time.",
-      "tip": "When a sentence counts minutes, pick the time word even if a drama word is on offer."
+      "main": "**To mean the length of time the eruption went on for.** The sentence before it has already given you the measurement — under a minute — and \"the whole duration\" covers exactly that.",
+      "tip": "Look at the sentence BEFORE the word as well as the one after it. Here the clue arrives first."
+     },
+     "passage": "The eruption itself lasted under a minute. For the whole duration of it the ground shook hard enough to rattle the instruments, and then, just as suddenly, everything went quiet again."
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which word means the SAME as gigantic?",
+     "opts": [
+      "enormous",
+      "tiny",
+      "ancient",
+      "noisy"
+     ],
+     "ans": 0,
+     "hint": "Think about the word hiding inside it.",
+     "steps": [
+      "Gigantic means very large — like a giant.",
+      "Tiny is its opposite, so it is out.",
+      "Ancient is about age and noisy is about sound; neither is about size.",
+      "Enormous means the same thing: very large indeed."
+     ],
+     "ex": {
+      "main": "**Enormous.** Both mean very large. \"Tiny\" is the word's own opposite, which is what makes it the option to read twice.",
+      "tip": "The word \"giant\" is sitting inside \"gigantic\". Broken-up words often carry their meaning on the surface like that."
      }
     },
     {
@@ -295,71 +303,74 @@
      "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "Nobody had to announce the winner — from the cheering, it was ___ who won.",
+     "q": "Which word means the OPPOSITE of puny?",
      "opts": [
-      "premature",
-      "puny",
-      "evident",
-      "obscure"
+      "feeble",
+      "mighty",
+      "quiet",
+      "clever"
      ],
-     "ans": 2,
-     "hint": "So clear that no announcement was needed.",
+     "ans": 1,
+     "hint": "Which of these could describe a weightlifter?",
      "steps": [
-      "The clue: the answer was obvious without being said.",
-      "Evident means easy to see and understand; obvious.",
-      "Obscure is its exact opposite — a nice trap sitting right there."
+      "Puny means weak.",
+      "Feeble also means weak, so it is a synonym rather than the opposite.",
+      "Quiet and clever describe other things entirely, not strength.",
+      "Mighty means very strong, which is the exact reverse."
      ],
      "ex": {
-      "main": "**Evident.** Evident and obscure are opposites; this list carries both on purpose.",
-      "tip": "Learn opposing pairs together — evident/obscure, gigantic/puny. Half the quiz is telling them apart."
+      "main": "**Mighty.** Puny is weak and mighty is strong — the two ends of the same measure.",
+      "tip": "\"Feeble\" is in the list because it is a synonym. On an OPPOSITE question, find the synonym and cross it off first."
      }
     },
     {
      "id": "q6",
-     "lv": 3,
+     "lv": 1,
      "from": "source",
      "kind": "mc",
-     "q": "'The instructions were so obscure that even Dad read them three times.' Which meaning of 'obscure' is that?",
+     "q": "Which word means the SAME as comprehend?",
      "opts": [
-      "To cover up or keep from being seen",
-      "Not easy to understand",
-      "Hard to see; hidden in shadow",
-      "No longer active"
+      "ignore",
+      "confuse",
+      "understand",
+      "announce"
      ],
-     "ans": 1,
-     "hint": "The instructions are visible — the problem is elsewhere.",
+     "ans": 2,
+     "hint": "What are you doing when a hard idea finally clicks?",
      "steps": [
-      "Obscure has three jobs: verb (to hide), adjective (hard to SEE), adjective (hard to UNDERSTAND).",
-      "Nothing is hidden from view here — the words are being read, three times.",
-      "The struggle is comprehension, so it is the not-easy-to-understand sense — the book's example is a story full of words like 'cauldron' and 'phoenix.'"
+      "To comprehend something is to understand it.",
+      "Confuse is the reverse — it makes understanding harder.",
+      "Ignore is refusing to attend to something, and announce is saying it out loud.",
+      "Understand is the direct match."
      ],
      "ex": {
-      "main": "**Not easy to understand.** Same test as always for multi-meaning words: what is actually failing — the eyes or the understanding?",
-      "tip": "Obscure instructions, obscure words, obscure explanation → the understanding sense. Obscure shape, obscure figure → the seeing sense."
+      "main": "**Understand.** They mean the same thing. \"Confuse\" is the opposite, and \"ignore\" is the near-miss — you can ignore something you understand perfectly well.",
+      "tip": "Two of the wrong options here are about ATTENTION rather than about understanding. Sorting options into groups makes the real match stand out."
      }
     },
     {
      "id": "q7",
-     "lv": 1,
+     "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "The new cruise ship was ___ — longer than three football fields.",
+     "q": "Which word means the OPPOSITE of ferocious?",
      "opts": [
-      "gigantic",
-      "extinct",
-      "evident",
-      "carnivorous"
+      "rapid",
+      "savage",
+      "enormous",
+      "gentle"
      ],
-     "ans": 0,
-     "hint": "Giant-sized.",
+     "ans": 3,
+     "hint": "Which word would you use about an animal that has never hurt anyone?",
      "steps": [
-      "The clue: enormous size, spelled out in football fields.",
-      "Gigantic means very large; like a giant.",
-      "The others don't describe size at all."
+      "Ferocious means savage or fierce.",
+      "\"Savage\" is the definition itself, so it is a synonym.",
+      "Enormous is about size and rapid is about speed; a creature can be either and still be fierce.",
+      "Gentle is the exact reverse of fierce."
      ],
      "ex": {
-      "main": "**Gigantic.** Size, pure and simple — 'giant' is visible inside the word.",
-      "tip": "When the sentence measures something huge, look for the word with 'giant' in it."
+      "main": "**Gentle.** Ferocious and gentle are opposite ways for a creature to behave. Size and speed are different measures altogether.",
+      "tip": "Watch for an option that is simply the word's definition in disguise — \"savage\" is exactly that, and on an OPPOSITE question it is wrong."
      }
     },
     {
@@ -367,47 +378,49 @@
      "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "Which word fits BOTH blanks: 'The ___ of the guard dog surprised us' and 'The storm hit with unexpected ___'?",
+     "q": "The museum preserved...",
      "opts": [
-      "comprehension",
-      "duration",
-      "option",
-      "ferocity"
+      "the skeleton in a sealed case so that the damp could not reach it.",
+      "its doors at half past five and asked the last visitors to leave.",
+      "a long way from the station, at the far end of the high street.",
+      "that the new exhibition would open some time in the early spring."
      ],
-     "ans": 3,
-     "hint": "Fierceness — of an animal AND of weather.",
+     "ans": 0,
+     "hint": "To preserve is to keep something from harm. Ask what could be harmed.",
      "steps": [
-      "First blank: a guard dog's fierceness — ferocity, the noun form of ferocious.",
-      "Second blank: the book's own example is 'the ferocity of the storm.'",
-      "Test the others in both blanks: a storm's comprehension? A dog's option? Only ferocity survives both."
+      "Preserving means saving something and keeping it from harm.",
+      "A skeleton in a sealed case is being kept safe from the damp.",
+      "Closing doors, standing far from a station and announcing an opening are all different actions.",
+      "Only the sealed case is about protecting something."
      ],
      "ex": {
-      "main": "**Ferocity.** The noun form of ferocious stretches from animals to storms — fierceness wherever it lives.",
-      "tip": "Both-blanks questions test the word's core idea. Find what the two sentences share (fierceness) and match it."
+      "main": "**The skeleton in a sealed case so that the damp could not reach it.** The ending even names the harm being kept out, which is what preserving is for.",
+      "tip": "A good sentence-completion answer usually names the REASON as well as the action. \"So that the damp could not reach it\" is the giveaway."
      }
     },
     {
      "id": "q9",
-     "lv": 2,
+     "lv": 3,
      "from": "source",
      "kind": "mc",
-     "q": "'Coming to practice is required, but the team dinner is ___.' The missing word is:",
+     "q": "Walking back in the dark was the only option...",
      "opts": [
-      "premature",
-      "evident",
-      "optional",
-      "obscure"
+      "that the weather had been steadily improving throughout the afternoon.",
+      "left to them, because the last bus had gone an hour earlier.",
+      "which they folded up carefully and put away inside the rucksack.",
+      "and the museum would be closed again by the following Tuesday."
      ],
-     "ans": 2,
-     "hint": "Left to choice.",
+     "ans": 1,
+     "hint": "An option is a choice. What makes something the ONLY choice?",
      "steps": [
-      "The sentence contrasts required with its opposite.",
-      "Optional means left to choice — the adjective form of option.",
-      "The book's example has the same shape: lunch required, dinner optional."
+      "An option is a choice, or a thing available as a choice.",
+      "Saying it was the only one means every other choice had gone.",
+      "The ending needs to explain why nothing else was available.",
+      "The last bus having gone is exactly that explanation."
      ],
      "ex": {
-      "main": "**Optional.** Required vs. optional is the contrast the sentence is built on.",
-      "tip": "Contrast sentences ('but...') hand you the answer: find the word that opposes the first half."
+      "main": "**Left to them, because the last bus had gone an hour earlier.** Calling something the only option is a claim that needs explaining, and that ending explains it.",
+      "tip": "When a sentence says \"the only\", look for the ending that says WHY the alternatives are gone. The other three never mention a choice at all."
      }
     },
     {
@@ -415,71 +428,73 @@
      "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "Celebrating at halftime turned out to be ___ — the other team scored three times after the break.",
+     "q": "Only two of the seedlings survived...",
      "opts": [
-      "gigantic",
-      "premature",
-      "extinct",
-      "ferocious"
+      "the gardener carefully into the larger pots on the upper shelf.",
+      "a bright yellow color that they kept for the rest of the summer.",
+      "the frost, and both of those were the ones closest to the wall.",
+      "because the greenhouse had been built in the previous century."
      ],
-     "ans": 1,
-     "hint": "The celebration came before it was safe to celebrate.",
+     "ans": 2,
+     "hint": "To survive is to stay alive where there was a real chance of dying.",
      "steps": [
-      "The clue: they celebrated too early, before the outcome was settled.",
-      "Premature means happening before the proper time.",
-      "Pre- (before) + mature (ready): the celebration wasn't ready to happen."
+      "Surviving means staying alive where dying was possible.",
+      "So the ending has to name the danger they came through.",
+      "A color, a gardener and the age of a greenhouse are not dangers.",
+      "The frost is the danger, and the wall explains why those two made it."
      ],
      "ex": {
-      "main": "**Premature.** Not wrong to celebrate — wrong to celebrate THEN. The word is entirely about timing.",
-      "tip": "Premature marks timing errors: premature celebration, premature conclusion, premature baby — early every time."
+      "main": "**The frost, and both of those were the ones closest to the wall.** Surviving needs something to survive, and the frost is the only threat on offer.",
+      "tip": "The word \"survive\" always implies a danger. If an ending does not contain one, it is not the ending you want."
      }
     },
     {
      "id": "q11",
-     "lv": 3,
+     "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "'Grandma preserves the summer tomatoes in glass jars.' Which meaning of 'preserve' is that?",
+     "q": "It was evident from the tracks...",
      "opts": [
-      "To protect from harm",
-      "To keep from being seen",
-      "To keep from rotting or spoiling",
-      "To save money"
+      "and the visitor centre would not be opening again until Friday.",
+      "which the ranger had photographed from three different angles.",
+      "before the rain began to fall heavily across the whole valley.",
+      "that a large animal had crossed the mud some time that morning."
      ],
-     "ans": 2,
-     "hint": "What do the jars actually prevent?",
+     "ans": 3,
+     "hint": "Evident means easy to see and understand — so something follows from it.",
      "steps": [
-      "Preserve has two senses: protect from harm (preserve the forests) and keep from spoiling (preserve the peaches).",
-      "Jars and canning fight rot, not robbers.",
-      "The keep-from-spoiling sense — the book's example is canned peaches, same move."
+      "If something is evident, there is a fact you can read straight off.",
+      "The tracks are the thing being read.",
+      "The ending therefore has to say what the tracks made clear.",
+      "That a large animal crossed that morning is exactly such a fact."
      ],
      "ex": {
-      "main": "**Keep from spoiling.** Both senses are about saving something — the question is saving it from WHAT. Jars answer: from rot.",
-      "tip": "Preserve + food = the spoiling sense. Preserve + forests/traditions/buildings = the protect sense."
+      "main": "**That a large animal had crossed the mud some time that morning.** \"It was evident from X…\" is a sentence waiting to be told WHAT was evident, and only one ending supplies it.",
+      "tip": "Look at the grammar the opening sets up. \"It was evident from the tracks…\" almost demands the word \"that\" next."
      }
     },
     {
      "id": "q12",
-     "lv": 3,
+     "lv": 1,
      "from": "source",
      "kind": "mc",
-     "q": "In which sentence is 'prey' used as a VERB?",
+     "q": "A wolf is a carnivore and will not touch the grain.\n\nWhat part of speech is \"carnivore\" in this sentence?",
      "opts": [
-      "The rabbit is easy prey for the hawk.",
-      "Scammers prey on people who are in a hurry.",
-      "The lion watched its prey from the tall grass.",
-      "Travelers can be prey to pickpockets."
+      "noun",
+      "adjective",
+      "verb"
      ],
-     "ans": 1,
-     "hint": "The verb is the ACT of hunting or robbing — something the subject DOES.",
+     "ans": 0,
+     "hint": "Try putting \"a\" in front of the word.",
      "steps": [
-      "Prey the noun names the hunted; prey the verb is the hunting (or robbing) itself.",
-      "'Easy prey', 'its prey', 'prey to pickpockets' — all name a thing or victim. Nouns.",
-      "'Scammers prey on people' — preying is what the scammers DO. That's the verb, in the book's rob-by-trickery sense."
+      "Ask what job the word is doing here.",
+      "It reads \"a carnivore\" — the sentence is naming what a wolf IS.",
+      "Only a noun takes \"a\" in front of it like that.",
+      "So \"carnivore\" is a noun."
      ],
      "ex": {
-      "main": "**'Scammers prey on people.'** The verb form usually travels with 'on' — to prey ON someone. And note the spelling: prey, never pray.",
-      "tip": "The 'prey on' construction is the verb's fingerprint. No 'on', probably the noun."
+      "main": "**Noun.** The sentence names what a wolf is, and \"a\" sits in front of the word.",
+      "tip": "The test for a noun: can you put \"a\", \"an\" or \"the\" in front of it? If you can, it is doing a noun's job in that sentence."
      }
     },
     {
@@ -487,23 +502,23 @@
      "lv": 1,
      "from": "source",
      "kind": "mc",
-     "q": "Next to the weightlifter's barbell, my backpack looked ___.",
+     "q": "The ferocious storm tore the roof from the barn.\n\nWhat part of speech is \"ferocious\" in this sentence?",
      "opts": [
-      "puny",
-      "ferocious",
-      "evident",
-      "carnivorous"
+      "noun",
+      "adjective",
+      "verb"
      ],
-     "ans": 0,
-     "hint": "Small and weak by comparison.",
+     "ans": 1,
+     "hint": "Ask which word it is telling you about.",
      "steps": [
-      "The clue: something looks small and weak next to something mighty.",
-      "Puny means weak, or lacking in size or power.",
-      "The book's example is the same shape: a one-dollar offering seeming puny next to bigger gifts."
+      "Find the nouns: \"storm\", \"roof\" and \"barn\".",
+      "The word sits between \"The\" and \"storm\", telling you what kind of storm.",
+      "Describing a noun is an adjective's job.",
+      "So \"ferocious\" is an adjective here."
      ],
      "ex": {
-      "main": "**Puny.** Puny is comparative by nature — things look puny NEXT TO something bigger.",
-      "tip": "Puny and gigantic are this lesson's size bookends. Expect them played against each other."
+      "main": "**Adjective.** It tells you what kind of storm it was — it describes \"storm\".",
+      "tip": "A word wedged between \"the\" and a noun is nearly always describing that noun."
      }
     },
     {
@@ -511,27 +526,151 @@
      "lv": 2,
      "from": "source",
      "kind": "mc",
-     "q": "Which sentence uses 'survivor' correctly?",
+     "q": "She could not comprehend a word of the instructions.\n\nWhat part of speech is \"comprehend\" in this sentence?",
      "opts": [
-      "The survivor of the storm rebuilt fastest of all.",
-      "She survivor the long winter.",
-      "The plants survivor without water.",
-      "It was a survivor day for everyone."
+      "noun",
+      "adjective",
+      "verb"
      ],
-     "ans": 0,
-     "hint": "Survivor is a NOUN — a person or thing that lived through it.",
+     "ans": 2,
+     "hint": "Ask what she could not DO.",
      "steps": [
-      "Survivor is the noun form: one who stays alive or comes through a situation.",
-      "'She survivor the long winter' and 'The plants survivor without water' need the verb survive; 'a survivor day' wrongly uses it as an adjective.",
-      "Only 'The survivor of the storm' treats it as a noun naming a person — correct."
+      "The sentence is about something she was unable to do.",
+      "\"Could not\" in front of a word is a strong sign a verb follows it.",
+      "The word also takes an object — \"a word of the instructions\".",
+      "So \"comprehend\" is a verb."
      ],
      "ex": {
-      "main": "**'The survivor of the storm…'** Verb: survive. Noun: survivor. The -or ending names the one who did it, like sailor and inventor.",
-      "tip": "-or/-er endings usually mean 'the one who does it.' If the sentence needs an action, you want the bare verb instead."
+      "main": "**Verb.** It is the action she could not perform, and \"could not\" in front of it can only be followed by a verb.",
+      "tip": "\"Can\", \"could\", \"will\" and \"must\" are always followed by a verb. Spotting one of those is a shortcut to the answer."
      }
     },
     {
-     "id": "sq0",
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "The owl spotted its prey in the long grass below.\n\nWhat part of speech is \"prey\" in this sentence?",
+     "opts": [
+      "noun",
+      "adjective",
+      "verb"
+     ],
+     "ans": 0,
+     "hint": "The word has \"its\" in front of it. What does that settle?",
+     "steps": [
+      "\"Prey\" really can be a verb — owls prey on mice.",
+      "Here it reads \"its prey\", with a possessive word in front of it.",
+      "A word in that slot is a thing being owned or sought, not an action.",
+      "So in THIS sentence it is a noun."
+     ],
+     "ex": {
+      "main": "**Noun.** \"Its prey\" names the animal the owl is hunting. The same word is a verb in other sentences — an owl preys on mice — which is exactly why the sentence decides and not the word.",
+      "tip": "This is the trap that costs the most marks on a real paper. \"My\", \"its\", \"their\" in front of a word all point to a noun."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "sharp teeth, strong claws, a diet of meat\n\nWhich word connects to all three?",
+     "opts": [
+      "carnivore",
+      "ancestor",
+      "option",
+      "duration"
+     ],
+     "ans": 0,
+     "hint": "All three are things you would notice about the same kind of animal.",
+     "steps": [
+      "Sharp teeth and strong claws are tools for catching and tearing.",
+      "A diet of meat says what those tools are for.",
+      "The three together describe one kind of animal.",
+      "A flesh-eating animal is a carnivore."
+     ],
+     "ex": {
+      "main": "**Carnivore.** Teeth, claws and a meat diet all belong to an animal that lives by eating other animals.",
+      "tip": "Work out what the three things have in common before you read the options — the answer is usually obvious once you have named it yourself."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "a jar of jam, a museum case, a freezer\n\nWhich word connects to all three?",
+     "opts": [
+      "comprehend",
+      "preserve",
+      "survive",
+      "obscure"
+     ],
+     "ans": 1,
+     "hint": "Ask what all three are FOR, not what they are.",
+     "steps": [
+      "A jar, a case and a freezer are three very different objects.",
+      "Each one is designed to stop what is inside it from spoiling.",
+      "Jam, an exhibit and frozen food are all being kept from harm.",
+      "Keeping something from harm is to preserve it."
+     ],
+     "ex": {
+      "main": "**Preserve.** All three exist to keep what is inside them safe from spoiling.",
+      "tip": "\"Survive\" is the near miss worth noticing: the thing inside does survive, but the jar is what PRESERVES it. Match the word to the container, not to the contents."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "a family tree, a great-great-grandmother, a faded photograph\n\nWhich word connects to all three?",
+     "opts": [
+      "option",
+      "prey",
+      "ancestor",
+      "carnivore"
+     ],
+     "ans": 2,
+     "hint": "All three point back along the same line.",
+     "steps": [
+      "A family tree maps who came before whom.",
+      "A great-great-grandmother is four generations back.",
+      "A faded photograph is a record of someone long ago.",
+      "A person you are descended from is an ancestor."
+     ],
+     "ex": {
+      "main": "**Ancestor.** Each one is a way of reaching back to the people you are descended from.",
+      "tip": "The word \"faded\" and the string of \"great\"s are both doing the same job: telling you how far back to look."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "the dodo, the woolly mammoth, the sabre-toothed cat\n\nWhich word connects to all three?",
+     "opts": [
+      "puny",
+      "ferocious",
+      "gigantic",
+      "extinct"
+     ],
+     "ans": 3,
+     "hint": "Two of these were fierce and two were huge. What do all THREE share?",
+     "steps": [
+      "The dodo was a flightless bird, not fierce and not huge.",
+      "The mammoth was enormous; the sabre-toothed cat was a fierce hunter.",
+      "So neither \"ferocious\" nor \"gigantic\" covers all three.",
+      "What all three share is that none of them is alive today."
+     ],
+     "ex": {
+      "main": "**Extinct.** The only thing true of all three is that no living member of any of them remains.",
+      "tip": "When two options each fit SOME of the three, neither is the answer. The right word has to cover every one of them."
+     }
+    },
+    {
+     "id": "q20",
      "lv": 1,
      "from": "added",
      "kind": "spell",
@@ -552,7 +691,7 @@
      }
     },
     {
-     "id": "sq1",
+     "id": "q21",
      "lv": 1,
      "from": "added",
      "kind": "spell",
@@ -573,7 +712,7 @@
      }
     },
     {
-     "id": "sq2",
+     "id": "q22",
      "lv": 1,
      "from": "added",
      "kind": "spell",
@@ -594,7 +733,7 @@
      }
     },
     {
-     "id": "sq3",
+     "id": "q23",
      "lv": 1,
      "from": "added",
      "kind": "spell",
@@ -615,7 +754,7 @@
      }
     },
     {
-     "id": "sq4",
+     "id": "q24",
      "lv": 1,
      "from": "added",
      "kind": "spell",
@@ -635,7 +774,8 @@
       "tip": "When a word is prefix + word-you-know, spell the pieces, not the whole."
      }
     }
-   ]
+   ],
+   "libv": 2
   }
  }
 }

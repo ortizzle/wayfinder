@@ -2004,6 +2004,120 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Practice shaped like the real test (v169, THIS APP ONLY)
+
+Chris: *"I added River's Unit 2 Vocab Test with her answers. She got 20/25.
+Now that we have a better idea of how she's tested, I'd like to ensure future
+practice tests in the app are updated somewhat to reflect this style of
+testing."*
+
+**Her real paper has five sections worth five marks each**, and the app's
+vocabulary units were testing almost none of them. `Unit 2 - Vocab Test.pdf`
+(Drive, English/Wordly Wise, 2026-09-20) is a scan with her answers circled;
+it was rendered with `pypdfium2` and read as images, since no text extraction
+can see a circle.
+
+| Section | What it asks | Built as |
+|---|---|---|
+| 1. Reading passage · context clues | a passage, then "how is the term X used?" | `ctx()` — MC carrying a `passage` |
+| 2. Synonyms and antonyms | "which word means the SAME as / OPPOSITE of X?" | `syn()` |
+| 3. Context clues · sentence completion | the stem trails off; the options are ENDINGS | `fit()` |
+| 4. Parts of speech | noun / adjective / verb for the word in one sentence | `pos()` — **three** options |
+| 5. Word association | three related words, pick the term that connects them | `assoc()` |
+
+`tools/builders/vocab_test_common.py` is one helper per section, so a lesson
+cannot quietly drift back to "What does X mean?" — which is what Lessons 4 and
+5 were made of almost end to end, and which is the one shape the real paper
+never uses. **Lessons 3, 4 and 5 are rebuilt** to four questions in each of
+the five shapes. The cards are untouched and reloaded from the shipped file.
+
+- **The staging differs from the paper, deliberately, and the reason is a
+  measurement.** The paper hangs five questions off one long passage;
+  `pickRound()` serves five shuffled questions, so each has to stand alone and
+  carry its own passage. Rendered on her phone, a 90-word passage is 440px
+  tall and pushes the first answer to y=894 on an 844px screen — she would
+  scroll past the options, on every question in the section. A 36-word one
+  sits at 683. So `check_content.py`'s existing ~45-word cap stays and each
+  context question carries its own short passage. The skill travels; the
+  staging does not.
+- **Three options on a parts-of-speech item, not four.** Padding to four with
+  an "adverb" that is never the answer anywhere in the unit hands her a dead
+  option to eliminate for free. The runtime never cared — `optArr` maps over
+  `q.opts` and letters come from position, so A/B/C renders correctly and was
+  verified live before any content was authored. Only the authoring guards in
+  `unit_common.build()` and `check_content.py` needed relaxing, and both gate
+  on the option SET being the parts of speech rather than on a flag, so the
+  allowance cannot be used to wave through a thin three-option vocabulary
+  question.
+- **The length-bias check skips parts-of-speech items**, for the same reason
+  it skips a guide unit's transcribed options: "adjective" is simply longer
+  than "noun" and "verb" and the words are not ours to pad. Not exploitable
+  anyway — her own paper's five answers ran noun, noun, noun, verb,
+  adjective, so "always pick the longest" would have scored 1 of 5.
+
+> ⚠️ **`_balance()` would have thrown on the first three-option question.**
+> It rotated the answer into `slot % 4` and indexed `opts[want]`, so a target
+> slot of 3 on a three-option list is an IndexError — and a one-option slider
+> would have thrown on the very first rotation past zero. No shipped unit ever
+> hit it because `build_numberline.py` writes its unit directly and never
+> calls `build()`. It is `slot % len(x['opts'])` now, and skips anything with
+> fewer than two options.
+
+**What her paper actually caught is two ideas, not five.** Three of the five
+misses touched **cultivate**: she chose "merge" as its synonym, missed its
+figurative sense in a sentence completion, and then chose "cultivate" again
+for the juice/oil/syrup association that wanted "extract". The other two were
+**parts of speech**: "export" in *an important export* and "craving" in *had
+a craving*, both nouns, marked adjective and verb.
+
+- **The material was not the gap — the form was.** Lesson 2 already taught
+  cultivate's figurative sense (`q7`) and extract as a noun (`q10`). But those
+  ask *"In which sentence is X used as a VERB?"*, which means hunting across
+  four sentences, where the paper asks *"What part of speech is X in THIS
+  sentence?"*, which means parsing one slot. Different tasks, and only the
+  second is the one she sat.
+- Six questions are **appended** to Lesson 2 — never renumbered, because that
+  unit has been tested on and every existing id has to keep its meaning. New
+  ids from `max(existing)+1` (v149). Her own wrong answers appear as
+  distractors on purpose, so the explanation can say why "merge" is not a
+  synonym for cultivate and why growing the olives is a different step from
+  getting the oil out.
+- Two **pre-existing** length outliers in Lesson 2 were fixed while it was
+  re-drafting anyway — `q1`'s answer ran 157% longer than the next longest
+  option and `q7`'s 69%. Fixed by giving the distractors substance, never by
+  trimming the answer (v185).
+
+> ⚠️ **I wrote British spellings into an American fourth-grader's material** —
+> colour, flavour, metre, millimetre, harbour, grey — and only caught them on
+> a sweep. Her school, her test and every other unit in this app are American.
+> The fix went into the BUILDERS, not the JSON, or the next rebuild would have
+> put them straight back.
+
+**Lesson 3 keeps its five `kind:'spell'` questions**, appended after the
+twenty, even though no section of the real paper tests spelling. They are
+useful and they already shipped, and dropping working practice was not what
+was asked for — flagged in its `parentNote` instead of decided quietly. That
+makes Lesson 3 twenty-five questions against Lessons 4 and 5 at twenty.
+
+> **Raised, not acted on. Lesson 1 was left alone** — its unit test is behind
+> her, so reshaping it buys much less, and it was not part of the ask. It does
+> carry the library's worst remaining length tells (`q2` at 173%, two more at
+> 50%), which still reach her through Pair Up, Junior Jeopardy and the Growth
+> Zone. Worth a pass of its own.
+
+> **This is RIVER's teacher's format and must not be assumed for Sedona.**
+> Ad Astra's Wordly Wise Book 9 units are a different school year, a different
+> teacher and a different book. The builder and checker changes are shared and
+> went to both repos; the format spec did not.
+
+`tools/test_vocabtest.js` pins the shapes rather than the question ids, which
+would not survive a renumber: all five shapes present in each rebuilt lesson,
+the three-option items rendering A/B/C at 44px and crediting correctly, every
+passage inside the cap and rendering above the fold, a full round on each
+lesson, Lesson 2's six additions present with its first fifteen ids untouched,
+and — the assertion that says why any of this happened — no rebuilt lesson
+asking "What does X mean?" any more.
+
 ### Words for the note from home (v168 / Ad Astra v188, both apps)
 
 Chris: *"can you generate messages for the post-it notes?"* Engine identical
