@@ -2004,6 +2004,27 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Ungraded first, graded tucked away (v170 / Ad Astra v190, both apps)
+
+Chris: *"For grading quizzes, once graded can they get tucked away or ordered
+separately, so I can focus on ungraded quiz and tests?"* Engine, identical
+here — see ad-astra/CLAUDE.md's section of the same name for the full
+reasoning. In short: the parent view's Tests & quizzes list splits into
+**Waiting on a score · N** (sat and unmarked, newest first), **Still to come**
+(upcoming, soonest first, whose rows say "Edit" rather than "Add score" since
+a test that has not happened has no score to add), and the graded ones folded
+behind one door that names how many there are. The partition is
+`a.score == null`, never `!a.score` — a real zero is a grade, the v84 bug.
+
+`tools/test_gradesplit.js` is the same file as Ad Astra's.
+
+**`tools/test_suggest.js` was rewritten in the same pass** because it had
+rotted by the calendar for the second time: it pinned the 9/18 quiz by name,
+which expired on 9/19 and took four other assertions down with it — the exact
+failure v160 fixed once already when it pinned 9/10 and broke on 9/11. It now
+runs the accept-flow against whichever suggestion is still ahead today and
+names no date at all.
+
 ### Practice shaped like the real test (v169, THIS APP ONLY)
 
 Chris: *"I added River's Unit 2 Vocab Test with her answers. She got 20/25.
