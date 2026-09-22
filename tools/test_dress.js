@@ -14,11 +14,25 @@ const PORT = process.argv[2] || 8202;
   const ev = await p.evaluate(() => {
     const on = d => eventsOn(d).map(e => ({name:e.name, kind:e.kind}));
     return {pic: on('2026-09-16'), spirit: on('2026-09-23'), clubs: on('2026-09-14'), pledge: on('2026-10-01'),
-            dressCount: CAL.events.filter(e => e.kind==='dress').length};
+            /* A MINIMUM, never an exact count. This asserted ===6 and broke the
+               moment the Cub Hub of 9/18 added three October dress days — the
+               list is supposed to grow every time a newsletter names one. Pin
+               what must stay true (a dress day is kind:'dress', and a day that
+               is merely dated is not), not the number that happens to be right
+               today. Same rot test_phases' exact-18 and test_cells' libv===1
+               already paid for. */
+            dressCount: CAL.events.filter(e => e.kind==='dress').length,
+            /* The other half of the rule: nothing that is just a date may be
+               dressed up as a dress day, or the label stops meaning anything. */
+            miscast: CAL.events.filter(e => e.kind==='dress' && !e.note).map(e=>e.name)};
   });
   ck('Picture Day and Spirit Week are dress days; the rest of the list is in as notes',
      ev.pic.some(e=>/Picture Day/.test(e.name) && e.kind==='dress') && ev.spirit.some(e=>/Spirit Week/.test(e.name) && e.kind==='dress')
-     && ev.clubs.some(e=>/clubs begin/i.test(e.name)) && ev.pledge.some(e=>/Pledge/.test(e.name)) && ev.dressCount===6, ev);
+     && ev.clubs.some(e=>/clubs begin/i.test(e.name)) && ev.pledge.some(e=>/Pledge/.test(e.name))
+     && ev.clubs.every(e=>e.kind!=='dress') && ev.pledge.every(e=>e.kind!=='dress')
+     && ev.dressCount >= 6, ev);
+  ck('every dress day says what to wear — a dress day without a note is just a date',
+     ev.miscast.length === 0, ev.miscast);
 
   // Render Today AS 9/16 by pointing the clock there.
   const pinned = await p.evaluate(() => {

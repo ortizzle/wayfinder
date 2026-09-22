@@ -2043,6 +2043,17 @@ October was almost entirely missing and is now in.
 - Nothing here needed a new mechanism: `kind:'dress'` (v127) and the `dismiss`
   fallback both already existed and were waiting for exactly this.
 
+> ⚠️ **`tools/test_dress.js` asserted `dressCount === 6` and this change broke
+> it** — three October dress days are exactly the growth that list is supposed
+> to have, so an exact count could only ever be a time bomb. It is a MINIMUM
+> now, plus the rule the count was standing in for: **every `kind:'dress'`
+> event must carry a `note`**, or a day that is merely dated is wearing the
+> label and the label stops meaning anything. Verified by stripping Unity
+> Day's note and watching the new guard fail with `["Unity Day"]`. Same rot
+> `test_phases.js`'s exact-18 and `test_cells.js`'s `libv === 1` already paid
+> for — pin what must stay true, never the number that happens to be right
+> today.
+
 > The **4th Grade Newsletter of 9/11** was read in the same pass and needed no
 > changes: its three assessments (Vocab Test 9/16, Chemistry Quiz 9/17, Math
 > Quiz 9/18) are all behind her now, and its forward dates — end of Quarter 1,
