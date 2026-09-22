@@ -2004,6 +2004,52 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### The note moves up (v173 / Ad Astra v193, both apps)
+
+Chris: *"Let's move the note to just below the daily 3 section."* Engine,
+identical here — see ad-astra/CLAUDE.md's section of the same name for the
+reasoning, including why this deliberately reverses the v103 call to bury it
+under Coming up, and the probe that passed on a clean install while proving
+nothing (no approved units means no daily three to sit under).
+
+### October, and a dismissal time that is finally published (v173)
+
+The **Cub Hub of 9/18** read straight through — a clean text layer, unlike the
+9/4 issue, which was a 12 MB image-only scan that had to reach us as a
+screenshot. Everything it lists for September was already on her calendar
+(Spirit Week's five dress days, O'Connor Day, the SHINE lunch, Pledge Signing);
+October was almost entirely missing and is now in.
+
+- **October 2's dismissal time is the one real correctness fix.** The early
+  release was already on the calendar, but with no time — and the pick-up row
+  must never show the usual time on an early-release day, so it has been
+  honestly saying "time not published yet" since it shipped. The newsletter
+  prints it per grade: K 11:00, 1st–2nd 12:00, **3rd–4th 11:40**. Hers is what
+  goes in `dismiss`, with Late Bird until 5:30 as the note. This is exactly
+  what that fallback was built to wait for.
+- **Three more dress days**, all National Bullying Prevention Month: Odd Socks
+  (10/16), Unity Day in orange (10/21), and the Costume Parade (10/30). Each
+  `note` carries the REASON rather than only the instruction — "celebrating our
+  differences", not just "wear mismatched socks" — because a dress day with a
+  reason attached is the whole point of that month and the row has space for it.
+- Also added: SHINE presentations and the start of Quarter 2 (10/12), Quarter 1
+  report cards (10/16), the Book Fair as one multi-day event (10/23–10/29) with
+  its grand event called out (10/28), and fall picture retakes (10/27). The
+  Boo Bash already there keeps its own row on 10/23 — it is an evening event,
+  not the fair.
+- **Kindergarten and 2nd-grade field trips were deliberately left out.** They
+  are on the same list and have nothing to do with her; a calendar that lists
+  other grades' outings trains her to skim it.
+- Nothing here needed a new mechanism: `kind:'dress'` (v127) and the `dismiss`
+  fallback both already existed and were waiting for exactly this.
+
+> The **4th Grade Newsletter of 9/11** was read in the same pass and needed no
+> changes: its three assessments (Vocab Test 9/16, Chemistry Quiz 9/17, Math
+> Quiz 9/18) are all behind her now, and its forward dates — end of Quarter 1,
+> Fall Break, report cards — were already in `CAL.quarters` / `CAL.closed` or
+> are covered by the October block above. Worth recording that it was checked,
+> so the next sweep does not re-read it looking for something missed.
+
 ### Needs you (v172 / Ad Astra v192, both apps)
 
 Chris: *"Would there be a way for you to provide me with a summary of what
