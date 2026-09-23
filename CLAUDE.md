@@ -2004,6 +2004,32 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Every deck gets its list (v174 / Ad Astra v196, both apps)
+
+Chris: *"I like seeing the flashcard words listed out as an option. Can we do
+that for all sections of flashcards?"* Engine, identical here — see
+ad-astra/CLAUDE.md's section of the same name for the full reasoning, the two
+rules that had to survive and the probe bug it turned up.
+
+In short: the word list (v171) covered the seven Wordly Wise lessons and now
+covers **54 of this library's 58 decks**, because what made the narrow gate
+necessary was the LABEL ("all 6 words" on an eighteen-card deck), not the
+audience. `wordListCards()` now returns every card with an answer to hide —
+multi-word terms included, ponder prompts excluded — and `wordListNoun()`
+reads the noun off the deck, so a maths or science lesson gets a **Term
+list** and a vocabulary lesson keeps its **Word list**. The floor is three
+entries.
+
+**This app is where the bee exclusion earns its keep.** Four Spelling Bee
+decks are thirteen single words each and pass every part of the raw test;
+they are still excluded, because that unit announces its word and refuses to
+show it until she has spelled it. Printing all thirteen on one screen would
+hand over the one thing it withholds.
+
+`tools/test_wordlist.js` and `tools/contrast_wordlist.js` are the same files
+as Ad Astra's; both discover their own units rather than naming one in argv.
+Worst measured contrast here is 5.38:1 across 360 samples.
+
 ### The note moves up (v173 / Ad Astra v193, both apps)
 
 Chris: *"Let's move the note to just below the daily 3 section."* Engine,
