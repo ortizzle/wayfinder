@@ -27,8 +27,13 @@ const PORT = process.argv[2] || 8302;
               graphed: u.questions.filter(q=>q.graph).length,
               order: u.questions.filter(q=>q.kind==='order').length };
   });
-  ck('unit-az-latlong seeds: 9 cards, 18 questions, classId history',
-     seed.cards===9 && seed.questions===18 && seed.classId==='history', seed);
+  /* A MINIMUM, never an exact count. This unit grew when her Unit 5 study
+     guide turned out to grade on the words "parallels" and "meridians" — and
+     an exact number turns every honest addition into a failure, which this
+     file has now paid for once. The classId is the v136 orphan trap. */
+  ck('unit-az-latlong seeds with a real deck and bank under classId history',
+     seed.cards >= 9 && seed.questions >= 18 && seed.classId === 'history' &&
+     seed.graphed >= 11 && seed.order === 2, seed);
   ck('11 of the questions carry their own map graph, and 2 are put-in-order',
      seed.graphed===11 && seed.order===2, seed);
 
@@ -126,11 +131,15 @@ const PORT = process.argv[2] || 8302;
 
   const cardDoor = await p.evaluate(() => {
     go('unit', {classId:'history'});
-    // The title's " · " shelves this as a one-lesson book (seriesOf()), so
-    // the unit's own card is one tap inside the shelf spine, not directly
-    // on the subject screen — same as any other shelved lesson.
-    const spine = [...document.querySelectorAll('#screen button')].find(b => /Latitude and Longitude/.test(b.textContent));
+    /* It shelves on the three-part Unit 5 book now (it is section five of
+       that study guide), so reaching its card is two taps: the spine, then
+       its own stop on the topic map. It used to be a one-lesson book, where
+       the card opened with the shelf. */
+    const spine = [...document.querySelectorAll('#screen button')].find(b => /Unit 5/.test(b.textContent));
     if(spine) spine.click();
+    const stop = [...document.querySelectorAll('#screen .stop')]
+      .find(el => /Latitude and Longitude/.test(el.textContent));
+    if(stop) stop.click();
     const btn = [...document.querySelectorAll('#screen button')].find(b => /🗺️.*Map/.test(b.textContent));
     return { found: !!btn };
   });

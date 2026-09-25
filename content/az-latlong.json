@@ -1,569 +1,1195 @@
 {
-  "v": 4,
-  "records": {
-    "unit-az-latlong": {
-      "id": "unit-az-latlong",
-      "type": "unit",
-      "updatedAt": 1788804422000,
-      "libv": 4,
-      "classId": "history",
-      "quarter": 1,
-      "status": "draft",
-      "title": "Latitude and Longitude · Reading a Real Map",
-      "srcName": "The United States — US Bingo (Arizona Geographic Alliance)",
-      "source": "Built from the same US map used in class for latitude/longitude bingo — real cities, same 5-degree gridlines",
-      "summary": {
-        "text": "Practice reading latitude and longitude on the same United States map used in class for latitude/longitude bingo: the equator and Prime Meridian, why a coordinate needs both numbers, and — the main event — comparing and estimating real city positions using a 5-degree grid, without memorizing any one city's exact coordinate.",
-        "from": "added"
-      },
-      "why": {
-        "text": "The skill that transfers is READING a grid — comparing positions, estimating between gridlines — not memorizing any one place's coordinate. Every question here is built to be answered from the map shown, not from a fact learned in advance.",
-        "from": "added"
-      },
-      "objectives": [
-        {"text": "Explain what a line of latitude and a line of longitude each measure, and from where.", "from": "added"},
-        {"text": "Read a coordinate pair in the correct order.", "from": "added"},
-        {"text": "Compare two or more real cities by latitude or longitude, and estimate a position between two gridlines, using the grid itself rather than a memorized fact.", "from": "added"}
-      ],
-      "parentNote": {
-        "text": "Rebuilt around the actual map from class (the Arizona Geographic Alliance US Bingo sheet, in her Drive folder) rather than an invented one — same 28 cities, same 5-degree gridlines from 130°W-70°W and 25°N-45°N (widened slightly here to fit a few cities right at the map's edge). On your note that flashcards shouldn't quiz exact coordinates for a place: every 'what is City X's coordinate' and 'which city is at this coordinate' question is gone, along with the cards that stated a city's coordinate as a fact to memorize. What is left is comparison (furthest north/south/east/west, ranking cities north-to-south or west-to-east) and estimation (reading a value between two gridlines, or judging which of several cities sits closest to a given line) — both answerable only by looking at the map in front of her, never by recalling a stored number. The country's outline is deliberately NOT drawn — a recognizable United States coastline is a much bigger shape than Arizona's near-rectangle, and a rough approximation of it risked looking wrong rather than helpful; the grid and the labeled cities carry the whole lesson without it.",
-        "from": "added"
-      },
-      "nextUp": {
-        "text": "Run the cards once, then a quiz round with the map open.",
-        "minutes": 14,
-        "from": "added"
-      },
-      "mapTitle": "The class map",
-      "mapLabel": "Map — see every city at once",
-      "mapNote": "The same 5-degree grid from class, with every city this unit asks about marked at once. Each question already shows its own slice of cities — open this any time you want to check one against the fuller picture instead.",
-      "mapRef": {
-        "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-        "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-        "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-        "pts": [
-          {"x":-122.33,"y":47.61,"label":"Seattle"},
-          {"x":-122.42,"y":37.77,"label":"San Francisco"},
-          {"x":-117.16,"y":32.72,"label":"San Diego"},
-          {"x":-104.99,"y":39.74,"label":"Denver"},
-          {"x":-96.80,"y":32.78,"label":"Dallas"},
-          {"x":-95.37,"y":29.76,"label":"Houston"},
-          {"x":-90.05,"y":35.15,"label":"Memphis"},
-          {"x":-87.63,"y":41.88,"label":"Chicago"},
-          {"x":-84.39,"y":33.75,"label":"Atlanta"},
-          {"x":-80.19,"y":25.76,"label":"Miami"},
-          {"x":-71.06,"y":42.36,"label":"Boston"}
-        ]
-      },
-      "cards": [
-        {
-          "id": "c0",
-          "term": "Latitude",
-          "def": "**Lines that run east–west and measure distance north or south of the equator.**\n• 0° at the equator, up to 90°N or 90°S at the poles.\n• Every point on the same line of latitude is the same distance from the equator.",
-          "hint": "LAT-itude is FLAT-itude — the lines are flat, running side to side.",
-          "from": "added"
-        },
-        {
-          "id": "c1",
-          "term": "Longitude",
-          "def": "**Lines that run pole to pole and measure distance east or west of the Prime Meridian.**\n• 0° at the Prime Meridian, up to 180°E or 180°W.\n• Every point on the same line of longitude is the same distance around the globe from that meridian.",
-          "hint": "LONG-itude lines are LONG, running all the way from pole to pole.",
-          "from": "added"
-        },
-        {
-          "id": "c2",
-          "term": "The equator",
-          "def": "**The 0° latitude line, halfway between the North and South Poles.**\n• Everything north of it is the Northern Hemisphere.\n• The whole United States sits north of it — every latitude on the class map is a °N.",
-          "hint": "The equator is a latitude line, so it splits the globe north-south.",
-          "from": "added"
-        },
-        {
-          "id": "c3",
-          "term": "The Prime Meridian",
-          "def": "**The 0° longitude line, running through Greenwich, England.**\n• Everything west of it (up to the far side of the globe) is the Western Hemisphere.\n• The whole United States sits west of it — every longitude on the class map is a °W.",
-          "hint": "The Prime Meridian is a longitude line, so it splits the globe east-west.",
-          "from": "added"
-        },
-        {
-          "id": "c4",
-          "term": "Reading a coordinate pair",
-          "def": "**Latitude is always given first, then longitude.**\n• 33°N, 112°W means: find the 33°N line, then slide along it to 112°W.\n• Swap the order and you would be looking for a completely different spot.",
-          "hint": "Alphabetical order helps: LAtitude before LOngitude.",
-          "from": "added"
-        },
-        {
-          "id": "c5",
-          "term": "Reading the class map",
-          "def": "**The same map from class — a 5-degree grid over the United States, with real cities marked.**\n• Longitude lines run 130°W to 70°W.\n• Latitude lines run 25°N to 45°N.",
-          "hint": "The lines are 5 degrees apart on this map — count gridlines, don't guess.",
-          "from": "source",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-122.33,"y":47.61,"label":"Seattle"},
-              {"x":-117.16,"y":32.72,"label":"San Diego"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-95.37,"y":29.76,"label":"Houston"},
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"},
-              {"x":-80.19,"y":25.76,"label":"Miami"},
-              {"x":-71.06,"y":42.36,"label":"Boston"}
-            ]
-          }
-        },
-        {
-          "id": "c6",
-          "term": "Estimating between gridlines",
-          "def": "**A point does not have to land exactly on a line for you to read it.**\n• If a point sits about halfway between the 30°N and 35°N lines, a good estimate is 32°N or 33°N.\n• Being close is the goal — a map-reading estimate, not a measurement.",
-          "hint": "Which line is it closer to? Start there, then adjust a couple of degrees toward the other line.",
-          "from": "added"
-        },
-        {
-          "id": "c7",
-          "term": "Comparing without exact numbers",
-          "def": "**You can compare two places on a grid without ever reading off either one's exact coordinate.**\n• The dot higher up the page is further north — true whether or not you read a single number.\n• The dot further left is further west. Comparing positions is often faster than finding exact coordinates, and just as correct.",
-          "hint": "\"Which one is further north\" is a different, easier question than \"what is its latitude.\"",
-          "from": "added"
-        },
-        {
-          "id": "c8",
-          "term": "Why you need both numbers",
-          "def": "**One coordinate alone only narrows you down to an entire line circling the globe.**\n• Latitude alone: everywhere on that ring, the same distance from the equator — could be the US, could be Japan.\n• Longitude alone: everywhere on that line, pole to pole. Together, the two numbers pin down one exact spot.",
-          "hint": "Think of it like a spreadsheet: the row number alone, or the column letter alone, isn't one cell — you need both.",
-          "from": "added"
-        }
-      ],
-      "questions": [
-        {
-          "id": "q0",
-          "lv": 1,
-          "from": "added",
-          "kind": "mc",
-          "q": "Lines of latitude measure how far a place is north or south of which line?",
-          "opts": ["The Prime Meridian", "The equator", "The International Date Line", "The Arctic Circle"],
-          "ans": 1,
-          "hint": "LAT-itude is FLAT-itude — think of the lines running side to side.",
-          "steps": [
-            "Latitude lines run east-west, circling the globe like rings stacked from pole to pole.",
-            "Every ring is measured as a distance from ONE specific ring: the equator, at 0°.",
-            "So a latitude of 33°N means: 33 degrees north of that starting ring."
-          ],
-          "ex": {"main": "**The equator.** It's latitude's zero line — every other line of latitude is measured as a distance north or south of it.", "tip": "Latitude ↔ equator, longitude ↔ Prime Meridian. Keep the two pairs straight."}
-        },
-        {
-          "id": "q1",
-          "lv": 1,
-          "from": "added",
-          "kind": "mc",
-          "q": "Lines of longitude measure how far east or west a place is from which line?",
-          "opts": ["The equator", "The Prime Meridian", "The Tropic of Cancer", "The Arctic Circle"],
-          "ans": 1,
-          "hint": "LONG-itude lines run pole to pole, LONG ways around the globe.",
-          "steps": [
-            "Longitude lines run pole to pole, like the segments of an orange.",
-            "Every segment is measured as a distance from ONE specific segment: the Prime Meridian, at 0°.",
-            "So a longitude of 90°W means: 90 degrees west of that starting line."
-          ],
-          "ex": {"main": "**The Prime Meridian.** It's longitude's zero line, running through Greenwich, England — every other line of longitude is measured east or west of it.", "tip": "Latitude ↔ equator, longitude ↔ Prime Meridian. Keep the two pairs straight."}
-        },
-        {
-          "id": "q2",
-          "lv": 1,
-          "from": "added",
-          "kind": "mc",
-          "q": "Based on latitude, which hemisphere is the whole United States in?",
-          "opts": ["Southern Hemisphere", "Northern Hemisphere", "Eastern Hemisphere", "It straddles the equator"],
-          "ans": 1,
-          "hint": "Every US latitude on the class map ends in N, not S.",
-          "steps": [
-            "Every city on the class map carries an N after its latitude number, never an S.",
-            "N means north of the equator.",
-            "North of the equator is, by definition, the Northern Hemisphere."
-          ],
-          "ex": {"main": "**Northern Hemisphere.** Every US latitude is a °N — the whole country sits well clear of the equator.", "tip": "Hemisphere questions are usually just 'which letter does the number carry' in disguise."}
-        },
-        {
-          "id": "q3",
-          "lv": 1,
-          "from": "added",
-          "kind": "mc",
-          "q": "Based on longitude, which hemisphere is the whole United States in?",
-          "opts": ["Eastern Hemisphere", "Western Hemisphere", "Northern Hemisphere", "It straddles the Prime Meridian"],
-          "ans": 1,
-          "hint": "Every US longitude on the class map ends in W, not E.",
-          "steps": [
-            "Every city on the class map carries a W after its longitude number, never an E.",
-            "W means west of the Prime Meridian.",
-            "West of the Prime Meridian is, by definition, the Western Hemisphere."
-          ],
-          "ex": {"main": "**Western Hemisphere.** Every US longitude is a °W, and the whole country sits in the Western Hemisphere.", "tip": "Hemisphere questions are usually just 'which letter does the number carry' in disguise."}
-        },
-        {
-          "id": "q4",
-          "lv": 1,
-          "from": "added",
-          "kind": "mc",
-          "q": "A coordinate is written 33°N, 112°W. Which number is the latitude?",
-          "opts": ["112°W", "33°N", "Whichever number is bigger", "There's no way to tell"],
-          "ans": 1,
-          "hint": "One of the two labels is a hint about which kind of line it is.",
-          "steps": [
-            "Latitude is always written first in a coordinate pair, by convention.",
-            "It also carries an N or S, since latitude counts north or south of the equator.",
-            "So in 33°N, 112°W, the 33°N is the latitude and the 112°W is the longitude."
-          ],
-          "ex": {"main": "**33°N.** It comes first, and its N/S label is the giveaway — longitude always carries E or W instead.", "tip": "Alphabetical order is the trick: LAtitude before LOngitude, same as in the alphabet."}
-        },
-        {
-          "id": "q5",
-          "lv": 1,
-          "from": "added",
-          "kind": "mc",
-          "q": "Which of these is written like a real US coordinate?",
-          "opts": ["33°N, 112°W", "112°N, 33°W", "33°S, 112°E", "112°S, 33°E"],
-          "ans": 0,
-          "hint": "Check the order of the two numbers, and check both letters.",
-          "steps": [
-            "Latitude comes first and never goes past 90° — so any option opening with 112° is already impossible for a latitude.",
-            "That rules out the option starting with 112°N.",
-            "Every real US coordinate carries N and W, never S or E — that rules out both remaining wrong options.",
-            "33°N, 112°W is the one in the right order with the right letters."
-          ],
-          "ex": {"main": "**33°N, 112°W.** Order and hemisphere both have to be right — a coordinate that swaps either one points somewhere else on Earth entirely, or nowhere at all.", "tip": "A latitude can never exceed 90° — that alone eliminates some wrong answers instantly."}
-        },
-        {
-          "id": "q6",
-          "lv": 2,
-          "from": "added",
-          "kind": "mc",
-          "q": "Two US cities share almost the same latitude, even though they're on opposite sides of the country. What does that tell you about them?",
-          "opts": [
-            "They are about the same distance from the equator",
-            "They are about the same distance from the Prime Meridian",
-            "They must actually be the same city",
-            "One of the two coordinates has to be a mistake"
-          ],
-          "ans": 0,
-          "hint": "Latitude measures distance from one specific line. Which line?",
-          "steps": [
-            "Latitude measures distance north or south of the equator — nothing about east-west position.",
-            "Two cities can share a latitude while sitting far apart in longitude, like Boston and Detroit.",
-            "Sharing a latitude just means: same distance from the equator, wherever that lands east-west.",
-            "So same latitude, different longitude, is completely normal — not a mistake and not the same city."
-          ],
-          "ex": {"main": "**They are about the same distance from the equator.** Latitude and longitude are independent — matching on one says nothing about the other.", "tip": "Whenever two coordinates agree on one number but not the other, that tells you exactly one thing, not two."}
-        },
-        {
-          "id": "q7",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-122.33,"y":47.61,"label":"Seattle"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"},
-              {"x":-80.19,"y":25.76,"label":"Miami"}
-            ]
-          },
-          "q": "Using the map shown, which of these four cities is furthest NORTH?",
-          "opts": ["Seattle", "Denver", "Atlanta", "Miami"],
-          "ans": 0,
-          "hint": "Furthest north means the highest latitude — look for the dot nearest the top.",
-          "steps": [
-            "Furthest north means the largest latitude number, so look for the highest dot on the map.",
-            "Denver, Atlanta and Miami all sit well below the 40°N line.",
-            "Seattle sits up near the top of the map, above the 45°N line.",
-            "Seattle is furthest north."
-          ],
-          "ex": {"main": "**Seattle.** It's the highest dot on the map, up near the Canadian border — no gridline-reading needed once you see how far it sits above the other three.", "tip": "'Furthest north' always means compare latitude — the vertical position on the map — and ignore longitude entirely."}
-        },
-        {
-          "id": "q8",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-96.80,"y":32.78,"label":"Dallas"},
-              {"x":-95.37,"y":29.76,"label":"Houston"},
-              {"x":-80.19,"y":25.76,"label":"Miami"}
-            ]
-          },
-          "q": "Using the map shown, which of these four cities is furthest SOUTH?",
-          "opts": ["Chicago", "Dallas", "Houston", "Miami"],
-          "ans": 3,
-          "hint": "Furthest south means the lowest latitude — look for the dot nearest the bottom.",
-          "steps": [
-            "Furthest south means the smallest latitude number, so look for the lowest dot on the map.",
-            "Chicago sits highest of the four, well north of the others.",
-            "Dallas and Houston are both south of Chicago, but not as far down as the fourth city.",
-            "Miami sits lowest on the map, near the bottom edge — furthest south."
-          ],
-          "ex": {"main": "**Miami.** It sits closest to the 25°N line, the lowest latitude of the four and the lowest dot on the map.", "tip": "'Furthest south' always means compare latitude, and smaller wins."}
-        },
-        {
-          "id": "q9",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-71.06,"y":42.36,"label":"Boston"},
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-122.33,"y":47.61,"label":"Seattle"}
-            ]
-          },
-          "q": "Using the map shown, which of these four cities is furthest WEST?",
-          "opts": ["Boston", "Chicago", "Denver", "Seattle"],
-          "ans": 3,
-          "hint": "Furthest west means the largest °W number — look for the dot nearest the map's left edge.",
-          "steps": [
-            "Furthest west means the largest degrees-West number, so look for the dot nearest the map's left edge.",
-            "Boston sits close to the right edge, and Chicago and Denver are both well to the east of the fourth city.",
-            "Seattle sits close to the left edge of the map, near 122°W.",
-            "Seattle is furthest west."
-          ],
-          "ex": {"main": "**Seattle.** At roughly 122°W, it's the largest degrees-West number of the four — and the leftmost dot on the map.", "tip": "'Furthest west' always means compare longitude — the horizontal position on the map — and ignore latitude entirely."}
-        },
-        {
-          "id": "q10",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-117.16,"y":32.72,"label":"San Diego"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-71.06,"y":42.36,"label":"Boston"}
-            ]
-          },
-          "q": "Using the map shown, which of these four cities is furthest EAST?",
-          "opts": ["San Diego", "Denver", "Chicago", "Boston"],
-          "ans": 3,
-          "hint": "Furthest east means the smallest °W number — look for the dot nearest the map's right edge.",
-          "steps": [
-            "Furthest east means the smallest degrees-West number, so look for the dot nearest the map's right edge.",
-            "San Diego and Denver both sit well to the west, and Chicago is further east than either but still not the furthest.",
-            "Boston sits closest to the map's right edge, near 71°W.",
-            "Boston is furthest east."
-          ],
-          "ex": {"main": "**Boston.** At roughly 71°W, it's the smallest degrees-West number of the four — and the rightmost dot on the map.", "tip": "'Furthest east' always means compare longitude, and smaller (closer to the Prime Meridian) wins."}
-        },
-        {
-          "id": "q11",
-          "lv": 3,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-71.06,"y":42.36,"label":"Boston"},
-              {"x":-95.37,"y":29.76,"label":"Houston"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"}
-            ]
-          },
-          "q": "This one is closer than the others: using the map shown, which of these four cities is furthest NORTH?",
-          "opts": ["Chicago", "Boston", "Houston", "Atlanta"],
-          "ans": 1,
-          "hint": "Chicago and Boston are close on this axis. Which dot sits just a touch higher?",
-          "steps": [
-            "Houston and Atlanta both sit south of the other two — that much is a clear read.",
-            "Chicago and Boston are much closer together, both hovering just under the 42°N line.",
-            "Looking carefully, Boston's dot sits a hair above Chicago's — a small gap, but a real one.",
-            "Boston is furthest north, though only barely."
-          ],
-          "ex": {"main": "**Boston.** It's close — Boston and Chicago are only a fraction of a degree apart — which is exactly why this one is worth reading carefully instead of guessing from memory.", "tip": "When two dots look almost level, that's the map telling you to look again, not to pick either one at random."}
-        },
-        {
-          "id": "q12",
-          "lv": 3,
-          "from": "source",
-          "kind": "order",
-          "ans": 0,
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-122.33,"y":47.61,"label":"Seattle"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-90.05,"y":35.15,"label":"Memphis"},
-              {"x":-80.19,"y":25.76,"label":"Miami"}
-            ]
-          },
-          "q": "Using the map shown, put these cities in order from FURTHEST NORTH to FURTHEST SOUTH.",
-          "opts": ["Seattle", "Denver", "Memphis", "Miami"],
-          "hint": "Read straight down the map, highest dot first.",
-          "steps": [
-            "Seattle sits at the very top of the map, well above every other city here.",
-            "Denver sits noticeably lower, but still north of the halfway point.",
-            "Memphis sits lower still, south of the 35°N line.",
-            "Miami sits at the very bottom of the map. Highest to lowest: Seattle, Denver, Memphis, Miami."
-          ],
-          "ex": {"main": "**Seattle → Denver → Memphis → Miami.** Reading straight down the map from the highest dot to the lowest gives the same order as ranking the four latitudes from largest to smallest.", "tip": "A north-to-south ranking is just a latitude ranking — ignore longitude completely."}
-        },
-        {
-          "id": "q13",
-          "lv": 3,
-          "from": "source",
-          "kind": "order",
-          "ans": 0,
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-122.42,"y":37.77,"label":"San Francisco"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-71.06,"y":42.36,"label":"Boston"}
-            ]
-          },
-          "q": "Using the map shown, put these cities in order from FURTHEST WEST to FURTHEST EAST.",
-          "opts": ["San Francisco", "Denver", "Chicago", "Boston"],
-          "hint": "Read straight across the map, leftmost dot first.",
-          "steps": [
-            "San Francisco sits closest to the map's left edge.",
-            "Denver sits noticeably further right, closer to the middle.",
-            "Chicago sits further right still.",
-            "Boston sits closest to the map's right edge. Leftmost to rightmost: San Francisco, Denver, Chicago, Boston."
-          ],
-          "ex": {"main": "**San Francisco → Denver → Chicago → Boston.** Reading straight across the map from the leftmost dot to the rightmost gives the same order as ranking the four longitudes from largest °W to smallest.", "tip": "A west-to-east ranking is just a longitude ranking — ignore latitude completely."}
-        },
-        {
-          "id": "q14",
-          "lv": 3,
-          "from": "added",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"},
-              {"x":-80.19,"y":25.76,"label":"Miami"}
-            ]
-          },
-          "q": "On the map shown, the latitude lines are 5 degrees apart. If a point sits exactly on the 35°N line and you move two gridlines north, what latitude are you at?",
-          "opts": ["25°N", "40°N", "45°N", "37°N"],
-          "ans": 2,
-          "hint": "Each gridline is worth 5 degrees. North means the number goes up.",
-          "steps": [
-            "This map's gridlines are spaced 5 degrees apart, since gy is set to 5.",
-            "Moving north means moving toward higher latitude numbers.",
-            "One gridline north of 35°N is 35 + 5 = 40°N.",
-            "Two gridlines north of 35°N is 40 + 5 = 45°N."
-          ],
-          "ex": {"main": "**45°N.** Each gridline on this map is worth 5 degrees, so two lines north of 35°N adds 10 degrees.", "tip": "Before answering a 'how many gridlines' question, check the grid's own spacing — it isn't always 1 degree."}
-        },
-        {
-          "id": "q15",
-          "lv": 3,
-          "from": "added",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-95.37,"y":29.76,"label":"Houston"},
-              {"x":-90.05,"y":35.15,"label":"Memphis"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"},
-              {"x":-71.06,"y":42.36,"label":"Boston"}
-            ]
-          },
-          "kind": "mc",
-          "q": "On the map shown, the longitude lines are 5 degrees apart. A point sits exactly on the 100°W line. If you move one gridline east, what longitude are you at?",
-          "opts": ["105°W", "95°W", "100°E", "99°W"],
-          "ans": 1,
-          "hint": "Each gridline is worth 5 degrees. East means the °W number goes down.",
-          "steps": [
-            "This map's gridlines are spaced 5 degrees apart, since gx is set to 5.",
-            "Moving east means moving toward smaller degrees-West numbers, not larger ones.",
-            "One gridline east of 100°W is 100 − 5 = 95°W.",
-            "105°W would be one gridline WEST instead, and 100°E confuses this map's own hemisphere entirely."
-          ],
-          "ex": {"main": "**95°W.** Moving east always shrinks the degrees-West number on a US map — the opposite direction adds to it.", "tip": "Before answering, decide which way the numbers move for the direction you're asked about — it's easy to reverse by accident."}
-        },
-        {
-          "id": "q16",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-104.99,"y":39.74,"label":"Denver"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"},
-              {"x":-80.19,"y":25.76,"label":"Miami"}
-            ]
-          },
-          "q": "Using the map shown, which of these four cities sits closest to the 40°N gridline?",
-          "opts": ["Chicago", "Denver", "Atlanta", "Miami"],
-          "ans": 1,
-          "hint": "Find the 40°N line, then see which dot it almost passes through.",
-          "steps": [
-            "Find the 40°N gridline on the map — it runs between Chicago's row and Denver's row.",
-            "Chicago sits a little above it; Atlanta and Miami both sit well below it.",
-            "Denver sits just barely below the line — the closest of the four to actually touching it.",
-            "Denver is closest to the 40°N gridline."
-          ],
-          "ex": {"main": "**Denver.** Its dot sits nearly on the 40°N line itself, closer than any of the other three.", "tip": "\"Closest to a gridline\" is a distance comparison, same as \"furthest north\" — just measured against a line instead of against each other."}
-        },
-        {
-          "id": "q17",
-          "lv": 2,
-          "from": "source",
-          "kind": "mc",
-          "graph": {
-            "w": [-126, -66, 23, 50], "gx": 5, "gy": 5, "lx": 10, "atlas": true,
-            "xabs": true, "xsuf": "°W", "yabs": false, "ysuf": "°N",
-            "xl": "Longitude (°W)", "yl": "Latitude (°N)",
-            "pts": [
-              {"x":-90.05,"y":35.15,"label":"Memphis"},
-              {"x":-87.63,"y":41.88,"label":"Chicago"},
-              {"x":-84.39,"y":33.75,"label":"Atlanta"},
-              {"x":-71.06,"y":42.36,"label":"Boston"}
-            ]
-          },
-          "q": "Using the map shown, which of these four cities sits closest to the 90°W gridline?",
-          "opts": ["Memphis", "Chicago", "Atlanta", "Boston"],
-          "ans": 0,
-          "hint": "Find the 90°W line, then see which dot sits right beside it.",
-          "steps": [
-            "Find the 90°W gridline on the map, near the map's middle.",
-            "Atlanta and Boston both sit well to the east of it, and Chicago sits a couple of degrees east too.",
-            "Memphis sits right beside the 90°W line, closer than any of the other three.",
-            "Memphis is closest to the 90°W gridline."
-          ],
-          "ex": {"main": "**Memphis.** Its dot sits almost directly on the 90°W line, closer than Chicago, Atlanta, or Boston.", "tip": "When two cities look close together, check them both against the actual gridline rather than against each other."}
-        }
-      ]
+ "v": 4,
+ "records": {
+  "unit-az-latlong": {
+   "id": "unit-az-latlong",
+   "type": "unit",
+   "updatedAt": 1790290533937,
+   "libv": 5,
+   "classId": "history",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 5 · 2 Latitude and Longitude",
+   "srcName": "The United States — US Bingo (Arizona Geographic Alliance)",
+   "source": "Built from the same US map used in class for latitude/longitude bingo — real cities, same 5-degree gridlines",
+   "summary": {
+    "text": "Practice reading latitude and longitude on the same United States map used in class for latitude/longitude bingo: the equator and Prime Meridian, why a coordinate needs both numbers, and — the main event — comparing and estimating real city positions using a 5-degree grid, without memorizing any one city's exact coordinate.",
+    "from": "added"
+   },
+   "why": {
+    "text": "The skill that transfers is READING a grid — comparing positions, estimating between gridlines — not memorizing any one place's coordinate. Every question here is built to be answered from the map shown, not from a fact learned in advance.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Explain what a line of latitude and a line of longitude each measure, and from where.",
+     "from": "added"
+    },
+    {
+     "text": "Read a coordinate pair in the correct order.",
+     "from": "added"
+    },
+    {
+     "text": "Compare two or more real cities by latitude or longitude, and estimate a position between two gridlines, using the grid itself rather than a memorized fact.",
+     "from": "added"
     }
+   ],
+   "parentNote": {
+    "text": "Rebuilt around the actual map from class (the Arizona Geographic Alliance US Bingo sheet, in her Drive folder) rather than an invented one — same 28 cities, same 5-degree gridlines from 130°W-70°W and 25°N-45°N (widened slightly here to fit a few cities right at the map's edge). On your note that flashcards shouldn't quiz exact coordinates for a place: every 'what is City X's coordinate' and 'which city is at this coordinate' question is gone, along with the cards that stated a city's coordinate as a fact to memorize. What is left is comparison (furthest north/south/east/west, ranking cities north-to-south or west-to-east) and estimation (reading a value between two gridlines, or judging which of several cities sits closest to a given line) — both answerable only by looking at the map in front of her, never by recalling a stored number. The country's outline is deliberately NOT drawn — a recognizable United States coastline is a much bigger shape than Arizona's near-rectangle, and a rough approximation of it risked looking wrong rather than helpful; the grid and the labeled cities carry the whole lesson without it.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Run the cards once, then a quiz round with the map open.",
+    "minutes": 14,
+    "from": "added"
+   },
+   "mapTitle": "The class map",
+   "mapLabel": "Map — see every city at once",
+   "mapNote": "The same 5-degree grid from class, with every city this unit asks about marked at once. Each question already shows its own slice of cities — open this any time you want to check one against the fuller picture instead.",
+   "mapRef": {
+    "w": [
+     -126,
+     -66,
+     23,
+     50
+    ],
+    "gx": 5,
+    "gy": 5,
+    "lx": 10,
+    "atlas": true,
+    "xabs": true,
+    "xsuf": "°W",
+    "yabs": false,
+    "ysuf": "°N",
+    "xl": "Longitude (°W)",
+    "yl": "Latitude (°N)",
+    "pts": [
+     {
+      "x": -122.33,
+      "y": 47.61,
+      "label": "Seattle"
+     },
+     {
+      "x": -122.42,
+      "y": 37.77,
+      "label": "San Francisco"
+     },
+     {
+      "x": -117.16,
+      "y": 32.72,
+      "label": "San Diego"
+     },
+     {
+      "x": -104.99,
+      "y": 39.74,
+      "label": "Denver"
+     },
+     {
+      "x": -96.8,
+      "y": 32.78,
+      "label": "Dallas"
+     },
+     {
+      "x": -95.37,
+      "y": 29.76,
+      "label": "Houston"
+     },
+     {
+      "x": -90.05,
+      "y": 35.15,
+      "label": "Memphis"
+     },
+     {
+      "x": -87.63,
+      "y": 41.88,
+      "label": "Chicago"
+     },
+     {
+      "x": -84.39,
+      "y": 33.75,
+      "label": "Atlanta"
+     },
+     {
+      "x": -80.19,
+      "y": 25.76,
+      "label": "Miami"
+     },
+     {
+      "x": -71.06,
+      "y": 42.36,
+      "label": "Boston"
+     }
+    ]
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Latitude",
+     "def": "**Lines that run east–west and measure distance north or south of the equator.**\n• 0° at the equator, up to 90°N or 90°S at the poles.\n• Every point on the same line of latitude is the same distance from the equator.",
+     "hint": "LAT-itude is FLAT-itude — the lines are flat, running side to side.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "Longitude",
+     "def": "**Lines that run pole to pole and measure distance east or west of the Prime Meridian.**\n• 0° at the Prime Meridian, up to 180°E or 180°W.\n• Every point on the same line of longitude is the same distance around the globe from that meridian.",
+     "hint": "LONG-itude lines are LONG, running all the way from pole to pole.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "The equator",
+     "def": "**The 0° latitude line, halfway between the North and South Poles.**\n• Everything north of it is the Northern Hemisphere.\n• The whole United States sits north of it — every latitude on the class map is a °N.",
+     "hint": "The equator is a latitude line, so it splits the globe north-south.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "The Prime Meridian",
+     "def": "**The 0° longitude line, running through Greenwich, England.**\n• Everything west of it (up to the far side of the globe) is the Western Hemisphere.\n• The whole United States sits west of it — every longitude on the class map is a °W.",
+     "hint": "The Prime Meridian is a longitude line, so it splits the globe east-west.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Reading a coordinate pair",
+     "def": "**Latitude is always given first, then longitude.**\n• 33°N, 112°W means: find the 33°N line, then slide along it to 112°W.\n• Swap the order and you would be looking for a completely different spot.",
+     "hint": "Alphabetical order helps: LAtitude before LOngitude.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "Reading the class map",
+     "def": "**The same map from class — a 5-degree grid over the United States, with real cities marked.**\n• Longitude lines run 130°W to 70°W.\n• Latitude lines run 25°N to 45°N.",
+     "hint": "The lines are 5 degrees apart on this map — count gridlines, don't guess.",
+     "from": "source",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -122.33,
+        "y": 47.61,
+        "label": "Seattle"
+       },
+       {
+        "x": -117.16,
+        "y": 32.72,
+        "label": "San Diego"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -95.37,
+        "y": 29.76,
+        "label": "Houston"
+       },
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       },
+       {
+        "x": -80.19,
+        "y": 25.76,
+        "label": "Miami"
+       },
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       }
+      ]
+     }
+    },
+    {
+     "id": "c6",
+     "term": "Estimating between gridlines",
+     "def": "**A point does not have to land exactly on a line for you to read it.**\n• If a point sits about halfway between the 30°N and 35°N lines, a good estimate is 32°N or 33°N.\n• Being close is the goal — a map-reading estimate, not a measurement.",
+     "hint": "Which line is it closer to? Start there, then adjust a couple of degrees toward the other line.",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Comparing without exact numbers",
+     "def": "**You can compare two places on a grid without ever reading off either one's exact coordinate.**\n• The dot higher up the page is further north — true whether or not you read a single number.\n• The dot further left is further west. Comparing positions is often faster than finding exact coordinates, and just as correct.",
+     "hint": "\"Which one is further north\" is a different, easier question than \"what is its latitude.\"",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "Why you need both numbers",
+     "def": "**One coordinate alone only narrows you down to an entire line circling the globe.**\n• Latitude alone: everywhere on that ring, the same distance from the equator — could be the US, could be Japan.\n• Longitude alone: everywhere on that line, pole to pole. Together, the two numbers pin down one exact spot.",
+     "hint": "Think of it like a spreadsheet: the row number alone, or the column letter alone, isn't one cell — you need both.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "Parallels and meridians",
+     "def": "**Parallels are the lines of latitude; meridians are the lines of longitude.**\n• Parallels run east to west, and never meet — that is why they are called parallels\n• Meridians run north to south, from pole to pole, and all meet at both ends\n• Same two sets of lines, second name each",
+     "hint": "Parallel lines never touch, and the east-west ones never do.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Lines of latitude measure how far a place is north or south of which line?",
+     "opts": [
+      "The Prime Meridian",
+      "The equator",
+      "The International Date Line",
+      "The Arctic Circle"
+     ],
+     "ans": 1,
+     "hint": "LAT-itude is FLAT-itude — think of the lines running side to side.",
+     "steps": [
+      "Latitude lines run east-west, circling the globe like rings stacked from pole to pole.",
+      "Every ring is measured as a distance from ONE specific ring: the equator, at 0°.",
+      "So a latitude of 33°N means: 33 degrees north of that starting ring."
+     ],
+     "ex": {
+      "main": "**The equator.** It's latitude's zero line — every other line of latitude is measured as a distance north or south of it.",
+      "tip": "Latitude ↔ equator, longitude ↔ Prime Meridian. Keep the two pairs straight."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Lines of longitude measure how far east or west a place is from which line?",
+     "opts": [
+      "The equator",
+      "The Prime Meridian",
+      "The Tropic of Cancer",
+      "The Arctic Circle"
+     ],
+     "ans": 1,
+     "hint": "LONG-itude lines run pole to pole, LONG ways around the globe.",
+     "steps": [
+      "Longitude lines run pole to pole, like the segments of an orange.",
+      "Every segment is measured as a distance from ONE specific segment: the Prime Meridian, at 0°.",
+      "So a longitude of 90°W means: 90 degrees west of that starting line."
+     ],
+     "ex": {
+      "main": "**The Prime Meridian.** It's longitude's zero line, running through Greenwich, England — every other line of longitude is measured east or west of it.",
+      "tip": "Latitude ↔ equator, longitude ↔ Prime Meridian. Keep the two pairs straight."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Based on latitude, which hemisphere is the whole United States in?",
+     "opts": [
+      "Southern Hemisphere",
+      "Northern Hemisphere",
+      "Eastern Hemisphere",
+      "It straddles the equator"
+     ],
+     "ans": 1,
+     "hint": "Every US latitude on the class map ends in N, not S.",
+     "steps": [
+      "Every city on the class map carries an N after its latitude number, never an S.",
+      "N means north of the equator.",
+      "North of the equator is, by definition, the Northern Hemisphere."
+     ],
+     "ex": {
+      "main": "**Northern Hemisphere.** Every US latitude is a °N — the whole country sits well clear of the equator.",
+      "tip": "Hemisphere questions are usually just 'which letter does the number carry' in disguise."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Based on longitude, which hemisphere is the whole United States in?",
+     "opts": [
+      "Eastern Hemisphere",
+      "Western Hemisphere",
+      "Northern Hemisphere",
+      "It straddles the Prime Meridian"
+     ],
+     "ans": 1,
+     "hint": "Every US longitude on the class map ends in W, not E.",
+     "steps": [
+      "Every city on the class map carries a W after its longitude number, never an E.",
+      "W means west of the Prime Meridian.",
+      "West of the Prime Meridian is, by definition, the Western Hemisphere."
+     ],
+     "ex": {
+      "main": "**Western Hemisphere.** Every US longitude is a °W, and the whole country sits in the Western Hemisphere.",
+      "tip": "Hemisphere questions are usually just 'which letter does the number carry' in disguise."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "A coordinate is written 33°N, 112°W. Which number is the latitude?",
+     "opts": [
+      "112°W",
+      "33°N",
+      "Whichever number is bigger",
+      "There's no way to tell"
+     ],
+     "ans": 1,
+     "hint": "One of the two labels is a hint about which kind of line it is.",
+     "steps": [
+      "Latitude is always written first in a coordinate pair, by convention.",
+      "It also carries an N or S, since latitude counts north or south of the equator.",
+      "So in 33°N, 112°W, the 33°N is the latitude and the 112°W is the longitude."
+     ],
+     "ex": {
+      "main": "**33°N.** It comes first, and its N/S label is the giveaway — longitude always carries E or W instead.",
+      "tip": "Alphabetical order is the trick: LAtitude before LOngitude, same as in the alphabet."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these is written like a real US coordinate?",
+     "opts": [
+      "33°N, 112°W",
+      "112°N, 33°W",
+      "33°S, 112°E",
+      "112°S, 33°E"
+     ],
+     "ans": 0,
+     "hint": "Check the order of the two numbers, and check both letters.",
+     "steps": [
+      "Latitude comes first and never goes past 90° — so any option opening with 112° is already impossible for a latitude.",
+      "That rules out the option starting with 112°N.",
+      "Every real US coordinate carries N and W, never S or E — that rules out both remaining wrong options.",
+      "33°N, 112°W is the one in the right order with the right letters."
+     ],
+     "ex": {
+      "main": "**33°N, 112°W.** Order and hemisphere both have to be right — a coordinate that swaps either one points somewhere else on Earth entirely, or nowhere at all.",
+      "tip": "A latitude can never exceed 90° — that alone eliminates some wrong answers instantly."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Two US cities share almost the same latitude, even though they're on opposite sides of the country. What does that tell you about them?",
+     "opts": [
+      "They are about the same distance from the equator",
+      "They are about the same distance from the Prime Meridian",
+      "They must actually be the same city",
+      "One of the two coordinates has to be a mistake"
+     ],
+     "ans": 0,
+     "hint": "Latitude measures distance from one specific line. Which line?",
+     "steps": [
+      "Latitude measures distance north or south of the equator — nothing about east-west position.",
+      "Two cities can share a latitude while sitting far apart in longitude, like Boston and Detroit.",
+      "Sharing a latitude just means: same distance from the equator, wherever that lands east-west.",
+      "So same latitude, different longitude, is completely normal — not a mistake and not the same city."
+     ],
+     "ex": {
+      "main": "**They are about the same distance from the equator.** Latitude and longitude are independent — matching on one says nothing about the other.",
+      "tip": "Whenever two coordinates agree on one number but not the other, that tells you exactly one thing, not two."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -122.33,
+        "y": 47.61,
+        "label": "Seattle"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       },
+       {
+        "x": -80.19,
+        "y": 25.76,
+        "label": "Miami"
+       }
+      ]
+     },
+     "q": "Using the map shown, which of these four cities is furthest NORTH?",
+     "opts": [
+      "Seattle",
+      "Denver",
+      "Atlanta",
+      "Miami"
+     ],
+     "ans": 0,
+     "hint": "Furthest north means the highest latitude — look for the dot nearest the top.",
+     "steps": [
+      "Furthest north means the largest latitude number, so look for the highest dot on the map.",
+      "Denver, Atlanta and Miami all sit well below the 40°N line.",
+      "Seattle sits up near the top of the map, above the 45°N line.",
+      "Seattle is furthest north."
+     ],
+     "ex": {
+      "main": "**Seattle.** It's the highest dot on the map, up near the Canadian border — no gridline-reading needed once you see how far it sits above the other three.",
+      "tip": "'Furthest north' always means compare latitude — the vertical position on the map — and ignore longitude entirely."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -96.8,
+        "y": 32.78,
+        "label": "Dallas"
+       },
+       {
+        "x": -95.37,
+        "y": 29.76,
+        "label": "Houston"
+       },
+       {
+        "x": -80.19,
+        "y": 25.76,
+        "label": "Miami"
+       }
+      ]
+     },
+     "q": "Using the map shown, which of these four cities is furthest SOUTH?",
+     "opts": [
+      "Chicago",
+      "Dallas",
+      "Houston",
+      "Miami"
+     ],
+     "ans": 3,
+     "hint": "Furthest south means the lowest latitude — look for the dot nearest the bottom.",
+     "steps": [
+      "Furthest south means the smallest latitude number, so look for the lowest dot on the map.",
+      "Chicago sits highest of the four, well north of the others.",
+      "Dallas and Houston are both south of Chicago, but not as far down as the fourth city.",
+      "Miami sits lowest on the map, near the bottom edge — furthest south."
+     ],
+     "ex": {
+      "main": "**Miami.** It sits closest to the 25°N line, the lowest latitude of the four and the lowest dot on the map.",
+      "tip": "'Furthest south' always means compare latitude, and smaller wins."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       },
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -122.33,
+        "y": 47.61,
+        "label": "Seattle"
+       }
+      ]
+     },
+     "q": "Using the map shown, which of these four cities is furthest WEST?",
+     "opts": [
+      "Boston",
+      "Chicago",
+      "Denver",
+      "Seattle"
+     ],
+     "ans": 3,
+     "hint": "Furthest west means the largest °W number — look for the dot nearest the map's left edge.",
+     "steps": [
+      "Furthest west means the largest degrees-West number, so look for the dot nearest the map's left edge.",
+      "Boston sits close to the right edge, and Chicago and Denver are both well to the east of the fourth city.",
+      "Seattle sits close to the left edge of the map, near 122°W.",
+      "Seattle is furthest west."
+     ],
+     "ex": {
+      "main": "**Seattle.** At roughly 122°W, it's the largest degrees-West number of the four — and the leftmost dot on the map.",
+      "tip": "'Furthest west' always means compare longitude — the horizontal position on the map — and ignore latitude entirely."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -117.16,
+        "y": 32.72,
+        "label": "San Diego"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       }
+      ]
+     },
+     "q": "Using the map shown, which of these four cities is furthest EAST?",
+     "opts": [
+      "San Diego",
+      "Denver",
+      "Chicago",
+      "Boston"
+     ],
+     "ans": 3,
+     "hint": "Furthest east means the smallest °W number — look for the dot nearest the map's right edge.",
+     "steps": [
+      "Furthest east means the smallest degrees-West number, so look for the dot nearest the map's right edge.",
+      "San Diego and Denver both sit well to the west, and Chicago is further east than either but still not the furthest.",
+      "Boston sits closest to the map's right edge, near 71°W.",
+      "Boston is furthest east."
+     ],
+     "ex": {
+      "main": "**Boston.** At roughly 71°W, it's the smallest degrees-West number of the four — and the rightmost dot on the map.",
+      "tip": "'Furthest east' always means compare longitude, and smaller (closer to the Prime Meridian) wins."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       },
+       {
+        "x": -95.37,
+        "y": 29.76,
+        "label": "Houston"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       }
+      ]
+     },
+     "q": "This one is closer than the others: using the map shown, which of these four cities is furthest NORTH?",
+     "opts": [
+      "Chicago",
+      "Boston",
+      "Houston",
+      "Atlanta"
+     ],
+     "ans": 1,
+     "hint": "Chicago and Boston are close on this axis. Which dot sits just a touch higher?",
+     "steps": [
+      "Houston and Atlanta both sit south of the other two — that much is a clear read.",
+      "Chicago and Boston are much closer together, both hovering just under the 42°N line.",
+      "Looking carefully, Boston's dot sits a hair above Chicago's — a small gap, but a real one.",
+      "Boston is furthest north, though only barely."
+     ],
+     "ex": {
+      "main": "**Boston.** It's close — Boston and Chicago are only a fraction of a degree apart — which is exactly why this one is worth reading carefully instead of guessing from memory.",
+      "tip": "When two dots look almost level, that's the map telling you to look again, not to pick either one at random."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "order",
+     "ans": 0,
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -122.33,
+        "y": 47.61,
+        "label": "Seattle"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -90.05,
+        "y": 35.15,
+        "label": "Memphis"
+       },
+       {
+        "x": -80.19,
+        "y": 25.76,
+        "label": "Miami"
+       }
+      ]
+     },
+     "q": "Using the map shown, put these cities in order from FURTHEST NORTH to FURTHEST SOUTH.",
+     "opts": [
+      "Seattle",
+      "Denver",
+      "Memphis",
+      "Miami"
+     ],
+     "hint": "Read straight down the map, highest dot first.",
+     "steps": [
+      "Seattle sits at the very top of the map, well above every other city here.",
+      "Denver sits noticeably lower, but still north of the halfway point.",
+      "Memphis sits lower still, south of the 35°N line.",
+      "Miami sits at the very bottom of the map. Highest to lowest: Seattle, Denver, Memphis, Miami."
+     ],
+     "ex": {
+      "main": "**Seattle → Denver → Memphis → Miami.** Reading straight down the map from the highest dot to the lowest gives the same order as ranking the four latitudes from largest to smallest.",
+      "tip": "A north-to-south ranking is just a latitude ranking — ignore longitude completely."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "order",
+     "ans": 0,
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -122.42,
+        "y": 37.77,
+        "label": "San Francisco"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       }
+      ]
+     },
+     "q": "Using the map shown, put these cities in order from FURTHEST WEST to FURTHEST EAST.",
+     "opts": [
+      "San Francisco",
+      "Denver",
+      "Chicago",
+      "Boston"
+     ],
+     "hint": "Read straight across the map, leftmost dot first.",
+     "steps": [
+      "San Francisco sits closest to the map's left edge.",
+      "Denver sits noticeably further right, closer to the middle.",
+      "Chicago sits further right still.",
+      "Boston sits closest to the map's right edge. Leftmost to rightmost: San Francisco, Denver, Chicago, Boston."
+     ],
+     "ex": {
+      "main": "**San Francisco → Denver → Chicago → Boston.** Reading straight across the map from the leftmost dot to the rightmost gives the same order as ranking the four longitudes from largest °W to smallest.",
+      "tip": "A west-to-east ranking is just a longitude ranking — ignore latitude completely."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       },
+       {
+        "x": -80.19,
+        "y": 25.76,
+        "label": "Miami"
+       }
+      ]
+     },
+     "q": "On the map shown, the latitude lines are 5 degrees apart. If a point sits exactly on the 35°N line and you move two gridlines north, what latitude are you at?",
+     "opts": [
+      "25°N",
+      "40°N",
+      "45°N",
+      "37°N"
+     ],
+     "ans": 2,
+     "hint": "Each gridline is worth 5 degrees. North means the number goes up.",
+     "steps": [
+      "This map's gridlines are spaced 5 degrees apart, since gy is set to 5.",
+      "Moving north means moving toward higher latitude numbers.",
+      "One gridline north of 35°N is 35 + 5 = 40°N.",
+      "Two gridlines north of 35°N is 40 + 5 = 45°N."
+     ],
+     "ex": {
+      "main": "**45°N.** Each gridline on this map is worth 5 degrees, so two lines north of 35°N adds 10 degrees.",
+      "tip": "Before answering a 'how many gridlines' question, check the grid's own spacing — it isn't always 1 degree."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "added",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -95.37,
+        "y": 29.76,
+        "label": "Houston"
+       },
+       {
+        "x": -90.05,
+        "y": 35.15,
+        "label": "Memphis"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       },
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       }
+      ]
+     },
+     "kind": "mc",
+     "q": "On the map shown, the longitude lines are 5 degrees apart. A point sits exactly on the 100°W line. If you move one gridline east, what longitude are you at?",
+     "opts": [
+      "105°W",
+      "95°W",
+      "100°E",
+      "99°W"
+     ],
+     "ans": 1,
+     "hint": "Each gridline is worth 5 degrees. East means the °W number goes down.",
+     "steps": [
+      "This map's gridlines are spaced 5 degrees apart, since gx is set to 5.",
+      "Moving east means moving toward smaller degrees-West numbers, not larger ones.",
+      "One gridline east of 100°W is 100 − 5 = 95°W.",
+      "105°W would be one gridline WEST instead, and 100°E confuses this map's own hemisphere entirely."
+     ],
+     "ex": {
+      "main": "**95°W.** Moving east always shrinks the degrees-West number on a US map — the opposite direction adds to it.",
+      "tip": "Before answering, decide which way the numbers move for the direction you're asked about — it's easy to reverse by accident."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -104.99,
+        "y": 39.74,
+        "label": "Denver"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       },
+       {
+        "x": -80.19,
+        "y": 25.76,
+        "label": "Miami"
+       }
+      ]
+     },
+     "q": "Using the map shown, which of these four cities sits closest to the 40°N gridline?",
+     "opts": [
+      "Chicago",
+      "Denver",
+      "Atlanta",
+      "Miami"
+     ],
+     "ans": 1,
+     "hint": "Find the 40°N line, then see which dot it almost passes through.",
+     "steps": [
+      "Find the 40°N gridline on the map — it runs between Chicago's row and Denver's row.",
+      "Chicago sits a little above it; Atlanta and Miami both sit well below it.",
+      "Denver sits just barely below the line — the closest of the four to actually touching it.",
+      "Denver is closest to the 40°N gridline."
+     ],
+     "ex": {
+      "main": "**Denver.** Its dot sits nearly on the 40°N line itself, closer than any of the other three.",
+      "tip": "\"Closest to a gridline\" is a distance comparison, same as \"furthest north\" — just measured against a line instead of against each other."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "graph": {
+      "w": [
+       -126,
+       -66,
+       23,
+       50
+      ],
+      "gx": 5,
+      "gy": 5,
+      "lx": 10,
+      "atlas": true,
+      "xabs": true,
+      "xsuf": "°W",
+      "yabs": false,
+      "ysuf": "°N",
+      "xl": "Longitude (°W)",
+      "yl": "Latitude (°N)",
+      "pts": [
+       {
+        "x": -90.05,
+        "y": 35.15,
+        "label": "Memphis"
+       },
+       {
+        "x": -87.63,
+        "y": 41.88,
+        "label": "Chicago"
+       },
+       {
+        "x": -84.39,
+        "y": 33.75,
+        "label": "Atlanta"
+       },
+       {
+        "x": -71.06,
+        "y": 42.36,
+        "label": "Boston"
+       }
+      ]
+     },
+     "q": "Using the map shown, which of these four cities sits closest to the 90°W gridline?",
+     "opts": [
+      "Memphis",
+      "Chicago",
+      "Atlanta",
+      "Boston"
+     ],
+     "ans": 0,
+     "hint": "Find the 90°W line, then see which dot sits right beside it.",
+     "steps": [
+      "Find the 90°W gridline on the map, near the map's middle.",
+      "Atlanta and Boston both sit well to the east of it, and Chicago sits a couple of degrees east too.",
+      "Memphis sits right beside the 90°W line, closer than any of the other three.",
+      "Memphis is closest to the 90°W gridline."
+     ],
+     "ex": {
+      "main": "**Memphis.** Its dot sits almost directly on the 90°W line, closer than Chicago, Atlanta, or Boston.",
+      "tip": "When two cities look close together, check them both against the actual gridline rather than against each other."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the other name for the lines of latitude, which run east to west?",
+     "opts": [
+      "Meridians",
+      "Parallels",
+      "Hemispheres",
+      "Coordinates"
+     ],
+     "ans": 1,
+     "hint": "They run alongside each other and never meet.",
+     "steps": [
+      "Lines of latitude run east to west around the globe.",
+      "They never cross each other, however far they run.",
+      "Lines that never meet are parallel.",
+      "So the lines of latitude are called parallels."
+     ],
+     "ex": {
+      "main": "**Parallels.** Lines of latitude run east to west and never meet, which is exactly what parallel means. Meridians are the other set — the lines of longitude, which all meet at the poles.",
+      "tip": "Parallels never touch; meridians all touch, twice."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why can the lines of longitude NOT be called parallels?",
+     "opts": [
+      "Because they are measured in degrees rather than miles",
+      "Because they run east to west instead of north to south",
+      "Because they all meet each other at the North and South Poles",
+      "Because there are more of them than there are lines of latitude"
+     ],
+     "ans": 2,
+     "hint": "Follow two of them all the way to the top of the globe.",
+     "steps": [
+      "Parallel lines are lines that never meet.",
+      "Lines of longitude run from the North Pole to the South Pole.",
+      "Every one of them passes through both poles, so they all cross there.",
+      "Lines that meet are not parallel — they are called meridians instead."
+     ],
+     "ex": {
+      "main": "**Because they all meet each other at the North and South Poles.** Longitude lines are widest apart at the equator and squeeze together toward each end, so they cannot be parallels. Their own name is meridians.",
+      "tip": "Think of the segments of an orange — widest in the middle, joined at both ends."
+     }
+    }
+   ]
   }
+ }
 }

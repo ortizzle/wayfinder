@@ -1731,7 +1731,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v174 · every deck listed';
+const APP_VERSION = 'v175 · density and maps';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3500,8 +3500,13 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/wordly-wise-5-01-syn.json', 'content/wordly-wise-5-02-syn.json', 'content/science-variables.json',
   'content/math-t3-extra.json', 'content/science-scales.json',
   'content/science-nos-practice.json', 'content/science-nos-test.json',
-  'content/english-plot-diagram.json', 'content/math-t3-numberline.json', 'content/az-latlong.json',
+  'content/english-plot-diagram.json', 'content/math-t3-numberline.json',
+  /* Unit 5 — the three parts of her History Unit 5 shelf. az-latlong was
+     built first, in September, and was retitled onto this shelf keeping its
+     id when the study guide showed it was one section of a larger unit. */
+  'content/az-latlong.json', 'content/history-u5-p1.json', 'content/history-u5-p3.json',
   'content/science-phases-matter.json', 'content/science-phase-changes.json',
+  'content/science-density-buoyancy.json',
   /* Unit 2 — Add and Subtract Decimals, one file per LESSON (Chris, 2026-09:
      "she usually does a lesson per day at school").  Its own shelf, not more
      parts of Unit 1: this is the grade-5 book, whose Topic 2 is decimals,

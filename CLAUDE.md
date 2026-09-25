@@ -2004,6 +2004,201 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### History Unit 5, a three-part shelf (v175)
+
+Chris: *"folders are updated, can we have some updated documentation?"* Her
+History folder had **`Unit 5 - History.pdf`** — her class's **optional** Unit 5
+Test Study Guide, 33 items across seven sections. It is an image-only scan with
+**no text layer at all**, so it was rendered with `pypdfium2` and read page by
+page; nothing came through Drive's extractor.
+
+**This closes the gap v129 flagged and could not fill.** That version added a
+"History quiz · Unit 5: latitude & longitude" to `SUGGESTED_ASSESS` and said
+outright there was no source for a unit, because her class has its own
+vocabulary for map components and building one from general knowledge would be
+guessing at the scope. This PDF *is* that scope, item by item — and page 7 of
+it is the same US Bingo map `unit-az-latlong` was built from in v144.
+
+| id | title | |
+|---|---|---|
+| `unit-hist-u5-p1` | `Unit 5 · 1 Features, Maps and Directions` | 16 cards / 19 q + a 12-item sort |
+| `unit-az-latlong` | `Unit 5 · 2 Latitude and Longitude` | **retitled**, 10 / 20 |
+| `unit-hist-u5-p3` | `Unit 5 · 3 Time Zones, Elevation and the Globe` | 15 / 18 |
+
+**The guide is BLANK — she has not filled it in — and that decides the whole
+posture.** Unlike the two science sheets (v161, v165) there is nothing of hers
+to check and nothing to repair. What the unit owes her is COVERAGE, so she can
+fill the guide in herself: her teacher takes the completed guide **on the day
+of the test** for one extra credit point, and says in writing that it will not
+be collected earlier because she needs it to study from. The guide is the
+assignment; this shelf is what lets her do it.
+
+- **The scope was settled against `unit-az-latlong` before a word was written**
+  (the v142 / v189 discipline). That unit already teaches section five
+  thoroughly — latitude, longitude, the equator, the Prime Meridian, reading a
+  coordinate pair, hemispheres, comparing and estimating on this exact map.
+  **None of it is repeated.** It is moved onto the same shelf instead.
+- **Retitled, never re-minted.** `unit-az-latlong` keeps its id, so her qstats
+  and any Growth Zone misses stay attached — the same rule `unit-m11`,
+  `unit-sgt1` and `unit-a2r1` already follow. `libv` bumped and `updatedAt`
+  stamped three hours back, so it re-drafts once and the queue labels it an
+  update rather than a stranger.
+- **It gained the two words its own section is graded on.** Items 20 and 21 ask
+  for **parallels** and **meridians** by name. Measured before writing: the word
+  *"parallel" appeared **zero** times* in that whole record, which had taught
+  "lines that run east–west" and never named either. One card and two questions
+  close it — the same shape as Ad Astra's checkpoints gap, found the same way.
+- **None of the guide's own examples is a graded question here.** Old Faithful,
+  Lake Michigan, Chandler, the ancestry/provinces/elevation/fast-food maps,
+  Shanghai, New Orleans, the St. Joseph street map and Ottawa all appear on
+  CARDS where they are useful reference and nowhere else. The guide is her
+  homework; a question she can answer from memory of the page tests nothing.
+  The test sweeps for all nine by name.
+
+**The single likeliest item on the page to be marked wrong gets a card, two
+questions and the sort's hardest tiles.** Item 5 asks her to mark *"the prime
+meridian"* human (H) or natural (N) — the answer is **human**, a line people
+agreed on — and it sits in a list with a geyser, a lake and a city, so it reads
+as the odd one out. The rule generalises and is what the cards teach: *"natural"
+means nobody decided it, not that it is invisible.* Borders, the equator and the
+Prime Meridian are all human features you cannot touch. A second card separates
+the two halves of the commonest confusion — a river that forms a border is
+natural, the border on it is not.
+
+> ⚠️ **A plain `History · Unit 5 Review` would have inverted with the shelf that
+> is already there, and the probe is what said so.** `History · Units 2–3
+> Review` exists; `Unit 5` sorts **ahead** of `Units 2–3` because a space beats
+> an `s` — the exact v179 inversion. Measured live rather than reasoned about,
+> and the test keeps the measurement as an assertion, seeding a throwaway unit
+> with that title and checking it really does land in the wrong place. The
+> separate numbered `Unit 5` shelf is what avoids it, and the existing History
+> shelf is left exactly as it was.
+
+**Every time-zone answer was worked from HER class map, not from real-world time
+zones**, and the two happen to agree: the Core Knowledge map reads Hawaii 5:00,
+Alaska 6:00, Pacific 7:00, Mountain 8:00, Central 9:00, Eastern 10:00, and puts
+Arizona in the Mountain block. So Arizona → Hawaii is three hours back and
+Mountain → Eastern is two hours forward either way you work it.
+
+> **Arizona's no-daylight-saving quirk is on a card and deliberately kept off
+> every graded question.** It is true, and it is the kind of thing a
+> nine-year-old who lives here notices — for part of the year Arizona matches
+> California rather than Denver. It is also **not** what her class map is
+> asking, so the card says outright that the test answer is Mountain and leaves
+> the real story as an aside. A true fact allowed to cast doubt on a test answer
+> is worse than no fact.
+
+Two smaller calls, both in `parentNote` rather than decided quietly: her class
+map labels the water round Antarctica the **Antarctic Ocean**, which a lot of
+books call the Southern Ocean, so the card gives her class's name first and the
+other beside it; and the guide's *"fill in the blank map with the continents and
+oceans"* is a drawing task the app cannot do for her, so the cards give her the
+two lists to check herself against afterwards.
+
+> ⚠️ **Three of part 3's questions ran above the library's length band (71%,
+> 58%, 30%) and were fixed by giving the distractors real substance** (v185),
+> never by vaguing the answer. The best of the three: the ocean-percentage item
+> now offers the pair swapped back, a third number invented, and the
+> "half and half" guess — three genuinely different ways to be wrong, all at the
+> answer's length. Worst remaining warning across both new parts is 18%.
+
+`tools/test_hist_u5.js` (43 assertions) pins the rules rather than the seeded
+rows: the classId on all three (the v136 orphan trap), the numbered form and the
+shelf running 1 → 2 → 3 with the History shelf untouched and nothing loose, the
+measured inversion above, the lat/long unit keeping its id through the retitle
+and bumping `libv`, answers across all four slots, no back-references and no
+positional references, **none of the guide's nine own examples graded**, **no
+question in parts 1 or 3 whose ANSWER is a latitude/longitude fact**, every one
+of the guide's seven sections asserted **by its teaching rather than by question
+id**, the agreed-line trap present in both the cards and the sort, the sort never
+naming its own bucket, a clean 12-item pass logging 36 XP, the `kind:'order'`
+zone ranking really stored west-to-east, a full round on each new part and both
+decks walking to the end. **Verified by reverting the retitle, dropping the
+parallels card and stripping the agreed-line trap, and watching seven assertions
+fail.**
+
+> ⚠️ **Two of the 43 failed first as MY bugs and both read as content
+> failures — the v185 over-blunt-regex lesson, twice in one file.** A sweep for
+> `that same` across the STEPS flagged *"a different map could use that same
+> brown"*, which restates nothing and points at nothing; the documented failure
+> is a stem that OPENS on a neighbour's scenario, so it is anchored to the stem
+> now. And a flat ban on the word `equator` in parts 1 and 3 flagged two
+> perfectly good WRONG options — *"how far north of the equator it is"* on an
+> elevation question, *"which side of the equator they are on"* on a time-zone
+> one. Both are the unit ruling the idea out, which is the opposite of
+> re-teaching it. The assertion reads the stem and the **correct** option now,
+> which is the rule the scoping claim actually makes.
+
+> ⚠️ **`tools/test_az_latlong.js` broke on arrival, twice, and both were the
+> documented rot.** It pinned **exactly** 9 cards and 18 questions — so the unit
+> honestly growing by the two words its own study guide grades on failed it,
+> the fourth time this file has recorded that pattern (`test_phases.js`'s
+> exact-18, `test_dress.js`'s exact-6, `test_cells.js`'s `libv === 1`). It is a
+> minimum plus the invariants the count stood in for. And it reached the unit's
+> card by finding a spine called *"Latitude and Longitude"*, which is no longer
+> a shelf of its own: it is two taps now, the `Unit 5` spine and then the
+> lesson's own stop.
+
+### Chemistry · 3 Density and Buoyancy (v175)
+
+Her Science folder's **`density and buoyancy.pdf`** — her completed 20-point
+lesson check. `science-density-buoyancy.json` (`unit-sci-dens`): 16 cards, 17
+questions, and a 12-item sort set, taking the Chemistry shelf to three parts.
+
+**She got 20 out of 20, marked A+ in pen with every item ticked** — including
+the ones with real work in them: subtracting the container to find the mass of
+the candy (she wrote the `29 − 15` out by hand), ranking the phases by density,
+and both float-or-sink questions that hand her a number and expect her to
+compare it against water without being told water's density. So unlike v161 and
+v165 **there is nothing here to repair**, and this unit exists to keep the
+material fresh for the test rather than to fix anything. That is worth saying
+plainly in the `parentNote`, and it is.
+
+**TWO THINGS THE SHEET LEANS ON AND NEVER STATES**, both shipped as cards
+flagged **`from:'added'`** rather than borrowing her class's authority:
+
+- **The formula.** The paper asks which two properties density compares and
+  never once writes `density = mass ÷ volume`. The card does, with an `eq`.
+- **Water's 1 g/cm³.** Items 14 and 15 give her 0.32 g/cm³ and 1.7 g/cm³ and ask
+  float or sink — unanswerable without a number that **appears nowhere on the
+  paper**. She plainly knows it; the card is so the reasoning is written down
+  somewhere rather than carried in her head.
+
+The unit also names **water as the exception** to the solid–liquid–gas density
+order, because ice floats. That builds on the sheet rather than contradicting
+it: her item 5 says *"a typical substance"*, which is exactly the room that
+phrasing leaves.
+
+> **Shelved as part 3 of Chemistry, and the reasoning is in `parentNote` in case
+> her teacher disagrees.** The sheet's own item 5 ranks the phases by density —
+> density is being used as a property of the phases she has just studied. The
+> Drive file sits loose in Science with no numbered unit folder to defer to, so
+> there was no folder name to follow (the v117/v164 rule). If her teacher
+> numbers it as its own unit, it is a retitle keeping the id.
+
+> ⚠️ **The `3` is consistency insurance, not today's fix, and measuring said
+> so.** An unnumbered `Chemistry · Density and Buoyancy` still sorts last right
+> now, because numeric-aware collation puts digits ahead of letters and parts 1
+> and 2 are numbered. So this is the **v180 rule** — mixing the two forms inside
+> one shelf IS the bug — and the number becomes load-bearing the moment a part 4
+> arrives whose title would sort ahead of "Density". Worth stating precisely
+> rather than repeating v162's "a space beats an s", which is a different shelf's
+> reason.
+
+`tools/test_density.js` (33 assertions) pins coverage rather than a correction,
+since there is no correction to pin: the classId (the v136 orphan trap), the
+numbered form and the three-part shelf with the Nature of Science run untouched
+and nothing loose, no `prep` flag (v139 — this is the lesson, not test prep),
+answers across all four slots, no back-references and no positional references,
+**both added cards present AND flagged `added`**, the `parentNote` naming them
+as leaned-on-but-unstated, **every one of the sheet's own twenty ideas asserted
+by its teaching**, the `kind:'order'` convection loop stored heat → rise → cool
+→ sink, the sort never giving away its own bucket and deliberately holding a
+heavy floater and a light sinker, a clean 12-item pass logging 36 XP, a full
+round, and the deck walking to the end. **Verified by reverting the numbered
+title and re-flagging both added cards `source`, and watching three assertions
+fail.**
+
 ### Every deck gets its list (v174 / Ad Astra v196, both apps)
 
 Chris: *"I like seeing the flashcard words listed out as an option. Can we do
