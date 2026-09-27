@@ -2145,14 +2145,19 @@ Her Science folder's **`density and buoyancy.pdf`** — her completed 20-point
 lesson check. `science-density-buoyancy.json` (`unit-sci-dens`): 16 cards, 17
 questions, and a 12-item sort set, taking the Chemistry shelf to three parts.
 
-**She got 20 out of 20, marked A+ in pen with every item ticked** — including
-the ones with real work in them: subtracting the container to find the mass of
-the candy (she wrote the `29 − 15` out by hand), ranking the phases by density,
-and both float-or-sink questions that hand her a number and expect her to
-compare it against water without being told water's density. So unlike v161 and
-v165 **there is nothing here to repair**, and this unit exists to keep the
-material fresh for the test rather than to fix anything. That is worth saying
-plainly in the `parentNote`, and it is.
+**The sheet was read for its QUESTIONS, and that is now a standing rule.**
+Chris, on this upload: *"This was included for the questions. Not corrections or
+scoring. I'll enter scores manually unless explicitly stated."* So her marks on
+the paper are not tallied, summarised or recorded anywhere — not in
+`parentNote`, not in the builder, and not here, since all three are public. The
+unit covers the twenty ideas the paper tests and nothing else. The rule is
+written up in full under **Content rules** in ad-astra/CLAUDE.md, because it
+binds both apps and it binds the write-up as hard as the content.
+
+**This is not a retreat from v161 and v165**, which were built around her wrong
+answers on purpose — he had asked for the material to be reviewed against her
+paper, which is exactly the explicit case the rule names. Absent that ask, an
+upload is material, not a marking job.
 
 **TWO THINGS THE SHEET LEANS ON AND NEVER STATES**, both shipped as cards
 flagged **`from:'added'`** rather than borrowing her class's authority:
@@ -2169,12 +2174,18 @@ order, because ice floats. That builds on the sheet rather than contradicting
 it: her item 5 says *"a typical substance"*, which is exactly the room that
 phrasing leaves.
 
-> **Shelved as part 3 of Chemistry, and the reasoning is in `parentNote` in case
-> her teacher disagrees.** The sheet's own item 5 ranks the phases by density —
-> density is being used as a property of the phases she has just studied. The
-> Drive file sits loose in Science with no numbered unit folder to defer to, so
-> there was no folder name to follow (the v117/v164 rule). If her teacher
-> numbers it as its own unit, it is a retitle keeping the id.
+> **Shelved as part 3 of Chemistry, provisionally and by agreement.** The
+> sheet's own item 5 ranks the phases by density — density is being used as a
+> property of the phases she has just studied — and the Drive file sits loose in
+> Science with no numbered unit folder to defer to, so there was no folder name
+> to follow (the v117/v164 rule). Chris, asked: *"I don't know what unit this
+> might fit in yet, but I'll probably find out before the next test. I think it
+> will be a part of a large unit."* So the shelf is a placeholder that is
+> expected to move, which is fine and costs almost nothing: **when the unit is
+> named it is a retitle keeping the id** (`unit-m11`'s rule), so her qstats and
+> any Growth Zone misses stay attached and the only price is one re-approval.
+> Do not re-mint it, and do not guess the unit from the material — the folder
+> name or his word settles it, the way it settled Topic 3's.
 
 > ⚠️ **The `3` is consistency insurance, not today's fix, and measuring said
 > so.** An unnumbered `Chemistry · Density and Buoyancy` still sorts last right
@@ -2185,7 +2196,7 @@ phrasing leaves.
 > rather than repeating v162's "a space beats an s", which is a different shelf's
 > reason.
 
-`tools/test_density.js` (33 assertions) pins coverage rather than a correction,
+`tools/test_density.js` (35 assertions) pins coverage rather than a correction,
 since there is no correction to pin: the classId (the v136 orphan trap), the
 numbered form and the three-part shelf with the Nature of Science run untouched
 and nothing loose, no `prep` flag (v139 — this is the lesson, not test prep),
@@ -2197,7 +2208,12 @@ by its teaching**, the `kind:'order'` convection loop stored heat → rise → c
 heavy floater and a light sinker, a clean 12-item pass logging 36 XP, a full
 round, and the deck walking to the end. **Verified by reverting the numbered
 title and re-flagging both added cards `source`, and watching three assertions
-fail.**
+fail.** Two more pin the questions-not-scoring rule: the note saying outright
+that the sheet was read for what it asks, and a regex sweep of the whole shipped
+record for a mark, a fraction or "she got" — **verified by prepending a made-up
+score line to the note and watching it fail.** A later edit that quietly
+restored a score would be reversing a standing rule in a public file, so it
+fails a test instead.
 
 ### Every deck gets its list (v174 / Ad Astra v196, both apps)
 

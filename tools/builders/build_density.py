@@ -6,11 +6,11 @@ Check, 20 points, Drive, uploaded 2026-09-25. Rendered with pypdfium2 and
 read as images: her answers are circled by hand and the teacher's ticks are
 in pen, neither of which any text extraction can see.
 
-SHE GOT 20/20. Marked A+ in pen, every one of the twenty ticked. So unlike
-the Phases of Matter sheet (v161) and the Matter Phase Changes check (v165),
-there are no mistakes of hers to target here — this unit covers the material
-for the test rather than repairing anything. parentNote says so plainly,
-because "she aced it" is the useful thing for a grown-up to know.
+Chris, 2026-09-27: "This was included for the questions. Not corrections or
+scoring. I'll enter scores manually unless explicitly stated." So the sheet is
+read for WHAT IT ASKS. Her marks on it are not graded, summarised or recorded
+anywhere, and nothing here is a correction. The unit covers the twenty ideas
+the paper tests.
 
 SHELF: it joins Chemistry as part 3 rather than starting its own. The sheet's
 own question 5 asks her to rank the phases of matter by density, which is
@@ -25,7 +25,7 @@ TWO THINGS THE SHEET NEEDS BUT NEVER STATES, both added here:
     compares, and never that it is mass divided by volume.
   * water's density, 1 g/cm3. Questions 14 and 15 give her 0.32 and 1.7 and
     ask float or sink, which is unanswerable without the number to compare
-    against — she clearly knows it, but it is nowhere on the paper.
+    against, and that number is nowhere on the paper.
 """
 import io, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -454,20 +454,18 @@ build('wayfinder', C, Q, 'unit-sci-dens',
         "material.", 'added')],
 
       "Built from her own completed Density/Buoyancy lesson check.\n\n"
-      "FIRST, THE GOOD NEWS: she got 20 out of 20. It is marked A+ in pen and every one of the "
-      "twenty is ticked, including the trickier ones — subtracting the container to find the mass "
-      "of the candy (she wrote the 29 − 15 out by hand), ranking the phases by density, and both "
-      "of the float-or-sink questions that give a number and expect her to compare it with water "
-      "without being told water's density. So unlike the last two science sheets, there is nothing "
-      "here to repair. This unit exists to keep the material fresh for the test rather than to fix "
-      "anything.\n\n"
+      "It was read for the QUESTIONS it asks, not to mark or check her answers, so nothing "
+      "here is a correction and nothing about how she did on it is recorded anywhere. What "
+      "the unit covers is the twenty ideas the paper tests: what density compares, reading it "
+      "off particle packing, the phase order, working a mass out from a scale, float or sink "
+      "against water, buoyancy, and convection.\n\n"
       "TWO THINGS THE SHEET LEANS ON WITHOUT EVER SAYING, and both are added here as cards "
       "flagged as ours rather than her class's. The paper asks which two properties density "
       "compares but never gives the formula, so 'density = mass ÷ volume' is spelled out. And "
       "questions 14 and 15 hand her 0.32 g/cm³ and 1.7 g/cm³ and ask float or sink, which cannot "
       "be answered without knowing water is 1 g/cm³ — a number that appears nowhere on the paper. "
-      "She clearly knows both already; they are here so the reasoning is written down somewhere "
-      "rather than carried in her head.\n\n"
+      "They are here so the reasoning is written down somewhere rather than carried in her "
+      "head.\n\n"
       "One extension worth knowing about: the unit teaches that water is the exception to the "
       "solid-liquid-gas density order, because ice floats. Her question 5 says 'a typical "
       "substance', which deliberately leaves room for that — so this builds on the sheet rather "
@@ -475,8 +473,9 @@ build('wayfinder', C, Q, 'unit-sci-dens',
       "SHELVING: this lands as part 3 of Chemistry, behind Phases of Matter and Phase Changes, "
       "because the sheet's own question 5 asks her to rank the phases by density — density is "
       "being used as a property of the phases she just studied. The Drive file sits loose in "
-      "Science rather than in a numbered unit folder, so there was no folder name to follow. If "
-      "her teacher numbers it as its own unit, it is a retitle keeping the id.",
+      "Science rather than in a numbered unit folder, so there was no folder name to follow. "
+      "Chris expects it to end up part of a larger unit but does not know which yet, so this is "
+      "provisional by agreement: when the unit is named, it is a retitle keeping the id, which costs one re-approval and nothing else.",
 
       ("Start with the cards — the float-or-sink rule and the density of water are the pair that "
        "make every other question on this topic answerable.", 20),

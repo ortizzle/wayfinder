@@ -1,5 +1,6 @@
 /* v175 — Chemistry · 3 Density and Buoyancy (Wayfinder only).
-   Built from River's completed 20/20 Density/Buoyancy lesson check.
+   Built from her completed Density/Buoyancy lesson check, read for the
+   QUESTIONS it asks rather than to mark it (Chris, 2026-09-27).
 
    What this guards beyond the ordinary shelving/round checks:
      - it is part THREE of the Chemistry shelf, behind Phases of Matter and
@@ -101,8 +102,20 @@ const PORT = process.argv[2] || 8403;
      /1 g\/cm³/.test(water.def||'') && /floats/.test(water.def||'') && /sinks/.test(water.def||'') &&
      water.from === 'added', [water.def && water.def.slice(0,40), water.from]);
   ck('the parent note names both of them as leaned-on-but-unstated',
-     /never (giv|say)/i.test(seed.note) && /1 g\/cm³/.test(seed.note) &&
-     /20 out of 20/.test(seed.note), seed.note.slice(0,80));
+     /never (giv|say)/i.test(seed.note) && /1 g\/cm³/.test(seed.note),
+     seed.note.slice(0,80));
+  /* Chris, 2026-09-27: "This was included for the questions. Not corrections or
+     scoring. I'll enter scores manually unless explicitly stated." So her marks
+     on the sheet are not summarised, graded or recorded — the note says what the
+     paper ASKS and never how she did on it. Pinned here because a later edit
+     restoring a score line would be a quiet reversal of a standing rule, and
+     this file is public. */
+  ck('nothing about how she did on the sheet is recorded anywhere',
+     !/\b(\d+\s*(out of|\/)\s*\d+|A\+|aced|she got|full marks|scored)\b/i.test(seed.blob),
+     (seed.blob.match(/\b(\d+\s*(out of|\/)\s*\d+|A\+|aced|she got|full marks|scored)\b/ig)||[]).slice(0,5));
+  ck('the note says the sheet was read for its questions, not to mark her answers',
+     /read for the QUESTIONS it asks/.test(seed.note) &&
+     /nothing here is a correction/.test(seed.note), seed.note.slice(0,120));
 
   /* Every idea her twenty questions actually test, asserted by teaching.
      A question id would not survive a renumber; the teaching has to. */
