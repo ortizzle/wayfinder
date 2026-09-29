@@ -1731,7 +1731,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v176 · questions, not scores';
+const APP_VERSION = 'v177 · the week before the break';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3214,6 +3214,18 @@ const STUDENT_HOURS = [
 /* The first newsletter: student hours start the week of 8/17 — showing them
    earlier would send her to a door that isn't open yet. */
 const HOURS_START = '2026-08-17';
+/* A standing rule, printed in the 4th Grade Newsletter of 9/18 and again on
+   9/25: "A 24 hours notice is needed for students to attend student hours."
+   It is said wherever a window is OFFERED, because without it the runway's
+   "the last one before it" is misleading — a slot she cannot walk into
+   unannounced is not a door that is open, which is the same correctness rule
+   early release already follows about the pick-up time. It is stated, never
+   used to FILTER: the app cannot know whether she has already asked, and
+   hiding a real window from someone who has would be worse than saying the
+   rule twice. Worded forward ("let your teacher know") rather than as a
+   verdict on a window that is open today, so it reads as how to use the door
+   rather than as a reason she has missed it. */
+const HOURS_NOTICE = 'Let your teacher know a day ahead — student hours need 24 hours’ notice.';
 const hoursFor = id => AZ.today() >= HOURS_START ? STUDENT_HOURS.find(h=>h.ids.includes(id)) : null;
 
 /* Tutoring — a standing weekly commitment, read once from her calendar at
@@ -3265,9 +3277,25 @@ const SUGGESTED_ASSESS = [
   {id:'sg-sci-2026-09-17', classId:'science', kind:'quiz',
    title:'Science quiz · Phases of matter and phase changes', date:'2026-09-17'},
   {id:'sg-sci-2026-10-02', classId:'science', kind:'quiz',
-   title:'Science quiz · Chemistry (second quiz)', date:'2026-10-02'},
+   title:'Science quiz · Density, buoyancy and the periodic table', date:'2026-10-02'},
   {id:'sg-sci-2026-10-20', classId:'science', kind:'test',
-   title:'Science test · Chemistry (week of 10/20, date to confirm)', date:'2026-10-20'}
+   title:'Science test · Chemistry (week of 10/20, date to confirm)', date:'2026-10-20'},
+  /* 4th Grade Newsletter, 9/25: FIVE more in the four days before Fall Break,
+     all dated outright in its own Upcoming Assessments box, so none of these
+     is inferred. The science row above already existed from the 9/10 update
+     and was only retitled — the newsletter is the first source to say what
+     that quiz covers, and half of it (the periodic table) is material her
+     class does not meet until the week of 9/28. */
+  {id:'sg-eng-2026-09-29',  classId:'english', kind:'quiz',
+   title:'Lemonade Crime Quiz · the exposition chapters (short answer)', date:'2026-09-29'},
+  {id:'sg-eng-2026-09-30',  classId:'english', kind:'quiz',
+   title:'Vocabulary quiz · Wordly Wise Unit 3', date:'2026-09-30'},
+  {id:'sg-hist-2026-09-30', classId:'history', kind:'test',
+   title:'History test · Unit 5', date:'2026-09-30'},
+  {id:'sg-math-2026-10-01', classId:'math',    kind:'quiz',
+   title:'Math quiz · Unit 3, lessons 3-1 to 3-4', date:'2026-10-01'},
+  {id:'sg-wri-2026-10-02',  classId:'writing', kind:'quiz',
+   title:'Grammar quiz · Nouns, descriptive adjectives and determiners', date:'2026-10-02'}
 ];
 
 /* Mission Control reads the sibling app's gist, read-only — never merged,
@@ -4972,7 +5000,8 @@ SCREENS.today = function(root){
       c0.appendChild(el('div','rhours', '🕐 Student hours ' + when + ', ' + rw.hours.times
         + (rw.hours.tbd ? ' (confirm with your teacher)' : '')
         + (rw.hours.sameDay ? ' — the morning of, and the last chance.'
-           : rw.hours.last ? ' — the last one before it.' : '.')));
+           : rw.hours.last ? ' — the last one before it.' : '.')
+        + ' ' + HOURS_NOTICE));
     }
     root.appendChild(c0);
   }
@@ -5154,7 +5183,7 @@ SCREENS.today = function(root){
       r.appendChild(kk);
       hc.appendChild(r);
     });
-    if(shrs.length) hc.appendChild(el('div','hintline','Student hours are extra time with your teacher. Anyone can go — it is help, not trouble.'));
+    if(shrs.length) hc.appendChild(el('div','hintline','Student hours are extra time with your teacher. Anyone can go — it is help, not trouble. ' + HOURS_NOTICE));
     root.appendChild(hc);
   }
   /* The timetable lives on Study now (v150 / Wayfinder v131, Chris and
@@ -5405,7 +5434,7 @@ SCREENS.unit = function(root){
     ? `${st.sessions} session${st.sessions>1?'s':''} · ${st.answered} questions · ${st.accuracy}% · ${st.minutes} min`
     : 'No study sessions logged yet.'));
   const hrs = hoursFor(c.id);
-  if(hrs) head.appendChild(el('div','hintline',`🕖 Student hours: ${hrs.label} ${hrs.times} — extra help from your teacher, open to anyone.`));
+  if(hrs) head.appendChild(el('div','hintline',`🕖 Student hours: ${hrs.label} ${hrs.times} — extra help from your teacher, open to anyone. ${HOURS_NOTICE}`));
   root.appendChild(head);
 
   const goal = prefs().goals[c.id];

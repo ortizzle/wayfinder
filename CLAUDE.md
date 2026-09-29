@@ -2004,6 +2004,101 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### The week before the break (v177, THIS APP ONLY)
+
+Chris: *"Can we review the folders and update any files?"* Three newsletters had
+landed in Drive the day before and none of them had been read. The **4th Grade
+Newsletter of 9/25** is the one that mattered: its Upcoming Assessments box
+lists **five** more assessments in the four days before Fall Break, and names
+what a sixth already on the list actually covers.
+
+| Date | Assessment | What the app already holds |
+|---|---|---|
+| Tue 9/29 | Lemonade Crime Quiz · the exposition chapters (short answer) | `unit-lc1` (Ch. 1–5) |
+| Wed 9/30 | Vocabulary quiz · Wordly Wise Unit 3 | `unit-ww503`, rebuilt to her real test's five sections in v169 |
+| Wed 9/30 | History test · Unit 5 | the three-part shelf shipped **two days earlier**, in v175 |
+| Thu 10/1 | Math quiz · Unit 3, lessons 3-1 to 3-4 | **nothing** |
+| Fri 10/2 | Grammar quiz · Nouns, descriptive adjectives and determiners | **nothing — no Writing unit exists at all** |
+| Fri 10/2 | Science quiz · Density, buoyancy and the periodic table | density and buoyancy shipped in v175; the periodic table is **next week's lesson** |
+
+- **Every date is printed outright in the newsletter's own box, so none is
+  inferred.** Titles keep her teachers' unit numbers verbatim, the standing rule
+  here; only the newsletter's own typos (*denisty*, *bouyancy*, *peridoic*) are
+  spelled correctly, since our row is our copy and not a transcription of
+  anything she is marked on.
+- **The 10/2 science row was RETITLED, not added a second time.** It has existed
+  since the 9/10 science update as *"Chemistry (second quiz)"* — this newsletter
+  is the first source to say what it covers, and the check that mattered was
+  looking for it before writing a new row rather than after.
+- **Three real content gaps, reported rather than guessed at.** Unit 3 maths is
+  *"multiplying multi-digit numbers"* per the 9/18 newsletter and has no pages in
+  Drive; the periodic table is taught the week of 9/28 and has no material yet;
+  and **Writing has never had a single unit in this app** — it is a subject on
+  her timetable with its own test grades, and the grammar quiz is the second
+  Writing assessment (after the 9/2 cursive quiz) to arrive with nothing behind
+  it. Building any of the three from general knowledge would be guessing the
+  scope, which is exactly what the v129 latitude/longitude note refused to do and
+  what the v159 Unit-numbering guess got wrong.
+
+**The 24-hour notice is the one engine change, and it is a correctness fix.**
+Both the 9/18 and the 9/25 newsletters say *"A 24 hours notice is needed for
+students to attend student hours"* — a standing rule the app had never carried,
+while the runway was telling her a window was *"the last one before it."* A slot
+she cannot walk into unannounced is not a door that is open, which is the same
+rule early release already follows about never showing the usual pick-up time.
+
+- **`HOURS_NOTICE` is said wherever a window is OFFERED** — the runway's
+  `.rhours` row, Today's "Extra help today" hintline, and the subject screen's
+  hintline. One constant, three call sites, so the three cannot drift into three
+  different phrasings of the same rule.
+- **Stated, never used to FILTER.** The app cannot know whether she has already
+  asked her teacher, and hiding a real window from someone who has would be
+  worse than printing the rule twice. `usableTimes` still trims only what has
+  genuinely passed.
+- **Worded forward** — "Let your teacher know a day ahead" — rather than as a
+  verdict on a window that is open today. On Today's card the notice sits after
+  the line that already says student hours are *"help, not trouble"*, so it reads
+  as how to use the door and not as a reason she has missed it.
+- Student hours themselves are **confirmed unchanged** by this newsletter
+  (English & Writing Mondays, History Tuesdays, Math & Science Thursdays,
+  7:00–7:30 am or 3:30–4:00 pm), so `STUDENT_HOURS` did not move.
+
+**The Cub Hub of 9/25 needed no changes, and checking is why that is worth
+recording.** Its whole Important Dates list — the 9/30 SHINE lunch, Pledge
+Signing Day, the 10/2 early release with parent/teacher conferences and the end
+of Quarter 1, Fall Break, Quarter 2 and the SHINE presentations, report cards,
+Unity Day, the Boo Bash and Book Fair, picture retakes, the Costume Parade — is
+already in `CAL` from v173. The two field trips it lists are other grades' and
+stay out, per that same version's rule that a calendar listing other grades'
+outings trains her to skim it.
+
+> ⚠️ **Sedona's Paw Print of 9/25 could not be read, and this is the documented
+> dead end rather than a new one.** It is an image-only scan at **89 MB** — so
+> `read_file_content` returns an empty string and `download_file_content`'s 10 MB
+> cap rules out rendering it with `pypdfium2` either. Both failure modes at once
+> leave no path from here, exactly as v129 recorded for the 8/7 through 9/4
+> issues. **The unblock is v120's: Chris right-clicks the PDF in Drive → Open
+> with → Google Docs**, which runs Drive's own OCR server-side and produces a Doc
+> that reads perfectly. Ten seconds of his time; `copy_file` takes no target
+> mimeType, so Claude cannot force the conversion itself.
+
+`tools/test_hours_notice.js` pins the two rules rather than the copy: the notice
+naming 24 hours and a day ahead, and then on each of the three surfaces that it
+renders, that **real times are still printed** (the never-filter rule) and that
+the notice is on it — plus that the runway still says "the last one before it",
+since that sentence is the reason the notice exists. It also re-checks the shape
+every `SUGGESTED_ASSESS` row must have (a real subject, a unique id, a quiz or a
+test, an ISO date) so next week's additions are guarded too, and **prints the
+subjects with an upcoming assessment and no unit at all** rather than asserting
+the gap away — that NOTE line is how Writing surfaced.
+
+> ⚠️ **The Extra-help card only renders on a school day whose weekday carries a
+> window, so the test WALKS FORWARD to the first such day and points the clock
+> at it** (`AZ.today`, plus `AZ.nowMinutes` at 6am so no slot is trimmed as
+> already passed). A hardcoded Monday would have been a time bomb of exactly the
+> kind `test_suggest.js` has now paid for twice and `test_bulkapprove.js` once.
+> **Pin the rule, never the almanac.**
+
 ### History Unit 5, a three-part shelf (v175)
 
 Chris: *"folders are updated, can we have some updated documentation?"* Her
