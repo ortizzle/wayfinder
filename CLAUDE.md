@@ -2004,6 +2004,91 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Unit 3 is nine lessons, and it was there all along (v178)
+
+Chris: *"I've updated the girls folders. If we can build new materials."* His
+Math folder now has **`Unit 2 - Math`** and **`Unit 3 - Math`** subfolders, and
+the Unit 3 one holds **`Unit 3 - Math.pdf`** — enVision grade-5 **Topic 3,
+Fluently Multiply Multi-Digit Whole Numbers**, lessons 3-1 to 3-9, clean text
+layer — plus `3-1_` and `3-2_ Student Edition Practice.pdf`, her own practice
+pages for the first two lessons.
+
+> ⚠️ **v177 told Chris this material did not exist, and it had been in Drive
+> since 9/13.** The v177 sweep searched for new files by modified date and for
+> a folder name, found neither, and wrote "no pages in Drive" — into chat and
+> into this file. The PDF was sitting under a name the search never tried.
+> That is v142 and v185 a third time, in the same words: **an empty search is
+> not evidence of absence.** Say "I did not find it", name what was searched,
+> and ask. The quiz is Thursday 10/1, so the cost of that sentence would have
+> been one question; the cost of not asking was two days of the quiz sitting
+> uncovered.
+
+Nine units, one per lesson, shelving as their own book `Unit 3` — exactly
+Unit 2's shape (v164), since she still does a lesson a day.
+
+| id | title |
+|---|---|
+| `unit-m3u1` | `Unit 3 · Lesson 1: Multiply by Powers of 10` |
+| `unit-m3u2` | `Unit 3 · Lesson 2: Estimate Products` |
+| `unit-m3u3` | `Unit 3 · Lesson 3: Multiply by a 1-Digit Number` |
+| `unit-m3u4` | `Unit 3 · Lesson 4: Multiply 2-Digit by 2-Digit Numbers` |
+| `unit-m3u5` | `Unit 3 · Lesson 5: Multiply 3-Digit by 2-Digit Numbers` |
+| `unit-m3u6` | `Unit 3 · Lesson 6: Multiply with Zeros` |
+| `unit-m3u7` | `Unit 3 · Lesson 7: Solve Problems with Multiplication` |
+| `unit-m3u8` | `Unit 3 · Lesson 8: Bar Diagrams for Multiplication` |
+| `unit-m3u9` | `Unit 3 · Lesson 9: Critique Reasoning` |
+
+- **"Lesson N", never the book's "3-1"** — Unit 1 already carries a `Topic 3 ·
+  3-1…3-7` run from the grade-4 book, and both shelves render on the Math screen
+  together. The v164 rule, for the same reason. The book's label rides in
+  `srcName` so she can still find the pages.
+- **`series:'Unit 3'`, `libv:1`, `round:10`**, no `order`, no `prep` — these are
+  the lessons, not test prep (v139). Numeric-aware title sort puts Lesson 9
+  after Lesson 1, verified on the shelf rather than assumed.
+- **Every product is computed in the builder, and every WRONG option is
+  generated from a named mistake** rather than typed: `no_carry()` (the carry
+  dropped, the last step written whole — 34 × 5 → 150), `side_by_side()` (each
+  digit's product written next to the others — 37 × 4 → 1,228, the textbook's
+  own "what did this student do wrong?"), `no_placeholder()` (the second row
+  without its zero — 34 × 26 → 272) and `skip_zero()` (a middle zero dropped —
+  306 → 36). So when she picks a wrong answer, the explanation can name exactly
+  which slip produced it, because that is how the number was made.
+- **The first draft of `no_carry()` modelled the slip wrongly** — it kept only
+  the ones digit of EVERY step, including the leftmost, which gives 34 × 5 → 50,
+  an answer no child writes. The real slip writes the last product whole. Caught
+  because the builder asserts each distractor's value and 150 ≠ 50. Two other
+  asserted distractor values were miscomputed by hand the same way and caught
+  the same way — **the asserts are what make "computed, not typed" true.**
+- None of the book's own numbers is reused (32 × 10,000, 26 × 3, 37 × 24,
+  389 × 12, 208 × 31 and the rest) — the standalone rule. **Her two practice
+  files were not read for marks**, per the v176 standing rule; the textbook scan
+  carries the same practice pages, and it is what the lessons are built from.
+- The traps each get airtime: a zero already in the first factor (60 × 1,000 =
+  60,000, the book's Nellie item), an exponent read as a multiplier (10³ ≠ 30),
+  mixed rounding promising nothing (48 × 52 = 2,496, just UNDER 50 × 50), only
+  an underestimate proving "at least", quarterly meaning 4 not 12, and reading
+  "times as many" as addition.
+- **Three stems leaned on a sibling question on the first draft** — "the cargo
+  from before", "the new price of the painting", "the equation s = 2,415 × 4"
+  with the stickers only named elsewhere — and were rewritten to restate their
+  own facts. Six options ran above the length band (worst 52%) and were fixed by
+  giving the distractors substance (v185); worst remaining is 27%.
+
+`tools/test_unit3_shelf.js` (32 assertions) seeds all of Unit 2 and three Unit 1
+parts alongside, so "its own shelf" is a claim about coexistence: three shelves
+and nothing loose, nine lessons in order with no `3-N` label, the orphan trap,
+`series`/`libv`, no `prep`, all three levels and all four answer slots per
+lesson, no duplicated option, no sibling-leaning stem, **every named slip
+present as a real option**, each trap asserted by its teaching, and a full
+round played and logged on **all nine** lessons. Counts are minimums, never
+exact (the rot four earlier tests paid for). **Verified by stripping `series`
+from one lesson and the placeholder-slip option from another, and watching
+exactly those two assertions fail.**
+
+> ⚠️ **One assertion failed first as MY bug, and it is the v195 trap verbatim:**
+> a regex containing `"Times as many"` against `JSON.stringify(unit)`, where the
+> quotes are escaped. The content was right; the regex could not match it.
+
 ### The week before the break (v177, THIS APP ONLY)
 
 Chris: *"Can we review the folders and update any files?"* Three newsletters had
@@ -2017,7 +2102,7 @@ what a sixth already on the list actually covers.
 | Tue 9/29 | Lemonade Crime Quiz · the exposition chapters (short answer) | `unit-lc1` (Ch. 1–5) |
 | Wed 9/30 | Vocabulary quiz · Wordly Wise Unit 3 | `unit-ww503`, rebuilt to her real test's five sections in v169 |
 | Wed 9/30 | History test · Unit 5 | the three-part shelf shipped **two days earlier**, in v175 |
-| Thu 10/1 | Math quiz · Unit 3, lessons 3-1 to 3-4 | **nothing** |
+| Thu 10/1 | Math quiz · Unit 3, lessons 3-1 to 3-4 | **nothing — WRONG, see v178: the pages had been in Drive since 9/13** |
 | Fri 10/2 | Grammar quiz · Nouns, descriptive adjectives and determiners | **nothing — no Writing unit exists at all** |
 | Fri 10/2 | Science quiz · Density, buoyancy and the periodic table | density and buoyancy shipped in v175; the periodic table is **next week's lesson** |
 
@@ -2030,9 +2115,11 @@ what a sixth already on the list actually covers.
   since the 9/10 science update as *"Chemistry (second quiz)"* — this newsletter
   is the first source to say what it covers, and the check that mattered was
   looking for it before writing a new row rather than after.
-- **Three real content gaps, reported rather than guessed at.** Unit 3 maths is
-  *"multiplying multi-digit numbers"* per the 9/18 newsletter and has no pages in
-  Drive; the periodic table is taught the week of 9/28 and has no material yet;
+- **Three real content gaps, reported rather than guessed at — and the first
+  was not a gap.** Unit 3 maths is *"multiplying multi-digit numbers"* per the
+  9/18 newsletter, and this section said it had no pages in Drive. **It did:**
+  `Unit 3 - Math.pdf` had been there since 9/13 and was simply not found — see
+  v178, which built it. The periodic table is taught the week of 9/28 and has no material yet;
   and **Writing has never had a single unit in this app** — it is a subject on
   her timetable with its own test grades, and the grammar quiz is the second
   Writing assessment (after the 9/2 cursive quiz) to arrive with nothing behind

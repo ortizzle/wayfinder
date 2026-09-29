@@ -1,0 +1,338 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u9": {
+   "id": "unit-m3u9",
+   "type": "unit",
+   "updatedAt": 1790627956783,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 9: Critique Reasoning",
+   "srcName": "Unit 3 textbook scan, Lesson 3-9 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-9 of the Topic 3 textbook scan: critiquing someone else's reasoning about multiplication — checking their estimates, their calculations and whether their conclusion follows.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Explaining whether someone else's thinking is right is one of the hardest skills on a math test, and it is exactly what \"Construct Arguments\" and \"Critique Reasoning\" questions ask for.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Describe another person's argument and how they support it",
+     "from": "source"
+    },
+    {
+     "text": "Decide whether an estimate supports a \"more than\" or \"less than\" claim",
+     "from": "source"
+    },
+    {
+     "text": "Find and fix a flaw in a calculation",
+     "from": "source"
+    },
+    {
+     "text": "Tell a correct answer from correct reasoning",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The biggest idea here is that the direction of rounding decides what an estimate can prove. Two questions show opposite outcomes of the same flaw: Omar's \"fewer than 18,000\" turns out true but was not proved, and the \"48 × 52 is more than 2,500\" claim turns out false (2,496). The cargo questions are the textbook's own example with fresh numbers — rounding the heavy boxes DOWN hid 150 extra pounds. One question also shows sound reasoning (rounding down to prove \"more than\"), because a critique should say when an argument is right, too.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Ask: which way did they round, and do the pieces add back up?",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "What is their argument?",
+     "def": "**Start by saying what the person is claiming and what they used to support it.**\n• \"She estimated 60 × 300 = 18,000 and said there are fewer than 18,000 seats.\"",
+     "hint": "Name the claim before you judge it.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Check the direction of the estimate",
+     "def": "**An estimate only supports \"more than\" or \"less than\" if it rounded the right way.**\n• Both factors rounded up → overestimate. Both down → underestimate.\n• One up and one down → it cannot prove either.",
+     "hint": "Which way did the numbers move?",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Check the calculation",
+     "def": "**Look for slips: a lost zero, a wrong carry, or a number split the wrong way.**\n• 400 × 63 is not (400 × 6) + (400 × 3). 63 is 60 + 3.",
+     "hint": "Splitting a number? The pieces must add back to it.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Does the conclusion follow?",
+     "def": "**Even a true answer can come from bad reasoning — and good-looking reasoning can be wrong.**\n• Say whether the steps actually prove the claim.",
+     "hint": "Right answer, wrong reason, still needs fixing.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Ask questions",
+     "def": "**Critiquing means asking questions, deciding if the strategy makes sense, and looking for flaws.**",
+     "hint": "Curious, not unkind.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A stadium has 62 sections with 285 seats each. Omar estimates 60 × 300 = 18,000 and says there are fewer than 18,000 seats. Does his estimate prove it?",
+     "opts": [
+      "No — he rounded one number down and one up, so 18,000 could be high or low",
+      "Yes — 18,000 is an overestimate, so the real number is smaller",
+      "Yes — any estimate that ends in zeros is safe to use",
+      "No — he should have added 62 and 285 instead"
+     ],
+     "ans": 0,
+     "hint": "Which way did each number get rounded?",
+     "steps": [
+      "62 was rounded DOWN to 60.",
+      "285 was rounded UP to 300.",
+      "With one down and one up, the estimate could be above or below.",
+      "The real total is 17,670 — he happens to be right, but his estimate did not prove it."
+     ],
+     "ex": {
+      "main": "**No.** One factor went down and one went up, so 18,000 proves nothing either way.",
+      "tip": "His conclusion turns out true (17,670), but only an exact calculation shows that."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "An office manager works out 400 × 63 as (400 × 6) + (400 × 3) = 3,600. What is the mistake?",
+     "opts": [
+      "He should have multiplied 400 by 9",
+      "He split 63 into 6 and 3 instead of 60 and 3",
+      "He should have added the parts first",
+      "There is no mistake — 3,600 is correct"
+     ],
+     "ans": 1,
+     "hint": "Do 6 and 3 add up to 63?",
+     "steps": [
+      "6 + 3 = 9, not 63.",
+      "63 should be split as 60 + 3.",
+      "(400 × 60) + (400 × 3) = 24,000 + 1,200 = 25,200."
+     ],
+     "ex": {
+      "main": "**He split 63 into 6 and 3 instead of 60 and 3.** The real product is 25,200.",
+      "tip": "Whenever you split a number, check that the pieces add back up to it."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the correct value of 400 × 63?",
+     "opts": [
+      "24,000",
+      "3,600",
+      "25,200",
+      "2,520"
+     ],
+     "ans": 2,
+     "hint": "Split 63 as 60 + 3.",
+     "steps": [
+      "400 × 60 = 24,000.",
+      "400 × 3 = 1,200.",
+      "24,000 + 1,200 = 25,200."
+     ],
+     "ex": {
+      "main": "**25,200.** (400 × 60) + (400 × 3).",
+      "tip": "24,000 remembers the 60 but forgets the 3."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Kate sold 2,085 bracelets and made $6 on each. She says, \"2,000 × 6 = 12,000 and I sold more than 2,000, so I made more than $12,000.\" Is she right?",
+     "opts": [
+      "Yes — because $12,000 is exactly what her profit comes to",
+      "No — she should have rounded 2,085 up to 3,000 to be safe",
+      "No — an estimate can never decide whether she made enough",
+      "Yes — she rounded down, so her real profit is even more than $12,000"
+     ],
+     "ans": 3,
+     "hint": "Did she round 2,085 up or down?",
+     "steps": [
+      "She rounded 2,085 DOWN to 2,000.",
+      "That makes 12,000 an underestimate.",
+      "Her real profit must be more than $12,000.",
+      "Exactly: 2,085 × 6 = $12,510."
+     ],
+     "ex": {
+      "main": "**Yes.** Rounding down gives an underestimate, and it already reaches $12,000.",
+      "tip": "This is sound reasoning — worth saying so when you critique, too."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "You want to know if you have ENOUGH money. Which kind of estimate of your money helps most?",
+     "opts": [
+      "An underestimate, because the real amount is at least that much",
+      "An overestimate, because a bigger number is always the safer one",
+      "Any estimate at all, since they all work equally well",
+      "No estimate helps — only the exact amount can tell you"
+     ],
+     "ans": 0,
+     "hint": "If your too-small estimate is enough, what about the real amount?",
+     "steps": [
+      "An underestimate is smaller than what you really have.",
+      "If even that smaller amount is enough, the real amount is too.",
+      "An overestimate could make you think you have enough when you do not."
+     ],
+     "ex": {
+      "main": "**An underestimate.** If it is already enough, the real amount certainly is.",
+      "tip": "An overestimate is useful the other way round — to check that something is under a limit."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A cargo container can hold 15,000 pounds. There are 38 boxes of 150 pounds and 45 boxes of 210 pounds. Someone estimates 40 × 150 + 45 × 200 = 15,000 and says they fit. Do they?",
+     "opts": [
+      "Yes — the estimate is exactly 15,000",
+      "No — the real weight is 15,150 pounds, which is over",
+      "Yes — 38 was rounded up, so there is room to spare",
+      "No — the real weight is 25,000 pounds"
+     ],
+     "ans": 1,
+     "hint": "Work out the heavier boxes exactly.",
+     "steps": [
+      "38 × 150 = 5,700.",
+      "45 × 210 = 9,450.",
+      "5,700 + 9,450 = 15,150.",
+      "That is 150 pounds over the limit."
+     ],
+     "ex": {
+      "main": "**No.** The real weight is 15,150 pounds — the estimate rounded 210 down and hid the extra.",
+      "tip": "Rounding the heavy boxes down is exactly the wrong direction when checking a limit."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 45 × 210?",
+     "opts": [
+      "1,050",
+      "9,000",
+      "9,450",
+      "945"
+     ],
+     "ans": 2,
+     "hint": "Find 45 × 21, then put the zero on.",
+     "steps": [
+      "45 × 1 = 45.",
+      "45 × 20 = 900.",
+      "45 × 21 = 945, so 45 × 210 = 9,450."
+     ],
+     "ex": {
+      "main": "**9,450.** 45 × 21 = 945, and the zero from 210 makes 9,450.",
+      "tip": "9,000 is 45 × 200 — the estimate, not the answer."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which question is most useful when you critique someone's reasoning?",
+     "opts": [
+      "Did they finish before everyone else in the class?",
+      "Is the final answer a big number, or a small number?",
+      "Did they write every step neatly, in pen?",
+      "Does the strategy make sense, and are the numbers right?"
+     ],
+     "ans": 3,
+     "hint": "Critiquing is about the thinking, not the look of the work.",
+     "steps": [
+      "A critique checks whether the method makes sense.",
+      "It also checks the calculations for slips.",
+      "Neatness and speed are not reasoning."
+     ],
+     "ex": {
+      "main": "**Does the strategy make sense, and are the numbers right?** That is what a critique checks.",
+      "tip": "Asking questions helps you understand their thinking before you decide."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A cargo load of 38 boxes at 150 pounds and 45 boxes at 210 pounds weighs 15,150 pounds. The limit is 15,000. Raul removes two 210-pound boxes and one 150-pound box. Does it fit now?",
+     "opts": [
+      "Yes — it now weighs 14,580 pounds",
+      "No — it now weighs 15,000 pounds exactly",
+      "Yes — it now weighs 14,790 pounds",
+      "No — removing boxes does not change the weight enough"
+     ],
+     "ans": 0,
+     "hint": "Subtract the weight of the boxes removed.",
+     "steps": [
+      "Two heavy boxes: 2 × 210 = 420 pounds.",
+      "One light box: 150 pounds.",
+      "15,150 − 420 − 150 = 14,580.",
+      "14,580 is under 15,000."
+     ],
+     "ex": {
+      "main": "**Yes — 14,580 pounds.** Removing 570 pounds brings it under the limit.",
+      "tip": "14,790 forgets one of the two heavy boxes."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student says 48 × 52 must be more than 2,500 because 50 × 50 = 2,500. Is that right?",
+     "opts": [
+      "Yes — both numbers are close to 50, so the product must be more",
+      "No — rounding one up and one down can go either way; 48 × 52 is 2,496",
+      "Yes — 52 is bigger than 50, so the product has to be bigger too",
+      "No — 48 × 52 is much less than that, only about 2,000"
+     ],
+     "ans": 1,
+     "hint": "Which way did 48 and 52 each move?",
+     "steps": [
+      "48 went UP to 50.",
+      "52 went DOWN to 50.",
+      "One up and one down gives no promise.",
+      "48 × 52 = 2,496, which is just under 2,500."
+     ],
+     "ex": {
+      "main": "**No.** 48 × 52 = 2,496, just under 2,500 — mixed rounding cannot prove \"more than\".",
+      "tip": "This is the surprising one: numbers balanced around 50 give a product slightly LESS than 50 × 50."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

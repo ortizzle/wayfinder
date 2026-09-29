@@ -1731,7 +1731,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v177 · the week before the break';
+const APP_VERSION = 'v178 · Unit 3, lesson by lesson';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3540,7 +3540,12 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
      parts of Unit 1: this is the grade-5 book, whose Topic 2 is decimals,
      while the `Topic 2 · 2-x` run on Unit 1 is the grade-4 book, whole numbers. */
   'content/math-u2-l1.json', 'content/math-u2-l2.json', 'content/math-u2-l3.json',
-  'content/math-u2-l4.json', 'content/math-u2-l5.json', 'content/math-u2-l6.json'];
+  'content/math-u2-l4.json', 'content/math-u2-l5.json', 'content/math-u2-l6.json',
+  /* Unit 3 — Multiply Multi-Digit Whole Numbers, the grade-5 book's Topic 3,
+     one file per lesson exactly like Unit 2. Its own shelf, `Unit 3`. */
+  'content/math-u3-l1.json', 'content/math-u3-l2.json', 'content/math-u3-l3.json',
+  'content/math-u3-l4.json', 'content/math-u3-l5.json', 'content/math-u3-l6.json',
+  'content/math-u3-l7.json', 'content/math-u3-l8.json', 'content/math-u3-l9.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same

@@ -1,0 +1,338 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u4": {
+   "id": "unit-m3u4",
+   "type": "unit",
+   "updatedAt": 1790627956774,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 4: Multiply 2-Digit by 2-Digit Numbers",
+   "srcName": "Unit 3 textbook scan, Lesson 3-4 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-4 of the Topic 3 textbook scan: multiplying a 2-digit number by a 2-digit number with an area model, partial products and the standard algorithm.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Two-digit by two-digit is where the placeholder zero first appears, and it is the step most students drop.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply 2-digit by 2-digit numbers with an area model",
+     "from": "source"
+    },
+    {
+     "text": "Multiply 2-digit by 2-digit numbers with the standard algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Explain the placeholder zero in the second row",
+     "from": "source"
+    },
+    {
+     "text": "See the standard algorithm as a shortcut for partial products",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Two mistakes are built into the wrong options on purpose. Leaving the zero off the second row (34 × 26 → 272) and multiplying only tens-by-tens and ones-by-ones (43 × 25 → 815, missing the two \"cross\" pieces). Both give answers that are wildly off from an estimate, which is exactly why every explanation here ends with one.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Two rows, and the second row always starts with a 0.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The area model",
+     "def": "**Split both factors into tens and ones and find all four partial products.**\n• 23 × 45: 20 × 40 = 800, 20 × 5 = 100, 3 × 40 = 120, 3 × 5 = 15.\n• 800 + 100 + 120 + 15 = 1,035.",
+     "hint": "Two parts times two parts makes four pieces.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Two rows in the standard algorithm",
+     "def": "**First multiply by the ones digit, then by the tens digit, then add the two rows.**\n• 34 × 26: row 1 is 34 × 6 = 204. Row 2 is 34 × 20 = 680.\n• 204 + 680 = 884.",
+     "hint": "One row for the ones, one row for the tens.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The placeholder zero",
+     "def": "**The second row starts with a 0 because you are multiplying by TENS.**\n• In 34 × 26 the 2 means 20, so the row is 680, not 68.",
+     "hint": "Tens row → zero in the ones place first.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Standard algorithm = partial products",
+     "def": "**The two rows ARE partial products, with some of them already added together.**\n• Row 1 is (ones digit) × the whole number; row 2 is (tens digit) × the whole number.",
+     "hint": "Same pieces, fewer lines.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Estimate to check",
+     "def": "**Round both factors and multiply.**\n• 57 × 18 is about 60 × 20 = 1,200, so 1,026 is reasonable.",
+     "hint": "Close to the estimate? Good. Far off? Look again.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which set of partial products gives 23 × 45?",
+     "opts": [
+      "800, 100, 120 and 15",
+      "800 and 15",
+      "80, 10, 12 and 15",
+      "20, 3, 40 and 5"
+     ],
+     "ans": 0,
+     "hint": "Split both numbers: 23 = 20 + 3 and 45 = 40 + 5.",
+     "steps": [
+      "20 × 40 = 800.",
+      "20 × 5 = 100.",
+      "3 × 40 = 120.",
+      "3 × 5 = 15. They add to 1,035."
+     ],
+     "ex": {
+      "main": "**800, 100, 120 and 15.** Each tens-or-ones part of 23 meets each part of 45, making four pieces.",
+      "tip": "800 and 15 alone leave out the two \"cross\" pieces — a very common gap."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In the standard algorithm for 34 × 26, why does the second row start with a 0?",
+     "opts": [
+      "Because 34 × 2 has a zero in it",
+      "Because that row multiplies 34 by 2 tens",
+      "Because every row in multiplication ends in 0",
+      "Because you must always add a zero to be neat"
+     ],
+     "ans": 1,
+     "hint": "What does the 2 in 26 stand for?",
+     "steps": [
+      "The 2 in 26 means 2 tens, or 20.",
+      "So the second row is 34 × 20 = 680.",
+      "The zero shows the row is worth tens."
+     ],
+     "ex": {
+      "main": "**Because that row multiplies 34 by 2 tens.** 34 × 20 = 680, and the 0 holds the ones place.",
+      "tip": "Leaving the 0 off turns 680 into 68 and shrinks the answer badly."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 34 × 26?",
+     "opts": [
+      "624",
+      "272",
+      "884",
+      "874"
+     ],
+     "ans": 2,
+     "hint": "Row 1: 34 × 6. Row 2: 34 × 20. Then add.",
+     "steps": [
+      "34 × 6 = 204.",
+      "34 × 20 = 680.",
+      "204 + 680 = 884."
+     ],
+     "ex": {
+      "main": "**884.** The two rows are 204 and 680.",
+      "tip": "272 leaves the zero off the second row. 624 only multiplies tens by tens and ones by ones."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 57 × 18?",
+     "opts": [
+      "1,126",
+      "513",
+      "976",
+      "1,026"
+     ],
+     "ans": 3,
+     "hint": "Row 1: 57 × 8. Row 2: 57 × 10.",
+     "steps": [
+      "57 × 8 = 456.",
+      "57 × 10 = 570.",
+      "456 + 570 = 1,026."
+     ],
+     "ex": {
+      "main": "**1,026.** 456 + 570 = 1,026.",
+      "tip": "Estimate: 60 × 20 = 1,200. 513 is far too small — the second row lost its zero."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 41 × 23?",
+     "opts": [
+      "943",
+      "205",
+      "843",
+      "963"
+     ],
+     "ans": 0,
+     "hint": "Multiply 41 by 3, then by 20.",
+     "steps": [
+      "41 × 3 = 123.",
+      "41 × 20 = 820.",
+      "123 + 820 = 943."
+     ],
+     "ex": {
+      "main": "**943.** 123 + 820 = 943.",
+      "tip": "Estimate: 40 × 20 = 800, so an answer a bit over 800 makes sense."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A ferry carries 36 cars each trip. It makes 28 trips. How many cars does it carry?",
+     "opts": [
+      "360",
+      "1,008",
+      "1,108",
+      "64"
+     ],
+     "ans": 1,
+     "hint": "Multiply the cars per trip by the number of trips.",
+     "steps": [
+      "Find 36 × 28.",
+      "36 × 8 = 288.",
+      "36 × 20 = 720.",
+      "288 + 720 = 1,008."
+     ],
+     "ex": {
+      "main": "**1,008 cars.** The two rows are 288 and 720.",
+      "tip": "64 comes from adding 36 and 28 — \"each trip\" means multiply."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A café is open 24 hours a day for 31 days. How many hours is it open?",
+     "opts": [
+      "644",
+      "96",
+      "744",
+      "55"
+     ],
+     "ans": 2,
+     "hint": "Multiply hours per day by the number of days.",
+     "steps": [
+      "Find 24 × 31.",
+      "24 × 1 = 24.",
+      "24 × 30 = 720.",
+      "24 + 720 = 744."
+     ],
+     "ex": {
+      "main": "**744 hours.** 24 × 31 = 744.",
+      "tip": "Estimate: 25 × 30 = 750 — very close. 96 leaves the zero off the tens row."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student found 43 × 25 by doing 40 × 20 = 800 and 3 × 5 = 15, then got 815. What was left out?",
+     "opts": [
+      "A zero at the end of the answer",
+      "Nothing — 815 is correct",
+      "Only the regrouping in the ones place",
+      "The two cross pieces, 40 × 5 and 3 × 20"
+     ],
+     "ans": 3,
+     "hint": "Draw the area model. How many pieces should there be?",
+     "steps": [
+      "43 × 25 needs four partial products.",
+      "40 × 20 = 800 and 3 × 5 = 15 are two of them.",
+      "The missing ones are 40 × 5 = 200 and 3 × 20 = 60.",
+      "800 + 200 + 60 + 15 = 1,075."
+     ],
+     "ex": {
+      "main": "**The two cross pieces, 40 × 5 and 3 × 20.** The full product is 1,075.",
+      "tip": "Estimate: 40 × 25 = 1,000, so 815 was too small to be right."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bus holds 35 adults or 48 children. It makes 26 full trips. How many more people ride if every trip carries children instead of adults?",
+     "opts": [
+      "338",
+      "1,248",
+      "910",
+      "13"
+     ],
+     "ans": 0,
+     "hint": "Find how many more fit on ONE trip first.",
+     "steps": [
+      "Each trip carries 48 − 35 = 13 more children than adults.",
+      "26 trips × 13 more each = 338.",
+      "Check: 48 × 26 = 1,248 and 35 × 26 = 910; 1,248 − 910 = 338."
+     ],
+     "ex": {
+      "main": "**338 more people.** 13 extra per trip, times 26 trips.",
+      "tip": "1,248 is the total number of children — the question asks how many MORE."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Janet says the standard algorithm is just a shortcut for partial products. Is she right?",
+     "opts": [
+      "No — the standard algorithm gives a different answer from partial products",
+      "Yes — each row is a partial product, and the rows are added at the end",
+      "No — partial products only work when both numbers are small ones",
+      "Yes — but only when neither factor needs any regrouping at all"
+     ],
+     "ans": 1,
+     "hint": "Compare 37 × 24 done both ways.",
+     "steps": [
+      "Standard algorithm row 1: 37 × 4 = 148.",
+      "Row 2: 37 × 20 = 740.",
+      "Those are partial products — each row just combines two of the four area-model pieces.",
+      "148 + 740 = 888 either way."
+     ],
+     "ex": {
+      "main": "**Yes.** Each row is a partial product, so both methods add up the same pieces.",
+      "tip": "That is why you can check one method with the other."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

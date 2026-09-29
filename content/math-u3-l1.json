@@ -1,0 +1,330 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u1": {
+   "id": "unit-m3u1",
+   "type": "unit",
+   "updatedAt": 1790627956769,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 1: Multiply by Powers of 10",
+   "srcName": "Unit 3 textbook scan, Lesson 3-1 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-1 of the Topic 3 textbook scan: patterns for multiplying a whole number by 10, 100, 1,000 and so on, written in standard form and with exponents.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Every later lesson in this unit leans on this one — estimating, partial products and the standard algorithm all multiply by tens and hundreds.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply a whole number by a power of 10 using patterns",
+     "from": "source"
+    },
+    {
+     "text": "Read and write powers of 10 with exponents",
+     "from": "source"
+    },
+    {
+     "text": "Count the zeros in both factors, including zeros already in the first number",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Two traps get their own card and question. The first is the one the textbook itself names: 60 × 1,000 is 60,000, not 6,000, because the zero already in 60 counts too. The second is treating an exponent as an ordinary factor — reading 10³ as 30. Both have a wrong option built from exactly that mistake, so if she picks one the explanation names it.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Count the zeros in both numbers. That is the whole trick.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Powers of 10",
+     "def": "**1; 10; 100; 1,000; 10,000; 100,000 — each one is 10 times the one before it.**\n• Every place in a number is worth 10 times the place to its right.",
+     "hint": "Each step left on the place-value chart is one more 10.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Exponents",
+     "def": "**10⁴ means 10 × 10 × 10 × 10, which is 10,000.**\n• The small raised number is the exponent. It counts how many 10s are multiplied.\n• It also tells you how many zeros the power of 10 has.",
+     "hint": "Exponent 4 → four 10s → four zeros.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Multiplying by a power of 10",
+     "def": "**The product ends with the zeros of the number PLUS the zeros of the power of 10.**\n• 58 × 1,000 = 58,000.\n• 58 × 10⁴ = 580,000.",
+     "hint": "Count the zeros in both factors, then write them all at the end.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Zeros that are already there",
+     "def": "**A zero inside the first factor still counts: 60 × 1,000 = 60,000, not 6,000.**\n• 60 already ends in one zero, and 1,000 adds three more — four zeros in all.",
+     "hint": "Count every zero, including the one the number brought with it.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "An exponent is not a multiplier",
+     "def": "**10³ is 10 × 10 × 10 = 1,000. It is NOT 10 × 3 = 30.**\n• The exponent says how many times 10 is used as a factor.",
+     "hint": "Three tens multiplied, not three tens added.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 47 × 1,000?",
+     "opts": [
+      "47,000",
+      "4,700",
+      "470,000",
+      "1,047"
+     ],
+     "ans": 0,
+     "hint": "How many zeros does 1,000 have?",
+     "steps": [
+      "1,000 has three zeros.",
+      "Multiplying by 1,000 puts three zeros on the end of 47.",
+      "47 × 1,000 = 47,000."
+     ],
+     "ex": {
+      "main": "**47,000.** Multiplying by 1,000 moves every digit three places to the left, which shows up as three zeros on the end.",
+      "tip": "4,700 has only two zeros added — that is 47 × 100."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10⁴ written in standard form?",
+     "opts": [
+      "40",
+      "10,000",
+      "1,000",
+      "100,000"
+     ],
+     "ans": 1,
+     "hint": "The exponent tells how many 10s are multiplied together.",
+     "steps": [
+      "10⁴ means 10 × 10 × 10 × 10.",
+      "10 × 10 = 100, × 10 = 1,000, × 10 = 10,000.",
+      "So 10⁴ = 10,000."
+     ],
+     "ex": {
+      "main": "**10,000.** Four 10s multiplied together give a 1 followed by four zeros.",
+      "tip": "40 is what you get if you multiply 10 by 4 — the exponent does not work that way."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 70 × 100?",
+     "opts": [
+      "70,000",
+      "700",
+      "7,000",
+      "170"
+     ],
+     "ans": 2,
+     "hint": "Count the zeros in BOTH numbers.",
+     "steps": [
+      "70 has one zero.",
+      "100 has two zeros.",
+      "Together that is three zeros after the 7.",
+      "70 × 100 = 7,000."
+     ],
+     "ex": {
+      "main": "**7,000.** The zero in 70 counts too, so the product ends in three zeros, not two.",
+      "tip": "Forgetting the zero that 70 already has is the most common slip here."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 26 × 10³?",
+     "opts": [
+      "78",
+      "2,600",
+      "260,000",
+      "26,000"
+     ],
+     "ans": 3,
+     "hint": "Write 10³ as a number first.",
+     "steps": [
+      "10³ = 10 × 10 × 10 = 1,000.",
+      "26 × 1,000 puts three zeros after 26.",
+      "26 × 10³ = 26,000."
+     ],
+     "ex": {
+      "main": "**26,000.** The exponent 3 means 1,000, so three zeros go on the end of 26.",
+      "tip": "78 is 26 × 3 — treating the exponent as an ordinary factor."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number makes 58 × ___ = 580,000 true?",
+     "opts": [
+      "10⁴",
+      "10³",
+      "10⁵",
+      "10²"
+     ],
+     "ans": 0,
+     "hint": "How many zeros were added to 58 to make 580,000?",
+     "steps": [
+      "580,000 is 58 followed by four zeros.",
+      "Four added zeros means multiplying by 10,000.",
+      "10,000 = 10⁴."
+     ],
+     "ex": {
+      "main": "**10⁴.** 580,000 is 58 with four zeros added, and 10⁴ is the power of 10 with four zeros.",
+      "tip": "Count only the zeros that were ADDED to 58 — the digits 5 and 8 are not zeros."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number makes ___ × 10³ = 90,000 true?",
+     "opts": [
+      "9",
+      "90",
+      "900",
+      "9,000"
+     ],
+     "ans": 1,
+     "hint": "10³ adds three zeros. How many zeros are left over in 90,000?",
+     "steps": [
+      "90,000 has four zeros.",
+      "10³ supplies three of them.",
+      "One zero must come from the missing number, so it is 90."
+     ],
+     "ex": {
+      "main": "**90.** 90 × 1,000 = 90,000 — one zero from 90 and three from 10³.",
+      "tip": "9 × 10³ is only 9,000. Check by multiplying your answer back."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A team gives a cap to each of the first 100 fans through the gate. Each cap costs $17. How much do the caps cost in all?",
+     "opts": [
+      "$17,000",
+      "$170",
+      "$1,700",
+      "$117"
+     ],
+     "ans": 2,
+     "hint": "Multiply the cost of one cap by the number of caps.",
+     "steps": [
+      "There are 100 caps at $17 each.",
+      "17 × 100 puts two zeros after 17.",
+      "The caps cost $1,700."
+     ],
+     "ex": {
+      "main": "**$1,700.** 17 × 100 = 1,700, because multiplying by 100 adds two zeros.",
+      "tip": "$117 comes from adding 100 and 17 — but \"each\" means multiply."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Without multiplying, which is greater: 64 × 10³ or 7 × 10⁴?",
+     "opts": [
+      "64 × 10³, because it has more digits to start with",
+      "64 × 10³, because 64 is much bigger than 7",
+      "They are equal, because both use a power of 10",
+      "7 × 10⁴, because 70,000 is more than 64,000"
+     ],
+     "ans": 3,
+     "hint": "Rewrite both as standard numbers by counting zeros.",
+     "steps": [
+      "64 × 10³ = 64 with three zeros = 64,000.",
+      "7 × 10⁴ = 7 with four zeros = 70,000.",
+      "70,000 is greater than 64,000."
+     ],
+     "ex": {
+      "main": "**7 × 10⁴.** The bigger power of 10 outweighs the bigger first factor: 70,000 beats 64,000.",
+      "tip": "Comparing only the first factors ignores the part that makes the biggest difference."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Theo says 40 × 1,000 = 4,000 because 1,000 has three zeros. What went wrong?",
+     "opts": [
+      "He forgot the zero already in 40, so it is 40,000",
+      "He should have added the numbers, so it is 1,040",
+      "Nothing went wrong — 4,000 is correct",
+      "He added one zero too many, so it is 400"
+     ],
+     "ans": 0,
+     "hint": "Count the zeros in both factors.",
+     "steps": [
+      "1,000 has three zeros.",
+      "40 has one zero of its own.",
+      "That makes four zeros after the 4: 40,000."
+     ],
+     "ex": {
+      "main": "**He forgot the zero already in 40.** Four zeros in all, so the product is 40,000.",
+      "tip": "This is the trap the textbook itself names — every zero counts, including the ones in the first number."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the same as multiplying a number by 10³?",
+     "opts": [
+      "Multiplying it by 30",
+      "Multiplying it by 10 three times",
+      "Adding 10 to it three times",
+      "Multiplying it by 3, then by 10"
+     ],
+     "ans": 1,
+     "hint": "What does the exponent count?",
+     "steps": [
+      "10³ means 10 × 10 × 10.",
+      "Multiplying by 10³ is multiplying by 10, then 10, then 10.",
+      "That is multiplying by 10 three times."
+     ],
+     "ex": {
+      "main": "**Multiplying it by 10 three times.** The exponent counts how many 10s are factors.",
+      "tip": "Adding 10 three times only adds 30 — nowhere near multiplying by 1,000."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

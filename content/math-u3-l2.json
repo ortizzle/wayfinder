@@ -1,0 +1,347 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u2": {
+   "id": "unit-m3u2",
+   "type": "unit",
+   "updatedAt": 1790627956771,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 2: Estimate Products",
+   "srcName": "Unit 3 textbook scan, Lesson 3-2 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-2 of the Topic 3 textbook scan: estimating products by rounding and with compatible numbers, and deciding whether an estimate is an overestimate or an underestimate.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Estimating is how she will check every multiplication in the rest of this unit — and it is often the whole answer when a question only asks \"is it enough?\"",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Estimate products by rounding",
+     "from": "source"
+    },
+    {
+     "text": "Estimate products with compatible numbers",
+     "from": "source"
+    },
+    {
+     "text": "Tell whether an estimate is an overestimate or an underestimate",
+     "from": "source"
+    },
+    {
+     "text": "Choose an underestimate to prove \"at least\"",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The idea most worth a word is which way an estimate is off. Rounding both factors up gives an overestimate, both down gives an underestimate, and one of each gives no promise at all — one question shows 48 × 52 estimated as 2,500 when the real answer is 2,496, just under. The other idea is choosing the right kind of estimate: to PROVE there is at least enough of something, only an underestimate that clears the bar does the job. That is lv3 and one question is built around it.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Round, multiply, then ask: is my estimate too big or too small?",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Estimate by rounding",
+     "def": "**Round each factor to a friendly number, then multiply those.**\n• 38 × 612 → 40 × 600 = 24,000.\n• An estimate tells you roughly how big the answer should be.",
+     "hint": "Round, then use your powers-of-10 patterns.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Compatible numbers",
+     "def": "**Numbers that are easy to multiply in your head, like 25 and 4.**\n• 25 × 4 = 100, so 25 × 400 = 10,000.\n• They can give a closer estimate than plain rounding.",
+     "hint": "Look for pairs that make 100 or 1,000.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Overestimate",
+     "def": "**If you rounded both factors UP, your estimate is more than the real answer.**\n• 29 × 488 → 30 × 500 = 15,000, which is too high.",
+     "hint": "Rounded up → answer came out too big.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Underestimate",
+     "def": "**If you rounded both factors DOWN, your estimate is less than the real answer.**\n• 41 × 207 → 40 × 200 = 8,000, which is too low.",
+     "hint": "Rounded down → answer came out too small.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Mixed rounding",
+     "def": "**If one factor went up and the other went down, you cannot tell which way the estimate is off.**\n• 48 × 52 → 50 × 50 = 2,500, but the real answer is 2,496.",
+     "hint": "Up and down together — no promise either way.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Which estimate is safer",
+     "def": "**To prove you have AT LEAST enough, use an underestimate.**\n• If even the too-small estimate is enough, the real amount is too.",
+     "hint": "An underestimate that clears the bar proves it.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round each factor to its greatest place. What is the estimate for 38 × 612?",
+     "opts": [
+      "24,000",
+      "18,000",
+      "2,400",
+      "240,000"
+     ],
+     "ans": 0,
+     "hint": "38 rounds to 40. What does 612 round to?",
+     "steps": [
+      "38 rounds to 40.",
+      "612 rounds to 600.",
+      "40 × 600: 4 × 6 = 24, then add three zeros.",
+      "The estimate is 24,000."
+     ],
+     "ex": {
+      "main": "**24,000.** 40 × 600 is 4 × 6 = 24 with three zeros on the end.",
+      "tip": "2,400 has one zero too few — both 40 and 600 bring zeros."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rounding 29 × 488 to 30 × 500 gives which kind of estimate?",
+     "opts": [
+      "An underestimate, because both numbers were rounded up",
+      "An overestimate, because both numbers were rounded up",
+      "An overestimate, because the answer is a large number",
+      "An exact answer, because the rounding was careful"
+     ],
+     "ans": 1,
+     "hint": "Did 29 and 488 get bigger or smaller when you rounded them?",
+     "steps": [
+      "29 went up to 30.",
+      "488 went up to 500.",
+      "Both factors got bigger, so the estimate is bigger than the real product."
+     ],
+     "ex": {
+      "main": "**An overestimate.** Both factors were rounded up, so the estimate comes out too high.",
+      "tip": "Whether it is over or under depends on the direction of rounding, not on the size of the answer."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Use compatible numbers to estimate 26 × 397.",
+     "opts": [
+      "12,000",
+      "8,000",
+      "10,000",
+      "1,000"
+     ],
+     "ans": 2,
+     "hint": "26 is close to 25, and 397 is close to 400.",
+     "steps": [
+      "Use 25 in place of 26 and 400 in place of 397.",
+      "25 × 4 = 100.",
+      "25 × 400 = 10,000."
+     ],
+     "ex": {
+      "main": "**10,000.** 25 and 400 are compatible because 25 × 4 = 100 is easy in your head.",
+      "tip": "8,000 comes from rounding 26 all the way down to 20 — further off than it needs to be."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Round to estimate 52 × 718.",
+     "opts": [
+      "350,000",
+      "3,500",
+      "40,000",
+      "35,000"
+     ],
+     "ans": 3,
+     "hint": "Round each factor to its greatest place.",
+     "steps": [
+      "52 rounds to 50.",
+      "718 rounds to 700.",
+      "5 × 7 = 35, then add three zeros.",
+      "The estimate is 35,000."
+     ],
+     "ex": {
+      "main": "**35,000.** 50 × 700 is 35 with the three zeros from 50 and 700.",
+      "tip": "3,500 is what you get if you forget the zero that 50 brings."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the most reasonable estimate for 21 × 305?",
+     "opts": [
+      "6,000",
+      "600",
+      "60,000",
+      "9,000"
+     ],
+     "ans": 0,
+     "hint": "Round 21 and 305, then multiply.",
+     "steps": [
+      "21 rounds to 20.",
+      "305 rounds to 300.",
+      "20 × 300 = 6,000.",
+      "The real product, 6,405, is close to 6,000."
+     ],
+     "ex": {
+      "main": "**6,000.** 20 × 300 lands close to the real product of 6,405.",
+      "tip": "600 and 60,000 are each off by a whole power of 10 — a zero was lost or added."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Is 8,000 an overestimate or an underestimate for 41 × 207?",
+     "opts": [
+      "An overestimate, because both numbers were rounded down",
+      "An underestimate, because both numbers were rounded down",
+      "An underestimate, because 8,000 ends in zeros",
+      "Neither, because 8,000 is the exact product"
+     ],
+     "ans": 1,
+     "hint": "What happened to 41 and 207 when they became 40 and 200?",
+     "steps": [
+      "41 went down to 40.",
+      "207 went down to 200.",
+      "Both factors got smaller, so the estimate is smaller than the real product (8,487)."
+     ],
+     "ex": {
+      "main": "**An underestimate.** Both factors were rounded down, so 8,000 is less than the real 8,487.",
+      "tip": "Rounded down means the estimate sits below the true answer."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bake sale needs at least $2,000. It sells 48 trays at $52 each. Which estimate PROVES it reached $2,000?",
+     "opts": [
+      "50 × 50 = 2,500, because it is the closest estimate",
+      "50 × 60 = 3,000, because it is the biggest estimate",
+      "40 × 50 = 2,000, because both numbers were rounded down",
+      "48 × 50 = 2,400, because 48 was not rounded at all"
+     ],
+     "ans": 2,
+     "hint": "An estimate proves \"at least\" only if it is too SMALL and still reaches the goal.",
+     "steps": [
+      "40 × 50 rounds both factors down, so it is an underestimate.",
+      "Even that too-small estimate reaches $2,000.",
+      "So the real total must be at least $2,000 too.",
+      "50 × 50 rounds one factor up and one down, so it proves nothing either way."
+     ],
+     "ex": {
+      "main": "**40 × 50 = 2,000.** It is an underestimate that still reaches the goal, so the real total (48 × 52 = 2,496) must reach it too.",
+      "tip": "A bigger estimate can feel more reassuring, but only an underestimate can prove \"at least\"."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is NOT a reasonable estimate for 32 × 289?",
+     "opts": [
+      "8,700",
+      "9,000",
+      "9,600",
+      "6,000"
+     ],
+     "ans": 3,
+     "hint": "The real product is a little over 9,000. Which option is far away from that?",
+     "steps": [
+      "30 × 300 = 9,000 is reasonable.",
+      "32 × 300 = 9,600 and 30 × 290 = 8,700 are reasonable too.",
+      "6,000 comes from rounding 289 down to 200, which is far too low.",
+      "So 6,000 is not reasonable."
+     ],
+     "ex": {
+      "main": "**6,000.** It rounds 289 down to 200, even though 289 is much closer to 300.",
+      "tip": "Round to the NEAREST hundred — 289 is 11 away from 300 but 89 away from 200."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Kai estimates 24 × 386 as 20 × 400. Lena estimates it as 25 × 400. Whose estimate is closer to the real product?",
+     "opts": [
+      "Lena's, because 25 is much closer to 24 than 20 is",
+      "Kai's, because rounding to tens is always closer",
+      "Kai's, because 8,000 is a smaller number",
+      "They are equally close, because both used 400"
+     ],
+     "ans": 0,
+     "hint": "Compare how far 20 and 25 each are from 24.",
+     "steps": [
+      "Kai: 20 × 400 = 8,000.",
+      "Lena: 25 × 400 = 10,000.",
+      "The real product is 9,264.",
+      "10,000 is 736 away; 8,000 is 1,264 away. Lena's is closer."
+     ],
+     "ex": {
+      "main": "**Lena's.** Moving 24 to 25 changes it by 1; moving it to 20 changes it by 4, so her estimate stays nearer.",
+      "tip": "Compatible numbers are often the better choice when a factor sits right next to a friendly one."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A factory packs 208 boxes with 12 crayons in each. Which statement is true?",
+     "opts": [
+      "There are fewer than 2,000 crayons, since 12 × 200 is only 2,400",
+      "There are more than 2,000 crayons, since 12 × 200 is already 2,400",
+      "There are exactly 2,400 crayons, since 208 rounds to 200",
+      "There are fewer than 1,000 crayons, since 12 is a small number"
+     ],
+     "ans": 1,
+     "hint": "200 is less than 208, so 12 × 200 is an underestimate.",
+     "steps": [
+      "Round 208 down to 200.",
+      "12 × 200 = 2,400.",
+      "That is an underestimate, and it is already more than 2,000.",
+      "So the real total (2,496) is more than 2,000."
+     ],
+     "ex": {
+      "main": "**More than 2,000.** 12 × 200 = 2,400 is too small an estimate and it still beats 2,000.",
+      "tip": "An underestimate that already clears the target settles the question without any exact math."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

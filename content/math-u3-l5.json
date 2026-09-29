@@ -1,0 +1,332 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u5": {
+   "id": "unit-m3u5",
+   "type": "unit",
+   "updatedAt": 1790627956776,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 5: Multiply 3-Digit by 2-Digit Numbers",
+   "srcName": "Unit 3 textbook scan, Lesson 3-5 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-5 of the Topic 3 textbook scan: multiplying a 3-digit number by a 2-digit number with partial products and the standard algorithm.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the biggest multiplication she does in this unit, and it is exactly the same two-row method with a longer row.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply 3-digit by 2-digit numbers with the standard algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Use estimation to check that a product is reasonable",
+     "from": "source"
+    },
+    {
+     "text": "Know the most digits a 3-digit × 2-digit product can have",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The mistake that matters most here is the missing placeholder zero, and it is easy to catch: the answer comes out roughly ten times too small. Several wrong options are built from exactly that slip (247 × 36 → 2,223), and one question asks her to spot it with an estimate alone. The digit-count rule — never more than 5 digits — is a quick extra check the book mentions in its assessment practice.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Same two rows, longer numbers. Estimate first so you know the size.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Same steps, one more digit",
+     "def": "**Multiplying a 3-digit number by a 2-digit number uses the same two rows as before.**\n• Row 1: the whole top number × the ones digit.\n• Row 2: the whole top number × the tens digit, starting with a 0.\n• Add the rows.",
+     "hint": "Nothing new — just a longer row.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "A worked example",
+     "def": "**247 × 36 = 8,892.**\n• Row 1: 247 × 6 = 1,482.\n• Row 2: 247 × 30 = 7,410.\n• 1,482 + 7,410 = 8,892.",
+     "hint": "Ones row, tens row, add.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Partial products for 3-digit × 2-digit",
+     "def": "**The area model has six pieces: hundreds, tens and ones of one factor times tens and ones of the other.**\n• You can list all six or let the standard algorithm combine them.",
+     "hint": "Three parts × two parts = six pieces.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "How many digits can the product have?",
+     "def": "**A 3-digit number times a 2-digit number has at most 5 digits.**\n• The biggest case is 999 × 99 = 98,901.",
+     "hint": "Handy for spotting an answer with too many or too few digits.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Estimate to check",
+     "def": "**Round both factors and multiply.**\n• 386 × 17 is about 400 × 20 = 8,000, or closer: 400 × 17 = 6,800.",
+     "hint": "An answer ten times too big or too small almost always means a lost or extra zero.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To find 247 × 36 with the standard algorithm, what do you multiply first?",
+     "opts": [
+      "247 × 6",
+      "247 × 3",
+      "200 × 30",
+      "47 × 36"
+     ],
+     "ans": 0,
+     "hint": "The standard algorithm always starts with the ones digit of the bottom number.",
+     "steps": [
+      "The bottom number is 36.",
+      "Its ones digit is 6.",
+      "So the first row is 247 × 6."
+     ],
+     "ex": {
+      "main": "**247 × 6.** Row 1 is the whole top number times the ones digit.",
+      "tip": "The second row will be 247 × 30 — the 3 means 3 tens."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 247 × 36?",
+     "opts": [
+      "2,223",
+      "8,892",
+      "7,410",
+      "1,482"
+     ],
+     "ans": 1,
+     "hint": "Row 1: 247 × 6. Row 2: 247 × 30. Add.",
+     "steps": [
+      "247 × 6 = 1,482.",
+      "247 × 30 = 7,410.",
+      "1,482 + 7,410 = 8,892."
+     ],
+     "ex": {
+      "main": "**8,892.** The two rows are 1,482 and 7,410.",
+      "tip": "2,223 leaves the zero off the second row; 7,410 and 1,482 are each only one row."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 518 × 24?",
+     "opts": [
+      "12,342",
+      "3,108",
+      "12,432",
+      "11,432"
+     ],
+     "ans": 2,
+     "hint": "Row 1: 518 × 4. Row 2: 518 × 20.",
+     "steps": [
+      "518 × 4 = 2,072.",
+      "518 × 20 = 10,360.",
+      "2,072 + 10,360 = 12,432."
+     ],
+     "ex": {
+      "main": "**12,432.** 2,072 + 10,360 = 12,432.",
+      "tip": "Estimate: 500 × 24 = 12,000. 3,108 is far too small — a missing placeholder zero."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 386 × 17?",
+     "opts": [
+      "3,860",
+      "3,088",
+      "6,462",
+      "6,562"
+     ],
+     "ans": 3,
+     "hint": "Row 1: 386 × 7. Row 2: 386 × 10.",
+     "steps": [
+      "386 × 7 = 2,702.",
+      "386 × 10 = 3,860.",
+      "2,702 + 3,860 = 6,562."
+     ],
+     "ex": {
+      "main": "**6,562.** The two rows are 2,702 and 3,860.",
+      "tip": "3,088 adds 386 × 7 and 386 × 1 — the 1 in 17 means 1 ten. 3,860 is only one row."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A cat's heart beats about 146 times a minute. How many times does it beat in 1 hour?",
+     "opts": [
+      "8,760",
+      "876",
+      "206",
+      "87,600"
+     ],
+     "ans": 0,
+     "hint": "There are 60 minutes in an hour.",
+     "steps": [
+      "Find 146 × 60.",
+      "146 × 6 = 876.",
+      "146 × 60 is ten times that: 8,760."
+     ],
+     "ex": {
+      "main": "**8,760 times.** 146 × 60 = 8,760.",
+      "tip": "206 comes from adding 146 and 60. \"Each minute for 60 minutes\" means multiply."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Is 3,220 a reasonable answer for 644 × 52?",
+     "opts": [
+      "Yes — 3,220 has four digits, which is enough",
+      "No — 600 × 50 = 30,000, so it is about ten times too small",
+      "Yes — 644 × 5 is about 3,220, so it must be right",
+      "No — the product of these numbers must be under 1,000"
+     ],
+     "ans": 1,
+     "hint": "Round both factors and multiply.",
+     "steps": [
+      "644 is about 600.",
+      "52 is about 50.",
+      "600 × 50 = 30,000.",
+      "3,220 is about one tenth of that, so a zero was lost."
+     ],
+     "ex": {
+      "main": "**No — the estimate is about 30,000.** 3,220 is roughly 644 × 5, which forgets that the 5 in 52 means 5 tens.",
+      "tip": "An answer about ten times too small is the signature of a missing placeholder zero."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the greatest number of digits the product of a 3-digit number and a 2-digit number can have?",
+     "opts": [
+      "4",
+      "6",
+      "5",
+      "3"
+     ],
+     "ans": 2,
+     "hint": "Try the biggest possible numbers.",
+     "steps": [
+      "The biggest 3-digit number is 999.",
+      "The biggest 2-digit number is 99.",
+      "999 × 99 = 98,901, which has 5 digits."
+     ],
+     "ex": {
+      "main": "**5.** Even 999 × 99 only reaches 98,901.",
+      "tip": "So a 6-digit answer to a 3-digit × 2-digit problem is always wrong."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A garden store packs 8 plants in a tray and 6 trays in a flat. It sold 23 flats on Saturday and 19 on Sunday. How many plants did it sell?",
+     "opts": [
+      "912",
+      "336",
+      "1,104",
+      "2,016"
+     ],
+     "ans": 3,
+     "hint": "Find the plants in one flat and the number of flats first.",
+     "steps": [
+      "One flat holds 8 × 6 = 48 plants.",
+      "It sold 23 + 19 = 42 flats.",
+      "48 × 42: 48 × 2 = 96 and 48 × 40 = 1,920.",
+      "96 + 1,920 = 2,016."
+     ],
+     "ex": {
+      "main": "**2,016 plants.** 48 plants a flat, 42 flats.",
+      "tip": "1,104 counts only Saturday. 336 multiplies 8 × 42 and forgets the trays."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A patio is 126 bricks wide and 23 bricks long. How many bricks does it take?",
+     "opts": [
+      "2,898",
+      "630",
+      "2,798",
+      "149"
+     ],
+     "ans": 0,
+     "hint": "Multiply the width by the length.",
+     "steps": [
+      "Find 126 × 23.",
+      "126 × 3 = 378.",
+      "126 × 20 = 2,520.",
+      "378 + 2,520 = 2,898."
+     ],
+     "ex": {
+      "main": "**2,898 bricks.** 378 + 2,520 = 2,898.",
+      "tip": "149 is 126 + 23 — the bricks fill a rectangle, so multiply."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 219 × 16?",
+     "opts": [
+      "1,533",
+      "3,504",
+      "2,190",
+      "3,404"
+     ],
+     "ans": 1,
+     "hint": "Row 1: 219 × 6. Row 2: 219 × 10.",
+     "steps": [
+      "219 × 6 = 1,314.",
+      "219 × 10 = 2,190.",
+      "1,314 + 2,190 = 3,504."
+     ],
+     "ex": {
+      "main": "**3,504.** 1,314 + 2,190 = 3,504.",
+      "tip": "1,533 adds 219 × 6 and 219 × 1 — the 1 in 16 means 1 ten."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

@@ -1,0 +1,335 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u7": {
+   "id": "unit-m3u7",
+   "type": "unit",
+   "updatedAt": 1790627956780,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 7: Solve Problems with Multiplication",
+   "srcName": "Unit 3 textbook scan, Lesson 3-7 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-7 of the Topic 3 textbook scan: using multiplication to solve real problems — bills, distances and totals — by estimating first and then computing.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is where the multiplication she has learned turns into something useful: working out yearly costs, comparing prices and checking if something is enough.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Choose multiplication to solve real-world problems",
+     "from": "source"
+    },
+    {
+     "text": "Estimate before computing to check reasonableness",
+     "from": "source"
+    },
+    {
+     "text": "Tell how often a bill is paid: monthly, quarterly, weekly",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "The trap worth watching is the one the textbook sets on purpose: quarterly versus monthly. A quarterly bill is paid 4 times a year, not 12, and several wrong options multiply by the wrong one. The other idea is grouping before multiplying — adding two quarterly bills first and multiplying once. The price comparison question is deliberately close ($3,723 against $3,710) so it cannot be settled by glancing at the price per trip.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Name what the answer is counting, then multiply.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Read what is being asked",
+     "def": "**Decide what the answer is counting before you pick numbers to multiply.**\n• \"Each\", \"per\" and \"times as many\" usually mean multiply.\n• Write the answer with its label: dollars, miles, pages.",
+     "hint": "Name the answer first, then find it.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "How often is it paid?",
+     "def": "**Monthly = 12 times a year. Quarterly = 4 times a year. Weekly = 52 times a year.**\n• A $645 quarterly bill costs 645 × 4 = $2,580 a year.",
+     "hint": "Quarter = one fourth of a year.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Group first, then multiply",
+     "def": "**If several amounts all repeat the same number of times, add them first.**\n• Two quarterly bills of $430 and $290: 4 × (430 + 290) = 4 × 720 = $2,880.",
+     "hint": "Add what repeats together, then multiply once.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Estimate, then compute",
+     "def": "**Estimate first so you know roughly what answer to expect.**\n• 137 × 22 is about 140 × 20 = 2,800.",
+     "hint": "An estimate is your early-warning system.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The process never changes",
+     "def": "**Multiplying bigger numbers uses the same steps — just more of them.**\n• Ones row, tens row, add. Carry as you go.",
+     "hint": "More digits, same moves.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bill is paid quarterly. How many times is it paid in a year?",
+     "opts": [
+      "4",
+      "12",
+      "3",
+      "52"
+     ],
+     "ans": 0,
+     "hint": "A quarter is one fourth.",
+     "steps": [
+      "A quarterly bill is paid every quarter of a year.",
+      "A year has 4 quarters.",
+      "So it is paid 4 times."
+     ],
+     "ex": {
+      "main": "**4.** Quarterly means once every three months — four times a year.",
+      "tip": "Monthly is 12. Mixing the two is the commonest slip in bill problems."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A water bill is $645, paid quarterly. What does water cost for the whole year?",
+     "opts": [
+      "$7,740",
+      "$2,580",
+      "$1,935",
+      "$649"
+     ],
+     "ans": 1,
+     "hint": "How many quarters are in a year?",
+     "steps": [
+      "It is paid 4 times a year.",
+      "645 × 4: 4 × 5 = 20, carry 2; 4 × 4 = 16 + 2 = 18, carry 1; 4 × 6 = 24 + 1 = 25.",
+      "That is $2,580."
+     ],
+     "ex": {
+      "main": "**$2,580.** Four payments of $645.",
+      "tip": "$7,740 multiplies by 12 as if the bill were monthly."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A phone plan costs $58 each month. How much is that in a year?",
+     "opts": [
+      "$580",
+      "$232",
+      "$696",
+      "$70"
+     ],
+     "ans": 2,
+     "hint": "A year has 12 months.",
+     "steps": [
+      "Find 58 × 12.",
+      "58 × 2 = 116.",
+      "58 × 10 = 580.",
+      "116 + 580 = $696."
+     ],
+     "ex": {
+      "main": "**$696.** 58 × 12 = 696.",
+      "tip": "$232 multiplies by 4 — that would be a quarterly bill."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Carlos saves 24 cents every day of a 365-day year. How many cents does he save?",
+     "opts": [
+      "389",
+      "2,190",
+      "8,660",
+      "8,760"
+     ],
+     "ans": 3,
+     "hint": "Multiply cents per day by the number of days.",
+     "steps": [
+      "Find 365 × 24.",
+      "365 × 4 = 1,460.",
+      "365 × 20 = 7,300.",
+      "1,460 + 7,300 = 8,760 cents."
+     ],
+     "ex": {
+      "main": "**8,760 cents.** That is $87.60.",
+      "tip": "2,190 leaves the zero off the tens row."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Lila drives 137 kilometers round trip to work. How far does she drive in 22 work days?",
+     "opts": [
+      "3,014",
+      "548",
+      "2,914",
+      "159"
+     ],
+     "ans": 0,
+     "hint": "Multiply the distance each day by the number of days.",
+     "steps": [
+      "Find 137 × 22.",
+      "137 × 2 = 274.",
+      "137 × 20 = 2,740.",
+      "274 + 2,740 = 3,014 km."
+     ],
+     "ex": {
+      "main": "**3,014 kilometers.** 274 + 2,740 = 3,014.",
+      "tip": "Estimate: 140 × 20 = 2,800 — close."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which costs more: 14 trips at $265 each, or 17 trips at $219 each?",
+     "opts": [
+      "14 trips at $265, by $13",
+      "17 trips at $219, by $13",
+      "17 trips at $219, by $46",
+      "They cost exactly the same"
+     ],
+     "ans": 1,
+     "hint": "Work out both totals, then compare.",
+     "steps": [
+      "14 × 265 = 3,710.",
+      "17 × 219 = 3,723.",
+      "3,723 − 3,710 = 13.",
+      "The 17 cheaper trips cost $13 more."
+     ],
+     "ex": {
+      "main": "**17 trips at $219, by $13.** $3,723 against $3,710.",
+      "tip": "The price per trip alone is not enough — the number of trips changes the answer."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A can of paint covers 300 square feet. A wall is 18 feet wide and 14 feet high. Is one can enough?",
+     "opts": [
+      "Yes — 18 + 14 = 32, which is much less than 300",
+      "No — the wall is 252 square feet, which is more than 300",
+      "Yes — the wall is 252 square feet, which is less than 300",
+      "No — the wall is 2,520 square feet"
+     ],
+     "ans": 2,
+     "hint": "The wall's area is width × height.",
+     "steps": [
+      "Area = 18 × 14.",
+      "18 × 4 = 72 and 18 × 10 = 180.",
+      "72 + 180 = 252 square feet.",
+      "252 is less than 300, so one can is enough."
+     ],
+     "ex": {
+      "main": "**Yes.** The wall is 252 square feet, and one can covers 300.",
+      "tip": "Adding the sides gives the distance around, not the space to paint."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A cook uses 125 pounds of potatoes each day for 14 days. How many pounds does she need?",
+     "opts": [
+      "139",
+      "625",
+      "1,650",
+      "1,750"
+     ],
+     "ans": 3,
+     "hint": "Multiply pounds per day by the number of days.",
+     "steps": [
+      "Find 125 × 14.",
+      "125 × 4 = 500.",
+      "125 × 10 = 1,250.",
+      "500 + 1,250 = 1,750."
+     ],
+     "ex": {
+      "main": "**1,750 pounds.** 500 + 1,250 = 1,750.",
+      "tip": "625 is 125 × 4 + 125 × 1 — the 1 in 14 means 1 ten."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 3_8 × 40 = 13,920, one digit is missing. Which digit is it?",
+     "opts": [
+      "4",
+      "2",
+      "6",
+      "8"
+     ],
+     "ans": 0,
+     "hint": "Try each digit and check which product is 13,920.",
+     "steps": [
+      "13,920 ÷ 40 must be the missing number.",
+      "Try 348: 348 × 4 = 1,392, and × 10 = 13,920.",
+      "So the missing digit is 4."
+     ],
+     "ex": {
+      "main": "**4.** 348 × 40 = 13,920.",
+      "tip": "Estimate first: 13,920 ÷ 40 is about 350, which points straight at 348."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two bills are paid quarterly: $430 for gas and $290 for water. What do they cost together for a year?",
+     "opts": [
+      "$2,010",
+      "$2,880",
+      "$720",
+      "$8,640"
+     ],
+     "ans": 1,
+     "hint": "Add the two bills first, then multiply by the number of quarters.",
+     "steps": [
+      "Each quarter costs 430 + 290 = $720.",
+      "There are 4 quarters.",
+      "720 × 4 = $2,880."
+     ],
+     "ex": {
+      "main": "**$2,880.** 4 × (430 + 290) = 4 × 720.",
+      "tip": "$2,010 multiplies only the gas bill by 4. $8,640 multiplies by 12 as if monthly."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

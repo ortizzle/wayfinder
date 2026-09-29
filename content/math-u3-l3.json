@@ -1,0 +1,348 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u3": {
+   "id": "unit-m3u3",
+   "type": "unit",
+   "updatedAt": 1790627956772,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 3: Multiply by a 1-Digit Number",
+   "srcName": "Unit 3 textbook scan, Lesson 3-3 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-3 of the Topic 3 textbook scan: multiplying 2-, 3- and 4-digit numbers by a 1-digit number with partial products and the standard algorithm.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The standard algorithm she learns here is the same one every later lesson extends — getting the carrying right now saves a lot of trouble later.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply by a 1-digit number with partial products",
+     "from": "source"
+    },
+    {
+     "text": "Multiply by a 1-digit number with the standard algorithm",
+     "from": "source"
+    },
+    {
+     "text": "Regroup correctly: multiply first, then add the carried digit",
+     "from": "source"
+    },
+    {
+     "text": "Estimate to check that a product is reasonable",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Every wrong option here comes from a named mistake, computed in the builder: dropping the carry (34 × 5 → 150), adding the carry before multiplying ((3 + 2) × 5 → 250), and writing each digit's product side by side (37 × 4 → 1,228), which is the textbook's own \"what did this student do wrong?\" example with fresh numbers. If she picks one of those, the explanation names exactly which slip it was.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Right to left, and add the carry AFTER you multiply.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Partial products",
+     "def": "**Break the bigger number into place values, multiply each part, then add the parts.**\n• 47 × 6 = (6 × 40) + (6 × 7) = 240 + 42 = 282.\n• You can add the partial products in any order.",
+     "hint": "Split it up, multiply each piece, put it back together.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "The standard algorithm",
+     "def": "**Multiply each place from the ones up, regrouping as you go.**\n• Multiply the ones, write the ones digit, carry the tens.\n• Multiply the tens, then ADD the carried tens.\n• Keep going left, one place at a time.",
+     "hint": "Right to left, one place at a time.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Regrouping (carrying)",
+     "def": "**Multiply first, THEN add the number you carried.**\n• 238 × 4: 4 × 8 = 32 → write 2, carry 3.\n• Next: 4 × 3 = 12, plus the carried 3 = 15.",
+     "hint": "Multiply, then add the carry — never the other way round.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "A common mistake",
+     "def": "**Writing each whole product side by side does not work.**\n• 37 × 4 is not 1,228 (12 and 28 written next to each other).\n• 4 × 7 = 28 means 2 tens and 8 ones — the 2 tens must be carried.",
+     "hint": "A two-digit step never gets its own two spaces.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "More digits, same steps",
+     "def": "**Multiplying a 4-digit number works exactly like a 2-digit one — there are just more places.**\n• 1,625 × 3 = 4,875.",
+     "hint": "Same moves, one more column.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Estimate to check",
+     "def": "**Round the big factor, multiply, and make sure your answer is close.**\n• 692 × 7 is about 700 × 7 = 4,900.",
+     "hint": "If the answer is nowhere near the estimate, look for a slip.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 34 × 5?",
+     "opts": [
+      "170",
+      "150",
+      "1,520",
+      "250"
+     ],
+     "ans": 0,
+     "hint": "Multiply the ones first and carry the tens.",
+     "steps": [
+      "5 × 4 ones = 20 ones: write 0, carry 2 tens.",
+      "5 × 3 tens = 15 tens.",
+      "15 tens + 2 tens = 17 tens.",
+      "So 34 × 5 = 170."
+     ],
+     "ex": {
+      "main": "**170.** The 2 tens from 5 × 4 = 20 get added after multiplying the tens.",
+      "tip": "150 forgets the carried 2. 250 adds the 2 BEFORE multiplying: (3 + 2) × 5."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which partial products add up to 47 × 6?",
+     "opts": [
+      "24 and 42",
+      "240 and 42",
+      "40 and 7",
+      "282 and 6"
+     ],
+     "ans": 1,
+     "hint": "Split 47 into 40 and 7, then multiply each by 6.",
+     "steps": [
+      "47 = 40 + 7.",
+      "6 × 40 = 240.",
+      "6 × 7 = 42.",
+      "240 + 42 = 282."
+     ],
+     "ex": {
+      "main": "**240 and 42.** 6 × 40 and 6 × 7 are the two partial products, and they add to 282.",
+      "tip": "24 is 6 × 4 — it forgets that the 4 in 47 means 4 TENS."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 238 × 4?",
+     "opts": [
+      "832",
+      "822",
+      "952",
+      "992"
+     ],
+     "ans": 2,
+     "hint": "Multiply each place and add the carries.",
+     "steps": [
+      "4 × 8 = 32: write 2, carry 3.",
+      "4 × 3 = 12, + 3 = 15: write 5, carry 1.",
+      "4 × 2 = 8, + 1 = 9.",
+      "So 238 × 4 = 952."
+     ],
+     "ex": {
+      "main": "**952.** Two carries happen here — one into the tens and one into the hundreds.",
+      "tip": "822 drops both carries. Estimate: 240 × 4 = 960, so 952 is right where it should be."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 1,625 × 3?",
+     "opts": [
+      "4,975",
+      "3,865",
+      "4,865",
+      "4,875"
+     ],
+     "ans": 3,
+     "hint": "Same steps as a smaller number — just one more place.",
+     "steps": [
+      "3 × 5 = 15: write 5, carry 1.",
+      "3 × 2 = 6, + 1 = 7.",
+      "3 × 6 = 18: write 8, carry 1.",
+      "3 × 1 = 3, + 1 = 4. So 1,625 × 3 = 4,875."
+     ],
+     "ex": {
+      "main": "**4,875.** A 4-digit number needs one more step, but each step is the same.",
+      "tip": "Estimate: 1,600 × 3 = 4,800, which is close."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A horse has a mass of 485 kilograms. An elephant has 8 times as much. What is the elephant's mass?",
+     "opts": [
+      "3,880",
+      "3,240",
+      "493",
+      "4,880"
+     ],
+     "ans": 0,
+     "hint": "\"8 times as much\" means multiply by 8.",
+     "steps": [
+      "Find 485 × 8.",
+      "8 × 5 = 40: write 0, carry 4.",
+      "8 × 8 = 64, + 4 = 68: write 8, carry 6.",
+      "8 × 4 = 32, + 6 = 38. So 3,880 kg."
+     ],
+     "ex": {
+      "main": "**3,880 kilograms.** \"Times as much\" is a multiplication, and 485 × 8 = 3,880.",
+      "tip": "493 comes from adding 8 instead of multiplying. 3,240 drops the carries."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2,406 × 5?",
+     "opts": [
+      "10,000",
+      "12,030",
+      "12,000",
+      "12,330"
+     ],
+     "ans": 1,
+     "hint": "The zero in the tens place still gets multiplied — and still receives a carry.",
+     "steps": [
+      "5 × 6 = 30: write 0, carry 3.",
+      "5 × 0 = 0, + 3 = 3.",
+      "5 × 4 = 20: write 0, carry 2.",
+      "5 × 2 = 10, + 2 = 12. So 12,030."
+     ],
+     "ex": {
+      "main": "**12,030.** The zero tens place becomes 3 because of the carry from the ones.",
+      "tip": "12,000 forgets that the carried 3 lands in the tens place."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A student wrote 37 × 4 = 1,228. What went wrong?",
+     "opts": [
+      "They added 37 and 4 together before multiplying",
+      "They multiplied the tens digit by 5 instead of 4",
+      "They wrote 12 and 28 side by side instead of carrying",
+      "Nothing went wrong, because 1,228 is correct"
+     ],
+     "ans": 2,
+     "hint": "Where do 12 and 28 come from?",
+     "steps": [
+      "4 × 3 = 12 and 4 × 7 = 28.",
+      "The student wrote 12 and 28 next to each other.",
+      "But 28 means 2 tens and 8 ones — the 2 must be carried.",
+      "The correct product is 148."
+     ],
+     "ex": {
+      "main": "**They wrote the products side by side instead of carrying.** 37 × 4 is 148.",
+      "tip": "Estimate: 40 × 4 = 160. An answer over a thousand is clearly impossible."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Maya got 4,244 for 692 × 7. How does an estimate show she made a mistake?",
+     "opts": [
+      "An estimate cannot show a mistake — only an exact answer can",
+      "600 × 7 = 4,200, so her answer is exactly right",
+      "692 × 7 must be less than 692, so 4,244 is far too big",
+      "700 × 7 = 4,900, so the answer should be just under 4,900"
+     ],
+     "ans": 3,
+     "hint": "Round 692 to the nearest hundred.",
+     "steps": [
+      "692 is close to 700.",
+      "700 × 7 = 4,900.",
+      "692 is only a little less than 700, so the product is a little less than 4,900.",
+      "4,244 is 600 away — something slipped. The real answer is 4,844."
+     ],
+     "ex": {
+      "main": "**700 × 7 = 4,900, so the answer should be just under 4,900.** 4,244 is too far off; the real product is 4,844.",
+      "tip": "Round to the NEAREST hundred — 692 is much closer to 700 than to 600."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To find 238 × 5, you first find 5 × 8 = 40. What do you do with the 40?",
+     "opts": [
+      "Write 0 in the ones place and carry 4 tens",
+      "Write 40 in the ones place",
+      "Write 4 in the ones place and carry 0",
+      "Add 40 to 238 and keep going"
+     ],
+     "ans": 0,
+     "hint": "40 is 4 tens and 0 ones.",
+     "steps": [
+      "40 ones is 4 tens and 0 ones.",
+      "The 0 goes in the ones place.",
+      "The 4 tens are carried to the tens column."
+     ],
+     "ex": {
+      "main": "**Write 0 in the ones place and carry 4 tens.** Each place holds one digit, so the tens move over.",
+      "tip": "After carrying, 5 × 3 tens = 15 tens, plus the 4 = 19 tens."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Anthony had 27 silver coins and 18 gold coins. Now he has 5 times as many coins in all. How many coins does he have now?",
+     "opts": [
+      "153",
+      "225",
+      "135",
+      "50"
+     ],
+     "ans": 1,
+     "hint": "First find how many coins he started with.",
+     "steps": [
+      "He started with 27 + 18 = 45 coins.",
+      "Now he has 5 times as many: 45 × 5.",
+      "45 × 5 = 225."
+     ],
+     "ex": {
+      "main": "**225 coins.** The starting total is 45, and 5 times that is 225.",
+      "tip": "153 multiplies only the silver coins and forgets to multiply the gold ones."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

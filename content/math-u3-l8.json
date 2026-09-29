@@ -1,0 +1,334 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u8": {
+   "id": "unit-m3u8",
+   "type": "unit",
+   "updatedAt": 1790627956781,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 8: Bar Diagrams for Multiplication",
+   "srcName": "Unit 3 textbook scan, Lesson 3-8 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-8 of the Topic 3 textbook scan: using bar diagrams and variables to write and solve multiplication equations for \"times as many\" problems.",
+    "from": "source"
+   },
+   "why": {
+    "text": "A bar diagram makes \"times as many\" visible, which is what stops her from adding when she should be multiplying.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Draw a bar diagram for a \"times as many\" problem",
+     "from": "source"
+    },
+    {
+     "text": "Write and solve an equation with a variable",
+     "from": "source"
+    },
+    {
+     "text": "Check an answer with estimation",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "The mistake these questions keep offering is adding the \"times\" number instead of multiplying ($1,340 + 5). The other is drawing the bars backwards — giving the longer bar to the person with less. One lv3 question is built entirely around which bar is which, since that is where the rest of the problem goes right or wrong.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Draw it, write the equation, multiply.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "\"Times as many\" means multiply",
+     "def": "**If one amount is 5 times as many as another, multiply the smaller amount by 5.**\n• 5 times as much as $1,340 is $1,340 × 5.",
+     "hint": "\"Times as many\" is a multiplication signal.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Drawing the bar diagram",
+     "def": "**Draw one bar for the smaller amount and a longer bar made of equal copies of it.**\n• 5 times as many → the long bar has 5 equal sections.",
+     "hint": "Count the sections — that is the number you multiply by.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Using a variable",
+     "def": "**A letter stands for the number you are trying to find.**\n• Let p = the new price. Then p = 1,340 × 5.",
+     "hint": "The letter is a placeholder for the answer.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Write, then solve, the equation",
+     "def": "**Turn the bar diagram into an equation, then solve it.**\n• 1,340 × 5 = p, so p = 6,700.",
+     "hint": "Diagram → equation → answer.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Check your answer",
+     "def": "**Use estimation or repeated addition to check.**\n• 1,340 × 5 is about 1,300 × 5 = 6,500 — close to 6,700.",
+     "hint": "A quick estimate catches big mistakes.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A painting sold for $1,340. Years later it sold for 5 times as much. Which equation finds the new price, p?",
+     "opts": [
+      "p = 1,340 × 5",
+      "p = 1,340 + 5",
+      "p = 1,340 − 5",
+      "p = 5 − 1,340"
+     ],
+     "ans": 0,
+     "hint": "\"5 times as much\" is a multiplication.",
+     "steps": [
+      "The new price is 5 times the old price.",
+      "5 times means multiply by 5.",
+      "So p = 1,340 × 5."
+     ],
+     "ex": {
+      "main": "**p = 1,340 × 5.** \"Times as much\" means multiply.",
+      "tip": "Adding 5 would make it only $5 more — nowhere near 5 times."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A painting sold for $1,340. Years later it sold for 5 times as much. What was the later price?",
+     "opts": [
+      "$5,700",
+      "$6,700",
+      "$6,500",
+      "$1,345"
+     ],
+     "ans": 1,
+     "hint": "Multiply 1,340 by 5.",
+     "steps": [
+      "5 × 0 = 0.",
+      "5 × 4 = 20: write 0, carry 2.",
+      "5 × 3 = 15, + 2 = 17: write 7, carry 1.",
+      "5 × 1 = 5, + 1 = 6. So $6,700."
+     ],
+     "ex": {
+      "main": "**$6,700.** 1,340 × 5 = 6,700.",
+      "tip": "Estimate: 1,300 × 5 = 6,500, which is close."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Sharon's store has 2,415 stickers. May's store has 4 times as many. How many stickers does May's store have?",
+     "opts": [
+      "8,660",
+      "2,419",
+      "9,660",
+      "9,460"
+     ],
+     "ans": 2,
+     "hint": "Draw a bar with 4 equal sections of 2,415.",
+     "steps": [
+      "May's bar has 4 sections of 2,415.",
+      "s = 2,415 × 4.",
+      "4 × 5 = 20, carry 2; 4 × 1 + 2 = 6; 4 × 4 = 16, carry 1; 4 × 2 + 1 = 9.",
+      "s = 9,660."
+     ],
+     "ex": {
+      "main": "**9,660 stickers.** 2,415 × 4 = 9,660.",
+      "tip": "2,419 adds 4 instead of multiplying."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "There are 16 buses. Each bus has 48 seats. How many seats are there in all?",
+     "opts": [
+      "480",
+      "64",
+      "668",
+      "768"
+     ],
+     "ans": 3,
+     "hint": "The bar diagram has 16 equal sections of 48.",
+     "steps": [
+      "Find 48 × 16.",
+      "48 × 6 = 288.",
+      "48 × 10 = 480.",
+      "288 + 480 = 768."
+     ],
+     "ex": {
+      "main": "**768 seats.** 288 + 480 = 768.",
+      "tip": "64 is 16 + 48. Sixteen equal groups means multiply."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Priya lives 14 times as far from the beach as Leo. Leo lives 36 miles away. How far away does Priya live?",
+     "opts": [
+      "504",
+      "50",
+      "404",
+      "144"
+     ],
+     "ans": 0,
+     "hint": "Priya's bar has 14 sections of 36.",
+     "steps": [
+      "Find 36 × 14.",
+      "36 × 4 = 144.",
+      "36 × 10 = 360.",
+      "144 + 360 = 504 miles."
+     ],
+     "ex": {
+      "main": "**504 miles.** 144 + 360 = 504.",
+      "tip": "144 is only 36 × 4 — the tens row got left out."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A pond holds 1,250 gallons. A pool holds 12 times as much. How many gallons does the pool hold?",
+     "opts": [
+      "3,750",
+      "15,000",
+      "1,262",
+      "12,500"
+     ],
+     "ans": 1,
+     "hint": "Multiply 1,250 by 12.",
+     "steps": [
+      "1,250 × 2 = 2,500.",
+      "1,250 × 10 = 12,500.",
+      "2,500 + 12,500 = 15,000 gallons."
+     ],
+     "ex": {
+      "main": "**15,000 gallons.** 2,500 + 12,500 = 15,000.",
+      "tip": "12,500 is only 1,250 × 10 — the ones row is missing."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ana read 3 times as many pages as Ben. Ben read 214 pages. Which bar diagram shows this?",
+     "opts": [
+      "Ana's bar is 214 sections, each 3 pages long",
+      "Ana's bar is 1 section of 214; Ben's bar is 3 sections of 214",
+      "Ana's bar is 3 sections, each 214; Ben's bar is 1 section of 214",
+      "Both bars are 3 sections, because the story says 3"
+     ],
+     "ans": 2,
+     "hint": "Who read MORE? Their bar is longer.",
+     "steps": [
+      "Ana read 3 times as many, so she read more.",
+      "Her bar is 3 copies of Ben's bar.",
+      "Ben's bar is one section of 214.",
+      "Ana read 214 × 3 = 642 pages."
+     ],
+     "ex": {
+      "main": "**Ana's bar is 3 sections of 214; Ben's is 1.** Ana read 642 pages.",
+      "tip": "Getting the bars backwards gives the right numbers to the wrong people."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "One factory makes 265 bikes a day. Another makes 13 times as many. How many bikes does the second factory make each day?",
+     "opts": [
+      "278",
+      "1,060",
+      "3,345",
+      "3,445"
+     ],
+     "ans": 3,
+     "hint": "Multiply 265 by 13.",
+     "steps": [
+      "265 × 3 = 795.",
+      "265 × 10 = 2,650.",
+      "795 + 2,650 = 3,445."
+     ],
+     "ex": {
+      "main": "**3,445 bikes.** 795 + 2,650 = 3,445.",
+      "tip": "1,060 adds 265 × 3 and 265 × 1 — the 1 in 13 means 1 ten."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "How can estimation show that $1,340 × 5 = $6,700 is reasonable?",
+     "opts": [
+      "1,300 × 5 = 6,500, which is close to 6,700",
+      "1,000 × 5 = 5,000, which proves it exactly",
+      "1,340 + 5 = 1,345, which is close to 6,700",
+      "Estimation cannot check multiplication"
+     ],
+     "ans": 0,
+     "hint": "Round 1,340 to a friendly number.",
+     "steps": [
+      "1,340 is close to 1,300.",
+      "1,300 × 5 = 6,500.",
+      "6,700 is close to 6,500, so the answer is reasonable."
+     ],
+     "ex": {
+      "main": "**1,300 × 5 = 6,500, which is close.** The exact answer lands right near the estimate.",
+      "tip": "An estimate never proves an exact answer — it shows it is the right size."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "One store has 2,415 stickers and another has 4 times as many. In the equation s = 2,415 × 4, what does the letter s stand for?",
+     "opts": [
+      "The number 4, since it is the number beside the ×",
+      "The unknown number of stickers in the second store",
+      "The word \"stickers\" written in a shorter way",
+      "Any number at all that you would like to pick"
+     ],
+     "ans": 1,
+     "hint": "What is the question asking you to find?",
+     "steps": [
+      "The letter is a variable.",
+      "A variable stands for an unknown number.",
+      "Here it is the number of stickers in the second store."
+     ],
+     "ex": {
+      "main": "**The unknown number of stickers.** The variable holds the place of the answer.",
+      "tip": "Choosing a letter that matches the story — s for stickers — makes it easy to remember."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}

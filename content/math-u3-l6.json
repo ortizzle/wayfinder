@@ -1,0 +1,334 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3u6": {
+   "id": "unit-m3u6",
+   "type": "unit",
+   "updatedAt": 1790627956778,
+   "classId": "math",
+   "quarter": 1,
+   "status": "draft",
+   "title": "Unit 3 · Lesson 6: Multiply with Zeros",
+   "srcName": "Unit 3 textbook scan, Lesson 3-6 (Drive)",
+   "source": "enVision Topic 3 textbook scan — Multiply Multi-Digit Whole Numbers (Drive)",
+   "summary": {
+    "text": "Lesson 3-6 of the Topic 3 textbook scan: multiplying whole numbers when one of the factors has a zero in it.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Zeros cause more multiplication mistakes than any other digit — dropped, skipped, or forgotten when a carry lands on them.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply whole numbers that have zeros in them",
+     "from": "source"
+    },
+    {
+     "text": "Add a carry into a place where the digit is 0",
+     "from": "source"
+    },
+    {
+     "text": "Estimate to check for reasonableness",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "The two slips this lesson targets are skipping a zero in the middle of a number (306 treated as 36) and forgetting that a carry can land on a zero (306 × 4 written as 1,204 instead of 1,224). Both are built into wrong options, computed in the builder. The textbook's own \"Trudy doubles it\" item is here with fresh numbers — it is really the placeholder-zero idea again, since the first 4 in 44 means 4 tens.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Zero times anything is zero — but the carry still lands.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The algorithm does not change",
+     "def": "**A zero in a factor is multiplied like any other digit.**\n• Any number × 0 = 0.\n• You still write a digit in that place — the zero holds the place.",
+     "hint": "Zero times anything is zero, but it still gets its spot.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "A zero can still get a carry",
+     "def": "**If something was carried into the zero's place, add it on.**\n• 306 × 4: 4 × 6 = 24, carry 2. Then 4 × 0 = 0, plus 2 = 2.\n• So the tens digit is 2, not 0: 306 × 4 = 1,224.",
+     "hint": "Zero × 4 is 0, but the carry still arrives.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Do not skip the zero",
+     "def": "**Dropping a zero from the middle of a number changes it completely.**\n• 306 is not 36. 306 × 4 = 1,224, but 36 × 4 is only 144.",
+     "hint": "The zero is what makes 306 three hundred and six.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "A zero at the end",
+     "def": "**If a factor ends in 0, you can multiply without it and put the zero back at the end.**\n• 610 × 45 = 61 × 45 × 10 = 2,745 × 10 = 27,450.",
+     "hint": "Set the end zero aside, then give it back.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Estimate to check",
+     "def": "**An estimate catches a lost zero immediately.**\n• 407 × 23 is about 400 × 20 = 8,000.",
+     "hint": "If the answer is about ten times too small, a zero went missing.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "To find 306 × 4, you first get 4 × 6 = 24 and carry 2. What digit goes in the tens place?",
+     "opts": [
+      "2, because 4 × 0 = 0 and the carried 2 is added",
+      "0, because anything times 0 is 0",
+      "4, because the 4 in 24 goes in the tens place",
+      "8, because 4 × 2 = 8"
+     ],
+     "ans": 0,
+     "hint": "What is 4 × 0? Then what do you add?",
+     "steps": [
+      "4 × 0 tens = 0 tens.",
+      "The 2 tens carried from the ones get added.",
+      "0 + 2 = 2 tens, so the tens digit is 2."
+     ],
+     "ex": {
+      "main": "**2.** 4 × 0 = 0, and the carried 2 tens still have to be added.",
+      "tip": "Writing 0 there forgets the carry — that turns 1,224 into 1,204."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 306 × 4?",
+     "opts": [
+      "144",
+      "1,224",
+      "1,204",
+      "1,264"
+     ],
+     "ans": 1,
+     "hint": "Multiply each digit, including the zero, and keep the carries.",
+     "steps": [
+      "4 × 6 = 24: write 4, carry 2.",
+      "4 × 0 = 0, + 2 = 2.",
+      "4 × 3 = 12.",
+      "So 306 × 4 = 1,224."
+     ],
+     "ex": {
+      "main": "**1,224.** The zero place ends up holding the carried 2.",
+      "tip": "144 is 36 × 4 — the zero in 306 was skipped."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 407 × 23?",
+     "opts": [
+      "9,261",
+      "1,081",
+      "9,361",
+      "9,371"
+     ],
+     "ans": 2,
+     "hint": "Row 1: 407 × 3. Row 2: 407 × 20.",
+     "steps": [
+      "407 × 3 = 1,221.",
+      "407 × 20 = 8,140.",
+      "1,221 + 8,140 = 9,361."
+     ],
+     "ex": {
+      "main": "**9,361.** 1,221 + 8,140 = 9,361.",
+      "tip": "Estimate: 400 × 23 = 9,200. 1,081 is 47 × 23 — the zero was skipped."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 205 × 38?",
+     "opts": [
+      "7,780",
+      "950",
+      "7,690",
+      "7,790"
+     ],
+     "ans": 3,
+     "hint": "Row 1: 205 × 8. Row 2: 205 × 30.",
+     "steps": [
+      "205 × 8 = 1,640.",
+      "205 × 30 = 6,150.",
+      "1,640 + 6,150 = 7,790."
+     ],
+     "ex": {
+      "main": "**7,790.** 1,640 + 6,150 = 7,790.",
+      "tip": "950 is 25 × 38 — it treats 205 as if the zero were not there."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 610 × 45?",
+     "opts": [
+      "27,450",
+      "2,745",
+      "274,500",
+      "27,405"
+     ],
+     "ans": 0,
+     "hint": "Find 61 × 45, then put the zero from 610 back on.",
+     "steps": [
+      "61 × 45: 61 × 5 = 305 and 61 × 40 = 2,440.",
+      "305 + 2,440 = 2,745.",
+      "Put the zero back: 27,450."
+     ],
+     "ex": {
+      "main": "**27,450.** 61 × 45 = 2,745, and the end zero of 610 makes it 27,450.",
+      "tip": "Forgetting to put the zero back gives 2,745 — ten times too small."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "An auditorium has 108 rows with 26 seats in each row. How many seats is that?",
+     "opts": [
+      "468",
+      "2,808",
+      "2,708",
+      "134"
+     ],
+     "ans": 1,
+     "hint": "Multiply rows by seats per row.",
+     "steps": [
+      "Find 108 × 26.",
+      "108 × 6 = 648.",
+      "108 × 20 = 2,160.",
+      "648 + 2,160 = 2,808."
+     ],
+     "ex": {
+      "main": "**2,808 seats.** 648 + 2,160 = 2,808.",
+      "tip": "468 is 18 × 26 — the zero in 108 got dropped."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Trudy wants to find 44 × 404. She says she can find 4 × 404 and double it. Why does that not work?",
+     "opts": [
+      "She should triple it instead, because 44 has two digits",
+      "Doubling works, but only when there is no zero in the numbers",
+      "44 is 40 + 4, not 4 + 4, so doubling only covers 8 groups",
+      "It does work — 4 × 404 doubled is the same as 44 × 404"
+     ],
+     "ans": 2,
+     "hint": "What does \"double 4 × 404\" actually multiply 404 by?",
+     "steps": [
+      "Doubling 4 × 404 gives 8 × 404.",
+      "But 44 is 40 + 4.",
+      "So 44 × 404 = (40 × 404) + (4 × 404) = 16,160 + 1,616 = 17,776.",
+      "Her method only finds 8 × 404 = 3,232."
+     ],
+     "ex": {
+      "main": "**44 is 40 + 4, not 4 + 4.** The correct product is 17,776; doubling only reaches 3,232.",
+      "tip": "The first 4 in 44 means 4 TENS — the same idea as the placeholder zero."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Renting a trombone costs $36 a month. Buying one costs $475. Maria needs it for 12 months. What should she do?",
+     "opts": [
+      "Buy it, because 12 months of renting costs $4,320",
+      "Buy it, because $475 is only one payment",
+      "Rent it, because $36 is less than $475",
+      "Rent it, because 12 months costs $432, which is less than $475"
+     ],
+     "ans": 3,
+     "hint": "Find the total cost of renting for 12 months.",
+     "steps": [
+      "Renting for 12 months: 36 × 12.",
+      "36 × 2 = 72 and 36 × 10 = 360.",
+      "72 + 360 = $432.",
+      "$432 is less than $475, so renting is cheaper."
+     ],
+     "ex": {
+      "main": "**Rent it.** 12 months costs $432, which is $43 less than buying.",
+      "tip": "Comparing $36 to $475 on its own ignores the 12 months. $4,320 has one zero too many."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which estimate best checks that 309 × 42 = 12,978 is reasonable?",
+     "opts": [
+      "300 × 40 = 12,000",
+      "300 × 4 = 1,200",
+      "30 × 40 = 1,200",
+      "3,000 × 40 = 120,000"
+     ],
+     "ans": 0,
+     "hint": "Round each factor to its greatest place.",
+     "steps": [
+      "309 rounds to 300.",
+      "42 rounds to 40.",
+      "300 × 40 = 12,000.",
+      "12,978 is close to 12,000, so it is reasonable."
+     ],
+     "ex": {
+      "main": "**300 × 40 = 12,000.** It is close to 12,978, so the answer makes sense.",
+      "tip": "The other options each lose or add a zero when rounding."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 503 × 20?",
+     "opts": [
+      "1,006",
+      "10,060",
+      "100,600",
+      "1,060"
+     ],
+     "ans": 1,
+     "hint": "Find 503 × 2, then multiply by 10.",
+     "steps": [
+      "503 × 2 = 1,006.",
+      "× 10 puts a zero on the end.",
+      "503 × 20 = 10,060."
+     ],
+     "ex": {
+      "main": "**10,060.** 503 × 2 = 1,006, and × 10 makes it 10,060.",
+      "tip": "1,060 is 53 × 20 — the zero in the middle of 503 was skipped."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "libv": 1
+  }
+ }
+}
