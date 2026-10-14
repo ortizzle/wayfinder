@@ -2011,6 +2011,16 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### A discard that holds (v184 / Ad Astra v209, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+In short: `Sync.merge` purged tombstones older than 60 days, and a unit is
+the one record `fetchLibrary()` re-ships, so a unit discarded more than 60
+days earlier came back as a draft in the review queue two library checks
+after its tombstone was purged. Unit tombstones (`type:'unit'`, or any
+`unit-` id for older type-less ones) are now never purged; everything else
+still ages out. `tools/test_tomb_purge.js` is the same file as Ad Astra's.
+
 ### Chemistry · 4 Molecules and Compounds (v183)
 
 Chris: *"Let's review the girls folders, i've updated content."* River's
