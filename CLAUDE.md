@@ -2004,6 +2004,48 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Chemistry · 4 Molecules and Compounds (v182)
+
+Chris: *"Let's review the girls folders, i've updated content."* River's
+Science folder had **`molecules and compounds.pdf`** — her completed 24-point
+lesson check: twelve substances (Na, H₂, W, K₂S, NaOH, N₂, Al, B, CaSO₄, NaCl,
+Mg, H₂O), each to be circled as two of atom / element / molecule / compound.
+It is a photograph with no text layer, so it was rendered with `pypdfium2`.
+**Read for its questions, under the v198 rule** — her marks are recorded
+nowhere, and her name is in none of the files.
+`science-molecules-compounds.json` (`unit-sci-molcomp`): 15 cards, 20
+questions, an order question (fewest to most atoms) and a 12-item sort, "One
+kind of atom, or different kinds joined?". Shelved as part 4 of Chemistry by
+the density precedent (v175): a retitle keeping the id if her teacher numbers
+it differently later.
+
+- **"Two answers" became single-answer MC over PAIRS.** Each pair question
+  offers the three real pairs (atom + element, element + molecule, molecule +
+  compound) plus one impossible one, all at near-equal length.
+- **The pairing rule is computed, not typed.** The builder reads each
+  formula's capitals (kinds of element) and subscripts (atom counts) and
+  asserts every claimed pair, count, sort bucket and the ranking against it;
+  the test recomputes the rule independently.
+- **The ionic nuance is named, not taught around a test answer.** NaCl,
+  NaOH, K₂S and CaSO₄ are ionic, and a chemist would not strictly call them
+  molecules — but a sheet that says every item has TWO answers is using
+  "molecule and compound". The unit teaches the class's framing, keeps the
+  ionic examples on cards only, makes no graded answer depend on the
+  difference, and gives the nuance one line in `parentNote`.
+- **Flagged `added` because the sheet leans on it unsaid:** how to read a
+  formula — capitals count elements, small numbers count atoms (the v175
+  density-formula call again). Two traps get airtime: more atoms is not more
+  kinds (O₃, S₈), and count capitals, not letters (Co against CO).
+- **No periodic-table material exists in Drive yet** for her class — the
+  folder and its Unit 2 subfolder were paginated to the end.
+
+`tools/test_molecules.js` (35 assertions) seeds Chemistry 1–3 alongside and
+pins the shelf, the definitions and pairing rule by their teaching, every
+pair answer against the recomputed rule, the ionic line in the note and its
+absence from every graded stem and option, the sort and a clean 12-item pass,
+and the v198 mark sweep — **verified by prepending a made-up score to the
+note and watching exactly that check fail.**
+
 ### A note on your week, and the Wonder Jar (v179 / Ad Astra v204, both apps)
 
 Chris: *"Can we create a space for you to give a qualitative message to the
