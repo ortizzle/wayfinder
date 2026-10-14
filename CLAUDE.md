@@ -205,6 +205,13 @@ Class material and the backup folder both live in Drive. The folder IDs are in
 Claude's private project memory, and the backup link is set per-device in the
 grown-up settings — neither belongs in this repo.
 
+**The Drive copy (v182 / Ad Astra v207, both apps).** Same as Ad Astra's — see
+"The Drive copy" under Backups in ../ad-astra/CLAUDE.md. Here it saves
+`My Drive › Ortiz App Backups › Wayfinder › wayfinder-YYYY-MM-DD.json` (the
+synced `DATA`, never secrets), and only on a trusted grown-up device
+(`driveAllowed()`: passcode + "stop asking on this device" + sandbox off) —
+never on hers. `ortiz-drive.js` is the shared module, copied unchanged.
+
 ---
 
 ## Keeping the two apps in step
@@ -2004,7 +2011,7 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
-### Chemistry · 4 Molecules and Compounds (v182)
+### Chemistry · 4 Molecules and Compounds (v183)
 
 Chris: *"Let's review the girls folders, i've updated content."* River's
 Science folder had **`molecules and compounds.pdf`** — her completed 24-point
