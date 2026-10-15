@@ -2138,6 +2138,16 @@ lesson, and watching exactly those two assertions fail.**
 > after navigating to another shelf, so the buttons were detached and read
 > 0px. Measure before you leave the screen.
 
+> **`test_unit1_shelf.js` pinned every maths shelf to `/^Unit \d+$/`**, so the
+> new Math Facts shelf failed it on arrival. Its real point is that no stray
+> `Topic N` shelf comes back (the pre-v160 shape), so that is now what it
+> pins, with Math Facts named as the one practice book.
+>
+> **`test_hours_notice.js` fails on 10/15 on the PREVIOUS build too**, so it
+> was ruled out as a regression. It is calendar rot of the known kind: on a
+> Thursday, the runway's student-hours line reads "tomorrow", not "the last
+> one before it". It is left alone here and noted so it is not re-diagnosed.
+
 ### A discard that holds (v184 / Ad Astra v209, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.

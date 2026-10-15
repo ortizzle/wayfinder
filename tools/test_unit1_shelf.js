@@ -44,8 +44,11 @@ const fs = require('fs'), glob = require('path');
   // Pin the RULE (Unit 1 exists and is whole), not the shelf count — Unit 2
   // joined it on purpose, and a count assertion would fail on every future book.
   T('Unit 1 is a shelf on maths', res.shelfNames.includes('Unit 1'));
+  // A "Unit N" book, or a named practice book (Math Facts, v185) — what must
+  // never come back is a stray "Topic N" shelf, the pre-v160 shape.
   T('every maths shelf is a real named book',
-    res.shelfNames.length>=1 && res.shelfNames.every(n=>/^Unit \d+$/.test(n)));
+    res.shelfNames.length>=1 && res.shelfNames.every(n=>/^Unit \d+$/.test(n) || n === 'Math Facts')
+    && !res.shelfNames.some(n=>/^Topic \d+$/.test(n)));
   T('nothing left loose outside it', res.loose.length===0);
   T('all 24 parts are on it', res.parts.length===24);
   T('every part label is distinct', new Set(res.parts).size===res.parts.length);
