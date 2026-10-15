@@ -1,0 +1,688 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5-ld1": {
+   "id": "unit-m5-ld1",
+   "type": "unit",
+   "updatedAt": 1792032268295,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Before You Start: Long Division with One-Digit Divisors",
+   "srcName": "Teacher's math update, 10/15",
+   "source": "Long division review (from the teacher's update)",
+   "summary": {
+    "text": "Long division with a one-digit divisor: the four steps, where to start, a zero in the quotient, remainders and what they mean in a story, and checking with multiplication.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Unit 5 jumps straight to dividing by two-digit numbers, and it assumes this is already easy. Getting it solid now is what makes that unit manageable.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Divide a 3- or 4-digit number by a 1-digit number, with or without a remainder.",
+     "from": "source"
+    },
+    {
+     "text": "Check a division answer with multiplication.",
+     "from": "source"
+    },
+    {
+     "text": "Find the step where a worked division went wrong.",
+     "from": "source"
+    },
+    {
+     "text": "Decide what a remainder means in a word problem.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the teacher's math update of 10/15, which says Unit 5 starts straight at two-digit divisors and expects students to already do long division with one-digit divisors, and asks families to make sure they can. Her practice sheet did not reach Drive, so the problems here are ours, not copies of hers. Every quotient, remainder and check was computed, and each wrong option comes from a named slip (a skipped zero, a dropped remainder, a remainder bigger than the divisor). Three questions are her own suggestion: show a worked problem with a mistake and ask where it is. The one thing most likely to trip her up is the zero in the quotient.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Run the cards, then the quiz. Try every problem on paper first, then check it with multiplication.",
+    "minutes": 15,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Dividend, divisor, quotient",
+     "def": "**In 457 ÷ 6 = 76 R1: 457 is the dividend, 6 is the divisor, 76 is the quotient.**\n• The dividend is being shared out; the divisor is how many groups.\n• The quotient is how many in each group.",
+     "hint": "The DIVISOR does the dividing.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Remainder",
+     "def": "**What is left over when the groups are full.**\n• In 457 ÷ 6 = 76 R1, the remainder is 1.\n• It must always be smaller than the divisor, or another group would fit.",
+     "hint": "If the leftover could make one more group, you are not done.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The four steps",
+     "def": "**Divide, Multiply, Subtract, Bring down — then repeat.**\n• One loop for each digit of the dividend.\n• Stop when there is nothing left to bring down.",
+     "hint": "Does McDonald's Sell Burgers: D, M, S, B.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Where to start",
+     "def": "**Start with the first digit if the divisor fits into it; if not, use the first two digits.**\n• 284 ÷ 4: 4 does not fit into 2, so start with 28.\n• That also tells you the quotient has one digit fewer than the dividend.",
+     "hint": "Too small to share? Take one more digit.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "A zero in the quotient",
+     "def": "**When a brought-down number is smaller than the divisor, write 0 in the quotient and bring down the next digit.**\n• 824 ÷ 4: 8 ÷ 4 = 2, bring down 2: 2 ÷ 4 = 0, bring down 4: 4 ÷ 4 = 1, so 206.\n• Skipping the 0 gives 26, which is ten times too small.",
+     "hint": "Every digit you bring down gets a digit in the answer.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Check with multiplication",
+     "def": "**Quotient × divisor + remainder should give back the dividend.**\n• 76 × 6 + 1 = 457, so 457 ÷ 6 = 76 R1 is right.\n• It catches almost every slip, so it is worth the ten seconds.",
+     "hint": "Division undone by multiplication.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Estimate first",
+     "def": "**Round to numbers that divide easily, so you know roughly what to expect.**\n• 4,128 ÷ 8 is about 4,000 ÷ 8 = 500.\n• An answer of 51 or 5,160 is then clearly wrong before you check it.",
+     "hint": "A rough answer catches a wrong number of digits.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Facts do the work",
+     "def": "**Every Divide step is a multiplication fact in reverse.**\n• 23 ÷ 4: think 4 × 5 = 20, the biggest that fits, so 5 with 3 left.\n• Quick facts make long division quick.",
+     "hint": "Know 4 × 5 and you know 20 ÷ 4.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "What the remainder means",
+     "def": "**In a word problem, decide what to do with the remainder.**\n• Round up when everyone must fit (cars, boxes, tables).\n• Drop it when only whole groups count (whole bows); sometimes the remainder IS the answer (the leftovers).",
+     "hint": "Ask: what is the leftover, in the story?",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Find the mistake",
+     "def": "**Check each step, not just the answer: the divide, the multiply, the subtract and the bring-down.**\n• Most mistakes are a subtraction slip or a skipped zero.\n• The check (quotient × divisor + remainder) tells you THAT something is wrong; the steps tell you where.",
+     "hint": "Test the answer first, then hunt step by step.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 457 ÷ 6 = 76 R1, which number is the remainder?",
+     "opts": [
+      "1",
+      "6",
+      "76",
+      "457"
+     ],
+     "ans": 0,
+     "hint": "The remainder is what is left over.",
+     "steps": [
+      "The dividend, 457, is being shared out.",
+      "The divisor, 6, is the number of groups.",
+      "Each group gets 76, the quotient.",
+      "The 1 left over is the remainder."
+     ],
+     "ex": {
+      "main": "**1.** 76 groups of 6 make 456, and 457 is 1 more, so 1 is left over.",
+      "tip": "A remainder is always smaller than the divisor."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 845 ÷ 5 = 169, which number is the divisor?",
+     "opts": [
+      "845",
+      "5",
+      "169",
+      "0"
+     ],
+     "ans": 1,
+     "hint": "The divisor does the dividing.",
+     "steps": [
+      "845 is the dividend, the amount being shared.",
+      "5 is the number it is divided by: the divisor.",
+      "169 is the quotient.",
+      "So the divisor is 5."
+     ],
+     "ex": {
+      "main": "**5.** The divisor is the number you divide BY.",
+      "tip": "Check it: 169 × 5 = 845."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "order",
+     "q": "Put the four steps of long division in order.",
+     "opts": [
+      "Divide",
+      "Multiply",
+      "Subtract",
+      "Bring down"
+     ],
+     "ans": 0,
+     "hint": "Does McDonald's Sell Burgers.",
+     "steps": [
+      "Divide: how many times does the divisor fit?",
+      "Multiply that digit by the divisor.",
+      "Subtract to find what is left.",
+      "Bring down the next digit, and repeat."
+     ],
+     "ex": {
+      "main": "**Divide, Multiply, Subtract, Bring down.** One loop per digit, until nothing is left to bring down.",
+      "tip": "The mnemonic is the order: D, M, S, B."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To start 284 ÷ 4, which number do you divide by 4 first?",
+     "opts": [
+      "284",
+      "2",
+      "28",
+      "84"
+     ],
+     "ans": 2,
+     "hint": "Does 4 fit into 2?",
+     "steps": [
+      "4 does not fit into 2.",
+      "So take the first two digits: 28.",
+      "28 ÷ 4 = 7.",
+      "So you start with 28."
+     ],
+     "ex": {
+      "main": "**28.** 4 does not fit into 2, so you take one more digit. The quotient, 71, has only two digits.",
+      "tip": "The starting number tells you how many digits the answer will have."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How many digits will the quotient of 382 ÷ 5 have?",
+     "opts": [
+      "4",
+      "1",
+      "3",
+      "2"
+     ],
+     "ans": 3,
+     "hint": "Does 5 fit into 3?",
+     "steps": [
+      "5 does not fit into 3.",
+      "So start with 38: the first digit of the quotient goes in the tens place.",
+      "382 ÷ 5 = 76 R2.",
+      "So the quotient has 2 digits."
+     ],
+     "ex": {
+      "main": "**2.** 5 does not fit into 3, so the quotient starts in the tens place: 76 R2.",
+      "tip": "Estimate: 382 is less than 500, and 500 ÷ 5 = 100, so the answer is under 100."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the best estimate for 4,128 ÷ 8?",
+     "opts": [
+      "About 500",
+      "About 50",
+      "About 5,000",
+      "About 5"
+     ],
+     "ans": 0,
+     "hint": "Round 4,128 to a number 8 divides easily.",
+     "steps": [
+      "4,128 is close to 4,000.",
+      "4,000 ÷ 8 = 500.",
+      "The exact answer is 516, close to 500.",
+      "So the best estimate is about 500."
+     ],
+     "ex": {
+      "main": "**About 500.** 4,000 ÷ 8 = 500, and the exact quotient is 516.",
+      "tip": "Estimate first, so a wrong number of digits jumps out."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which multiplication fact gives you 56 ÷ 7?",
+     "opts": [
+      "7 × 7 = 49",
+      "7 × 8 = 56",
+      "6 × 8 = 48",
+      "8 × 8 = 64"
+     ],
+     "ans": 1,
+     "hint": "Which fact has 7 and 56 in it?",
+     "steps": [
+      "56 ÷ 7 asks: 7 times what is 56?",
+      "7 × 8 = 56.",
+      "So 56 ÷ 7 = 8."
+     ],
+     "ex": {
+      "main": "**7 × 8 = 56.** Division undoes multiplication, so 56 ÷ 7 = 8.",
+      "tip": "Every divide step is a facts question in reverse."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 684 ÷ 3?",
+     "opts": [
+      "238",
+      "218",
+      "228",
+      "28"
+     ],
+     "ans": 2,
+     "hint": "Start with 6.",
+     "steps": [
+      "6 ÷ 3 = 2; 2 × 3 = 6; 6 − 6 = 0.",
+      "8 ÷ 3 = 2; 2 × 3 = 6; 8 − 6 = 2.",
+      "24 ÷ 3 = 8; 8 × 3 = 24; 24 − 24 = 0.",
+      "Check: 228 × 3 = 684.",
+      "So 684 ÷ 3 = 228."
+     ],
+     "ex": {
+      "main": "**228.** Check it: 228 × 3 = 684. The wrong answers come from real slips: 218 is a wrong tens digit; 238 is one ten too many; 28 is the hundreds digit dropped.",
+      "tip": "Check: the quotient times 3 must give 684."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 945 ÷ 5?",
+     "opts": [
+      "199",
+      "189 R5",
+      "179",
+      "189"
+     ],
+     "ans": 3,
+     "hint": "5 fits into 9 once.",
+     "steps": [
+      "9 ÷ 5 = 1; 1 × 5 = 5; 9 − 5 = 4.",
+      "44 ÷ 5 = 8; 8 × 5 = 40; 44 − 40 = 4.",
+      "45 ÷ 5 = 9; 9 × 5 = 45; 45 − 45 = 0.",
+      "Check: 189 × 5 = 945.",
+      "So 945 ÷ 5 = 189."
+     ],
+     "ex": {
+      "main": "**189.** Check it: 189 × 5 = 945. The wrong answers come from real slips: 189 R5 is stopping before the last group; 179 is a subtraction slip; 199 is one ten too many.",
+      "tip": "An answer to a ÷5 question, times 5, must end in 0 or 5."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 739 ÷ 4?",
+     "opts": [
+      "184 R3",
+      "184",
+      "183 R7",
+      "185"
+     ],
+     "ans": 0,
+     "hint": "There will be something left over.",
+     "steps": [
+      "7 ÷ 4 = 1; 1 × 4 = 4; 7 − 4 = 3.",
+      "33 ÷ 4 = 8; 8 × 4 = 32; 33 − 32 = 1.",
+      "19 ÷ 4 = 4; 4 × 4 = 16; 19 − 16 = 3.",
+      "Check: 184 × 4 + 3 = 739.",
+      "So 739 ÷ 4 = 184 R3."
+     ],
+     "ex": {
+      "main": "**184 R3.** Check it: 184 × 4 + 3 = 739. The wrong answers come from real slips: 184 is the remainder left off; 183 R7 is a remainder too big to keep; 185 is rounded up instead of a remainder.",
+      "tip": "The remainder must be smaller than 4."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 824 ÷ 4?",
+     "opts": [
+      "26",
+      "206",
+      "216",
+      "260"
+     ],
+     "ans": 1,
+     "hint": "Watch the middle digit.",
+     "steps": [
+      "8 ÷ 4 = 2; 2 × 4 = 8; 8 − 8 = 0.",
+      "2 ÷ 4 = 0; 0 × 4 = 0; 2 − 0 = 2.",
+      "24 ÷ 4 = 6; 6 × 4 = 24; 24 − 24 = 0.",
+      "Check: 206 × 4 = 824.",
+      "So 824 ÷ 4 = 206."
+     ],
+     "ex": {
+      "main": "**206.** Check it: 206 × 4 = 824. The wrong answers come from real slips: 26 is the zero skipped; 216 is a zero where none belongs; 260 is the zero in the wrong place.",
+      "tip": "Every digit you bring down gets a digit in the quotient."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3,612 ÷ 6?",
+     "opts": [
+      "612",
+      "62",
+      "602",
+      "6,020"
+     ],
+     "ans": 2,
+     "hint": "6 does not fit into 3.",
+     "steps": [
+      "3 is smaller than 6, so use the next digit too.",
+      "36 ÷ 6 = 6; 6 × 6 = 36; 36 − 36 = 0.",
+      "1 ÷ 6 = 0; 0 × 6 = 0; 1 − 0 = 1.",
+      "12 ÷ 6 = 2; 2 × 6 = 12; 12 − 12 = 0.",
+      "Check: 602 × 6 = 3,612.",
+      "So 3,612 ÷ 6 = 602."
+     ],
+     "ex": {
+      "main": "**602.** Check it: 602 × 6 = 3,612. The wrong answers come from real slips: 62 is the zero skipped; 612 is a wrong tens digit; 6,020 is one digit too many.",
+      "tip": "Estimate: 3,600 ÷ 6 = 600."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 296 ÷ 8?",
+     "opts": [
+      "370",
+      "37 R1",
+      "36",
+      "37"
+     ],
+     "ans": 3,
+     "hint": "8 does not fit into 2.",
+     "steps": [
+      "2 is smaller than 8, so use the next digit too.",
+      "29 ÷ 8 = 3; 3 × 8 = 24; 29 − 24 = 5.",
+      "56 ÷ 8 = 7; 7 × 8 = 56; 56 − 56 = 0.",
+      "Check: 37 × 8 = 296.",
+      "So 296 ÷ 8 = 37."
+     ],
+     "ex": {
+      "main": "**37.** Check it: 37 × 8 = 296. The wrong answers come from real slips: 37 R1 is a remainder that is not there; 36 is one too few; 370 is one digit too many.",
+      "tip": "Two digits: 8 does not fit into 2."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5,264 ÷ 7?",
+     "opts": [
+      "752",
+      "742",
+      "762",
+      "7,520"
+     ],
+     "ans": 0,
+     "hint": "7 does not fit into 5.",
+     "steps": [
+      "5 is smaller than 7, so use the next digit too.",
+      "52 ÷ 7 = 7; 7 × 7 = 49; 52 − 49 = 3.",
+      "36 ÷ 7 = 5; 5 × 7 = 35; 36 − 35 = 1.",
+      "14 ÷ 7 = 2; 2 × 7 = 14; 14 − 14 = 0.",
+      "Check: 752 × 7 = 5,264.",
+      "So 5,264 ÷ 7 = 752."
+     ],
+     "ex": {
+      "main": "**752.** Check it: 752 × 7 = 5,264. The wrong answers come from real slips: 742 is a slip in the tens; 762 is one ten too many; 7,520 is one digit too many.",
+      "tip": "Estimate: 5,600 ÷ 7 = 800, so a bit less than 800."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 1,509 ÷ 8?",
+     "opts": [
+      "188",
+      "188 R5",
+      "187 R13",
+      "189"
+     ],
+     "ans": 1,
+     "hint": "8 does not fit into 1.",
+     "steps": [
+      "1 is smaller than 8, so use the next digit too.",
+      "15 ÷ 8 = 1; 1 × 8 = 8; 15 − 8 = 7.",
+      "70 ÷ 8 = 8; 8 × 8 = 64; 70 − 64 = 6.",
+      "69 ÷ 8 = 8; 8 × 8 = 64; 69 − 64 = 5.",
+      "Check: 188 × 8 + 5 = 1,509.",
+      "So 1,509 ÷ 8 = 188 R5."
+     ],
+     "ex": {
+      "main": "**188 R5.** Check it: 188 × 8 + 5 = 1,509. The wrong answers come from real slips: 188 is the remainder left off; 187 R13 is a remainder too big to keep; 189 is rounded up instead of a remainder.",
+      "tip": "The remainder must be smaller than 8."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Kai got 96 R3 for 579 ÷ 6. Which calculation checks it?",
+     "opts": [
+      "579 × 6 + 3 = 96",
+      "96 × 3 + 6 = 579",
+      "96 × 6 + 3 = 579",
+      "96 + 6 × 3 = 579"
+     ],
+     "ans": 2,
+     "hint": "Undo the division.",
+     "steps": [
+      "Multiply the quotient by the divisor: 96 × 6 = 576.",
+      "Add the remainder: 576 + 3 = 579.",
+      "That is the dividend, so the answer checks out."
+     ],
+     "ex": {
+      "main": "**96 × 6 + 3 = 579.** Quotient times divisor, plus the remainder, gives back the dividend.",
+      "tip": "If the check does not land on the dividend, hunt for the step that slipped."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Lena worked out 632 ÷ 4. She wrote: 6 ÷ 4 = 1, 6 − 4 = 2. Bring down 3: 23 ÷ 4 = 5, 23 − 20 = 1. Bring down 2: 12 ÷ 4 = 3. Answer: 153. Where is her mistake?",
+     "opts": [
+      "12 ÷ 4 should be 4",
+      "6 ÷ 4 should be 2",
+      "23 ÷ 4 should be 6",
+      "23 − 20 is 3, not 1"
+     ],
+     "ans": 3,
+     "hint": "Check each subtraction.",
+     "steps": [
+      "6 ÷ 4 = 1 with 2 left: right.",
+      "23 ÷ 4 = 5, and 5 × 4 = 20: right.",
+      "23 − 20 = 3, not 1: there it is.",
+      "With 3 left, she brings down 2 to make 32, and 32 ÷ 4 = 8.",
+      "The answer is 158."
+     ],
+     "ex": {
+      "main": "**23 − 20 is 3, not 1.** One subtraction slip changed the last digit. Check: 153 × 4 = 612, not 632, so the check would have caught it.",
+      "tip": "The check tells you something is wrong; the steps tell you where."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Omar wrote 2,436 ÷ 6 = 46. What did he do wrong?",
+     "opts": [
+      "He skipped the 0 when 3 was too small for 6",
+      "He started with 2 instead of 24",
+      "He said 24 ÷ 6 = 4 instead of 5",
+      "He forgot to bring down the 6"
+     ],
+     "ans": 0,
+     "hint": "Check it: 46 × 6 is about 280, nowhere near 2,436.",
+     "steps": [
+      "24 ÷ 6 = 4.",
+      "Bring down 3: 6 does not fit into 3, so the quotient gets a 0.",
+      "Bring down 6: 36 ÷ 6 = 6.",
+      "The answer is 406, not 46."
+     ],
+     "ex": {
+      "main": "**He skipped the 0.** When the 3 was too small to divide by 6, a 0 belongs in the quotient. 406 × 6 = 2,436.",
+      "tip": "Estimate first: 2,400 ÷ 6 = 400, so 46 is far too small."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Maya says 365 ÷ 7 = 51 R8. Without redoing the division, how can you tell it is wrong?",
+     "opts": [
+      "51 is too big to be the quotient",
+      "The remainder 8 is bigger than the divisor 7",
+      "An odd dividend cannot have a remainder",
+      "51 × 7 + 8 does not make 365"
+     ],
+     "ans": 1,
+     "hint": "Could one more group of 7 fit?",
+     "steps": [
+      "A remainder of 8 is more than 7.",
+      "So one more group of 7 fits: 52 groups, with 1 left.",
+      "51 × 7 + 8 = 365 does check out, so the check alone misses it.",
+      "The answer is 52 R1."
+     ],
+     "ex": {
+      "main": "**The remainder is bigger than the divisor.** If 8 are left, another group of 7 fits, so the answer is 52 R1. Her check works out, which is why the remainder rule matters too.",
+      "tip": "A remainder must always be smaller than the divisor."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A class of 27 students rides to the museum in cars that hold 4 students each. How many cars are needed?",
+     "opts": [
+      "6 R3",
+      "6",
+      "7",
+      "3"
+     ],
+     "ans": 2,
+     "hint": "Every student must get a seat.",
+     "steps": [
+      "27 ÷ 4 = 6 R3.",
+      "6 cars hold 24 students, and 3 are left without a seat.",
+      "Those 3 need one more car.",
+      "So 7 cars are needed."
+     ],
+     "ex": {
+      "main": "**7.** 6 cars leave 3 students behind, so you round up.",
+      "tip": "Ask what the leftover is in the story: here it is people who still need a car."
+     }
+    },
+    {
+     "id": "q20",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A ribbon is 50 inches long, and each bow uses 8 inches. How many whole bows can be made?",
+     "opts": [
+      "6 R2",
+      "7",
+      "2",
+      "6"
+     ],
+     "ans": 3,
+     "hint": "Only whole bows count.",
+     "steps": [
+      "50 ÷ 8 = 6 R2.",
+      "6 bows use 48 inches.",
+      "The 2 inches left are not enough for another bow.",
+      "So 6 whole bows."
+     ],
+     "ex": {
+      "main": "**6.** The 2 leftover inches cannot make a bow, so the remainder is dropped.",
+      "tip": "When only whole groups count, drop the remainder."
+     }
+    },
+    {
+     "id": "q21",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "93 stickers are shared equally among 4 friends, and any stickers left over go to the teacher. How many does the teacher get?",
+     "opts": [
+      "1",
+      "23",
+      "24",
+      "4"
+     ],
+     "ans": 0,
+     "hint": "The question asks about the leftovers.",
+     "steps": [
+      "93 ÷ 4 = 23 R1.",
+      "Each friend gets 23.",
+      "1 sticker is left over.",
+      "So the teacher gets 1."
+     ],
+     "ex": {
+      "main": "**1.** Here the remainder IS the answer: 23 each, 1 left for the teacher.",
+      "tip": "Read what the question asks for: the share, or the leftover."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}

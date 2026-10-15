@@ -1775,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v185 · Math facts';
+const APP_VERSION = 'v186 · Long division';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3616,7 +3616,8 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/math-u3-l1.json', 'content/math-u3-l2.json', 'content/math-u3-l3.json',
   'content/math-u3-l4.json', 'content/math-u3-l5.json', 'content/math-u3-l6.json',
   'content/math-u3-l7.json', 'content/math-u3-l8.json', 'content/math-u3-l9.json',
-  'content/math-facts-1.json', 'content/math-facts-2.json', 'content/math-facts-3.json', 'content/math-facts-4.json'];
+  'content/math-facts-1.json', 'content/math-facts-2.json', 'content/math-facts-3.json', 'content/math-facts-4.json',
+  'content/math-longdiv-1.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
