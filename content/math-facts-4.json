@@ -1,0 +1,417 @@
+{
+ "v": 4,
+ "records": {
+  "unit-mf-4": {
+   "id": "unit-mf-4",
+   "type": "unit",
+   "updatedAt": 1792027610098,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Math Facts · Set 4: ×8, ×9, ×11 and ×12",
+   "srcName": "Teacher's math update, 10/15",
+   "source": "Math facts (from the teacher's update)",
+   "summary": {
+    "text": "Multiplication facts for the ×8, ×9, ×11 and ×12 tables, one card per fact with a strategy for working it out and a way to check it.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Your class has a pop quiz coming: 50 multiplication facts in 3 minutes. That is under four seconds a fact, so the facts have to come from memory, and the strategies are how they get there.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Answer every ×8, ×9, ×11 and ×12 fact from memory.",
+     "from": "added"
+    },
+    {
+     "text": "Use a strategy to work out a fact you are not sure of.",
+     "from": "added"
+    },
+    {
+     "text": "Check an answer with a fact you know, or with the turn-around.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the teacher's math update about the multiplication facts pop quiz (50 facts in 3 minutes). Her attached flashcards and practice sheet did not reach Drive, so the facts and strategies here are ours, not copies of hers. This part covers 10 facts. Every answer, strategy step and wrong option was computed, not typed. The facts run to 12 × 12; if her sheet stops at 10 × 10, the x11 and x12 facts are extra. The Facts sprint on each card is the pop quiz shape: typed answers against one clock.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Flip the cards once, then try a sprint and see which facts it catches.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "11 × 8",
+     "def": "**88**\n• Same answer as 8 × 11.\n• 10 × 8 = 80. Add one more 8: 80 + 8 = 88.",
+     "hint": "Times 10, plus one more group.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "9 × 11",
+     "def": "**99**\n• Same answer as 11 × 9.\n• 10 × 9 = 90. Add one more 9: 90 + 9 = 99.",
+     "hint": "Times 10, plus one more group.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "11 × 11",
+     "def": "**121**\n• A square fact: the same number twice.\n• 10 × 11 = 110. Add one more 11: 110 + 11 = 121.",
+     "hint": "Times 10, plus one more group.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "11 × 12",
+     "def": "**132**\n• Same answer as 12 × 11.\n• 10 × 12 = 120. Add one more 12: 120 + 12 = 132.",
+     "hint": "Times 10, plus one more group.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "9 × 8",
+     "def": "**72**\n• Same answer as 8 × 9.\n• 10 × 8 = 80. Take away one 8: 80 − 8 = 72.",
+     "hint": "Times 10, minus one group.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "9 × 9",
+     "def": "**81**\n• A square fact: the same number twice.\n• 10 × 9 = 90. Take away one 9: 90 − 9 = 81.",
+     "hint": "Times 10, minus one group.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "9 × 12",
+     "def": "**108**\n• Same answer as 12 × 9.\n• 10 × 12 = 120. Take away one 12: 120 − 12 = 108.",
+     "hint": "Times 10, minus one group.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "8 × 12",
+     "def": "**96**\n• Same answer as 12 × 8.\n• 10 × 8 = 80. 2 × 8 = 16. 80 + 16 = 96.",
+     "hint": "Times 10 plus times 2.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "12 × 12",
+     "def": "**144**\n• A square fact: the same number twice.\n• 10 × 12 = 120. 2 × 12 = 24. 120 + 24 = 144.",
+     "hint": "12 × 12 = 144, a dozen dozens.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "8 × 8",
+     "def": "**64**\n• A square fact: the same number twice.\n• Double 8: 16. Double again: 32. Double once more: 64.",
+     "hint": "Double, double, double.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 8?",
+     "opts": [
+      "88",
+      "77",
+      "99",
+      "80"
+     ],
+     "ans": 0,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 8 = 80.",
+      "Add one more 8: 80 + 8 = 88.",
+      "So 11 × 8 = 88."
+     ],
+     "ex": {
+      "main": "**88.** 10 × 8 = 80. Add one more 8: 80 + 8 = 88.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      11,
+      8
+     ]
+    },
+    {
+     "id": "q1",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 11?",
+     "opts": [
+      "88",
+      "99",
+      "110",
+      "90"
+     ],
+     "ans": 1,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 9 = 90.",
+      "Add one more 9: 90 + 9 = 99.",
+      "So 9 × 11 = 99."
+     ],
+     "ex": {
+      "main": "**99.** 10 × 9 = 90. Add one more 9: 90 + 9 = 99.",
+      "tip": "Check with the turn-around: 11 × 9 is the same fact."
+     },
+     "fact": [
+      9,
+      11
+     ]
+    },
+    {
+     "id": "q2",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 11?",
+     "opts": [
+      "132",
+      "110",
+      "121",
+      "131"
+     ],
+     "ans": 2,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 11 = 110.",
+      "Add one more 11: 110 + 11 = 121.",
+      "So 11 × 11 = 121."
+     ],
+     "ex": {
+      "main": "**121.** 10 × 11 = 110. Add one more 11: 110 + 11 = 121.",
+      "tip": "Check with the turn-around: 11 × 11 is the same fact."
+     },
+     "fact": [
+      11,
+      11
+     ]
+    },
+    {
+     "id": "q3",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 12?",
+     "opts": [
+      "120",
+      "121",
+      "143",
+      "132"
+     ],
+     "ans": 3,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 12 = 120.",
+      "Add one more 12: 120 + 12 = 132.",
+      "So 11 × 12 = 132."
+     ],
+     "ex": {
+      "main": "**132.** 10 × 12 = 120. Add one more 12: 120 + 12 = 132.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "q4",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 8?",
+     "opts": [
+      "72",
+      "63",
+      "81",
+      "64"
+     ],
+     "ans": 0,
+     "hint": "Times 10, minus one group.",
+     "steps": [
+      "Times 9 is times 10, minus one group.",
+      "10 × 8 = 80.",
+      "Take away one 8: 80 − 8 = 72.",
+      "So 9 × 8 = 72."
+     ],
+     "ex": {
+      "main": "**72.** 10 × 8 = 80. Take away one 8: 80 − 8 = 72.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (7 + 2)."
+     },
+     "fact": [
+      9,
+      8
+     ]
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 9?",
+     "opts": [
+      "72",
+      "81",
+      "90",
+      "18"
+     ],
+     "ans": 1,
+     "hint": "Times 10, minus one group.",
+     "steps": [
+      "Times 9 is times 10, minus one group.",
+      "10 × 9 = 90.",
+      "Take away one 9: 90 − 9 = 81.",
+      "So 9 × 9 = 81."
+     ],
+     "ex": {
+      "main": "**81.** 10 × 9 = 90. Take away one 9: 90 − 9 = 81.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (8 + 1)."
+     },
+     "fact": [
+      9,
+      9
+     ]
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 12?",
+     "opts": [
+      "117",
+      "99",
+      "108",
+      "96"
+     ],
+     "ans": 2,
+     "hint": "Times 10, minus one group.",
+     "steps": [
+      "Times 9 is times 10, minus one group.",
+      "10 × 12 = 120.",
+      "Take away one 12: 120 − 12 = 108.",
+      "So 9 × 12 = 108."
+     ],
+     "ex": {
+      "main": "**108.** 10 × 12 = 120. Take away one 12: 120 − 12 = 108.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (1 + 0 + 8)."
+     },
+     "fact": [
+      9,
+      12
+     ]
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 12?",
+     "opts": [
+      "88",
+      "84",
+      "108",
+      "96"
+     ],
+     "ans": 3,
+     "hint": "Times 10 plus times 2.",
+     "steps": [
+      "Times 12 is times 10 plus times 2.",
+      "10 × 8 = 80.",
+      "2 × 8 = 16.",
+      "80 + 16 = 96.",
+      "So 8 × 12 = 96."
+     ],
+     "ex": {
+      "main": "**96.** 10 × 8 = 80. 2 × 8 = 16. 80 + 16 = 96.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      12
+     ]
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 12?",
+     "opts": [
+      "144",
+      "132",
+      "156",
+      "441"
+     ],
+     "ans": 0,
+     "hint": "12 × 12 = 144, a dozen dozens.",
+     "steps": [
+      "Times 12 is times 10 plus times 2.",
+      "10 × 12 = 120.",
+      "2 × 12 = 24.",
+      "120 + 24 = 144.",
+      "So 12 × 12 = 144."
+     ],
+     "ex": {
+      "main": "**144.** 10 × 12 = 120. 2 × 12 = 24. 120 + 24 = 144.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      12,
+      12
+     ]
+    },
+    {
+     "id": "q9",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 8?",
+     "opts": [
+      "56",
+      "64",
+      "72",
+      "46"
+     ],
+     "ans": 1,
+     "hint": "Double, double, double.",
+     "steps": [
+      "Times 8 is double, double, double.",
+      "Double 8: 16.",
+      "Double again: 32.",
+      "Double once more: 64.",
+      "So 8 × 8 = 64."
+     ],
+     "ex": {
+      "main": "**64.** Double 8: 16. Double again: 32. Double once more: 64.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      8
+     ]
+    }
+   ],
+   "round": 10,
+   "facts": true,
+   "libv": 1
+  }
+ }
+}

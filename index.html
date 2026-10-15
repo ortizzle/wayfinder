@@ -1115,6 +1115,19 @@ nav{position:fixed;bottom:0;left:0;right:0;z-index:50;background:color-mix(in sr
 .sortcard .was{font-family:'Plus Jakarta Sans',system-ui,sans-serif;font-size:12.5px;font-weight:700;color:var(--bad);margin-top:8px}
 .sortbtns{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
 .sortbtns .btn{margin:0}
+.sprhead{display:flex;justify-content:space-between;align-items:baseline;margin:6px 2px 6px}
+.sprclock{font-family:'Fraunces',serif;font-size:30px;font-weight:600;color:var(--text);font-variant-numeric:tabular-nums}
+.sprcount{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.sprtrack{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin-bottom:var(--gap)}
+.sprtrack>div{height:100%;background:var(--ac);transition:width .25s linear}
+.sprtrack>div.low{background:var(--warm)}
+.sprq{background:var(--raised);border:1px solid var(--line);border-radius:18px;padding:18px 14px;text-align:center;margin-bottom:var(--gap)}
+.sprfact{font-family:'Fraunces',serif;font-size:44px;font-weight:600;color:var(--text);line-height:1.1;font-variant-numeric:tabular-nums}
+.sprans{font-size:34px;font-weight:700;color:var(--ac-fg);min-height:44px;margin-top:6px;font-variant-numeric:tabular-nums}
+.sprans.empty{color:var(--muted)}
+.keypad{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap-row);margin-bottom:var(--gap)}
+.keypad .key{min-height:58px;font-size:24px;font-weight:700;margin:0;font-variant-numeric:tabular-nums}
+.btn.sprintall{border-color:var(--ac)}
 .sortmeta{display:flex;justify-content:space-between;font-size:11.5px;color:var(--faint);margin-top:8px}
 /* Pair up (Wayfinder v166 / Ad Astra v186): two columns of tiles, tap a
    question then tap its answer. The columns deliberately do NOT align row for
@@ -1762,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v184 · A discard that holds';
+const APP_VERSION = 'v185 · Math facts';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3326,7 +3339,18 @@ const SUGGESTED_ASSESS = [
   {id:'sg-math-2026-10-01', classId:'math',    kind:'quiz',
    title:'Math quiz · Unit 3, lessons 3-1 to 3-4', date:'2026-10-01'},
   {id:'sg-wri-2026-10-02',  classId:'writing', kind:'quiz',
-   title:'Grammar quiz · Nouns, descriptive adjectives and determiners', date:'2026-10-02'}
+   title:'Grammar quiz · Nouns, descriptive adjectives and determiners', date:'2026-10-02'},
+  /* Math update, 10/15. The Unit 3 test date is stated outright. The Unit 5
+     dates are the teacher's own "estimated" and "expected to be around", so
+     the titles say so, the same convention as the chemistry test above; each
+     is editable once accepted. Unit 5 comes BEFORE Unit 4 — she says so.
+     The facts pop quiz has no date ("soon"), so it is not a row here. */
+  {id:'sg-math-2026-10-20', classId:'math', kind:'test',
+   title:'Math test · Unit 3', date:'2026-10-20'},
+  {id:'sg-math-2026-10-28', classId:'math', kind:'quiz',
+   title:'Math quiz · Unit 5 (estimated date)', date:'2026-10-28'},
+  {id:'sg-math-2026-11-05', classId:'math', kind:'test',
+   title:'Math test · Unit 5 (around 11/5, date to confirm)', date:'2026-11-05'}
 ];
 
 /* Mission Control reads the sibling app's gist, read-only — never merged,
@@ -3591,7 +3615,8 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
      one file per lesson exactly like Unit 2. Its own shelf, `Unit 3`. */
   'content/math-u3-l1.json', 'content/math-u3-l2.json', 'content/math-u3-l3.json',
   'content/math-u3-l4.json', 'content/math-u3-l5.json', 'content/math-u3-l6.json',
-  'content/math-u3-l7.json', 'content/math-u3-l8.json', 'content/math-u3-l9.json'];
+  'content/math-u3-l7.json', 'content/math-u3-l8.json', 'content/math-u3-l9.json',
+  'content/math-facts-1.json', 'content/math-facts-2.json', 'content/math-facts-3.json', 'content/math-facts-4.json'];
 
 /* ---------- The unit library ----------
    Unit files I publish ship inside the app itself (content/ on the same
@@ -3727,6 +3752,7 @@ function modeLabel(l){
   if(l.mode==='ladder')  return 'Junior Jeopardy';
   if(l.mode==='starsky') return 'Star sky';
   if(l.mode==='bee') return 'Spelling Bee';
+  if(l.mode==='sprint')  return l.scope==='all' ? 'Facts sprint · the pop quiz' : 'Facts sprint';
   if(l.mode==='read')    return 'Reading';
   if(l.mode==='readfin') return 'Finished a book';
   if(l.mode==='quiz'){
@@ -5771,6 +5797,7 @@ function unitCard(u, c, label){
       ()=>launchQuiz(u.id,c.id,true)));
   } else row.classList.add('one');
   card.appendChild(row);
+  if(u.facts && factQs(u).length) sprintDoors(card, u, c);
   /* Sort — one door per set the unit carries. Content-shaped: a set is
      authored on the unit, so it drafts, approves and shelves with it. */
   (u.sorts||[]).forEach(set=>{
@@ -6460,6 +6487,254 @@ SCREENS.sort = function(root){
   const leave = el('button','btn btn-ghost', finished ? '← Back' : '← Leave — cards sorted so far still count');
   leave.addEventListener('click',()=>{ sortLog(u, set); sortState = null; go('unit',{classId:ctx.classId}); });
   root.appendChild(leave);
+};
+
+/* ================= FACTS SPRINT ================= */
+/* The teacher's pop quiz, rehearsed (Wayfinder v185, THIS APP ONLY). Her math
+   update of 10/15: "students will have a pop quiz for their multiplication
+   math facts, and will need to answer 50 questions in 3 minutes." So the
+   sprint is that shape exactly — typed answers, one clock for the whole
+   sheet, no options to pick from — because recognising 56 among four choices
+   is a different skill from producing it in under four seconds.
+   Rules that are the point:
+   - It draws ONLY from questions that carry `fact:[a,b]` on units flagged
+     `facts:true`. Content-shaped, never inferred, like `bee` and `sorts`.
+   - Every typed answer credits the fact's REAL question through
+     creditAnswer(), so a fact she misses lands in the Growth Zone and comes
+     back as an ordinary question. Timed, so `plain:false`: like Beat the
+     clock, practice never moves the map — only the quiz finishes a lesson.
+   - A blank is a skip, never a miss — on paper you skip and move on, and a
+     fact she never answered says nothing about whether she knows it. Facts
+     the clock reached first are not misses either.
+   - No verdict mid-sprint. A right answer gets a light buzz; a wrong one gets
+     nothing and the next fact appears. The results say which facts to
+     practise, as information, never as a mark against her.
+   - One log, written in place as she answers, so leaving keeps what she did. */
+const SPRINT_FULL = { n:50, secs:180, label:'The pop quiz', sub:'50 facts in 3 minutes' };
+const SPRINT_SET  = { n:25, secs:90,  label:'Sprint this set', sub:'25 in 90 seconds' };
+const SPRINT_XP = 2;
+let sprintState = null, sprintTick = null;
+const factQs = u => (u && u.questions || []).filter(q => Array.isArray(q.fact) && q.fact.length === 2);
+const factUnits = cid => units(cid).filter(u => u.facts && factQs(u).length);
+function sprintCfg(scope){ return scope === 'all' ? SPRINT_FULL : SPRINT_SET; }
+/* Past sprints of this scope, newest first. Derived, never stored. */
+function sprintRuns(scope, unitId){
+  return logs().filter(l => l.mode === 'sprint' && l.scope === scope && (scope === 'all' || l.unitId === unitId))
+    .sort((a,b) => (b.at||0) - (a.at||0));
+}
+function sprintDeal(scope, u, cid){
+  const cfg = sprintCfg(scope);
+  const pool = [];
+  (scope === 'all' ? factUnits(cid) : [u]).forEach(x => factQs(x).forEach(q => pool.push({unitId:x.id, qid:q.id, f:q.fact})));
+  if(!pool.length) return false;
+  const items = [];
+  while(items.length < cfg.n){
+    const deck = pool.slice().sort(() => Math.random() - .5);
+    for(const it of deck){
+      if(items.length >= cfg.n) break;
+      const prev = items[items.length - 1];
+      if(prev && prev.qid === it.qid && prev.unitId === it.unitId && pool.length > 1) continue;
+      /* Either way round: on paper the same fact turns up as 7 x 8 and 8 x 7. */
+      const flip = Math.random() < .5;
+      items.push({ unitId:it.unitId, qid:it.qid, a: flip ? it.f[1] : it.f[0], b: flip ? it.f[0] : it.f[1] });
+    }
+  }
+  sprintState = { scope, unitId:u.id, classId:cid, items, i:0, typed:'', answers:[], start:null,
+                  secs:cfg.secs, logId:null, over:false };
+  return true;
+}
+function stopSprintTick(){ clearInterval(sprintTick); sprintTick = null; }
+function sprintLeft(st){ return st.start ? Math.max(0, st.secs*1000 - (Date.now() - st.start)) : st.secs*1000; }
+function sprintClockText(ms){ const s = Math.ceil(ms/1000); return Math.floor(s/60) + ':' + String(s%60).padStart(2,'0'); }
+function sprintLog(st){
+  if(!st.answers.length) return;
+  st.logId = st.logId || uid('log');
+  const right = st.answers.filter(a => a.right).length;
+  put({ id:st.logId, type:'log', mode:'sprint', scope:st.scope, classId:st.classId,
+        unitId: st.scope === 'all' ? null : st.unitId, date:AZ.today(), at:st.start,
+        correct:right, total:st.items.length, answered:st.answers.filter(a => a.typed !== null).length,
+        seconds: Math.round(Math.min(st.secs*1000, Date.now() - st.start)/1000), xp:right*SPRINT_XP, hints:0 });
+}
+function sprintEnd(st){
+  if(st.over) return;
+  st.over = true; stopSprintTick();
+  sprintLog(st);
+  checkBadges(); syncSoon();
+  if(st.answers.length) celebrate();
+}
+function sprintSubmit(){
+  const st = sprintState;
+  if(!st || st.over || !st.start) return;
+  if(!sprintLeft(st)){ sprintEnd(st); render(); return; }
+  const it = st.items[st.i];
+  if(st.typed === ''){
+    st.answers.push(Object.assign({}, it, {typed:null, right:false}));
+  } else {
+    const typed = Number(st.typed), right = typed === it.a * it.b;
+    st.answers.push(Object.assign({}, it, {typed, right}));
+    const u = unitFor(it.unitId), q = u && u.questions.find(x => x.id === it.qid);
+    if(q) creditAnswer({ unitId:it.unitId, classId:st.classId, qid:it.qid, q, right,
+                         chose:String(typed), plain:false, miss:!right });
+    if(right) tapBuzz(12);
+  }
+  st.typed = ''; st.i++;
+  sprintLog(st);
+  if(st.i >= st.items.length) sprintEnd(st);
+  render();
+}
+function sprintKey(k){
+  const st = sprintState;
+  if(!st || st.over || !st.start) return;
+  if(k === 'ok') return sprintSubmit();
+  if(k === 'del') st.typed = st.typed.slice(0, -1);
+  else if(/^\d$/.test(k) && st.typed.length < 3) st.typed = (st.typed === '0' ? '' : st.typed) + k;
+  render();
+}
+/* A keyboard works too — handy on a laptop, harmless on her phone. */
+document.addEventListener('keydown', e => {
+  if(view !== 'sprint' || !sprintState || sprintState.over || !sprintState.start) return;
+  if(/^\d$/.test(e.key)) sprintKey(e.key);
+  else if(e.key === 'Backspace') sprintKey('del');
+  else if(e.key === 'Enter') sprintKey('ok');
+  else return;
+  e.preventDefault();
+});
+/* The two doors on a facts unit's card: this set, and the real shape. */
+function sprintDoors(card, u, c){
+  [['set', SPRINT_SET], ['all', SPRINT_FULL]].forEach(([scope, cfg]) => {
+    const b = el('button','btn btn-secondary' + (scope === 'all' ? ' sprintall' : ''));
+    const st = el('span','btnstack');
+    st.appendChild(el('span',null,'⏱️  ' + cfg.label + ' — ' + cfg.sub));
+    const runs = sprintRuns(scope, u.id);
+    if(runs.length){
+      const best = runs.reduce((m,l) => Math.max(m, l.correct||0), 0);
+      st.appendChild(el('small',null, 'Last: ' + (runs[0].correct||0) + ' of ' + cfg.n + ' · best ' + best));
+    } else st.appendChild(el('small',null, scope === 'all' ? 'Every table, mixed: the shape of your class pop quiz' : 'Just this set, at the pop quiz pace'));
+    b.appendChild(st);
+    b.addEventListener('click', () => { sprintState = null; stopSprintTick(); go('sprint',{unitId:u.id, classId:c.id, scope}); });
+    card.appendChild(b);
+  });
+}
+SCREENS.sprint = function(root){
+  const u = unitFor(ctx.unitId), c = CLASS_BY_ID[ctx.classId];
+  if(!u || !c || !u.facts) return go('unit',{classId:ctx.classId});
+  const scope = ctx.scope === 'all' ? 'all' : 'set', cfg = sprintCfg(scope);
+  if(!sprintState || sprintState.unitId !== u.id || sprintState.scope !== scope){
+    stopSprintTick();
+    if(!sprintDeal(scope, u, c.id)) return go('unit',{classId:c.id});
+  }
+  const st = sprintState;
+  const leaveTo = () => go('unit',{classId:c.id});
+
+  /* Before the clock: say exactly what is about to happen, then wait. */
+  if(!st.start){
+    const h = el('div','card ac');
+    h.appendChild(el('div','eyebrow', scope === 'all' ? 'Math facts · the pop quiz' : u.title + ' · Sprint'));
+    h.appendChild(el('h2',null, cfg.n + ' facts. ' + (cfg.secs >= 120 ? (cfg.secs/60) + ' minutes.' : cfg.secs + ' seconds.')));
+    h.appendChild(el('p',null, 'Type each answer and tap ✓. Stuck on one? Tap ✓ with nothing typed to skip it and keep going — a skipped fact is not a wrong one.'));
+    h.appendChild(el('p',null, scope === 'all'
+      ? 'This is the shape of your class pop quiz: every table, mixed, against one clock.'
+      : 'Same pace as the pop quiz, just the facts from this set.'));
+    root.appendChild(h);
+    const go1 = el('button','btn btn-primary','Go →');
+    go1.addEventListener('click', () => {
+      st.start = Date.now();
+      stopSprintTick();
+      sprintTick = setInterval(() => {
+        if(view !== 'sprint' || sprintState !== st || st.over){ stopSprintTick(); return; }
+        const left = sprintLeft(st);
+        const ck = document.getElementById('sprclock'), bar = document.getElementById('sprbar');
+        if(ck) ck.textContent = sprintClockText(left);
+        if(bar){ bar.style.width = (left / (st.secs*1000) * 100) + '%'; bar.className = left < 15000 ? 'low' : ''; }
+        if(!left){ sprintEnd(st); render(); }
+      }, 250);
+      render();
+    });
+    root.appendChild(go1);
+    const lv = el('button','btn btn-ghost','← Back');
+    lv.addEventListener('click', () => { sprintState = null; leaveTo(); });
+    root.appendChild(lv);
+    return;
+  }
+
+  if(!st.over){
+    const left = sprintLeft(st);
+    const head = el('div','sprhead');
+    const ck = el('span','sprclock', sprintClockText(left)); ck.id = 'sprclock';
+    head.appendChild(ck);
+    head.appendChild(el('span','sprcount', (st.i + 1) + ' of ' + st.items.length));
+    root.appendChild(head);
+    const track = el('div','sprtrack'); const bar = el('div', left < 15000 ? 'low' : ''); bar.id = 'sprbar';
+    bar.style.width = (left / (st.secs*1000) * 100) + '%';
+    track.appendChild(bar); root.appendChild(track);
+    const it = st.items[st.i];
+    const qc = el('div','sprq');
+    qc.appendChild(el('div','sprfact', it.a + ' × ' + it.b));
+    qc.appendChild(el('div','sprans' + (st.typed ? '' : ' empty'), st.typed || '?'));
+    root.appendChild(qc);
+    const pad = el('div','keypad');
+    ['1','2','3','4','5','6','7','8','9','del','0','ok'].forEach(k => {
+      const b = el('button', 'btn ' + (k === 'ok' ? 'btn-primary' : 'btn-secondary') + ' key',
+        k === 'del' ? '⌫' : k === 'ok' ? (st.typed ? '✓' : 'Skip') : k);
+      b.setAttribute('aria-label', k === 'del' ? 'Delete' : k === 'ok' ? (st.typed ? 'Enter answer' : 'Skip this fact') : k);
+      b.addEventListener('click', () => sprintKey(k));
+      pad.appendChild(b);
+    });
+    root.appendChild(pad);
+    const stop = el('button','btn btn-ghost','Stop — what you answered still counts');
+    stop.addEventListener('click', () => { sprintEnd(st); render(); });
+    root.appendChild(stop);
+    return;
+  }
+
+  /* The results: the count once, then the facts worth practising. */
+  const right = st.answers.filter(a => a.right);
+  const wrong = st.answers.filter(a => a.typed !== null && !a.right);
+  const skipped = st.answers.filter(a => a.typed === null).length;
+  const unreached = st.items.length - st.answers.length;
+  const used = Math.round(Math.min(st.secs*1000, Date.now() - st.start) / 1000);
+  const r = el('div','card ac');
+  r.appendChild(el('div','eyebrow', scope === 'all' ? 'Math facts · the pop quiz' : u.title + ' · Sprint'));
+  r.appendChild(el('h2',null, unreached ? 'Time' : 'Every fact answered'));
+  const t = el('div','tally');
+  const chip = (n, rest) => { const s = el('span'); s.appendChild(el('b',null,String(n))); s.appendChild(document.createTextNode(rest)); t.appendChild(s); };
+  chip(right.length, ' of ' + st.items.length + ' right');
+  chip(sprintClockText(used*1000), ' used');
+  chip('+' + (right.length*SPRINT_XP), ' XP');
+  r.appendChild(t);
+  const notes = [];
+  if(skipped) notes.push(skipped + ' skipped');
+  if(unreached) notes.push(unreached + ' the clock got to first');
+  if(notes.length) r.appendChild(el('p',null, notes.join(' · ') + '. Those are not wrong answers; they are the facts that need to come faster.'));
+  const runs = sprintRuns(scope, u.id);
+  if(runs.length > 1){
+    const best = runs.reduce((m,l) => Math.max(m, l.correct||0), 0);
+    r.appendChild(el('p',null, 'Your best ' + (scope === 'all' ? 'pop quiz' : 'sprint on this set') + ' so far: ' + best + ' of ' + st.items.length + '.'));
+  }
+  root.appendChild(r);
+  if(wrong.length){
+    const w = el('div','card');
+    w.appendChild(el('h3',null,'Worth another look'));
+    w.appendChild(el('p',null,'These are in your Growth Zone now, so they come back around until they stick.'));
+    const seen = new Set();
+    wrong.forEach(a => {
+      const key = Math.min(a.a,a.b) + 'x' + Math.max(a.a,a.b);
+      if(seen.has(key)) return; seen.add(key);
+      const row = el('div','row');
+      row.appendChild(el('span','k', a.a + ' × ' + a.b + ' = ' + (a.a*a.b)));
+      row.appendChild(el('span','v', 'you put ' + a.typed));
+      w.appendChild(row);
+    });
+    root.appendChild(w);
+  } else if(st.answers.some(a => a.typed !== null)){
+    root.appendChild(el('p','hintline','Every answer you typed was right.'));
+  }
+  const again = el('button','btn btn-primary','Go again');
+  again.addEventListener('click', () => { sprintState = null; render(); });
+  root.appendChild(again);
+  const back = el('button','btn btn-ghost','← Back to ' + c.name);
+  back.addEventListener('click', () => { sprintState = null; leaveTo(); });
+  root.appendChild(back);
 };
 
 /* ================= FLASHCARDS ================= */

@@ -2011,6 +2011,133 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Math Facts, and the sprint that matches the pop quiz (v185, THIS APP ONLY)
+
+Chris forwarded the 4th-grade teacher's math update of 10/15: *"Can we add a
+math facts folder and create flashcards and timed quizzes to match what the
+teacher summaries?"* Her update says some students are shaky on their facts
+and that a **pop quiz of 50 multiplication facts in 3 minutes** is coming.
+Her attached flashcards and practice sheet never reached Drive (searched by
+date and by title), so everything here is built from the email itself.
+
+**The "folder" is a shelf: `Math Facts`, four sets.** Each fact belongs to
+the first set, in learning order, that contains either of its factors:
+
+| id | title | facts |
+|---|---|---|
+| `unit-mf-1` | `Math Facts · Set 1: ×0, ×1, ×2, ×5 and ×10` | 30, plus the ×0/×1 rules and a turn-around question |
+| `unit-mf-2` | `Math Facts · Set 2: ×3 and ×4` | 15 |
+| `unit-mf-3` | `Math Facts · Set 3: ×6 and ×7` | 11 |
+| `unit-mf-4` | `Math Facts · Set 4: ×8, ×9, ×11 and ×12` | 10 |
+
+That is all 66 facts from 2 × 2 to 12 × 12. There is one card per fact; the
+bold lead is the product, and the bullets give the turn-around and a worked
+strategy. The strategies:
+
+- ×4 is double, double
+- ×6 is ×5 plus one more group
+- ×7 is ×5 plus ×2
+- ×9 is ×10 minus one group
+
+Every question carries **`fact:[a,b]`** and every unit carries
+**`facts:true`**. `tools/builders/build_math_facts.py` computes every
+product, every strategy step (re-checking each "x + y = z" in it) and every
+wrong option. The wrong options are the neighbouring facts, such as 49, 63
+and 48 for 7 × 8, never random numbers.
+
+**The teacher's other ask is built into the tips: check your work.** She
+says students know the skill and still make calculation errors. So each
+fact's `ex.tip` is a check, not a restatement:
+
+- the digits of a ×9 answer add to 9
+- a ×5 answer ends in 0 or 5
+- an even factor means an even answer
+- otherwise, the turn-around fact
+
+Set 1 also carries a card on when to check.
+
+**The Facts sprint (`SCREENS.sprint`) is the pop quiz's shape, and that is
+the engine half.** Beat the clock times each multiple-choice question
+separately. The real quiz is a sheet: typed answers, one clock, no options
+to recognise. So every facts card gets two doors:
+
+- **Sprint this set**: 25 facts in 90 seconds, drawn from this set only, at
+  the pop quiz's pace.
+- **The pop quiz**: 50 facts in 3 minutes, drawn from every live facts unit
+  in the class.
+
+Rules that are the point:
+
+- **She types the answer on a keypad**, never picks it. The keys are 58px,
+  and a laptop keyboard works too. An empty ✓ reads **Skip**.
+- **The clock starts on Go, never on arrival.** The intro card says exactly
+  what is about to happen first.
+- **Every typed answer credits the fact's real question through
+  `creditAnswer()`**. A missed fact therefore lands in the Growth Zone and
+  comes back as an ordinary question. It is timed, so `plain:false`: like
+  Beat the clock, the sprint never moves the map.
+- **A skip is not a miss, and neither is a fact the clock reached first.**
+  On paper you skip and move on, and an unanswered fact says nothing about
+  whether she knows it. The results name both counts as "facts that need to
+  come faster", never as wrong answers.
+- **No verdict mid-sprint.** A right answer gets a light buzz. A wrong one
+  gets nothing and the next fact appears. The results list each wrong fact
+  once, with what she typed.
+- **One `mode:'sprint'` log, written in place as she answers**, so Stop or
+  leaving keeps what she did. `scope` is `'set'` or `'all'`, and `modeLabel`
+  names both. The door shows the last score and the best, derived from those
+  logs.
+- **The clock is one interval that stops itself** when the view or the state
+  changes. Nothing is left ticking after she leaves.
+- Facts appear either way round (7 × 8 and 8 × 7). A deal never repeats the
+  same fact twice in a row.
+
+> ⚠️ **The facts run to 12 × 12, and that is an assumption.** Her sheet
+> never arrived, so its range is unknown. If it stops at 10 × 10, Set 4's
+> ×11 and ×12 facts are extra; every `parentNote` says so. Drop her sheet in
+> Drive and the range can be matched.
+
+**The update's dates went into `SUGGESTED_ASSESS`:**
+
+- the Unit 3 test on 10/20, stated outright
+- the Unit 5 quiz on 10/28, the teacher's own "estimated"
+- the Unit 5 test around 11/5, the teacher's own "expected"
+
+The two Unit 5 titles say they are not fixed, the chemistry-test convention.
+The facts pop quiz has no date ("soon"), so it has no row. **Not built yet,
+and offered to Chris instead:** the one-digit long-division review she asks
+families to practise before Unit 5.
+
+`tools/test_math_facts.js` (26 assertions) pins:
+
+- the 66 facts
+- every answer equal to a × b, with four unique options and all four slots
+  used
+- the shelf order
+- both doors on a facts card at 44px, and none on an ordinary lesson
+- the intro waiting for Go
+- the deal: 25 facts from the set, no back-to-back repeats; 50 in 180 s from
+  all four sets
+- a typed right answer crediting with `plain:0` and no miss
+- a wrong answer landing at box 0 with what she typed
+- a skip writing nothing
+- the keyboard
+- the in-place log
+- time-up stopping the clock and naming the unreached facts without making
+  one a miss
+- Stop keeping her answers
+- the door's last and best
+- `modeLabel`
+- no clock left running
+- the three dates
+
+**Verified by making a skip write a miss and putting the doors on every
+lesson, and watching exactly those two assertions fail.**
+
+> ⚠️ **One assertion failed first as MY bug:** it measured the doors' height
+> after navigating to another shelf, so the buttons were detached and read
+> 0px. Measure before you leave the screen.
+
 ### A discard that holds (v184 / Ad Astra v209, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
