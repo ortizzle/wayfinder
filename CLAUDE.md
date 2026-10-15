@@ -2020,6 +2020,58 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### All Facts Review, because the quiz mixes every table (v187)
+
+Chris, on the four Math Facts sets: *"Math facts folder looks like practice for
+number sets, but the quizzes will likely include all numbers. Can we make sure
+include a section for all numbers review?"* He is right about the gap. Every
+set's QUIZ asks only that set's tables, and only the pop-quiz sprint mixed them.
+Knowing the sevens inside a set of sevens is not the same as knowing 7 × 8 when
+it turns up between 3 × 9 and 12 × 4.
+
+`math-facts-review.json` (`unit-mf-all`), titled `Math Facts · All Facts Review`:
+
+- **72 questions in one pool**: all 66 facts from 2 × 2 to 12 × 12, plus six
+  × 0 / × 1 facts the sets never ask. Every table from 0 to 12 is in it.
+  `round:20`, and `pickRound`'s random tie-break means a round really mixes
+  tables (the test asks for five or more in one round).
+- **16 cards: one strategy per table (0–12)**, plus "which strategy?", the five
+  hard facts, and skip-don't-stall. It deliberately has no fact cards, because
+  those already live in Sets 1–4. Mixed review means deciding which strategy a
+  fact wants, so that is what the cards drill. They are flagged `added`.
+- **Built from the same helpers as the sets.** `build_math_facts.py` was
+  refactored into importable functions (`table_of()`, `main()` behind
+  `__main__`) and verified to produce byte-identical sets apart from
+  `updatedAt`. The sets were NOT rebuilt or re-shipped, so nothing re-drafts.
+- **`order:1`** puts it last on the shelf. On title alone "All" sorts ahead of
+  "Set 1", and `order` is a whole-shelf bucket, which is what a review of the
+  whole shelf wants (v102).
+- **`prep:true`**: it is built for a named test, the pop quiz (v139).
+
+**One engine fix came with it, and the test proves it is needed.** The pop-quiz
+pool gathered facts from every `facts:true` unit, so once the review existed,
+every fact would sit in the pool twice and a typed answer might credit the
+review instead of the set that owns the fact. `sprintDeal('all')` now takes each
+fact once, keyed by its sorted factors, and visits units with `factsMixed:true`
+last. A fact the sets own is always credited to its set; only the × 0 / × 1
+facts the review alone carries credit the review. The review's own "Sprint
+this set" door draws from every table and says so.
+
+`tools/test_math_facts_review.js` (16 assertions) pins:
+
+- all 66 facts plus every table 0–12
+- each answer equal to a × b
+- the 13 strategy cards and no fact cards
+- the flags, last place on the shelf and the gold band
+- a mixed quiz round
+- its sprint spanning the tables
+- **no fact taken from two units, and no set-owned fact credited to the
+  review, over four pop-quiz deals**
+- a typed answer crediting the review's own question with `plain:0`
+
+**Verified by switching the dedup off and watching exactly those two
+assertions fail (29 duplicated facts, 90 credits stolen from the sets).**
+
 ### Long division before Unit 5 (v186)
 
 Chris: *"Build the long division review too."* This is the second half of

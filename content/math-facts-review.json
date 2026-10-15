@@ -1,0 +1,2248 @@
+{
+ "v": 4,
+ "records": {
+  "unit-mf-all": {
+   "id": "unit-mf-all",
+   "type": "unit",
+   "updatedAt": 1792062571491,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Math Facts · All Facts Review",
+   "srcName": "Teacher's math update, 10/15",
+   "source": "Math facts (from the teacher's update)",
+   "summary": {
+    "text": "Every multiplication fact from 0 to 12, mixed together the way the pop quiz will ask them, with a strategy card for each table.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The pop quiz takes facts from every table at once. Knowing the sevens inside a set of sevens is not the same as knowing 7 × 8 when it turns up between 3 × 9 and 12 × 4.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Answer any fact from 0 × 0 to 12 × 12 from memory, in any order.",
+     "from": "added"
+    },
+    {
+     "text": "Pick the quickest strategy for a fact you are not sure of.",
+     "from": "added"
+    },
+    {
+     "text": "Skip and come back rather than stall on one fact.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "The mixed review for the multiplication facts pop quiz (50 facts in 3 minutes). It asks all 66 facts from 2 × 2 to 12 × 12 in one pool, plus the × 0 and × 1 rules, so a round mixes every table the way the real quiz will. The cards are one strategy per table rather than repeats of the fact cards in Sets 1 to 4. Every answer and wrong option was computed, not typed, by the same code that built the sets. The facts run to 12 × 12, which is an assumption until her teacher's sheet arrives; if it stops at 10 × 10, the × 11 and × 12 facts are extra.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Take a round of twenty mixed facts, then try the pop quiz sprint.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Any number × 0",
+     "def": "**Always 0.**\n• Zero groups of anything is nothing.\n• 0 × 12 = 0 and 12 × 0 = 0.",
+     "hint": "No groups, nothing to count.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "Any number × 1",
+     "def": "**The other number, unchanged.**\n• One group of 9 is just 9.\n• 1 × 11 = 11.",
+     "hint": "One group: nothing changes.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "Any number × 2",
+     "def": "**Double the other number.**\n• 2 × 8: 8 + 8 = 16.",
+     "hint": "Twins.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Any number × 3",
+     "def": "**Double it, then add one more group.**\n• 3 × 7: double 7 is 14, plus 7 is 21.",
+     "hint": "Two groups and one more.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Any number × 4",
+     "def": "**Double it, then double again.**\n• 4 × 6: double 6 is 12, double 12 is 24.",
+     "hint": "Double, double.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "Any number × 5",
+     "def": "**Half of times 10.**\n• 5 × 8: 10 × 8 = 80, half is 40.\n• The answer always ends in 0 or 5.",
+     "hint": "Half of a ten-fact.",
+     "from": "added"
+    },
+    {
+     "id": "c6",
+     "term": "Any number × 6",
+     "def": "**Times 5, plus one more group.**\n• 6 × 7: 5 × 7 = 35, plus 7 is 42.",
+     "hint": "One past the fives.",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Any number × 7",
+     "def": "**Times 5 plus times 2.**\n• 7 × 8: 5 × 8 = 40, 2 × 8 = 16, 40 + 16 = 56.",
+     "hint": "Five and two make seven.",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "Any number × 8",
+     "def": "**Double, double, double.**\n• 8 × 6: 12, then 24, then 48.",
+     "hint": "Three doublings.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "Any number × 9",
+     "def": "**Times 10, minus one group.**\n• 9 × 7: 70 − 7 = 63.\n• The digits of the answer add up to 9.",
+     "hint": "Ten groups, take one away.",
+     "from": "added"
+    },
+    {
+     "id": "c10",
+     "term": "Any number × 10",
+     "def": "**Add a zero to the end.**\n• 10 × 7 = 70: seven ones become seven tens.",
+     "hint": "Ones become tens.",
+     "from": "added"
+    },
+    {
+     "id": "c11",
+     "term": "Any number × 11",
+     "def": "**Times 10, plus one more group.**\n• 11 × 6: 60 + 6 = 66.\n• Up to 11 × 9, the digit just repeats.",
+     "hint": "Ten groups and one more.",
+     "from": "added"
+    },
+    {
+     "id": "c12",
+     "term": "Any number × 12",
+     "def": "**Times 10 plus times 2.**\n• 12 × 7: 70 + 14 = 84.",
+     "hint": "Ten and two make twelve.",
+     "from": "added"
+    },
+    {
+     "id": "c13",
+     "term": "Which strategy?",
+     "def": "**Use the smaller factor's strategy, unless the other one is easier.**\n• 7 × 2: double 7 is quicker than the sevens.\n• 9 × 6: either works; pick the one you trust.",
+     "hint": "Turn the fact around if the other way is easier.",
+     "from": "added"
+    },
+    {
+     "id": "c14",
+     "term": "The hard ones",
+     "def": "**6 × 7 = 42, 6 × 8 = 48, 7 × 8 = 56, 8 × 8 = 64, 7 × 7 = 49.**\n• These are the facts most people miss under a clock.\n• 5, 6, 7, 8: 56 is 7 × 8.",
+     "hint": "Say these five out loud until they come without counting.",
+     "from": "added"
+    },
+    {
+     "id": "c15",
+     "term": "Mixed, against a clock",
+     "def": "**Answer the ones you know first, skip the ones you don't.**\n• On paper a skipped fact costs nothing; a stuck one costs the clock.\n• Come back to the skips if time is left.",
+     "hint": "Skip, don't stall.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2 × 2?",
+     "opts": [
+      "4",
+      "2",
+      "6",
+      "14"
+     ],
+     "ans": 0,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 2: 2 + 2 = 4.",
+      "So 2 × 2 = 4."
+     ],
+     "ex": {
+      "main": "**4.** Double 2: 2 + 2 = 4.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      2,
+      2
+     ]
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2 × 3?",
+     "opts": [
+      "4",
+      "6",
+      "8",
+      "3"
+     ],
+     "ans": 1,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 3: 3 + 3 = 6.",
+      "So 2 × 3 = 6."
+     ],
+     "ex": {
+      "main": "**6.** Double 3: 3 + 3 = 6.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      2,
+      3
+     ]
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 2?",
+     "opts": [
+      "10",
+      "6",
+      "8",
+      "4"
+     ],
+     "ans": 2,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 4: 4 + 4 = 8.",
+      "So 4 × 2 = 8."
+     ],
+     "ex": {
+      "main": "**8.** Double 4: 4 + 4 = 8.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      4,
+      2
+     ]
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2 × 5?",
+     "opts": [
+      "5",
+      "8",
+      "12",
+      "10"
+     ],
+     "ans": 3,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 5: 5 + 5 = 10.",
+      "So 2 × 5 = 10."
+     ],
+     "ex": {
+      "main": "**10.** Double 5: 5 + 5 = 10.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      2,
+      5
+     ]
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 2?",
+     "opts": [
+      "12",
+      "10",
+      "14",
+      "6"
+     ],
+     "ans": 0,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 6: 6 + 6 = 12.",
+      "So 6 × 2 = 12."
+     ],
+     "ex": {
+      "main": "**12.** Double 6: 6 + 6 = 12.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      6,
+      2
+     ]
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2 × 7?",
+     "opts": [
+      "12",
+      "14",
+      "16",
+      "7"
+     ],
+     "ans": 1,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 7: 7 + 7 = 14.",
+      "So 2 × 7 = 14."
+     ],
+     "ex": {
+      "main": "**14.** Double 7: 7 + 7 = 14.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      2,
+      7
+     ]
+    },
+    {
+     "id": "q6",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 2?",
+     "opts": [
+      "18",
+      "14",
+      "16",
+      "8"
+     ],
+     "ans": 2,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 8: 8 + 8 = 16.",
+      "So 8 × 2 = 16."
+     ],
+     "ex": {
+      "main": "**16.** Double 8: 8 + 8 = 16.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      2
+     ]
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2 × 9?",
+     "opts": [
+      "9",
+      "16",
+      "20",
+      "18"
+     ],
+     "ans": 3,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 9: 9 + 9 = 18.",
+      "So 2 × 9 = 18."
+     ],
+     "ex": {
+      "main": "**18.** Double 9: 9 + 9 = 18.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (1 + 8)."
+     },
+     "fact": [
+      2,
+      9
+     ]
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 2?",
+     "opts": [
+      "20",
+      "18",
+      "22",
+      "10"
+     ],
+     "ans": 0,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 10: 10 + 10 = 20.",
+      "So 10 × 2 = 20."
+     ],
+     "ex": {
+      "main": "**20.** Double 10: 10 + 10 = 20.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      10,
+      2
+     ]
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2 × 11?",
+     "opts": [
+      "20",
+      "22",
+      "24",
+      "11"
+     ],
+     "ans": 1,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 11: 11 + 11 = 22.",
+      "So 2 × 11 = 22."
+     ],
+     "ex": {
+      "main": "**22.** Double 11: 11 + 11 = 22.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      2,
+      11
+     ]
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 2?",
+     "opts": [
+      "26",
+      "22",
+      "24",
+      "12"
+     ],
+     "ans": 2,
+     "hint": "Double it.",
+     "steps": [
+      "Times 2 means double.",
+      "Double 12: 12 + 12 = 24.",
+      "So 12 × 2 = 24."
+     ],
+     "ex": {
+      "main": "**24.** Double 12: 12 + 12 = 24.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      12,
+      2
+     ]
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 3?",
+     "opts": [
+      "27",
+      "20",
+      "40",
+      "30"
+     ],
+     "ans": 3,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "3 ones become 3 tens.",
+      "3 tens is 30.",
+      "So 10 × 3 = 30."
+     ],
+     "ex": {
+      "main": "**30.** 3 ones become 3 tens. 3 tens is 30.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      10,
+      3
+     ]
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 10?",
+     "opts": [
+      "40",
+      "30",
+      "50",
+      "36"
+     ],
+     "ans": 0,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "4 ones become 4 tens.",
+      "4 tens is 40.",
+      "So 4 × 10 = 40."
+     ],
+     "ex": {
+      "main": "**40.** 4 ones become 4 tens. 4 tens is 40.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      4,
+      10
+     ]
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 5?",
+     "opts": [
+      "40",
+      "50",
+      "60",
+      "45"
+     ],
+     "ans": 1,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "5 ones become 5 tens.",
+      "5 tens is 50.",
+      "So 10 × 5 = 50."
+     ],
+     "ex": {
+      "main": "**50.** 5 ones become 5 tens. 5 tens is 50.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      10,
+      5
+     ]
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 10?",
+     "opts": [
+      "70",
+      "50",
+      "60",
+      "54"
+     ],
+     "ans": 2,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "6 ones become 6 tens.",
+      "6 tens is 60.",
+      "So 6 × 10 = 60."
+     ],
+     "ex": {
+      "main": "**60.** 6 ones become 6 tens. 6 tens is 60.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      6,
+      10
+     ]
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 7?",
+     "opts": [
+      "63",
+      "60",
+      "80",
+      "70"
+     ],
+     "ans": 3,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "7 ones become 7 tens.",
+      "7 tens is 70.",
+      "So 10 × 7 = 70."
+     ],
+     "ex": {
+      "main": "**70.** 7 ones become 7 tens. 7 tens is 70.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      10,
+      7
+     ]
+    },
+    {
+     "id": "q16",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 10?",
+     "opts": [
+      "80",
+      "70",
+      "90",
+      "72"
+     ],
+     "ans": 0,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "8 ones become 8 tens.",
+      "8 tens is 80.",
+      "So 8 × 10 = 80."
+     ],
+     "ex": {
+      "main": "**80.** 8 ones become 8 tens. 8 tens is 80.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      10
+     ]
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 9?",
+     "opts": [
+      "80",
+      "90",
+      "100",
+      "81"
+     ],
+     "ans": 1,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "9 ones become 9 tens.",
+      "9 tens is 90.",
+      "So 10 × 9 = 90."
+     ],
+     "ex": {
+      "main": "**90.** 9 ones become 9 tens. 9 tens is 90.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (9 + 0)."
+     },
+     "fact": [
+      10,
+      9
+     ]
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 10?",
+     "opts": [
+      "110",
+      "90",
+      "100",
+      "1"
+     ],
+     "ans": 2,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "10 ones become 10 tens.",
+      "10 tens is 100.",
+      "So 10 × 10 = 100."
+     ],
+     "ex": {
+      "main": "**100.** 10 ones become 10 tens. 10 tens is 100.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      10,
+      10
+     ]
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 10 × 11?",
+     "opts": [
+      "99",
+      "100",
+      "120",
+      "110"
+     ],
+     "ans": 3,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "11 ones become 11 tens.",
+      "11 tens is 110.",
+      "So 10 × 11 = 110."
+     ],
+     "ex": {
+      "main": "**110.** 11 ones become 11 tens. 11 tens is 110.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      10,
+      11
+     ]
+    },
+    {
+     "id": "q20",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 10?",
+     "opts": [
+      "120",
+      "110",
+      "130",
+      "108"
+     ],
+     "ans": 0,
+     "hint": "Tens: the ones become tens.",
+     "steps": [
+      "Times 10 makes each one worth ten.",
+      "12 ones become 12 tens.",
+      "12 tens is 120.",
+      "So 12 × 10 = 120."
+     ],
+     "ex": {
+      "main": "**120.** 12 ones become 12 tens. 12 tens is 120.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      12,
+      10
+     ]
+    },
+    {
+     "id": "q21",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 5?",
+     "opts": [
+      "10",
+      "15",
+      "20",
+      "12"
+     ],
+     "ans": 1,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 3 = 30.",
+      "Half of 30 is 15.",
+      "So 3 × 5 = 15."
+     ],
+     "ex": {
+      "main": "**15.** 10 × 3 = 30. Half of 30 is 15.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      3,
+      5
+     ]
+    },
+    {
+     "id": "q22",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5 × 4?",
+     "opts": [
+      "25",
+      "15",
+      "20",
+      "16"
+     ],
+     "ans": 2,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 4 = 40.",
+      "Half of 40 is 20.",
+      "So 5 × 4 = 20."
+     ],
+     "ex": {
+      "main": "**20.** 10 × 4 = 40. Half of 40 is 20.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      5,
+      4
+     ]
+    },
+    {
+     "id": "q23",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5 × 5?",
+     "opts": [
+      "52",
+      "20",
+      "30",
+      "25"
+     ],
+     "ans": 3,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 5 = 50.",
+      "Half of 50 is 25.",
+      "So 5 × 5 = 25."
+     ],
+     "ex": {
+      "main": "**25.** 10 × 5 = 50. Half of 50 is 25.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      5,
+      5
+     ]
+    },
+    {
+     "id": "q24",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5 × 6?",
+     "opts": [
+      "30",
+      "25",
+      "35",
+      "24"
+     ],
+     "ans": 0,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 6 = 60.",
+      "Half of 60 is 30.",
+      "So 5 × 6 = 30."
+     ],
+     "ex": {
+      "main": "**30.** 10 × 6 = 60. Half of 60 is 30.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      5,
+      6
+     ]
+    },
+    {
+     "id": "q25",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7 × 5?",
+     "opts": [
+      "30",
+      "35",
+      "40",
+      "28"
+     ],
+     "ans": 1,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 7 = 70.",
+      "Half of 70 is 35.",
+      "So 7 × 5 = 35."
+     ],
+     "ex": {
+      "main": "**35.** 10 × 7 = 70. Half of 70 is 35.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      7,
+      5
+     ]
+    },
+    {
+     "id": "q26",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5 × 8?",
+     "opts": [
+      "45",
+      "35",
+      "40",
+      "32"
+     ],
+     "ans": 2,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 8 = 80.",
+      "Half of 80 is 40.",
+      "So 5 × 8 = 40."
+     ],
+     "ex": {
+      "main": "**40.** 10 × 8 = 80. Half of 80 is 40.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      5,
+      8
+     ]
+    },
+    {
+     "id": "q27",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 5?",
+     "opts": [
+      "36",
+      "40",
+      "50",
+      "45"
+     ],
+     "ans": 3,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 9 = 90.",
+      "Half of 90 is 45.",
+      "So 9 × 5 = 45."
+     ],
+     "ex": {
+      "main": "**45.** 10 × 9 = 90. Half of 90 is 45.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (4 + 5)."
+     },
+     "fact": [
+      9,
+      5
+     ]
+    },
+    {
+     "id": "q28",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 5?",
+     "opts": [
+      "55",
+      "50",
+      "60",
+      "44"
+     ],
+     "ans": 0,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 11 = 110.",
+      "Half of 110 is 55.",
+      "So 11 × 5 = 55."
+     ],
+     "ex": {
+      "main": "**55.** 10 × 11 = 110. Half of 110 is 55.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      11,
+      5
+     ]
+    },
+    {
+     "id": "q29",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5 × 12?",
+     "opts": [
+      "55",
+      "60",
+      "65",
+      "48"
+     ],
+     "ans": 1,
+     "hint": "Half of times 10.",
+     "steps": [
+      "Times 5 is half of times 10.",
+      "10 × 12 = 120.",
+      "Half of 120 is 60.",
+      "So 5 × 12 = 60."
+     ],
+     "ex": {
+      "main": "**60.** 10 × 12 = 120. Half of 120 is 60.",
+      "tip": "Check: a ×5 answer always ends in 0 or 5."
+     },
+     "fact": [
+      5,
+      12
+     ]
+    },
+    {
+     "id": "q30",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 3?",
+     "opts": [
+      "12",
+      "6",
+      "9",
+      "19"
+     ],
+     "ans": 2,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 3: 6.",
+      "Add one more 3: 6 + 3 = 9.",
+      "So 3 × 3 = 9."
+     ],
+     "ex": {
+      "main": "**9.** Double 3: 6. Add one more 3: 6 + 3 = 9.",
+      "tip": "Check with the turn-around: 3 × 3 is the same fact."
+     },
+     "fact": [
+      3,
+      3
+     ]
+    },
+    {
+     "id": "q31",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 4?",
+     "opts": [
+      "8",
+      "9",
+      "15",
+      "12"
+     ],
+     "ans": 3,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 4: 8.",
+      "Add one more 4: 8 + 4 = 12.",
+      "So 3 × 4 = 12."
+     ],
+     "ex": {
+      "main": "**12.** Double 4: 8. Add one more 4: 8 + 4 = 12.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      3,
+      4
+     ]
+    },
+    {
+     "id": "q32",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 6?",
+     "opts": [
+      "18",
+      "15",
+      "21",
+      "12"
+     ],
+     "ans": 0,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 6: 12.",
+      "Add one more 6: 12 + 6 = 18.",
+      "So 3 × 6 = 18."
+     ],
+     "ex": {
+      "main": "**18.** Double 6: 12. Add one more 6: 12 + 6 = 18.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      3,
+      6
+     ]
+    },
+    {
+     "id": "q33",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7 × 3?",
+     "opts": [
+      "18",
+      "21",
+      "24",
+      "14"
+     ],
+     "ans": 1,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 7: 14.",
+      "Add one more 7: 14 + 7 = 21.",
+      "So 7 × 3 = 21."
+     ],
+     "ex": {
+      "main": "**21.** Double 7: 14. Add one more 7: 14 + 7 = 21.",
+      "tip": "Check with the turn-around: 3 × 7 is the same fact."
+     },
+     "fact": [
+      7,
+      3
+     ]
+    },
+    {
+     "id": "q34",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 8?",
+     "opts": [
+      "27",
+      "21",
+      "24",
+      "16"
+     ],
+     "ans": 2,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 8: 16.",
+      "Add one more 8: 16 + 8 = 24.",
+      "So 3 × 8 = 24."
+     ],
+     "ex": {
+      "main": "**24.** Double 8: 16. Add one more 8: 16 + 8 = 24.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      3,
+      8
+     ]
+    },
+    {
+     "id": "q35",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 3?",
+     "opts": [
+      "18",
+      "24",
+      "30",
+      "27"
+     ],
+     "ans": 3,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 9: 18.",
+      "Add one more 9: 18 + 9 = 27.",
+      "So 9 × 3 = 27."
+     ],
+     "ex": {
+      "main": "**27.** Double 9: 18. Add one more 9: 18 + 9 = 27.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (2 + 7)."
+     },
+     "fact": [
+      9,
+      3
+     ]
+    },
+    {
+     "id": "q36",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 3?",
+     "opts": [
+      "33",
+      "30",
+      "36",
+      "22"
+     ],
+     "ans": 0,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 11: 22.",
+      "Add one more 11: 22 + 11 = 33.",
+      "So 11 × 3 = 33."
+     ],
+     "ex": {
+      "main": "**33.** Double 11: 22. Add one more 11: 22 + 11 = 33.",
+      "tip": "Check with the turn-around: 3 × 11 is the same fact."
+     },
+     "fact": [
+      11,
+      3
+     ]
+    },
+    {
+     "id": "q37",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 12?",
+     "opts": [
+      "33",
+      "36",
+      "39",
+      "24"
+     ],
+     "ans": 1,
+     "hint": "Double, plus one more group.",
+     "steps": [
+      "Times 3 is a double plus one more group.",
+      "Double 12: 24.",
+      "Add one more 12: 24 + 12 = 36.",
+      "So 3 × 12 = 36."
+     ],
+     "ex": {
+      "main": "**36.** Double 12: 24. Add one more 12: 24 + 12 = 36.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      3,
+      12
+     ]
+    },
+    {
+     "id": "q38",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 4?",
+     "opts": [
+      "20",
+      "12",
+      "16",
+      "61"
+     ],
+     "ans": 2,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 4: 8.",
+      "Double 8: 16.",
+      "So 4 × 4 = 16."
+     ],
+     "ex": {
+      "main": "**16.** Double 4: 8. Double 8: 16.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      4,
+      4
+     ]
+    },
+    {
+     "id": "q39",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 4?",
+     "opts": [
+      "18",
+      "20",
+      "28",
+      "24"
+     ],
+     "ans": 3,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 6: 12.",
+      "Double 12: 24.",
+      "So 6 × 4 = 24."
+     ],
+     "ex": {
+      "main": "**24.** Double 6: 12. Double 12: 24.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      6,
+      4
+     ]
+    },
+    {
+     "id": "q40",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 7?",
+     "opts": [
+      "28",
+      "24",
+      "32",
+      "21"
+     ],
+     "ans": 0,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 7: 14.",
+      "Double 14: 28.",
+      "So 4 × 7 = 28."
+     ],
+     "ex": {
+      "main": "**28.** Double 7: 14. Double 14: 28.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      4,
+      7
+     ]
+    },
+    {
+     "id": "q41",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 4?",
+     "opts": [
+      "28",
+      "32",
+      "36",
+      "24"
+     ],
+     "ans": 1,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 8: 16.",
+      "Double 16: 32.",
+      "So 8 × 4 = 32."
+     ],
+     "ex": {
+      "main": "**32.** Double 8: 16. Double 16: 32.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      4
+     ]
+    },
+    {
+     "id": "q42",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 9?",
+     "opts": [
+      "40",
+      "32",
+      "36",
+      "27"
+     ],
+     "ans": 2,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 9: 18.",
+      "Double 18: 36.",
+      "So 4 × 9 = 36."
+     ],
+     "ex": {
+      "main": "**36.** Double 9: 18. Double 18: 36.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (3 + 6)."
+     },
+     "fact": [
+      4,
+      9
+     ]
+    },
+    {
+     "id": "q43",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 11?",
+     "opts": [
+      "33",
+      "40",
+      "48",
+      "44"
+     ],
+     "ans": 3,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 11: 22.",
+      "Double 22: 44.",
+      "So 4 × 11 = 44."
+     ],
+     "ex": {
+      "main": "**44.** Double 11: 22. Double 22: 44.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      4,
+      11
+     ]
+    },
+    {
+     "id": "q44",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 4?",
+     "opts": [
+      "48",
+      "44",
+      "52",
+      "36"
+     ],
+     "ans": 0,
+     "hint": "Double, double.",
+     "steps": [
+      "Times 4 is double, then double again.",
+      "Double 12: 24.",
+      "Double 24: 48.",
+      "So 12 × 4 = 48."
+     ],
+     "ex": {
+      "main": "**48.** Double 12: 24. Double 24: 48.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      12,
+      4
+     ]
+    },
+    {
+     "id": "q45",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 6?",
+     "opts": [
+      "30",
+      "36",
+      "42",
+      "63"
+     ],
+     "ans": 1,
+     "hint": "Times 5, plus one more group.",
+     "steps": [
+      "Times 6 is times 5 plus one more group.",
+      "5 × 6 = 30.",
+      "Add one more 6: 30 + 6 = 36.",
+      "So 6 × 6 = 36."
+     ],
+     "ex": {
+      "main": "**36.** 5 × 6 = 30. Add one more 6: 30 + 6 = 36.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      6,
+      6
+     ]
+    },
+    {
+     "id": "q46",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 7?",
+     "opts": [
+      "48",
+      "36",
+      "42",
+      "35"
+     ],
+     "ans": 2,
+     "hint": "Times 5, plus one more group.",
+     "steps": [
+      "Times 6 is times 5 plus one more group.",
+      "5 × 7 = 35.",
+      "Add one more 7: 35 + 7 = 42.",
+      "So 6 × 7 = 42."
+     ],
+     "ex": {
+      "main": "**42.** 5 × 7 = 35. Add one more 7: 35 + 7 = 42.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      6,
+      7
+     ]
+    },
+    {
+     "id": "q47",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 6?",
+     "opts": [
+      "40",
+      "42",
+      "54",
+      "48"
+     ],
+     "ans": 3,
+     "hint": "Double 24 (that is 6 × 4) to land on 48.",
+     "steps": [
+      "Times 6 is times 5 plus one more group.",
+      "5 × 8 = 40.",
+      "Add one more 8: 40 + 8 = 48.",
+      "So 8 × 6 = 48."
+     ],
+     "ex": {
+      "main": "**48.** 5 × 8 = 40. Add one more 8: 40 + 8 = 48.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      6
+     ]
+    },
+    {
+     "id": "q48",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 9?",
+     "opts": [
+      "54",
+      "48",
+      "60",
+      "45"
+     ],
+     "ans": 0,
+     "hint": "Times 5, plus one more group.",
+     "steps": [
+      "Times 6 is times 5 plus one more group.",
+      "5 × 9 = 45.",
+      "Add one more 9: 45 + 9 = 54.",
+      "So 6 × 9 = 54."
+     ],
+     "ex": {
+      "main": "**54.** 5 × 9 = 45. Add one more 9: 45 + 9 = 54.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (5 + 4)."
+     },
+     "fact": [
+      6,
+      9
+     ]
+    },
+    {
+     "id": "q49",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 11?",
+     "opts": [
+      "60",
+      "66",
+      "72",
+      "55"
+     ],
+     "ans": 1,
+     "hint": "Times 5, plus one more group.",
+     "steps": [
+      "Times 6 is times 5 plus one more group.",
+      "5 × 11 = 55.",
+      "Add one more 11: 55 + 11 = 66.",
+      "So 6 × 11 = 66."
+     ],
+     "ex": {
+      "main": "**66.** 5 × 11 = 55. Add one more 11: 55 + 11 = 66.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      6,
+      11
+     ]
+    },
+    {
+     "id": "q50",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 6?",
+     "opts": [
+      "78",
+      "66",
+      "72",
+      "60"
+     ],
+     "ans": 2,
+     "hint": "Times 5, plus one more group.",
+     "steps": [
+      "Times 6 is times 5 plus one more group.",
+      "5 × 12 = 60.",
+      "Add one more 12: 60 + 12 = 72.",
+      "So 12 × 6 = 72."
+     ],
+     "ex": {
+      "main": "**72.** 5 × 12 = 60. Add one more 12: 60 + 12 = 72.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      12,
+      6
+     ]
+    },
+    {
+     "id": "q51",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7 × 7?",
+     "opts": [
+      "94",
+      "42",
+      "56",
+      "49"
+     ],
+     "ans": 3,
+     "hint": "Times 5 plus times 2.",
+     "steps": [
+      "Times 7 is times 5 plus times 2.",
+      "5 × 7 = 35.",
+      "2 × 7 = 14.",
+      "35 + 14 = 49.",
+      "So 7 × 7 = 49."
+     ],
+     "ex": {
+      "main": "**49.** 5 × 7 = 35. 2 × 7 = 14. 35 + 14 = 49.",
+      "tip": "Check with the turn-around: 7 × 7 is the same fact."
+     },
+     "fact": [
+      7,
+      7
+     ]
+    },
+    {
+     "id": "q52",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7 × 8?",
+     "opts": [
+      "56",
+      "49",
+      "63",
+      "48"
+     ],
+     "ans": 0,
+     "hint": "5, 6, 7, 8 — 56 is 7 × 8.",
+     "steps": [
+      "Times 7 is times 5 plus times 2.",
+      "5 × 8 = 40.",
+      "2 × 8 = 16.",
+      "40 + 16 = 56.",
+      "So 7 × 8 = 56."
+     ],
+     "ex": {
+      "main": "**56.** 5 × 8 = 40. 2 × 8 = 16. 40 + 16 = 56.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      7,
+      8
+     ]
+    },
+    {
+     "id": "q53",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 7?",
+     "opts": [
+      "56",
+      "63",
+      "70",
+      "54"
+     ],
+     "ans": 1,
+     "hint": "Times 5 plus times 2.",
+     "steps": [
+      "Times 7 is times 5 plus times 2.",
+      "5 × 9 = 45.",
+      "2 × 9 = 18.",
+      "45 + 18 = 63.",
+      "So 9 × 7 = 63."
+     ],
+     "ex": {
+      "main": "**63.** 5 × 9 = 45. 2 × 9 = 18. 45 + 18 = 63.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (6 + 3)."
+     },
+     "fact": [
+      9,
+      7
+     ]
+    },
+    {
+     "id": "q54",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 7?",
+     "opts": [
+      "84",
+      "70",
+      "77",
+      "66"
+     ],
+     "ans": 2,
+     "hint": "Times 5 plus times 2.",
+     "steps": [
+      "Times 7 is times 5 plus times 2.",
+      "5 × 11 = 55.",
+      "2 × 11 = 22.",
+      "55 + 22 = 77.",
+      "So 11 × 7 = 77."
+     ],
+     "ex": {
+      "main": "**77.** 5 × 11 = 55. 2 × 11 = 22. 55 + 22 = 77.",
+      "tip": "Check with the turn-around: 7 × 11 is the same fact."
+     },
+     "fact": [
+      11,
+      7
+     ]
+    },
+    {
+     "id": "q55",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7 × 12?",
+     "opts": [
+      "72",
+      "77",
+      "91",
+      "84"
+     ],
+     "ans": 3,
+     "hint": "Times 5 plus times 2.",
+     "steps": [
+      "Times 7 is times 5 plus times 2.",
+      "5 × 12 = 60.",
+      "2 × 12 = 24.",
+      "60 + 24 = 84.",
+      "So 7 × 12 = 84."
+     ],
+     "ex": {
+      "main": "**84.** 5 × 12 = 60. 2 × 12 = 24. 60 + 24 = 84.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      7,
+      12
+     ]
+    },
+    {
+     "id": "q56",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 8?",
+     "opts": [
+      "88",
+      "77",
+      "99",
+      "80"
+     ],
+     "ans": 0,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 8 = 80.",
+      "Add one more 8: 80 + 8 = 88.",
+      "So 11 × 8 = 88."
+     ],
+     "ex": {
+      "main": "**88.** 10 × 8 = 80. Add one more 8: 80 + 8 = 88.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      11,
+      8
+     ]
+    },
+    {
+     "id": "q57",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 11?",
+     "opts": [
+      "88",
+      "99",
+      "110",
+      "90"
+     ],
+     "ans": 1,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 9 = 90.",
+      "Add one more 9: 90 + 9 = 99.",
+      "So 9 × 11 = 99."
+     ],
+     "ex": {
+      "main": "**99.** 10 × 9 = 90. Add one more 9: 90 + 9 = 99.",
+      "tip": "Check with the turn-around: 11 × 9 is the same fact."
+     },
+     "fact": [
+      9,
+      11
+     ]
+    },
+    {
+     "id": "q58",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 11?",
+     "opts": [
+      "132",
+      "110",
+      "121",
+      "131"
+     ],
+     "ans": 2,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 11 = 110.",
+      "Add one more 11: 110 + 11 = 121.",
+      "So 11 × 11 = 121."
+     ],
+     "ex": {
+      "main": "**121.** 10 × 11 = 110. Add one more 11: 110 + 11 = 121.",
+      "tip": "Check with the turn-around: 11 × 11 is the same fact."
+     },
+     "fact": [
+      11,
+      11
+     ]
+    },
+    {
+     "id": "q59",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 11 × 12?",
+     "opts": [
+      "120",
+      "121",
+      "143",
+      "132"
+     ],
+     "ans": 3,
+     "hint": "Times 10, plus one more group.",
+     "steps": [
+      "Times 11 is times 10 plus one more group.",
+      "10 × 12 = 120.",
+      "Add one more 12: 120 + 12 = 132.",
+      "So 11 × 12 = 132."
+     ],
+     "ex": {
+      "main": "**132.** 10 × 12 = 120. Add one more 12: 120 + 12 = 132.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      11,
+      12
+     ]
+    },
+    {
+     "id": "q60",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 8?",
+     "opts": [
+      "72",
+      "63",
+      "81",
+      "64"
+     ],
+     "ans": 0,
+     "hint": "Times 10, minus one group.",
+     "steps": [
+      "Times 9 is times 10, minus one group.",
+      "10 × 8 = 80.",
+      "Take away one 8: 80 − 8 = 72.",
+      "So 9 × 8 = 72."
+     ],
+     "ex": {
+      "main": "**72.** 10 × 8 = 80. Take away one 8: 80 − 8 = 72.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (7 + 2)."
+     },
+     "fact": [
+      9,
+      8
+     ]
+    },
+    {
+     "id": "q61",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 9?",
+     "opts": [
+      "72",
+      "81",
+      "90",
+      "18"
+     ],
+     "ans": 1,
+     "hint": "Times 10, minus one group.",
+     "steps": [
+      "Times 9 is times 10, minus one group.",
+      "10 × 9 = 90.",
+      "Take away one 9: 90 − 9 = 81.",
+      "So 9 × 9 = 81."
+     ],
+     "ex": {
+      "main": "**81.** 10 × 9 = 90. Take away one 9: 90 − 9 = 81.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (8 + 1)."
+     },
+     "fact": [
+      9,
+      9
+     ]
+    },
+    {
+     "id": "q62",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 9 × 12?",
+     "opts": [
+      "117",
+      "99",
+      "108",
+      "96"
+     ],
+     "ans": 2,
+     "hint": "Times 10, minus one group.",
+     "steps": [
+      "Times 9 is times 10, minus one group.",
+      "10 × 12 = 120.",
+      "Take away one 12: 120 − 12 = 108.",
+      "So 9 × 12 = 108."
+     ],
+     "ex": {
+      "main": "**108.** 10 × 12 = 120. Take away one 12: 120 − 12 = 108.",
+      "tip": "Check a ×9 answer: its digits add up to 9 (1 + 0 + 8)."
+     },
+     "fact": [
+      9,
+      12
+     ]
+    },
+    {
+     "id": "q63",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 12?",
+     "opts": [
+      "88",
+      "84",
+      "108",
+      "96"
+     ],
+     "ans": 3,
+     "hint": "Times 10 plus times 2.",
+     "steps": [
+      "Times 12 is times 10 plus times 2.",
+      "10 × 8 = 80.",
+      "2 × 8 = 16.",
+      "80 + 16 = 96.",
+      "So 8 × 12 = 96."
+     ],
+     "ex": {
+      "main": "**96.** 10 × 8 = 80. 2 × 8 = 16. 80 + 16 = 96.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      12
+     ]
+    },
+    {
+     "id": "q64",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 12?",
+     "opts": [
+      "144",
+      "132",
+      "156",
+      "441"
+     ],
+     "ans": 0,
+     "hint": "12 × 12 = 144, a dozen dozens.",
+     "steps": [
+      "Times 12 is times 10 plus times 2.",
+      "10 × 12 = 120.",
+      "2 × 12 = 24.",
+      "120 + 24 = 144.",
+      "So 12 × 12 = 144."
+     ],
+     "ex": {
+      "main": "**144.** 10 × 12 = 120. 2 × 12 = 24. 120 + 24 = 144.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      12,
+      12
+     ]
+    },
+    {
+     "id": "q65",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 8?",
+     "opts": [
+      "56",
+      "64",
+      "72",
+      "46"
+     ],
+     "ans": 1,
+     "hint": "Double, double, double.",
+     "steps": [
+      "Times 8 is double, double, double.",
+      "Double 8: 16.",
+      "Double again: 32.",
+      "Double once more: 64.",
+      "So 8 × 8 = 64."
+     ],
+     "ex": {
+      "main": "**64.** Double 8: 16. Double again: 32. Double once more: 64.",
+      "tip": "Check: one factor is even, so the answer must be even too."
+     },
+     "fact": [
+      8,
+      8
+     ]
+    },
+    {
+     "id": "q66",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0 × 11?",
+     "opts": [
+      "1",
+      "11",
+      "0",
+      "110"
+     ],
+     "ans": 2,
+     "hint": "Zero groups.",
+     "steps": [
+      "Any number times 0 is 0.",
+      "There are no groups to count.",
+      "So 0 × 11 = 0."
+     ],
+     "ex": {
+      "main": "**0.** Any number times 0 is 0.",
+      "tip": "The rule never changes, however big the other number is."
+     },
+     "fact": [
+      0,
+      11
+     ]
+    },
+    {
+     "id": "q67",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 0?",
+     "opts": [
+      "60",
+      "6",
+      "1",
+      "0"
+     ],
+     "ans": 3,
+     "hint": "Zero groups.",
+     "steps": [
+      "Any number times 0 is 0.",
+      "There are no groups to count.",
+      "So 6 × 0 = 0."
+     ],
+     "ex": {
+      "main": "**0.** Any number times 0 is 0.",
+      "tip": "The rule never changes, however big the other number is."
+     },
+     "fact": [
+      6,
+      0
+     ]
+    },
+    {
+     "id": "q68",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 1 × 7?",
+     "opts": [
+      "7",
+      "1",
+      "8",
+      "0"
+     ],
+     "ans": 0,
+     "hint": "One group.",
+     "steps": [
+      "Any number times 1 is itself.",
+      "One group of 7 is 7.",
+      "So 1 × 7 = 7."
+     ],
+     "ex": {
+      "main": "**7.** Any number times 1 is itself.",
+      "tip": "The rule never changes, however big the other number is."
+     },
+     "fact": [
+      1,
+      7
+     ]
+    },
+    {
+     "id": "q69",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 1?",
+     "opts": [
+      "1",
+      "12",
+      "13",
+      "0"
+     ],
+     "ans": 1,
+     "hint": "One group.",
+     "steps": [
+      "Any number times 1 is itself.",
+      "One group of 12 is 12.",
+      "So 12 × 1 = 12."
+     ],
+     "ex": {
+      "main": "**12.** Any number times 1 is itself.",
+      "tip": "The rule never changes, however big the other number is."
+     },
+     "fact": [
+      12,
+      1
+     ]
+    },
+    {
+     "id": "q70",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0 × 0?",
+     "opts": [
+      "10",
+      "1",
+      "0",
+      "2"
+     ],
+     "ans": 2,
+     "hint": "Zero groups.",
+     "steps": [
+      "Any number times 0 is 0.",
+      "There are no groups to count.",
+      "So 0 × 0 = 0."
+     ],
+     "ex": {
+      "main": "**0.** Any number times 0 is 0.",
+      "tip": "The rule never changes, however big the other number is."
+     },
+     "fact": [
+      0,
+      0
+     ]
+    },
+    {
+     "id": "q71",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 1 × 1?",
+     "opts": [
+      "11",
+      "2",
+      "0",
+      "1"
+     ],
+     "ans": 3,
+     "hint": "One group.",
+     "steps": [
+      "Any number times 1 is itself.",
+      "One group of 1 is 1.",
+      "So 1 × 1 = 1."
+     ],
+     "ex": {
+      "main": "**1.** Any number times 1 is itself.",
+      "tip": "The rule never changes, however big the other number is."
+     },
+     "fact": [
+      1,
+      1
+     ]
+    }
+   ],
+   "round": 20,
+   "order": 1,
+   "facts": true,
+   "factsMixed": true,
+   "prep": true,
+   "libv": 1
+  }
+ }
+}

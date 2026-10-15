@@ -1775,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v186 · Long division';
+const APP_VERSION = 'v187 · All facts review';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -3616,7 +3616,7 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
   'content/math-u3-l1.json', 'content/math-u3-l2.json', 'content/math-u3-l3.json',
   'content/math-u3-l4.json', 'content/math-u3-l5.json', 'content/math-u3-l6.json',
   'content/math-u3-l7.json', 'content/math-u3-l8.json', 'content/math-u3-l9.json',
-  'content/math-facts-1.json', 'content/math-facts-2.json', 'content/math-facts-3.json', 'content/math-facts-4.json',
+  'content/math-facts-1.json', 'content/math-facts-2.json', 'content/math-facts-3.json', 'content/math-facts-4.json', 'content/math-facts-review.json',
   'content/math-longdiv-1.json'];
 
 /* ---------- The unit library ----------
@@ -6525,8 +6525,16 @@ function sprintRuns(scope, unitId){
 }
 function sprintDeal(scope, u, cid){
   const cfg = sprintCfg(scope);
-  const pool = [];
-  (scope === 'all' ? factUnits(cid) : [u]).forEach(x => factQs(x).forEach(q => pool.push({unitId:x.id, qid:q.id, f:q.fact})));
+  const pool = [], seenFact = new Set();
+  /* The All Facts Review carries every fact the sets do, so the pop quiz pool
+     takes each fact ONCE, from the set that owns it — the review is last in
+     line. Without this every fact would be in the pool twice. */
+  const srcs = scope === 'all' ? factUnits(cid).sort((a,b) => (a.factsMixed?1:0) - (b.factsMixed?1:0)) : [u];
+  srcs.forEach(x => factQs(x).forEach(q => {
+    const key = q.fact.slice().sort((m,n) => m-n).join('x');
+    if(seenFact.has(key)) return;
+    seenFact.add(key); pool.push({unitId:x.id, qid:q.id, f:q.fact});
+  }));
   if(!pool.length) return false;
   const items = [];
   while(items.length < cfg.n){
@@ -6610,7 +6618,7 @@ function sprintDoors(card, u, c){
     if(runs.length){
       const best = runs.reduce((m,l) => Math.max(m, l.correct||0), 0);
       st.appendChild(el('small',null, 'Last: ' + (runs[0].correct||0) + ' of ' + cfg.n + ' · best ' + best));
-    } else st.appendChild(el('small',null, scope === 'all' ? 'Every table, mixed: the shape of your class pop quiz' : 'Just this set, at the pop quiz pace'));
+    } else st.appendChild(el('small',null, scope === 'all' ? 'Every table, mixed: the shape of your class pop quiz' : u.factsMixed ? 'Every table, mixed, in a shorter run' : 'Just this set, at the pop quiz pace'));
     b.appendChild(st);
     b.addEventListener('click', () => { sprintState = null; stopSprintTick(); go('sprint',{unitId:u.id, classId:c.id, scope}); });
     card.appendChild(b);
@@ -6635,6 +6643,7 @@ SCREENS.sprint = function(root){
     h.appendChild(el('p',null, 'Type each answer and tap ✓. Stuck on one? Tap ✓ with nothing typed to skip it and keep going — a skipped fact is not a wrong one.'));
     h.appendChild(el('p',null, scope === 'all'
       ? 'This is the shape of your class pop quiz: every table, mixed, against one clock.'
+      : u.factsMixed ? 'Same pace as the pop quiz, every table mixed, half the length.'
       : 'Same pace as the pop quiz, just the facts from this set.'));
     root.appendChild(h);
     const go1 = el('button','btn btn-primary','Go →');
