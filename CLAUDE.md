@@ -214,6 +214,15 @@ never on hers. `ortiz-drive.js` is the shared module, copied unchanged.
 
 ---
 
+## Deploy
+
+Same as Ad Astra's: **deploy at the end of every build, without asking**
+(Chris, 2026-10-15: *"Always deploy since I still approve each lesson before
+it's published"*). Content ships as drafts, so his review queue is the gate.
+See ../ad-astra/CLAUDE.md's Deploy section.
+
+---
+
 ## Keeping the two apps in step
 
 The engine is duplicated, not shared — deliberately, to keep both single-file and
