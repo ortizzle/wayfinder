@@ -2020,6 +2020,48 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Saturday looks ahead (v188 / Ad Astra v211, both apps)
+
+Chris, sending a screenshot of a Saturday Today: *"Sedona's page seems to be
+missing some stuff."* Nothing was broken. Three things were empty at once:
+
+- **The daily note had not been written since 10/11.**
+- **There was nothing in Coming up**, because Ad Astra's calendar is empty
+  until 12/7.
+- **The brief was hidden on purpose.** `weekBrief()` returned `null` on a
+  Saturday ("Monday is far enough away").
+
+Only the brief was a design choice, and Chris reversed it: *"Show next week's
+brief on Saturdays too."*
+
+- **On a Saturday the brief plans the coming Monday to Friday**, the same week
+  Sunday already plans (`monday` is the date + 2). No day is marked today or
+  past, so every evening is a study evening and the CTA falls forward to the
+  first workable day, as it already did on a Sunday.
+- **The copy says "next week", never "this week".** Two days before the week
+  starts, "this week" would mean the one that just ended. `wkWord` carries
+  it into the three lead sentences, and the card's eyebrow reads *"Next week ·
+  in short"* (`wk.ahead`). The divider stays **Your week**, because today's
+  note sits under it too.
+- **`covers()` and `ledgerTestIds` follow the new range for free**, so a test
+  next week is not printed twice: the runway yields and Coming up skips it,
+  as on any other day.
+
+`tools/test_satbrief.js` (same file, both apps, 10 assertions) finds its
+Saturday rather than naming one, seeds a test the following Wednesday and
+real approved units, and pins:
+
+- the brief exists
+- its Monday equals Sunday's, and `ahead` is set on Saturday only
+- five future rows
+- "next week" in the lead
+- study evenings before the test
+- `covers()`
+- the card under Your week with its eyebrow
+- a weekday still planning its own week
+
+**Verified against the previous build: 8 of 10 fail.**
+
 ### All Facts Review, because the quiz mixes every table (v187)
 
 Chris, on the four Math Facts sets: *"Math facts folder looks like practice for
