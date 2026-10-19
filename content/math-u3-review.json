@@ -1,0 +1,632 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m3-review": {
+   "id": "unit-m3-review",
+   "type": "unit",
+   "updatedAt": 1792418552025,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 3 · Test Review: Check Your Work",
+   "srcName": "Teacher's math update, 10/15",
+   "source": "Math update (teacher) and the Unit 3 textbook scan",
+   "summary": {
+    "text": "A test review for Unit 3: finding the mistake in a wrong multiplication, and four quick ways to check your own answer before you hand it in.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Your teacher says most mistakes on this test are simple slips, not missing skills. Catching your own slip before the test does is the whole skill here.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Find and name the mistake in a wrong multiplication.",
+     "from": "source"
+    },
+    {
+     "text": "Check an answer with an estimate, the ones digit, the zeros, or division.",
+     "from": "source"
+    },
+    {
+     "text": "Decide whether an answer to a story problem is reasonable.",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the teacher's math update for the Unit 3 test on Tuesday 10/20. She asks families to practise double-checking and to \"give them a problem that is wrong and see if they can find the mistake\", so this review is mostly that: twelve find-the-mistake and which-check-catches-it items, plus products to choose and two story problems. Every wrong answer comes from a named slip (a dropped carry, products written side by side, the missing zero in the second row, a skipped zero, a lost zero with powers of ten). Her paper study guide (handed out Friday 10/16) is not in Drive, so this does not mirror it; it uses fresh numbers on the nine lessons' skills. Worth approving today if she is to see it before the test.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Take one round tonight, and for every mistake you catch, say out loud which check found it.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Why check at all",
+     "def": "**Most mistakes on a multiplication test are slips, not \"I do not know how\".**\n• A carry forgotten, a zero left off, two numbers copied wrong.\n• A minute of checking catches most of them.",
+     "hint": "Know the skill, then guard it.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Check 1 · Estimate",
+     "def": "**Round both numbers and multiply. The real answer should be close.**\n• 68 × 42 → 70 × 40 = 2,800. An answer of 286 or 28,560 is far off.\n• An estimate catches a lost or extra place, not a small slip.",
+     "hint": "Too big or too small by a lot? Something went wrong.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "Check 2 · The ones digit",
+     "def": "**The ones digit of the answer comes only from the two ones digits.**\n• 46 × 23: 6 × 3 = 18, so the answer must end in 8.\n• If your answer ends in anything else, there is a slip.",
+     "hint": "Last digits make the last digit.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Check 3 · Count the zeros",
+     "def": "**When you multiply by 10, 100 or 1,000, count the zeros on both sides.**\n• 60 × 4,000: one zero plus three zeros is four zeros: 240,000.\n• If the basic fact already ends in 0 (5 × 8 = 40), that zero is extra.",
+     "hint": "Zeros in, zeros out, plus any the fact makes.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Check 4 · Undo it",
+     "def": "**Division undoes multiplication: divide your answer by one factor, and you should get the other.**\n• 125 × 8 = 1,000, so 1,000 ÷ 8 should be 125.",
+     "hint": "Multiply forward, divide back.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "Slip · The dropped carry",
+     "def": "**Writing only the ones digit of a step and forgetting to carry the tens.**\n• 47 × 6: 7 × 6 = 42, write 2, carry 4. 4 × 6 = 24, plus 4 is 28. Answer 282.\n• Forgetting the carry gives 242.",
+     "hint": "Every carry has to be added somewhere.",
+     "from": "added"
+    },
+    {
+     "id": "c6",
+     "term": "Slip · Side by side",
+     "def": "**Writing each part's whole product next to the others instead of adding by place.**\n• 38 × 4: 3 × 4 = 12 and 8 × 4 = 32 written as 1,232. The real answer is 152.",
+     "hint": "Products go in place value, not in a row.",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Slip · The missing zero",
+     "def": "**In the second row of a 2-digit multiplication you are multiplying by TENS, so it needs a 0 in the ones place.**\n• 43 × 27: 43 × 7 = 301, and 43 × 20 = 860, not 86.\n• 301 + 860 = 1,161. Forgetting the zero gives 387.",
+     "hint": "The tens row starts with a zero.",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "Slip · Skipping a zero",
+     "def": "**A zero inside a number still holds a place.**\n• 507 × 6 is 3,042. Treating 507 like 57 gives 342.",
+     "hint": "Zeros hold places, even when they make nothing.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "Find the mistake",
+     "def": "**Redo the problem step by step and compare each line with the one written.**\n• The first line that does not match is where the mistake is.\n• Then name it: a carry, a zero, a wrong fact, or a split that does not add up.",
+     "hint": "Find the first line that differs.",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "Show your work",
+     "def": "**Write every row, every carry and every partial product.**\n• Work you can see is work you can check, and homework is marked on it.",
+     "hint": "If it is not written, it cannot be checked.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Jada worked out 47 × 6 and wrote 242. What went wrong?",
+     "opts": [
+      "They forgot to add a carry",
+      "They wrote each part's product side by side",
+      "They left the zero off the second row",
+      "They skipped the zero inside a number"
+     ],
+     "ans": 0,
+     "hint": "Work the ones step and look at what it carries.",
+     "steps": [
+      "7 × 6 = 42: write 2 and carry 4.",
+      "4 × 6 = 24, plus the carried 4 is 28.",
+      "So 47 × 6 = 282, not 242.",
+      "The carry was dropped."
+     ],
+     "ex": {
+      "main": "**They forgot to add a carry.** 47 × 6 is 282.",
+      "tip": "Check the ones digit too: it is right, which is why only the carry is wrong."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Ben worked out 58 × 7 and wrote 356. What went wrong?",
+     "opts": [
+      "They wrote each part's product side by side",
+      "They forgot to add a carry",
+      "They left the zero off the second row",
+      "They skipped the zero inside a number"
+     ],
+     "ans": 1,
+     "hint": "Work the ones step and look at what it carries.",
+     "steps": [
+      "8 × 7 = 56: write 6 and carry 5.",
+      "5 × 7 = 35, plus the carried 5 is 40.",
+      "So 58 × 7 = 406, not 356.",
+      "The carry was dropped."
+     ],
+     "ex": {
+      "main": "**They forgot to add a carry.** 58 × 7 is 406.",
+      "tip": "Check the ones digit too: it is right, which is why only the carry is wrong."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Leo worked out 38 × 4 and wrote 1,232. What went wrong?",
+     "opts": [
+      "They forgot to add a carry",
+      "They left the zero off the second row",
+      "They wrote each part's product side by side",
+      "They skipped the zero inside a number"
+     ],
+     "ans": 2,
+     "hint": "Look at the two parts and where they were written.",
+     "steps": [
+      "3 × 4 = 12 and 8 × 4 = 32.",
+      "Those were written next to each other: 1,232.",
+      "The tens part is 12 tens, so add by place: 120 + 32 = 152.",
+      "They wrote the products side by side."
+     ],
+     "ex": {
+      "main": "**They wrote each part's product side by side.** 38 × 4 is 152.",
+      "tip": "An estimate catches it fast: 38 × 4 is near 160, not 1,232."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Mia worked out 29 × 6 and wrote 1,254. What went wrong?",
+     "opts": [
+      "They forgot to add a carry",
+      "They skipped the zero inside a number",
+      "They left the zero off the second row",
+      "They wrote each part's product side by side"
+     ],
+     "ans": 3,
+     "hint": "Look at the two parts and where they were written.",
+     "steps": [
+      "2 × 6 = 12 and 9 × 6 = 54.",
+      "Those were written next to each other: 1,254.",
+      "The tens part is 12 tens, so add by place: 120 + 54 = 174.",
+      "They wrote the products side by side."
+     ],
+     "ex": {
+      "main": "**They wrote each part's product side by side.** 29 × 6 is 174.",
+      "tip": "An estimate catches it fast: 29 × 6 is near 180, not 1,254."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Sam worked out 43 × 27 and wrote 387. What went wrong?",
+     "opts": [
+      "They left the zero off the second row",
+      "They wrote each part's product side by side",
+      "They forgot to add a carry",
+      "They skipped the zero inside a number"
+     ],
+     "ans": 0,
+     "hint": "What should the second row be worth?",
+     "steps": [
+      "First row: 43 × 7 = 301.",
+      "Second row: 43 × 20 = 860. It is multiplying by tens.",
+      "301 + 860 = 1,161.",
+      "They wrote 86 instead of 860, leaving off the zero."
+     ],
+     "ex": {
+      "main": "**They left the zero off the second row.** 43 × 27 is 1,161.",
+      "tip": "The estimate 40 × 30 = 1,200 shows 387 is far too small."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Ava worked out 52 × 36 and wrote 468. What went wrong?",
+     "opts": [
+      "They forgot to add a carry",
+      "They left the zero off the second row",
+      "They wrote each part's product side by side",
+      "They skipped the zero inside a number"
+     ],
+     "ans": 1,
+     "hint": "What should the second row be worth?",
+     "steps": [
+      "First row: 52 × 6 = 312.",
+      "Second row: 52 × 30 = 1,560. It is multiplying by tens.",
+      "312 + 1,560 = 1,872.",
+      "They wrote 156 instead of 1,560, leaving off the zero."
+     ],
+     "ex": {
+      "main": "**They left the zero off the second row.** 52 × 36 is 1,872.",
+      "tip": "The estimate 50 × 40 = 2,000 shows 468 is far too small."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Noah worked out 507 × 6 and wrote 342. What went wrong?",
+     "opts": [
+      "They forgot to add a carry",
+      "They wrote each part's product side by side",
+      "They skipped the zero inside a number",
+      "They left the zero off the second row"
+     ],
+     "ans": 2,
+     "hint": "Look at the middle digit of 507.",
+     "steps": [
+      "507 has a 0 in the tens place.",
+      "342 is what 57 × 6 makes, so the zero was skipped.",
+      "Hundreds: 5 × 6 = 30 hundreds. Tens: 0. Ones: 7 × 6 = 42.",
+      "So 507 × 6 = 3,042."
+     ],
+     "ex": {
+      "main": "**They skipped the zero inside a number.** 507 × 6 is 3,042.",
+      "tip": "Estimate: 507 × 6 is about 3,000, so 342 is too small."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Zoe worked out 803 × 4 and wrote 332. What went wrong?",
+     "opts": [
+      "They forgot to add a carry",
+      "They wrote each part's product side by side",
+      "They left the zero off the second row",
+      "They skipped the zero inside a number"
+     ],
+     "ans": 3,
+     "hint": "Look at the middle digit of 803.",
+     "steps": [
+      "803 has a 0 in the tens place.",
+      "332 is what 83 × 4 makes, so the zero was skipped.",
+      "Hundreds: 8 × 4 = 32 hundreds. Tens: 0. Ones: 3 × 4 = 12.",
+      "So 803 × 4 = 3,212."
+     ],
+     "ex": {
+      "main": "**They skipped the zero inside a number.** 803 × 4 is 3,212.",
+      "tip": "Estimate: 803 × 4 is about 3,200, so 332 is too small."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Ana says 68 × 42 = 286. Which quick check shows her answer is wrong?",
+     "opts": [
+      "Estimate: 70 × 40 = 2,800, so 286 is far too small",
+      "The ones digit: 8 × 2 = 16, so the answer cannot end in 6",
+      "It is even, but 68 × 42 has to be odd",
+      "Undo it: 286 ÷ 2 should be 68"
+     ],
+     "ans": 0,
+     "hint": "Which check looks at the size of the answer?",
+     "steps": [
+      "286 ends in 6, and 8 × 2 = 16 does end in 6, so the ones digit looks fine.",
+      "68 and 42 are both even, so an even answer is fine too.",
+      "Estimate: 70 × 40 = 2,800.",
+      "286 is about ten times too small, so the estimate catches it."
+     ],
+     "ex": {
+      "main": "**The estimate.** 70 × 40 = 2,800, and 286 is nowhere near it.",
+      "tip": "A ones-digit check cannot see a missing place. An estimate can."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Without working out the whole problem, what must the ones digit of 46 × 23 be?",
+     "opts": [
+      "3",
+      "8",
+      "6",
+      "9"
+     ],
+     "ans": 1,
+     "hint": "Multiply only the two ones digits.",
+     "steps": [
+      "The ones digits are 6 and 3.",
+      "6 × 3 = 18.",
+      "The ones digit of 18 is 8.",
+      "So 46 × 23 must end in 8."
+     ],
+     "ex": {
+      "main": "**8.** 6 × 3 = 18, and only that step reaches the ones place. (46 × 23 = 1,058.)",
+      "tip": "If your answer does not end in 8, look for the slip."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Eli says 54 × 37 = 2,008. Which quick check shows it is wrong?",
+     "opts": [
+      "The ones digit: 4 × 7 = 28, so the answer cannot end in 8",
+      "It is even, but 54 × 37 has to come out odd",
+      "Undo it: 2,008 ÷ 37 should come out to 54, and it does not",
+      "Estimate: 50 × 40 = 2,000, so 2,008 is far too big"
+     ],
+     "ans": 2,
+     "hint": "The answer is close to the estimate and ends in 8. What is left?",
+     "steps": [
+      "2,008 ends in 8, and 4 × 7 = 28 ends in 8, so the ones check passes.",
+      "Estimate: 50 × 40 = 2,000. 2,008 is close, so the estimate passes too.",
+      "Undo it: 37 × 54 is 1,998, so 2,008 ÷ 37 does not come out to 54.",
+      "Only undoing it, or redoing it carefully, catches this one."
+     ],
+     "ex": {
+      "main": "**Undo it.** 54 × 37 = 1,998, so 2,008 cannot be right, even though it ends in 8 and is near the estimate.",
+      "tip": "A small slip can pass the quick checks. That is why you also redo it line by line."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Leo wrote 60 × 4,000 = 24,000. What went wrong?",
+     "opts": [
+      "Nothing: 24,000 is right",
+      "He added an extra zero: the answer is 2,400",
+      "He used the wrong fact: 6 × 4 is 20",
+      "He lost one of the zeros: the answer is 240,000"
+     ],
+     "ans": 3,
+     "hint": "Count the zeros in 60 and in 4,000.",
+     "steps": [
+      "6 × 4 = 24.",
+      "60 has one zero, 4,000 has three: four zeros.",
+      "Put four zeros after 24: 240,000.",
+      "24,000 has only three, so one zero was lost."
+     ],
+     "ex": {
+      "main": "**He lost a zero.** 60 × 4,000 = 240,000.",
+      "tip": "Count zeros in, then make sure the same number come out."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is 50 × 800?",
+     "opts": [
+      "40,000",
+      "4,000",
+      "400,000",
+      "4,800"
+     ],
+     "ans": 0,
+     "hint": "The fact 5 × 8 already makes a zero.",
+     "steps": [
+      "5 × 8 = 40.",
+      "50 and 800 have three zeros between them.",
+      "Put three zeros after 40: 40,000.",
+      "The zero in 40 is extra, on top of the three."
+     ],
+     "ex": {
+      "main": "**40,000.** 5 × 8 = 40, then three more zeros.",
+      "tip": "Writing 4,000 means the zero inside 40 was treated as one of the three."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Jo found that 125 × 8 = 1,000. Which fact checks it?",
+     "opts": [
+      "1,000 − 8 = 125",
+      "1,000 ÷ 8 = 125",
+      "125 + 8 = 1,000",
+      "1,000 ÷ 125 = 9"
+     ],
+     "ans": 1,
+     "hint": "What undoes multiplying?",
+     "steps": [
+      "Division undoes multiplication.",
+      "Divide the answer by one factor: 1,000 ÷ 8.",
+      "If you get the other factor, 125, the product checks.",
+      "So the check is 1,000 ÷ 8 = 125."
+     ],
+     "ex": {
+      "main": "**1,000 ÷ 8 = 125.** Dividing gives back the other factor.",
+      "tip": "1,000 ÷ 125 would also work, but it equals 8, not 9."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is 76 × 8?",
+     "opts": [
+      "5,648",
+      "568",
+      "608",
+      "638"
+     ],
+     "ans": 2,
+     "hint": "Multiply each place and carry.",
+     "steps": [
+      "6 × 8 = 48.",
+      "Write the ones digit and carry the rest.",
+      "Multiply the next place and add the carry.",
+      "76 × 8 = 608."
+     ],
+     "ex": {
+      "main": "**608.**",
+      "tip": "Estimate: 76 × 8 is near 640."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is 409 × 7?",
+     "opts": [
+      "343",
+      "2,803",
+      "28,063",
+      "2,863"
+     ],
+     "ans": 3,
+     "hint": "Multiply each place and carry.",
+     "steps": [
+      "9 × 7 = 63.",
+      "Write the ones digit and carry the rest.",
+      "Multiply the next place and add the carry.",
+      "409 × 7 = 2,863."
+     ],
+     "ex": {
+      "main": "**2,863.**",
+      "tip": "Estimate: 409 × 7 is near 2,870."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which answer is correct for 312 × 19?",
+     "opts": [
+      "5,928",
+      "3,120",
+      "59,280",
+      "5,616"
+     ],
+     "ans": 0,
+     "hint": "Estimate first, then check the ones digit.",
+     "steps": [
+      "Estimate: about 6,000.",
+      "The ones digit must come from 2 × 9 = 18.",
+      "5,928 is near the estimate and ends in 8.",
+      "So 312 × 19 = 5,928."
+     ],
+     "ex": {
+      "main": "**5,928.** It is the only option that is near 6,000 and ends in the right digit.",
+      "tip": "3,120 is the missing-zero slip, and 59,280 has one place too many."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which answer is correct for 64 × 35?",
+     "opts": [
+      "512",
+      "2,240",
+      "22,400",
+      "2,176"
+     ],
+     "ans": 1,
+     "hint": "Estimate first, then check the ones digit.",
+     "steps": [
+      "Estimate: about 2,400.",
+      "The ones digit must come from 4 × 5 = 20.",
+      "2,240 is near the estimate and ends in 0.",
+      "So 64 × 35 = 2,240."
+     ],
+     "ex": {
+      "main": "**2,240.** It is the only option that is near 2,400 and ends in the right digit.",
+      "tip": "512 is the missing-zero slip, and 22,400 has one place too many."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "A school orders 24 boxes of markers with 36 markers in each box. Sam says that is 864 markers. Is that reasonable?",
+     "opts": [
+      "No: 864 is too big, since 20 × 30 is only 600",
+      "No: it should be 24 + 36 = 60 markers",
+      "Yes: 24 × 36 = 864, and 20 × 40 = 800 is close",
+      "Yes: any answer in the hundreds is fine"
+     ],
+     "ans": 2,
+     "hint": "Estimate with numbers that are easy to multiply.",
+     "steps": [
+      "24 is about 20 and 36 is about 40.",
+      "20 × 40 = 800.",
+      "864 is close to 800.",
+      "Exact check: 24 × 36 = 864, so Sam is right."
+     ],
+     "ex": {
+      "main": "**Yes.** 24 × 36 = 864, close to the estimate of 800.",
+      "tip": "Rounding both down to 20 × 30 gives a low estimate, so 864 being bigger is expected."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "A theater has 18 rows with 25 seats in each row. Priya says, \"18 × 25 = 450, and 20 × 25 = 500, so 450 makes sense.\" Does her check make sense?",
+     "opts": [
+      "No: an estimate and the real answer have to come out exactly equal",
+      "No: rounding 18 up means the real answer must be more than 500",
+      "No: she should have added 18 and 25 to check her answer instead",
+      "Yes: she rounded 18 up to 20, so the real answer should be a little less than 500"
+     ],
+     "ans": 3,
+     "hint": "She rounded 18 up. Should the real answer be bigger or smaller?",
+     "steps": [
+      "18 was rounded UP to 20.",
+      "So 20 × 25 = 500 is an overestimate.",
+      "The real answer should be a little less than 500.",
+      "450 is a little less, so her check makes sense."
+     ],
+     "ex": {
+      "main": "**Yes.** Rounding 18 up makes 500 an overestimate, and 450 sits just under it.",
+      "tip": "Knowing which way you rounded tells you which side of the estimate to expect."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 3",
+   "prep": true,
+   "libv": 1
+  }
+ }
+}
