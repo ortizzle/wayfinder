@@ -1,0 +1,1061 @@
+{
+ "v": 1,
+ "records": {
+  "unit-sci-chem-practice": {
+   "id": "unit-sci-chem-practice",
+   "type": "unit",
+   "classId": "science",
+   "title": "Chemistry · Practice Unit Test",
+   "status": "draft",
+   "guide": true,
+   "prep": true,
+   "order": 1,
+   "quarter": 2,
+   "libv": 1,
+   "srcName": "Practice for Chemistry Unit Test + answer key (Drive)",
+   "source": "source",
+   "summary": {
+    "from": "source",
+    "text": "Your teacher's \"Practice for Chemistry Unit Test\", all 21 questions, in the same A/B/C/D order as the paper. It follows water through the atmosphere and into plants: matter, phases, particle speed, phase changes, density, mixtures and solutions, mass and volume, elements, molecules and the periodic table."
+   },
+   "why": {
+    "from": "added",
+    "text": "This is the shape of the real Chemistry unit test. Every question is a different chemistry idea applied to something real, so the useful thing is spotting which idea each one is asking for."
+   },
+   "objectives": [
+    {
+     "from": "source",
+     "text": "Tell matter from things that are not matter, like light and energy."
+    },
+    {
+     "from": "source",
+     "text": "Say how temperature changes the speed of particles."
+    },
+    {
+     "from": "source",
+     "text": "Name condensation and freezing, and say how water's density changes with each."
+    },
+    {
+     "from": "source",
+     "text": "Tell a mixture from a solution, and a solvent from a solute."
+    },
+    {
+     "from": "source",
+     "text": "Find mass by subtraction and volume by length × width × height."
+    },
+    {
+     "from": "source",
+     "text": "Tell an element from a molecule, and say what a box on the periodic table is."
+    }
+   ],
+   "parentNote": {
+    "from": "added",
+    "text": "This is the teacher's practice test copied out word for word, with the options in the same order as the paper, so the \"I did it on paper\" door works: she does the 21 questions on the printout and taps in the letters she wrote. Every answer was re-derived independently and all 21 match the teacher's circled key. Questions 15 and 16 lean on a picture (a balance reading 6 g empty and 14 g with the grape, and a prism labelled 3 cm × 1 cm × 2 cm); the stems here say what the picture shows, so a miss that comes back later can still be answered without the paper. The teacher's margin notes on the key are on the flashcards as written: \"matter is not energy or feelings\", \"know water examples\", \"know freezing too\", the water-density ranking (vapor lowest, ice medium, liquid high), \"can pick out pieces\", the solvent and solute definitions, \"filled minus empty\", \"more than 1 sinks\", \"can you find it on the periodic table\", and \"2 or more atoms\". The test date was not in anything uploaded, so the app still has it as the week of 10/20."
+   },
+   "nextUp": {
+    "from": "added",
+    "minutes": 25,
+    "text": "Do the paper first with the printout in front of you, then tap in your 21 letters. Anything you miss, the rescue round asks again with a fresh example."
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Matter",
+     "def": "**Matter is anything that has mass and takes up space.**\n• Dirt (a solid) and carbon dioxide (a gas) are both matter.\n• Sunlight is not: light is energy, and energy is not matter.",
+     "hint": "Your teacher wrote it in the margin: matter is not energy or feelings.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Air is a gas",
+     "def": "**Air is a mixture of gases — mostly nitrogen and oxygen, with a little carbon dioxide and water vapor.**\n• All of it is in the gas phase.",
+     "hint": "Your teacher's note: know your water examples. Water vapor in the air is water as a gas.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Temperature and particle speed",
+     "def": "**Colder means the particles slow down. Warmer means they speed up.**\n• High in the atmosphere it is colder, so air particles move more slowly.\n• A raindrop falling into warmer air has molecules that speed up.",
+     "hint": "Your teacher's margin note: colder, particles slow down; warmer, speeds up.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Water's phase changes",
+     "def": "**Condensation is gas to liquid. Freezing is liquid to solid. Melting is solid to liquid. Evaporation is liquid to gas.**\n• Clouds form by condensation: water vapor turns into tiny liquid droplets.\n• Hail forms by freezing: raindrops pushed up into air below 0°C turn solid.",
+     "hint": "Your teacher wrote \"know freezing too\" beside the condensation question.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Water's density, phase by phase",
+     "def": "**Liquid water is the densest, ice is in the middle, and water vapor is the least dense.**\n• Gas to liquid (a cloud forming): density goes UP.\n• Liquid to solid (rain turning to hail): density goes DOWN, which is why ice floats.",
+     "hint": "Your teacher's ranking on the key: water vapor lowest, ice medium, liquid water high.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Mixture",
+     "def": "**A mixture is substances put together that you can still pick apart.**\n• Compost — kitchen scraps, dead leaves, grass clippings — is a mixture.",
+     "hint": "Your teacher's note: you can pick out pieces.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Solution",
+     "def": "**A solution is a mixture where one substance dissolves completely and does not settle to the bottom.**\n• Potassium oxide stirred into water until it disappears is a solution.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Solvent and solute",
+     "def": "**The solvent does the dissolving. The solute is what you add, and it dissolves.**\n• In lemonade, water is the solvent and the lemonade powder is the solute.",
+     "hint": "Your teacher's note: solvent — the thing that does the dissolving; solute — you add it, it dissolves.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "Finding mass on a balance",
+     "def": "**Weigh the empty container, weigh it again with the object in, and subtract.**\n• Filled minus empty = the mass of the object.\n• 14 g − 6 g = 8 g for the grape.",
+     "hint": "Your teacher's note: filled minus empty.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Volume of a rectangular prism",
+     "def": "**V = length × width × height, measured in cubic centimetres (cm³).**\n• 3 cm × 1 cm × 2 cm = 6 cm³.\n• cm measures a length; cm³ measures a volume, so the unit matters.",
+     "eq": "V = L × W × H",
+     "from": "source"
+    },
+    {
+     "id": "c10",
+     "term": "Float or sink",
+     "def": "**Water's density is 1 g/cm³. More than 1 sinks; less than 1 floats.**\n• A grape at 1.25 g/cm³ sinks because it is denser than water.",
+     "hint": "Your teacher's note: more than 1, sink; less than 1, float.",
+     "from": "source"
+    },
+    {
+     "id": "c11",
+     "term": "Element",
+     "def": "**An element is one kind of atom — if you can find it in a box on the periodic table, it is an element.**\n• He (helium) is an element. CO₂ and C₆H₁₂O₆ are not.",
+     "hint": "Your teacher's note: think, can you find it on the periodic table?",
+     "from": "source"
+    },
+    {
+     "id": "c12",
+     "term": "Molecule",
+     "def": "**A molecule is two or more atoms joined together, of the same kind or different kinds.**\n• H₂O is a molecule. Nb, B and C are each a single element symbol.",
+     "hint": "Your teacher's note: has 2 or more of same or different atoms.",
+     "from": "source"
+    },
+    {
+     "id": "c13",
+     "term": "The periodic table",
+     "def": "**Each box on the periodic table is one element, and most of the elements are metals.**",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Identify whether the substance is Matter or Not Matter: Dirt",
+     "opts": [
+      "Matter",
+      "Not Matter"
+     ],
+     "ans": 0,
+     "hint": "Does it have mass, and does it take up space?",
+     "steps": [
+      "Matter has mass and takes up space.",
+      "Dirt is a solid you can hold and weigh.",
+      "So dirt is matter."
+     ],
+     "ex": {
+      "main": "**Matter.** Dirt is a solid: it has mass and takes up space.",
+      "tip": "Solids, liquids and gases are all matter."
+     },
+     "variant": {
+      "q": "Which of these is NOT matter?",
+      "opts": [
+       "A rock from the garden",
+       "A glass of orange juice",
+       "The sound of a bell",
+       "Steam from a kettle"
+      ],
+      "ans": 2,
+      "steps": [
+       "Matter has mass and takes up space.",
+       "A rock is a solid, juice is a liquid, steam is a gas.",
+       "Sound is energy moving through the air, not a thing itself.",
+       "So the sound is not matter."
+      ],
+      "ex": {
+       "main": "**The sound of a bell.** Sound is energy. The rock, the juice and the steam all have mass and take up space."
+      }
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Identify whether the substance is Matter or Not Matter: Sunlight",
+     "opts": [
+      "Matter",
+      "Not Matter"
+     ],
+     "ans": 1,
+     "hint": "Is light a thing with mass, or is it energy?",
+     "steps": [
+      "Matter has mass and takes up space.",
+      "Sunlight is light, and light is energy.",
+      "Energy is not matter.",
+      "So sunlight is not matter."
+     ],
+     "ex": {
+      "main": "**Not Matter.** Sunlight is energy. It has no mass and takes up no space.",
+      "tip": "Matter is not energy or feelings — the teacher's own margin note."
+     },
+     "variant": {
+      "q": "Which of these is NOT matter?",
+      "opts": [
+       "Sand",
+       "Heat from a fire",
+       "Milk",
+       "Air in a balloon"
+      ],
+      "ans": 1,
+      "steps": [
+       "Check each one for mass and space.",
+       "Sand, milk and air are a solid, a liquid and a gas.",
+       "Heat is energy, like light and sound.",
+       "So the heat is not matter."
+      ],
+      "ex": {
+       "main": "**Heat from a fire.** Heat is energy. Sand, milk and air all have mass and take up space."
+      }
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Identify whether the substance is Matter or Not Matter: Carbon Dioxide (CO₂)",
+     "opts": [
+      "Matter",
+      "Not Matter"
+     ],
+     "ans": 0,
+     "hint": "It is a gas. Do gases count?",
+     "steps": [
+      "Carbon dioxide is a gas.",
+      "Gases have mass and take up space, even when you cannot see them.",
+      "So carbon dioxide is matter."
+     ],
+     "ex": {
+      "main": "**Matter.** Carbon dioxide is a gas, and gases are matter.",
+      "tip": "Invisible does not mean not matter: air is all gases, and it is all matter."
+     },
+     "variant": {
+      "q": "Which of these IS matter?",
+      "opts": [
+       "A shadow",
+       "Happiness",
+       "Oxygen gas",
+       "Moonlight"
+      ],
+      "ans": 2,
+      "steps": [
+       "Matter has mass and takes up space.",
+       "A shadow is just an area where light is blocked.",
+       "Happiness is a feeling, and moonlight is light.",
+       "Oxygen is a gas, so it is matter."
+      ],
+      "ex": {
+       "main": "**Oxygen gas.** A gas has mass and takes up space. A shadow, a feeling and light do not."
+      }
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Our atmosphere on earth is filled with air, which is mostly oxygen (O₂) and nitrogen (N₂), a little carbon dioxide (CO₂), and a few other very small amounts of other substances. Air also contains water vapor (H₂O). What PHASE OF MATTER is air?",
+     "opts": [
+      "Solid",
+      "Liquid",
+      "Gas",
+      "None of the above"
+     ],
+     "ans": 2,
+     "hint": "Every substance listed is a gas, water vapor included.",
+     "steps": [
+      "Oxygen, nitrogen and carbon dioxide are gases.",
+      "Water vapor is water in the gas phase.",
+      "So air is a gas."
+     ],
+     "ex": {
+      "main": "**Gas.** Everything air is made of is in the gas phase.",
+      "tip": "Water vapor is the gas version of water."
+     },
+     "variant": {
+      "q": "Steam rising from a pot of boiling water is water in which phase?",
+      "opts": [
+       "Solid",
+       "Liquid",
+       "Gas",
+       "Plasma"
+      ],
+      "ans": 2,
+      "steps": [
+       "Boiling turns liquid water into a gas.",
+       "That gas is called water vapor, or steam.",
+       "So steam is water in the gas phase."
+      ],
+      "ex": {
+       "main": "**Gas.** Steam is water vapor, which is water as a gas."
+      }
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "As we go higher up in the atmosphere, away from the surface of the earth, the temperature gets colder. How does this affect the motion or speed of the particles that make up air?",
+     "opts": [
+      "they would slow down",
+      "they would speed up",
+      "they would stay the same",
+      "it is impossible to tell"
+     ],
+     "ans": 0,
+     "hint": "Colder means less energy. What does less energy do to moving particles?",
+     "steps": [
+      "Temperature is how fast the particles are moving.",
+      "Colder air has less energy.",
+      "Less energy means the particles move more slowly."
+     ],
+     "ex": {
+      "main": "**They would slow down.** Colder means the particles have less energy, so they move more slowly.",
+      "tip": "Colder slows them down; warmer speeds them up."
+     },
+     "variant": {
+      "q": "A pot of soup is taken off the stove and left to cool. What happens to the particles in the soup as it cools?",
+      "opts": [
+       "They speed up",
+       "They slow down",
+       "They stop completely",
+       "They stay the same speed"
+      ],
+      "ans": 1,
+      "steps": [
+       "Cooling means the temperature goes down.",
+       "A lower temperature means less energy.",
+       "Less energy means slower particles.",
+       "They slow down; they do not stop."
+      ],
+      "ex": {
+       "main": "**They slow down.** As the soup cools, its particles lose energy and move more slowly. They never stop completely."
+      }
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Clouds form because of the phase change when water vapor (gas phase water) changes to a liquid. What PHYSICAL PROCESS is responsible for cloud formation?",
+     "opts": [
+      "melting",
+      "condensation",
+      "evaporation",
+      "deposition"
+     ],
+     "ans": 1,
+     "hint": "Which process goes from gas to liquid?",
+     "steps": [
+      "Melting is solid to liquid.",
+      "Evaporation is liquid to gas.",
+      "Deposition is gas straight to solid.",
+      "Condensation is gas to liquid, which is what makes a cloud."
+     ],
+     "ex": {
+      "main": "**Condensation.** Water vapor (a gas) turns into tiny liquid droplets, and those droplets are the cloud.",
+      "tip": "conDENSation turns a gas into the denser liquid."
+     },
+     "variant": {
+      "q": "Water droplets appear on the outside of a cold glass of lemonade on a hot day. Which process made them?",
+      "opts": [
+       "Evaporation",
+       "Melting",
+       "Condensation",
+       "Freezing"
+      ],
+      "ans": 2,
+      "steps": [
+       "The droplets came from the air, not from inside the glass.",
+       "The air held water as a gas.",
+       "The cold glass turned that gas into a liquid.",
+       "Gas to liquid is condensation."
+      ],
+      "ex": {
+       "main": "**Condensation.** Water vapor in the air touched the cold glass and turned into liquid droplets."
+      }
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "After water vapor (gas phase water) changes to liquid water forming a cloud, how would the DENSITY of the water change?",
+     "opts": [
+      "Density would increase",
+      "Density would decrease",
+      "Density would stay the same",
+      "none of the above"
+     ],
+     "ans": 0,
+     "hint": "Which is denser: water as a gas, or water as a liquid?",
+     "steps": [
+      "Water vapor is the least dense form of water.",
+      "Liquid water is the densest form.",
+      "Going from gas to liquid, the particles pack much closer together.",
+      "So the density increases."
+     ],
+     "ex": {
+      "main": "**Density would increase.** Gas particles are spread far apart; liquid particles are packed close, so the same water takes up less space.",
+      "tip": "Water vapor is lowest, ice is in the middle, liquid water is highest."
+     },
+     "variant": {
+      "q": "Steam from a shower turns into water droplets on a cold mirror. What happens to the density of that water?",
+      "opts": [
+       "It increases",
+       "It decreases",
+       "It stays the same",
+       "It drops to zero"
+      ],
+      "ans": 0,
+      "steps": [
+       "Steam is water vapor, a gas.",
+       "The droplets on the mirror are liquid.",
+       "Liquid water is denser than water vapor.",
+       "So the density increases."
+      ],
+      "ex": {
+       "main": "**It increases.** The water went from a gas to a liquid, and liquid water is much denser than water vapor."
+      }
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "When the liquid water droplets in the clouds grow bigger and bigger, they get to a point when they can no longer be suspended in the air. These droplets then fall to earth as \"precipitation.\" The most common form of precipitation is rain. As rain falls to the earth from the clouds, the temperature of the air increases as droplets come closer to the surface of the earth. What happens to the MOTION of the MOLECULES that make up a raindrop as the temperature gets warmer?",
+     "opts": [
+      "they would slow down",
+      "they would speed up",
+      "they would stay the same",
+      "it is impossible to tell"
+     ],
+     "ans": 1,
+     "hint": "Warmer means more energy.",
+     "steps": [
+      "The raindrop falls into warmer air.",
+      "Warmer means its molecules gain energy.",
+      "More energy means faster motion."
+     ],
+     "ex": {
+      "main": "**They would speed up.** As the raindrop warms, its molecules gain energy and move faster.",
+      "tip": "Warmer speeds them up — the other half of the teacher's note."
+     },
+     "variant": {
+      "q": "A cold bottle of water is left in a sunny car. What happens to the water molecules as the water warms up?",
+      "opts": [
+       "They slow down",
+       "They speed up",
+       "They stay the same speed",
+       "They turn into air"
+      ],
+      "ans": 1,
+      "steps": [
+       "The water is getting warmer.",
+       "Warmer means more energy.",
+       "More energy means the molecules move faster."
+      ],
+      "ex": {
+       "main": "**They speed up.** The sun warms the water, so its molecules gain energy and move faster."
+      }
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Sometimes when a droplet of rain is falling from a storm cloud towards the earth, a strong gust of wind will push it back up higher in the atmosphere, further from the surface of the earth, where the temperatures are below 0°C. This is how \"hail\" is formed. In this situation, what PHASE OF MATTER would the water change into?",
+     "opts": [
+      "solid",
+      "liquid",
+      "gas",
+      "none of the above"
+     ],
+     "ans": 0,
+     "hint": "What does water become below 0°C?",
+     "steps": [
+      "0°C is the temperature water freezes at.",
+      "Below 0°C, liquid water turns into ice.",
+      "Ice is a solid."
+     ],
+     "ex": {
+      "main": "**Solid.** Below 0°C the raindrop freezes, and hail is ice: water as a solid.",
+      "tip": "Hail is just raindrops that froze on the way down."
+     },
+     "variant": {
+      "q": "A tray of water is put in a freezer at −18°C overnight. What phase is the water in the morning?",
+      "opts": [
+       "Gas",
+       "Liquid",
+       "Solid",
+       "Half gas, half liquid"
+      ],
+      "ans": 2,
+      "steps": [
+       "Water freezes at 0°C.",
+       "−18°C is colder than that.",
+       "So the water has frozen into ice, a solid."
+      ],
+      "ex": {
+       "main": "**Solid.** −18°C is well below 0°C, the freezing point of water, so it has turned to ice."
+      }
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When raindrops turn into hail, what PHYSICAL PROCESS has occurred?",
+     "opts": [
+      "melting",
+      "condensation",
+      "evaporation",
+      "freezing"
+     ],
+     "ans": 3,
+     "hint": "Liquid water turning into solid ice.",
+     "steps": [
+      "A raindrop is liquid water.",
+      "Hail is solid ice.",
+      "Liquid to solid is freezing."
+     ],
+     "ex": {
+      "main": "**Freezing.** The raindrop went from liquid to solid.",
+      "tip": "Freezing is the reverse of melting."
+     },
+     "variant": {
+      "q": "An icicle forms as water dripping off a roof turns to ice. Which process is that?",
+      "opts": [
+       "Melting",
+       "Freezing",
+       "Evaporation",
+       "Condensation"
+      ],
+      "ans": 1,
+      "steps": [
+       "Dripping water is a liquid.",
+       "An icicle is solid ice.",
+       "Liquid to solid is freezing."
+      ],
+      "ex": {
+       "main": "**Freezing.** Liquid water dripping off the roof turned into solid ice."
+      }
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "How would the DENSITY of the water in the raindrop change AFTER it became hail?",
+     "opts": [
+      "Density would increase",
+      "Density would decrease",
+      "Density would stay the same",
+      "none of the above"
+     ],
+     "ans": 1,
+     "hint": "Water is unusual. Which is denser: liquid water or ice?",
+     "steps": [
+      "Most substances get denser when they freeze.",
+      "Water is the exception.",
+      "Liquid water is denser than ice, which is why ice floats.",
+      "So the density decreases."
+     ],
+     "ex": {
+      "main": "**Density would decrease.** Water is the exception: ice is less dense than liquid water, which is why ice floats.",
+      "tip": "Liquid water is the densest form of water. Ice is in the middle; vapor is lowest."
+     },
+     "variant": {
+      "q": "A full bottle of water is frozen and the ice bulges out of the top. Why?",
+      "opts": [
+       "Ice is denser than water, so the ice shrinks and pulls away",
+       "Ice is less dense than water, so the same water takes up more space",
+       "Freezing adds extra water to the bottle from the cold air",
+       "The plastic bottle shrinks in the cold and squeezes it out"
+      ],
+      "ans": 1,
+      "steps": [
+       "Freezing does not add or remove any water.",
+       "Water becomes less dense when it freezes.",
+       "Less dense means the same mass takes up more space.",
+       "So the ice needs more room than the water did."
+      ],
+      "ex": {
+       "main": "**Ice is less dense than water, so the same water takes up more space.** Water is the exception: it expands when it freezes."
+      }
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Fertilizers are sometimes added to help plants grow. Fertilizers provide key nutrients that plants need. Compost is sometimes used as a natural fertilizer for plants. Compost is made by collecting things like kitchen scraps, dead plant parts, and grass clippings, then allowing them to break down some before adding them to the plants to provide nutrients to them. What type of substance is compost?",
+     "opts": [
+      "Mixture",
+      "Solution"
+     ],
+     "ans": 0,
+     "hint": "Could you pick the pieces out?",
+     "steps": [
+      "Compost is made of scraps, leaves and grass clippings.",
+      "You can still see and pick out the pieces.",
+      "Nothing has dissolved completely.",
+      "So compost is a mixture."
+     ],
+     "ex": {
+      "main": "**Mixture.** You can still pick the pieces out, so nothing has dissolved into a solution.",
+      "tip": "The teacher's note: can pick out pieces."
+     },
+     "variant": {
+      "q": "Which of these is a mixture you could pick apart by hand?",
+      "opts": [
+       "Salt stirred into a glass of water",
+       "Trail mix of nuts, raisins and pretzels",
+       "Sugar dissolved in a cup of hot tea",
+       "Lemonade made from a powder mix"
+      ],
+      "ans": 1,
+      "steps": [
+       "In a solution, one substance dissolves and disappears.",
+       "Salt, sugar and lemonade powder all dissolve in water.",
+       "Trail mix pieces stay separate.",
+       "So the trail mix is the mixture you could pick apart."
+      ],
+      "ex": {
+       "main": "**Trail mix of nuts, raisins and pretzels.** You can pick out each piece. The other three are solutions."
+      }
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Chemical fertilizers are often used to help plants grow. These come in a variety of forms. One substance that is used as a fertilizer to replenish potassium in the soil is called \"potash\" or potassium oxide (K₂O). Potassium is a key nutrient for plants as it is necessary for growth of strong stems, the transport of water within plants, and for encouraging flowering and fruiting. As a fertilizer, potassium oxide is mixed with water (H₂O) where it dissolves completely and does not settle to the bottom. It is then sprayed on the soil. What kind of substance is potassium oxide and water?",
+     "opts": [
+      "Mixture",
+      "Solution"
+     ],
+     "ans": 1,
+     "hint": "It dissolves completely and does not settle.",
+     "steps": [
+      "The potassium oxide dissolves completely in the water.",
+      "It does not settle to the bottom.",
+      "Dissolving completely is what makes a solution."
+     ],
+     "ex": {
+      "main": "**Solution.** The potassium oxide dissolves completely and does not settle, which is what a solution is.",
+      "tip": "Watch for the words \"dissolves completely\" and \"does not settle\"."
+     },
+     "variant": {
+      "q": "Sand is stirred into a glass of water. A minute later the sand is lying on the bottom. What is it?",
+      "opts": [
+       "A solution, because it was stirred",
+       "A mixture, because the sand settled out",
+       "A solution, because water is involved",
+       "An element, because sand is natural"
+      ],
+      "ans": 1,
+      "steps": [
+       "In a solution, the substance dissolves and does not settle.",
+       "The sand sank to the bottom.",
+       "So it did not dissolve.",
+       "That makes it a mixture."
+      ],
+      "ex": {
+       "main": "**A mixture, because the sand settled out.** The sand never dissolved, so it is not a solution."
+      }
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When making lemonade, you mix lemonade powder into water. Which is the SOLVENT in this solution?",
+     "opts": [
+      "Ice",
+      "Lemonade powder",
+      "water",
+      "It is impossible to tell"
+     ],
+     "ans": 2,
+     "hint": "Which one does the dissolving?",
+     "steps": [
+      "The solvent is the substance that does the dissolving.",
+      "The solute is what you add, and it dissolves.",
+      "The powder dissolves into the water.",
+      "So water is the solvent."
+     ],
+     "ex": {
+      "main": "**Water.** Water does the dissolving, so it is the solvent. The powder is the solute.",
+      "tip": "Solvent does the dissolving; the solute is what you add."
+     },
+     "variant": {
+      "q": "Sugar is stirred into hot tea until it disappears. Which is the SOLUTE?",
+      "opts": [
+       "The tea",
+       "The sugar",
+       "The cup",
+       "The spoon"
+      ],
+      "ans": 1,
+      "steps": [
+       "The solute is the substance that gets dissolved.",
+       "The sugar is added to the tea.",
+       "The sugar disappears into the tea.",
+       "So the sugar is the solute."
+      ],
+      "ex": {
+       "main": "**The sugar.** The sugar is added and dissolves, so it is the solute. The tea does the dissolving, so it is the solvent."
+      }
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A grape is placed on a balance in a container. (The picture shows: the empty container on the balance reads 6 g; with the grape inside it, the balance reads 14 g.) To find the density of this grape we need to find the MASS. What is the MASS of this grape? The balance units are grams.",
+     "opts": [
+      "14 g",
+      "6 g",
+      "8 g",
+      "20 g"
+     ],
+     "ans": 2,
+     "hint": "The 14 g includes the container.",
+     "steps": [
+      "The balance read 6 g with only the container.",
+      "It read 14 g with the container and the grape.",
+      "Subtract the container: 14 − 6 = 8.",
+      "The grape is 8 g."
+     ],
+     "ex": {
+      "main": "**8 g.** Filled minus empty: 14 g − 6 g = 8 g. The 14 g counts the container too.",
+      "tip": "Filled minus empty — the teacher's note on the key."
+     },
+     "variant": {
+      "q": "An empty cup on a balance reads 4 g. With a strawberry in it, the balance reads 9 g. What is the mass of the strawberry?",
+      "opts": [
+       "13 g",
+       "9 g",
+       "5 g",
+       "4 g"
+      ],
+      "ans": 2,
+      "steps": [
+       "The cup alone is 4 g.",
+       "The cup and the strawberry are 9 g.",
+       "Subtract: 9 − 4 = 5.",
+       "The strawberry is 5 g."
+      ],
+      "ex": {
+       "main": "**5 g.** Filled minus empty: 9 g − 4 g = 5 g."
+      }
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "To find the density of the grape, we need to find the VOLUME. (The picture labels it: length 3 cm, width 1 cm, height 2 cm.) What is the VOLUME of the grape? Assume it is a rectangular prism with the dimensions listed above.",
+     "opts": [
+      "5 cm³",
+      "6 cm³",
+      "6 cm",
+      "7 cm³"
+     ],
+     "ans": 1,
+     "hint": "Multiply all three, then check the unit.",
+     "steps": [
+      "Volume of a rectangular prism is length × width × height.",
+      "3 × 1 × 2 = 6.",
+      "A volume is measured in cubic centimetres.",
+      "So the volume is 6 cm³."
+     ],
+     "ex": {
+      "main": "**6 cm³.** 3 × 1 × 2 = 6, and a volume is in cm³, not cm.",
+      "tip": "6 cm is the right number with the wrong unit: cm is a length."
+     },
+     "variant": {
+      "q": "A block is 5 cm long, 2 cm wide and 1 cm tall. What is its volume?",
+      "opts": [
+       "8 cm³",
+       "10 cm",
+       "10 cm³",
+       "7 cm³"
+      ],
+      "ans": 2,
+      "steps": [
+       "Volume is length × width × height.",
+       "5 × 2 × 1 = 10.",
+       "Volume uses cubic units: cm³.",
+       "So it is 10 cm³. Adding the sides (8) is a different calculation."
+      ],
+      "ex": {
+       "main": "**10 cm³.** 5 × 2 × 1 = 10, and a volume is in cm³."
+      }
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "The density of the grape is 1.25 g/cm³. Would this grape FLOAT or SINK in water and WHY?",
+     "opts": [
+      "It floats because the density is higher than that of water.",
+      "It sinks because the density is higher than that of water.",
+      "It floats because the density is lower than that of water.",
+      "It sinks because the density is lower than that of water."
+     ],
+     "ans": 1,
+     "hint": "Water is 1 g/cm³. Is 1.25 more or less?",
+     "steps": [
+      "Water has a density of 1 g/cm³.",
+      "1.25 is more than 1.",
+      "Denser than water sinks.",
+      "So the grape sinks because its density is higher."
+     ],
+     "ex": {
+      "main": "**It sinks because the density is higher than that of water.** 1.25 g/cm³ is more than water's 1 g/cm³.",
+      "tip": "More than 1 sinks; less than 1 floats."
+     },
+     "variant": {
+      "q": "A piece of wood has a density of 0.6 g/cm³. What happens when it is put in water?",
+      "opts": [
+       "It sinks because it is denser than water",
+       "It floats because it is less dense than water",
+       "It sinks because it is less dense than water",
+       "It floats because it is denser than water"
+      ],
+      "ans": 1,
+      "steps": [
+       "Water is 1 g/cm³.",
+       "0.6 is less than 1.",
+       "Less dense than water floats."
+      ],
+      "ex": {
+       "main": "**It floats because it is less dense than water.** 0.6 g/cm³ is less than water's 1 g/cm³."
+      }
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of the following is an ELEMENT?",
+     "opts": [
+      "CO₂",
+      "C₅₅H₇₂O₅N₄Mg",
+      "C₆H₁₂O₆",
+      "He"
+     ],
+     "ans": 3,
+     "hint": "Which one could you find in a single box on the periodic table?",
+     "steps": [
+      "An element is one kind of atom.",
+      "CO₂, C₅₅H₇₂O₅N₄Mg and C₆H₁₂O₆ each have more than one capital letter.",
+      "More than one capital letter means more than one kind of element joined.",
+      "He is helium, one box on the table."
+     ],
+     "ex": {
+      "main": "**He.** Helium is one element with its own box on the periodic table. The others are made of several elements joined.",
+      "tip": "Think: can you find it on the periodic table?"
+     },
+     "variant": {
+      "q": "Which of these is an ELEMENT?",
+      "opts": [
+       "NaCl",
+       "H₂O",
+       "Fe",
+       "CO₂"
+      ],
+      "ans": 2,
+      "steps": [
+       "Count the capital letters.",
+       "NaCl, H₂O and CO₂ each have two kinds of element.",
+       "Fe has one capital letter: it is iron.",
+       "So Fe is the element."
+      ],
+      "ex": {
+       "main": "**Fe.** Fe is iron, one element with its own box. NaCl, H₂O and CO₂ each join two elements."
+      }
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of the following is a MOLECULE?",
+     "opts": [
+      "Nb",
+      "B",
+      "C",
+      "H₂O"
+     ],
+     "ans": 3,
+     "hint": "Which one has two or more atoms joined?",
+     "steps": [
+      "A molecule is two or more atoms joined together.",
+      "Nb, B and C are each one element symbol.",
+      "H₂O is two hydrogen atoms and one oxygen atom joined.",
+      "So H₂O is the molecule."
+     ],
+     "ex": {
+      "main": "**H₂O.** Two hydrogen atoms and one oxygen atom joined together make a molecule.",
+      "tip": "A molecule has 2 or more atoms, of the same kind or different kinds."
+     },
+     "variant": {
+      "q": "Which of these is a MOLECULE?",
+      "opts": [
+       "Cu",
+       "Ne",
+       "CO₂",
+       "Au"
+      ],
+      "ans": 2,
+      "steps": [
+       "A molecule is two or more atoms joined.",
+       "Cu, Ne and Au are single element symbols.",
+       "CO₂ is three atoms joined.",
+       "So CO₂ is the molecule."
+      ],
+      "ex": {
+       "main": "**CO₂.** One carbon atom and two oxygen atoms joined together. Cu, Ne and Au are each a single element."
+      }
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A box on the periodic table represents what?",
+     "opts": [
+      "An element",
+      "A molecule",
+      "A compound",
+      "A planet"
+     ],
+     "ans": 0,
+     "hint": "The table lists the building blocks, one per box.",
+     "steps": [
+      "The periodic table lists every element.",
+      "Each box holds one element and its symbol.",
+      "So a box represents an element."
+     ],
+     "ex": {
+      "main": "**An element.** Every box is one element, with its own symbol.",
+      "tip": "Molecules and compounds are built FROM elements, so they are not on the table."
+     },
+     "variant": {
+      "q": "Where would you look to find the symbol for oxygen?",
+      "opts": [
+       "A long list of molecules",
+       "A box on the periodic table",
+       "A long list of compounds",
+       "A map of the solar system"
+      ],
+      "ans": 1,
+      "steps": [
+       "Oxygen is an element.",
+       "The periodic table has one box for each element.",
+       "So oxygen's symbol is in its box on the table."
+      ],
+      "ex": {
+       "main": "**A box on the periodic table.** Oxygen is an element, and every element has its own box."
+      }
+     }
+    },
+    {
+     "id": "q20",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The periodic table is mainly made up of ________.",
+     "opts": [
+      "Metals",
+      "Semi-Metals",
+      "Metalloids",
+      "Halogens"
+     ],
+     "ans": 0,
+     "hint": "Most of the boxes belong to one big group.",
+     "steps": [
+      "The periodic table has well over 100 elements.",
+      "Most of them are metals.",
+      "Metalloids and halogens are much smaller groups."
+     ],
+     "ex": {
+      "main": "**Metals.** Most of the elements on the periodic table are metals.",
+      "tip": "Iron, copper, gold, aluminum, sodium — the metals fill most of the table."
+     },
+     "variant": {
+      "q": "Most of the elements on the periodic table are ________.",
+      "opts": [
+       "Gases",
+       "Liquids",
+       "Metals",
+       "Molecules"
+      ],
+      "ans": 2,
+      "steps": [
+       "Think about how many elements are metals.",
+       "Iron, copper, gold and many more are metals.",
+       "Gases and liquids are only a small part of the table.",
+       "So most elements are metals."
+      ],
+      "ex": {
+       "main": "**Metals.** Most elements are metals. Only a few are gases, and very few are liquids at room temperature."
+      }
+     }
+    }
+   ],
+   "updatedAt": 1792545465171
+  }
+ }
+}

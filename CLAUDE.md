@@ -2020,6 +2020,64 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### The Chemistry practice test, twice (v190)
+
+Chris: *"let's run through the folder for updates and run the proper associated
+tasks."* River's Science folder gained a `Chemistry` subfolder on 10/20 holding
+the teacher's **"Practice for Chemistry Unit Test (21 Points)"** and its answer
+key. The test is the one `SUGGESTED_ASSESS` still holds as "week of 10/20, date
+to confirm"; nothing uploaded gives the day. Built exactly like the Nature of
+Science pair (v122), one builder (`tools/builders/build_sci_chem_test.py`):
+
+| id | title | |
+|---|---|---|
+| `unit-sci-chem-practice` | `Chemistry · Practice Unit Test` | `guide:true`, `prep`, `order:1`, 14 cards / 21 q |
+| `unit-sci-chem-test` | `Chemistry · Study Test` | `prep`, `order:2`, `round:20`, 8 cards / 20 q |
+
+- **The guide is the paper verbatim, options in the paper's order.** The builder
+  asserts the key `ABACABABADBABCCBBDDAA` before it will write. The key is a
+  scan with no text layer, so it was rendered with `pypdfium2` and read as
+  images. **All 21 answers were re-derived first and match the circled key.**
+  Five items are two-choice on the paper (Matter/Not Matter ×3,
+  Mixture/Solution ×2) and stay two-choice. Every question carries a
+  hand-checked four-option `variant` for the rescue round.
+- **The two picture questions say what the picture shows.** The balance (6 g
+  empty, 14 g with the grape) and the prism (3 cm × 1 cm × 2 cm) are written
+  into the stems in brackets. v122 left its pictures on paper; this does not,
+  because a missed guide question comes back in the Growth Zone without the
+  paper beside it, and an unanswerable review question teaches nothing.
+- **The teacher's margin notes are the best part of the key and are on the
+  cards as written:** "matter is not energy or feelings", "know water
+  examples", "know freezing too", the density ranking (vapor lowest, ice
+  medium, liquid high), "can pick out pieces", the solvent/solute definitions,
+  "filled minus empty", "more than 1 sinks", "can you find it on the periodic
+  table" and "2 or more atoms". The test pins every one.
+- **The study test covers two ideas no Chemistry part had taught:** mixtures
+  and solutions (with solvent and solute), and the periodic table. No class
+  notes for either were in Drive, so both are taught only as far as the paper
+  and its key go, and the `parentNote` says so. Fresh kitchen and bathroom
+  examples throughout; none of the paper's grape, potash, compost, hail or
+  lemonade powder appears in a study-test question. One question goes a step
+  past the paper and works a density out (48 g ÷ 24 cm³ = 2 g/cm³).
+- **Both trail the four numbered Chemistry parts** on `order` 1 and 2, the same
+  whole-shelf bucket the Science shelf's practice and study tests use.
+
+> ⚠️ **A study-test stem first opened "That 4 cm × 2 cm × 3 cm block…"**,
+> leaning on the volume question before it. It restated its numbers, but a
+> shuffled round can serve it alone, so it was rewritten to stand by itself.
+> The test now sweeps every study-test stem for a back-reference.
+
+`tools/test_chem_test.js` (19 assertions) pins the key letter for letter, the
+two-option rows on the entry grid, options never shuffling on the guide, the
+picture facts in the stems, every margin note, a 17-of-21 paper pass grading
+and its four misses becoming four rescue variants, the study test's shape and
+topics, no reused examples, a full round, and the shelf order with both gold
+rings. **Verified by flipping question 16's answer and watching the key
+assertion fail.**
+
+The **History** folder's `Unit_5_Study_Guide.pdf`, also uploaded 10/20, is the
+same 33-item guide the Unit 5 shelf was built from in v175, so nothing changed.
+
 ### Check your work: the Unit 3 test review, and a pop quiz that stops at 9 (v189)
 
 Chris pasted the 4th-grade teacher's math update of 10/15 again, this time with

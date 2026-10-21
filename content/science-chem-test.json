@@ -1,0 +1,611 @@
+{
+ "v": 1,
+ "records": {
+  "unit-sci-chem-test": {
+   "id": "unit-sci-chem-test",
+   "type": "unit",
+   "classId": "science",
+   "title": "Chemistry · Study Test",
+   "status": "draft",
+   "prep": true,
+   "order": 2,
+   "quarter": 2,
+   "round": 20,
+   "libv": 1,
+   "srcName": "Built to match the Chemistry practice test (Drive)",
+   "source": "added",
+   "summary": {
+    "from": "added",
+    "text": "A second test over the same chemistry ideas as the practice paper, set in a kitchen and a bathroom instead of the atmosphere: matter, particle speed, phase changes, water's density, mixtures and solutions, mass, volume, density, elements, molecules and the periodic table. Nothing here is copied from the paper."
+   },
+   "why": {
+    "from": "added",
+    "text": "Doing the same test twice mostly tests whether you remember the answers. A different test on the same ideas shows whether you can actually use them."
+   },
+   "objectives": [
+    {
+     "from": "source",
+     "text": "Tell matter from energy, light, sound and feelings."
+    },
+    {
+     "from": "source",
+     "text": "Name melting, freezing, evaporation and condensation from everyday examples."
+    },
+    {
+     "from": "source",
+     "text": "Say how water's density changes when it freezes or condenses."
+    },
+    {
+     "from": "source",
+     "text": "Tell a mixture from a solution, and a solvent from a solute."
+    },
+    {
+     "from": "added",
+     "text": "Find mass, volume and density, and say whether something floats."
+    },
+    {
+     "from": "source",
+     "text": "Tell an element from a molecule."
+    }
+   ],
+   "parentNote": {
+    "from": "added",
+    "text": "This is the parallel test: the same ideas as the teacher's practice paper, all new examples, so she cannot answer from memory of the first one. It runs as an ordinary 20-question quiz in one sitting with the options shuffled, and anything she misses lands in the Growth Zone. Mixtures and solutions and the periodic table are on the practice paper but had no part on the Chemistry shelf yet, so this is the first place they are practised; no class notes for either were in Drive, so they are taught here only as far as the practice paper and its key go. One question goes a step past the paper and works a density out (48 g ÷ 24 cm³); the paper gives the density ready-made."
+   },
+   "nextUp": {
+    "from": "added",
+    "minutes": 20,
+    "text": "Twenty questions in one sitting, the shape of the real test. Take it after the paper one and see which ideas still wobble."
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Matter or not",
+     "def": "**Matter has mass and takes up space. Energy, light, sound and feelings do not.**\n• A gas you cannot see is still matter.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Hotter is faster",
+     "def": "**Heating speeds particles up. Cooling slows them down.**\n• Cooling never stops them completely; it only slows them.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Four phase changes to know cold",
+     "def": "**Melting: solid to liquid. Freezing: liquid to solid. Evaporation: liquid to gas. Condensation: gas to liquid.**\n• Clouds, dew and a foggy mirror are condensation.\n• Hail, icicles and ice cubes are freezing.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Water is the exception",
+     "def": "**Liquid water is denser than ice, and ice is denser than water vapor.**\n• Freezing makes water LESS dense, which is why ice floats.\n• Condensing makes water MORE dense.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Mixture or solution",
+     "def": "**If you can see or pick out the parts, it is a mixture. If one part dissolves completely and does not settle, it is a solution.**\n• Salad, trail mix, sand in water: mixtures.\n• Salt water, sweet tea, lemonade from powder: solutions.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Solvent and solute",
+     "def": "**The solvent does the dissolving; the solute gets dissolved.**\n• In salt water, water is the solvent and salt is the solute.\n• Water is the most common solvent there is.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Density in three steps",
+     "def": "**Find the mass, find the volume, then divide mass by volume.**\n• Mass: filled minus empty on the balance.\n• Volume of a box shape: length × width × height, in cm³.\n• Compare with water's 1 g/cm³ to say float or sink.",
+     "eq": "density = mass ÷ volume",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Element, molecule, periodic table",
+     "def": "**An element is one kind of atom and has its own box on the periodic table. A molecule is two or more atoms joined.**\n• One capital letter, no numbers (Fe, He): one element.\n• Most of the boxes on the table are metals.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is NOT matter?",
+     "opts": [
+      "The heat from an oven",
+      "The smell of toast",
+      "Steam from a kettle",
+      "A grain of rice"
+     ],
+     "ans": 0,
+     "hint": "Three of these are made of particles. One is energy.",
+     "steps": [
+      "Matter has mass and takes up space.",
+      "Steam is water vapor, a gas.",
+      "The smell of toast is tiny particles in the air.",
+      "Heat is energy, so it is not matter."
+     ],
+     "ex": {
+      "main": "**The heat from an oven.** Heat is energy. Steam, a smell (particles in the air) and rice all have mass and take up space.",
+      "tip": "A smell is matter: it is particles reaching your nose."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these IS matter?",
+     "opts": [
+      "A rainbow",
+      "The air inside a soccer ball",
+      "An echo",
+      "A feeling of excitement"
+     ],
+     "ans": 1,
+     "hint": "Which one could you weigh, if you had a fine enough balance?",
+     "steps": [
+      "A rainbow is light.",
+      "An echo is sound.",
+      "A feeling is not a thing at all.",
+      "Air is a mixture of gases, so it is matter."
+     ],
+     "ex": {
+      "main": "**The air inside a soccer ball.** Air is gases, and gases have mass and take up space. The ball is heavier pumped up than flat.",
+      "tip": "Light, sound and feelings are never matter."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A puddle on the sidewalk dries up on a sunny afternoon. Which process happened?",
+     "opts": [
+      "Condensation",
+      "Freezing",
+      "Evaporation",
+      "Melting"
+     ],
+     "ans": 2,
+     "hint": "The water went from liquid into the air.",
+     "steps": [
+      "The puddle was liquid water.",
+      "It went into the air as water vapor, a gas.",
+      "Liquid to gas is evaporation."
+     ],
+     "ex": {
+      "main": "**Evaporation.** The liquid water turned into water vapor and went into the air.",
+      "tip": "Evaporation is the reverse of condensation."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Your bathroom mirror fogs up while you take a hot shower. Which process made the fog?",
+     "opts": [
+      "Evaporation",
+      "Freezing",
+      "Melting",
+      "Condensation"
+     ],
+     "ans": 3,
+     "hint": "The fog is tiny liquid droplets. Where did they come from?",
+     "steps": [
+      "The hot shower filled the air with water vapor.",
+      "The vapor touched the cooler mirror.",
+      "It turned into tiny liquid droplets.",
+      "Gas to liquid is condensation."
+     ],
+     "ex": {
+      "main": "**Condensation.** Water vapor from the shower turned back into liquid droplets on the cooler mirror.",
+      "tip": "The same process makes clouds and dew."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Water in an ice cube tray turns into ice cubes in the freezer. What happens to the water particles as it cools?",
+     "opts": [
+      "They slow down",
+      "They speed up",
+      "They stop completely",
+      "They stay the same speed"
+     ],
+     "ans": 0,
+     "hint": "Cooling takes energy away.",
+     "steps": [
+      "The freezer cools the water.",
+      "Cooling means the particles lose energy.",
+      "Less energy means slower particles.",
+      "They slow down, but they never stop completely."
+     ],
+     "ex": {
+      "main": "**They slow down.** Cooling takes energy away, so the particles move more slowly and lock into a solid.",
+      "tip": "\"They stop completely\" is the trap: particles in ice still vibrate."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A pot of water is heated on the stove. What happens to the water molecules as the water gets hotter?",
+     "opts": [
+      "They slow down",
+      "They speed up",
+      "They stay the same",
+      "They get smaller"
+     ],
+     "ans": 1,
+     "hint": "Heating adds energy.",
+     "steps": [
+      "The stove adds heat.",
+      "Heat is energy.",
+      "More energy makes molecules move faster."
+     ],
+     "ex": {
+      "main": "**They speed up.** Heating gives the molecules more energy, so they move faster.",
+      "tip": "The molecules do not change size; only their speed changes."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A full, sealed bottle of water is left in the freezer and cracks open as the water freezes. Why?",
+     "opts": [
+      "Ice is denser than water, so it pulls the bottle in",
+      "Freezing turns some of the water into a gas that pushes out",
+      "Ice is less dense than water, so the same water takes up more room",
+      "Cold air gets into the bottle and adds more water"
+     ],
+     "ans": 2,
+     "hint": "Water is the exception to the usual rule.",
+     "steps": [
+      "No water was added or lost.",
+      "Water becomes less dense when it freezes.",
+      "Less dense means the same mass takes up more space.",
+      "The ice needed more room than the bottle had."
+     ],
+     "ex": {
+      "main": "**Ice is less dense than water, so the same water takes up more room.** Water expands as it freezes, which is also why ice floats.",
+      "tip": "Most substances get denser when they freeze. Water does the opposite."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Water vapor in the air condenses into liquid droplets on a cold window. What happens to the density of that water?",
+     "opts": [
+      "It cannot be measured",
+      "It decreases",
+      "It stays the same",
+      "It increases"
+     ],
+     "ans": 3,
+     "hint": "Which is denser: water as a gas or water as a liquid?",
+     "steps": [
+      "Water vapor is the least dense form of water.",
+      "Liquid water is the densest form.",
+      "Going from gas to liquid packs the particles closer.",
+      "So the density increases."
+     ],
+     "ex": {
+      "main": "**It increases.** Gas particles are spread far apart; in the liquid they are packed close together.",
+      "tip": "Vapor lowest, ice in the middle, liquid highest."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is a solution?",
+     "opts": [
+      "Salt dissolved in water",
+      "A bowl of salad",
+      "Sand and pebbles in a bucket",
+      "Cereal in milk"
+     ],
+     "ans": 0,
+     "hint": "In which one does something disappear into the liquid?",
+     "steps": [
+      "In a solution, one substance dissolves completely.",
+      "Salt dissolves and you cannot see it any more.",
+      "Salad, sand and pebbles, and cereal in milk can all be picked apart.",
+      "So the salt water is the solution."
+     ],
+     "ex": {
+      "main": "**Salt dissolved in water.** The salt dissolves completely and does not settle. The others can be picked apart, so they are mixtures.",
+      "tip": "Cereal in milk is a mixture: you can fish the cereal out."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bag of trail mix holds peanuts, raisins and chocolate pieces. What kind of substance is it?",
+     "opts": [
+      "A solution",
+      "A mixture",
+      "An element",
+      "A molecule"
+     ],
+     "ans": 1,
+     "hint": "Can you pick the pieces out?",
+     "steps": [
+      "Each piece keeps its own look and taste.",
+      "You can pick the peanuts out by hand.",
+      "Nothing has dissolved.",
+      "So it is a mixture."
+     ],
+     "ex": {
+      "main": "**A mixture.** You can pick every piece out, so nothing has dissolved.",
+      "tip": "Can pick out pieces: mixture."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Hot cocoa is made by stirring cocoa powder into hot milk until it dissolves. Which is the SOLVENT?",
+     "opts": [
+      "The cocoa powder",
+      "The spoon",
+      "The hot milk",
+      "The mug"
+     ],
+     "ans": 2,
+     "hint": "Which one does the dissolving?",
+     "steps": [
+      "The solvent does the dissolving.",
+      "The solute is added and dissolves.",
+      "The cocoa powder dissolves into the milk.",
+      "So the milk is the solvent."
+     ],
+     "ex": {
+      "main": "**The hot milk.** The milk does the dissolving, so it is the solvent; the cocoa powder is the solute.",
+      "tip": "The solvent is usually the liquid you start with."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Salt is stirred into a pot of water until it disappears. Which is the SOLUTE?",
+     "opts": [
+      "The water",
+      "The pot",
+      "The steam",
+      "The salt"
+     ],
+     "ans": 3,
+     "hint": "Which one gets dissolved?",
+     "steps": [
+      "The solute is what you add, and it dissolves.",
+      "The salt is added to the water.",
+      "The salt disappears into the water.",
+      "So the salt is the solute."
+     ],
+     "ex": {
+      "main": "**The salt.** It is added and dissolves, so it is the solute; the water is the solvent.",
+      "tip": "Solute: you add it, it dissolves."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "An empty cup on a balance reads 12 g. After sugar is poured in, the balance reads 37 g. What is the mass of the sugar?",
+     "opts": [
+      "25 g",
+      "37 g",
+      "49 g",
+      "12 g"
+     ],
+     "ans": 0,
+     "hint": "The 37 g includes the cup.",
+     "steps": [
+      "The cup alone is 12 g.",
+      "The cup and the sugar together are 37 g.",
+      "Subtract: 37 − 12 = 25.",
+      "The sugar is 25 g."
+     ],
+     "ex": {
+      "main": "**25 g.** Filled minus empty: 37 g − 12 g = 25 g. Adding them (49 g) counts the cup twice.",
+      "tip": "Filled minus empty."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A block is 4 cm long, 2 cm wide and 3 cm tall. What is its volume?",
+     "opts": [
+      "9 cm³",
+      "24 cm³",
+      "24 cm",
+      "14 cm³"
+     ],
+     "ans": 1,
+     "hint": "Multiply all three, then check the unit.",
+     "steps": [
+      "Volume is length × width × height.",
+      "4 × 2 × 3 = 24.",
+      "Volume is in cubic centimetres.",
+      "So it is 24 cm³."
+     ],
+     "ex": {
+      "main": "**24 cm³.** 4 × 2 × 3 = 24, in cm³. 24 cm has the right number but a length unit; 9 is the sides added.",
+      "tip": "Three lengths multiplied give cubic units."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A block 4 cm long, 2 cm wide and 3 cm tall has a mass of 48 g. What is its density, and does it float in water?",
+     "opts": [
+      "0.5 g/cm³, and it floats",
+      "2 g/cm³, and it floats",
+      "2 g/cm³, and it sinks",
+      "72 g/cm³, and it sinks"
+     ],
+     "ans": 2,
+     "hint": "Density is mass divided by volume. Its volume is 4 × 2 × 3.",
+     "steps": [
+      "Volume: 4 × 2 × 3 = 24 cm³.",
+      "Density: 48 ÷ 24 = 2 g/cm³.",
+      "Water is 1 g/cm³, and 2 is more than 1.",
+      "So it sinks."
+     ],
+     "ex": {
+      "main": "**2 g/cm³, and it sinks.** 48 g ÷ 24 cm³ = 2 g/cm³, which is more than water's 1 g/cm³.",
+      "tip": "0.5 is volume divided by mass, the wrong way round."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A cork has a density of 0.24 g/cm³ and a pebble has a density of 2.6 g/cm³. What happens when both are dropped into water?",
+     "opts": [
+      "Both float",
+      "Both sink",
+      "The cork sinks and the pebble floats",
+      "The cork floats and the pebble sinks"
+     ],
+     "ans": 3,
+     "hint": "Compare each with water's 1 g/cm³.",
+     "steps": [
+      "Water is 1 g/cm³.",
+      "0.24 is less than 1, so the cork floats.",
+      "2.6 is more than 1, so the pebble sinks."
+     ],
+     "ex": {
+      "main": "**The cork floats and the pebble sinks.** Less than 1 floats; more than 1 sinks.",
+      "tip": "More than 1 sinks; less than 1 floats."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is an ELEMENT?",
+     "opts": [
+      "Ne",
+      "NaCl",
+      "H₂O",
+      "CO₂"
+     ],
+     "ans": 0,
+     "hint": "Which one has a single box on the periodic table?",
+     "steps": [
+      "An element is one kind of atom.",
+      "NaCl, H₂O and CO₂ each join two kinds of element.",
+      "Ne is neon, one element.",
+      "So Ne is the element."
+     ],
+     "ex": {
+      "main": "**Ne.** Neon is one element with its own box. The others each join two elements together.",
+      "tip": "Count the capital letters: one capital, one element."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which of these is a MOLECULE?",
+     "opts": [
+      "Fe",
+      "CO₂",
+      "Cu",
+      "Na"
+     ],
+     "ans": 1,
+     "hint": "Which one is two or more atoms joined?",
+     "steps": [
+      "A molecule is two or more atoms joined.",
+      "Fe, Cu and Na are each a single element symbol.",
+      "CO₂ is one carbon atom and two oxygen atoms.",
+      "So CO₂ is the molecule."
+     ],
+     "ex": {
+      "main": "**CO₂.** Three atoms joined together. Fe, Cu and Na are single elements.",
+      "tip": "A small number after a symbol means more than one atom."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does each box on the periodic table show?",
+     "opts": [
+      "One mixture",
+      "One molecule",
+      "One element",
+      "One solution"
+     ],
+     "ans": 2,
+     "hint": "The table lists the building blocks.",
+     "steps": [
+      "The periodic table lists all the elements.",
+      "Each box holds one element and its symbol.",
+      "Molecules, mixtures and solutions are made from elements."
+     ],
+     "ex": {
+      "main": "**One element.** Each box is one element. Molecules, mixtures and solutions are made from elements, so they are not on the table.",
+      "tip": "Every box, one element."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Most of the elements on the periodic table are ________.",
+     "opts": [
+      "Gases",
+      "Molecules",
+      "Liquids",
+      "Metals"
+     ],
+     "ans": 3,
+     "hint": "Iron, copper, gold, aluminum…",
+     "steps": [
+      "There are well over 100 elements.",
+      "Most of them are metals.",
+      "Only a few are gases, and very few are liquids at room temperature."
+     ],
+     "ex": {
+      "main": "**Metals.** Most of the table is metals.",
+      "tip": "Molecules are not elements, so they are never on the table."
+     }
+    }
+   ],
+   "updatedAt": 1792545465172
+  }
+ }
+}
