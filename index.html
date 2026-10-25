@@ -1775,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v190 · Chemistry practice test';
+const APP_VERSION = 'v191 · Newsletter of 10/25';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1980,8 +1980,11 @@ const CAL = {
     {start:'2026-10-27', name:'Fall picture retakes', icon:'📸', kind:'note'},
     {start:'2026-10-28', name:'Book Fair grand event', icon:'📚', kind:'community',
      note:'SHINE lunch the same day.'},
+    {start:'2026-10-28', name:'Weather journals handed out', icon:'🌦️', kind:'note', classId:'science',
+     note:'It counts as a test grade. Check the due date with your teacher.'},
     {start:'2026-10-30', name:'Costume Parade', icon:'👻', kind:'dress',
      note:'Wear your costume — say no to bullying.'},
+    {start:'2026-10-30', name:'Owl pellet dissection in Science', icon:'🦉', kind:'note', classId:'science'},
     {start:'2026-12-18', name:'Early release — last day before Winter Break', icon:'🕑', kind:'early', early:true,
      note:'No Late Bird.'},
     {start:'2027-01-15', name:'Spotlight Spectacular', icon:'🎭', kind:'celebration', note:'Performance night.'},
@@ -3353,9 +3356,20 @@ const SUGGESTED_ASSESS = [
   {id:'sg-math-2026-10-20', classId:'math', kind:'test',
    title:'Math test · Unit 3', date:'2026-10-20'},
   {id:'sg-math-2026-10-28', classId:'math', kind:'quiz',
-   title:'Math quiz · Unit 5 (estimated date)', date:'2026-10-28'},
+   title:'Math quiz · Unit 5, lessons 5-1 to 5-4 and one-digit long division', date:'2026-10-28'},
   {id:'sg-math-2026-11-05', classId:'math', kind:'test',
-   title:'Math test · Unit 5 (around 11/5, date to confirm)', date:'2026-11-05'}
+   title:'Math test · Unit 5 (around 11/5, date to confirm)', date:'2026-11-05'},
+  /* 4th Grade Newsletter, 10/25. It confirms the Unit 5 quiz for 10/28 (the
+     row above, retitled with what it covers, id kept so an accepted copy is
+     not duplicated) and dates the Regions 3 quiz. The two English quizzes are
+     only "next week", so they take the Monday of that week and say the date
+     needs confirming — the chemistry-test convention. */
+  {id:'sg-hist-2026-10-27', classId:'history', kind:'quiz',
+   title:'History quiz · Regions 3', date:'2026-10-27'},
+  {id:'sg-eng-2026-10-26-lc', classId:'english', kind:'quiz',
+   title:'Lemonade Crime Quiz · Rising Action, Chapters 6–10 (week of 10/26, date to confirm)', date:'2026-10-26'},
+  {id:'sg-eng-2026-10-26-ww', classId:'english', kind:'quiz',
+   title:'Vocabulary quiz · Wordly Wise Unit 4 (week of 10/26, date to confirm)', date:'2026-10-26'}
 ];
 
 /* Mission Control reads the sibling app's gist, read-only — never merged,

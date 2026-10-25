@@ -2020,6 +2020,70 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### The newsletter of 10/25 (v191)
+
+Chris: *"Let's add the latest newsletter."* The **4th Grade Newsletter of
+10/25** arrived in the Newsletters folder as a single JPEG with no text layer,
+so it was read as an image.
+
+**`SUGGESTED_ASSESS`:**
+
+| id | what changed |
+|---|---|
+| `sg-math-2026-10-28` | **retitled, id kept**: the newsletter confirms 10/28 and says the quiz covers lessons 5-1 to 5-4 and one-digit long division, so "(estimated date)" is gone |
+| `sg-hist-2026-10-27` | new: History quiz · Regions 3, Tuesday 10/27 |
+| `sg-eng-2026-10-26-lc` | new: Lemonade Crime Rising Action quiz, Chapters 6–10 |
+| `sg-eng-2026-10-26-ww` | new: Wordly Wise Unit 4 vocabulary quiz |
+
+- **The math row keeps its id** so a copy Chris has already accepted is
+  updated in his suggestion card, never duplicated.
+- **Both English quizzes are only "next week"**, so they take the Monday of
+  that week and their titles say the date needs confirming, the chemistry-test
+  convention (v162).
+
+**`CAL.events`:**
+
+- **Weather journals handed out**, Wednesday 10/28, a Science note. The
+  newsletter says the journal is a test grade due **"Friday 10/6"**, a date
+  that has already passed and was a Tuesday. The real date is probably 11/6
+  (a Friday), but that is a guess, so the app does not print one. The note asks
+  her to check the due date, and no assessment row was added until the date is
+  confirmed.
+- **Owl pellet dissection in Science**, Friday 10/30, beside the Costume
+  Parade.
+
+**Checked and unchanged:**
+
+- Student hours: Math & Science Thursdays, English & Writing Mondays, History
+  Tuesdays, 7:00–7:30 am or 3:30–4:00 pm.
+- Important Dates: the Boo Bash, the Book Fair, the grand event and the
+  Costume Parade were all on the calendar already.
+- The chemistry test is reported as taken, so its "date to confirm" row has
+  simply passed.
+
+**Content gaps, reported rather than built:**
+
+- the five U.S. regions and the regions quizzes
+- next week's weather unit (tools, clouds, weather vs. climate)
+- Writing's "jobs of nouns" (subject, direct object, indirect object, object
+  of the preposition), which has a quiz coming but no date
+
+The Rising Action quiz is already covered by `lemonade-crime-2.json`
+(Ch. 6–9) and `lemonade-crime-3.json` (Ch. 10–13), and Unit 4 vocabulary by
+`wordly-wise-5-04.json`.
+
+`tools/test_newsletter_1025.js` (11 assertions) points the clock at Monday
+10/26 and pins:
+
+- each row by id
+- the math quiz's new title
+- both "date to confirm" titles
+- both Science events reaching Coming up
+- the journal note never printing 10/6
+
+**Verified by moving the Regions quiz a day and putting "10/6" back in the
+note, and watching exactly those two assertions fail.**
+
 ### The Chemistry practice test, twice (v190)
 
 Chris: *"let's run through the folder for updates and run the proper associated
