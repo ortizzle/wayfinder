@@ -1,0 +1,493 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5u3": {
+   "id": "unit-m5u3",
+   "type": "unit",
+   "updatedAt": 1792959693498,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Lesson 3: Divide with Area Models and Properties",
+   "srcName": "Lesson 5-3 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 5 Student Edition practice pages — dividing by two-digit divisors (Drive)",
+   "summary": {
+    "text": "Lesson 5-3 practice pages: using area models, place value and the Distributive Property to divide by two-digit divisors, and multiplying to check.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The area model shows WHY division works in tens and ones. Partial quotients and long division, next in the unit, are this same model written in a column.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Use an area model to divide by a two-digit divisor",
+     "from": "source"
+    },
+    {
+     "text": "Use the Distributive Property to break a quotient into tens and ones",
+     "from": "source"
+    },
+    {
+     "text": "Check a quotient by multiplying",
+     "from": "source"
+    },
+    {
+     "text": "Use a quotient to answer a word problem's real question",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 5-3 practice pages in her Unit 5 folder, read for what they ask. The numbers are fresh, not the page's own. The slip most worth a word is writing the two parts of the side next to each other (20 and 8 as 208 instead of 28); one question shows a student doing exactly that. The other wrong options stop after the tens piece or count one group too many. One question shows a check that is right, because a good critique says so when an answer holds up.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Tens first, then what is left, then add the parts and multiply back.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Area model for division",
+     "def": "**A rectangle shows a division: the area is the dividend, one side is the divisor, and the missing side is the quotient.**\n• 476 ÷ 14: area 476, side 14, missing side 34.",
+     "hint": "Area ÷ known side = missing side.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Missing side",
+     "def": "**To find a missing side, divide the area by the side you know.**\n• 14 × w = 476, so w = 476 ÷ 14.",
+     "hint": "Division undoes the multiplying.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Tens first",
+     "def": "**Estimate how many tens are in the quotient before anything else.**\n• 312 ÷ 13: 13 × 20 = 260 fits, 13 × 30 = 390 does not, so 2 tens.",
+     "hint": "The biggest ten that still fits.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Then what is left",
+     "def": "**Subtract the first piece, then find how many more groups fit.**\n• 312 − 260 = 52, and 13 × 4 = 52, so 4 more.",
+     "hint": "Take away, then share what remains.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The Distributive Property",
+     "def": "**Split the missing side into tens and ones, and the pieces of area add back to the whole.**\n• 364 = 14 × 20 + 14 × 6 = 14 × (20 + 6), so 364 ÷ 14 = 26.",
+     "hint": "Two pieces, one rectangle.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Add the parts, never side by side",
+     "def": "**The quotient is the tens part PLUS the ones part.**\n• 20 and 8 make 28, not 208.",
+     "hint": "Plus, not next to.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Check with multiplication",
+     "def": "**Divisor × quotient should give back the area.**\n• 18 × 31 = 540 + 18 = 558.",
+     "hint": "Undo it to check it.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Answer the real question",
+     "def": "**In a word problem, the quotient is often a step, not the answer.**\n• Find the width, then decide whether it fits the space.",
+     "hint": "Read the question again before you write the answer.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A rectangle has an area of 476 square inches. One side is 14 inches long. Which equation finds the other side, w?",
+     "opts": [
+      "476 ÷ 14 = w",
+      "476 × 14 = w",
+      "476 − 14 = w",
+      "14 ÷ 476 = w"
+     ],
+     "ans": 0,
+     "hint": "Area = length × width. Which operation undoes the multiplying?",
+     "steps": [
+      "Area = length × width, so 14 × w = 476.",
+      "To find a missing factor, divide.",
+      "So w = 476 ÷ 14.",
+      "476 ÷ 14 = 34 inches."
+     ],
+     "ex": {
+      "main": "**476 ÷ 14 = w.** A missing side is the area divided by the side you know. Here w = 34.",
+      "tip": "Dividing the smaller number by the bigger one gives less than 1, which cannot be the side."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In an area model for 476 ÷ 14, what does the missing side stand for?",
+     "opts": [
+      "The dividend",
+      "The quotient",
+      "The divisor",
+      "The remainder"
+     ],
+     "ans": 1,
+     "hint": "The area is 476, and one side is 14.",
+     "steps": [
+      "The whole area is the dividend, 476.",
+      "The side you know is the divisor, 14.",
+      "The side you are finding is the quotient."
+     ],
+     "ex": {
+      "main": "**The quotient.** Area ÷ known side = missing side, so the missing side is the answer to the division: 34.",
+      "tip": "Dividend = area, divisor = known side, quotient = missing side."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the best first step for finding 312 ÷ 13 with an area model?",
+     "opts": [
+      "Add 312 and 13 to find the area of the whole rectangle first",
+      "Find the ones first: 13 × 2 = 26, so the answer must be 2",
+      "Find the tens: 13 × 20 = 260 fits, and 13 × 30 = 390 is too much",
+      "Divide 13 by 312 to find how wide the first piece should be"
+     ],
+     "ans": 2,
+     "hint": "Start by estimating how many tens will be in the quotient.",
+     "steps": [
+      "13 × 20 = 260, which is less than 312.",
+      "13 × 30 = 390, which is more than 312.",
+      "So the quotient has 2 tens.",
+      "312 − 260 = 52 is left, and 13 × 4 = 52, so 312 ÷ 13 = 24."
+     ],
+     "ex": {
+      "main": "**Find the tens first.** 13 × 20 = 260 fits and 13 × 30 = 390 does not, so the first piece of the side is 20.",
+      "tip": "Tens first, then the ones with what is left."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 374 ÷ 17?",
+     "opts": [
+      "23",
+      "20",
+      "202",
+      "22"
+     ],
+     "ans": 3,
+     "hint": "Start with 17 × 20.",
+     "steps": [
+      "Estimate the tens: 17 × 20 = 340, and 17 × 30 = 510 is too much.",
+      "Take away the first piece: 374 − 340 = 34.",
+      "Find the second piece: 17 × 2 = 34.",
+      "Add the two parts of the side: 20 + 2 = 22.",
+      "Check: 17 × 22 = 340 + 34 = 374."
+     ],
+     "ex": {
+      "main": "**22.** The side is 20 + 2 = 22, and 17 × 22 = 374. The wrong answers are real slips: 20 is only the tens piece, 202 writes 20 and 2 side by side, and 23 is one group too many.",
+      "tip": "Add the parts of the side; never write them side by side."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 696 ÷ 29?",
+     "opts": [
+      "24",
+      "20",
+      "204",
+      "25"
+     ],
+     "ans": 0,
+     "hint": "29 × 20 = 580. How much is left?",
+     "steps": [
+      "Estimate the tens: 29 × 20 = 580, and 29 × 30 = 870 is too much.",
+      "Take away the first piece: 696 − 580 = 116.",
+      "Find the second piece: 29 × 4 = 116.",
+      "Add the two parts of the side: 20 + 4 = 24.",
+      "Check: 29 × 24 = 580 + 116 = 696."
+     ],
+     "ex": {
+      "main": "**24.** The side is 20 + 4 = 24, and 29 × 24 = 696. The wrong answers are real slips: 20 is only the tens piece, 204 writes 20 and 4 side by side, and 25 is one group too many.",
+      "tip": "Check: the answer × 29 must be 696."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which shows 364 ÷ 14 using the Distributive Property?",
+     "opts": [
+      "364 = 14 × 2 + 14 × 6 = 14 × (2 + 6), so the quotient is 8",
+      "364 = 14 × 20 + 14 × 6 = 14 × (20 + 6), so the quotient is 26",
+      "364 = 14 × 20 + 14 × 60 = 14 × (20 + 60), so the quotient is 80",
+      "364 = 10 × 26 + 4 × 6 = 284, so the quotient is 10"
+     ],
+     "ans": 1,
+     "hint": "Split the missing side into tens and ones. Do the pieces add back to 364?",
+     "steps": [
+      "14 × 20 = 280.",
+      "364 − 280 = 84, and 14 × 6 = 84.",
+      "280 + 84 = 364, so 364 = 14 × (20 + 6).",
+      "The quotient is 26."
+     ],
+     "ex": {
+      "main": "**14 × 20 + 14 × 6 = 14 × (20 + 6) = 364.** The two pieces add back to 364, so the quotient is 26.",
+      "tip": "Check that the pieces add back to the whole: 14 × 2 + 14 × 6 is only 112."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A rectangular rug has an area of 432 square feet. One side is 18 feet. How many feet long is the other side?",
+     "opts": [
+      "204 feet",
+      "20 feet",
+      "24 feet",
+      "25 feet"
+     ],
+     "ans": 2,
+     "hint": "Find 432 ÷ 18. Start with 18 × 20.",
+     "steps": [
+      "Estimate the tens: 18 × 20 = 360, and 18 × 30 = 540 is too much.",
+      "Take away the first piece: 432 − 360 = 72.",
+      "Find the second piece: 18 × 4 = 72.",
+      "Add the two parts of the side: 20 + 4 = 24.",
+      "Check: 18 × 24 = 360 + 72 = 432."
+     ],
+     "ex": {
+      "main": "**24 feet.** The side is 20 + 4 = 24, and 18 × 24 = 432. The wrong answers are real slips: 20 feet is only the tens piece, 204 feet writes 20 and 4 side by side, and 25 feet is one group too many.",
+      "tip": "Area ÷ known side = missing side."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A choir of 351 singers stands in 13 equal rows. How many singers are in each row?",
+     "opts": [
+      "28 singers",
+      "20 singers",
+      "207 singers",
+      "27 singers"
+     ],
+     "ans": 3,
+     "hint": "Find 351 ÷ 13. Start with the tens: 13 × 20.",
+     "steps": [
+      "Estimate the tens: 13 × 20 = 260, and 13 × 30 = 390 is too much.",
+      "Take away the first piece: 351 − 260 = 91.",
+      "Find the second piece: 13 × 7 = 91.",
+      "Add the two parts of the side: 20 + 7 = 27.",
+      "Check: 13 × 27 = 260 + 91 = 351."
+     ],
+     "ex": {
+      "main": "**27 singers.** The side is 20 + 7 = 27, and 13 × 27 = 351. The wrong answers are real slips: 20 singers is only the tens piece, 207 singers writes 20 and 7 side by side, and 28 singers is one group too many.",
+      "tip": "Check: 13 rows × your answer must make 351."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "In an area model for 575 ÷ 23, the first piece is 23 × 20 = 460. Which multiplication fills the second piece?",
+     "opts": [
+      "23 × 5 = 115",
+      "23 × 15 = 345",
+      "23 × 50 = 1,150",
+      "20 × 5 = 100"
+     ],
+     "ans": 0,
+     "hint": "How much of 575 is left after the first piece?",
+     "steps": [
+      "575 − 460 = 115 is left.",
+      "23 × 5 = 115, so the second piece is 5.",
+      "The side is 20 + 5 = 25.",
+      "So 575 ÷ 23 = 25."
+     ],
+     "ex": {
+      "main": "**23 × 5 = 115.** 575 − 460 leaves 115, and 23 × 5 is exactly 115, so 575 ÷ 23 = 25.",
+      "tip": "Every piece of the model uses the same side, 23."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "How many tens will be in the quotient of 816 ÷ 34?",
+     "opts": [
+      "3 tens",
+      "2 tens",
+      "8 tens",
+      "20 tens"
+     ],
+     "ans": 1,
+     "hint": "Try 34 × 20 and 34 × 30.",
+     "steps": [
+      "34 × 20 = 680, which is less than 816.",
+      "34 × 30 = 1,020, which is more than 816.",
+      "So the quotient has 2 tens.",
+      "816 ÷ 34 = 24."
+     ],
+     "ex": {
+      "main": "**2 tens.** 34 × 20 fits under 816 but 34 × 30 goes over, so the quotient is in the twenties: 24.",
+      "tip": "Estimating the tens first stops you from starting with a piece that is too big."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jada found 558 ÷ 18 = 31. Which multiplication checks her answer?",
+     "opts": [
+      "558 × 18 = 10,044, which is bigger than 31",
+      "18 + 31 = 49, which is close to 50",
+      "18 × 31 = 18 × 30 + 18 × 1 = 540 + 18 = 558",
+      "18 × 3 + 18 × 1 = 54 + 18 = 72"
+     ],
+     "ans": 2,
+     "hint": "Multiply the quotient by the divisor.",
+     "steps": [
+      "18 × 30 = 540.",
+      "18 × 1 = 18.",
+      "540 + 18 = 558, which is the dividend.",
+      "So 31 is right."
+     ],
+     "ex": {
+      "main": "**18 × 31 = 540 + 18 = 558.** Quotient × divisor gives back the dividend, so her answer checks out.",
+      "tip": "18 × 3 forgets that the 3 in 31 means 3 tens."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Noah used an area model for 448 ÷ 16. His pieces were 16 × 20 = 320 and 16 × 8 = 128, and he wrote the answer 208. What went wrong?",
+     "opts": [
+      "He should multiply 20 and 8 to get 160, the real side length",
+      "His first piece was wrong, because 16 × 20 is really 300",
+      "Nothing went wrong, because 208 is the correct quotient here",
+      "He wrote 20 and 8 side by side; he should add them to get 28"
+     ],
+     "ans": 3,
+     "hint": "Check: does 16 × 208 make 448?",
+     "steps": [
+      "320 + 128 = 448, so both pieces are right.",
+      "The side is 20 + 8 = 28.",
+      "Writing 20 and 8 side by side makes 208, which is far too big.",
+      "Check: 16 × 28 = 448."
+     ],
+     "ex": {
+      "main": "**He wrote the parts side by side.** The side is 20 + 8 = 28, and 16 × 28 = 448. 16 × 208 would be 3,328.",
+      "tip": "Add the parts of the side together, the same way you add partial products."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Priya says 667 ÷ 29 = 23. She checks: 29 × 20 = 580 and 29 × 3 = 87, and 580 + 87 = 667. Is she right?",
+     "opts": [
+      "Yes, because the two pieces add back to 667",
+      "No, because 29 × 3 is 97, so the answer is 24",
+      "No, because 667 is odd, so it cannot be divided by 29",
+      "Yes, but only because 23 is close to 20"
+     ],
+     "ans": 0,
+     "hint": "Check each piece, then add.",
+     "steps": [
+      "29 × 20 = 580 is right.",
+      "29 × 3 = 87 is right.",
+      "580 + 87 = 667, the dividend.",
+      "So 667 ÷ 29 = 23."
+     ],
+     "ex": {
+      "main": "**Yes.** Both pieces are right and they add back to 667, so 23 is the quotient.",
+      "tip": "A good check says so when an answer is right, too."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A garden bed has an area of 672 square feet and is 28 feet long. Will it fit in a space that is 25 feet wide?",
+     "opts": [
+      "No, because it is 26 feet wide",
+      "Yes, because it is 24 feet wide",
+      "Yes, because it is 20 feet wide",
+      "No, because 672 is more than 25"
+     ],
+     "ans": 1,
+     "hint": "Find the width first: 672 ÷ 28.",
+     "steps": [
+      "28 × 20 = 560, and 672 − 560 = 112.",
+      "28 × 4 = 112.",
+      "So the width is 20 + 4 = 24 feet.",
+      "24 feet is less than 25, so it fits."
+     ],
+     "ex": {
+      "main": "**Yes, it is 24 feet wide.** 28 × 24 = 672, and 24 feet fits in a 25-foot space with 1 foot to spare.",
+      "tip": "Answer the question that was asked: the width is a step, \"will it fit\" is the answer."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A train travels 45 miles each hour. How many hours will it take to go 630 miles?",
+     "opts": [
+      "104 hours",
+      "10 hours",
+      "14 hours",
+      "15 hours"
+     ],
+     "ans": 2,
+     "hint": "Find 630 ÷ 45. Start with 45 × 10.",
+     "steps": [
+      "Estimate the tens: 45 × 10 = 450, and 45 × 20 = 900 is too much.",
+      "Take away the first piece: 630 − 450 = 180.",
+      "Find the second piece: 45 × 4 = 180.",
+      "Add the two parts of the side: 10 + 4 = 14.",
+      "Check: 45 × 14 = 450 + 180 = 630."
+     ],
+     "ex": {
+      "main": "**14 hours.** The side is 10 + 4 = 14, and 45 × 14 = 630. The wrong answers are real slips: 10 hours is only the tens piece, 104 hours writes 10 and 4 side by side, and 15 hours is one group too many.",
+      "tip": "Check: 45 miles × your answer must make 630."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}

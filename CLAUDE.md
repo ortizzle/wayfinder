@@ -2020,6 +2020,51 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Unit 5 · Lessons 1–3, before Wednesday's quiz (v194)
+
+Chris's new `Unit 5 - Math` folder holds her `5-1_`, `5-2_` and
+`5-3_ Student Edition Practice.pdf` pages. They have a clean text layer and
+were read for what they ask; her answers are recorded nowhere. Built by a
+subagent that wrote only the content, `tools/builders/build_math_unit5.py`
+and the test, then integrated here.
+
+| id | title |
+|---|---|
+| `unit-m5u1` | `Unit 5 · Lesson 1: Patterns for Dividing Multiples of 10` |
+| `unit-m5u2` | `Unit 5 · Lesson 2: Estimate Quotients with Compatible Numbers` |
+| `unit-m5u3` | `Unit 5 · Lesson 3: Divide with Area Models and Properties` |
+
+- **The pages print no lesson name**, only each lesson's Essential Question
+  ("How Can Patterns Help You Divide Multiples of 10?"). The subagent first
+  used those questions verbatim as titles. They are now shortened into the
+  skill each one names, the Unit 3 shape. The book's short lesson names were
+  NOT used, because they would have come from memory rather than the page.
+- **They shelve behind "Before You Start"** with `series:'Unit 5'`, no `order`
+  and no `prep` (they are the lessons). Each has `round:10`, 8 cards and
+  14–15 questions.
+- **Every quotient is computed in the builder, and every wrong option comes
+  from a named slip:**
+  - a zero kept or lost
+  - the zeros added instead of cancelled
+  - a borrowed zero counted twice
+  - the divisor rounded the wrong way
+  - the tens piece of the area model alone
+  - the two parts written side by side
+- **`use()` refuses every division printed on the pages**, which was checked
+  by planting one.
+- **Lesson 5-4 (partial quotients) is on the 10/28 quiz too, and has no
+  material in Drive.** It was not built.
+
+`tools/test_unit5_shelf.js` (22 assertions) recomputes every quotient and
+estimate. It pins:
+
+- the shelf order
+- the named slips
+- no practice-page division in a stem
+- a full round and the deck on each lesson
+
+It was verified by flipping one answer.
+
 ### Regions 3 is the Midwest, and the Grand Event breakfast (v193)
 
 Chris confirmed that the 10/27 Regions 3 quiz is the **Midwest**, which is

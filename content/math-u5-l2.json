@@ -1,0 +1,462 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5u2": {
+   "id": "unit-m5u2",
+   "type": "unit",
+   "updatedAt": 1792959693494,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Lesson 2: Estimate Quotients with Compatible Numbers",
+   "srcName": "Lesson 5-2 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 5 Student Edition practice pages — dividing by two-digit divisors (Drive)",
+   "summary": {
+    "text": "Lesson 5-2 practice pages: estimating quotients with two-digit divisors using compatible numbers, checking an estimate with multiplication, and using estimates in word problems.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Estimating first tells her how big a quotient should be before she works it out. That is how she will check every division in the rest of the unit.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Estimate a quotient with a two-digit divisor using compatible numbers",
+     "from": "source"
+    },
+    {
+     "text": "Check an estimate with multiplication",
+     "from": "source"
+    },
+    {
+     "text": "Use an estimate to answer an \"about how many\" word problem",
+     "from": "source"
+    },
+    {
+     "text": "Tell whether an estimate is too high or too low",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 5-2 practice pages in her Unit 5 folder, read for what they ask. The numbers are fresh, not the page's own. The slip most worth a word is rounding the divisor the wrong way (72 to 80 instead of 70), which several wrong options are built from. The others are a zero kept or lost, and a compatible dividend chosen too far from the real one. One question goes a step past the page and asks whether an estimate is too high or too low; it is marked as added.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Round the divisor, find a basic fact, then multiply back to check.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "When an estimate is enough",
+     "def": "**If a question asks \"about how many\" or \"about how much\", an estimate answers it.**\n• An estimate also checks an exact answer later.",
+     "hint": "\"About\" means close is good.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Compatible numbers",
+     "def": "**Numbers close to the real ones that divide easily in your head.**\n• For 358 ÷ 59, use 360 ÷ 60 = 6.",
+     "hint": "Close and easy, both at once.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Round the divisor first",
+     "def": "**Round a two-digit divisor to its nearest ten.**\n• 58 becomes 60, not 50.\n• 72 becomes 70, not 80.",
+     "hint": "Which ten is it closer to?",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Then pick the dividend",
+     "def": "**Find a number close to the dividend that the rounded divisor divides with a basic fact.**\n• 413 ÷ 58: think 60, then 420, because 42 ÷ 6 = 7.",
+     "hint": "Look for a basic fact hiding in the digits.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Check with multiplication",
+     "def": "**Multiply your estimate by the rounded divisor. It should land close to the dividend.**\n• 7 × 60 = 420, close to 413.",
+     "hint": "Close, not exact, is the goal.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "More than one good estimate",
+     "def": "**Different compatible numbers can give different estimates, and both can be reasonable.**\n• 532 ÷ 19: 500 ÷ 20 = 25 and 540 ÷ 20 = 27 both work.",
+     "hint": "Closer numbers give a closer estimate.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "A range of numbers",
+     "def": "**When a problem gives a range, like \"between 14 and 16\", use a number in the middle.**\n• 452 campers in cabins of 14 to 16 is about 450 ÷ 15 = 30.",
+     "hint": "The middle of the range is fair.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Too high or too low?",
+     "def": "**Making the dividend smaller or the divisor bigger makes the estimate smaller than the real answer.**\n• 523 ÷ 48 as 500 ÷ 50 = 10: both changes push it down, so the real answer is more than 10.",
+     "hint": "Less to share, or more groups, means less in each.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which pair of compatible numbers is best for estimating 358 ÷ 59?",
+     "opts": [
+      "360 and 60",
+      "350 and 60",
+      "360 and 50",
+      "400 and 59"
+     ],
+     "ans": 0,
+     "hint": "Round 59 first. Then find a number near 358 that it divides easily.",
+     "steps": [
+      "59 is close to 60.",
+      "358 is close to 360.",
+      "36 ÷ 6 = 6 is a basic fact, so 360 ÷ 60 = 6.",
+      "350 ÷ 60 and 360 ÷ 50 do not come out evenly."
+     ],
+     "ex": {
+      "main": "**360 and 60.** Both are close to the real numbers, and 360 ÷ 60 = 6 is a basic fact with a zero on each.",
+      "tip": "Compatible means close AND easy to divide, both at once."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What are compatible numbers, when you estimate a quotient?",
+     "opts": [
+      "The exact numbers in the problem, written with commas",
+      "Numbers close to the real ones that divide easily in your head",
+      "Any two numbers that both end in a zero",
+      "Numbers rounded to the nearest hundred, every time"
+     ],
+     "ans": 1,
+     "hint": "They have two jobs to do at once.",
+     "steps": [
+      "They must be close to the real numbers, so the estimate is close.",
+      "They must divide easily, usually with a basic fact.",
+      "Ending in zero is not enough on its own: 350 ÷ 60 is not easy."
+     ],
+     "ex": {
+      "main": "**Numbers close to the real ones that divide easily.** 360 and 60 are compatible for 358 ÷ 59.",
+      "tip": "Rounding to the nearest hundred can land on numbers that do not divide easily."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A question asks, \"About how many rings should she make each day?\" What does the word \"about\" tell you?",
+     "opts": [
+      "The answer has to be a round hundred",
+      "You must find the exact answer first",
+      "An estimate is enough to answer it",
+      "You should add the numbers, not divide"
+     ],
+     "ans": 2,
+     "hint": "What kind of answer does \"about\" ask for?",
+     "steps": [
+      "\"About\" asks for a close answer, not an exact one.",
+      "Compatible numbers give a close answer quickly.",
+      "You can still check it with multiplication."
+     ],
+     "ex": {
+      "main": "**An estimate is enough.** \"About how many\" means a close answer does the job.",
+      "tip": "Read the question for words like \"about\", \"roughly\" or \"estimate\"."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Use compatible numbers to estimate 413 ÷ 58.",
+     "opts": [
+      "6",
+      "70",
+      "8",
+      "7"
+     ],
+     "ans": 3,
+     "hint": "Round 58 to 60, then find a number near 413 that 60 divides.",
+     "steps": [
+      "58 rounds to 60.",
+      "420 is close to 413, and 42 ÷ 6 = 7.",
+      "So 420 ÷ 60 = 7.",
+      "Check: 7 × 60 = 420, close to 413."
+     ],
+     "ex": {
+      "main": "**7.** 420 ÷ 60 = 7. The wrong answers are real slips: 70 keeps a zero that should cancel, 8 rounds 58 down to 50 (400 ÷ 50), and 6 uses 360, which is too far from 413.",
+      "tip": "Round the divisor to its nearest ten, not just any ten."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Use compatible numbers to estimate 1,630 ÷ 41.",
+     "opts": [
+      "40",
+      "4",
+      "400",
+      "50"
+     ],
+     "ans": 0,
+     "hint": "Round 41 to 40. Which number near 1,630 does 40 divide easily?",
+     "steps": [
+      "41 rounds to 40.",
+      "1,600 is close to 1,630, and 16 ÷ 4 = 4.",
+      "1,600 ÷ 40 = 40.",
+      "Check: 40 × 40 = 1,600."
+     ],
+     "ex": {
+      "main": "**40.** 1,600 ÷ 40 = 40. 4 loses a zero, 400 keeps one too many, and 50 rounds 1,630 all the way to 2,000, which is too far.",
+      "tip": "Pick the compatible number that is closest, not the roundest."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Use compatible numbers to estimate 3,467 ÷ 72.",
+     "opts": [
+      "500",
+      "50",
+      "5",
+      "40"
+     ],
+     "ans": 1,
+     "hint": "72 is close to 70. Which number near 3,467 divides by 70?",
+     "steps": [
+      "72 rounds to 70.",
+      "3,500 is close to 3,467, and 35 ÷ 7 = 5.",
+      "3,500 ÷ 70 = 50.",
+      "Check: 50 × 70 = 3,500."
+     ],
+     "ex": {
+      "main": "**50.** 3,500 ÷ 70 = 50. 500 keeps one zero too many, 5 loses one, and 40 rounds 72 the wrong way, up to 80 (3,200 ÷ 80).",
+      "tip": "72 is 2 away from 70 but 8 away from 80, so round to 70."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A club earned $238 by selling 61 mugs, all at the same price. About how much did each mug cost?",
+     "opts": [
+      "$177",
+      "$40",
+      "$4",
+      "$5"
+     ],
+     "ans": 2,
+     "hint": "Divide the money by the number of mugs. Use compatible numbers.",
+     "steps": [
+      "Find about 238 ÷ 61.",
+      "61 is close to 60, and 238 is close to 240.",
+      "24 ÷ 6 = 4, so 240 ÷ 60 = 4.",
+      "Each mug cost about $4."
+     ],
+     "ex": {
+      "main": "**About $4.** 240 ÷ 60 = 4. $40 keeps a zero that should cancel, $177 subtracts instead of dividing, and $5 rounds 238 up to 300, which is too far.",
+      "tip": "Check it: 61 mugs at $4 is about $240, close to $238."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A camp has 452 campers. Each cabin holds between 14 and 16 campers. Which is the best estimate of the number of cabins?",
+     "opts": [
+      "45 cabins",
+      "3 cabins",
+      "300 cabins",
+      "30 cabins"
+     ],
+     "ans": 3,
+     "hint": "Pick one number for the cabin size, in the middle of 14 and 16.",
+     "steps": [
+      "Use 15 for the cabin size.",
+      "452 is close to 450.",
+      "450 ÷ 15 = 30.",
+      "So about 30 cabins."
+     ],
+     "ex": {
+      "main": "**30 cabins.** 450 ÷ 15 = 30. 3 and 300 have the wrong number of zeros, and 45 uses 10 campers to a cabin, which is not between 14 and 16.",
+      "tip": "For \"between 14 and 16\", the middle, 15, is a fair number to use."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Maria has 638 shells to paint and 79 days to paint them, about the same number each day. About how many should she paint each day?",
+     "opts": [
+      "8 shells",
+      "80 shells",
+      "9 shells",
+      "7 shells"
+     ],
+     "ans": 0,
+     "hint": "Round 79 first.",
+     "steps": [
+      "79 rounds to 80.",
+      "640 is close to 638, and 64 ÷ 8 = 8.",
+      "640 ÷ 80 = 8.",
+      "About 8 shells a day."
+     ],
+     "ex": {
+      "main": "**About 8 shells.** 640 ÷ 80 = 8. 80 keeps a zero too many, 9 rounds 79 down to 70 (630 ÷ 70), and 7 uses 560, too far from 638.",
+      "tip": "Check: 8 shells × 80 days = 640, close to 638."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which multiplication shows that 6 is a reasonable estimate for 352 ÷ 58?",
+     "opts": [
+      "6 × 58 = 352, so it is exact",
+      "6 × 60 = 360, which is close to 352",
+      "6 × 352 = 2,112, which is close to 58",
+      "58 + 6 = 64, which is close to 60"
+     ],
+     "ans": 1,
+     "hint": "Multiply the estimate by the rounded divisor.",
+     "steps": [
+      "58 rounds to 60.",
+      "6 × 60 = 360.",
+      "360 is close to 352, so 6 is reasonable.",
+      "6 × 58 is really 348, not 352."
+     ],
+     "ex": {
+      "main": "**6 × 60 = 360, close to 352.** Multiplying back is how you check an estimate.",
+      "tip": "An estimate only has to land close. It does not have to be exact."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ava estimates 523 ÷ 48 as 500 ÷ 50 = 10. Is the real answer more or less than 10?",
+     "opts": [
+      "Exactly 10, because both numbers were rounded",
+      "Less, because she made 523 smaller and 48 bigger",
+      "More, because she made 523 smaller and 48 bigger",
+      "More, because 523 is an odd number"
+     ],
+     "ans": 2,
+     "hint": "What does a smaller dividend do to a quotient? What does a bigger divisor do?",
+     "steps": [
+      "She rounded 523 down to 500, which makes the quotient smaller.",
+      "She rounded 48 up to 50, which also makes the quotient smaller.",
+      "Both changes pushed her estimate down, so the real answer is more.",
+      "Check: 48 × 10 = 480, which is less than 523."
+     ],
+     "ex": {
+      "main": "**More.** A smaller dividend and a bigger divisor both shrink the quotient, so 10 is too low. The real answer is a bit more than 10.",
+      "tip": "Sharing less, or sharing among more groups, both give each group less."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school has 2,415 pencils. Each classroom needs 62 pencils. About how many classrooms can get the pencils they need?",
+     "opts": [
+      "30 classrooms",
+      "400 classrooms",
+      "4 classrooms",
+      "40 classrooms"
+     ],
+     "ans": 3,
+     "hint": "Round 62 first, then pick a number near 2,415.",
+     "steps": [
+      "62 rounds to 60.",
+      "2,400 is close to 2,415, and 24 ÷ 6 = 4.",
+      "2,400 ÷ 60 = 40.",
+      "About 40 classrooms."
+     ],
+     "ex": {
+      "main": "**About 40 classrooms.** 2,400 ÷ 60 = 40. 400 and 4 have the wrong number of zeros, and 30 uses 1,800, which is far from 2,415.",
+      "tip": "Check: 40 × 60 = 2,400, close to 2,415."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which estimate is closest to the real value of 4,738 ÷ 59?",
+     "opts": [
+      "4,800 ÷ 60 = 80",
+      "5,000 ÷ 50 = 100",
+      "4,200 ÷ 60 = 70",
+      "4,500 ÷ 50 = 90"
+     ],
+     "ans": 0,
+     "hint": "Round 59 to its nearest ten. Then pick the dividend closest to 4,738.",
+     "steps": [
+      "59 rounds to 60, not 50.",
+      "With 60, the closest easy dividend is 4,800.",
+      "4,800 ÷ 60 = 80.",
+      "The real quotient is just over 80."
+     ],
+     "ex": {
+      "main": "**4,800 ÷ 60 = 80.** It uses the nearest ten for 59 and the closest easy number to 4,738. The real answer is about 80.",
+      "tip": "Each change you make to the numbers moves the estimate. Make the smallest changes you can."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Leo estimates 532 ÷ 19 as 500 ÷ 20 = 25. Mia estimates it as 540 ÷ 20 = 27. Which is true?",
+     "opts": [
+      "Only Leo's is right, because 500 is a rounder number",
+      "Both estimates are reasonable, and the real answer is about 28",
+      "Only Mia's is right, because there is just one estimate",
+      "Neither is reasonable, because 19 must be rounded to 10"
+     ],
+     "ans": 1,
+     "hint": "Are both pairs close to 532 and 19? Do both divide easily?",
+     "steps": [
+      "Both rounded 19 to 20.",
+      "Leo used 500 and Mia used 540, both close to 532.",
+      "Both pairs divide easily.",
+      "The real answer is about 28, so both are close."
+     ],
+     "ex": {
+      "main": "**Both are reasonable.** Different compatible numbers give different estimates. Mia's is a little closer, because 540 is closer to 532.",
+      "tip": "There is often more than one good estimate. Closer compatible numbers give a closer one."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}

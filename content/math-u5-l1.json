@@ -1,0 +1,465 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5u1": {
+   "id": "unit-m5u1",
+   "type": "unit",
+   "updatedAt": 1792959693490,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Lesson 1: Patterns for Dividing Multiples of 10",
+   "srcName": "Lesson 5-1 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 5 Student Edition practice pages — dividing by two-digit divisors (Drive)",
+   "summary": {
+    "text": "Lesson 5-1 practice pages: using basic facts and place-value patterns to divide multiples of 10, including missing dividends and divisors and word problems.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Every later lesson in this unit leans on this one. Estimating a quotient, and each step of the area model, divides by tens.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Divide multiples of 10 using a basic fact and place-value patterns",
+     "from": "source"
+    },
+    {
+     "text": "Find a missing dividend or divisor in a division with multiples of 10",
+     "from": "source"
+    },
+    {
+     "text": "Check a quotient by multiplying back",
+     "from": "source"
+    },
+    {
+     "text": "Put both amounts in the same unit before dividing",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 5-1 practice pages in her Unit 5 folder, read for what they ask. The numbers are fresh, not the page's own. The trap most worth a word is the fact that borrows a zero: 4,000 ÷ 80 uses 40 ÷ 8 = 5, so the answer is 50, and counting that zero again gives 500. Two questions are built around it, and every wrong option comes from a named slip (a zero too many, a zero too few, the zeros of both numbers added on, or the borrowed zero counted twice). One question changes kilograms to grams first, like the page's own sea-salt problem.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Fact first, then count the zeros, then multiply back to check.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Start with a basic fact",
+     "def": "**Cover the zeros and divide the digits that are left.**\n• 2,700 ÷ 30 starts with 27 ÷ 3 = 9.\n• Then the zeros finish the answer.",
+     "hint": "Fact first, zeros second.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Tens divided by tens",
+     "def": "**490 ÷ 70 is the same as 49 tens ÷ 7 tens, which is 7.**\n• Tens shared into groups of tens gives a plain number of groups.",
+     "hint": "49 tens in groups of 7 tens: 7 groups.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Count the zeros that are left",
+     "def": "**Take away one zero for each zero in the divisor.**\n• 28,000 ÷ 40: 28 ÷ 4 = 7, then three zeros minus one leaves two, so 700.",
+     "hint": "Dividend zeros, minus divisor zeros.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "When the fact needs a zero",
+     "def": "**Sometimes the fact borrows a zero: 4,000 ÷ 80 uses 40 ÷ 8 = 5, so the answer is 50.**\n• 8 does not divide 4, so the fact takes one zero from 4,000.\n• That zero is used up. It does not get counted again.",
+     "hint": "A borrowed zero is spent.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Same zeros off both numbers",
+     "def": "**Taking one zero off the dividend AND the divisor keeps the answer the same.**\n• 4,500 ÷ 50 = 450 ÷ 5 = 90.",
+     "hint": "Both numbers shrink together, so the answer stays put.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "A missing number",
+     "def": "**Use multiplication to find a missing dividend or divisor.**\n• ___ ÷ 80 = 600 means 600 × 80 = 48,000.\n• 36,000 ÷ ___ = 900: 900 × 40 = 36,000, so the divisor is 40.",
+     "hint": "Multiplication undoes division.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Check with multiplication",
+     "def": "**Quotient × divisor should give back the dividend.**\n• 700 × 40 = 28,000, so 28,000 ÷ 40 = 700 is right.",
+     "hint": "A wrong number of zeros shows up at once.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Same units first",
+     "def": "**Before you divide, put both amounts in the same unit.**\n• 1 kilogram = 1,000 grams, so 2 kilograms is 2,000 grams.",
+     "hint": "Grams with grams, kilograms with kilograms.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Why can you find 490 ÷ 70 by thinking \"49 tens ÷ 7 tens\"?",
+     "opts": [
+      "Both numbers are counted in tens, and tens shared by tens gives ones",
+      "The zeros do not matter, so you can drop them from both numbers",
+      "70 has one zero, so the answer must always have one zero too",
+      "Every division by 70 has an answer of exactly 7"
+     ],
+     "ans": 0,
+     "hint": "What is 490 written in tens? What is 70 written in tens?",
+     "steps": [
+      "490 is 49 tens.",
+      "70 is 7 tens.",
+      "49 tens ÷ 7 tens is like 49 ÷ 7 = 7.",
+      "So 490 ÷ 70 = 7. Check: 7 × 70 = 490."
+     ],
+     "ex": {
+      "main": "**Both are counted in tens.** 49 tens shared into groups of 7 tens is 7 groups, the same as 49 ÷ 7.",
+      "tip": "Taking the same zero off both numbers leaves the quotient alone."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2,700 ÷ 30?",
+     "opts": [
+      "900",
+      "90",
+      "9",
+      "9,000"
+     ],
+     "ans": 1,
+     "hint": "Start with the basic fact 27 ÷ 3.",
+     "steps": [
+      "Basic fact: 27 ÷ 3 = 9.",
+      "Zeros left to count: 2,700 has 2, 30 has 1, so 1 zero.",
+      "So 2,700 ÷ 30 = 90.",
+      "Check: 90 × 30 = 2,700."
+     ],
+     "ex": {
+      "main": "**90.** Check: 90 × 30 = 2,700. The wrong answers come from real slips: 900 is one zero too many; 9 is one zero too few; 9,000 is the zeros of both numbers added on.",
+      "tip": "Each zero in the divisor cancels one zero in the dividend."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which basic fact helps you find 28,000 ÷ 40?",
+     "opts": [
+      "24 ÷ 4 = 6",
+      "28 ÷ 7 = 4",
+      "28 ÷ 4 = 7",
+      "32 ÷ 4 = 8"
+     ],
+     "ans": 2,
+     "hint": "Cover the zeros. Which digits are left?",
+     "steps": [
+      "28,000 starts with 28.",
+      "40 starts with 4.",
+      "The fact is 28 ÷ 4 = 7.",
+      "Then the zeros: 28,000 ÷ 40 = 700."
+     ],
+     "ex": {
+      "main": "**28 ÷ 4 = 7.** The fact uses the digits in front of the zeros, then the zeros finish the job: 700.",
+      "tip": "28 ÷ 7 = 4 is a real fact, but it divides by the answer instead of by 4."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 28,000 ÷ 40?",
+     "opts": [
+      "70,000",
+      "7,000",
+      "70",
+      "700"
+     ],
+     "ans": 3,
+     "hint": "Basic fact first: 28 ÷ 4.",
+     "steps": [
+      "Basic fact: 28 ÷ 4 = 7.",
+      "Zeros left to count: 28,000 has 3, 40 has 1, so 2 zeros.",
+      "So 28,000 ÷ 40 = 700.",
+      "Check: 700 × 40 = 28,000."
+     ],
+     "ex": {
+      "main": "**700.** Check: 700 × 40 = 28,000. The wrong answers come from real slips: 7,000 is one zero too many; 70 is one zero too few; 70,000 is the zeros of both numbers added on.",
+      "tip": "Check by multiplying back: your answer × 40 must give 28,000."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4,000 ÷ 80?",
+     "opts": [
+      "50",
+      "500",
+      "5",
+      "50,000"
+     ],
+     "ans": 0,
+     "hint": "8 does not divide 4. Which fact uses 40?",
+     "steps": [
+      "Basic fact: 40 ÷ 8 = 5.",
+      "8 does not divide 4, so the fact borrows one zero: 40 ÷ 8.",
+      "Zeros left to count: 4,000 has 2 (after the borrowed one), 80 has 1, so 1 zero.",
+      "So 4,000 ÷ 80 = 50.",
+      "Check: 50 × 80 = 4,000."
+     ],
+     "ex": {
+      "main": "**50.** Check: 50 × 80 = 4,000. The wrong answers come from real slips: 500 is the borrowed zero counted twice; 5 is one zero too few; 50,000 is the zeros of both numbers added on.",
+      "tip": "When the fact borrows a zero, that zero is used up."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 20,000 ÷ 40?",
+     "opts": [
+      "5,000",
+      "500",
+      "50",
+      "500,000"
+     ],
+     "ans": 1,
+     "hint": "4 does not divide 2. Use 20 ÷ 4.",
+     "steps": [
+      "Basic fact: 20 ÷ 4 = 5.",
+      "4 does not divide 2, so the fact borrows one zero: 20 ÷ 4.",
+      "Zeros left to count: 20,000 has 3 (after the borrowed one), 40 has 1, so 2 zeros.",
+      "So 20,000 ÷ 40 = 500.",
+      "Check: 500 × 40 = 20,000."
+     ],
+     "ex": {
+      "main": "**500.** Check: 500 × 40 = 20,000. The wrong answers come from real slips: 5,000 is the borrowed zero counted twice; 50 is one zero too few; 500,000 is the zeros of both numbers added on.",
+      "tip": "Check: 500 × 40 = 20,000."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number makes 36,000 ÷ ___ = 900 true?",
+     "opts": [
+      "400",
+      "4",
+      "40",
+      "4,000"
+     ],
+     "ans": 2,
+     "hint": "Think: 900 times what number is 36,000?",
+     "steps": [
+      "The fact is 36 ÷ 4 = 9.",
+      "36,000 has three zeros and 900 has two.",
+      "One zero is left over for the divisor, so it is 40.",
+      "Check: 36,000 ÷ 40 = 900."
+     ],
+     "ex": {
+      "main": "**40.** 900 × 40 = 36,000. With 4 the quotient is 9,000, with 400 it is 90, and with 4,000 it is 9.",
+      "tip": "Multiply your answer by 900 to check it lands on 36,000."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which number makes ___ ÷ 80 = 600 true?",
+     "opts": [
+      "680",
+      "4,800",
+      "480,000",
+      "48,000"
+     ],
+     "ans": 3,
+     "hint": "The missing number is the dividend. Multiply to find it.",
+     "steps": [
+      "___ ÷ 80 = 600 means 600 × 80 = ___.",
+      "6 × 8 = 48.",
+      "600 has two zeros and 80 has one: three zeros in all.",
+      "So the missing number is 48,000."
+     ],
+     "ex": {
+      "main": "**48,000.** 600 × 80 = 48,000. 4,800 has a zero too few (4,800 ÷ 80 = 60), and 680 adds 600 and 80 instead of multiplying.",
+      "tip": "Undo a division with a multiplication."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A sticker shop packs 5,400 stickers into rolls of 60. How many rolls does it fill?",
+     "opts": [
+      "90 rolls",
+      "900 rolls",
+      "9 rolls",
+      "9,000 rolls"
+     ],
+     "ans": 0,
+     "hint": "Find 5,400 ÷ 60 with the fact 54 ÷ 6.",
+     "steps": [
+      "Basic fact: 54 ÷ 6 = 9.",
+      "Zeros left to count: 5,400 has 2, 60 has 1, so 1 zero.",
+      "So 5,400 ÷ 60 = 90.",
+      "Check: 90 × 60 = 5,400."
+     ],
+     "ex": {
+      "main": "**90 rolls.** Check: 90 × 60 = 5,400. The wrong answers come from real slips: 900 rolls is one zero too many; 9 rolls is one zero too few; 9,000 rolls is the zeros of both numbers added on.",
+      "tip": "Check: 90 rolls × 60 = 5,400 stickers."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A theater sold 35,000 tickets over 70 shows, the same number for every show. How many tickets did it sell for each show?",
+     "opts": [
+      "5,000 tickets",
+      "500 tickets",
+      "50 tickets",
+      "50,000 tickets"
+     ],
+     "ans": 1,
+     "hint": "Find 35,000 ÷ 70. Start with 35 ÷ 7.",
+     "steps": [
+      "Basic fact: 35 ÷ 7 = 5.",
+      "Zeros left to count: 35,000 has 3, 70 has 1, so 2 zeros.",
+      "So 35,000 ÷ 70 = 500.",
+      "Check: 500 × 70 = 35,000."
+     ],
+     "ex": {
+      "main": "**500 tickets.** Check: 500 × 70 = 35,000. The wrong answers come from real slips: 5,000 tickets is one zero too many; 50 tickets is one zero too few; 50,000 tickets is the zeros of both numbers added on.",
+      "tip": "Each show sold the same number, so this is a sharing division."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which division has a quotient of 90?",
+     "opts": [
+      "36,000 ÷ 4",
+      "360 ÷ 40",
+      "3,600 ÷ 40",
+      "3,600 ÷ 400"
+     ],
+     "ans": 2,
+     "hint": "Work out each one with the fact 36 ÷ 4 = 9 and count the zeros.",
+     "steps": [
+      "3,600 ÷ 40: two zeros minus one leaves one, so 90.",
+      "360 ÷ 40: one minus one leaves none, so 9.",
+      "36,000 ÷ 4: three zeros stay, so 9,000.",
+      "3,600 ÷ 400: two minus two leaves none, so 9."
+     ],
+     "ex": {
+      "main": "**3,600 ÷ 40.** It is the only one that leaves exactly one zero after the fact 36 ÷ 4 = 9. Check: 90 × 40 = 3,600.",
+      "tip": "Same fact, different zeros, different answers. Count them every time."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which division has the same quotient as 4,500 ÷ 50?",
+     "opts": [
+      "45,000 ÷ 5",
+      "450 ÷ 50",
+      "4,500 ÷ 5",
+      "450 ÷ 5"
+     ],
+     "ans": 3,
+     "hint": "What happens if you take one zero off BOTH numbers?",
+     "steps": [
+      "4,500 ÷ 50 = 90.",
+      "450 ÷ 5 takes one zero off each number: 450 ÷ 5 = 90.",
+      "450 ÷ 50 = 9, 4,500 ÷ 5 = 900 and 45,000 ÷ 5 = 9,000."
+     ],
+     "ex": {
+      "main": "**450 ÷ 5.** Taking one zero off the dividend AND the divisor leaves the quotient the same: both are 90.",
+      "tip": "Taking a zero off only one of the numbers changes the answer by ten times."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A cook uses 40 grams of pepper in each pot of soup. Pepper comes in a 2-kilogram jar or a 500-gram jar. Which jar gets used up exactly, with no pepper left over? (1 kilogram = 1,000 grams.)",
+     "opts": [
+      "The 2-kilogram jar, because 2,000 ÷ 40 = 50 with nothing left",
+      "The 500-gram jar, because 500 ÷ 40 = 12 with nothing left",
+      "The 2-kilogram jar, because 2 ÷ 40 comes out to a whole number",
+      "Both jars, because 40 divides any number that ends in zero"
+     ],
+     "ans": 0,
+     "hint": "Change kilograms to grams first, so both jars use the same unit.",
+     "steps": [
+      "2 kilograms = 2,000 grams.",
+      "2,000 ÷ 40 = 50 pots, with nothing left.",
+      "500 ÷ 40 = 12 pots, with 20 grams left over.",
+      "So the 2-kilogram jar is used up exactly."
+     ],
+     "ex": {
+      "main": "**The 2-kilogram jar.** 2,000 grams makes exactly 50 pots. The 500-gram jar makes 12 pots and leaves 20 grams.",
+      "tip": "Both amounts have to be in grams before you can compare them."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ben says 8,000 ÷ 20 = 4,000, because 8 ÷ 2 = 4 and 8,000 has three zeros. What went wrong?",
+     "opts": [
+      "He used the wrong fact, because 8 ÷ 2 is 6",
+      "The zero in 20 cancels one of them, so it is 400",
+      "Nothing went wrong, because 4,000 is correct",
+      "He should add the zeros, so the answer is 40,000"
+     ],
+     "ans": 1,
+     "hint": "Check his answer: does 4,000 × 20 make 8,000?",
+     "steps": [
+      "8 ÷ 2 = 4 is right.",
+      "8,000 has three zeros, but 20 has one, and it cancels one of them.",
+      "That leaves two zeros: 400.",
+      "Check: 400 × 20 = 8,000, but 4,000 × 20 = 80,000."
+     ],
+     "ex": {
+      "main": "**The zero in 20 cancels one zero.** 8,000 ÷ 20 = 400, and 400 × 20 = 8,000.",
+      "tip": "Multiplying back catches a wrong number of zeros right away."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}
