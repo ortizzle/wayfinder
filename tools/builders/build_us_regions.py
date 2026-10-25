@@ -241,8 +241,8 @@ for i, reg in enumerate(REGIONS):
     note = ('Built for the Regions quizzes in the 4th Grade Newsletter of 10/25. No class material for the regions '
             'was in Drive, so every card and question here is a study suggestion from the standard five-region map, '
             'not from her class. Schools draw the borders differently (Maryland and Delaware are the usual ones to '
-            'move), so check this region\'s state list against her notes. The newsletter does not say which region '
-            'is "Regions 3"; the numbering here is the usual teaching order and may not match hers. Capitals and '
+            'move), so check this region\'s state list against her notes. Regions 3, the quiz on 10/27, is the '
+            'Midwest (part 3 here), so the numbering matches her class. Capitals and '
             'abbreviations are included in case the quiz asks for them.')
     build('wayfinder', C, Q, uid, 'U.S. Regions · %d %s' % (i + 1, label), 'history',
           'The %d states of the %s region, their capitals and abbreviations, and what the region is like.' % (len(reg[2]), name),
@@ -260,5 +260,5 @@ for i, reg in enumerate(REGIONS):
     u['summary']['from'] = 'added'
     u['quarter'] = 2
     u['prep'] = True
-    u['libv'] = 1
+    u['libv'] = 2
     io.open(p, 'w', encoding='utf-8').write(json.dumps(d, ensure_ascii=False, indent=1))

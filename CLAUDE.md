@@ -2020,6 +2020,17 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Regions 3 is the Midwest, and the Grand Event breakfast (v193)
+
+Chris confirmed that the 10/27 Regions 3 quiz is the **Midwest**, which is
+part 3 of the shelf, so no renumbering was needed. All five `parentNote`s
+now say so (`libv` 2), and the suggested quiz is titled
+`History quiz · Regions 3: the Midwest` (id kept). The Book Fair Grand Event
+flyer (10/22) gave the one time the app was missing: a breakfast on 10/28,
+7:00–8:00 AM, for a grandparent or "anyone grand". The raffle flyer was left
+out: its drawing date reads "next Thursday AM, Oct. 28th", and 10/28 is a
+Wednesday.
+
 ### U.S. Regions, five parts, and the Cub Hub of 10/23 (v192)
 
 Chris: *"Build the regions unit for Tuesday's quiz; also I added another

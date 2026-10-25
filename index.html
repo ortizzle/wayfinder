@@ -1775,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v192 · U.S. Regions';
+const APP_VERSION = 'v193 · Regions 3 is the Midwest';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1979,7 +1979,7 @@ const CAL = {
     {start:'2026-10-23', name:'Boo Bash', icon:'🎃', kind:'community', note:'6:00–7:30 PM.'},
     {start:'2026-10-27', name:'Fall picture retakes', icon:'📸', kind:'note'},
     {start:'2026-10-28', name:'Book Fair grand event', icon:'📚', kind:'community',
-     note:'SHINE lunch the same day.'},
+     note:'A breakfast from 7:00 to 8:00 AM: bring a grandparent, or anyone grand in your life. SHINE lunch the same day.'},
     {start:'2026-10-28', name:'Weather journals handed out', icon:'🌦️', kind:'note', classId:'science',
      note:'It counts as a test grade. Check the due date with your teacher.'},
     {start:'2026-10-30', name:'Costume Parade', icon:'👻', kind:'dress',
@@ -3374,7 +3374,7 @@ const SUGGESTED_ASSESS = [
      only "next week", so they take the Monday of that week and say the date
      needs confirming — the chemistry-test convention. */
   {id:'sg-hist-2026-10-27', classId:'history', kind:'quiz',
-   title:'History quiz · Regions 3', date:'2026-10-27'},
+   title:'History quiz · Regions 3: the Midwest', date:'2026-10-27'},
   {id:'sg-eng-2026-10-26-lc', classId:'english', kind:'quiz',
    title:'Lemonade Crime Quiz · Rising Action, Chapters 6–10 (week of 10/26, date to confirm)', date:'2026-10-26'},
   {id:'sg-eng-2026-10-26-ww', classId:'english', kind:'quiz',
