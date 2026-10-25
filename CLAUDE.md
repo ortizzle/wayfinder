@@ -2020,6 +2020,90 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### U.S. Regions, five parts, and the Cub Hub of 10/23 (v192)
+
+Chris: *"Build the regions unit for Tuesday's quiz; also I added another
+newsletter with some dates into November."* The quiz is Regions 3 on 10/27,
+from the 10/25 newsletter (v191).
+
+**No class material for the regions is in Drive.** The searches:
+
+- her History folder and both of its subfolders, listed to the end
+- full-text searches for the region names
+
+They found only the Unit 5 maps guide. So the shelf is built from the standard
+five-region map, the same posture as the Unit 2 history topic list (v199):
+
+- every card, every question and the summary are `from:'added'`
+- each `parentNote` says there was no class material
+
+| id | title | |
+|---|---|---|
+| `unit-hist-reg-1` | `U.S. Regions · 1 The Northeast` | 11 states, plus Washington, D.C. |
+| `unit-hist-reg-2` | `U.S. Regions · 2 The Southeast` | 12 states |
+| `unit-hist-reg-3` | `U.S. Regions · 3 The Midwest` | 12 states |
+| `unit-hist-reg-4` | `U.S. Regions · 4 The Southwest` | 4 states |
+| `unit-hist-reg-5` | `U.S. Regions · 5 The West` | 11 states |
+
+- **Which region is "Regions 3" is unknown.** The newsletter says only that the
+  first two quizzes are done. The numbering is the usual teaching order, and
+  the `parentNote` says it may not match hers. All five ship so whichever one
+  it is, she has it.
+- **Schools draw the borders differently**, Maryland and Delaware above all.
+  Every note says so and asks Chris to check the state list against her notes.
+- **Each part has one card per state** (capital and abbreviation), a card for
+  the region's state list and one for what the region is like. It has 14–16
+  questions and `round:10`:
+  - which state is in the region
+  - state to capital, and capital to state
+  - which region a state is in
+  - what the region is like, and a famous place there
+  - an abbreviation, with letter-sharing traps (IA/IN/ID/IL)
+  - a both-in-the-region pair
+- **The traps are the content.** A state's biggest city is the wrong option on
+  its capital question wherever one exists (Albany, not New York City;
+  Springfield, not Chicago). The builder asserts that no trap city is itself a
+  capital. Twin names (North/South Carolina, Virginia/West Virginia) are
+  offered against each other. Wrong capitals come from the same region first.
+- **Two traps were removed rather than risked**: Memphis and Huntsville are no
+  longer clearly the biggest cities in their states.
+- **`prep:true` and `quarter:2` on all five**, since they were built for a
+  named quiz.
+
+**Cub Hub of 10/23** (`Important Upcoming Dates`, a text layer; the slide
+pages are images in a 12.9 MB file, over the download cap, so they were not
+read). These were added to `CAL.events`:
+
+- Q2 progress reports 11/13, the same posture as the Q1 report-card event
+- SHINE lunch 11/18
+- 4th Grade Field Trip 11/19 (no destination given, so none is invented)
+- Fall clubs end 11/20, a door to the clubs screen
+- Pie Drive 11/23–11/24
+
+Veteran's Day and Thanksgiving Break were already in `CAL.closed`, and every
+October item was already on the calendar.
+
+> ⚠️ **Pizza Fridays were added and then taken out.** Four weekly rows filled
+> Coming up's six slots for the week, and `test_ux2.js` caught a seeded test
+> falling off the end. A row that repeats every week is noise next to a test,
+> the same reason v173 left other grades' field trips out.
+
+`tools/test_us_regions.js` (17 assertions) restates all fifty capitals
+independently of the builder and pins:
+
+- the shelf order, with nothing loose
+- every state exactly once
+- every capital question in both directions
+- the traps never being capitals
+- the provenance and the note
+- D.C. as not a state
+- option shape and answer spread
+- a full round on all five
+- the November dates
+
+**Verified by changing Illinois's answer to Chicago and watching the capital
+assertion fail.**
+
 ### The newsletter of 10/25 (v191)
 
 Chris: *"Let's add the latest newsletter."* The **4th Grade Newsletter of

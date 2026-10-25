@@ -1775,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v191 · Newsletter of 10/25';
+const APP_VERSION = 'v192 · U.S. Regions';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1985,6 +1985,15 @@ const CAL = {
     {start:'2026-10-30', name:'Costume Parade', icon:'👻', kind:'dress',
      note:'Wear your costume — say no to bullying.'},
     {start:'2026-10-30', name:'Owl pellet dissection in Science', icon:'🦉', kind:'note', classId:'science'},
+    /* Cub Hub of 10/23, Important Upcoming Dates, through Thanksgiving.
+       Veteran's Day and Thanksgiving Break were already in CAL.closed.
+       Pizza Fridays are left out on purpose: four weekly rows filled Coming
+       up's six slots and pushed a real test off the end. */
+    {start:'2026-11-13', name:'Q2 progress reports', icon:'📊', kind:'note'},
+    {start:'2026-11-18', name:'SHINE lunch', icon:'🍱', kind:'community'},
+    {start:'2026-11-19', name:'4th Grade Field Trip', icon:'🚌', kind:'community'},
+    {start:'2026-11-20', name:'Fall clubs end', icon:'🎨', kind:'note', screen:'clubs'},
+    {start:'2026-11-23', end:'2026-11-24', name:'Pie Drive', icon:'🥧', kind:'community'},
     {start:'2026-12-18', name:'Early release — last day before Winter Break', icon:'🕑', kind:'early', early:true,
      note:'No Late Bird.'},
     {start:'2027-01-15', name:'Spotlight Spectacular', icon:'🎭', kind:'celebration', note:'Performance night.'},
@@ -3621,6 +3630,8 @@ const CONTENT_LIBRARY = ['content/math-lesson-1-1.json', 'content/esperanza-1.js
      built first, in September, and was retitled onto this shelf keeping its
      id when the study guide showed it was one section of a larger unit. */
   'content/az-latlong.json', 'content/history-u5-p1.json', 'content/history-u5-p3.json',
+  'content/history-regions-1.json', 'content/history-regions-2.json', 'content/history-regions-3.json',
+  'content/history-regions-4.json', 'content/history-regions-5.json',
   'content/science-phases-matter.json', 'content/science-phase-changes.json',
   'content/science-density-buoyancy.json',
   'content/science-molecules-compounds.json',

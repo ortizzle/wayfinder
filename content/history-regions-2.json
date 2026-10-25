@@ -1,0 +1,531 @@
+{
+ "v": 4,
+ "records": {
+  "unit-hist-reg-2": {
+   "id": "unit-hist-reg-2",
+   "type": "unit",
+   "updatedAt": 1792956204685,
+   "classId": "history",
+   "quarter": 2,
+   "status": "draft",
+   "title": "U.S. Regions · 2 The Southeast",
+   "srcName": "Standard five-region map (no class material in Drive)",
+   "source": "Study suggestion: standard U.S. regions",
+   "summary": {
+    "text": "The 12 states of the Southeast region, their capitals and abbreviations, and what the region is like.",
+    "from": "added"
+   },
+   "why": {
+    "text": "Knowing the regions turns a map of fifty states into five groups you can actually remember.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Name every state in the Southeast region",
+     "from": "added"
+    },
+    {
+     "text": "Match each state to its capital, and each capital to its state",
+     "from": "added"
+    },
+    {
+     "text": "Describe what the Southeast is like and name one famous place there",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built for the Regions quizzes in the 4th Grade Newsletter of 10/25. No class material for the regions was in Drive, so every card and question here is a study suggestion from the standard five-region map, not from her class. Schools draw the borders differently (Maryland and Delaware are the usual ones to move), so check this region's state list against her notes. The newsletter does not say which region is \"Regions 3\"; the numbering here is the usual teaching order and may not match hers. Capitals and abbreviations are included in case the quiz asks for them.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Say the state list out loud once, then do a round. Capitals are the part that needs repeating.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The Southeast — the states",
+     "def": "**12 states: West Virginia, Virginia, Kentucky, Tennessee, North Carolina, South Carolina, Georgia, Florida, Alabama, Mississippi, Arkansas, Louisiana.**\n• Say them in order around the map until it feels like a list you know, not a list you read.",
+     "hint": "Count them on your fingers: 12.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "West Virginia",
+     "def": "**Capital: Charleston.**\n• Abbreviation: WV",
+     "hint": "Called the Mountain State: it sits in the Appalachians.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "Virginia",
+     "def": "**Capital: Richmond.**\n• Abbreviation: VA\n• Not Virginia Beach, even though Virginia Beach is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Kentucky",
+     "def": "**Capital: Frankfort.**\n• Abbreviation: KY\n• Not Louisville, even though Louisville is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Tennessee",
+     "def": "**Capital: Nashville.**\n• Abbreviation: TN",
+     "hint": "Nashville is famous for country music.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "North Carolina",
+     "def": "**Capital: Raleigh.**\n• Abbreviation: NC\n• Not Charlotte, even though Charlotte is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c6",
+     "term": "South Carolina",
+     "def": "**Capital: Columbia.**\n• Abbreviation: SC",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Georgia",
+     "def": "**Capital: Atlanta.**\n• Abbreviation: GA",
+     "hint": "Georgia is known for peaches.",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "Florida",
+     "def": "**Capital: Tallahassee.**\n• Abbreviation: FL\n• Not Jacksonville, even though Jacksonville is bigger.",
+     "hint": "Miami and Orlando are famous, but Tallahassee is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "Alabama",
+     "def": "**Capital: Montgomery.**\n• Abbreviation: AL",
+     "from": "added"
+    },
+    {
+     "id": "c10",
+     "term": "Mississippi",
+     "def": "**Capital: Jackson.**\n• Abbreviation: MS",
+     "hint": "The state is named for the river along its western side.",
+     "from": "added"
+    },
+    {
+     "id": "c11",
+     "term": "Arkansas",
+     "def": "**Capital: Little Rock.**\n• Abbreviation: AR",
+     "from": "added"
+    },
+    {
+     "id": "c12",
+     "term": "Louisiana",
+     "def": "**Capital: Baton Rouge.**\n• Abbreviation: LA\n• Not New Orleans, even though New Orleans is bigger.",
+     "hint": "New Orleans is the famous one; Baton Rouge is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c13",
+     "term": "The Southeast — what it is like",
+     "def": "**Warm, humid summers and hurricanes.**\n• Famous place: The Everglades.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Southeast region?",
+     "opts": [
+      "West Virginia",
+      "Pennsylvania",
+      "North Dakota",
+      "Rhode Island"
+     ],
+     "ans": 0,
+     "hint": "Picture the Southeast on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Southeast region has 12 states.",
+      "Check each option: which region is it in?",
+      "Pennsylvania is in the Northeast, North Dakota is in the Midwest, Rhode Island is in the Northeast.",
+      "So the answer is West Virginia."
+     ],
+     "ex": {
+      "main": "**West Virginia is in the Southeast.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Southeast region?",
+     "opts": [
+      "Maryland",
+      "Louisiana",
+      "New York",
+      "Delaware"
+     ],
+     "ans": 1,
+     "hint": "Picture the Southeast on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Southeast region has 12 states.",
+      "Check each option: which region is it in?",
+      "Maryland is in the Northeast, New York is in the Northeast, Delaware is in the Northeast.",
+      "So the answer is Louisiana."
+     ],
+     "ex": {
+      "main": "**Louisiana is in the Southeast.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Virginia?",
+     "opts": [
+      "Columbia",
+      "Virginia Beach",
+      "Richmond",
+      "Raleigh"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Virginia Beach is the biggest city, but that does not make it the capital.",
+      "The capital of Virginia is Richmond."
+     ],
+     "ex": {
+      "main": "**Richmond.** Virginia Beach is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Kentucky?",
+     "opts": [
+      "Atlanta",
+      "Louisville",
+      "Raleigh",
+      "Frankfort"
+     ],
+     "ans": 3,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Louisville is the biggest city, but that does not make it the capital.",
+      "The capital of Kentucky is Frankfort."
+     ],
+     "ex": {
+      "main": "**Frankfort.** Louisville is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of North Carolina?",
+     "opts": [
+      "Raleigh",
+      "Charlotte",
+      "Little Rock",
+      "Charleston"
+     ],
+     "ans": 0,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Charlotte is the biggest city, but that does not make it the capital.",
+      "The capital of North Carolina is Raleigh."
+     ],
+     "ex": {
+      "main": "**Raleigh.** Charlotte is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Florida?",
+     "opts": [
+      "Jacksonville",
+      "Tallahassee",
+      "Frankfort",
+      "Raleigh"
+     ],
+     "ans": 1,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Jacksonville is the biggest city, but that does not make it the capital.",
+      "The capital of Florida is Tallahassee."
+     ],
+     "ex": {
+      "main": "**Tallahassee.** Jacksonville is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Louisiana?",
+     "opts": [
+      "Montgomery",
+      "New Orleans",
+      "Baton Rouge",
+      "Nashville"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "New Orleans is the biggest city, but that does not make it the capital.",
+      "The capital of Louisiana is Baton Rouge."
+     ],
+     "ex": {
+      "main": "**Baton Rouge.** New Orleans is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of West Virginia?",
+     "opts": [
+      "Columbia",
+      "Raleigh",
+      "Richmond",
+      "Charleston"
+     ],
+     "ans": 3,
+     "hint": "Called the Mountain State: it sits in the Appalachians.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Some of these are capitals of other states.",
+      "The capital of West Virginia is Charleston."
+     ],
+     "ex": {
+      "main": "**Charleston.**",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Richmond is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Virginia",
+      "West Virginia",
+      "Tennessee",
+      "Alabama"
+     ],
+     "ans": 0,
+     "hint": "Run through the Southeast states and their capitals.",
+     "steps": [
+      "Richmond is in the Southeast region.",
+      "Match it to its state.",
+      "Richmond is the capital of Virginia."
+     ],
+     "ex": {
+      "main": "**Virginia.** Its capital is Richmond.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Nashville is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Alabama",
+      "Tennessee",
+      "Florida",
+      "Arkansas"
+     ],
+     "ans": 1,
+     "hint": "Run through the Southeast states and their capitals.",
+     "steps": [
+      "Nashville is in the Southeast region.",
+      "Match it to its state.",
+      "Nashville is the capital of Tennessee."
+     ],
+     "ex": {
+      "main": "**Tennessee.** Its capital is Nashville.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Mississippi in?",
+     "opts": [
+      "Midwest",
+      "West",
+      "Southeast",
+      "Southwest"
+     ],
+     "ans": 2,
+     "hint": "Find Mississippi on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Mississippi sits on the map.",
+      "Mississippi is in the Southeast."
+     ],
+     "ex": {
+      "main": "**The Southeast.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is West Virginia in?",
+     "opts": [
+      "Northeast",
+      "Midwest",
+      "West",
+      "Southeast"
+     ],
+     "ans": 3,
+     "hint": "Find West Virginia on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where West Virginia sits on the map.",
+      "West Virginia is in the Southeast."
+     ],
+     "ex": {
+      "main": "**The Southeast.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which description fits the Southeast region best?",
+     "opts": [
+      "Warm, humid summers and hurricanes",
+      "Long, freezing winters with deep snow",
+      "Dry desert with very little rain",
+      "Glaciers and snow-capped volcanoes"
+     ],
+     "ans": 0,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Southeast: West Virginia, Virginia, Kentucky.",
+      "The one that fits is: Warm, humid summers and hurricanes."
+     ],
+     "ex": {
+      "main": "**Warm, humid summers and hurricanes.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which famous place is in the Southeast region?",
+     "opts": [
+      "The Great Lakes",
+      "The Everglades",
+      "The Rocky Mountains",
+      "Niagara Falls"
+     ],
+     "ans": 1,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Southeast: West Virginia, Virginia, Kentucky.",
+      "The one that fits is: The Everglades."
+     ],
+     "ex": {
+      "main": "**The Everglades.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the two-letter abbreviation for Georgia?",
+     "opts": [
+      "MI",
+      "AZ",
+      "GA",
+      "IA"
+     ],
+     "ans": 2,
+     "hint": "Abbreviations are always two capital letters.",
+     "steps": [
+      "Each state has its own two-letter abbreviation.",
+      "Several states start with the same letter, so check the second letter too.",
+      "The abbreviation for Georgia is GA."
+     ],
+     "ex": {
+      "main": "**GA.**",
+      "tip": "States that share a first letter are the ones worth drilling."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which pair of states are BOTH in the Southeast region?",
+     "opts": [
+      "Nevada and New York",
+      "Arkansas and North Dakota",
+      "New Jersey and Georgia",
+      "Arkansas and Georgia"
+     ],
+     "ans": 3,
+     "hint": "Both halves of the pair have to be in the region, not just one.",
+     "steps": [
+      "Check every state in every pair.",
+      "North Dakota is in the Midwest, and New Jersey is in the Northeast.",
+      "Arkansas and Georgia are both in the Southeast."
+     ],
+     "ex": {
+      "main": "**Arkansas and Georgia.** Two of the other pairs have one state right and one wrong.",
+      "tip": "A half-right pair is still wrong, so check both names."
+     }
+    }
+   ],
+   "round": 10,
+   "prep": true,
+   "libv": 1
+  }
+ }
+}

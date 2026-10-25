@@ -1,0 +1,528 @@
+{
+ "v": 4,
+ "records": {
+  "unit-hist-reg-5": {
+   "id": "unit-hist-reg-5",
+   "type": "unit",
+   "updatedAt": 1792956204693,
+   "classId": "history",
+   "quarter": 2,
+   "status": "draft",
+   "title": "U.S. Regions · 5 The West",
+   "srcName": "Standard five-region map (no class material in Drive)",
+   "source": "Study suggestion: standard U.S. regions",
+   "summary": {
+    "text": "The 11 states of the West region, their capitals and abbreviations, and what the region is like.",
+    "from": "added"
+   },
+   "why": {
+    "text": "Knowing the regions turns a map of fifty states into five groups you can actually remember.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Name every state in the West region",
+     "from": "added"
+    },
+    {
+     "text": "Match each state to its capital, and each capital to its state",
+     "from": "added"
+    },
+    {
+     "text": "Describe what the West is like and name one famous place there",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built for the Regions quizzes in the 4th Grade Newsletter of 10/25. No class material for the regions was in Drive, so every card and question here is a study suggestion from the standard five-region map, not from her class. Schools draw the borders differently (Maryland and Delaware are the usual ones to move), so check this region's state list against her notes. The newsletter does not say which region is \"Regions 3\"; the numbering here is the usual teaching order and may not match hers. Capitals and abbreviations are included in case the quiz asks for them.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Say the state list out loud once, then do a round. Capitals are the part that needs repeating.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The West — the states",
+     "def": "**11 states: Colorado, Wyoming, Montana, Idaho, Washington, Oregon, Utah, Nevada, California, Alaska, Hawaii.**\n• Say them in order around the map until it feels like a list you know, not a list you read.",
+     "hint": "Count them on your fingers: 11.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "Colorado",
+     "def": "**Capital: Denver.**\n• Abbreviation: CO",
+     "hint": "Denver is the Mile High City: a mile above sea level, at the edge of the Rocky Mountains.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "Wyoming",
+     "def": "**Capital: Cheyenne.**\n• Abbreviation: WY",
+     "hint": "Most of Yellowstone National Park is in Wyoming.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Montana",
+     "def": "**Capital: Helena.**\n• Abbreviation: MT\n• Not Billings, even though Billings is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Idaho",
+     "def": "**Capital: Boise.**\n• Abbreviation: ID",
+     "hint": "Idaho is known for potatoes.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "Washington",
+     "def": "**Capital: Olympia.**\n• Abbreviation: WA\n• Not Seattle, even though Seattle is bigger.",
+     "hint": "Seattle is the big city; Olympia is the capital. Not the same as Washington, D.C.",
+     "from": "added"
+    },
+    {
+     "id": "c6",
+     "term": "Oregon",
+     "def": "**Capital: Salem.**\n• Abbreviation: OR\n• Not Portland, even though Portland is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Utah",
+     "def": "**Capital: Salt Lake City.**\n• Abbreviation: UT",
+     "hint": "The capital is named for the Great Salt Lake beside it.",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "Nevada",
+     "def": "**Capital: Carson City.**\n• Abbreviation: NV\n• Not Las Vegas, even though Las Vegas is bigger.",
+     "hint": "Las Vegas is famous, but Carson City is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "California",
+     "def": "**Capital: Sacramento.**\n• Abbreviation: CA\n• Not Los Angeles, even though Los Angeles is bigger.",
+     "hint": "Los Angeles is the biggest city; Sacramento is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c10",
+     "term": "Alaska",
+     "def": "**Capital: Juneau.**\n• Abbreviation: AK\n• Not Anchorage, even though Anchorage is bigger.",
+     "hint": "The biggest state of all, far to the northwest.",
+     "from": "added"
+    },
+    {
+     "id": "c11",
+     "term": "Hawaii",
+     "def": "**Capital: Honolulu.**\n• Abbreviation: HI",
+     "hint": "The only state made of islands, out in the Pacific Ocean.",
+     "from": "added"
+    },
+    {
+     "id": "c12",
+     "term": "The West — what it is like",
+     "def": "**Tall mountains and a long Pacific coast.**\n• Famous place: The Rocky Mountains.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the West region?",
+     "opts": [
+      "Alaska",
+      "Alabama",
+      "Indiana",
+      "Kansas"
+     ],
+     "ans": 0,
+     "hint": "Picture the West on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The West region has 11 states.",
+      "Check each option: which region is it in?",
+      "Alabama is in the Southeast, Indiana is in the Midwest, Kansas is in the Midwest.",
+      "So the answer is Alaska."
+     ],
+     "ex": {
+      "main": "**Alaska is in the West.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the West region?",
+     "opts": [
+      "Alabama",
+      "Oregon",
+      "Vermont",
+      "Kansas"
+     ],
+     "ans": 1,
+     "hint": "Picture the West on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The West region has 11 states.",
+      "Check each option: which region is it in?",
+      "Alabama is in the Southeast, Vermont is in the Northeast, Kansas is in the Midwest.",
+      "So the answer is Oregon."
+     ],
+     "ex": {
+      "main": "**Oregon is in the West.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Montana?",
+     "opts": [
+      "Juneau",
+      "Billings",
+      "Helena",
+      "Olympia"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Billings is the biggest city, but that does not make it the capital.",
+      "The capital of Montana is Helena."
+     ],
+     "ex": {
+      "main": "**Helena.** Billings is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Washington?",
+     "opts": [
+      "Juneau",
+      "Seattle",
+      "Helena",
+      "Olympia"
+     ],
+     "ans": 3,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Seattle is the biggest city, but that does not make it the capital.",
+      "The capital of Washington is Olympia."
+     ],
+     "ex": {
+      "main": "**Olympia.** Seattle is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Oregon?",
+     "opts": [
+      "Salem",
+      "Portland",
+      "Sacramento",
+      "Honolulu"
+     ],
+     "ans": 0,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Portland is the biggest city, but that does not make it the capital.",
+      "The capital of Oregon is Salem."
+     ],
+     "ex": {
+      "main": "**Salem.** Portland is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Nevada?",
+     "opts": [
+      "Las Vegas",
+      "Carson City",
+      "Juneau",
+      "Salt Lake City"
+     ],
+     "ans": 1,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Las Vegas is the biggest city, but that does not make it the capital.",
+      "The capital of Nevada is Carson City."
+     ],
+     "ex": {
+      "main": "**Carson City.** Las Vegas is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of California?",
+     "opts": [
+      "Helena",
+      "Los Angeles",
+      "Sacramento",
+      "Salt Lake City"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Los Angeles is the biggest city, but that does not make it the capital.",
+      "The capital of California is Sacramento."
+     ],
+     "ex": {
+      "main": "**Sacramento.** Los Angeles is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Alaska?",
+     "opts": [
+      "Salem",
+      "Anchorage",
+      "Olympia",
+      "Juneau"
+     ],
+     "ans": 3,
+     "hint": "The biggest state of all, far to the northwest.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Anchorage is the biggest city, but that does not make it the capital.",
+      "The capital of Alaska is Juneau."
+     ],
+     "ex": {
+      "main": "**Juneau.** Anchorage is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Honolulu is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Hawaii",
+      "Alaska",
+      "Montana",
+      "Wyoming"
+     ],
+     "ans": 0,
+     "hint": "Run through the West states and their capitals.",
+     "steps": [
+      "Honolulu is in the West region.",
+      "Match it to its state.",
+      "Honolulu is the capital of Hawaii."
+     ],
+     "ex": {
+      "main": "**Hawaii.** Its capital is Honolulu.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Salt Lake City is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Idaho",
+      "Utah",
+      "Alaska",
+      "Wyoming"
+     ],
+     "ans": 1,
+     "hint": "Run through the West states and their capitals.",
+     "steps": [
+      "Salt Lake City is in the West region.",
+      "Match it to its state.",
+      "Salt Lake City is the capital of Utah."
+     ],
+     "ex": {
+      "main": "**Utah.** Its capital is Salt Lake City.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Oregon in?",
+     "opts": [
+      "Southeast",
+      "Midwest",
+      "West",
+      "Northeast"
+     ],
+     "ans": 2,
+     "hint": "Find Oregon on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Oregon sits on the map.",
+      "Oregon is in the West."
+     ],
+     "ex": {
+      "main": "**The West.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Nevada in?",
+     "opts": [
+      "Southeast",
+      "Southwest",
+      "Midwest",
+      "West"
+     ],
+     "ans": 3,
+     "hint": "Find Nevada on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Nevada sits on the map.",
+      "Nevada is in the West."
+     ],
+     "ex": {
+      "main": "**The West.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which description fits the West region best?",
+     "opts": [
+      "Tall mountains and a long Pacific coast",
+      "Flat prairie farmland with few hills",
+      "Swamps, bayous and hurricane season",
+      "Huge lakes and long, snowy winters"
+     ],
+     "ans": 0,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the West: Colorado, Wyoming, Montana.",
+      "The one that fits is: Tall mountains and a long Pacific coast."
+     ],
+     "ex": {
+      "main": "**Tall mountains and a long Pacific coast.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which famous place is in the West region?",
+     "opts": [
+      "The Great Lakes",
+      "The Rocky Mountains",
+      "The Everglades",
+      "Niagara Falls"
+     ],
+     "ans": 1,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the West: Colorado, Wyoming, Montana.",
+      "The one that fits is: The Rocky Mountains."
+     ],
+     "ex": {
+      "main": "**The Rocky Mountains.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the two-letter abbreviation for Colorado?",
+     "opts": [
+      "CA",
+      "CT",
+      "CO",
+      "FL"
+     ],
+     "ans": 2,
+     "hint": "Abbreviations are always two capital letters.",
+     "steps": [
+      "Each state has its own two-letter abbreviation.",
+      "Several states start with the same letter, so check the second letter too.",
+      "The abbreviation for Colorado is CO."
+     ],
+     "ex": {
+      "main": "**CO.**",
+      "tip": "States that share a first letter are the ones worth drilling."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which pair of states are BOTH in the West region?",
+     "opts": [
+      "Georgia and Pennsylvania",
+      "California and Wisconsin",
+      "Maryland and Alaska",
+      "California and Alaska"
+     ],
+     "ans": 3,
+     "hint": "Both halves of the pair have to be in the region, not just one.",
+     "steps": [
+      "Check every state in every pair.",
+      "Wisconsin is in the Midwest, and Maryland is in the Northeast.",
+      "California and Alaska are both in the West."
+     ],
+     "ex": {
+      "main": "**California and Alaska.** Two of the other pairs have one state right and one wrong.",
+      "tip": "A half-right pair is still wrong, so check both names."
+     }
+    }
+   ],
+   "round": 10,
+   "prep": true,
+   "libv": 1
+  }
+ }
+}

@@ -1,0 +1,433 @@
+{
+ "v": 4,
+ "records": {
+  "unit-hist-reg-4": {
+   "id": "unit-hist-reg-4",
+   "type": "unit",
+   "updatedAt": 1792956204690,
+   "classId": "history",
+   "quarter": 2,
+   "status": "draft",
+   "title": "U.S. Regions · 4 The Southwest",
+   "srcName": "Standard five-region map (no class material in Drive)",
+   "source": "Study suggestion: standard U.S. regions",
+   "summary": {
+    "text": "The 4 states of the Southwest region, their capitals and abbreviations, and what the region is like.",
+    "from": "added"
+   },
+   "why": {
+    "text": "Knowing the regions turns a map of fifty states into five groups you can actually remember.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Name every state in the Southwest region",
+     "from": "added"
+    },
+    {
+     "text": "Match each state to its capital, and each capital to its state",
+     "from": "added"
+    },
+    {
+     "text": "Describe what the Southwest is like and name one famous place there",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built for the Regions quizzes in the 4th Grade Newsletter of 10/25. No class material for the regions was in Drive, so every card and question here is a study suggestion from the standard five-region map, not from her class. Schools draw the borders differently (Maryland and Delaware are the usual ones to move), so check this region's state list against her notes. The newsletter does not say which region is \"Regions 3\"; the numbering here is the usual teaching order and may not match hers. Capitals and abbreviations are included in case the quiz asks for them.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Say the state list out loud once, then do a round. Capitals are the part that needs repeating.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The Southwest — the states",
+     "def": "**4 states: Arizona, New Mexico, Texas, Oklahoma.**\n• Say them in order around the map until it feels like a list you know, not a list you read.",
+     "hint": "Count them on your fingers: 4.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "Arizona",
+     "def": "**Capital: Phoenix.**\n• Abbreviation: AZ",
+     "hint": "Your own state. The Grand Canyon is here.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "New Mexico",
+     "def": "**Capital: Santa Fe.**\n• Abbreviation: NM\n• Not Albuquerque, even though Albuquerque is bigger.",
+     "hint": "Santa Fe is one of the oldest capital cities in the country.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Texas",
+     "def": "**Capital: Austin.**\n• Abbreviation: TX\n• Not Houston, even though Houston is bigger.",
+     "hint": "Houston and Dallas are bigger, but Austin is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Oklahoma",
+     "def": "**Capital: Oklahoma City.**\n• Abbreviation: OK",
+     "hint": "The capital has the state in its name.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "The Southwest — what it is like",
+     "def": "**Hot, dry deserts with cactus.**\n• Famous place: The Grand Canyon.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Southwest region?",
+     "opts": [
+      "Texas",
+      "Maine",
+      "Utah",
+      "Ohio"
+     ],
+     "ans": 0,
+     "hint": "Picture the Southwest on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Southwest region has 4 states.",
+      "Check each option: which region is it in?",
+      "Maine is in the Northeast, Utah is in the West, Ohio is in the Midwest.",
+      "So the answer is Texas."
+     ],
+     "ex": {
+      "main": "**Texas is in the Southwest.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Southwest region?",
+     "opts": [
+      "Montana",
+      "Arizona",
+      "Wyoming",
+      "New York"
+     ],
+     "ans": 1,
+     "hint": "Picture the Southwest on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Southwest region has 4 states.",
+      "Check each option: which region is it in?",
+      "Montana is in the West, Wyoming is in the West, New York is in the Northeast.",
+      "So the answer is Arizona."
+     ],
+     "ex": {
+      "main": "**Arizona is in the Southwest.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of New Mexico?",
+     "opts": [
+      "Phoenix",
+      "Albuquerque",
+      "Santa Fe",
+      "Oklahoma City"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Albuquerque is the biggest city, but that does not make it the capital.",
+      "The capital of New Mexico is Santa Fe."
+     ],
+     "ex": {
+      "main": "**Santa Fe.** Albuquerque is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Texas?",
+     "opts": [
+      "Phoenix",
+      "Houston",
+      "Santa Fe",
+      "Austin"
+     ],
+     "ans": 3,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Houston is the biggest city, but that does not make it the capital.",
+      "The capital of Texas is Austin."
+     ],
+     "ex": {
+      "main": "**Austin.** Houston is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Arizona?",
+     "opts": [
+      "Phoenix",
+      "Santa Fe",
+      "Oklahoma City",
+      "Austin"
+     ],
+     "ans": 0,
+     "hint": "Your own state. The Grand Canyon is here.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Some of these are capitals of other states.",
+      "The capital of Arizona is Phoenix."
+     ],
+     "ex": {
+      "main": "**Phoenix.**",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Oklahoma?",
+     "opts": [
+      "Phoenix",
+      "Oklahoma City",
+      "Austin",
+      "Santa Fe"
+     ],
+     "ans": 1,
+     "hint": "The capital has the state in its name.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Some of these are capitals of other states.",
+      "The capital of Oklahoma is Oklahoma City."
+     ],
+     "ex": {
+      "main": "**Oklahoma City.**",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Austin is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Oklahoma",
+      "New Mexico",
+      "Texas",
+      "Arizona"
+     ],
+     "ans": 2,
+     "hint": "Run through the Southwest states and their capitals.",
+     "steps": [
+      "Austin is in the Southwest region.",
+      "Match it to its state.",
+      "Austin is the capital of Texas."
+     ],
+     "ex": {
+      "main": "**Texas.** Its capital is Austin.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Phoenix is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Oklahoma",
+      "New Mexico",
+      "Texas",
+      "Arizona"
+     ],
+     "ans": 3,
+     "hint": "Run through the Southwest states and their capitals.",
+     "steps": [
+      "Phoenix is in the Southwest region.",
+      "Match it to its state.",
+      "Phoenix is the capital of Arizona."
+     ],
+     "ex": {
+      "main": "**Arizona.** Its capital is Phoenix.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Oklahoma in?",
+     "opts": [
+      "Southwest",
+      "West",
+      "Northeast",
+      "Southeast"
+     ],
+     "ans": 0,
+     "hint": "Find Oklahoma on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Oklahoma sits on the map.",
+      "Oklahoma is in the Southwest."
+     ],
+     "ex": {
+      "main": "**The Southwest.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is New Mexico in?",
+     "opts": [
+      "Southeast",
+      "Southwest",
+      "Northeast",
+      "Midwest"
+     ],
+     "ans": 1,
+     "hint": "Find New Mexico on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where New Mexico sits on the map.",
+      "New Mexico is in the Southwest."
+     ],
+     "ex": {
+      "main": "**The Southwest.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which description fits the Southwest region best?",
+     "opts": [
+      "Swamps and hurricanes along the coast",
+      "Cold, snowy winters and fall leaves",
+      "Hot, dry deserts with cactus",
+      "Glaciers and long, dark winters"
+     ],
+     "ans": 2,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Southwest: Arizona, New Mexico, Texas.",
+      "The one that fits is: Hot, dry deserts with cactus."
+     ],
+     "ex": {
+      "main": "**Hot, dry deserts with cactus.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which famous place is in the Southwest region?",
+     "opts": [
+      "The Everglades",
+      "Niagara Falls",
+      "The Great Lakes",
+      "The Grand Canyon"
+     ],
+     "ans": 3,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Southwest: Arizona, New Mexico, Texas.",
+      "The one that fits is: The Grand Canyon."
+     ],
+     "ex": {
+      "main": "**The Grand Canyon.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the two-letter abbreviation for New Mexico?",
+     "opts": [
+      "NM",
+      "NC",
+      "NH",
+      "NV"
+     ],
+     "ans": 0,
+     "hint": "Abbreviations are always two capital letters.",
+     "steps": [
+      "Each state has its own two-letter abbreviation.",
+      "Several states start with the same letter, so check the second letter too.",
+      "The abbreviation for New Mexico is NM."
+     ],
+     "ex": {
+      "main": "**NM.**",
+      "tip": "States that share a first letter are the ones worth drilling."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which pair of states are BOTH in the Southwest region?",
+     "opts": [
+      "Oklahoma and North Dakota",
+      "Oklahoma and Texas",
+      "Nebraska and Texas",
+      "Mississippi and Vermont"
+     ],
+     "ans": 1,
+     "hint": "Both halves of the pair have to be in the region, not just one.",
+     "steps": [
+      "Check every state in every pair.",
+      "North Dakota is in the Midwest, and Nebraska is in the Midwest.",
+      "Oklahoma and Texas are both in the Southwest."
+     ],
+     "ex": {
+      "main": "**Oklahoma and Texas.** Two of the other pairs have one state right and one wrong.",
+      "tip": "A half-right pair is still wrong, so check both names."
+     }
+    }
+   ],
+   "round": 10,
+   "prep": true,
+   "libv": 1
+  }
+ }
+}

@@ -1,0 +1,533 @@
+{
+ "v": 4,
+ "records": {
+  "unit-hist-reg-1": {
+   "id": "unit-hist-reg-1",
+   "type": "unit",
+   "updatedAt": 1792956204682,
+   "classId": "history",
+   "quarter": 2,
+   "status": "draft",
+   "title": "U.S. Regions · 1 The Northeast",
+   "srcName": "Standard five-region map (no class material in Drive)",
+   "source": "Study suggestion: standard U.S. regions",
+   "summary": {
+    "text": "The 11 states of the Northeast region, their capitals and abbreviations, and what the region is like.",
+    "from": "added"
+   },
+   "why": {
+    "text": "Knowing the regions turns a map of fifty states into five groups you can actually remember.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Name every state in the Northeast region",
+     "from": "added"
+    },
+    {
+     "text": "Match each state to its capital, and each capital to its state",
+     "from": "added"
+    },
+    {
+     "text": "Describe what the Northeast is like and name one famous place there",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built for the Regions quizzes in the 4th Grade Newsletter of 10/25. No class material for the regions was in Drive, so every card and question here is a study suggestion from the standard five-region map, not from her class. Schools draw the borders differently (Maryland and Delaware are the usual ones to move), so check this region's state list against her notes. The newsletter does not say which region is \"Regions 3\"; the numbering here is the usual teaching order and may not match hers. Capitals and abbreviations are included in case the quiz asks for them.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Say the state list out loud once, then do a round. Capitals are the part that needs repeating.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The Northeast — the states",
+     "def": "**11 states: Maine, New Hampshire, Vermont, Massachusetts, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland.**\n• Say them in order around the map until it feels like a list you know, not a list you read.",
+     "hint": "Count them on your fingers: 11.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "Washington, D.C.",
+     "def": "**The capital of the whole country, and NOT a state.**\n• It sits between Maryland and Virginia.\n• D.C. stands for District of Columbia.",
+     "hint": "A district, not a state: that is what the D stands for.",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "Maine",
+     "def": "**Capital: Augusta.**\n• Abbreviation: ME\n• Not Portland, even though Portland is bigger.",
+     "hint": "The most northeastern state of all, famous for lobster and rocky coast.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "New Hampshire",
+     "def": "**Capital: Concord.**\n• Abbreviation: NH\n• Not Manchester, even though Manchester is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Vermont",
+     "def": "**Capital: Montpelier.**\n• Abbreviation: VT\n• Not Burlington, even though Burlington is bigger.",
+     "hint": "Vermont is known for maple syrup.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "Massachusetts",
+     "def": "**Capital: Boston.**\n• Abbreviation: MA",
+     "hint": "Here the capital IS the biggest city.",
+     "from": "added"
+    },
+    {
+     "id": "c6",
+     "term": "Rhode Island",
+     "def": "**Capital: Providence.**\n• Abbreviation: RI",
+     "hint": "The smallest state in the whole country.",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Connecticut",
+     "def": "**Capital: Hartford.**\n• Abbreviation: CT\n• Not Bridgeport, even though Bridgeport is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "New York",
+     "def": "**Capital: Albany.**\n• Abbreviation: NY\n• Not New York City, even though New York City is bigger.",
+     "hint": "New York City is the biggest city in the country, but it is not the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "New Jersey",
+     "def": "**Capital: Trenton.**\n• Abbreviation: NJ\n• Not Newark, even though Newark is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c10",
+     "term": "Pennsylvania",
+     "def": "**Capital: Harrisburg.**\n• Abbreviation: PA\n• Not Philadelphia, even though Philadelphia is bigger.",
+     "hint": "Philadelphia, home of the Liberty Bell, is bigger, but Harrisburg is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c11",
+     "term": "Delaware",
+     "def": "**Capital: Dover.**\n• Abbreviation: DE\n• Not Wilmington, even though Wilmington is bigger.",
+     "hint": "The first state to approve the Constitution.",
+     "from": "added"
+    },
+    {
+     "id": "c12",
+     "term": "Maryland",
+     "def": "**Capital: Annapolis.**\n• Abbreviation: MD\n• Not Baltimore, even though Baltimore is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c13",
+     "term": "The Northeast — what it is like",
+     "def": "**Cold, snowy winters and bright fall leaves.**\n• Famous place: Niagara Falls.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Northeast region?",
+     "opts": [
+      "Massachusetts",
+      "West Virginia",
+      "North Carolina",
+      "South Carolina"
+     ],
+     "ans": 0,
+     "hint": "Picture the Northeast on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Northeast region has 11 states.",
+      "Check each option: which region is it in?",
+      "West Virginia is in the Southeast, North Carolina is in the Southeast, South Carolina is in the Southeast.",
+      "So the answer is Massachusetts."
+     ],
+     "ex": {
+      "main": "**Massachusetts is in the Northeast.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Northeast region?",
+     "opts": [
+      "Iowa",
+      "Maine",
+      "Oregon",
+      "Utah"
+     ],
+     "ans": 1,
+     "hint": "Picture the Northeast on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Northeast region has 11 states.",
+      "Check each option: which region is it in?",
+      "Iowa is in the Midwest, Oregon is in the West, Utah is in the West.",
+      "So the answer is Maine."
+     ],
+     "ex": {
+      "main": "**Maine is in the Northeast.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Maine?",
+     "opts": [
+      "Providence",
+      "Portland",
+      "Augusta",
+      "Trenton"
+     ],
+     "ans": 2,
+     "hint": "The most northeastern state of all, famous for lobster and rocky coast.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Portland is the biggest city, but that does not make it the capital.",
+      "The capital of Maine is Augusta."
+     ],
+     "ex": {
+      "main": "**Augusta.** Portland is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of New Hampshire?",
+     "opts": [
+      "Harrisburg",
+      "Manchester",
+      "Albany",
+      "Concord"
+     ],
+     "ans": 3,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Manchester is the biggest city, but that does not make it the capital.",
+      "The capital of New Hampshire is Concord."
+     ],
+     "ex": {
+      "main": "**Concord.** Manchester is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Vermont?",
+     "opts": [
+      "Montpelier",
+      "Burlington",
+      "Albany",
+      "Boston"
+     ],
+     "ans": 0,
+     "hint": "Vermont is known for maple syrup.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Burlington is the biggest city, but that does not make it the capital.",
+      "The capital of Vermont is Montpelier."
+     ],
+     "ex": {
+      "main": "**Montpelier.** Burlington is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Connecticut?",
+     "opts": [
+      "Bridgeport",
+      "Hartford",
+      "Providence",
+      "Concord"
+     ],
+     "ans": 1,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Bridgeport is the biggest city, but that does not make it the capital.",
+      "The capital of Connecticut is Hartford."
+     ],
+     "ex": {
+      "main": "**Hartford.** Bridgeport is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of New York?",
+     "opts": [
+      "Concord",
+      "New York City",
+      "Albany",
+      "Hartford"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "New York City is the biggest city, but that does not make it the capital.",
+      "The capital of New York is Albany."
+     ],
+     "ex": {
+      "main": "**Albany.** New York City is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of New Jersey?",
+     "opts": [
+      "Boston",
+      "Newark",
+      "Dover",
+      "Trenton"
+     ],
+     "ans": 3,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Newark is the biggest city, but that does not make it the capital.",
+      "The capital of New Jersey is Trenton."
+     ],
+     "ex": {
+      "main": "**Trenton.** Newark is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Dover is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Delaware",
+      "Maryland",
+      "New York",
+      "Maine"
+     ],
+     "ans": 0,
+     "hint": "Run through the Northeast states and their capitals.",
+     "steps": [
+      "Dover is in the Northeast region.",
+      "Match it to its state.",
+      "Dover is the capital of Delaware."
+     ],
+     "ex": {
+      "main": "**Delaware.** Its capital is Dover.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Providence is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Pennsylvania",
+      "Rhode Island",
+      "New Jersey",
+      "Massachusetts"
+     ],
+     "ans": 1,
+     "hint": "Run through the Northeast states and their capitals.",
+     "steps": [
+      "Providence is in the Northeast region.",
+      "Match it to its state.",
+      "Providence is the capital of Rhode Island."
+     ],
+     "ex": {
+      "main": "**Rhode Island.** Its capital is Providence.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Maine in?",
+     "opts": [
+      "Southeast",
+      "Southwest",
+      "Northeast",
+      "Midwest"
+     ],
+     "ans": 2,
+     "hint": "Find Maine on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Maine sits on the map.",
+      "Maine is in the Northeast."
+     ],
+     "ex": {
+      "main": "**The Northeast.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Maryland in?",
+     "opts": [
+      "Southeast",
+      "West",
+      "Midwest",
+      "Northeast"
+     ],
+     "ans": 3,
+     "hint": "Find Maryland on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Maryland sits on the map.",
+      "Maryland is in the Northeast."
+     ],
+     "ex": {
+      "main": "**The Northeast.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which description fits the Northeast region best?",
+     "opts": [
+      "Cold, snowy winters and bright fall leaves",
+      "Hot desert summers with cactus",
+      "Flat prairie farmland as far as you can see",
+      "Warm winters and tropical swamps"
+     ],
+     "ans": 0,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Northeast: Maine, New Hampshire, Vermont.",
+      "The one that fits is: Cold, snowy winters and bright fall leaves."
+     ],
+     "ex": {
+      "main": "**Cold, snowy winters and bright fall leaves.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which famous place is in the Northeast region?",
+     "opts": [
+      "The Grand Canyon",
+      "Niagara Falls",
+      "Mount Rushmore",
+      "The Everglades"
+     ],
+     "ans": 1,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Northeast: Maine, New Hampshire, Vermont.",
+      "The one that fits is: Niagara Falls."
+     ],
+     "ex": {
+      "main": "**Niagara Falls.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the two-letter abbreviation for Maryland?",
+     "opts": [
+      "MS",
+      "MO",
+      "MD",
+      "ME"
+     ],
+     "ans": 2,
+     "hint": "Abbreviations are always two capital letters.",
+     "steps": [
+      "Each state has its own two-letter abbreviation.",
+      "Several states start with the same letter, so check the second letter too.",
+      "The abbreviation for Maryland is MD."
+     ],
+     "ex": {
+      "main": "**MD.**",
+      "tip": "States that share a first letter are the ones worth drilling."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which pair of states are BOTH in the Northeast region?",
+     "opts": [
+      "New Mexico and North Dakota",
+      "Vermont and Alaska",
+      "Kentucky and New York",
+      "Vermont and New York"
+     ],
+     "ans": 3,
+     "hint": "Both halves of the pair have to be in the region, not just one.",
+     "steps": [
+      "Check every state in every pair.",
+      "Alaska is in the West, and Kentucky is in the Southeast.",
+      "Vermont and New York are both in the Northeast."
+     ],
+     "ex": {
+      "main": "**Vermont and New York.** Two of the other pairs have one state right and one wrong.",
+      "tip": "A half-right pair is still wrong, so check both names."
+     }
+    }
+   ],
+   "round": 10,
+   "prep": true,
+   "libv": 1
+  }
+ }
+}

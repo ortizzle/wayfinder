@@ -1,0 +1,532 @@
+{
+ "v": 4,
+ "records": {
+  "unit-hist-reg-3": {
+   "id": "unit-hist-reg-3",
+   "type": "unit",
+   "updatedAt": 1792956204688,
+   "classId": "history",
+   "quarter": 2,
+   "status": "draft",
+   "title": "U.S. Regions · 3 The Midwest",
+   "srcName": "Standard five-region map (no class material in Drive)",
+   "source": "Study suggestion: standard U.S. regions",
+   "summary": {
+    "text": "The 12 states of the Midwest region, their capitals and abbreviations, and what the region is like.",
+    "from": "added"
+   },
+   "why": {
+    "text": "Knowing the regions turns a map of fifty states into five groups you can actually remember.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Name every state in the Midwest region",
+     "from": "added"
+    },
+    {
+     "text": "Match each state to its capital, and each capital to its state",
+     "from": "added"
+    },
+    {
+     "text": "Describe what the Midwest is like and name one famous place there",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built for the Regions quizzes in the 4th Grade Newsletter of 10/25. No class material for the regions was in Drive, so every card and question here is a study suggestion from the standard five-region map, not from her class. Schools draw the borders differently (Maryland and Delaware are the usual ones to move), so check this region's state list against her notes. The newsletter does not say which region is \"Regions 3\"; the numbering here is the usual teaching order and may not match hers. Capitals and abbreviations are included in case the quiz asks for them.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Say the state list out loud once, then do a round. Capitals are the part that needs repeating.",
+    "minutes": 10,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "The Midwest — the states",
+     "def": "**12 states: Ohio, Indiana, Illinois, Michigan, Wisconsin, Minnesota, Iowa, Missouri, Kansas, Nebraska, South Dakota, North Dakota.**\n• Say them in order around the map until it feels like a list you know, not a list you read.",
+     "hint": "Count them on your fingers: 12.",
+     "from": "added"
+    },
+    {
+     "id": "c1",
+     "term": "Ohio",
+     "def": "**Capital: Columbus.**\n• Abbreviation: OH",
+     "from": "added"
+    },
+    {
+     "id": "c2",
+     "term": "Indiana",
+     "def": "**Capital: Indianapolis.**\n• Abbreviation: IN",
+     "hint": "The capital has the state in its name: Indiana + polis, Greek for city.",
+     "from": "added"
+    },
+    {
+     "id": "c3",
+     "term": "Illinois",
+     "def": "**Capital: Springfield.**\n• Abbreviation: IL\n• Not Chicago, even though Chicago is bigger.",
+     "hint": "Chicago is the giant city, but Springfield is the capital.",
+     "from": "added"
+    },
+    {
+     "id": "c4",
+     "term": "Michigan",
+     "def": "**Capital: Lansing.**\n• Abbreviation: MI\n• Not Detroit, even though Detroit is bigger.",
+     "hint": "Michigan is shaped like a mitten, with the Great Lakes all around it.",
+     "from": "added"
+    },
+    {
+     "id": "c5",
+     "term": "Wisconsin",
+     "def": "**Capital: Madison.**\n• Abbreviation: WI\n• Not Milwaukee, even though Milwaukee is bigger.",
+     "hint": "Wisconsin is known for cheese.",
+     "from": "added"
+    },
+    {
+     "id": "c6",
+     "term": "Minnesota",
+     "def": "**Capital: Saint Paul.**\n• Abbreviation: MN\n• Not Minneapolis, even though Minneapolis is bigger.",
+     "hint": "Saint Paul and Minneapolis sit side by side: the Twin Cities.",
+     "from": "added"
+    },
+    {
+     "id": "c7",
+     "term": "Iowa",
+     "def": "**Capital: Des Moines.**\n• Abbreviation: IA",
+     "from": "added"
+    },
+    {
+     "id": "c8",
+     "term": "Missouri",
+     "def": "**Capital: Jefferson City.**\n• Abbreviation: MO\n• Not Kansas City, even though Kansas City is bigger.",
+     "hint": "The Gateway Arch is in St. Louis, Missouri.",
+     "from": "added"
+    },
+    {
+     "id": "c9",
+     "term": "Kansas",
+     "def": "**Capital: Topeka.**\n• Abbreviation: KS\n• Not Wichita, even though Wichita is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c10",
+     "term": "Nebraska",
+     "def": "**Capital: Lincoln.**\n• Abbreviation: NE\n• Not Omaha, even though Omaha is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c11",
+     "term": "South Dakota",
+     "def": "**Capital: Pierre.**\n• Abbreviation: SD\n• Not Sioux Falls, even though Sioux Falls is bigger.",
+     "hint": "Mount Rushmore is in South Dakota.",
+     "from": "added"
+    },
+    {
+     "id": "c12",
+     "term": "North Dakota",
+     "def": "**Capital: Bismarck.**\n• Abbreviation: ND\n• Not Fargo, even though Fargo is bigger.",
+     "from": "added"
+    },
+    {
+     "id": "c13",
+     "term": "The Midwest — what it is like",
+     "def": "**Flat plains and farms that grow corn and wheat.**\n• Famous place: The Great Lakes.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Midwest region?",
+     "opts": [
+      "Iowa",
+      "Utah",
+      "Texas",
+      "Nevada"
+     ],
+     "ans": 0,
+     "hint": "Picture the Midwest on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Midwest region has 12 states.",
+      "Check each option: which region is it in?",
+      "Utah is in the West, Texas is in the Southwest, Nevada is in the West.",
+      "So the answer is Iowa."
+     ],
+     "ex": {
+      "main": "**Iowa is in the Midwest.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which of these states is in the Midwest region?",
+     "opts": [
+      "Kentucky",
+      "Nebraska",
+      "Colorado",
+      "New York"
+     ],
+     "ans": 1,
+     "hint": "Picture the Midwest on the map, then look for the one state that sits inside it.",
+     "steps": [
+      "The Midwest region has 12 states.",
+      "Check each option: which region is it in?",
+      "Kentucky is in the Southeast, Colorado is in the West, New York is in the Northeast.",
+      "So the answer is Nebraska."
+     ],
+     "ex": {
+      "main": "**Nebraska is in the Midwest.** The other three are each in a different region.",
+      "tip": "Learn the region list as one group, the way the card says it."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Illinois?",
+     "opts": [
+      "Indianapolis",
+      "Chicago",
+      "Springfield",
+      "Jefferson City"
+     ],
+     "ans": 2,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Chicago is the biggest city, but that does not make it the capital.",
+      "The capital of Illinois is Springfield."
+     ],
+     "ex": {
+      "main": "**Springfield.** Chicago is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Michigan?",
+     "opts": [
+      "Lincoln",
+      "Detroit",
+      "Springfield",
+      "Lansing"
+     ],
+     "ans": 3,
+     "hint": "Michigan is shaped like a mitten, with the Great Lakes all around it.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Detroit is the biggest city, but that does not make it the capital.",
+      "The capital of Michigan is Lansing."
+     ],
+     "ex": {
+      "main": "**Lansing.** Detroit is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Wisconsin?",
+     "opts": [
+      "Madison",
+      "Milwaukee",
+      "Pierre",
+      "Columbus"
+     ],
+     "ans": 0,
+     "hint": "Wisconsin is known for cheese.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Milwaukee is the biggest city, but that does not make it the capital.",
+      "The capital of Wisconsin is Madison."
+     ],
+     "ex": {
+      "main": "**Madison.** Milwaukee is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Minnesota?",
+     "opts": [
+      "Minneapolis",
+      "Saint Paul",
+      "Springfield",
+      "Lansing"
+     ],
+     "ans": 1,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Minneapolis is the biggest city, but that does not make it the capital.",
+      "The capital of Minnesota is Saint Paul."
+     ],
+     "ex": {
+      "main": "**Saint Paul.** Minneapolis is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Missouri?",
+     "opts": [
+      "Lansing",
+      "Kansas City",
+      "Jefferson City",
+      "Topeka"
+     ],
+     "ans": 2,
+     "hint": "The Gateway Arch is in St. Louis, Missouri.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Kansas City is the biggest city, but that does not make it the capital.",
+      "The capital of Missouri is Jefferson City."
+     ],
+     "ex": {
+      "main": "**Jefferson City.** Kansas City is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the capital of Kansas?",
+     "opts": [
+      "Springfield",
+      "Wichita",
+      "Lansing",
+      "Topeka"
+     ],
+     "ans": 3,
+     "hint": "The capital is where the state government meets, and it is not always the biggest city.",
+     "steps": [
+      "A capital is where the state's government meets.",
+      "Wichita is the biggest city, but that does not make it the capital.",
+      "The capital of Kansas is Topeka."
+     ],
+     "ex": {
+      "main": "**Topeka.** Wichita is bigger, which is exactly why it is the trap.",
+      "tip": "When a famous city is on the list, ask yourself: biggest, or capital?"
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Indianapolis is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Indiana",
+      "Michigan",
+      "Illinois",
+      "Nebraska"
+     ],
+     "ans": 0,
+     "hint": "Run through the Midwest states and their capitals.",
+     "steps": [
+      "Indianapolis is in the Midwest region.",
+      "Match it to its state.",
+      "Indianapolis is the capital of Indiana."
+     ],
+     "ex": {
+      "main": "**Indiana.** Its capital is Indianapolis.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Springfield is a state capital. Which state is it the capital of?",
+     "opts": [
+      "Missouri",
+      "Illinois",
+      "Kansas",
+      "Indiana"
+     ],
+     "ans": 1,
+     "hint": "Run through the Midwest states and their capitals.",
+     "steps": [
+      "Springfield is in the Midwest region.",
+      "Match it to its state.",
+      "Springfield is the capital of Illinois."
+     ],
+     "ex": {
+      "main": "**Illinois.** Its capital is Springfield.",
+      "tip": "Practise capitals in both directions: state to capital, and capital to state."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Kansas in?",
+     "opts": [
+      "Southwest",
+      "Northeast",
+      "Midwest",
+      "West"
+     ],
+     "ans": 2,
+     "hint": "Find Kansas on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Kansas sits on the map.",
+      "Kansas is in the Midwest."
+     ],
+     "ex": {
+      "main": "**The Midwest.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which region is Wisconsin in?",
+     "opts": [
+      "Southeast",
+      "Southwest",
+      "Northeast",
+      "Midwest"
+     ],
+     "ans": 3,
+     "hint": "Find Wisconsin on the map, then think about which group it belongs to.",
+     "steps": [
+      "There are five regions: Northeast, Southeast, Midwest, Southwest and West.",
+      "Look at where Wisconsin sits on the map.",
+      "Wisconsin is in the Midwest."
+     ],
+     "ex": {
+      "main": "**The Midwest.**",
+      "tip": "Region first, then the state: it narrows the map fast."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which description fits the Midwest region best?",
+     "opts": [
+      "Flat plains and farms that grow corn and wheat",
+      "Tall red-rock canyons and desert",
+      "Sandy beaches and palm trees all year",
+      "Rainforests and volcanoes"
+     ],
+     "ans": 0,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Midwest: Ohio, Indiana, Illinois.",
+      "The one that fits is: Flat plains and farms that grow corn and wheat."
+     ],
+     "ex": {
+      "main": "**Flat plains and farms that grow corn and wheat.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which famous place is in the Midwest region?",
+     "opts": [
+      "The Grand Canyon",
+      "The Great Lakes",
+      "The Everglades",
+      "The Golden Gate Bridge"
+     ],
+     "ans": 1,
+     "hint": "Think about the weather and land where these states are.",
+     "steps": [
+      "Each option describes a different part of the country.",
+      "Picture the Midwest: Ohio, Indiana, Illinois.",
+      "The one that fits is: The Great Lakes."
+     ],
+     "ex": {
+      "main": "**The Great Lakes.**",
+      "tip": "Tie each region to one picture in your head."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 2,
+     "from": "added",
+     "kind": "mc",
+     "q": "What is the two-letter abbreviation for Iowa?",
+     "opts": [
+      "IL",
+      "ID",
+      "IA",
+      "IN"
+     ],
+     "ans": 2,
+     "hint": "Abbreviations are always two capital letters.",
+     "steps": [
+      "Each state has its own two-letter abbreviation.",
+      "Several states start with the same letter, so check the second letter too.",
+      "The abbreviation for Iowa is IA."
+     ],
+     "ex": {
+      "main": "**IA.**",
+      "tip": "States that share a first letter are the ones worth drilling."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 3,
+     "from": "added",
+     "kind": "mc",
+     "q": "Which pair of states are BOTH in the Midwest region?",
+     "opts": [
+      "Delaware and Nevada",
+      "South Dakota and South Carolina",
+      "Hawaii and Illinois",
+      "South Dakota and Illinois"
+     ],
+     "ans": 3,
+     "hint": "Both halves of the pair have to be in the region, not just one.",
+     "steps": [
+      "Check every state in every pair.",
+      "South Carolina is in the Southeast, and Hawaii is in the West.",
+      "South Dakota and Illinois are both in the Midwest."
+     ],
+     "ex": {
+      "main": "**South Dakota and Illinois.** Two of the other pairs have one state right and one wrong.",
+      "tip": "A half-right pair is still wrong, so check both names."
+     }
+    }
+   ],
+   "round": 10,
+   "prep": true,
+   "libv": 1
+  }
+ }
+}
