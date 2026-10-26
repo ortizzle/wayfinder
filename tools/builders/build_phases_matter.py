@@ -523,7 +523,7 @@ q(Q, 2, 'A glass holds nothing but cola, poured a moment ago and fizzing. Which 
 
 # ---- assemble --------------------------------------------------------------
 build('wayfinder', C, Q, 'unit-sci-phases',
-      'Chemistry · 1 Phases of Matter', 'science',
+      'Unit 1 · 1.2 Phases of Matter', 'science',
       'The start of the Chemistry unit: what chemistry actually studies, the '
       'three measurements it leans on most (mass, volume and temperature), how '
       'to tell matter from things that are real but are not matter, and the '
@@ -580,7 +580,8 @@ p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-phases']
 u['sorts'] = [SORT]
-u['libv'] = 3
+u['libv'] = 4
+u['order'] = 6   # v195: Unit 1.2 on the one science Unit 1 shelf
 io.open(p, 'w', encoding='utf-8').write(
     json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 3' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 4' % (SORT['title'], len(SORT['items'])))

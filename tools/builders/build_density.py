@@ -429,7 +429,7 @@ SORT = {
 }
 
 build('wayfinder', C, Q, 'unit-sci-dens',
-      'Chemistry · 3 Density and Buoyancy', 'science',
+      'Unit 1 · 1.2 Density and Buoyancy', 'science',
 
       "Her Density/Buoyancy lesson check, covered end to end: what density compares, reading it "
       "off how tightly particles are packed, ranking the phases of matter by density, finding a "
@@ -491,6 +491,7 @@ if not os.path.exists(p):
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-dens']
 u['sorts'] = [SORT]
-u['libv'] = 1
+u['libv'] = 2
+u['order'] = 8   # v195: Unit 1.2 on the one science Unit 1 shelf
 io.open(p, 'w', encoding='utf-8').write(json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 1' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 2' % (SORT['title'], len(SORT['items'])))

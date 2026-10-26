@@ -2020,6 +2020,56 @@ trusted-device line has rendered in **bold capitals since v93** because
 
 `tools/test_bulkapprove.js` is the same file as Ad Astra's.
 
+### Science shelves follow the Drive folders (v195)
+
+Chris reorganised River's Science folder into **Unit 1.1 - Nature of
+Science**, **Unit 1.2 - Phases of Matter**, **Unit 2 - Chemistry** and an
+empty **Unit 3 - Atmosphere**, and asked for the app to match: *"unit 1 should
+all be one unit, under 1 folder."* So the two shelves that were `Science`
+(Nature of Science) and `Chemistry` are now **`Unit 1`** and **`Unit 2`**:
+
+| Shelf | Parts, in order | `order` |
+|---|---|---|
+| `Unit 1` | `1.1 Quiz 1: Thinking Like a Scientist`, `1.1 Quiz 1 Part 2: Measurement`, `1.1 Quiz 1 Part 3: Variables`, `1.1 Reading Scales Practice`, `1.1 Nature of Science Practice Test`, `1.1 Nature of Science Study Test` | 0–5 |
+| | `1.2 Phases of Matter`, `1.2 Phase Changes`, `1.2 Density and Buoyancy`, `1.2 Molecules and Compounds` | 6–9 |
+| `Unit 2` | `Chemistry Practice Unit Test`, `Chemistry Study Test` | 1–2 |
+
+- **Each part sits where its Drive file sits.** Phases, phase changes,
+  density and molecules are in Unit 1.2. The practice test and its key are in
+  Unit 2 - Chemistry, so the two test units make up Unit 2 even though they
+  test the 1.2 material.
+- **Retitled, never re-minted.** All twelve ids are unchanged, so her qstats,
+  misses and bookmarks stay attached. The titles carry `Unit N · ` (the
+  ` · ` convention gives the shelf) and the sub-unit number.
+- **Every Unit 1 part has an explicit `order`, 0 to 9.** Title sort alone
+  would put the Nature of Science tests ahead of Quiz 1 (N before Q) and
+  Phase Changes ahead of Phases of Matter (a space before an s). `order` is
+  a whole-shelf bucket (v102), so this shelf sets it on every part.
+- **Twelve re-approvals.** A title is a `unitDelta` meta field, so each unit
+  re-drafts once and the queue labels it an update. `libv` was bumped and
+  `updatedAt` stamped three hours back on all twelve. The parent notes on
+  density, molecules and the study test that said "part N of Chemistry" now
+  name Unit 1.2.
+- **The builders were updated too** (titles, `order`, `libv`), so a rebuild
+  cannot put the old shelf names back. `build_sci_measure.py` never set
+  `libv`, and still does not.
+- When Atmosphere material arrives, it ships as `Unit 3 · …`.
+
+`tools/test_science_shelves.js` (9 assertions) seeds all twelve and pins:
+
+- the two shelves, with nothing loose
+- the ten Unit 1 ids in order, 1.1 before 1.2
+- the tests trailing their lessons
+- Unit 2's two parts
+- no old shelf name left
+- `libv` past its old value and `updatedAt` in the past
+- two spines and ten stops rendered
+
+It was verified by removing one `order` (three assertions failed). The six
+older science tests now point at the new shelves; `test_chem_test.js`
+compares shelf names unordered, because the subject screen puts the most
+recent book first.
+
 ### Unit 5 · Lessons 1–3, before Wednesday's quiz (v194)
 
 Chris's new `Unit 5 - Math` folder holds her `5-1_`, `5-2_` and

@@ -4,11 +4,11 @@
   "unit-sci-dens": {
    "id": "unit-sci-dens",
    "type": "unit",
-   "updatedAt": 1790506207717,
+   "updatedAt": 1792974178021,
    "classId": "science",
    "quarter": 1,
    "status": "draft",
-   "title": "Chemistry · 3 Density and Buoyancy",
+   "title": "Unit 1 · 1.2 Density and Buoyancy",
    "srcName": "density and buoyancy.pdf (Science 4 · Density/Buoyancy lesson check, Drive)",
    "source": "source",
    "summary": {
@@ -46,7 +46,7 @@
     }
    ],
    "parentNote": {
-    "text": "Built from her own completed Density/Buoyancy lesson check.\n\nIt was read for the QUESTIONS it asks, not to mark or check her answers, so nothing here is a correction and nothing about how she did on it is recorded anywhere. What the unit covers is the twenty ideas the paper tests: what density compares, reading it off particle packing, the phase order, working a mass out from a scale, float or sink against water, buoyancy, and convection.\n\nTWO THINGS THE SHEET LEANS ON WITHOUT EVER SAYING, and both are added here as cards flagged as ours rather than her class's. The paper asks which two properties density compares but never gives the formula, so 'density = mass ÷ volume' is spelled out. And questions 14 and 15 hand her 0.32 g/cm³ and 1.7 g/cm³ and ask float or sink, which cannot be answered without knowing water is 1 g/cm³ — a number that appears nowhere on the paper. They are here so the reasoning is written down somewhere rather than carried in her head.\n\nOne extension worth knowing about: the unit teaches that water is the exception to the solid-liquid-gas density order, because ice floats. Her question 5 says 'a typical substance', which deliberately leaves room for that — so this builds on the sheet rather than contradicting it.\n\nSHELVING: this lands as part 3 of Chemistry, behind Phases of Matter and Phase Changes, because the sheet's own question 5 asks her to rank the phases by density — density is being used as a property of the phases she just studied. The Drive file sits loose in Science rather than in a numbered unit folder, so there was no folder name to follow. Chris expects it to end up part of a larger unit but does not know which yet, so this is provisional by agreement: when the unit is named, it is a retitle keeping the id, which costs one re-approval and nothing else.",
+    "text": "Built from her own completed Density/Buoyancy lesson check.\n\nIt was read for the QUESTIONS it asks, not to mark or check her answers, so nothing here is a correction and nothing about how she did on it is recorded anywhere. What the unit covers is the twenty ideas the paper tests: what density compares, reading it off particle packing, the phase order, working a mass out from a scale, float or sink against water, buoyancy, and convection.\n\nTWO THINGS THE SHEET LEANS ON WITHOUT EVER SAYING, and both are added here as cards flagged as ours rather than her class's. The paper asks which two properties density compares but never gives the formula, so 'density = mass ÷ volume' is spelled out. And questions 14 and 15 hand her 0.32 g/cm³ and 1.7 g/cm³ and ask float or sink, which cannot be answered without knowing water is 1 g/cm³ — a number that appears nowhere on the paper. They are here so the reasoning is written down somewhere rather than carried in her head.\n\nOne extension worth knowing about: the unit teaches that water is the exception to the solid-liquid-gas density order, because ice floats. Her question 5 says 'a typical substance', which deliberately leaves room for that — so this builds on the sheet rather than contradicting it.\n\nSHELVING: this sits in Unit 1.2, the Phases of Matter half of the Unit 1 shelf, behind Phases of Matter and Phase Changes, matching its Drive folder, and the material agrees: the sheet's own question 5 asks her to rank the phases by density — density is being used as a property of the phases she just studied. It first shipped as part 3 of a Chemistry shelf, before the Drive folders were numbered. Moving it here was a retitle keeping the id, so her progress stayed attached and it costs one re-approval.",
     "from": "added"
    },
    "nextUp": {
@@ -667,7 +667,8 @@
      ]
     }
    ],
-   "libv": 1
+   "libv": 2,
+   "order": 8
   }
  }
 }

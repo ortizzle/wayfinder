@@ -557,8 +557,8 @@ assert got == PAPER_KEY, (got, PAPER_KEY)   # option order is FIXED: never _bala
 
 unitA = {
   'id': 'unit-sci-nos-practice', 'type': 'unit', 'classId': 'science',
-  'title': 'Science · Nature of Science Practice Test', 'status': 'draft',
-  'guide': True, 'prep': True, 'order': 4, 'quarter': 1, 'libv': 1,
+  'title': 'Unit 1 · 1.1 Nature of Science Practice Test', 'status': 'draft',
+  'guide': True, 'prep': True, 'order': 4, 'quarter': 1, 'libv': 2,
   'srcName': 'Practice for Nature of Science Unit Test + answer key (Drive)',
   'source': 'source',
   'summary': {'from': 'source', 'text':
@@ -939,8 +939,8 @@ _balance(Q2)
 
 unitB = {
   'id': 'unit-sci-nos-test', 'type': 'unit', 'classId': 'science',
-  'title': 'Science · Nature of Science Study Test', 'status': 'draft',
-  'prep': True, 'order': 5, 'quarter': 1, 'round': 20, 'libv': 1,
+  'title': 'Unit 1 · 1.1 Nature of Science Study Test', 'status': 'draft',
+  'prep': True, 'order': 5, 'quarter': 1, 'round': 20, 'libv': 2,
   'srcName': 'Built to match the Nature of Science practice test (Drive)',
   'source': 'added',
   'summary': {'from': 'added', 'text':

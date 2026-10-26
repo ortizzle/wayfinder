@@ -504,7 +504,7 @@ q(Q, 1, 'Which change is the exact reverse of sublimation?',
 
 # ---- assemble --------------------------------------------------------------
 build('wayfinder', C, Q, 'unit-sci-phasechg',
-      'Chemistry · 2 Phase Changes', 'science',
+      'Unit 1 · 1.2 Phase Changes', 'science',
       'All six phase changes — melting, freezing, evaporation and boiling, '
       'condensation, sublimation and deposition — what each one starts and ends '
       'as, which way the energy travels, the temperatures where water changes, '
@@ -557,6 +557,7 @@ p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-phasechg']
 u['sorts'] = [SORT]
-u['libv'] = 2
+u['libv'] = 3
+u['order'] = 7   # v195: Unit 1.2 on the one science Unit 1 shelf
 io.open(p, 'w', encoding='utf-8').write(json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 2' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 3' % (SORT['title'], len(SORT['items'])))

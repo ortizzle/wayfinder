@@ -1,5 +1,5 @@
 /* River's two new prep units (Decimals Extra Practice on the Unit 1 shelf,
-   Reading Scales Practice on the Science shelf) + the gold prep treatment. */
+   Reading Scales Practice on the science Unit 1 shelf) + the gold prep treatment. */
 const { chromium } = require('playwright');
 const PORT = process.argv[2] || 8117;
 (async () => {
@@ -47,14 +47,14 @@ const PORT = process.argv[2] || 8117;
   ck('it is the only gold prep stop on the Unit 1 map', t3.prep.length===1 && /Extra Practice/.test(t3.prep[0]), t3.prep);
   ck('its opened card wears the Test prep band', /Test prep/i.test(t3.band||''), t3.band);
 
-  // Science shelf: scales practice sits last (order:3) and gold-ringed.
+  // Science Unit 1 shelf: scales practice sits last of what is seeded (order:3) and gold-ringed.
   const sci = await p.evaluate(() => {
-    go('shelf', {classId:'science', series:'Science', open:'unit-sci-scales'});
+    go('shelf', {classId:'science', series:'Unit 1', open:'unit-sci-scales'});
     const titles = [...document.querySelectorAll('#screen .stop .t')].map(x=>x.textContent);
     const prep = [...document.querySelectorAll('#screen .stop.prep .t')].map(x=>x.textContent);
     return {titles, last: titles[titles.length-1], prep};
   });
-  ck('scales practice sits last on the Science shelf', /Reading Scales/.test(sci.last||''), sci);
+  ck('scales practice sits last of the four seeded Unit 1.1 parts', /Reading Scales/.test(sci.last||''), sci);
   ck('and is a gold prep stop', sci.prep.length===1 && /Reading Scales/.test(sci.prep[0]), sci.prep);
 
   // Full quiz rounds on both.

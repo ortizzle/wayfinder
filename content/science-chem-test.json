@@ -5,13 +5,13 @@
    "id": "unit-sci-chem-test",
    "type": "unit",
    "classId": "science",
-   "title": "Chemistry · Study Test",
+   "title": "Unit 2 · Chemistry Study Test",
    "status": "draft",
    "prep": true,
    "order": 2,
    "quarter": 2,
    "round": 20,
-   "libv": 1,
+   "libv": 2,
    "srcName": "Built to match the Chemistry practice test (Drive)",
    "source": "added",
    "summary": {
@@ -50,7 +50,7 @@
    ],
    "parentNote": {
     "from": "added",
-    "text": "This is the parallel test: the same ideas as the teacher's practice paper, all new examples, so she cannot answer from memory of the first one. It runs as an ordinary 20-question quiz in one sitting with the options shuffled, and anything she misses lands in the Growth Zone. Mixtures and solutions and the periodic table are on the practice paper but had no part on the Chemistry shelf yet, so this is the first place they are practised; no class notes for either were in Drive, so they are taught here only as far as the practice paper and its key go. One question goes a step past the paper and works a density out (48 g ÷ 24 cm³); the paper gives the density ready-made."
+    "text": "This is the parallel test: the same ideas as the teacher's practice paper, all new examples, so she cannot answer from memory of the first one. It runs as an ordinary 20-question quiz in one sitting with the options shuffled, and anything she misses lands in the Growth Zone. Mixtures and solutions and the periodic table are on the practice paper but had no part on the Unit 1 or Unit 2 shelves yet, so this is the first place they are practised; no class notes for either were in Drive, so they are taught here only as far as the practice paper and its key go. One question goes a step past the paper and works a density out (48 g ÷ 24 cm³); the paper gives the density ready-made."
    },
    "nextUp": {
     "from": "added",
@@ -605,7 +605,7 @@
      }
     }
    ],
-   "updatedAt": 1792545465172
+   "updatedAt": 1792974178021
   }
  }
 }

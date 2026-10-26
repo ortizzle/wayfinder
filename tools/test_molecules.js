@@ -5,7 +5,8 @@
    element / molecule / compound fit a substance.
 
    What this guards beyond the ordinary shelving/round checks:
-     - it is part FOUR of the Chemistry shelf, numbered like parts 1-3;
+     - it is the last Unit 1.2 part on the one Unit 1 shelf (v195; it began as
+       Chemistry part 4);
      - the four definitions and the two-word pairing rule are taught, asserted
        by their TEACHING rather than by question id;
      - every pair a question claims agrees with the rule recomputed here from
@@ -42,10 +43,10 @@ const UID = 'unit-sci-molcomp';
   const shipped = require('../content/science-molecules-compounds.json').records[UID];
 
   ck('it loads under the real science classId', seed.classId === 'science', seed.classId);
-  ck('it ships as a draft with a libv, and sets no order bucket',
-     shipped.status === 'draft' && seed.libv >= 1 && seed.order == null, [shipped.status, seed.libv, seed.order]);
+  ck('it ships as a draft with a libv and an explicit order',
+     shipped.status === 'draft' && seed.libv >= 1 && seed.order === 9, [shipped.status, seed.libv, seed.order]);
   ck('updatedAt is stamped in the past', shipped.updatedAt < Date.now() - 3600e3, shipped.updatedAt);
-  ck('it carries the NUMBERED form, part 4', /^Chemistry · 4 Molecules and Compounds$/.test(seed.title), seed.title);
+  ck('it is titled as Unit 1.2', /^Unit 1 · 1\.2 Molecules and Compounds$/.test(seed.title), seed.title);
   ck('it is not flagged prep — it is the lesson, not test prep', !seed.prep, seed.prep);
   ck('at least 14 cards and 16 questions, every MC with four unique options',
      seed.cards.length >= 14 && seed.qs.length >= 16 &&
@@ -69,14 +70,14 @@ const UID = 'unit-sci-molcomp';
 
   const shelf = await p.evaluate(() => {
     const s = shelvesFor('science');
-    return {loose: s.loose.length,
-            chem: (s.shelves.find(x=>x.name==='Chemistry')||{units:[]}).units.map(u=>u.id),
-            sci: (s.shelves.find(x=>x.name==='Science')||{units:[]}).units.length};
+    const u1 = s.shelves.find(x=>x.name==='Unit 1') || {lessons:[]};
+    return {names: s.shelves.map(x=>x.name), loose: s.loose.length, ids: u1.lessons.map(u=>u.id),
+            labels: u1.lessons.map(u=>lessonLabel(u))};
   });
-  ck('Chemistry runs 1 → 2 → 3 → 4, nothing loose',
-     shelf.chem.join() === 'unit-sci-phases,unit-sci-phasechg,unit-sci-dens,unit-sci-molcomp' &&
-     shelf.loose === 0, shelf);
-  ck('the Nature of Science shelf still holds its six parts', shelf.sci === 6, shelf.sci);
+  ck('Unit 1 runs the six 1.1 parts, then 1.2: Phases → Phase Changes → Density → Molecules, nothing loose',
+     shelf.names.join() === 'Unit 1' && shelf.loose === 0 && shelf.ids.length === 10 &&
+     shelf.labels.slice(0,6).every(l => /^1\.1 /.test(l)) &&
+     shelf.ids.slice(6).join() === 'unit-sci-phases,unit-sci-phasechg,unit-sci-dens,unit-sci-molcomp', shelf);
 
   // The four words and the pairing rule, by their teaching.
   const card = t => seed.cards.find(c => new RegExp(t,'i').test(c.term)) || {};

@@ -4,11 +4,11 @@
   "unit-sci-molcomp": {
    "id": "unit-sci-molcomp",
    "type": "unit",
-   "updatedAt": 1791933901892,
+   "updatedAt": 1792974178021,
    "classId": "science",
    "quarter": 1,
    "status": "draft",
-   "title": "Chemistry · 4 Molecules and Compounds",
+   "title": "Unit 1 · 1.2 Molecules and Compounds",
    "srcName": "molecules and compounds.pdf (Science 4 · Molecules and Compounds lesson check, Drive)",
    "source": "source",
    "summary": {
@@ -42,7 +42,7 @@
     }
    ],
    "parentNote": {
-    "text": "Built from the completed Molecules and Compounds lesson check (one page, twelve substances, each with two answers).\n\nIt was read for the QUESTIONS it asks, not to mark the answers, so nothing here is a correction and nothing about how it went is recorded anywhere. The unit covers the one skill the paper tests twelve times: naming the two words that fit a substance. Its own twelve substances appear on the cards as examples; the graded questions use fresh ones (He, O₂, CO₂, Fe, Cl₂, CH₄, O₃, H₂O₂ and others).\n\nONE THING THE SHEET LEANS ON WITHOUT SAYING, added here as cards flagged as ours rather than the class's: how to read a formula. The paper expects her to know that NaOH is three elements and H₂ is one, but never says that capital letters count elements and small numbers count atoms.\n\nA NUANCE FOR LATER GRADES: NaCl, NaOH, K₂S and CaSO₄ are ionic compounds, and a chemist would not strictly call them molecules. The sheet says every item has two answers, so its framing is molecule and compound, and the unit teaches that. No graded question depends on the difference.\n\nSHELVING: part 4 of Chemistry, after Density and Buoyancy. The Drive file sits loose in Science, like the density sheet, so there was no unit folder to follow. No periodic-table material for her class was found in Drive yet.",
+    "text": "Built from the completed Molecules and Compounds lesson check (one page, twelve substances, each with two answers).\n\nIt was read for the QUESTIONS it asks, not to mark the answers, so nothing here is a correction and nothing about how it went is recorded anywhere. The unit covers the one skill the paper tests twelve times: naming the two words that fit a substance. Its own twelve substances appear on the cards as examples; the graded questions use fresh ones (He, O₂, CO₂, Fe, Cl₂, CH₄, O₃, H₂O₂ and others).\n\nONE THING THE SHEET LEANS ON WITHOUT SAYING, added here as cards flagged as ours rather than the class's: how to read a formula. The paper expects her to know that NaOH is three elements and H₂ is one, but never says that capital letters count elements and small numbers count atoms.\n\nA NUANCE FOR LATER GRADES: NaCl, NaOH, K₂S and CaSO₄ are ionic compounds, and a chemist would not strictly call them molecules. The sheet says every item has two answers, so its framing is molecule and compound, and the unit teaches that. No graded question depends on the difference.\n\nSHELVING: the last part of Unit 1.2 on the Unit 1 shelf, after Density and Buoyancy, matching its Drive folder. The Drive file sits loose in Science, like the density sheet, so there was no unit folder to follow. No periodic-table material for her class was found in Drive yet.",
     "from": "added"
    },
    "nextUp": {
@@ -729,7 +729,8 @@
      ]
     }
    ],
-   "libv": 1
+   "libv": 2,
+   "order": 9
   }
  }
 }

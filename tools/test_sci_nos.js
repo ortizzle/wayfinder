@@ -139,9 +139,9 @@ const PAPER_KEY = 'CBACDBCBCABCBCBCDAD';   // the teacher's circled answers, Q1.
   ck('a full 20-question round plays and logs', play.logged, play);
   ck('a graph actually renders inside the round', play.sawGraph, play);
 
-  // ---- both wear the gold test-prep treatment on the Science shelf ---------
+  // ---- both wear the gold test-prep treatment on the Unit 1 shelf ----------
   const shelf = await p.evaluate(() => {
-    go('shelf', {classId:'science', series:'Science'});
+    go('shelf', {classId:'science', series:'Unit 1'});
     const stops = [...document.querySelectorAll('#screen .stop')];
     return {titles: stops.map(s => (s.querySelector('.t')||{}).textContent || ''),
             gold: stops.filter(s => s.className.includes('prep')).length};

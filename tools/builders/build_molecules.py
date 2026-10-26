@@ -462,7 +462,7 @@ SORT = {
 }
 
 build('wayfinder', C, Q, 'unit-sci-molcomp',
-      'Chemistry · 4 Molecules and Compounds', 'science',
+      'Unit 1 · 1.2 Molecules and Compounds', 'science',
 
       "The four words for what a substance is made of, and how they pair: an atom is one "
       "particle, an element is one kind of atom, a molecule is atoms joined, and a compound is "
@@ -510,6 +510,7 @@ p = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath
 j = json.load(io.open(p, encoding='utf-8'))
 u = j['records']['unit-sci-molcomp']
 u['sorts'] = [SORT]
-u['libv'] = 1
+u['libv'] = 2
+u['order'] = 9   # v195: Unit 1.2 on the one science Unit 1 shelf
 io.open(p, 'w', encoding='utf-8').write(json.dumps(j, ensure_ascii=False, indent=1))
-print('  + sort set "%s" (%d items), libv 1' % (SORT['title'], len(SORT['items'])))
+print('  + sort set "%s" (%d items), libv 2' % (SORT['title'], len(SORT['items'])))

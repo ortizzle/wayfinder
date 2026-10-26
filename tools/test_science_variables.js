@@ -46,7 +46,7 @@ const PORT = process.argv[2] || 8107;
     const spines = [...document.querySelectorAll('#screen .spine')].map(s => s.textContent);
     return spines;
   });
-  ck('Science shelves as one spine with all 3 parts', shelf.some(t => /^Science/.test(t)), shelf);
+  ck('the Quiz 1 parts shelve as one Unit 1 spine', shelf.filter(t => /^Unit 1/.test(t)).length === 1, shelf);
 
   const cardsWalk = await p.evaluate(async () => {
     go('cards', {unitId:'unit-sci-vars', classId:'science'});

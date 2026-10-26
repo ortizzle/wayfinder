@@ -135,17 +135,22 @@ const PAPER_KEY = 'ABACABABADBABCCBBDDAA';   // the teacher's circled answers, Q
   ck('a full 20-question round plays and logs', play.logged && play.total === 20, play);
 
   const shelf = await p.evaluate(() => {
-    go('shelf', {classId:'science', series:'Chemistry'});
+    go('shelf', {classId:'science', series:'Unit 2'});
     const stops = [...document.querySelectorAll('#screen .stop')];
+    const sh = shelvesFor('science');
     return {titles: stops.map(s => (s.querySelector('.t')||{}).textContent || ''),
             gold: stops.filter(s => s.className.includes('prep')).length,
-            loose: shelvesFor('science').loose.map(u => u.id)};
+            names: sh.shelves.map(s => s.name),
+            u1: (sh.shelves.find(s => s.name === 'Unit 1') || {lessons:[]}).lessons.map(u => u.id),
+            loose: sh.loose.map(u => u.id)};
   });
-  const iMol = shelf.titles.findIndex(t => /Molecules/.test(t));
-  const iP = shelf.titles.findIndex(t => /Practice Unit Test/.test(t));
-  const iS = shelf.titles.findIndex(t => /Study Test/.test(t));
-  ck('both trail the four Chemistry parts: practice test, then study test',
-     iMol === 3 && iP === 4 && iS === 5 && shelf.loose.length === 0, shelf);
+  /* v195: the Chemistry test material lives in River's "Unit 2 - Chemistry"
+     Drive folder, so it is its own Unit 2 shelf; the phases parts it tests are
+     Unit 1.2 and stay on the Unit 1 shelf. */
+  ck('Unit 2 is its own shelf: practice test, then study test; Unit 1 keeps the phases parts',
+     shelf.titles.length === 2 && /Practice Unit Test/.test(shelf.titles[0]) && /Study Test/.test(shelf.titles[1]) &&
+     shelf.names.slice().sort().join() === 'Unit 1,Unit 2' && !shelf.u1.some(id => /chem/.test(id)) &&
+     shelf.u1.includes('unit-sci-molcomp') && shelf.loose.length === 0, shelf);
   ck('both wear the gold prep ring', shelf.gold === 2, shelf.gold);
 
   out.forEach(r => console.log((r.ok ? ' ok ' : 'FAIL ') + r.n + (r.ok ? '' : ' -> ' + JSON.stringify(r.got).slice(0,320))));

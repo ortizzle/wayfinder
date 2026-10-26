@@ -199,7 +199,7 @@ q(Q, 3, 'A box measures 4 cm × 3 cm × 2 cm. If ONLY its height doubled, what w
    '48 is exactly twice 24 — doubling one factor doubles the product.'],
   '**It would double.** Each edge is a factor, and doubling one factor doubles the whole product.',
   'If ALL THREE edges doubled, the volume would multiply by 2 × 2 × 2 = 8 — try it.')
-build('wayfinder', C, Q, 'unit-sci-meas', 'Science · Quiz 1 Part 2: Measurement', 'science',
+build('wayfinder', C, Q, 'unit-sci-meas', 'Unit 1 · 1.1 Quiz 1 Part 2: Measurement', 'science',
       'The Measurements lesson check covers two skills: sorting observations into quantitative (numbers you can count or measure) and qualitative (descriptions from your senses), and choosing measurement units — the U.S. Customary and Metric systems, matching a unit to the property and size of the thing, and calculating the volume of a rectangular prism with V = l × w × h in cubic units.',
       'Measurement is where science stops being opinions — two people can argue about "big" but not about 43 centimetres. The unit-choice habit (right system, right property, right size) and the volume formula both come back every year, in every lab.',
       [('Sort an observation as quantitative or qualitative and say how you know.', 'source'),

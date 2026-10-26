@@ -400,8 +400,8 @@ assert got == PAPER_KEY, (got, PAPER_KEY)   # option order is FIXED: never _bala
 
 unitA = {
   'id': 'unit-sci-chem-practice', 'type': 'unit', 'classId': 'science',
-  'title': 'Chemistry · Practice Unit Test', 'status': 'draft',
-  'guide': True, 'prep': True, 'order': 1, 'quarter': 2, 'libv': 1,
+  'title': 'Unit 2 · Chemistry Practice Unit Test', 'status': 'draft',
+  'guide': True, 'prep': True, 'order': 1, 'quarter': 2, 'libv': 2,
   'srcName': 'Practice for Chemistry Unit Test + answer key (Drive)',
   'source': 'source',
   'summary': {'from': 'source', 'text':
@@ -613,8 +613,8 @@ _balance(Q2)
 
 unitB = {
   'id': 'unit-sci-chem-test', 'type': 'unit', 'classId': 'science',
-  'title': 'Chemistry · Study Test', 'status': 'draft',
-  'prep': True, 'order': 2, 'quarter': 2, 'round': 20, 'libv': 1,
+  'title': 'Unit 2 · Chemistry Study Test', 'status': 'draft',
+  'prep': True, 'order': 2, 'quarter': 2, 'round': 20, 'libv': 2,
   'srcName': 'Built to match the Chemistry practice test (Drive)',
   'source': 'added',
   'summary': {'from': 'added', 'text':

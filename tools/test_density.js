@@ -3,8 +3,8 @@
    QUESTIONS it asks rather than to mark it (Chris, 2026-09-27).
 
    What this guards beyond the ordinary shelving/round checks:
-     - it is part THREE of the Chemistry shelf, behind Phases of Matter and
-       Phase Changes, and it carries the numbered form the whole shelf uses;
+     - it is the third Unit 1.2 part on the one Unit 1 shelf, behind Phases of
+       Matter and Phase Changes (v195; it began as Chemistry part 3);
      - the two things the paper LEANS ON but never states — the formula and
        water's 1 g/cm³ — are both present and both flagged as ours, not her
        class's, since inventing provenance would borrow the school's authority;
@@ -21,9 +21,8 @@ const PORT = process.argv[2] || 8403;
   await p.goto(`http://localhost:${PORT}/index.html`, {waitUntil:'networkidle'});
   const out = []; const ck = (n, ok, got) => out.push({n, ok: !!ok, got});
 
-  /* Seed the WHOLE science subject, both shelves, so "its own place on the
-     Chemistry shelf" is a claim about coexistence and not about an empty
-     subject screen. */
+  /* Seed the whole Unit 1 shelf, so "its place on the shelf" is a claim about
+     coexistence and not about an empty subject screen. */
   const seed = await p.evaluate(async () => {
     const files = ['science-quiz-1','science-measurement','science-variables','science-scales',
                    'science-nos-practice','science-nos-test',
@@ -43,16 +42,8 @@ const PORT = process.argv[2] || 8403;
   // The v136 orphan trap: a classId CLASS_BY_ID does not know shelves nowhere
   // and raises no error anywhere.
   ck('it loads under the real science classId', seed.classId === 'science', seed.classId);
-  ck('it carries a libv and sets no order bucket',
-     seed.libv >= 1 && seed.order == null, [seed.libv, seed.order]);
-  /* Measured, not assumed: an UNNUMBERED "Chemistry · Density and Buoyancy"
-     still sorts last today, because numeric-aware collation puts digits ahead
-     of letters and parts 1 and 2 are numbered. So the 3 is not fixing a live
-     inversion the way v162's numbers were — it is the v180 rule, that mixing
-     the two forms inside one shelf IS the bug, and it becomes load-bearing the
-     moment a part 4 arrives whose title would sort ahead of "Density". */
-  ck('it carries the NUMBERED form, so the shelf sorts structurally',
-     /^Chemistry · 3 Density and Buoyancy$/.test(seed.title), seed.title);
+  ck('it carries a libv and an explicit order', seed.libv >= 1 && seed.order === 8, [seed.libv, seed.order]);
+  ck('it is titled as Unit 1.2', /^Unit 1 · 1\.2 Density and Buoyancy$/.test(seed.title), seed.title);
   /* v139: prep says what a unit IS. This is the lesson itself. */
   ck('it is not flagged prep — it is the lesson, not test prep', !seed.prep, seed.prep);
   ck('at least 16 cards and 17 questions, every MC with four unique options',
@@ -75,20 +66,18 @@ const PORT = process.argv[2] || 8403;
      !/\b(first|second|third|last) (two |three )?options?\b|all of the above/i.test(
         seed.qs.map(q=>q.q+' '+q.steps.join(' ')+' '+q.ex.main).join(' ')), 'ok');
 
-  /* The shelf: three parts in teaching order, the Nature of Science run
-     untouched beside it, nothing loose. */
+  /* The shelf: the six Unit 1.1 parts, then Phases → Phase Changes → Density,
+     all on one Unit 1 shelf, nothing loose. */
   const shelf = await p.evaluate(() => {
     const s = shelvesFor('science');
+    const u1 = s.shelves.find(x=>x.name==='Unit 1') || {lessons:[]};
     return {names: s.shelves.map(x=>x.name), loose: s.loose.length,
-            chem: (s.shelves.find(x=>x.name==='Chemistry')||{units:[]}).units.map(u=>u.id),
-            sci: (s.shelves.find(x=>x.name==='Science')||{units:[]}).units.map(u=>lessonLabel(u))};
+            ids: u1.lessons.map(u=>u.id), labels: u1.lessons.map(u=>lessonLabel(u))};
   });
-  ck('Chemistry runs Phases → Phase Changes → Density, nothing loose',
-     shelf.chem.join() === 'unit-sci-phases,unit-sci-phasechg,unit-sci-dens' && shelf.loose === 0,
-     shelf);
-  ck('the Nature of Science shelf still runs Quiz 1 → Study Test, unchanged',
-     shelf.sci.length === 6 && /^Quiz 1: /.test(shelf.sci[0]) && /Study Test$/.test(shelf.sci[5]),
-     shelf.sci);
+  ck('Unit 1 runs the 1.1 parts, then Phases → Phase Changes → Density, nothing loose',
+     shelf.names.join() === 'Unit 1' && shelf.loose === 0 && shelf.ids.length === 9 &&
+     shelf.labels.slice(0,6).every(l => /^1\.1 /.test(l)) &&
+     shelf.ids.slice(6).join() === 'unit-sci-phases,unit-sci-phasechg,unit-sci-dens', shelf);
 
   /* The two additions, by their teaching AND by their provenance. Flagging
      these 'source' would put the school's name on something its paper never

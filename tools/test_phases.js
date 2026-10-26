@@ -1,8 +1,9 @@
 /* v161 — Chemistry · Phases of Matter (Wayfinder only).
    Built from River's completed 20-point practice sheet. Two things this
    guards beyond the ordinary shelving/round checks:
-     - it is its OWN shelf, not a seventh part of the Nature of Science
-       sequence (which is an explicit order:0..5 run of Unit 1 material);
+     - it shelves as Unit 1.2 on the one Unit 1 shelf, after the six Unit 1.1
+       parts (v195: matching River's Drive folders; it began on a Chemistry
+       shelf of its own in v161);
      - it actually teaches the four things she got wrong, by their teaching
        and not merely by their presence. */
 const { chromium } = require('playwright');
@@ -32,14 +33,15 @@ const PORT = process.argv[2] || 8302;
   });
 
   ck('it loads under the real science classId', seed.classId === 'science', seed.classId);
-  ck('both parts carry a libv and no order bucket',
-     seed.libv >= 1 && seed.chg.libv >= 1 && seed.order == null && seed.chg.order == null,
+  // v195: both moved onto the Unit 1 shelf as Unit 1.2, matching River's
+  // Drive folders. "Phase Changes" title-sorts AHEAD of "Phases of Matter" (a
+  // space beats 's'), so the explicit order is load-bearing, not decoration.
+  ck('both parts carry a libv and an explicit order, Phases before Phase Changes',
+     seed.libv >= 1 && seed.chg.libv >= 1 && seed.order < seed.chg.order,
      [seed.libv, seed.chg.libv, seed.order, seed.chg.order]);
-  // "Phase Changes" title-sorts AHEAD of "Phases of Matter" (a space beats
-  // 's'), so the lesson numbers are load-bearing, not decoration.
-  ck('both parts carry the NUMBERED form, so the shelf sorts structurally',
-     /^Chemistry · 1 Phases of Matter$/.test(seed.title) &&
-     /^Chemistry · 2 Phase Changes$/.test(seed.chg.title),
+  ck('both parts are titled as Unit 1.2',
+     /^Unit 1 · 1\.2 Phases of Matter$/.test(seed.title) &&
+     /^Unit 1 · 1\.2 Phase Changes$/.test(seed.chg.title),
      [seed.title, seed.chg.title]);
   ck('neither part is flagged prep — they are the lessons, not test prep',
      !seed.prep && !seed.chg.prep, [seed.prep, seed.chg.prep]);
@@ -61,20 +63,19 @@ const PORT = process.argv[2] || 8302;
      !/\b(the )?(worksheet|practice sheet|the sheet|question \d)\b/i.test(
         seed.qs.map(q => q.q + ' ' + q.steps.join(' ')).join(' ')), 'ok');
 
-  // A new shelf, and the Nature of Science run left exactly as it was.
+  // One Unit 1 shelf: the six Unit 1.1 parts, then the Unit 1.2 parts.
   const shelf = await p.evaluate(() => {
     const s = shelvesFor('science');
+    const u1 = s.shelves.find(x=>x.name==='Unit 1') || {lessons:[]};
     return {names: s.shelves.map(x=>x.name), loose: s.loose.length,
-            chem: (s.shelves.find(x=>x.name==='Chemistry')||{units:[]}).units.map(u=>u.id),
-            sci: (s.shelves.find(x=>x.name==='Science')||{units:[]}).units.map(u=>lessonLabel(u))};
+            ids: u1.lessons.map(u=>u.id), labels: u1.lessons.map(u=>lessonLabel(u))};
   });
-  ck('Chemistry is its own shelf, Phases of Matter then Phase Changes, nothing loose',
-     shelf.names.includes('Chemistry') &&
-     shelf.chem.join() === 'unit-sci-phases,unit-sci-phasechg' && shelf.loose === 0,
+  ck('one Unit 1 shelf: the 1.1 run, then Phases of Matter and Phase Changes, nothing loose',
+     shelf.names.join() === 'Unit 1' && shelf.loose === 0 && shelf.ids.length === 8 &&
+     shelf.labels.slice(0,6).every(l => /^1\.1 /.test(l)) && /^1\.1 Quiz 1: /.test(shelf.labels[0]) &&
+     /Study Test$/.test(shelf.labels[5]) &&
+     shelf.ids.slice(6).join() === 'unit-sci-phases,unit-sci-phasechg',
      shelf);
-  ck('the Nature of Science shelf still runs Quiz 1 → Study Test, unchanged',
-     shelf.sci.length === 6 && /^Quiz 1: /.test(shelf.sci[0]) && /Study Test$/.test(shelf.sci[5]),
-     shelf.sci);
 
   // The four things she actually got wrong, checked by their teaching.
   const teach = seed.blob;
