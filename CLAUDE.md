@@ -230,6 +230,14 @@ buildless. When you fix an engine bug (sync, streaks, timer, quiz), **check
 whether the other app has it too**. Content, schedule, calendar, palette and copy
 are meant to diverge; the engine is not.
 
+### DATA lives in IndexedDB (v196 / Ad Astra v216)
+
+Same change as Ad Astra's — see "Where DATA is stored" in ../ad-astra/CLAUDE.md's
+data-model section. This app's library alone was 1.8 MB of the ~5 MB
+localStorage that every app at ortizzle.github.io shares. `DATA` is in
+IndexedDB (`wayfinder_db`), boot waits on `booted`, and
+`tools/test_idb_storage.js` is the same file in both repos.
+
 ### Parity with Ad Astra: complete as of v23 (2026-08)
 
 The approved v20–v22 backlog is fully ported: graphs (`renderGraph` +
