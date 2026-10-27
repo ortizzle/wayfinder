@@ -237,6 +237,7 @@ data-model section. This app's library alone was 1.8 MB of the ~5 MB
 localStorage that every app at ortizzle.github.io shares. `DATA` is in
 IndexedDB (`wayfinder_db`), boot waits on `booted`, and
 `tools/test_idb_storage.js` is the same file in both repos.
+Since v197 boot also asks Chrome to keep storage persistent (`askPersist()`).
 
 ### Parity with Ad Astra: complete as of v23 (2026-08)
 
