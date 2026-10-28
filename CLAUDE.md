@@ -238,6 +238,11 @@ localStorage that every app at ortizzle.github.io shares. `DATA` is in
 IndexedDB (`wayfinder_db`), boot waits on `booted`, and
 `tools/test_idb_storage.js` is the same file in both repos.
 Since v197 boot also asks Chrome to keep storage persistent (`askPersist()`).
+Since v198 boot never waits on IndexedDB for more than `DB_WAIT` (3 s): a hung
+`open()` or read falls back to localStorage, a start-up error shows a Reload
+card instead of a blank screen, and the update bar's Refresh asks whichever
+worker is waiting now. See "The app always comes up" in ../ad-astra/CLAUDE.md;
+`tools/test_boot_resilience.js` is the same file in both repos.
 
 ### Parity with Ad Astra: complete as of v23 (2026-08)
 
