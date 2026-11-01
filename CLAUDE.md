@@ -2084,6 +2084,42 @@ older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
 
+### Unit 5 · Lessons 4, 5 and 7, before the unit test (v199)
+
+Chris: *"I've updated content in the girls folders."* Her `Unit 5 - Math`
+folder gained `5-4_`, `5-5_` and `5-7_ Student Edition Practice.pdf` on 11/1,
+ahead of the Unit 5 test (around 11/5, date to confirm). **There is no 5-6
+page**, so there is no Lesson 6, and Lesson 7's `parentNote` says so. Built by
+a subagent that wrote only the content, `tools/builders/build_math_unit5_more.py`
+and the test, then integrated here. The pages were read for what they ask; her
+answers are recorded nowhere.
+
+| id | title |
+|---|---|
+| `unit-m5u4` | `Unit 5 · Lesson 4: Divide with Partial Quotients` |
+| `unit-m5u5` | `Unit 5 · Lesson 5: Record Division with Two-Digit Divisors` |
+| `unit-m5u7` | `Unit 5 · Lesson 7: Use Different Strategies to Divide` |
+
+- **Same shape as Lessons 1–3**: 8 cards and 15 questions each, `round:10`,
+  `series:'Unit 5'`, no `order`, no `prep`. A separate builder, so Lessons 1–3
+  are not rebuilt or re-stamped.
+- **Every wrong option is a named slip**, and the builder asserts none also
+  satisfies q × d + r = a with r < d:
+  - the remainder left off
+  - one group short (a remainder at least as big as the divisor)
+  - a zero skipped inside the quotient
+  - a partial quotient left out of the sum
+  - partial quotients written side by side
+- **`use()` refuses every division printed on 5-1 to 5-7.**
+- A remainder is interpreted three ways: round up (buses), drop it (full flower
+  beds), and the remainder as the answer (apples left over).
+
+`tools/test_unit5_more.js` (20 assertions) seeds the whole Unit 5 shelf and
+pins the order with no Lesson 6, recomputes every quotient from its stem,
+checks each slip, sweeps for reused divisions, and plays a full round and the
+deck on each new lesson. **Verified by flipping one answer and planting a page's
+division.**
+
 ### Unit 5 · Lessons 1–3, before Wednesday's quiz (v194)
 
 Chris's new `Unit 5 - Math` folder holds her `5-1_`, `5-2_` and

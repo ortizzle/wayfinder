@@ -1,0 +1,497 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5u7": {
+   "id": "unit-m5u7",
+   "type": "unit",
+   "updatedAt": 1793543005068,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Lesson 7: Use Different Strategies to Divide",
+   "srcName": "Lesson 5-7 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 5 Student Edition practice pages — dividing by two-digit divisors (Drive)",
+   "summary": {
+    "text": "Lesson 5-7 practice pages: choosing a strategy to divide (estimating, patterns, partial quotients and long division), checking that a quotient is reasonable, deciding whether a remainder can be bigger than the divisor, and two-step word problems.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This lesson ties the unit together: the point is knowing which tool fits a problem, not just how to use each one.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Choose a strategy that fits the numbers in a division",
+     "from": "source"
+    },
+    {
+     "text": "Estimate a quotient and use it to check for reasonableness",
+     "from": "source"
+    },
+    {
+     "text": "Explain why a remainder must be smaller than the divisor",
+     "from": "source"
+    },
+    {
+     "text": "Divide four-digit numbers by two-digit divisors",
+     "from": "source"
+    },
+    {
+     "text": "Solve two-step word problems that use division",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 5-7 practice pages in her Unit 5 folder, read for what they ask. The numbers are fresh, not the page's own. The slip most worth a word is a lost zero: 4,560 ÷ 19 is 240, and an estimate of 4,600 ÷ 20 = 230 catches an answer of 24 before she multiplies. Every wrong option on a worked division comes from a named slip (a partial quotient left out, a zero lost or added, the remainder left off, or a remainder bigger than the divisor). There was no lesson 5-6 page in the folder, so nothing was built for Lesson 6.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Estimate, choose a strategy, divide, then check against the estimate.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Estimate first",
+     "def": "**Before you divide, find two numbers the quotient sits between.**\n• 2,890 ÷ 17: 17 × 100 = 1,700 and 17 × 200 = 3,400, so between 100 and 200.",
+     "hint": "Bracket it with 10s, 100s and 1,000s.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Patterns with zeros",
+     "def": "**When both numbers end in zeros, use a basic fact and count the zeros.**\n• 5,600 ÷ 80: 56 ÷ 8 = 7, so 70.",
+     "hint": "Fact first, zeros second.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Partial quotients with big chunks",
+     "def": "**For a big dividend, take away hundreds of groups first, then tens, then ones.**\n• 9,216 ÷ 48: 100, then 90, then 2, for 192.",
+     "hint": "Hundreds, tens, ones.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Long division",
+     "def": "**Divide, multiply, subtract, bring down, one digit at a time.**\n• Write 0 when a brought-down number is too small: 6,147 ÷ 61 = 100 R47.",
+     "hint": "Every brought-down digit gets a digit in the quotient.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Choose a strategy",
+     "def": "**Pick the strategy that fits the numbers.**\n• Zeros on both numbers: patterns.\n• Messy numbers: partial quotients or long division.\n• \"About how many\": an estimate is enough.",
+     "hint": "Let the numbers choose.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "The remainder rule",
+     "def": "**A remainder is always smaller than the divisor.**\n• 1,250 ÷ 32 is 39 R2, not 38 R34.",
+     "hint": "If another group fits, keep going.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Is it reasonable?",
+     "def": "**Compare your answer with your estimate. If it is about ten times too big or too small, a zero slipped.**\n• 4,560 ÷ 19 is about 230, so 24 cannot be right.",
+     "hint": "Estimate catches lost zeros.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Two-step problems",
+     "def": "**In a word problem, the quotient is often only the first step.**\n• 2,880 eggs ÷ 12 = 240 cartons, then 240 × $3 = $720.",
+     "hint": "Ask what the question wants at the very end.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Can a remainder be greater than the divisor?",
+     "opts": [
+      "No, because then at least one more group would fit",
+      "Yes, whenever the dividend is very large",
+      "Yes, a remainder can be any number at all",
+      "No, because a remainder must always be zero"
+     ],
+     "ans": 0,
+     "hint": "If 30 are left and the divisor is 24, what could you still do?",
+     "steps": [
+      "A remainder is what is left when no more full groups fit.",
+      "If it were as big as the divisor, one more group would fit.",
+      "So the remainder is always smaller than the divisor."
+     ],
+     "ex": {
+      "main": "**No.** If what is left is as big as the divisor, another group fits, so you are not finished.",
+      "tip": "A remainder of 0 is fine; a remainder bigger than the divisor is not."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "The quotient of 2,890 ÷ 17 is between which two numbers?",
+     "opts": [
+      "10 and 20",
+      "100 and 200",
+      "1,000 and 2,000",
+      "200 and 300"
+     ],
+     "ans": 1,
+     "hint": "Try 17 × 100 and 17 × 200.",
+     "steps": [
+      "17 × 100 = 1,700, which is less than 2,890.",
+      "17 × 200 = 3,400, which is more than 2,890.",
+      "So the quotient is between 100 and 200.",
+      "In fact 2,890 ÷ 17 = 170."
+     ],
+     "ex": {
+      "main": "**100 and 200.** 17 × 100 = 1,700 and 17 × 200 = 3,400, and 2,890 is between them. The quotient is 170.",
+      "tip": "Multiplying by 10, 100 and 1,000 brackets the answer fast."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which strategy is quickest for 5,600 ÷ 80?",
+     "opts": [
+      "Adding 80 over and over until the total reaches 5,600",
+      "Partial quotients, taking away one group of 80 at a time",
+      "A basic fact and patterns: 56 ÷ 8 = 7, so the answer is 70",
+      "Long division, starting with 80 × 1,000 = 80,000"
+     ],
+     "ans": 2,
+     "hint": "Both numbers end in zero. Which lesson used that?",
+     "steps": [
+      "Cover the zeros: 56 ÷ 8 = 7.",
+      "5,600 has two zeros and 80 has one, so one zero is left.",
+      "So 5,600 ÷ 80 = 70.",
+      "Check: 70 × 80 = 5,600."
+     ],
+     "ex": {
+      "main": "**A basic fact and patterns.** 56 ÷ 8 = 7, and one zero is left over, so 70. The other ways work too, but take much longer.",
+      "tip": "Pick the strategy that fits the numbers."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "How many digits will the quotient of 4,176 ÷ 36 have?",
+     "opts": [
+      "One digit",
+      "Two digits",
+      "Four digits",
+      "Three digits"
+     ],
+     "ans": 3,
+     "hint": "Compare with 36 × 100 and 36 × 1,000.",
+     "steps": [
+      "36 × 100 = 3,600, which is less than 4,176.",
+      "36 × 1,000 = 36,000, which is far more.",
+      "So the quotient is in the hundreds: three digits.",
+      "4,176 ÷ 36 = 116."
+     ],
+     "ex": {
+      "main": "**Three digits.** 36 × 100 = 3,600 fits under 4,176, but 36 × 1,000 does not, so the answer is in the hundreds: 116.",
+      "tip": "Knowing the number of digits first catches a lost or extra zero."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3,264 ÷ 24?",
+     "opts": [
+      "136",
+      "36",
+      "135 R24",
+      "137"
+     ],
+     "ans": 0,
+     "hint": "Try 24 × 100 first.",
+     "steps": [
+      "Take away 100 groups of 24: 3,264 − 2,400 = 864 left.",
+      "Take away 30 groups of 24: 864 − 720 = 144 left.",
+      "Take away 6 groups of 24: 144 − 144 = 0 left.",
+      "Add the partial quotients: 100 + 30 + 6 = 136.",
+      "Check: 24 × 136 = 3,264."
+     ],
+     "ex": {
+      "main": "**136.** Check: 24 × 136 = 3,264. The wrong answers come from real slips: 36 is a partial quotient left out of the sum; 135 R24 is one group short, which leaves a remainder too big to keep; 137 is one group too many.",
+      "tip": "Estimate: 3,000 ÷ 20 = 150, so expect a three-digit answer."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5,890 ÷ 38?",
+     "opts": [
+      "55",
+      "155",
+      "1,550",
+      "156"
+     ],
+     "ans": 1,
+     "hint": "Take away 38 × 100 first.",
+     "steps": [
+      "Take away 100 groups of 38: 5,890 − 3,800 = 2,090 left.",
+      "Take away 50 groups of 38: 2,090 − 1,900 = 190 left.",
+      "Take away 5 groups of 38: 190 − 190 = 0 left.",
+      "Add the partial quotients: 100 + 50 + 5 = 155.",
+      "Check: 38 × 155 = 5,890."
+     ],
+     "ex": {
+      "main": "**155.** Check: 38 × 155 = 5,890. The wrong answers come from real slips: 55 is a partial quotient left out of the sum; 1,550 is a zero too many; 156 is one group too many.",
+      "tip": "Check: 38 × your answer must make 5,890."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7,365 ÷ 42?",
+     "opts": [
+      "174 R57",
+      "175",
+      "175 R15",
+      "75 R15"
+     ],
+     "ans": 2,
+     "hint": "Take away 42 × 100 first, then tens.",
+     "steps": [
+      "Take away 100 groups of 42: 7,365 − 4,200 = 3,165 left.",
+      "Take away 70 groups of 42: 3,165 − 2,940 = 225 left.",
+      "Take away 5 groups of 42: 225 − 210 = 15 left.",
+      "15 is less than 42, so 15 is the remainder.",
+      "Add the partial quotients: 100 + 70 + 5 = 175.",
+      "Check: 42 × 175 + 15 = 7,365."
+     ],
+     "ex": {
+      "main": "**175 R15.** Check: 42 × 175 + 15 = 7,365. The wrong answers come from real slips: 175 is the remainder left off; 174 R57 is one group short, which leaves a remainder too big to keep; 75 R15 is a partial quotient left out of the sum.",
+      "tip": "The remainder must be smaller than 42."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6,147 ÷ 61?",
+     "opts": [
+      "99 R108",
+      "10 R47",
+      "100",
+      "100 R47"
+     ],
+     "ans": 3,
+     "hint": "61 fits into 61 once. What about the 4 that comes next?",
+     "steps": [
+      "61 does not fit into 6, so start with 61.",
+      "61 ÷ 61 is 1: 1 × 61 = 61, and 61 − 61 = 0. Bring down the 4 to make 4.",
+      "4 is less than 61, so write 0 in the quotient. Bring down the 7 to make 47.",
+      "47 is less than 61, so write 0 in the quotient.",
+      "Check: 61 × 100 + 47 = 6,147."
+     ],
+     "ex": {
+      "main": "**100 R47.** Check: 61 × 100 + 47 = 6,147. The wrong answers come from real slips: 10 R47 is the zero in the quotient skipped; 100 is the remainder left off; 99 R108 is one group short, which leaves a remainder too big to keep.",
+      "tip": "A zero in the quotient holds a place."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A stadium has 9,216 seats in sections of 48 seats each. How many sections are there?",
+     "opts": [
+      "192 sections",
+      "92 sections",
+      "193 sections",
+      "1,920 sections"
+     ],
+     "ans": 0,
+     "hint": "Estimate first: 48 is close to 50. Then take away 48 × 100.",
+     "steps": [
+      "48 × 100 = 4,800, and 9,216 − 4,800 = 4,416.",
+      "48 × 90 = 4,320, and 4,416 − 4,320 = 96.",
+      "48 × 2 = 96, and nothing is left.",
+      "Add: 100 + 90 + 2 = 192."
+     ],
+     "ex": {
+      "main": "**192 sections.** 48 × 192 = 9,216. 92 leaves the 100 out, 193 is one group too many, and 1,920 has a zero too many.",
+      "tip": "Estimate: 10,000 ÷ 50 = 200, so 192 is reasonable."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which division has a quotient of 64?",
+     "opts": [
+      "2,795 ÷ 43",
+      "2,752 ÷ 43",
+      "27,520 ÷ 43",
+      "2,709 ÷ 43"
+     ],
+     "ans": 1,
+     "hint": "Multiply 43 × 64 and compare.",
+     "steps": [
+      "43 × 64 = 2,752.",
+      "So 2,752 ÷ 43 = 64.",
+      "2,795 ÷ 43 = 65, and 2,709 ÷ 43 = 63.",
+      "27,520 ÷ 43 = 640, ten times as much."
+     ],
+     "ex": {
+      "main": "**2,752 ÷ 43.** 43 × 64 = 2,752. The others are one group more, one group fewer, and ten times as much.",
+      "tip": "To find a dividend, multiply the divisor by the quotient."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A farm packs 2,880 eggs into cartons of 12 and sells each carton for $3. How much money does it make if it sells every carton?",
+     "opts": [
+      "$8,640",
+      "$240",
+      "$720",
+      "$72"
+     ],
+     "ans": 2,
+     "hint": "First find the number of cartons. Then find the money.",
+     "steps": [
+      "2,880 ÷ 12 = 240 cartons.",
+      "Each carton sells for $3.",
+      "240 × 3 = 720.",
+      "So the farm makes $720."
+     ],
+     "ex": {
+      "main": "**$720.** 2,880 ÷ 12 = 240 cartons, and 240 × $3 = $720. $240 stops after the first step, $8,640 multiplies the eggs instead of the cartons, and $72 loses a zero.",
+      "tip": "The price is per carton, so you need the cartons first."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ana says 4,560 ÷ 19 = 24. Which estimate shows her answer is not reasonable?",
+     "opts": [
+      "4,560 − 19 = 4,541, so an answer of 24 must be right",
+      "4,600 ÷ 20 is about 23, so 24 is close enough to be right",
+      "45 ÷ 19 is about 2, so 24 is about the right size",
+      "4,600 ÷ 20 = 230, so the answer should be in the hundreds"
+     ],
+     "ans": 3,
+     "hint": "Round 19 to 20 and 4,560 to a number 20 divides easily.",
+     "steps": [
+      "4,560 is close to 4,600, and 19 is close to 20.",
+      "4,600 ÷ 20 = 230.",
+      "24 is about ten times too small.",
+      "The real answer is 240: 19 × 240 = 4,560."
+     ],
+     "ex": {
+      "main": "**4,600 ÷ 20 = 230, so the answer is in the hundreds.** The real quotient is 240. She lost a zero.",
+      "tip": "An estimate catches a missing zero before you multiply."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ben found 1,250 ÷ 32 = 38 R34. What should he fix?",
+     "opts": [
+      "34 is more than 32, so one more group fits: 39 R2",
+      "Nothing, because 32 × 38 + 34 = 1,250",
+      "He should drop the remainder and write 38",
+      "He should write the remainder as a digit: 3,834"
+     ],
+     "ans": 0,
+     "hint": "Compare the remainder with the divisor.",
+     "steps": [
+      "32 × 38 = 1,216, and 1,250 − 1,216 = 34.",
+      "34 is more than 32, so another group fits.",
+      "34 − 32 = 2.",
+      "So 1,250 ÷ 32 = 39 R2."
+     ],
+     "ex": {
+      "main": "**One more group fits: 39 R2.** His check adds up, but a remainder must be smaller than the divisor.",
+      "tip": "A remainder bigger than the divisor means one digit is too small."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A museum guide leads tours of exactly 26 people. One month, 6,422 people took a tour, and every tour was full. How many tours ran?",
+     "opts": [
+      "47 tours",
+      "247 tours",
+      "248 tours",
+      "246 tours"
+     ],
+     "ans": 1,
+     "hint": "Find 6,422 ÷ 26. Start with 26 × 200.",
+     "steps": [
+      "26 × 200 = 5,200, and 6,422 − 5,200 = 1,222.",
+      "26 × 40 = 1,040, and 1,222 − 1,040 = 182.",
+      "26 × 7 = 182, and nothing is left.",
+      "Add: 200 + 40 + 7 = 247."
+     ],
+     "ex": {
+      "main": "**247 tours.** 26 × 247 = 6,422. 47 leaves out the 200, 248 is one too many, and 246 stops one group short.",
+      "tip": "Every tour was full, so the division comes out with nothing left."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school needs at least 1,000 pencils. Pencils come in boxes of 24. How many boxes should it order?",
+     "opts": [
+      "16 boxes",
+      "41 boxes",
+      "42 boxes",
+      "41 R16 boxes"
+     ],
+     "ans": 2,
+     "hint": "Find 1,000 ÷ 24. Will 41 boxes be enough?",
+     "steps": [
+      "24 × 40 = 960, and 1,000 − 960 = 40.",
+      "24 × 1 = 24, and 40 − 24 = 16.",
+      "1,000 ÷ 24 = 41 R16, so 41 boxes give only 984.",
+      "One more box is needed: 42."
+     ],
+     "ex": {
+      "main": "**42 boxes.** 41 boxes hold 984 pencils, 16 short of 1,000, so the school needs one more box. 16 is the remainder, and \"41 R16 boxes\" cannot be ordered.",
+      "tip": "When you need at least a certain amount, round up."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}

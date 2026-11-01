@@ -1,0 +1,491 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5u5": {
+   "id": "unit-m5u5",
+   "type": "unit",
+   "updatedAt": 1793543005063,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Lesson 5: Record Division with Two-Digit Divisors",
+   "srcName": "Lesson 5-5 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 5 Student Edition practice pages — dividing by two-digit divisors (Drive)",
+   "summary": {
+    "text": "Lesson 5-5 practice pages: recording division with a two-digit divisor, step by step, with remainders and zeros in the quotient, and deciding what a remainder means in a word problem.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the written method she will use for every division from here on, so the steps and the remainder rule need to be solid.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Divide by a two-digit divisor, recording each step",
+     "from": "source"
+    },
+    {
+     "text": "Decide where the first digit of the quotient goes",
+     "from": "source"
+    },
+    {
+     "text": "Find a remainder that is smaller than the divisor",
+     "from": "source"
+    },
+    {
+     "text": "Decide what a remainder means in a word problem",
+     "from": "source"
+    },
+    {
+     "text": "Check a quotient with multiplication",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 5-5 practice pages in her Unit 5 folder, read for what they ask. The numbers are fresh, not the page's own. The two slips most worth a word are a digit that is too small (so what is left is bigger than the divisor, as in 627 ÷ 29 written as 20 R47) and the remainder written into the quotient (12 R5 as 125). Three word problems cover the three things a remainder can mean: round up for buses, drop it for full flower beds, and the remainder as the answer for apples left over. The page itself asks what a remainder means, so those are marked as from the class material.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Estimate, then divide, multiply, subtract, bring down, and check.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Estimate first",
+     "def": "**Round to numbers that divide easily, so you know about how big the answer should be.**\n• 2,486 ÷ 34 is about 2,400 ÷ 30 = 80.",
+     "hint": "A rough answer catches a wrong digit.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Where the first digit goes",
+     "def": "**If the divisor fits into the first two digits, the quotient starts in the tens place. If not, it starts in the ones place.**\n• 739 ÷ 31: 31 fits into 73, so the quotient has two digits.\n• 517 ÷ 64: 64 does not fit into 51, so it has one digit.",
+     "hint": "Find the first part the divisor fits into.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Divide, multiply, subtract, bring down",
+     "def": "**The same four steps as with one-digit divisors, repeated for each digit.**\n• Divide: how many times does the divisor fit?\n• Multiply, subtract, then bring down the next digit.",
+     "hint": "D, M, S, B, then again.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Too small, try again",
+     "def": "**If a subtraction leaves the divisor or more, the digit you wrote is too small.**\n• 627 ÷ 29: writing 20 leaves 47, and 47 is more than 29, so it is 21.",
+     "hint": "What is left must be smaller than the divisor.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "A zero in the quotient",
+     "def": "**If a brought-down number is smaller than the divisor, write 0 and bring down the next digit.**\n• 5,412 ÷ 52 = 104 R4, not 14 R4.",
+     "hint": "Every digit you bring down gets a digit in the quotient.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Write the remainder",
+     "def": "**The remainder goes after an R. It is never another digit of the quotient.**\n• 845 ÷ 70 = 12 R5, not 125.",
+     "hint": "R for remainder.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "What the remainder means",
+     "def": "**In a story, decide what the remainder means.**\n• Round up when everyone must fit (buses).\n• Drop it when only full groups count (full flower beds).\n• Sometimes the remainder is the answer (apples left over).",
+     "hint": "Ask: what is the leftover in this story?",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Check with multiplication",
+     "def": "**Divisor × quotient + remainder should give back the dividend.**\n• 21 × 20 + 17 = 437, so 437 ÷ 21 = 20 R17.",
+     "hint": "Undo it to check it.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In 739 ÷ 31, where does the first digit of the quotient go?",
+     "opts": [
+      "The tens place",
+      "The hundreds place",
+      "The ones place",
+      "The thousands place"
+     ],
+     "ans": 0,
+     "hint": "Does 31 fit into 7? Does it fit into 73?",
+     "steps": [
+      "31 does not fit into 7 hundreds.",
+      "31 does fit into 73 tens.",
+      "So the first digit goes in the tens place.",
+      "739 ÷ 31 = 23 R26, a two-digit quotient."
+     ],
+     "ex": {
+      "main": "**The tens place.** 31 is bigger than 7, so start with 73 tens. The quotient has two digits: 23 R26.",
+      "tip": "Where the first digit goes tells you how many digits the answer has."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "How many digits will the quotient of 517 ÷ 64 have?",
+     "opts": [
+      "Two digits",
+      "One digit",
+      "Three digits",
+      "Four digits"
+     ],
+     "ans": 1,
+     "hint": "Compare 64 with the first two digits, 51.",
+     "steps": [
+      "64 is bigger than 51, so it does not fit into 51 tens.",
+      "So start with all of 517.",
+      "64 × 8 = 512, so 517 ÷ 64 = 8 R5."
+     ],
+     "ex": {
+      "main": "**One digit.** 64 does not fit into 51 tens, so the quotient starts in the ones place: 8 R5.",
+      "tip": "Estimate: 64 × 10 = 640 is more than 517, so the answer is less than 10."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A quotient is written 18 R7. What does the R7 tell you?",
+     "opts": [
+      "The answer is 18.7, a little more than 18",
+      "There are 7 equal groups in all",
+      "7 are left over after the equal groups are made",
+      "You need 7 more groups to finish"
+     ],
+     "ans": 2,
+     "hint": "R stands for remainder.",
+     "steps": [
+      "18 is the number in each group, or the number of groups.",
+      "R means remainder.",
+      "R7 means 7 are left over that do not make a full group."
+     ],
+     "ex": {
+      "main": "**7 are left over.** The R stands for remainder: what is left when no more full groups fit.",
+      "tip": "The remainder is always smaller than the divisor."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which multiplication checks that 437 ÷ 21 = 20 R17?",
+     "opts": [
+      "20 + 21 + 17 = 437",
+      "21 × 20 = 437",
+      "21 × 17 + 20 = 437",
+      "21 × 20 + 17 = 437"
+     ],
+     "ans": 3,
+     "hint": "Divisor times quotient, then add the remainder.",
+     "steps": [
+      "21 × 20 = 420.",
+      "Add the remainder: 420 + 17 = 437.",
+      "That is the dividend, so the answer checks out."
+     ],
+     "ex": {
+      "main": "**21 × 20 + 17 = 437.** Divisor × quotient + remainder gives back the dividend.",
+      "tip": "Forgetting to add the remainder makes a right answer look wrong."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 851 ÷ 23?",
+     "opts": [
+      "37",
+      "36 R23",
+      "38",
+      "370"
+     ],
+     "ans": 0,
+     "hint": "23 fits into 85 tens. How many times?",
+     "steps": [
+      "23 does not fit into 8, so start with 85.",
+      "85 ÷ 23 is 3: 3 × 23 = 69, and 85 − 69 = 16. Bring down the 1 to make 161.",
+      "161 ÷ 23 is 7: 7 × 23 = 161, and 161 − 161 = 0.",
+      "Check: 23 × 37 = 851."
+     ],
+     "ex": {
+      "main": "**37.** Check: 23 × 37 = 851. The wrong answers come from real slips: 36 R23 is one group short, which leaves a remainder too big to keep; 38 is one group too many; 370 is a zero too many.",
+      "tip": "Each subtraction must leave less than 23."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 693 ÷ 27?",
+     "opts": [
+      "25",
+      "25 R18",
+      "24 R45",
+      "2,518"
+     ],
+     "ans": 1,
+     "hint": "Start with 69 tens ÷ 27.",
+     "steps": [
+      "27 does not fit into 6, so start with 69.",
+      "69 ÷ 27 is 2: 2 × 27 = 54, and 69 − 54 = 15. Bring down the 3 to make 153.",
+      "153 ÷ 27 is 5: 5 × 27 = 135, and 153 − 135 = 18.",
+      "Check: 27 × 25 + 18 = 693."
+     ],
+     "ex": {
+      "main": "**25 R18.** Check: 27 × 25 + 18 = 693. The wrong answers come from real slips: 25 is the remainder left off; 24 R45 is one group short, which leaves a remainder too big to keep; 2,518 is the remainder written into the quotient.",
+      "tip": "The remainder must be smaller than 27."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2,486 ÷ 34?",
+     "opts": [
+      "72 R38",
+      "73",
+      "73 R4",
+      "730 R4"
+     ],
+     "ans": 2,
+     "hint": "34 does not fit into 24, so start with 248.",
+     "steps": [
+      "34 does not fit into 24, so start with 248.",
+      "248 ÷ 34 is 7: 7 × 34 = 238, and 248 − 238 = 10. Bring down the 6 to make 106.",
+      "106 ÷ 34 is 3: 3 × 34 = 102, and 106 − 102 = 4.",
+      "Check: 34 × 73 + 4 = 2,486."
+     ],
+     "ex": {
+      "main": "**73 R4.** Check: 34 × 73 + 4 = 2,486. The wrong answers come from real slips: 73 is the remainder left off; 72 R38 is one group short, which leaves a remainder too big to keep; 730 R4 is a zero too many.",
+      "tip": "Estimate: 2,400 ÷ 30 = 80, so expect a two-digit answer."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 5,412 ÷ 52?",
+     "opts": [
+      "103 R56",
+      "14 R4",
+      "104",
+      "104 R4"
+     ],
+     "ans": 3,
+     "hint": "52 fits into 54 once. What happens when you bring down the 1?",
+     "steps": [
+      "52 does not fit into 5, so start with 54.",
+      "54 ÷ 52 is 1: 1 × 52 = 52, and 54 − 52 = 2. Bring down the 1 to make 21.",
+      "21 is less than 52, so write 0 in the quotient. Bring down the 2 to make 212.",
+      "212 ÷ 52 is 4: 4 × 52 = 208, and 212 − 208 = 4.",
+      "Check: 52 × 104 + 4 = 5,412."
+     ],
+     "ex": {
+      "main": "**104 R4.** Check: 52 × 104 + 4 = 5,412. The wrong answers come from real slips: 14 R4 is the zero in the quotient skipped; 104 is the remainder left off; 103 R56 is one group short, which leaves a remainder too big to keep.",
+      "tip": "Every digit you bring down gets a digit in the quotient, even a 0."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 845 ÷ 70?",
+     "opts": [
+      "12 R5",
+      "125",
+      "11 R75",
+      "12"
+     ],
+     "ans": 0,
+     "hint": "Think of 84 tens ÷ 7 tens to start.",
+     "steps": [
+      "70 does not fit into 8, so start with 84.",
+      "84 ÷ 70 is 1: 1 × 70 = 70, and 84 − 70 = 14. Bring down the 5 to make 145.",
+      "145 ÷ 70 is 2: 2 × 70 = 140, and 145 − 140 = 5.",
+      "Check: 70 × 12 + 5 = 845."
+     ],
+     "ex": {
+      "main": "**12 R5.** Check: 70 × 12 + 5 = 845. The wrong answers come from real slips: 125 is the remainder written into the quotient; 11 R75 is one group short, which leaves a remainder too big to keep; 12 is the remainder left off.",
+      "tip": "Write the remainder after the R; it is not another digit."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school is taking 214 students on a trip. Each bus holds 36 students. How many buses does the school need?",
+     "opts": [
+      "5 buses",
+      "6 buses",
+      "34 buses",
+      "5 R34 buses"
+     ],
+     "ans": 1,
+     "hint": "Find 214 ÷ 36. Then ask: can the leftover students stay behind?",
+     "steps": [
+      "36 × 5 = 180, and 214 − 180 = 34.",
+      "214 ÷ 36 = 5 R34.",
+      "The 34 students left over still need a bus.",
+      "So the school needs 5 + 1 = 6 buses."
+     ],
+     "ex": {
+      "main": "**6 buses.** 214 ÷ 36 = 5 R34, and the 34 left over need a bus too. 5 leaves them behind, 34 is the remainder, not the buses, and \"5 R34 buses\" is not a number of buses.",
+      "tip": "When everyone must fit, round the quotient up."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A gardener has 500 tulip bulbs and plants 45 in each flower bed. How many beds can she fill completely?",
+     "opts": [
+      "5 beds",
+      "12 beds",
+      "11 beds",
+      "111 beds"
+     ],
+     "ans": 2,
+     "hint": "Find 500 ÷ 45. Is the leftover enough for a whole bed?",
+     "steps": [
+      "45 × 11 = 495.",
+      "500 − 495 = 5 bulbs left over.",
+      "5 bulbs cannot fill a bed of 45.",
+      "So she fills 11 beds."
+     ],
+     "ex": {
+      "main": "**11 beds.** 500 ÷ 45 = 11 R5. The 5 leftover bulbs do not fill a bed, so the answer is 11. 12 rounds up, 5 is the remainder, and 111 writes the remainder in as a digit.",
+      "tip": "When only full groups count, drop the remainder."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A store packs 330 apples into bags of 14. How many apples are left over after it fills as many bags as it can?",
+     "opts": [
+      "14 apples",
+      "23 apples",
+      "24 apples",
+      "8 apples"
+     ],
+     "ans": 3,
+     "hint": "Find 330 ÷ 14. Which part of the answer is the leftover?",
+     "steps": [
+      "14 × 23 = 322.",
+      "330 − 322 = 8.",
+      "330 ÷ 14 = 23 R8.",
+      "The question asks for the leftover apples: 8."
+     ],
+     "ex": {
+      "main": "**8 apples.** 330 ÷ 14 = 23 R8. 23 is the number of bags, 24 rounds up, and 14 is the bag size. Here the remainder IS the answer.",
+      "tip": "Read the question: it asks for what is left, not how many bags."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A coach has 900 stickers to share equally among 38 players. Can each player get 25 stickers?",
+     "opts": [
+      "No, each player can get only 23",
+      "Yes, each gets 25 with some left over",
+      "Yes, each gets 26 and none are left",
+      "No, each player can get only 2"
+     ],
+     "ans": 0,
+     "hint": "Find 900 ÷ 38, then compare with 25.",
+     "steps": [
+      "38 × 20 = 760, and 900 − 760 = 140.",
+      "38 × 3 = 114, and 140 − 114 = 26.",
+      "900 ÷ 38 = 23 R26.",
+      "23 is less than 25, so no."
+     ],
+     "ex": {
+      "main": "**No, only 23 each.** 900 ÷ 38 = 23 R26. For 25 each she would need 38 × 25 = 950 stickers. 2 is the tens digit alone, which loses a place.",
+      "tip": "Check: 38 × 25 = 950 is more than 900, which says no right away."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Max divided 627 ÷ 29 and wrote 20 R47. What should he fix?",
+     "opts": [
+      "Nothing, because 29 × 20 + 47 = 627, so it checks out",
+      "47 is bigger than 29, so one more group fits: 21 R18",
+      "He should drop the remainder and write just 20",
+      "He should start again with a first guess of 29 × 30"
+     ],
+     "ans": 1,
+     "hint": "Compare the remainder with the divisor.",
+     "steps": [
+      "29 × 20 = 580, and 627 − 580 = 47.",
+      "47 is bigger than 29, so another group fits.",
+      "47 − 29 = 18 left.",
+      "So 627 ÷ 29 = 21 R18."
+     ],
+     "ex": {
+      "main": "**One more group fits: 21 R18.** His check works out, but a remainder of 47 is more than the divisor, so the ones digit was too small.",
+      "tip": "If a subtraction leaves the divisor or more, the digit above it is too small."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which division has a quotient of 7 R12?",
+     "opts": [
+      "212 ÷ 25",
+      "175 ÷ 25",
+      "187 ÷ 25",
+      "162 ÷ 25"
+     ],
+     "ans": 2,
+     "hint": "Try each one: 25 × 7 = 175. Which dividend is 12 more than that?",
+     "steps": [
+      "25 × 7 = 175.",
+      "175 + 12 = 187, so 187 ÷ 25 = 7 R12.",
+      "175 ÷ 25 = 7 with no remainder.",
+      "212 ÷ 25 = 8 R12, and 162 ÷ 25 = 6 R12."
+     ],
+     "ex": {
+      "main": "**187 ÷ 25.** 25 × 7 + 12 = 187. 175 forgets the remainder, and 212 and 162 are one group too many and one too few.",
+      "tip": "Build the dividend: divisor × quotient + remainder."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}

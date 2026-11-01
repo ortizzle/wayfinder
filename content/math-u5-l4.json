@@ -1,0 +1,489 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m5u4": {
+   "id": "unit-m5u4",
+   "type": "unit",
+   "updatedAt": 1793543005059,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 5 · Lesson 4: Divide with Partial Quotients",
+   "srcName": "Lesson 5-4 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 5 Student Edition practice pages — dividing by two-digit divisors (Drive)",
+   "summary": {
+    "text": "Lesson 5-4 practice pages: using partial quotients to divide by two-digit divisors, with and without remainders, checking with estimation, and spotting divisions with the same quotient.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Partial quotients let her divide with chunks she can do in her head. Long division, next, is the same idea written more tightly.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Use partial quotients to divide by a two-digit divisor",
+     "from": "source"
+    },
+    {
+     "text": "Find the remainder and check that it is smaller than the divisor",
+     "from": "source"
+    },
+    {
+     "text": "Use an estimate to check that a quotient is reasonable",
+     "from": "source"
+    },
+    {
+     "text": "Tell divisions like 1,080 ÷ 24 and 10,800 ÷ 24 apart by their quotients",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 5-4 practice pages in her Unit 5 folder, read for what they ask. The numbers are fresh, not the page's own. The slip most worth a word is writing the partial quotients side by side (20 and 9 as 209 instead of 29); one question shows a student doing exactly that. Every other wrong option comes from a named slip too: a partial quotient left out of the sum, the remainder left off, or stopping one group short so the remainder is bigger than the divisor. One question mirrors the page's own trap of quotients like 35 and 350.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Biggest easy chunk, subtract, repeat, then add the chunks and multiply back.",
+    "minutes": 13,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Partial quotients",
+     "def": "**Take away easy groups of the divisor, one chunk at a time, then add up how many groups you took.**\n• 486 ÷ 18: take away 20 groups (360), then 7 groups (126).\n• 20 + 7 = 27.",
+     "hint": "Chunk, subtract, repeat, then add.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Easy chunks",
+     "def": "**Groups of 10, 20, 100 or 200 are the easiest to take away, because they multiply quickly.**\n• 24 × 20 = 480 is easier than 24 × 17.",
+     "hint": "Tens and hundreds are friendly numbers.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "The biggest chunk that fits",
+     "def": "**Start with the biggest easy chunk that does not go over.**\n• 527 ÷ 24: 24 × 20 = 480 fits, 24 × 30 = 720 does not.",
+     "hint": "Fewer chunks, fewer steps.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Different chunks, same answer",
+     "def": "**Any chunks that fit will work; they all add up to the same quotient.**\n• 525 ÷ 15: 30 + 5, or 10 + 10 + 10 + 5. Both make 35.",
+     "hint": "There is more than one right path.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Add the partial quotients",
+     "def": "**The quotient is the SUM of the partial quotients.**\n• 20 and 9 make 29, not 209.",
+     "hint": "Plus, never side by side.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "The remainder",
+     "def": "**When what is left is smaller than the divisor, stop: that is the remainder.**\n• A remainder as big as the divisor means one more group fits.",
+     "hint": "Smaller than the divisor, always.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Check two ways",
+     "def": "**Estimate first, then multiply back: divisor × quotient + remainder = dividend.**\n• 713 ÷ 23: 700 ÷ 20 = 35, so 31 is reasonable.\n• 23 × 31 = 713.",
+     "hint": "Close to the estimate, and exact when you multiply.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Watch the zeros",
+     "def": "**A division with one more zero in the dividend has a quotient ten times as big.**\n• 1,080 ÷ 24 = 45, but 10,800 ÷ 24 = 450.",
+     "hint": "45 and 450 look alike; they are not.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "To find 486 ÷ 18 with partial quotients, a student first takes away 18 × 20 = 360. What does the 20 stand for?",
+     "opts": [
+      "20 groups of 18 have been taken away so far",
+      "There are 20 left over at the end",
+      "The divisor has changed from 18 to 20",
+      "The final answer is exactly 20"
+     ],
+     "ans": 0,
+     "hint": "A partial quotient counts groups of the divisor.",
+     "steps": [
+      "Each partial quotient counts how many groups of 18 are taken away.",
+      "18 × 20 = 360, so 20 groups of 18 are gone.",
+      "486 − 360 = 126 is still left to share.",
+      "More groups come next, so 20 is only part of the answer."
+     ],
+     "ex": {
+      "main": "**20 groups of 18 have been taken away.** 126 is still left, and 18 × 7 = 126, so the full answer is 20 + 7 = 27.",
+      "tip": "A partial quotient is a part of the answer, not the whole of it."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "After you finish taking away groups, how do you find the quotient?",
+     "opts": [
+      "Write the partial quotients next to each other",
+      "Add all the partial quotients together",
+      "Multiply the partial quotients together",
+      "Keep only the biggest partial quotient"
+     ],
+     "ans": 1,
+     "hint": "Each partial quotient is a number of groups. How do you find the total number of groups?",
+     "steps": [
+      "Each partial quotient says how many groups you took away that time.",
+      "The quotient is the total number of groups.",
+      "So you add them: 20 + 5 = 25, not 205."
+     ],
+     "ex": {
+      "main": "**Add all the partial quotients.** Each one is a count of groups, and the quotient is the total count.",
+      "tip": "Adding, not writing side by side, is what makes 20 and 5 into 25."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "For 527 ÷ 24, which first partial quotient takes away the most without going over?",
+     "opts": [
+      "2, because 24 × 2 = 48",
+      "30, because 24 × 30 = 720",
+      "20, because 24 × 20 = 480",
+      "200, because 24 × 200 = 4,800"
+     ],
+     "ans": 2,
+     "hint": "Try multiplying 24 by tens: 10, 20, 30.",
+     "steps": [
+      "24 × 20 = 480, which is less than 527.",
+      "24 × 30 = 720, which is more than 527.",
+      "2 fits, but it takes away far less than 20 does.",
+      "So 20 is the best first chunk."
+     ],
+     "ex": {
+      "main": "**20.** 24 × 20 = 480 fits under 527, and 30 groups would go over. 527 ÷ 24 = 21 R23.",
+      "tip": "Bigger chunks mean fewer steps, as long as they fit."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When do you stop taking away groups in partial quotients?",
+     "opts": [
+      "When you reach a number that ends in zero",
+      "When you have taken away exactly ten groups",
+      "When what is left is smaller than 10",
+      "When what is left is smaller than the divisor"
+     ],
+     "ans": 3,
+     "hint": "Could another whole group still fit?",
+     "steps": [
+      "Keep going while at least one more group fits.",
+      "Once what is left is smaller than the divisor, no group fits.",
+      "What is left then is the remainder."
+     ],
+     "ex": {
+      "main": "**When what is left is smaller than the divisor.** No more whole groups fit, so what is left is the remainder.",
+      "tip": "A remainder that is as big as the divisor means you stopped too early."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 416 ÷ 16?",
+     "opts": [
+      "26",
+      "206",
+      "6",
+      "27"
+     ],
+     "ans": 0,
+     "hint": "Try 16 × 20 first.",
+     "steps": [
+      "Take away 20 groups of 16: 416 − 320 = 96 left.",
+      "Take away 6 groups of 16: 96 − 96 = 0 left.",
+      "Add the partial quotients: 20 + 6 = 26.",
+      "Check: 16 × 26 = 416."
+     ],
+     "ex": {
+      "main": "**26.** Check: 16 × 26 = 416. The wrong answers come from real slips: 206 is the partial quotients written side by side; 6 is a partial quotient left out of the sum; 27 is one group too many.",
+      "tip": "Add the partial quotients; never write them side by side."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 703 ÷ 19?",
+     "opts": [
+      "307",
+      "37",
+      "7",
+      "38"
+     ],
+     "ans": 1,
+     "hint": "Try 19 × 30 first.",
+     "steps": [
+      "Take away 30 groups of 19: 703 − 570 = 133 left.",
+      "Take away 7 groups of 19: 133 − 133 = 0 left.",
+      "Add the partial quotients: 30 + 7 = 37.",
+      "Check: 19 × 37 = 703."
+     ],
+     "ex": {
+      "main": "**37.** Check: 19 × 37 = 703. The wrong answers come from real slips: 307 is the partial quotients written side by side; 7 is a partial quotient left out of the sum; 38 is one group too many.",
+      "tip": "Check: your answer × 19 must make 703."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 562 ÷ 17?",
+     "opts": [
+      "32 R18",
+      "33",
+      "33 R1",
+      "3 R1"
+     ],
+     "ans": 2,
+     "hint": "Take away 17 × 30, then see how many more fit.",
+     "steps": [
+      "Take away 30 groups of 17: 562 − 510 = 52 left.",
+      "Take away 3 groups of 17: 52 − 51 = 1 left.",
+      "1 is less than 17, so 1 is the remainder.",
+      "Add the partial quotients: 30 + 3 = 33.",
+      "Check: 17 × 33 + 1 = 562."
+     ],
+     "ex": {
+      "main": "**33 R1.** Check: 17 × 33 + 1 = 562. The wrong answers come from real slips: 33 is the remainder left off; 32 R18 is one group short, which leaves a remainder too big to keep; 3 R1 is a partial quotient left out of the sum.",
+      "tip": "The remainder must be smaller than 17."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 845 ÷ 26?",
+     "opts": [
+      "302 R13",
+      "32",
+      "31 R39",
+      "32 R13"
+     ],
+     "ans": 3,
+     "hint": "Take away 26 × 30 first.",
+     "steps": [
+      "Take away 30 groups of 26: 845 − 780 = 65 left.",
+      "Take away 2 groups of 26: 65 − 52 = 13 left.",
+      "13 is less than 26, so 13 is the remainder.",
+      "Add the partial quotients: 30 + 2 = 32.",
+      "Check: 26 × 32 + 13 = 845."
+     ],
+     "ex": {
+      "main": "**32 R13.** Check: 26 × 32 + 13 = 845. The wrong answers come from real slips: 32 is the remainder left off; 31 R39 is one group short, which leaves a remainder too big to keep; 302 R13 is the partial quotients written side by side.",
+      "tip": "Check: 26 × your answer + the remainder must make 845."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Two students find 525 ÷ 15. Lena takes away 15 × 30, then 15 × 5. Omar takes away 15 × 10 three times, then 15 × 5. Who is right?",
+     "opts": [
+      "Both, because 30 + 5 and 10 + 10 + 10 + 5 both make 35",
+      "Only Lena, because she used fewer chunks to get there",
+      "Only Omar, because every chunk has to be a group of 10",
+      "Neither, because the quotient is 305, not 35"
+     ],
+     "ans": 0,
+     "hint": "Add up each student's partial quotients.",
+     "steps": [
+      "Lena: 15 × 30 = 450, then 15 × 5 = 75, and 450 + 75 = 525.",
+      "Her quotient is 30 + 5 = 35.",
+      "Omar: 150 + 150 + 150 + 75 = 525.",
+      "His quotient is 10 + 10 + 10 + 5 = 35."
+     ],
+     "ex": {
+      "main": "**Both are right.** Any chunks that fit will work. Lena needed fewer steps, but both quotients are 35.",
+      "tip": "There is more than one right way to choose partial quotients."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "A library has 672 books to put on shelves, 24 books on each shelf. How many shelves does it fill?",
+     "opts": [
+      "208 shelves",
+      "28 shelves",
+      "20 shelves",
+      "29 shelves"
+     ],
+     "ans": 1,
+     "hint": "Find 672 ÷ 24. Start with 24 × 20.",
+     "steps": [
+      "24 × 20 = 480, and 672 − 480 = 192.",
+      "24 × 8 = 192, and 192 − 192 = 0.",
+      "Add the partial quotients: 20 + 8 = 28.",
+      "Check: 24 × 28 = 672."
+     ],
+     "ex": {
+      "main": "**28 shelves.** 20 + 8 = 28, and 24 × 28 = 672. 208 writes 20 and 8 side by side, 20 leaves the 8 out, and 29 is one group too many.",
+      "tip": "Read the answer back into the story: 28 shelves of 24 books."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which division has a quotient of 45?",
+     "opts": [
+      "1,170 ÷ 13",
+      "10,800 ÷ 24",
+      "1,080 ÷ 24",
+      "1,035 ÷ 45"
+     ],
+     "ans": 2,
+     "hint": "Work out each one. Watch the zeros.",
+     "steps": [
+      "1,080 ÷ 24: 24 × 40 = 960, and 24 × 5 = 120, so 45.",
+      "10,800 ÷ 24 has one more zero in the dividend, so it is 450.",
+      "1,170 ÷ 13 = 90.",
+      "1,035 ÷ 45 = 23."
+     ],
+     "ex": {
+      "main": "**1,080 ÷ 24.** 24 × 45 = 1,080. 10,800 ÷ 24 is 450, ten times as much, because the dividend has an extra zero.",
+      "tip": "45 and 450 look alike. Multiply back to tell them apart."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A printer prints 504 pages in 12 minutes, at the same speed the whole time. How many pages does it print in 30 seconds?",
+     "opts": [
+      "84 pages",
+      "42 pages",
+      "252 pages",
+      "21 pages"
+     ],
+     "ans": 3,
+     "hint": "First find the pages in one minute. How much of a minute is 30 seconds?",
+     "steps": [
+      "504 ÷ 12 = 42 pages each minute.",
+      "30 seconds is half a minute.",
+      "Half of 42 is 21.",
+      "So it prints 21 pages in 30 seconds."
+     ],
+     "ex": {
+      "main": "**21 pages.** 504 ÷ 12 = 42 pages a minute, and 30 seconds is half a minute. 42 stops after the first step, 252 halves all 504 pages, and 84 doubles instead of halving.",
+      "tip": "Two steps: divide to find one minute, then take half."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Kai found 713 ÷ 23 = 13. Which estimate shows that his answer is not reasonable?",
+     "opts": [
+      "700 ÷ 20 = 35, so the answer should be close to 35, not 13",
+      "700 ÷ 20 = 35, so 13 is close enough to count as right",
+      "7 ÷ 2 is about 3, so an answer of 13 is about right",
+      "713 − 23 = 690, so his answer of 13 must be right"
+     ],
+     "ans": 0,
+     "hint": "Round to numbers that divide easily, then compare.",
+     "steps": [
+      "713 is close to 700, and 23 is close to 20.",
+      "700 ÷ 20 = 35.",
+      "13 is far from 35, so it cannot be right.",
+      "The real answer is 31: 23 × 31 = 713."
+     ],
+     "ex": {
+      "main": "**700 ÷ 20 = 35, so 13 is far too small.** The real quotient is 31, and 23 × 31 = 713.",
+      "tip": "Estimate first, and a wrong answer shows up before you even check it."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Zoe used partial quotients for 638 ÷ 22. She took away 22 × 20 = 440, then 22 × 9 = 198, and wrote 209. What went wrong?",
+     "opts": [
+      "Her first chunk, 22 × 20, was too big to take from 638",
+      "She wrote 20 and 9 side by side; the quotient is 29",
+      "She should multiply the partial quotients: 20 × 9 = 180",
+      "Nothing went wrong, because 209 is the right quotient"
+     ],
+     "ans": 1,
+     "hint": "Check her answer: does 22 × 209 make 638?",
+     "steps": [
+      "638 − 440 = 198, so her chunks are right.",
+      "Her partial quotients are 20 and 9.",
+      "Added together, 20 + 9 = 29.",
+      "Check: 22 × 29 = 638."
+     ],
+     "ex": {
+      "main": "**She wrote them side by side.** The partial quotients add up to 20 + 9 = 29, and 22 × 29 = 638. 22 × 209 would be 4,598.",
+      "tip": "Partial quotients are added, the same way partial products are."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Eli found 470 ÷ 18 = 25 R20. What should he fix?",
+     "opts": [
+      "He should drop the remainder and write just 25",
+      "Nothing, because 25 × 18 + 20 = 470, so it checks out",
+      "20 is more than 18, so one more group fits: 26 R2",
+      "The remainder must be 0, so the answer is exactly 26"
+     ],
+     "ans": 2,
+     "hint": "Compare the remainder with the divisor.",
+     "steps": [
+      "25 × 18 = 450, and 470 − 450 = 20.",
+      "20 is more than 18, so another group of 18 fits.",
+      "20 − 18 = 2 is left.",
+      "So 470 ÷ 18 = 26 R2."
+     ],
+     "ex": {
+      "main": "**One more group fits: 26 R2.** His multiplication check works, but a remainder of 20 is bigger than the divisor, so he stopped too soon.",
+      "tip": "The check and the remainder rule are two tests. An answer has to pass both."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 5",
+   "libv": 1
+  }
+ }
+}
