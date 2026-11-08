@@ -1775,7 +1775,7 @@ const Store = {
 const STUDENT = { grade:4 };
 /* Shown in Settings. Bump on every deploy, in step with sw.js CACHE_VERSION,
    as 'vNN · one-to-three words on what shipped'. */
-const APP_VERSION = 'v199 · Dividing by two digits';
+const APP_VERSION = 'v200 · November dates';
 const DEFAULT_ROSTER = { studentName:'', school:'', teachers:{}, backupUrl:'' };
 function roster(){ return { ...DEFAULT_ROSTER, ...(DATA.records['roster']||{}) }; }
 function setRoster(k,v){
@@ -1994,6 +1994,22 @@ const CAL = {
     {start:'2026-11-19', name:'4th Grade Field Trip', icon:'🚌', kind:'community'},
     {start:'2026-11-20', name:'Fall clubs end', icon:'🎨', kind:'note', screen:'clubs'},
     {start:'2026-11-23', end:'2026-11-24', name:'Pie Drive', icon:'🥧', kind:'community'},
+    /* 4th Grade Newsletter (week of 11/6) and Cub Hub of 11/6. The Read-a-thon
+       runs 11/16–11/24 per the Cub Hub (the newsletter says only "starts
+       11/16"). Left out on purpose: Pizza Fridays (the 10/23 reason), other
+       grades' field trips, and the NEHS selection letter and induction, which
+       are about who is chosen rather than a day she plans around. */
+    {start:'2026-11-12', end:'2026-11-13', name:'Meteorologist for a Day presentations', icon:'🌤️', kind:'note', classId:'science',
+     note:'You present the forecast you built from a weather map. The project is done at school and counts as an assessment.'},
+    {start:'2026-11-16', end:'2026-11-24', name:'Read-a-thon', icon:'📖', kind:'community'},
+    {start:'2026-12-01', end:'2026-12-11', name:'Winter FastBridge Testing', icon:'📊', kind:'benchmark',
+     note:'This one measures where you are right now. There is nothing to revise for.'},
+    {start:'2026-12-01', name:'Giving Tuesday', icon:'🎁', kind:'community'},
+    {start:'2026-12-03', name:'School Spelling Bee', icon:'🐝', kind:'celebration',
+     note:'The school round of the Scripps bee.'},
+    {start:'2026-12-14', end:'2026-12-18', name:'Spirit Week', icon:'🎉', kind:'dress',
+     note:'The theme for each day is not out yet.'},
+    {start:'2026-12-16', name:'SHINE lunch', icon:'🍱', kind:'community'},
     {start:'2026-12-18', name:'Early release — last day before Winter Break', icon:'🕑', kind:'early', early:true,
      note:'No Late Bird.'},
     {start:'2027-01-15', name:'Spotlight Spectacular', icon:'🎭', kind:'celebration', note:'Performance night.'},
@@ -3492,7 +3508,20 @@ const SUGGESTED_ASSESS = [
   {id:'sg-eng-2026-10-26-lc', classId:'english', kind:'quiz',
    title:'Lemonade Crime Quiz · Rising Action, Chapters 6–10 (week of 10/26, date to confirm)', date:'2026-10-26'},
   {id:'sg-eng-2026-10-26-ww', classId:'english', kind:'quiz',
-   title:'Vocabulary quiz · Wordly Wise Unit 4 (week of 10/26, date to confirm)', date:'2026-10-26'}
+   title:'Vocabulary quiz · Wordly Wise Unit 4 (week of 10/26, date to confirm)', date:'2026-10-26'},
+  /* 4th Grade Newsletter, week of 11/6: all four dated outright in its own
+     Upcoming Assessments box. What each covers comes from the same issue's
+     class news (Unit 4 is multiplying decimals; the LC quiz is chapters
+     12–16; Writing's quiz is the object of the preposition). The AZ Quiz is
+     printed with no scope, so the title adds none. */
+  {id:'sg-hist-2026-11-10', classId:'history', kind:'quiz',
+   title:'History quiz · AZ Quiz', date:'2026-11-10'},
+  {id:'sg-eng-2026-11-12', classId:'english', kind:'quiz',
+   title:'Lemonade Crime Quiz · Chapters 12–16', date:'2026-11-12'},
+  {id:'sg-math-2026-11-13', classId:'math', kind:'quiz',
+   title:'Math quiz · Unit 4, multiplying decimals', date:'2026-11-13'},
+  {id:'sg-wri-2026-11-13', classId:'writing', kind:'quiz',
+   title:'Grammar quiz · Object of the preposition', date:'2026-11-13'}
 ];
 
 /* Mission Control reads the sibling app's gist, read-only — never merged,

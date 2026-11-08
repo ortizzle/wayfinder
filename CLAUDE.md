@@ -2084,6 +2084,51 @@ older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
 
+### The newsletter of the week of 11/6, and the Cub Hub of 11/6 (v200)
+
+Chris: *"Let's update the newsletter please."* Both landed in the Newsletters
+folder on 11/8 with clean text layers.
+
+**`SUGGESTED_ASSESS`**, all four dated outright in the issue's Upcoming
+Assessments box:
+
+| id | title |
+|---|---|
+| `sg-hist-2026-11-10` | History quiz · AZ Quiz |
+| `sg-eng-2026-11-12` | Lemonade Crime Quiz · Chapters 12–16 |
+| `sg-math-2026-11-13` | Math quiz · Unit 4, multiplying decimals |
+| `sg-wri-2026-11-13` | Grammar quiz · Object of the preposition |
+
+What each covers comes from the same issue's class news. The AZ Quiz is
+printed with no scope, so its title adds none.
+
+**`CAL.events`:**
+
+- Meteorologist for a Day presentations, 11/12–11/13, Science. The project is
+  done at school and counts as an assessment, so it is an event, not a row to
+  study for.
+- Read-a-thon 11/16–11/24, from the Cub Hub (the newsletter says only that it
+  starts 11/16).
+- Winter FastBridge 12/1–12/11 as a `benchmark`, Giving Tuesday 12/1, the
+  School Spelling Bee 12/3, SHINE lunch 12/16.
+- Spirit Week 12/14–12/18 as one `dress` event whose note says the daily
+  themes are not out yet. When they arrive it becomes five one-day events, as
+  September's did.
+
+**Left out on purpose:** Pizza Fridays (the 10/23 reason), other grades' field
+trips, and the NEHS selection letter and induction, which are about who is
+chosen rather than a day she plans around. Student hours are confirmed
+unchanged. Rows for dates already past (the Unit 5 test, the Unit 4 vocab test)
+were not retouched.
+
+**No study material yet** for the AZ Quiz (Arizona's early peoples), Unit 4
+(multiplying decimals) or the object of the preposition. Lemonade Crime parts 3
+and 4 already cover chapters 10–16.
+
+`tools/test_newsletter_1106.js` (14 assertions) points the clock at Monday 11/9
+and pins each row by id, the presentations reaching Coming up, the date ranges,
+and that Pizza Friday and NEHS stay out.
+
 ### Unit 5 · Lessons 4, 5 and 7, before the unit test (v199)
 
 Chris: *"I've updated content in the girls folders."* Her `Unit 5 - Math`
