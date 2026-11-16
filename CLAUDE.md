@@ -2084,6 +2084,78 @@ older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
 
+### Unit 4 · Test Review, Part 1, and the newsletter of 11/13 (v202)
+
+Chris: *"Build a Unit 4 study guide for the test; and also, I've added a few
+more things for sedona and river."* River's new files were the **4th Grade
+Newsletter of 11/13**, the **Cub Hub of 11/13** and her **My Weather Journal**
+sheet.
+
+**`math-u4-review.json` (`unit-m4-review`), titled
+`Unit 4 · Test Review, Part 1: Lessons 1–4`.** It has 10 cards and 20
+questions, with `series:'Unit 4'`, `prep:true`, `round:10` and no `order`
+("Test" sorts after "Lesson"). It follows Unit 3's test review (v189).
+
+- **It is Part 1 on purpose.** The newsletter says lessons 4-5 to 4-8 are taught
+  the week of 11/16 and prints no test date. Only the 4-1 to 4-4 pages are in
+  Drive, so the review covers those, and the `parentNote` says Part 2 waits for
+  the later pages rather than guessing what they cover.
+- **Seven find-the-mistake questions.** Each shows a wrong worked answer made by
+  a slip function and asks which slip made it:
+  - the point moved the wrong way, or one place too few
+  - 10³ used as a factor
+  - the point left out
+  - no regrouping (3 × 1.27 as 3.621)
+  - the zero in 60 dropped
+  - adding instead of multiplying
+
+  The builder asserts that no other offered slip makes the same number. That
+  rule removed real collisions: for a one-place decimal, "point left out" and
+  "one place too far right" give the same number, and dropping the zero in 60
+  matches "one place too far left".
+- **Two which-check questions.** One answer an estimate catches
+  (0.58 × 9 = 52.2). One it misses: 2 × 0.47 = 0.814 is close to 1, and only
+  counting decimal places catches it.
+- **`build_math_unit4_review.py` executes `build_math_unit4.py` only up to its
+  first lesson**, which gives it the helpers, `BOOK` and `use()` without
+  rebuilding or re-stamping the four lessons. It also reads the lessons'
+  shipped JSON and refuses all 71 of their multiplications.
+
+**`SUGGESTED_ASSESS`:**
+
+- `sg-eng-2026-11-18`: Vocabulary quiz · Wordly Wise Unit 5 (the class's
+  "unit" is the Lesson 5 shelf part)
+- `sg-eng-2026-11-20`: Lemonade Crime novel test · the whole book
+
+**Checked and unchanged:**
+
+- Student hours are the same.
+- The Cub Hub's dates were already in from v200. The 12/18 early release
+  already says No Late Bird.
+- The ESS and 3rd-grade field trips and the NEHS dates stay out, as before.
+
+**Not built, reported:**
+
+- **The weather journal** is a five-day observation assessment with a blank due
+  date. It is her homework, done outside, so no unit was built. The v191 note
+  that asks her to check the due date still stands.
+- **Next week's science** (floods, tornadoes, hurricanes, climate zones) and
+  **writing's "jobs of adjectives"** have no material in Drive.
+
+`tools/test_unit4_review.js` (17 assertions) pins:
+
+- the shelf, the flags and the draft
+- every product, re-derived exactly
+- every find-the-mistake item, against slips re-implemented in the test
+- the which-check, NOT-true and overestimate items
+- no lesson or page multiplication reused
+- Part 1 named in the note
+- a full round and the deck
+- both suggestions
+
+**Verified by changing one worked answer to a different slip's number** and
+watching exactly the find-the-mistake assertion fail.
+
 ### Unit 4 · Lessons 1–4, multiplying decimals, taught after Unit 5 (v201)
 
 Chris: *"Build River's Unit 4 multiplying decimals lessons; this unit comes

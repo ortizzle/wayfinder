@@ -1,0 +1,619 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m4-review": {
+   "id": "unit-m4-review",
+   "type": "unit",
+   "updatedAt": 1794850388608,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 4 · Test Review, Part 1: Lessons 1–4",
+   "srcName": "Lesson 4-1 to 4-4 Student Edition practice pages and the 11/13 newsletter (Drive)",
+   "source": "enVision Topic 4 Student Edition practice pages — multiplying decimals (Drive)",
+   "summary": {
+    "text": "A review of Unit 4 lessons 4-1 to 4-4: multiplying decimals by powers of 10, estimating products, and multiplying a decimal by a whole number, with a third of it on finding the mistake in a worked answer.",
+    "from": "source"
+   },
+   "why": {
+    "text": "The test checks whether she can multiply, and also whether she catches her own slips. This review practises both.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply a decimal by a power of 10",
+     "from": "source"
+    },
+    {
+     "text": "Estimate a product and say whether it is over or under",
+     "from": "source"
+    },
+    {
+     "text": "Multiply a decimal by a whole number and place the point",
+     "from": "source"
+    },
+    {
+     "text": "Find the slip in a worked answer and say which check catches it",
+     "from": "added"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 4-1 to 4-4 practice pages in her Unit 4 folder and the 11/13 newsletter, with fresh numbers that neither the pages nor the four lessons use. This is Part 1: the newsletter says lessons 4-5 to 4-8 are taught the week of 11/16, and their pages are not in Drive yet, so they are not covered here. Part 2 can be built when they arrive. No test date is printed yet. Seven questions give a wrong worked answer and ask which slip made it; two ask which check catches a slip, including one an estimate misses (2 × 0.47 written as 0.814), which is why counting decimal places matters too.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Work each one out yourself before you look at the choices, then check it two ways.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Powers of 10",
+     "def": "**Multiplying by 10, 100 or 10³ moves the point right, one place for each zero.**\n• 3.08 × 10² = 308.\n• The exponent counts the zeros; it is never a factor.",
+     "hint": "One zero, one place.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Estimate a product",
+     "def": "**Round to friendly numbers and multiply in your head.**\n• 7.92 × 31 → 8 × 30 = 240.\n• For a decimal less than 1, use 0.5 or 0.25, never 0.",
+     "hint": "Round, do not chop.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Over or under",
+     "def": "**Round both factors up and you overestimate; round both down and you underestimate.**",
+     "hint": "Both up, over.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Multiply, then place the point",
+     "def": "**Multiply as whole numbers, then give the product as many decimal places as the factors have.**\n• 0.86 × 9 → 86 × 9 = 774 → 7.74.",
+     "hint": "Digits first, point second.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Check 1 · estimate",
+     "def": "**Round and multiply: an answer about ten times too big or small means the point slipped.**\n• 0.58 × 9 is about 5.4, so 52.2 is wrong.",
+     "hint": "Estimates catch slipped points.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Check 2 · count the places",
+     "def": "**The product has as many decimal places as the factors (before you drop end zeros).**\n• 2 × 0.47 cannot be 0.814: three places where there should be two.",
+     "hint": "Places in = places out.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Check 3 · bigger or smaller",
+     "def": "**Times a power of 10 grows; times a decimal less than 1 shrinks.**\n• 0.64 × 8 must be less than 8, so 512 is wrong.",
+     "hint": "Ask which way the answer should go.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Slips with powers of 10",
+     "def": "**Watch for the point moving the wrong way, one place too few or too many, or 10³ read as 30.**",
+     "hint": "Count, then move.",
+     "from": "source"
+    },
+    {
+     "id": "c8",
+     "term": "Slips with decimals",
+     "def": "**Watch for the point left out or misplaced, no regrouping, a dropped zero, or adding instead of multiplying.**\n• 3 × 1.27 is 3.81, not 3.621.\n• 4.15 × 60 is 249, not 24.9.",
+     "hint": "Name the slip, then fix it.",
+     "from": "source"
+    },
+    {
+     "id": "c9",
+     "term": "Find the mistake",
+     "def": "**Work it out yourself, compare with the wrong answer, then ask what move would make that number.**",
+     "hint": "Every wrong answer came from somewhere.",
+     "from": "added"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Jada worked out 4.06 × 10³ and wrote 0.00406. What went wrong?",
+     "opts": [
+      "The point moved left, the wrong way",
+      "The point moved one place too few",
+      "The point moved one place too many",
+      "The exponent was used as a factor"
+     ],
+     "ans": 0,
+     "hint": "Should the answer be bigger or smaller than 4.06?",
+     "steps": [
+      "10³ = 1,000, so the point should move 3 places to the right.",
+      "The right answer is 4,060.",
+      "0.00406 is what you get when the point moved left, the wrong way.",
+      "Check: multiplying by 1,000 makes a number bigger, and 0.00406 did not grow."
+     ],
+     "ex": {
+      "main": "**The point moved left, the wrong way.** The right answer is 4,060.",
+      "tip": "Multiplying by a power of 10 always makes a number bigger."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Owen worked out 0.73 × 10² and wrote 7.3. What went wrong?",
+     "opts": [
+      "The point moved left, the wrong way",
+      "The point moved one place too few",
+      "The point moved one place too many",
+      "The exponent was used as a factor"
+     ],
+     "ans": 1,
+     "hint": "How many zeros does 100 have?",
+     "steps": [
+      "10² = 100, so the point should move 2 places to the right.",
+      "The right answer is 73.",
+      "7.3 is what you get when the point moved one place too few.",
+      "Check: multiplying by 100 makes a number bigger, and 7.3 grew by the wrong amount."
+     ],
+     "ex": {
+      "main": "**The point moved one place too few.** The right answer is 73.",
+      "tip": "Count the zeros, then count your moves."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Nia worked out 2.9 × 10³ and wrote 87. What went wrong?",
+     "opts": [
+      "The point moved one place too few",
+      "The point moved left, the wrong way",
+      "The exponent was used as a factor",
+      "The point moved one place too many"
+     ],
+     "ans": 2,
+     "hint": "What does 10³ mean? It is not 10 × 3.",
+     "steps": [
+      "10³ = 1,000, so the point should move 3 places to the right.",
+      "The right answer is 2,900.",
+      "87 is what you get when the exponent was used as a factor.",
+      "Check: multiplying by 1,000 makes a number bigger, and 87 grew by the wrong amount."
+     ],
+     "ex": {
+      "main": "**The exponent was used as a factor.** The right answer is 2,900.",
+      "tip": "The exponent counts tens; it is never a factor."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Eli worked out 0.64 × 8 and wrote 512. What went wrong?",
+     "opts": [
+      "The numbers were added, not multiplied",
+      "The point went one place too far right",
+      "The point went one place too far left",
+      "The decimal point was left out"
+     ],
+     "ans": 3,
+     "hint": "Is 512 a sensible size for 0.64 × 8?",
+     "steps": [
+      "Multiply as whole numbers: 8 × 64 = 512.",
+      "0.64 has 2 decimal places, so the product is 5.12.",
+      "512 is what you get when the decimal point was left out.",
+      "Check with an estimate: 0.6 × 8 is about 4.8."
+     ],
+     "ex": {
+      "main": "**The decimal point was left out.** The right answer is 5.12.",
+      "tip": "Times a number less than 1 makes the answer smaller than 8."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rosa worked out 3 × 1.27 and wrote 3.621. What went wrong?",
+     "opts": [
+      "Each place was multiplied, not regrouped",
+      "The decimal point was left out",
+      "The point went one place too far right",
+      "The numbers were added, not multiplied"
+     ],
+     "ans": 0,
+     "hint": "Work out 3 × 1.27 properly and compare.",
+     "steps": [
+      "Multiply as whole numbers: 3 × 127 = 381.",
+      "1.27 has 2 decimal places, so the product is 3.81.",
+      "3.621 is what you get when each place was multiplied, not regrouped.",
+      "Check with an estimate: 1 × 3 is about 3."
+     ],
+     "ex": {
+      "main": "**Each place was multiplied, not regrouped.** The right answer is 3.81.",
+      "tip": "Regroup: 21 hundredths is 2 tenths and 1 hundredth."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Sam worked out 4.15 × 60 and wrote 24.9. What went wrong?",
+     "opts": [
+      "The point went one place too far right",
+      "The zero in the whole number was dropped",
+      "The decimal point was left out",
+      "The numbers were added, not multiplied"
+     ],
+     "ans": 1,
+     "hint": "Multiply by 60 itself, not by 6.",
+     "steps": [
+      "Multiply as whole numbers: 60 × 415 = 24,900.",
+      "4.15 has 2 decimal places, so the product is 249.",
+      "24.9 is what you get when the zero in the whole number was dropped.",
+      "Check with an estimate: 4 × 60 is about 240."
+     ],
+     "ex": {
+      "main": "**The zero in the whole number was dropped.** The right answer is 249.",
+      "tip": "A zero in the whole number is part of it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ivy worked out 0.45 × 8 and wrote 8.45. What went wrong?",
+     "opts": [
+      "The point went one place too far right",
+      "The decimal point was left out",
+      "The numbers were added, not multiplied",
+      "The point went one place too far left"
+     ],
+     "ans": 2,
+     "hint": "Read the sign again.",
+     "steps": [
+      "Multiply as whole numbers: 8 × 45 = 360.",
+      "0.45 has 2 decimal places, so the product is 3.6.",
+      "8.45 is what you get when the numbers were added, not multiplied.",
+      "Check with an estimate: 0.5 × 8 is about 4."
+     ],
+     "ex": {
+      "main": "**The numbers were added, not multiplied.** The right answer is 3.6.",
+      "tip": "Read the sign before you start."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ben wrote 2 × 0.47 = 0.814. That is close to his estimate, 2 × 0.5 = 1. Which check shows his answer is wrong?",
+     "opts": [
+      "Whole numbers: a whole number times anything is whole",
+      "The estimate: 0.814 is far too far from 1 to be right",
+      "No check does; being close to 1 means 0.814 is right",
+      "Counting places: 0.47 has two, so the answer cannot have three"
+     ],
+     "ans": 3,
+     "hint": "An estimate only says roughly how big. What else can you check?",
+     "steps": [
+      "2 × 47 = 94, so 2 × 0.47 = 0.94.",
+      "0.814 is close to 1, so the estimate does not catch it.",
+      "0.47 has two decimal places, so the product has two. 0.814 has three.",
+      "He wrote 2 × 4 = 8 and 2 × 7 = 14 side by side instead of regrouping."
+     ],
+     "ex": {
+      "main": "**Counting places.** 0.47 has two decimal places, so the product has two: 0.94. 0.814 slips past the estimate because it is close to 1, which is why one check is not always enough.",
+      "tip": "Use more than one check. Each one catches different slips."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Mia wrote 0.58 × 9 = 52.2. Which check shows her answer is wrong?",
+     "opts": [
+      "An estimate: 0.6 × 9 = 5.4, so 52.2 is about ten times too big",
+      "Counting places: 52.2 has one place, so the point is fine",
+      "Nothing: 58 × 9 = 522, so 52.2 checks out",
+      "Rounding 9 to 10: 0.58 × 10 = 58, so 52.2 is close enough"
+     ],
+     "ans": 0,
+     "hint": "Round 0.58 to a friendly decimal and multiply.",
+     "steps": [
+      "0.58 is about 0.6.",
+      "0.6 × 9 = 5.4.",
+      "52.2 is about ten times 5.4, so the point slipped one place.",
+      "The right answer is 5.22."
+     ],
+     "ex": {
+      "main": "**An estimate.** 0.6 × 9 = 5.4, and 52.2 is ten times too big. The right answer is 5.22. (0.58 × 10 is 5.8, not 58.)",
+      "tip": "An answer about ten times too big or small means the point slipped."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3.08 × 10²?",
+     "opts": [
+      "0.0308",
+      "308",
+      "30.8",
+      "3,080"
+     ],
+     "ans": 1,
+     "hint": "Count the zeros in 100. Keep the zero inside 3.08.",
+     "steps": [
+      "10² = 100, so the point moves 2 places to the right.",
+      "One place at a time: 3.08 → 30.8 → 308.",
+      "So 3.08 × 10² = 308."
+     ],
+     "ex": {
+      "main": "**308.** 100 has 2 zeros, so the point moves 2 places right.",
+      "tip": "A zero inside a number stays."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.052 × 10⁴?",
+     "opts": [
+      "52",
+      "0.0000052",
+      "520",
+      "2.08"
+     ],
+     "ans": 2,
+     "hint": "10⁴ means 10 × 10 × 10 × 10.",
+     "steps": [
+      "10⁴ = 10,000, so the point moves 4 places to the right.",
+      "One place at a time: 0.052 → 0.52 → 5.2 → 52 → 520.",
+      "So 0.052 × 10⁴ = 520."
+     ],
+     "ex": {
+      "main": "**520.** 10,000 has 4 zeros, so the point moves 4 places right.",
+      "tip": "Fill empty places with zeros as you move."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.86 × 9?",
+     "opts": [
+      "0.774",
+      "774",
+      "77.4",
+      "7.74"
+     ],
+     "ans": 3,
+     "hint": "86 × 9 first, then two decimal places.",
+     "steps": [
+      "Multiply as whole numbers: 9 × 86 = 774.",
+      "0.86 has 2 decimal places, so the product has 2: 7.74.",
+      "Check with an estimate: about 8.1."
+     ],
+     "ex": {
+      "main": "**7.74.** 774 is what you get when the decimal point was left out; 77.4 is what you get when the point went one place too far right; 0.774 is what you get when the point went one place too far left.",
+      "tip": "Estimate: 0.9 × 9 is about 8."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 12 × 4.05?",
+     "opts": [
+      "48.6",
+      "4,860",
+      "486",
+      "4.86"
+     ],
+     "ans": 0,
+     "hint": "12 × 405 first. Keep the zero.",
+     "steps": [
+      "Multiply as whole numbers: 12 × 405 = 4,860.",
+      "4.05 has 2 decimal places, so the product has 2: 48.60.",
+      "Check with an estimate: about 48."
+     ],
+     "ex": {
+      "main": "**48.6.** 4,860 is what you get when the decimal point was left out; 486 is what you get when the point went one place too far right; 4.86 is what you get when the point went one place too far left.",
+      "tip": "Estimate: 12 × 4 = 48."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3.15 × 20?",
+     "opts": [
+      "6.3",
+      "63",
+      "630",
+      "6,300"
+     ],
+     "ans": 1,
+     "hint": "315 × 20 first, then two decimal places.",
+     "steps": [
+      "Multiply as whole numbers: 20 × 315 = 6,300.",
+      "3.15 has 2 decimal places, so the product has 2: 63.00.",
+      "Check with an estimate: about 60."
+     ],
+     "ex": {
+      "main": "**63.** 6.3 is what you get when the zero in the whole number was dropped; 630 is what you get when the point went one place too far right; 6,300 is what you get when the decimal point was left out.",
+      "tip": "Multiply by 20, not by 2."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.004 × 25?",
+     "opts": [
+      "1",
+      "100",
+      "0.1",
+      "0.01"
+     ],
+     "ans": 2,
+     "hint": "4 × 25 first, then three decimal places.",
+     "steps": [
+      "Multiply as whole numbers: 25 × 4 = 100.",
+      "0.004 has 3 decimal places, so the product has 3: 0.100.",
+      "Check with an estimate: about 0."
+     ],
+     "ex": {
+      "main": "**0.1.** 100 is what you get when the decimal point was left out; 1 is what you get when the point went one place too far right; 0.01 is what you get when the point went one place too far left.",
+      "tip": "Three places: write zeros after the point if you need them."
+     }
+    },
+    {
+     "id": "q15",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the best estimate of 7.92 × 31?",
+     "opts": [
+      "210",
+      "24",
+      "2,400",
+      "240"
+     ],
+     "ans": 3,
+     "hint": "Round 7.92 to the nearest whole number and 31 to the nearest ten.",
+     "steps": [
+      "7.92 rounds to 8.",
+      "31 rounds to 30.",
+      "8 × 30 = 240."
+     ],
+     "ex": {
+      "main": "**240.** 8 × 30 = 240. 210 chops 7.92 down to 7 instead of rounding it to 8, and 24 and 2,400 put the point in the wrong place.",
+      "tip": "7.92 is almost 8. Round it, do not chop it."
+     }
+    },
+    {
+     "id": "q16",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rounding each factor to the nearest whole number, which gives an OVERestimate?",
+     "opts": [
+      "3.6 × 4.7",
+      "2.3 × 6.1",
+      "8.4 × 5.2",
+      "9.3 × 1.4"
+     ],
+     "ans": 0,
+     "hint": "An overestimate needs the factors to round up.",
+     "steps": [
+      "3.6 rounds up to 4, and 4.7 rounds up to 5.",
+      "4 × 5 = 20 is more than the exact 16.92.",
+      "In each of the others, both factors round down."
+     ],
+     "ex": {
+      "main": "**3.6 × 4.7.** Both factors round up, so 4 × 5 = 20 is more than the exact 16.92. Every other pair rounds both factors down.",
+      "tip": "Both up, over. Both down, under."
+     }
+    },
+    {
+     "id": "q17",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ribbon costs $0.85 a yard. Lila buys 14 yards. How much does she pay?",
+     "opts": [
+      "$119.00",
+      "$11.90",
+      "$1.19",
+      "$14.85"
+     ],
+     "ans": 1,
+     "hint": "Find 0.85 × 14. Estimate first.",
+     "steps": [
+      "85 × 14 = 1,190.",
+      "0.85 has two decimal places: 11.90.",
+      "Check: $1 × 14 = $14, a little more than $11.90."
+     ],
+     "ex": {
+      "main": "**$11.90.** 85 × 14 = 1,190, and two places makes 11.90. $14.85 adds instead of multiplying, and the others misplace the point.",
+      "tip": "Money keeps two places."
+     }
+    },
+    {
+     "id": "q18",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A trail is 2.75 km long. Theo walks it there and back, on 3 days. How far does he walk in all?",
+     "opts": [
+      "5.5 km",
+      "8.25 km",
+      "16.5 km",
+      "165 km"
+     ],
+     "ans": 2,
+     "hint": "Each day has two trips.",
+     "steps": [
+      "There and back is 2 trips a day: 6 trips in all.",
+      "2.75 × 6 = 16.5.",
+      "Check: about 3 km × 6 = 18 km."
+     ],
+     "ex": {
+      "main": "**16.5 km.** 2.75 × 6 = 16.5. 8.25 counts only the trip there, 5.5 is one day, and 165 drops the point.",
+      "tip": "Count every trip the story mentions."
+     }
+    },
+    {
+     "id": "q19",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which equation is NOT true?",
+     "opts": [
+      "0.48 × 5 = 2.4",
+      "48 × 5 = 240",
+      "48 × 0.5 = 24",
+      "4.8 × 5 = 2.4"
+     ],
+     "ans": 3,
+     "hint": "Check where the point goes in each product.",
+     "steps": [
+      "48 × 5 = 240.",
+      "48 × 0.5 has one decimal place: 24.0, which is 24.",
+      "0.48 × 5 has two: 2.40, which is 2.4.",
+      "4.8 × 5 has one place: 24.0, so it is 24, not 2.4."
+     ],
+     "ex": {
+      "main": "**4.8 × 5 = 2.4.** 4.8 has one decimal place, so the product is 24.0, which is 24. The other three are true.",
+      "tip": "Count the places in the factors; the product has the same."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 4",
+   "prep": true,
+   "libv": 1
+  }
+ }
+}
