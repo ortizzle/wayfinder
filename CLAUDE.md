@@ -2084,6 +2084,64 @@ older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
 
+### The Lemonade Crime · Novel Test Review (v203)
+
+Chris added River's progress report of 11/13 to Drive. **Its numbers are his
+and appear nowhere in this repo.** It was read to decide what to build next, the
+way v198 reads a completed sheet: for what to do, never as a record of how she
+did. It pointed at English. The Wordly Wise Lesson 5 quiz on 11/18 already has
+a unit in her real test's five sections (v169), so the gap was the **novel test
+on 11/20, "the whole book"**.
+
+`lemonade-crime-review.json` (`unit-lc-review`), titled
+`The Lemonade Crime · Novel Test Review`: 21 cards and 26 questions, with
+`book:true`, `prep:true`, `round:12`, no `order` and no `capstone` (lc4 keeps the
+crest). "Novel" sorts after the four `Ch. N` parts on title alone, which was
+checked with `shelvesFor`.
+
+- **It is built only from the four companion units.** No class material for the
+  novel test is in Drive, and inventing a plot detail would be worse than
+  leaving it out. The builder copies every passage out of lc1–lc4 rather than
+  retyping it and asserts each is an exact substring. The test refuses any
+  capitalised name the companions do not carry, and that was checked by
+  planting an invented name.
+- **The book is laid on her class's plot diagram**, using the plot-diagram
+  unit's own stage words. Chapters 1–5 are exposition and 6–10 rising action,
+  as her quiz titles split them. There are which-stage questions, two
+  whole-book `kind:'order'` questions, characters and motives, the legal
+  chapter-title words, themes with evidence, and two short-answer cards
+  ("answer, then give evidence"), flagged `added`.
+- **No stem repeats a companion stem**: the builder asserts bigram similarity
+  below 0.6.
+
+> ⚠️ **The climax is graded nowhere, on purpose.** This book's climax reads two
+> ways: the trial's verdict, or the basketball game after it (after the
+> verdict Evan says "This is not over", so by the plot-diagram test the problem
+> has not started to settle). The first build graded the game as the climax and
+> had a question explaining why the verdict is not. Her teacher's answer is not
+> in Drive, so both questions were removed. A question that drills her against
+> the answer key is worse than none (the v141 rule). The climax card gives both
+> readings and tells her to ask and explain her choice, and the test asserts no
+> question's answer is "Climax". **If Chris learns which one her teacher uses,
+> add the question back.**
+
+> The first build also used British spellings (colour, apologise, organise,
+> favourite, practise), the v169 slip. They were fixed in the builder.
+
+`tools/test_lemonade_review.js` has 23 assertions. It pins:
+
+- the flags, `round` and the counts
+- exact passages and known names only
+- no duplicated stem
+- the two order questions stored in order
+- answers in all four slots
+- no back-references and no self-answering stem
+- the parent note naming its sources
+- a privacy and mark sweep
+- the five-part shelf with the review last and gold-ringed
+- no Beat the clock
+- a full round with a passage plate, and the deck
+
 ### Unit 4 · Test Review, Part 1, and the newsletter of 11/13 (v202)
 
 Chris: *"Build a Unit 4 study guide for the test; and also, I've added a few
