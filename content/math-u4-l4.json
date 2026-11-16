@@ -1,0 +1,477 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m4u4": {
+   "id": "unit-m4u4",
+   "type": "unit",
+   "updatedAt": 1794846579012,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 4 · Lesson 4: Multiply a Decimal by a Whole Number",
+   "srcName": "Lesson 4-4 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 4 Student Edition practice pages — multiplying decimals (Drive)",
+   "summary": {
+    "text": "Lesson 4-4 practice pages: multiplying a decimal by a whole number by multiplying as whole numbers and placing the point, using number sense to place it, telling which equation is not true, and word problems about money, weight and area.",
+    "from": "source"
+   },
+   "why": {
+    "text": "This is the lesson the unit has been building to: the rule she will use every time a decimal and a whole number are multiplied.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply a decimal by a whole number and place the decimal point",
+     "from": "source"
+    },
+    {
+     "text": "Use number sense or counting places to place the point",
+     "from": "source"
+    },
+    {
+     "text": "Explain why a product can show fewer decimal places than the factor",
+     "from": "source"
+    },
+    {
+     "text": "Solve word problems that multiply a decimal by a whole number",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 4-4 practice pages in her Unit 4 folder, read for what they ask. The numbers are fresh, not the page's own. Every wrong option on a worked product comes from a named slip: the point left out, the point one place too far either way, or the zero in a whole number like 40 dropped before multiplying. One question answers the page's own puzzle about a product with fewer decimal places (0.45 × 6 = 2.70 = 2.7). Her class teaches this unit after Unit 5.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Multiply as whole numbers, count the places, place the point, then check with an estimate.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Multiply, then place the point",
+     "def": "**Multiply as if there were no decimal point, then put the point in the product.**\n• 0.15 × 12 → 15 × 12 = 180 → 1.80.",
+     "hint": "Digits first, point second.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Count the places",
+     "def": "**The product has as many decimal places as the factors have together.**\n• 0.36 has 2 and 14 has 0, so 0.36 × 14 = 5.04 has 2.",
+     "hint": "Places in = places out.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Use number sense",
+     "def": "**Estimate to place the point: 4.7 × 6 is about 5 × 6 = 30, so 28.2.**",
+     "hint": "The estimate picks the place.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Zeros inside the product",
+     "def": "**A zero between digits is a real digit; keep it.**\n• 0.58 × 7 = 4.06, not 4.6.",
+     "hint": "Zeros inside stay.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Zeros at the end",
+     "def": "**After placing the point you may drop zeros at the end: 2.70 is 2.7.**\n• So a two-place decimal times a whole number can show one place.",
+     "hint": "End zeros can go.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Keep the whole number's zeros",
+     "def": "**Multiply by the whole number exactly as written, zeros and all.**\n• 7.25 × 40 = 290, not 29.",
+     "hint": "A zero in 40 is part of the number.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Ten times and a tenth",
+     "def": "**If one factor is 10 times bigger and the other 10 times smaller, the product stays the same.**\n• 0.6 × 48 = 6 × 4.8 = 60 × 0.48 = 28.8.",
+     "hint": "Up 10, down 10, no change.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Check every product",
+     "def": "**Estimate before or after: if the answer is about 10 times too big or small, move the point.**\n• $0.35 × 64 is about $21, so $22.40 fits.",
+     "hint": "Estimate, then trust.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What are the two steps to multiply a decimal by a whole number?",
+     "opts": [
+      "Multiply as if there were no decimal point, then place the point",
+      "Line up the decimal points, then add the numbers",
+      "Round both numbers, then write the rounded product",
+      "Drop the decimal point, and leave it out of the answer"
+     ],
+     "ans": 0,
+     "hint": "Think of 0.36 × 14 as 36 × 14 first.",
+     "steps": [
+      "Multiply the digits as whole numbers.",
+      "Count the decimal places in the decimal factor.",
+      "Give the product the same number of places."
+     ],
+     "ex": {
+      "main": "**Multiply as whole numbers, then place the point.** Rounding is for estimating, not for the exact answer.",
+      "tip": "Digits first, point second."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "For 0.36 × 14, how many decimal places does the product have before you drop any zeros?",
+     "opts": [
+      "One, because 14 has no decimal",
+      "Two, the same as 0.36",
+      "Three, two plus one more for 14",
+      "None, because 14 is a whole number"
+     ],
+     "ans": 1,
+     "hint": "Count the digits after the point in each factor.",
+     "steps": [
+      "0.36 has 2 decimal places.",
+      "14 has none.",
+      "So the product has 2 + 0 = 2.",
+      "36 × 14 = 504, so 0.36 × 14 = 5.04."
+     ],
+     "ex": {
+      "main": "**Two.** The places in the factors add up: 2 from 0.36 and 0 from 14. 0.36 × 14 = 5.04.",
+      "tip": "Count the places in the factors."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is the same about 24 × 13 and 2.4 × 13?",
+     "opts": [
+      "Both products are 312, exactly the same number",
+      "Nothing; a decimal product always has different digits",
+      "The digits of the product, 312; only the point is in a different place",
+      "Both products have one decimal place, like 2.4"
+     ],
+     "ans": 2,
+     "hint": "Find 24 × 13 first.",
+     "steps": [
+      "24 × 13 = 312.",
+      "2.4 × 13 has the same digits.",
+      "2.4 has one decimal place, so 31.2."
+     ],
+     "ex": {
+      "main": "**The digits, 312.** 24 × 13 = 312 and 2.4 × 13 = 31.2. Only the point moves.",
+      "tip": "Same digits; the point tells the size."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "47 × 6 = 282. Using number sense, what is 4.7 × 6?",
+     "opts": [
+      "0.282",
+      "2.82",
+      "282",
+      "28.2"
+     ],
+     "ans": 3,
+     "hint": "4.7 is about 5. What is 5 × 6?",
+     "steps": [
+      "4.7 is close to 5.",
+      "5 × 6 = 30.",
+      "Of 28.2, 2.82, 282 and 0.282, only 28.2 is close to 30."
+     ],
+     "ex": {
+      "main": "**28.2.** 4.7 × 6 should be close to 5 × 6 = 30, and 28.2 is.",
+      "tip": "An estimate tells you where the point goes."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which equation is NOT true?",
+     "opts": [
+      "6.4 × 3 = 1.92",
+      "64 × 3 = 192",
+      "64 × 0.3 = 19.2",
+      "64 × 0.03 = 1.92"
+     ],
+     "ans": 0,
+     "hint": "Check where the point goes in each product.",
+     "steps": [
+      "64 × 3 = 192.",
+      "64 × 0.3 has one decimal place: 19.2.",
+      "64 × 0.03 has two: 1.92.",
+      "6.4 × 3 has one decimal place, so it is 19.2, not 1.92."
+     ],
+     "ex": {
+      "main": "**6.4 × 3 = 1.92.** 6.4 has one decimal place, so the product does too: 19.2. The other three are true.",
+      "tip": "Count the places in the factors; the product has the same."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.58 × 7?",
+     "opts": [
+      "406",
+      "4.06",
+      "40.6",
+      "0.406"
+     ],
+     "ans": 1,
+     "hint": "58 × 7 first. Watch for a zero in the answer.",
+     "steps": [
+      "Multiply as whole numbers: 7 × 58 = 406.",
+      "0.58 has 2 decimal places, so the product has 2: 4.06.",
+      "Check with an estimate: 0.6 × 7 = 4.2, close to 4.06."
+     ],
+     "ex": {
+      "main": "**4.06.** The wrong answers come from real slips: 406 is the decimal point left out; 40.6 is the point one place too far right; 0.406 is the point one place too far left.",
+      "tip": "A zero inside 4.06 is a real digit; keep it."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3.4 × 26?",
+     "opts": [
+      "8.84",
+      "884",
+      "88.4",
+      "29.4"
+     ],
+     "ans": 2,
+     "hint": "34 × 26 first, then one decimal place.",
+     "steps": [
+      "Multiply as whole numbers: 26 × 34 = 884.",
+      "3.4 has 1 decimal place, so the product has 1: 88.4.",
+      "Check with an estimate: 3 × 26 = 78, close to 88.4."
+     ],
+     "ex": {
+      "main": "**88.4.** The wrong answers come from real slips: 884 is the decimal point left out; 8.84 is the point one place too far left; 29.4 is adding instead of multiplying.",
+      "tip": "Check: 3 × 26 = 78, close to your answer."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.47 × 16?",
+     "opts": [
+      "0.752",
+      "752",
+      "75.2",
+      "7.52"
+     ],
+     "ans": 3,
+     "hint": "47 × 16 first, then two decimal places.",
+     "steps": [
+      "Multiply as whole numbers: 16 × 47 = 752.",
+      "0.47 has 2 decimal places, so the product has 2: 7.52.",
+      "Check with an estimate: 0.5 × 16 = 8, close to 7.52."
+     ],
+     "ex": {
+      "main": "**7.52.** The wrong answers come from real slips: 752 is the decimal point left out; 75.2 is the point one place too far right; 0.752 is the point one place too far left.",
+      "tip": "Estimate: 0.5 × 16 is about 8."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 52 × 0.006?",
+     "opts": [
+      "0.312",
+      "312",
+      "3.12",
+      "0.0312"
+     ],
+     "ans": 0,
+     "hint": "52 × 6 first, then three decimal places.",
+     "steps": [
+      "Multiply as whole numbers: 52 × 6 = 312.",
+      "0.006 has 3 decimal places, so the product has 3: 0.312.",
+      "So 52 × 0.006 = 0.312."
+     ],
+     "ex": {
+      "main": "**0.312.** The wrong answers come from real slips: 312 is the decimal point left out; 3.12 is the point one place too far right; 0.0312 is the point one place too far left.",
+      "tip": "Three places: write a zero after the point if you need one."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7.25 × 40?",
+     "opts": [
+      "29",
+      "290",
+      "2,900",
+      "29,000"
+     ],
+     "ans": 1,
+     "hint": "725 × 40 first, then two decimal places.",
+     "steps": [
+      "Multiply as whole numbers: 40 × 725 = 29,000.",
+      "7.25 has 2 decimal places, so the product has 2: 290.00.",
+      "Check with an estimate: 7 × 40 = 280, close to 290."
+     ],
+     "ex": {
+      "main": "**290.** The wrong answers come from real slips: 29 is the zero in the whole number dropped before multiplying; 2,900 is the point one place too far right; 29,000 is the decimal point left out.",
+      "tip": "Keep the zero in 40 when you multiply."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ivy multiplies a whole number by a decimal with two decimal places. She says the product could have only one decimal place. Is she right?",
+     "opts": [
+      "No: the product must have three places, two plus one",
+      "No: the product must always have exactly two places",
+      "Yes: 0.45 × 6 = 2.70, which is the same as 2.7",
+      "Yes, but only if the whole number is 1"
+     ],
+     "ans": 2,
+     "hint": "What happens when a product ends in 0?",
+     "steps": [
+      "45 × 6 = 270.",
+      "Two places gives 2.70.",
+      "A zero at the end does not change the value, so 2.70 = 2.7."
+     ],
+     "ex": {
+      "main": "**Yes.** 0.45 × 6 = 2.70, and 2.70 is 2.7. When the product ends in zero, it can be written with fewer places.",
+      "tip": "Count places first, then drop end zeros."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A bakery makes $0.35 on each muffin it sells. It sells 64 muffins. How much does it make?",
+     "opts": [
+      "$2,240.00",
+      "$224.00",
+      "$2.24",
+      "$22.40"
+     ],
+     "ans": 3,
+     "hint": "Find 0.35 × 64.",
+     "steps": [
+      "35 × 64 = 2,240.",
+      "0.35 has 2 decimal places: 22.40.",
+      "Check: 0.35 is about a third, and a third of 64 is about 21."
+     ],
+     "ex": {
+      "main": "**$22.40.** 35 × 64 = 2,240, and two places makes 22.40. The other amounts put the point in the wrong place.",
+      "tip": "Money keeps two places: $22.40."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A backpack may weigh at most 25 pounds. It holds two books of 6.8 pounds each and a lunchbox of 9.5 pounds. Is it within the limit?",
+     "opts": [
+      "Yes: 2 × 6.8 + 9.5 = 23.1 pounds",
+      "No: 2 × 6.8 + 2 × 9.5 = 32.6 pounds",
+      "Yes: 6.8 + 9.5 = 16.3 pounds",
+      "No: 68 + 68 + 95 = 231 pounds"
+     ],
+     "ans": 0,
+     "hint": "Find the weight of the two books first.",
+     "steps": [
+      "2 × 6.8 = 13.6 pounds of books.",
+      "13.6 + 9.5 = 23.1 pounds.",
+      "23.1 is less than 25."
+     ],
+     "ex": {
+      "main": "**Yes: 23.1 pounds.** 32.6 counts the lunchbox twice, 16.3 leaves a book out, and 231 drops the decimal points.",
+      "tip": "Count each thing once, then compare."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A rectangle is 3.5 meters wide. Its length is a one-digit whole number of meters. What are its least and greatest possible areas?",
+     "opts": [
+      "0 and 31.5 square meters",
+      "3.5 and 31.5 square meters",
+      "3.5 and 35 square meters",
+      "35 and 315 square meters"
+     ],
+     "ans": 1,
+     "hint": "The smallest one-digit length is 1, and the largest is 9.",
+     "steps": [
+      "Area = length × width.",
+      "Least: 1 × 3.5 = 3.5.",
+      "Greatest: 9 × 3.5 = 31.5."
+     ],
+     "ex": {
+      "main": "**3.5 and 31.5 square meters.** A length of 0 is not a rectangle, 10 is not one digit, and 35 and 315 drop the decimal point.",
+      "tip": "One-digit whole numbers run from 1 to 9."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Compare 0.6 × 48, 6 × 4.8 and 60 × 0.48.",
+     "opts": [
+      "0.6 × 48 is the least",
+      "60 × 0.48 is the greatest",
+      "All three equal 28.8",
+      "6 × 4.8 is the greatest"
+     ],
+     "ans": 2,
+     "hint": "Each one is 6 × 48 = 288 with the point placed somewhere.",
+     "steps": [
+      "0.6 × 48: one place, 28.8.",
+      "6 × 4.8: one place, 28.8.",
+      "60 × 0.48: 2,880 with two places, 28.80.",
+      "So all three are 28.8."
+     ],
+     "ex": {
+      "main": "**All three equal 28.8.** One factor got 10 times bigger while the other got 10 times smaller, so the product stayed the same.",
+      "tip": "Ten times bigger and ten times smaller cancel out."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 4",
+   "libv": 1
+  }
+ }
+}

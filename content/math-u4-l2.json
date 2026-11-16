@@ -1,0 +1,477 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m4u2": {
+   "id": "unit-m4u2",
+   "type": "unit",
+   "updatedAt": 1794846579006,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 4 · Lesson 2: Estimate Products of Decimals",
+   "srcName": "Lesson 4-2 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 4 Student Edition practice pages — multiplying decimals (Drive)",
+   "summary": {
+    "text": "Lesson 4-2 practice pages: estimating products of decimals and whole numbers by rounding or with compatible numbers, telling overestimates from underestimates, and estimating in money and distance word problems.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Estimating first is how she will catch a decimal point in the wrong place in lessons 3 and 4.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Estimate a product of a decimal and a whole number by rounding",
+     "from": "source"
+    },
+    {
+     "text": "Estimate with compatible numbers",
+     "from": "source"
+    },
+    {
+     "text": "Tell whether an estimate is an overestimate or an underestimate",
+     "from": "source"
+    },
+    {
+     "text": "Use an estimate to solve or check a word problem",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 4-2 practice pages in her Unit 4 folder, read for what they ask. The numbers are fresh, not the page's own. Two slips are worth a word: rounding a decimal less than 1 to 0 (0.48 × 205 \"about 0\"), and chopping 6.9 down to 6 instead of rounding it to 7. Both are offered as wrong options. Her class teaches this unit after Unit 5.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Round or pick friendly numbers, multiply in your head, and say whether you went over or under.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "About how much",
+     "def": "**\"About how much\" means an estimate is enough.**\n• Round, multiply in your head, done.",
+     "hint": "About = close, not exact.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Estimate by rounding",
+     "def": "**Round each factor, then multiply.**\n• 3.86 × 21 → 4 × 20 = 80.",
+     "hint": "Round to the nearest, not always down.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Compatible numbers",
+     "def": "**Swap in nearby numbers that are easy to multiply.**\n• 0.76 × 98 → 0.75 × 100 = 75.\n• 0.48 × 205 → 0.5 × 200 = 100.",
+     "hint": "Pick friendly numbers.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Decimals less than 1",
+     "def": "**Do not round a decimal like 0.48 to 0; use a friendly decimal such as 0.5 or 0.25.**\n• Half of something is easy to find.",
+     "hint": "0.5 is half; 0.25 is a quarter.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Overestimate",
+     "def": "**If you round the factors up, your estimate is more than the exact product.**\n• Good for checking you have enough money.",
+     "hint": "Both up, over.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Underestimate",
+     "def": "**If you round the factors down, your estimate is less than the exact product.**\n• The real answer is at least that much.",
+     "hint": "Both down, under.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Using an estimate to decide",
+     "def": "**An overestimate that fits your budget means the real cost fits too.**\n• $4 × 12 = $48 is under $50, so $3.89 × 12 is too.",
+     "hint": "Over and still fine means fine.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Checking a product",
+     "def": "**Compare an exact answer with your estimate. If it is about 10 times too big or small, the point slipped.**\n• 4.95 × 31 is near 150, so 15 is wrong.",
+     "hint": "Estimates catch misplaced points.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A question asks \"about how much\" something costs. What does that tell you?",
+     "opts": [
+      "An estimate is enough; you do not need the exact amount",
+      "You must find the exact amount, to the cent",
+      "You should always round every number up",
+      "You should add the numbers instead of multiplying them"
+     ],
+     "ans": 0,
+     "hint": "What does \"about\" mean in everyday talk?",
+     "steps": [
+      "\"About\" means close to, not exactly.",
+      "So a rounded answer is what the question wants.",
+      "You can round to numbers that are easy to multiply in your head."
+     ],
+     "ex": {
+      "main": "**An estimate is enough.** \"About how much\" asks for a close, easy answer, not the exact one.",
+      "tip": "Read the question first: it tells you whether to estimate."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rounding each factor, which is the best estimate of 3.86 × 21?",
+     "opts": [
+      "8",
+      "80",
+      "800",
+      "60"
+     ],
+     "ans": 1,
+     "hint": "Round 3.86 to the nearest whole number and 21 to the nearest ten.",
+     "steps": [
+      "3.86 rounds to 4.",
+      "21 rounds to 20.",
+      "4 × 20 = 80."
+     ],
+     "ex": {
+      "main": "**80.** 4 × 20 = 80. 8 and 800 put the point in the wrong place, and 60 rounds 3.86 down to 3 when it is closer to 4.",
+      "tip": "Round to the nearest, not always down."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What are compatible numbers?",
+     "opts": [
+      "Numbers rounded up, so the answer always comes out bigger",
+      "The exact numbers in the problem, copied out again",
+      "Numbers close to the real ones that are easy to multiply in your head",
+      "Any two numbers that add up to exactly 10"
+     ],
+     "ans": 2,
+     "hint": "Think of 2.15 × 16 becoming 2 × 15.",
+     "steps": [
+      "Compatible numbers are near the real numbers.",
+      "They are picked because they are easy to work with.",
+      "They give a quick estimate, not an exact answer."
+     ],
+     "ex": {
+      "main": "**Numbers close to the real ones that are easy to multiply.** They make a mental estimate quick.",
+      "tip": "Pick numbers that make the arithmetic friendly."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "You round both factors UP to estimate a product. What kind of estimate do you get?",
+     "opts": [
+      "It depends on whether the numbers are decimals",
+      "An underestimate: less than the exact product",
+      "The exact product",
+      "An overestimate: more than the exact product"
+     ],
+     "ans": 3,
+     "hint": "If both numbers got bigger, what happens to their product?",
+     "steps": [
+      "Rounding up makes each factor bigger.",
+      "Bigger factors make a bigger product.",
+      "So the estimate is more than the exact answer."
+     ],
+     "ex": {
+      "main": "**An overestimate.** Both factors grew, so the product grew too.",
+      "tip": "Both up means over; both down means under."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "You round both factors DOWN to estimate a product. What kind of estimate do you get?",
+     "opts": [
+      "An underestimate: less than the exact product",
+      "An overestimate: more than the exact product",
+      "The exact product",
+      "It depends on how big the numbers are"
+     ],
+     "ans": 0,
+     "hint": "If both numbers got smaller, what happens to their product?",
+     "steps": [
+      "Rounding down makes each factor smaller.",
+      "Smaller factors make a smaller product.",
+      "So the estimate is less than the exact answer."
+     ],
+     "ex": {
+      "main": "**An underestimate.** Both factors shrank, so the product shrank too.",
+      "tip": "An underestimate tells you the real answer is at least that much."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the best estimate of 0.48 × 205?",
+     "opts": [
+      "10",
+      "100",
+      "1,000",
+      "0"
+     ],
+     "ans": 1,
+     "hint": "Rounding 0.48 to a whole number gives 0, which tells you nothing. Try 0.5 instead.",
+     "steps": [
+      "0.48 is close to 0.5, which is one half.",
+      "205 is close to 200.",
+      "Half of 200 is 100."
+     ],
+     "ex": {
+      "main": "**100.** 0.5 × 200 = 100. 0 comes from rounding 0.48 to the nearest whole number, which throws the whole product away. 10 and 1,000 put the point in the wrong place.",
+      "tip": "For a decimal less than 1, round to a friendly decimal like 0.5, not to 0."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which is the best estimate of 6.9 × 42?",
+     "opts": [
+      "2,800",
+      "28",
+      "280",
+      "240"
+     ],
+     "ans": 2,
+     "hint": "Round 6.9 to the nearest whole number and 42 to the nearest ten.",
+     "steps": [
+      "6.9 rounds to 7.",
+      "42 rounds to 40.",
+      "7 × 40 = 280."
+     ],
+     "ex": {
+      "main": "**280.** 7 × 40 = 280. 240 drops 6.9 to 6 instead of rounding it to 7, and 28 and 2,800 misplace the point.",
+      "tip": "6.9 is almost 7. Round it, do not chop it."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "About how much do 19 notebooks cost at $4.10 each?",
+     "opts": [
+      "About $100",
+      "About $8",
+      "About $800",
+      "About $80"
+     ],
+     "ans": 3,
+     "hint": "Round $4.10 to the nearest dollar and 19 to the nearest ten.",
+     "steps": [
+      "$4.10 rounds to $4.",
+      "19 rounds to 20.",
+      "$4 × 20 = $80."
+     ],
+     "ex": {
+      "main": "**About $80.** $4 × 20 = $80. $100 rounds $4.10 up to $5, which it is not close to.",
+      "tip": "Round each number to the nearest, then multiply."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rounding each factor to the nearest whole number, which gives an OVERestimate?",
+     "opts": [
+      "5.7 × 8.6",
+      "3.2 × 7.4",
+      "9.1 × 4.3",
+      "6.4 × 2.2"
+     ],
+     "ans": 0,
+     "hint": "An overestimate needs the factors to round up.",
+     "steps": [
+      "5.7 rounds up to 6, and 8.6 rounds up to 9.",
+      "Both went up, so 6 × 9 = 54 is more than the exact product.",
+      "In each of the others, both factors round down.",
+      "So only 5.7 × 8.6 gives an overestimate."
+     ],
+     "ex": {
+      "main": "**5.7 × 8.6.** Both factors round up, so 6 × 9 = 54 is more than the exact 49.02. Every other pair rounds both factors down.",
+      "tip": "Look at the tenths: 5 or more rounds up."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rounding each factor to the nearest whole number, which gives an UNDERestimate?",
+     "opts": [
+      "7.8 × 3.6",
+      "4.2 × 6.3",
+      "2.7 × 5.9",
+      "6.6 × 3.8"
+     ],
+     "ans": 1,
+     "hint": "An underestimate needs the factors to round down.",
+     "steps": [
+      "4.2 rounds down to 4, and 6.3 rounds down to 6.",
+      "Both went down, so 4 × 6 = 24 is less than the exact product.",
+      "In each of the others, both factors round up.",
+      "So only 4.2 × 6.3 gives an underestimate."
+     ],
+     "ex": {
+      "main": "**4.2 × 6.3.** Both factors round down, so 4 × 6 = 24 is less than the exact 26.46. Every other pair rounds both factors up.",
+      "tip": "Look at the tenths: 4 or less rounds down."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A school buys 28 folders at $1.85 each. About how much do they cost?",
+     "opts": [
+      "About $600",
+      "About $6",
+      "About $60",
+      "About $28"
+     ],
+     "ans": 2,
+     "hint": "Round $1.85 to the nearest dollar and 28 to the nearest ten.",
+     "steps": [
+      "$1.85 rounds to $2.",
+      "28 rounds to 30.",
+      "$2 × 30 = $60."
+     ],
+     "ex": {
+      "main": "**About $60.** $2 × 30 = $60. $28 rounds $1.85 down to $1, and $6 and $600 misplace the point.",
+      "tip": "A price just under $2 is about $2."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Leo has $50. He wants 12 notebooks at $3.89 each. He rounds up: $4 × 12 = $48. What does that tell him?",
+     "opts": [
+      "He will spend exactly $48",
+      "He does not have enough, because $48 is so close to $50",
+      "He cannot tell until he finds the exact cost",
+      "He has enough, because even an overestimate is under $50"
+     ],
+     "ans": 3,
+     "hint": "Is $48 more or less than the real cost?",
+     "steps": [
+      "$4 is more than $3.89, so $48 is an overestimate.",
+      "The real cost is less than $48.",
+      "$48 is under $50, so the real cost is under $50 too."
+     ],
+     "ex": {
+      "main": "**He has enough.** He rounded up, so the real cost is less than $48, and $48 is already under $50.",
+      "tip": "An overestimate that fits means the real amount fits."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A gardener drives 12.4 miles to a park and 12.4 miles back, 5 days a week. About how many miles is that each week?",
+     "opts": [
+      "About 120 miles",
+      "About 60 miles",
+      "About 12 miles",
+      "About 1,200 miles"
+     ],
+     "ans": 0,
+     "hint": "Each day has two trips.",
+     "steps": [
+      "12.4 is about 12.",
+      "Two trips a day: 12 × 2 = 24 miles.",
+      "5 days: 24 × 5 = 120 miles."
+     ],
+     "ex": {
+      "main": "**About 120 miles.** 12 × 2 × 5 = 120. 60 counts only the trip there, not the trip back.",
+      "tip": "Count every trip the story mentions."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "To estimate 0.76 × 98, Mia uses 1 × 100 = 100 and Ben uses 0.75 × 100 = 75. Whose estimate is closer, and why?",
+     "opts": [
+      "Mia's, because rounding to whole numbers is always closer",
+      "Ben's, because 0.75 is much closer to 0.76 than 1 is",
+      "Both are equally close, because they both used 100",
+      "Neither, because you cannot estimate with a decimal less than 1"
+     ],
+     "ans": 1,
+     "hint": "How far is 0.76 from 1? How far from 0.75?",
+     "steps": [
+      "0.76 is 0.24 away from 1.",
+      "0.76 is only 0.01 away from 0.75.",
+      "The exact product is 74.48, very close to 75."
+     ],
+     "ex": {
+      "main": "**Ben's.** 0.75 is almost exactly 0.76, so 75 is very close to the exact 74.48. Rounding 0.76 up to 1 overshoots by a quarter.",
+      "tip": "A compatible number close to the real one gives a closer estimate."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Ana says 4.95 × 31 is about 15. Which estimate shows she is wrong?",
+     "opts": [
+      "4 × 3 = 12, so 15 is close enough",
+      "5 + 30 = 35, so the answer is near 35",
+      "5 × 30 = 150, so the answer is near 150, not 15",
+      "5 × 3 = 15, so she is right"
+     ],
+     "ans": 2,
+     "hint": "Round 4.95 and 31, then multiply.",
+     "steps": [
+      "4.95 rounds to 5.",
+      "31 rounds to 30, not 3.",
+      "5 × 30 = 150.",
+      "15 is ten times too small."
+     ],
+     "ex": {
+      "main": "**5 × 30 = 150.** Her 15 treats 31 as if it were 3, so the point landed a place too far left.",
+      "tip": "An estimate catches a misplaced point."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 4",
+   "libv": 1
+  }
+ }
+}

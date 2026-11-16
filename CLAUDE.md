@@ -2084,6 +2084,67 @@ older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
 
+### Unit 4 · Lessons 1–4, multiplying decimals, taught after Unit 5 (v201)
+
+Chris: *"Build River's Unit 4 multiplying decimals lessons; this unit comes
+after Unit 5."* Her `Unit 4 - Math` folder (11/16) holds `4-1_` to
+`4-4_ Student Edition Practice.pdf`, enVision grade-5 Topic 4, all with a text
+layer. They were read for what they ask; her answers are recorded nowhere.
+One builder, `tools/builders/build_math_unit4.py`, in the Unit 5 shape (v194):
+
+| id | title |
+|---|---|
+| `unit-m4u1` | `Unit 4 · Lesson 1: Multiply Decimals by Powers of 10` |
+| `unit-m4u2` | `Unit 4 · Lesson 2: Estimate Products of Decimals` |
+| `unit-m4u3` | `Unit 4 · Lesson 3: Model Multiplying a Decimal by a Whole Number` |
+| `unit-m4u4` | `Unit 4 · Lesson 4: Multiply a Decimal by a Whole Number` |
+
+- **8 cards and 15 questions each**, `series:'Unit 4'`, `round:10`, `libv:1`,
+  `quarter:2`, no `order`, no `prep`. Titles are each page's Essential Question
+  shortened into its skill, never the book's `4-N` label.
+- **"After Unit 5" needed no code.** The Math screen orders books by when she
+  last studied them (`shelvesFor`), not by number. While she works on Unit 5,
+  Unit 5 leads; her first Unit 4 session moves Unit 4 to the front. The test
+  pins exactly that.
+- **Every product is computed with `Decimal`**, never floats, and every wrong
+  option on a worked product comes from a named slip, asserted not to equal
+  the answer:
+  - the decimal point moved the wrong way, or one place too few or too many
+  - 10³ read as "10 × 3"
+  - the point left out, or one place off either way
+  - adding instead of multiplying
+  - each place's product written side by side without regrouping (4 × 1.36 as 4.1224)
+  - the zero in 40 dropped before multiplying (7.25 × 40 as 29)
+- **Estimating (4-2) carries two traps as real options**: rounding 0.48 to 0
+  (the estimate becomes 0), and chopping 6.9 to 6 instead of rounding it to 7.
+  The over- and underestimate items are asserted to have exactly one pair that
+  rounds the asked way.
+- **The pages' own puzzles are answered with fresh numbers**: a product about
+  ten times too big (7 × 0.896 as 62.72), "which equation is NOT true", and a
+  two-place decimal times a whole number showing one place (0.45 × 6 = 2.70 = 2.7).
+- **`use()` refuses every multiplication printed on the four pages.** The test
+  keeps its own looser list, which caught one clash the builder's exact pairs
+  missed (0.43, the ant's length on 4-1), now 0.47.
+
+`tools/test_unit4_shelf.js` (22 assertions) seeds the Unit 5 shelf beside it
+and re-derives every product with exact integer arithmetic. It pins:
+
+- the shelf, its order, and Unit 5 untouched
+- the most-recently-studied book leading
+- every worked product, each slip being a different number
+- the true/false, over/under and less-than-9 items having one right option
+- 25 word problems and set-ups
+- no page number reused, no back-reference, no mark
+- a full round and the deck on all four
+
+**Verified by planting 4.6 as the answer to 0.58 × 7**, and watching exactly
+that assertion fail.
+
+> `test_suggest.js` and `test_hours_notice.js` fail on 11/16 **on the v200
+> build too**: the last suggested assessment is dated 11/13, so nothing is
+> ahead for them to exercise. Calendar rot, not a regression. Both come back
+> once the next newsletter adds a date.
+
 ### The newsletter of the week of 11/6, and the Cub Hub of 11/6 (v200)
 
 Chris: *"Let's update the newsletter please."* Both landed in the Newsletters

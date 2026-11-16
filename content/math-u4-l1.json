@@ -1,0 +1,482 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m4u1": {
+   "id": "unit-m4u1",
+   "type": "unit",
+   "updatedAt": 1794846579004,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 4 · Lesson 1: Multiply Decimals by Powers of 10",
+   "srcName": "Lesson 4-1 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 4 Student Edition practice pages — multiplying decimals (Drive)",
+   "summary": {
+    "text": "Lesson 4-1 practice pages: using place-value patterns to multiply decimals by 10, 100, 1,000 and by powers of 10 written with exponents, finding a missing exponent, and word problems about magnified sizes.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Multiplying by powers of 10 is the pattern the rest of the unit leans on: placing the decimal point in every later product uses the same idea.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Multiply a decimal by 10, 100, 1,000 or 10,000",
+     "from": "source"
+    },
+    {
+     "text": "Read powers of 10 written with exponents",
+     "from": "source"
+    },
+    {
+     "text": "Find a missing exponent from where the decimal point moved",
+     "from": "source"
+    },
+    {
+     "text": "Explain why 3.8 and 3.80 are the same number",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 4-1 practice pages in her Unit 4 folder, read for what they ask. The numbers are fresh, not the page's own. Every wrong option on a worked product comes from a named slip: moving the point the wrong way, one place too few or too many, or reading 10³ as \"10 times 3\". The last one is the slip most worth a word, because 7.3 × 30 gives a believable number. Her class teaches this unit after Unit 5.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Count the zeros, move the point that many places right, then check that the number grew.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Powers of 10",
+     "def": "**A power of 10 is 10 multiplied by itself: 10¹ = 10, 10² = 100, 10³ = 1,000.**\n• The small raised number, the exponent, counts the 10s.\n• It also equals the number of zeros.",
+     "hint": "Exponent = number of zeros.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Multiply by 10, 100, 1,000",
+     "def": "**Multiplying by a power of 10 moves the decimal point to the right, one place for each zero.**\n• 2.57 × 100 = 257 (2 places).\n• 0.064 × 1,000 = 64 (3 places).",
+     "hint": "One zero, one place.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Why the point moves",
+     "def": "**Really the digits move: each one shifts one place left and is worth 10 times as much.**\n• In 4.2 the 4 is ones; in 42 the 4 is tens.",
+     "hint": "Digits left = point right.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Filling with zeros",
+     "def": "**When the point runs past the last digit, write zeros to fill the empty places.**\n• 13.8 × 10⁴ = 138,000.",
+     "hint": "Empty places get zeros.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "The exponent is not a factor",
+     "def": "**10³ means 10 × 10 × 10 = 1,000, never 10 × 3 = 30.**\n• 7.3 × 10³ is 7,300, not 219.",
+     "hint": "Count the tens; do not multiply by the little number.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Zeros at the end of a decimal",
+     "def": "**A zero after the last digit to the right of the point does not change the value.**\n• 3.8 = 3.80 = 3.800.",
+     "hint": "Trailing zeros are just padding.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Finding the missing exponent",
+     "def": "**Count how many places the point moved; that is the exponent.**\n• 0.48 → 480 moves 3 places, so it is × 10³.",
+     "hint": "Count the moves.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Bigger or smaller?",
+     "def": "**Multiplying by a power of 10 always makes a number bigger, so check that your answer grew.**\n• To undo it, divide, and the point moves left.\n• A microscope that shows 2.5 cm at × 100 means the real thing is 0.025 cm.",
+     "hint": "Grew? Then you multiplied.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When you multiply a decimal by 10³, which way does the decimal point move, and how far?",
+     "opts": [
+      "3 places to the right",
+      "3 places to the left",
+      "1 place to the right",
+      "It stays put, and you write three zeros on the end"
+     ],
+     "ans": 0,
+     "hint": "Multiplying by a power of 10 makes a number bigger. Count the zeros in 1,000.",
+     "steps": [
+      "10³ = 1,000, which has 3 zeros.",
+      "Each 10 moves the point one place.",
+      "Bigger means the digits move left, so the point moves right.",
+      "So the point moves 3 places to the right."
+     ],
+     "ex": {
+      "main": "**3 places to the right.** 10³ is 1,000, which has 3 zeros. Writing zeros after the last digit, 2.5 → 2.5000, changes nothing.",
+      "tip": "Count the exponent or the zeros: that is how many places."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does 10² mean?",
+     "opts": [
+      "10 × 2, which is 20",
+      "10 × 10, which is 100",
+      "10 + 2, which is 12",
+      "2 × 10 × 10, which is 200"
+     ],
+     "ans": 1,
+     "hint": "The small 2 says how many 10s are multiplied together.",
+     "steps": [
+      "The small raised number is the exponent.",
+      "It says how many 10s are multiplied.",
+      "10² = 10 × 10 = 100."
+     ],
+     "ex": {
+      "main": "**10 × 10, which is 100.** The exponent counts the 10s; it is not a number to multiply by.",
+      "tip": "The exponent is a count of tens."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Mira's ribbon is 3.8 meters long. Theo's ribbon is 3.80 meters long. Whose ribbon is longer?",
+     "opts": [
+      "Mira's, because 3.8 has fewer digits to read",
+      "Theo's, because 380 is more than 38",
+      "Neither: 3.8 and 3.80 are the same length",
+      "You cannot tell from these two numbers"
+     ],
+     "ans": 2,
+     "hint": "What is in the hundredths place of 3.8?",
+     "steps": [
+      "3.8 has 8 tenths and 0 hundredths.",
+      "3.80 has 8 tenths and 0 hundredths too.",
+      "A zero at the end, after the decimal point, does not change the value.",
+      "So the ribbons are the same length."
+     ],
+     "ex": {
+      "main": "**Neither: they are the same length.** 3.80 just writes the 0 hundredths that 3.8 leaves out.",
+      "tip": "Zeros at the end of a decimal do not change its value."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "When a number is multiplied by 10, what happens to each digit?",
+     "opts": [
+      "It stays in its place, and a zero joins the end",
+      "It moves one place to the right and is worth less",
+      "It stays in its place and is worth 10 more",
+      "It moves one place to the left and is worth 10 times as much"
+     ],
+     "ans": 3,
+     "hint": "Think of 4.2 × 10 = 42. Where did the 4 go?",
+     "steps": [
+      "In 4.2 the 4 is in the ones place.",
+      "In 42 the 4 is in the tens place.",
+      "It moved one place left, so it is worth 10 times as much."
+     ],
+     "ex": {
+      "main": "**Each digit moves one place left and is worth 10 times as much.** That is why the point seems to move right.",
+      "tip": "The digits move; the point is just where it was."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "0.48 × 10 to what power = 480?",
+     "opts": [
+      "3",
+      "2",
+      "4",
+      "1"
+     ],
+     "ans": 0,
+     "hint": "How many places did the point move to go from 0.48 to 480?",
+     "steps": [
+      "0.48 → 4.8 is one place.",
+      "4.8 → 48 is two places.",
+      "48 → 480 is three places.",
+      "So the power is 3: 0.48 × 10³ = 480."
+     ],
+     "ex": {
+      "main": "**3.** The point moves 3 places, so it is 10 × 10 × 10 = 10³. 2 stops at 48, 4 goes on to 4,800, and 1 stops at 4.8.",
+      "tip": "Count the moves, one place at a time."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 2.57 × 10²?",
+     "opts": [
+      "0.0257",
+      "257",
+      "25.7",
+      "2,570"
+     ],
+     "ans": 1,
+     "hint": "Count the zeros in 100.",
+     "steps": [
+      "10² = 100, so the decimal point moves 2 places to the right.",
+      "Move it one place at a time: 2.57 → 25.7 → 257.",
+      "Multiplying by 100 makes a number bigger, so 257 makes sense."
+     ],
+     "ex": {
+      "main": "**257.** 100 has 2 zeros, so the point moves 2 places right. The wrong answers come from real slips: 0.0257 is the point moved the wrong way, to the left; 25.7 is the point moved one place too few; 2,570 is the point moved one place too many.",
+      "tip": "Bigger, so the point moves right."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.064 × 10³?",
+     "opts": [
+      "6.4",
+      "0.000064",
+      "64",
+      "640"
+     ],
+     "ans": 2,
+     "hint": "The point moves 3 places. The zero in front stops mattering.",
+     "steps": [
+      "10³ = 1,000, so the decimal point moves 3 places to the right.",
+      "Move it one place at a time: 0.064 → 0.64 → 6.4 → 64.",
+      "Multiplying by 1,000 makes a number bigger, so 64 makes sense."
+     ],
+     "ex": {
+      "main": "**64.** 1,000 has 3 zeros, so the point moves 3 places right. The wrong answers come from real slips: 0.000064 is the point moved the wrong way, to the left; 6.4 is the point moved one place too few; 640 is the point moved one place too many.",
+      "tip": "Leading zeros fall away as the number grows."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 13.8 × 10⁴?",
+     "opts": [
+      "1,380,000",
+      "0.00138",
+      "13,800",
+      "138,000"
+     ],
+     "ans": 3,
+     "hint": "Move the point 4 places. You will need to write zeros to fill the places.",
+     "steps": [
+      "10⁴ = 10,000, so the decimal point moves 4 places to the right.",
+      "Move it one place at a time: 13.8 → 138 → 1,380 → 13,800 → 138,000.",
+      "Multiplying by 10,000 makes a number bigger, so 138,000 makes sense."
+     ],
+     "ex": {
+      "main": "**138,000.** 10,000 has 4 zeros, so the point moves 4 places right. The wrong answers come from real slips: 0.00138 is the point moved the wrong way, to the left; 13,800 is the point moved one place too few; 1,380,000 is the point moved one place too many.",
+      "tip": "Fill empty places with zeros as you move."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 7.3 × 10³?",
+     "opts": [
+      "7,300",
+      "0.0073",
+      "730",
+      "219"
+     ],
+     "ans": 0,
+     "hint": "10³ means 10 × 10 × 10, not 10 × 3.",
+     "steps": [
+      "10³ = 1,000, so the decimal point moves 3 places to the right.",
+      "Move it one place at a time: 7.3 → 73 → 730 → 7,300.",
+      "Multiplying by 1,000 makes a number bigger, so 7,300 makes sense."
+     ],
+     "ex": {
+      "main": "**7,300.** 1,000 has 3 zeros, so the point moves 3 places right. The wrong answers come from real slips: 0.0073 is the point moved the wrong way, to the left; 730 is the point moved one place too few; 219 is the exponent read as \"times 3\", so 10³ became 30.",
+      "tip": "The exponent counts places; it is not a factor."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.705 × 10²?",
+     "opts": [
+      "0.00705",
+      "70.5",
+      "7.05",
+      "705"
+     ],
+     "ans": 1,
+     "hint": "Watch the zero inside 0.705. It stays where it is.",
+     "steps": [
+      "10² = 100, so the decimal point moves 2 places to the right.",
+      "Move it one place at a time: 0.705 → 7.05 → 70.5.",
+      "Multiplying by 100 makes a number bigger, so 70.5 makes sense."
+     ],
+     "ex": {
+      "main": "**70.5.** 100 has 2 zeros, so the point moves 2 places right. The wrong answers come from real slips: 0.00705 is the point moved the wrong way, to the left; 7.05 is the point moved one place too few; 705 is the point moved one place too many.",
+      "tip": "A zero between digits never disappears."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "5.06 × 10 to what power = 5,060?",
+     "opts": [
+      "4",
+      "2",
+      "3",
+      "1"
+     ],
+     "ans": 2,
+     "hint": "Count the places from 5.06 to 5,060.",
+     "steps": [
+      "5.06 → 50.6 is one place.",
+      "50.6 → 506 is two places.",
+      "506 → 5,060 is three places.",
+      "So 5.06 × 10³ = 5,060."
+     ],
+     "ex": {
+      "main": "**3.** Three moves of the point. 2 stops at 506, 4 goes on to 50,600, and 1 stops at 50.6.",
+      "tip": "Count moves, not digits."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A magnifying lens makes things look 10 times their actual size. A ladybug is 0.6 cm long. How long does it look through the lens?",
+     "opts": [
+      "10.6 cm",
+      "0.06 cm",
+      "60 cm",
+      "6 cm"
+     ],
+     "ans": 3,
+     "hint": "Find 0.6 × 10.",
+     "steps": [
+      "The lens multiplies the size by 10.",
+      "0.6 × 10: the point moves one place right.",
+      "0.6 → 6.",
+      "So it looks 6 cm long."
+     ],
+     "ex": {
+      "main": "**6 cm.** 0.6 × 10 = 6. 0.06 moves the point the wrong way, 60 moves it two places, and 10.6 adds 10 instead of multiplying.",
+      "tip": "\"10 times\" means multiply by 10, never add 10."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A microscope shows things at 100 times their actual size. Seen through it, a grain of pollen is 2.5 cm across. How big is it really?",
+     "opts": [
+      "0.025 cm",
+      "250 cm",
+      "0.25 cm",
+      "25 cm"
+     ],
+     "ans": 0,
+     "hint": "The microscope multiplied by 100. To undo that, do the opposite.",
+     "steps": [
+      "Seen size = actual size × 100.",
+      "So actual size = seen size ÷ 100.",
+      "Dividing by 100 moves the point 2 places left: 2.5 → 0.25 → 0.025.",
+      "So the pollen is 0.025 cm across."
+     ],
+     "ex": {
+      "main": "**0.025 cm.** The microscope multiplied by 100, so divide by 100 to undo it. 250 multiplies a second time, and 0.25 and 25 move the point the wrong number of places.",
+      "tip": "Real things under a microscope are tiny. A huge answer is a sign you multiplied."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which equation is true?",
+     "opts": [
+      "6.15 × 1,000 = 61,500",
+      "6.15 × 100 = 615",
+      "0.615 × 10 = 61.5",
+      "61.5 × 1,000 = 6,150"
+     ],
+     "ans": 1,
+     "hint": "Check each one by counting how many places the point should move.",
+     "steps": [
+      "6.15 × 100: 2 places right is 615. True.",
+      "6.15 × 1,000 is 6,150, not 61,500.",
+      "0.615 × 10 is 6.15, not 61.5.",
+      "61.5 × 1,000 is 61,500, not 6,150."
+     ],
+     "ex": {
+      "main": "**6.15 × 100 = 615.** Each of the others moves the point one place too many or one too few.",
+      "tip": "Count the zeros, then count the moves."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A rope is 4.5 meters long. A second rope is 10 times as long. How much longer is the second rope than the first?",
+     "opts": [
+      "49.5 meters",
+      "45 meters",
+      "40.5 meters",
+      "4.05 meters"
+     ],
+     "ans": 2,
+     "hint": "First find the second rope's length. Then compare.",
+     "steps": [
+      "The second rope is 4.5 × 10 = 45 meters.",
+      "How much longer means subtract.",
+      "45 − 4.5 = 40.5.",
+      "So it is 40.5 meters longer."
+     ],
+     "ex": {
+      "main": "**40.5 meters.** 4.5 × 10 = 45, and 45 − 4.5 = 40.5. 45 is the rope's length, not the difference, and 49.5 adds instead of subtracting.",
+      "tip": "Two steps: multiply, then subtract."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 4",
+   "libv": 1
+  }
+ }
+}

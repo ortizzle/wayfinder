@@ -1,0 +1,481 @@
+{
+ "v": 4,
+ "records": {
+  "unit-m4u3": {
+   "id": "unit-m4u3",
+   "type": "unit",
+   "updatedAt": 1794846579009,
+   "classId": "math",
+   "quarter": 2,
+   "status": "draft",
+   "title": "Unit 4 · Lesson 3: Model Multiplying a Decimal by a Whole Number",
+   "srcName": "Lesson 4-3 Student Edition practice pages (Drive)",
+   "source": "enVision Topic 4 Student Edition practice pages — multiplying decimals (Drive)",
+   "summary": {
+    "text": "Lesson 4-3 practice pages: using place-value blocks, repeated groups and shaded grids to multiply a decimal by a whole number, deciding whether a product is less than the whole number, and using an estimate to find a misplaced decimal point.",
+    "from": "source"
+   },
+   "why": {
+    "text": "Seeing the groups is what makes the rule in lesson 4 make sense: the digits multiply like whole numbers, and the size tells you where the point goes.",
+    "from": "added"
+   },
+   "objectives": [
+    {
+     "text": "Model multiplying a decimal by a whole number with blocks or a grid",
+     "from": "source"
+    },
+    {
+     "text": "Regroup hundredths as tenths and tenths as ones",
+     "from": "source"
+    },
+    {
+     "text": "Tell whether a product is less than or greater than the whole number",
+     "from": "source"
+    },
+    {
+     "text": "Use an estimate to find a misplaced decimal point",
+     "from": "source"
+    }
+   ],
+   "parentNote": {
+    "text": "Built from the lesson 4-3 practice pages in her Unit 4 folder, read for what they ask. The numbers are fresh, not the page's own. Every wrong option on a worked product comes from a named slip: the point left out, the point one place too far either way, adding instead of multiplying, or writing each place's product side by side without regrouping (4 × 1.36 as 4.1224). One question mirrors the page's own critique, a product about ten times too big. Her class teaches this unit after Unit 5.",
+    "from": "added"
+   },
+   "nextUp": {
+    "text": "Picture the groups, multiply as whole numbers, then use the size of the answer to place the point.",
+    "minutes": 12,
+    "from": "added"
+   },
+   "cards": [
+    {
+     "id": "c0",
+     "term": "Place-value blocks",
+     "def": "**Decide which block is 1 first: if a flat is 1, a rod is 0.1 and a small cube is 0.01.**\n• 10 cubes make a rod; 10 rods make a flat.",
+     "hint": "Pick the one, then the rest follow.",
+     "from": "source"
+    },
+    {
+     "id": "c1",
+     "term": "Groups of a decimal",
+     "def": "**3 × 0.42 means 3 groups of 0.42, put together.**\n• 0.42 + 0.42 + 0.42 = 1.26.",
+     "hint": "Times = groups of.",
+     "from": "source"
+    },
+    {
+     "id": "c2",
+     "term": "Regrouping",
+     "def": "**Trade 10 hundredths for 1 tenth, and 10 tenths for 1 whole.**\n• 4 × 0.36: 12 tenths and 24 hundredths regroup to 1.44.",
+     "hint": "Same trading as whole numbers.",
+     "from": "source"
+    },
+    {
+     "id": "c3",
+     "term": "Shading a grid",
+     "def": "**On a 100-square grid that stands for 1, each square is 0.01.**\n• Shade 25 squares 3 times: 3 × 0.25 = 0.75.",
+     "hint": "Squares are hundredths.",
+     "from": "source"
+    },
+    {
+     "id": "c4",
+     "term": "Less than one",
+     "def": "**A whole number times a decimal less than 1 gives a product less than the whole number.**\n• 7 × 0.6 = 4.2, less than 7.",
+     "hint": "Less than one whole, so less in all.",
+     "from": "source"
+    },
+    {
+     "id": "c5",
+     "term": "Same digits as whole numbers",
+     "def": "**Multiply as if there were no point, then place the point: 4 × 1.36 → 4 × 136 = 544 → 5.44.**",
+     "hint": "Digits first, point second.",
+     "from": "source"
+    },
+    {
+     "id": "c6",
+     "term": "Estimate to check",
+     "def": "**Round the decimal, multiply, and compare. An answer ten times too big means the point slipped.**\n• 7 × 0.896 is near 7, so 62.72 is wrong.",
+     "hint": "An estimate catches a slipped point.",
+     "from": "source"
+    },
+    {
+     "id": "c7",
+     "term": "Money in cents",
+     "def": "**Turn dollars into cents to check with whole numbers.**\n• 6 × $0.75 → 6 × 75 = 450 cents = $4.50.",
+     "hint": "Cents are whole numbers.",
+     "from": "source"
+    }
+   ],
+   "questions": [
+    {
+     "id": "q0",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "In a place-value block model, one big flat square stands for 1. What does one small cube stand for?",
+     "opts": [
+      "0.01, because it takes 100 cubes to make the flat",
+      "0.1, because it takes 10 cubes to make the flat",
+      "1, because every block stands for 1",
+      "100, because the flat holds 100 of them"
+     ],
+     "ans": 0,
+     "hint": "How many small cubes fit in one flat?",
+     "steps": [
+      "A flat is 10 rods, and a rod is 10 cubes.",
+      "So a flat is 100 cubes.",
+      "If the flat is 1, each cube is 1 hundredth, 0.01."
+     ],
+     "ex": {
+      "main": "**0.01.** 100 cubes make the flat, so each cube is one hundredth. A rod of 10 cubes is 0.1.",
+      "tip": "First decide which block is 1. Everything else follows."
+     }
+    },
+    {
+     "id": "q1",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "What does 3 × 0.42 mean?",
+     "opts": [
+      "42 groups of 3, put together",
+      "3 groups of 0.42, put together",
+      "3 and 0.42 added together once",
+      "0.42 taken away from 3, once"
+     ],
+     "ans": 1,
+     "hint": "Read × as \"groups of\".",
+     "steps": [
+      "3 × 0.42 means 3 groups.",
+      "Each group is 0.42.",
+      "0.42 + 0.42 + 0.42 = 1.26."
+     ],
+     "ex": {
+      "main": "**3 groups of 0.42.** Put together, they make 0.42 + 0.42 + 0.42 = 1.26.",
+      "tip": "Multiplying a decimal by a whole number is repeated adding."
+     }
+    },
+    {
+     "id": "q2",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "Without multiplying, is 7 × 0.6 less than or greater than 7?",
+     "opts": [
+      "Equal, because 0.6 is close to 1",
+      "Greater, because multiplying always makes a number bigger",
+      "Less, because you take less than one whole, 7 times",
+      "Greater, because 6 is more than 1"
+     ],
+     "ans": 2,
+     "hint": "Is 0.6 more or less than 1?",
+     "steps": [
+      "0.6 is less than 1.",
+      "7 groups of something less than 1 is less than 7 groups of 1.",
+      "7 groups of 1 is 7, so 7 × 0.6 is less than 7."
+     ],
+     "ex": {
+      "main": "**Less.** 0.6 is less than one whole, so 7 of them make less than 7. (It is 4.2.)",
+      "tip": "Times a decimal less than 1 makes a number smaller."
+     }
+    },
+    {
+     "id": "q3",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "You combine some blocks and end up with 10 hundredths cubes. What can you trade them for?",
+     "opts": [
+      "100 tenths rods",
+      "1 whole flat",
+      "10 tenths rods",
+      "1 tenth rod"
+     ],
+     "ans": 3,
+     "hint": "How many hundredths make a tenth?",
+     "steps": [
+      "10 hundredths = 1 tenth.",
+      "So 10 cubes make one rod.",
+      "Trading keeps the value the same and makes it easier to read."
+     ],
+     "ex": {
+      "main": "**1 tenth rod.** 10 hundredths make 1 tenth, just as 10 ones make 1 ten.",
+      "tip": "Regroup decimals the same way you regroup whole numbers."
+     }
+    },
+    {
+     "id": "q4",
+     "lv": 1,
+     "from": "source",
+     "kind": "mc",
+     "q": "A grid of 100 squares stands for 1. You shade 25 squares, three times, in three colors. Which equation matches?",
+     "opts": [
+      "3 × 0.25 = 0.75",
+      "3 × 25 = 75",
+      "0.3 × 25 = 7.5",
+      "3 + 0.25 = 3.25"
+     ],
+     "ans": 0,
+     "hint": "Each square is 0.01. What is 25 squares?",
+     "steps": [
+      "Each square is 0.01, so 25 squares is 0.25.",
+      "You shaded it 3 times: 3 × 0.25.",
+      "75 squares are shaded, which is 0.75."
+     ],
+     "ex": {
+      "main": "**3 × 0.25 = 0.75.** 75 of 100 squares are shaded. 3 × 25 = 75 counts squares, not the value of the grid.",
+      "tip": "Squares count hundredths."
+     }
+    },
+    {
+     "id": "q5",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 0.7 × 6?",
+     "opts": [
+      "42",
+      "4.2",
+      "0.42",
+      "6.7"
+     ],
+     "ans": 1,
+     "hint": "6 groups of 7 tenths. How many tenths is that?",
+     "steps": [
+      "6 × 0.7 means 6 groups of 0.7.",
+      "Multiply as whole numbers: 6 × 7 = 42.",
+      "0.7 has 1 decimal place, so the product has 1: 4.2.",
+      "So 6 × 0.7 = 4.2."
+     ],
+     "ex": {
+      "main": "**4.2.** The wrong answers come from real slips: 42 is the decimal point left out; 0.42 is the point one place too far left; 6.7 is adding instead of multiplying.",
+      "tip": "42 tenths is 4.2."
+     }
+    },
+    {
+     "id": "q6",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 3 × 0.26?",
+     "opts": [
+      "0.618",
+      "78",
+      "0.78",
+      "7.8"
+     ],
+     "ans": 2,
+     "hint": "3 groups of 0.26. Regroup the hundredths.",
+     "steps": [
+      "3 × 0.26 means 3 groups of 0.26.",
+      "Multiply as whole numbers: 3 × 26 = 78.",
+      "0.26 has 2 decimal places, so the product has 2: 0.78.",
+      "Check with an estimate: 0.3 × 3 = 0.9, close to 0.78."
+     ],
+     "ex": {
+      "main": "**0.78.** The wrong answers come from real slips: 78 is the decimal point left out; 0.618 is each place's product written side by side, with no regrouping; 7.8 is the point one place too far right.",
+      "tip": "18 hundredths is 1 tenth and 8 hundredths."
+     }
+    },
+    {
+     "id": "q7",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 8 × 0.09?",
+     "opts": [
+      "0.072",
+      "72",
+      "7.2",
+      "0.72"
+     ],
+     "ans": 3,
+     "hint": "8 groups of 9 hundredths.",
+     "steps": [
+      "8 × 0.09 means 8 groups of 0.09.",
+      "Multiply as whole numbers: 8 × 9 = 72.",
+      "0.09 has 2 decimal places, so the product has 2: 0.72.",
+      "Check with an estimate: 0.1 × 8 = 0.8, close to 0.72."
+     ],
+     "ex": {
+      "main": "**0.72.** The wrong answers come from real slips: 72 is the decimal point left out; 7.2 is the point one place too far right; 0.072 is the point one place too far left.",
+      "tip": "72 hundredths is 0.72."
+     }
+    },
+    {
+     "id": "q8",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 4 × 1.36?",
+     "opts": [
+      "5.44",
+      "544",
+      "4.1224",
+      "54.4"
+     ],
+     "ans": 0,
+     "hint": "4 groups of 1.36. Regroup as you go.",
+     "steps": [
+      "4 × 1.36 means 4 groups of 1.36.",
+      "Multiply as whole numbers: 4 × 136 = 544.",
+      "1.36 has 2 decimal places, so the product has 2: 5.44.",
+      "Check with an estimate: 1 × 4 = 4, close to 5.44."
+     ],
+     "ex": {
+      "main": "**5.44.** The wrong answers come from real slips: 544 is the decimal point left out; 4.1224 is each place's product written side by side, with no regrouping; 54.4 is the point one place too far right.",
+      "tip": "Regroup: 24 hundredths is 2 tenths and 4 hundredths."
+     }
+    },
+    {
+     "id": "q9",
+     "lv": 2,
+     "from": "source",
+     "kind": "mc",
+     "q": "What is 6 × 0.15?",
+     "opts": [
+      "90",
+      "0.9",
+      "9",
+      "0.09"
+     ],
+     "ans": 1,
+     "hint": "6 groups of 15 hundredths. How many hundredths?",
+     "steps": [
+      "6 × 0.15 means 6 groups of 0.15.",
+      "Multiply as whole numbers: 6 × 15 = 90.",
+      "0.15 has 2 decimal places, so the product has 2: 0.90.",
+      "Check with an estimate: 0.2 × 6 = 1.2, close to 0.9."
+     ],
+     "ex": {
+      "main": "**0.9.** The wrong answers come from real slips: 90 is the decimal point left out; 9 is the point one place too far right; 0.09 is the point one place too far left.",
+      "tip": "90 hundredths is 0.90, which is 0.9."
+     }
+    },
+    {
+     "id": "q10",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Rafi multiplied 7 by 0.896 and got 62.72. Which estimate shows his answer is wrong?",
+     "opts": [
+      "0.896 is about 9, and 7 × 9 = 63, so 62.72 is about right",
+      "7 + 0.896 is about 8, so the answer is near 8",
+      "0.896 is about 1, and 7 × 1 = 7, so the answer is near 7, not 62.72",
+      "7 × 0.896 must be bigger than 7, so 62.72 is fine"
+     ],
+     "ans": 2,
+     "hint": "Is 0.896 closer to 1 or to 9?",
+     "steps": [
+      "0.896 is just under 1.",
+      "7 × 1 = 7, so the answer is a bit less than 7.",
+      "62.72 is about ten times too big.",
+      "The real product is 6.272: the point slipped one place."
+     ],
+     "ex": {
+      "main": "**0.896 is about 1, so the answer is near 7.** The real product is 6.272. He put the point one place too far right, as if 0.896 were 8.96.",
+      "tip": "A decimal less than 1 makes the product smaller than the whole number."
+     }
+    },
+    {
+     "id": "q11",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A path has 4 sections, each 2.35 meters long. How long is the path?",
+     "opts": [
+      "6.35 meters",
+      "94 meters",
+      "0.94 meters",
+      "9.4 meters"
+     ],
+     "ans": 3,
+     "hint": "Find 4 × 2.35.",
+     "steps": [
+      "4 × 235 = 940.",
+      "2.35 has 2 decimal places, so 9.40, which is 9.4.",
+      "Check: 4 × 2 = 8, close to 9.4."
+     ],
+     "ex": {
+      "main": "**9.4 meters.** 4 × 2.35 = 9.40. 94 and 0.94 misplace the point, and 6.35 adds 4 instead of multiplying.",
+      "tip": "Four sections means 4 groups."
+     }
+    },
+    {
+     "id": "q12",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "A town planned 3 gardens of 0.8 acre each. It now makes each garden 8 acres instead. How many more acres do the gardens take up in all?",
+     "opts": [
+      "21.6 acres",
+      "24 acres",
+      "7.2 acres",
+      "2.4 acres"
+     ],
+     "ans": 0,
+     "hint": "Find the total area before and after, then subtract.",
+     "steps": [
+      "Before: 3 × 0.8 = 2.4 acres.",
+      "After: 3 × 8 = 24 acres.",
+      "24 − 2.4 = 21.6 acres more."
+     ],
+     "ex": {
+      "main": "**21.6 acres.** 24 − 2.4 = 21.6. 24 is the new total, not the increase, and 7.2 is the increase for only one garden.",
+      "tip": "More in all: compare the totals, not one garden."
+     }
+    },
+    {
+     "id": "q13",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Sam works out 6 × $0.75 = $4.50. How can whole-number multiplication check it?",
+     "opts": [
+      "6 + 75 = 81, so the answer should be $81",
+      "6 × 75 = 450 cents, and 450 cents is $4.50",
+      "6 × 7 = 42, so the answer should be $42",
+      "It cannot; whole numbers never check a decimal"
+     ],
+     "ans": 1,
+     "hint": "$0.75 is 75 cents.",
+     "steps": [
+      "$0.75 is 75 cents.",
+      "6 × 75 = 450 cents.",
+      "450 cents is $4.50, so his answer checks."
+     ],
+     "ex": {
+      "main": "**6 × 75 = 450 cents, which is $4.50.** Thinking in cents turns a money problem into whole numbers.",
+      "tip": "Cents are whole numbers. Use them to check."
+     }
+    },
+    {
+     "id": "q14",
+     "lv": 3,
+     "from": "source",
+     "kind": "mc",
+     "q": "Which product is less than 9?",
+     "opts": [
+      "9 × 2.5",
+      "9 × 1.2",
+      "9 × 0.8",
+      "9 × 1.05"
+     ],
+     "ans": 2,
+     "hint": "Which factor is less than 1?",
+     "steps": [
+      "9 × a number bigger than 1 is bigger than 9.",
+      "9 × a number less than 1 is less than 9.",
+      "Only 0.8 is less than 1.",
+      "9 × 0.8 = 7.2."
+     ],
+     "ex": {
+      "main": "**9 × 0.8.** 0.8 is less than one whole, so the product, 7.2, is less than 9. Every other factor is more than 1.",
+      "tip": "Compare the decimal with 1 before you multiply."
+     }
+    }
+   ],
+   "round": 10,
+   "series": "Unit 4",
+   "libv": 1
+  }
+ }
+}
