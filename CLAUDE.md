@@ -238,7 +238,10 @@ localStorage that every app at ortizzle.github.io shares. `DATA` is in
 IndexedDB (`wayfinder_db`), boot waits on `booted`, and
 `tools/test_idb_storage.js` is the same file in both repos.
 Since v197 boot also asks Chrome to keep storage persistent (`askPersist()`).
-Since v198 boot never waits on IndexedDB for more than `DB_WAIT` (3 s): a hung
+Since v198 boot never waits on IndexedDB for more than `DB_WAIT` (3 s), and
+since v204 a late read is MERGED in rather than abandoned and a read that
+errors is never written back as an empty store (see "A slow start is not an
+empty app" in ../ad-astra/CLAUDE.md, the same fix in both apps): a hung
 `open()` or read falls back to localStorage, a start-up error shows a Reload
 card instead of a blank screen, and the update bar's Refresh asks whichever
 worker is waiting now. See "The app always comes up" in ../ad-astra/CLAUDE.md;
@@ -2083,6 +2086,18 @@ It was verified by removing one `order` (three assertions failed). The six
 older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
+
+### A slow start is not an empty app (v204 / Ad Astra v222, both apps)
+
+Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
+Sedona's app opened empty: since the v216 move localStorage holds nothing, so
+v218's three-second fallback drew an empty app whenever IndexedDB was merely
+slow, and threw the late answer away. A read that errored was worse: it was
+taken for an empty store and written back over the real one. Now a late read
+is merged in (`adoptLate()`), only a successful read is ever written back, and
+`Sync.load()`/`save()` read `DATA` after the network call rather than before.
+`tools/test_boot_resilience.js` is the same file in both repos; its new cases
+seed IndexedDB only, which is the state a real phone is in.
 
 ### The Lemonade Crime · Novel Test Review (v203)
 
