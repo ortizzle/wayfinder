@@ -2087,6 +2087,33 @@ older science tests now point at the new shelves; `test_chem_test.js`
 compares shelf names unordered, because the subject screen puts the most
 recent book first.
 
+### The Science update of 11/18 (v205)
+
+Chris pasted the 4th-grade Science teacher's update of 11/18. Three dated
+facts went in; the teacher's name did not.
+
+- **`SUGGESTED_ASSESS`:** `sg-sci-2026-12-03`, the Atmosphere test (Thursday
+  12/3), and `sg-sci-2026-12-15`, the Hydrosphere test (water on Earth and the
+  water cycle). The update says the Hydrosphere unit has no quiz, so none was
+  added.
+- **`CAL.events`:** the Atmosphere study guide comes home Tuesday 12/1, a
+  Science note. Its note carries the update's own study advice for a week with
+  no worksheet: read your notes, ask yourself questions, explain them out loud
+  to someone at home, and reread what you cannot explain.
+
+**No study material exists yet for either test.** The `Unit 3 - Atmosphere`
+folder had nothing in it when last checked, and the update names what is left
+(weather maps and forecasting, floods, tornadoes and hurricanes, climate zones,
+global warming and climate change) without notes to build from. The study
+guide on 12/1 is the natural source for an Atmosphere unit.
+
+`tools/test_science_1118.js` (11 assertions) points the clock at Monday 11/30
+and pins both tests, the weekdays, no Hydrosphere quiz, the study-guide note
+and its advice, the row reaching Coming up, and a sweep for the teacher's name.
+
+> `test_hours_notice.js` fails on 11/18 on the v204 build too: calendar rot of
+> the kind v185 recorded, not a regression.
+
 ### A slow start is not an empty app (v204 / Ad Astra v222, both apps)
 
 Engine, identical here — see ad-astra/CLAUDE.md's section of the same name.
